@@ -26,6 +26,7 @@ namespace r2
 		{
 			ret->AddChild( '1', base_test::TestEndAction_None::GetInstance() );
 			ret->AddChild( '2', base_test::TestEndAction_Pause::GetInstance() );
+			ret->AddChild( '3', base_test::TestEndAction_Exit::GetInstance() );
 
 			ret->AddLineFeed();
 

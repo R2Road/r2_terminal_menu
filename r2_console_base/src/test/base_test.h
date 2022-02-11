@@ -18,4 +18,11 @@ namespace base_test
 		TitleFunc GetTitleFunction() const override;
 		DoFunc GetDoFunction() override;
 	};
+
+	class TestEndAction_Exit : public r2::iTest, public r2::SingleTon<TestEndAction_Exit>
+	{
+	public:
+		TitleFunc GetTitleFunction() const override;
+		DoFunc GetDoFunction() override;
+	};
 }

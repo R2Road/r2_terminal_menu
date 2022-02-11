@@ -62,4 +62,33 @@ namespace base_test
 			return r2::eTestEndAction::Pause;
 		};
 	}
+
+
+
+	r2::iTest::TitleFunc TestEndAction_Exit::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Base : TestEndAction_Exit";
+		};
+	}
+	r2::iTest::DoFunc TestEndAction_Exit::GetDoFunction()
+	{
+		return []()->r2::eTestEndAction
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+
+			std::cout << r2::split;
+
+			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
+
+			do
+			{
+			} while( 27 != _getch() );
+
+			std::cout << r2::split;
+
+			return r2::eTestEndAction::Exit;
+		};
+	}
 }
