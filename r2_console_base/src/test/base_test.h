@@ -5,14 +5,14 @@
 
 namespace base_test
 {
-	class Pause : public r2::iTest, public r2::SingleTon<Pause>
+	class None : public r2::iTest, public r2::SingleTon<None>
 	{
 	public:
 		TitleFunc GetTitleFunction() const override;
 		DoFunc GetDoFunction() override;
 	};
 
-	class None : public r2::iTest, public r2::SingleTon<None>
+	class Pause : public r2::iTest, public r2::SingleTon<Pause>
 	{
 	public:
 		TitleFunc GetTitleFunction() const override;
