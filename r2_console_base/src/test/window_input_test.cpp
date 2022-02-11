@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <windows.h>
 
-#include "base/r2_eTestResult.h"
+#include "base/r2_eTestEndAction.h"
 
 #include "input/r2_input_KeyboardInputCollector.h"
 #include "input/r2_input_KeyboardInputListener.h"
