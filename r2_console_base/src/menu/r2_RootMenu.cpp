@@ -22,11 +22,15 @@ namespace r2
 
 		{
 			ret->AddChild( '1', key_test::Basic::GetInstance() );
+			ret->AddChild( '2', key_test::Basic::GetInstance() );
+			ret->AddChild( '3', key_test::Basic::GetInstance() );
+			ret->AddChild( '4', key_test::Basic::GetInstance() );
+			ret->AddChild( '5', key_test::Basic::GetInstance() );
 
 			ret->AddLineFeed();
 
 			ret->AddChild(
-				'2'
+				'q'
 				, []()->const char* { return r2::InputMenu::GetTitle(); }
 				, [&director]()->eTestResult
 				{
