@@ -4,8 +4,8 @@ namespace r2
 {
 	enum class eTestEndAction
 	{
-		Pause,
 		None,
+		Pause,
 		ChangeScene,
 		Exit,
 	};

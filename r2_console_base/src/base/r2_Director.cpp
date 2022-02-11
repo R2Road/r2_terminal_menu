@@ -30,14 +30,14 @@ namespace r2
 
 			switch( mMenu->Do( input ) )
 			{
+			case eTestEndAction::None:
+				system( "cls" );
+				break;
+
 			case eTestEndAction::Pause:
 				std::cout << r2::linefeed;
 				system( "pause" );
 
-				system( "cls" );
-				break;
-
-			case eTestEndAction::None:
 				system( "cls" );
 				break;
 
