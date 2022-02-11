@@ -7,14 +7,14 @@
 
 namespace base_test
 {
-	r2::iTest::TitleFunc None::GetTitleFunction() const
+	r2::iTest::TitleFunc TestEndAction_None::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Base : None";
+			return "Base : TestEndAction_None";
 		};
 	}
-	r2::iTest::DoFunc None::GetDoFunction()
+	r2::iTest::DoFunc TestEndAction_None::GetDoFunction()
 	{
 		return []()->r2::eTestEndAction
 		{
@@ -35,14 +35,14 @@ namespace base_test
 
 
 
-	r2::iTest::TitleFunc Pause::GetTitleFunction() const
+	r2::iTest::TitleFunc TestEndAction_Pause::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Base : Pause";
+			return "Base : TestEndAction_Pause";
 		};
 	}
-	r2::iTest::DoFunc Pause::GetDoFunction()
+	r2::iTest::DoFunc TestEndAction_Pause::GetDoFunction()
 	{
 		return []()->r2::eTestEndAction
 		{

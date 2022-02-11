@@ -24,8 +24,8 @@ namespace r2
 		) );
 
 		{
-			ret->AddChild( '1', base_test::None::GetInstance() );
-			ret->AddChild( '2', base_test::Pause::GetInstance() );
+			ret->AddChild( '1', base_test::TestEndAction_None::GetInstance() );
+			ret->AddChild( '2', base_test::TestEndAction_Pause::GetInstance() );
 
 			ret->AddLineFeed();
 
