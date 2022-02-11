@@ -7,6 +7,7 @@
 #include "menu/r2_InputMenu.h"
 
 #include "test/base_test.h"
+#include "test/inspector_test.h"
 #include "test/key_test.h"
 
 namespace r2
@@ -28,9 +29,13 @@ namespace r2
 
 			ret->AddLineFeed();
 
-			ret->AddChild( 'q', key_test::Basic::GetInstance() );
+			ret->AddChild( 'q', inspector_test::Basic::GetInstance() );
+
+			ret->AddLineFeed();
+
+			ret->AddChild( 'a', key_test::Basic::GetInstance() );
 			ret->AddChild(
-				'w'
+				's'
 				, []()->const char* { return r2::InputMenu::GetTitle(); }
 				, [&director]()->eTestResult
 				{

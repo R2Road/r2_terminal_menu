@@ -39,6 +39,7 @@
     <ClCompile Include="src\r2\r2_Size.cpp" />
     <ClCompile Include="src\r2\r2_Timer_Float.cpp" />
     <ClCompile Include="src\test\base_test.cpp" />
+    <ClCompile Include="src\test\inspector_test.cpp" />
     <ClCompile Include="src\test\key_test.cpp" />
     <ClCompile Include="src\test\window_input_test.cpp" />
   </ItemGroup>
@@ -64,6 +65,7 @@
     <ClInclude Include="src\r2\r2_Timer.h" />
     <ClInclude Include="src\r2\r2_Timer_Float.h" />
     <ClInclude Include="src\test\base_test.h" />
+    <ClInclude Include="src\test\inspector_test.h" />
     <ClInclude Include="src\test\key_test.h" />
     <ClInclude Include="src\test\window_input_test.h" />
   </ItemGroup>

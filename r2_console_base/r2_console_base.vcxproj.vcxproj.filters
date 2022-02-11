@@ -48,6 +48,9 @@
     <ClCompile Include="src\test\base_test.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\inspector_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -115,6 +118,9 @@
       <Filter>base</Filter>
     </ClInclude>
     <ClInclude Include="src\test\base_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\inspector_test.h">
       <Filter>test</Filter>
     </ClInclude>
   </ItemGroup>
