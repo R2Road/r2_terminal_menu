@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\base\r2_Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\r2_Menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2\r2_PointInt.cpp">
+      <Filter>r2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2\r2_RectInt.cpp">
+      <Filter>r2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2\r2_Size.cpp">
+      <Filter>r2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2\r2_Timer_Float.cpp">
+      <Filter>r2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu\r2_InputMenu.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu\r2_RootMenu.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\key_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\window_input_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2_input_Constant.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2_input_KeyboardInputCollector.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2_input_KeyboardInputListener.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2\r2_FPSTimer.cpp">
+      <Filter>r2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\base\r2_Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_eTestResult.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_iTest.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_Point.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_PointInt.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_Rect.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_RectInt.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_Size.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_Timer.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_Timer_Float.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu\r2_InputMenu.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu\r2_RootMenu.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\key_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\window_input_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2_input_Constant.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2_input_KeyboardInputCollector.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2_input_KeyboardInputListener.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2\r2_FPSTimer.h">
+      <Filter>r2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r2">
+      <UniqueIdentifier>{9759d01a-9cf9-4185-9299-841c8c4988b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu">
+      <UniqueIdentifier>{bdf2ef85-8e3c-425d-b117-38413fcaa3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{f29fbb7d-c72b-44ef-8300-0bd9360d5e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
