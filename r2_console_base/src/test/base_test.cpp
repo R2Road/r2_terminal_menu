@@ -19,9 +19,10 @@ namespace base_test
 		return []()->r2::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
-			std::cout << "[ESC] End" << r2::linefeed;
 
 			std::cout << r2::split;
+
+			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
 
 			do
 			{
@@ -47,9 +48,10 @@ namespace base_test
 		return []()->r2::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
-			std::cout << "[ESC] End" << r2::linefeed;
 
 			std::cout << r2::split;
+
+			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
 
 			do
 			{
