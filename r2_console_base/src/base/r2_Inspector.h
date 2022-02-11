@@ -4,12 +4,12 @@
 do {																							\
 	if( ( condition ) )																			\
 	{																							\
-		printf( "\x1B[92m" "[PASS]" "\033[0m" " EXPECT_TRUE( %s\n )", #condition );				\
+		printf( "\x1B[92m" "[PASS]" "\033[0m" " EXPECT_TRUE( %s )\n", #condition );				\
 	}																							\
 	else																						\
 	{																							\
 		__debugbreak();																			\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_TRUE( %s\n )", , #condition );			\
+		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_TRUE( %s )\n", #condition );			\
 	}																							\
 } while( false )
 

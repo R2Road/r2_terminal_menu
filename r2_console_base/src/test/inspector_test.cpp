@@ -24,7 +24,19 @@ namespace inspector_test
 
 			std::cout << r2::split;
 
+#pragma warning( push )
+#pragma warning( disable : 4127 )
 			{
+				EXPECT_TRUE( 1 == 1 );
+				EXPECT_TRUE( 1 == 0 );
+
+				std::cout << r2::linefeed;
+
+				EXPECT_FALSE( 1 == 1 );
+				EXPECT_FALSE( 1 == 0 );
+
+				std::cout << r2::linefeed;
+
 				EXPECT_EQ( 1, 1 );
 				EXPECT_EQ( 1, 0 );
 
@@ -53,6 +65,7 @@ namespace inspector_test
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
 			}
+#pragma warning( pop )
 
 			std::cout << r2::split;
 
