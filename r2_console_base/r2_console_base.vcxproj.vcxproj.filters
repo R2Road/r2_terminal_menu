@@ -108,6 +108,9 @@
     <ClInclude Include="src\r2\r2_FPSTimer.h">
       <Filter>r2</Filter>
     </ClInclude>
+    <ClInclude Include="src\base\r2_Inspector.h">
+      <Filter>base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="base">
