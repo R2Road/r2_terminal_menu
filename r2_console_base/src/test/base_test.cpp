@@ -7,6 +7,34 @@
 
 namespace base_test
 {
+	r2::iTest::TitleFunc RunTest_And_Pause::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Base : RunTest_And_Pause";
+		};
+	}
+	r2::iTest::DoFunc RunTest_And_Pause::GetDoFunction()
+	{
+		return []()->r2::eTestResult
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "[ESC] End" << r2::linefeed;
+
+			std::cout << r2::split;
+
+			do
+			{
+			} while( 27 != _getch() );
+
+			std::cout << r2::split;
+
+			return r2::eTestResult::RunTest_And_Pause;
+		};
+	}
+
+
+
 	r2::iTest::TitleFunc RunTest_Without_Pause::GetTitleFunction() const
 	{
 		return []()->const char*

@@ -5,6 +5,13 @@
 
 namespace base_test
 {
+	class RunTest_And_Pause : public r2::iTest, public r2::SingleTon<RunTest_And_Pause>
+	{
+	public:
+		TitleFunc GetTitleFunction() const override;
+		DoFunc GetDoFunction() override;
+	};
+
 	class RunTest_Without_Pause : public r2::iTest, public r2::SingleTon<RunTest_Without_Pause>
 	{
 	public:

@@ -27,8 +27,8 @@ namespace r2
 
 			ret->AddLineFeed();
 
-			ret->AddChild( '2', base_test::RunTest_Without_Pause::GetInstance() );
-			ret->AddChild( '3', key_test::Basic::GetInstance() );
+			ret->AddChild( '2', base_test::RunTest_And_Pause::GetInstance() );
+			ret->AddChild( '3', base_test::RunTest_Without_Pause::GetInstance() );
 			ret->AddChild( '4', key_test::Basic::GetInstance() );
 			ret->AddChild( '5', key_test::Basic::GetInstance() );
 
