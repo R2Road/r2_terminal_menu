@@ -5,6 +5,8 @@
 #include "base/r2_eTestResult.h"
 
 #include "menu/r2_InputMenu.h"
+
+#include "test/base_test.h"
 #include "test/key_test.h"
 
 namespace r2
@@ -22,7 +24,10 @@ namespace r2
 
 		{
 			ret->AddChild( '1', key_test::Basic::GetInstance() );
-			ret->AddChild( '2', key_test::Basic::GetInstance() );
+
+			ret->AddLineFeed();
+
+			ret->AddChild( '2', base_test::RunTest_Without_Pause::GetInstance() );
 			ret->AddChild( '3', key_test::Basic::GetInstance() );
 			ret->AddChild( '4', key_test::Basic::GetInstance() );
 			ret->AddChild( '5', key_test::Basic::GetInstance() );
