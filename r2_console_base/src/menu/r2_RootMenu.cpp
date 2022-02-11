@@ -24,8 +24,8 @@ namespace r2
 		) );
 
 		{
-			ret->AddChild( '1', base_test::RunTest_And_Pause::GetInstance() );
-			ret->AddChild( '2', base_test::RunTest_Without_Pause::GetInstance() );
+			ret->AddChild( '1', base_test::Pause::GetInstance() );
+			ret->AddChild( '2', base_test::None::GetInstance() );
 
 			ret->AddLineFeed();
 
@@ -37,10 +37,10 @@ namespace r2
 			ret->AddChild(
 				's'
 				, []()->const char* { return r2::InputMenu::GetTitle(); }
-				, [&director]()->eTestResult
+				, [&director]()->eTestEndAction
 				{
 					director.Setup( r2::InputMenu::Create( director ) );
-					return eTestResult::ChangeScene;
+					return eTestEndAction::ChangeScene;
 				}
 			);
 
@@ -51,7 +51,7 @@ namespace r2
 			ret->AddChild(
 				27
 				, []()->const char* { return "Exit"; }
-				, []()->eTestResult { return eTestResult::Exit; }
+				, []()->eTestEndAction { return eTestEndAction::Exit; }
 			);
 		}
 

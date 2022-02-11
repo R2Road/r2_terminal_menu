@@ -23,7 +23,7 @@ namespace window_input_test
 	}
 	r2::iTest::DoFunc TestKeyboardInputCollector::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 			std::cout << "[ESC] Exit" << r2::linefeed;
@@ -103,7 +103,7 @@ namespace window_input_test
 				}
 			}
 
-			return r2::eTestResult::RunTest_And_Pause;
+			return r2::eTestEndAction::Pause;
 		};
 	}
 }

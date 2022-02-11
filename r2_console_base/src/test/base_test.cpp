@@ -7,16 +7,16 @@
 
 namespace base_test
 {
-	r2::iTest::TitleFunc RunTest_And_Pause::GetTitleFunction() const
+	r2::iTest::TitleFunc Pause::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Base : RunTest_And_Pause";
+			return "Base : Pause";
 		};
 	}
-	r2::iTest::DoFunc RunTest_And_Pause::GetDoFunction()
+	r2::iTest::DoFunc Pause::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 			std::cout << "[ESC] End" << r2::linefeed;
@@ -29,22 +29,22 @@ namespace base_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest_And_Pause;
+			return r2::eTestEndAction::Pause;
 		};
 	}
 
 
 
-	r2::iTest::TitleFunc RunTest_Without_Pause::GetTitleFunction() const
+	r2::iTest::TitleFunc None::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Base : RunTest_Without_Pause";
+			return "Base : None";
 		};
 	}
-	r2::iTest::DoFunc RunTest_Without_Pause::GetDoFunction()
+	r2::iTest::DoFunc None::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()() << " #" << r2::linefeed2;
 			std::cout << "[ESC] End" << r2::linefeed;
@@ -57,7 +57,7 @@ namespace base_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest_Without_Pause;
+			return r2::eTestEndAction::None;
 		};
 	}
 }
