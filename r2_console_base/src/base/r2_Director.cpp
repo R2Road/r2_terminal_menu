@@ -30,7 +30,7 @@ namespace r2
 
 			switch( mMenu->Do( input ) )
 			{
-			case eTestResult::RunTest:
+			case eTestResult::RunTest_And_Pause:
 				std::cout << r2::linefeed;
 				system( "pause" );
 

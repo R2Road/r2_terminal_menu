@@ -37,7 +37,7 @@ namespace key_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest;
+			return r2::eTestResult::RunTest_And_Pause;
 		};
 	}
 }

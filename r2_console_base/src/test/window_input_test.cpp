@@ -103,7 +103,7 @@ namespace window_input_test
 				}
 			}
 
-			return r2::eTestResult::RunTest;
+			return r2::eTestResult::RunTest_And_Pause;
 		};
 	}
 }

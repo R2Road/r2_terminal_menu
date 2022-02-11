@@ -94,7 +94,7 @@ namespace r2
 			}
 		}
 
-		return eTestResult::RunTest;
+		return eTestResult::RunTest_And_Pause;
 	}
 
 	void Menu::AddChild( const char key_code, iTest& test_obj )
@@ -108,14 +108,14 @@ namespace r2
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
-		static const std::function<const r2::eTestResult()> func_test = []()->const r2::eTestResult { return r2::eTestResult::RunTest; };
+		static const std::function<const r2::eTestResult()> func_test = []()->const r2::eTestResult { return r2::eTestResult::RunTest_And_Pause; };
 
 		mTests.push_back( { KeyCode4LineFeed, func_title, func_test } );
 	}
 	void Menu::AddSplit()
 	{
 		static const std::function<const char*( )> func_title = []()->const char* { return ""; };
-		static const std::function<const r2::eTestResult()> func_test = []()->const r2::eTestResult { return r2::eTestResult::RunTest; };
+		static const std::function<const r2::eTestResult()> func_test = []()->const r2::eTestResult { return r2::eTestResult::RunTest_And_Pause; };
 
 		mTests.push_back( { KeyCode4Split, func_title, func_test } );
 	}
