@@ -1,11 +1,11 @@
 #include "pch.h"
-#include "input/r2_input_KeyboardInputCollector.h"
+#include "input/r2input_KeyboardInputCollector.h"
 
 #include <numeric>
 
-#include "r2_input_KeyboardInputListener.h"
+#include "r2input_KeyboardInputListener.h"
 
-namespace r2_input
+namespace r2input
 {
 	KeyboardInputCollector::KeyboardInputCollector() : mKeyboardInputListener( nullptr )
 	{}

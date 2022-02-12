@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "input/r2_input_KeyboardInputListener.h"
+#include "input/r2input_KeyboardInputListener.h"
 
-namespace r2_input
+namespace r2input
 {
 	KeyboardInputListener::KeyboardInputListener( std::initializer_list<uint8_t> list ) :
 		mObservationKeyList( list )

@@ -1,9 +1,9 @@
 #include "pch.h"
-#include "input/r2_input_Constant.h"
+#include "input/r2input_Constant.h"
 
 #include <Windows.h>
 
-namespace r2_input
+namespace r2input
 {
 	int GetKeyState( const KeyCodeTypeT key_code )
 	{

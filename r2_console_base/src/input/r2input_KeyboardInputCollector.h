@@ -2,9 +2,9 @@
 
 #include <vector>
 
-#include "r2_input_Constant.h"
+#include "r2input_Constant.h"
 
-namespace r2_input
+namespace r2input
 {
 	class KeyboardInputListener;
 

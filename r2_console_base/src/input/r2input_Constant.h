@@ -2,7 +2,7 @@
 
 #include <stdint.h>
 
-namespace r2_input
+namespace r2input
 {
 	using KeyCodeTypeT = uint8_t;
 

@@ -33,15 +33,6 @@
     <ClCompile Include="src\test\window_input_test.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\input\r2_input_Constant.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
-    <ClCompile Include="src\input\r2_input_KeyboardInputCollector.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
-    <ClCompile Include="src\input\r2_input_KeyboardInputListener.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2\r2_FPSTimer.cpp">
       <Filter>r2</Filter>
     </ClCompile>
@@ -50,6 +41,15 @@
     </ClCompile>
     <ClCompile Include="src\test\inspector_test.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2input_Constant.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2input_KeyboardInputCollector.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
+      <Filter>input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -99,15 +99,6 @@
     <ClInclude Include="src\test\window_input_test.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="src\input\r2_input_Constant.h">
-      <Filter>input</Filter>
-    </ClInclude>
-    <ClInclude Include="src\input\r2_input_KeyboardInputCollector.h">
-      <Filter>input</Filter>
-    </ClInclude>
-    <ClInclude Include="src\input\r2_input_KeyboardInputListener.h">
-      <Filter>input</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2\r2_FPSTimer.h">
       <Filter>r2</Filter>
     </ClInclude>
@@ -122,6 +113,15 @@
     </ClInclude>
     <ClInclude Include="src\base\r2_eTestEndAction.h">
       <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2input_Constant.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2input_KeyboardInputCollector.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
+      <Filter>input</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -6,8 +6,8 @@
 
 #include "base/r2_eTestEndAction.h"
 
-#include "input/r2_input_KeyboardInputCollector.h"
-#include "input/r2_input_KeyboardInputListener.h"
+#include "input/r2input_KeyboardInputCollector.h"
+#include "input/r2input_KeyboardInputListener.h"
 
 #include "r2/r2_FPSTimer.h"
 #include "r2/r2_RectInt.h"
@@ -29,8 +29,8 @@ namespace window_input_test
 			std::cout << "[ESC] Exit" << r2::linefeed;
 			std::cout << "[WASD] Move" << r2::linefeed;
 
-			r2_input::KeyboardInputCollector keyboard_input_collector;
-			r2_input::KeyboardInputListener keyboard_input_listener( {
+			r2input::KeyboardInputCollector keyboard_input_collector;
+			r2input::KeyboardInputListener keyboard_input_listener( {
 				0x1B		// esc
 				, 0x41		// a
 				, 0x44		// d
