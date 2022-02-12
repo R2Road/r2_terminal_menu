@@ -13,7 +13,7 @@ int main()
 	//
 	// Environment : Title
 	//
-	SetConsoleTitle( TEXT( "r2_console_base" ) );
+	SetConsoleTitle( TEXT( "r2_console_menu" ) );
 
 	//
 	// Environment : Size
