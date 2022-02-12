@@ -7,6 +7,7 @@
 #include "menu/r2_InputMenu.h"
 
 #include "test/base_test.h"
+#include "test/empty_test.h"
 #include "test/inspector_test.h"
 #include "test/key_test.h"
 
@@ -24,19 +25,15 @@ namespace r2
 		) );
 
 		{
-			ret->AddChild( '1', base_test::TestEndAction_None::GetInstance() );
-			ret->AddChild( '2', base_test::TestEndAction_Pause::GetInstance() );
-			ret->AddChild( '3', base_test::TestEndAction_Exit::GetInstance() );
+			ret->AddChild( '1', empty_test::Basic::GetInstance() );
+			ret->AddChild( '2', empty_test::Basic::GetInstance() );
+			ret->AddChild( '3', empty_test::Basic::GetInstance() );
 
 			ret->AddLineFeed();
 
-			ret->AddChild( 'q', inspector_test::Basic::GetInstance() );
-
-			ret->AddLineFeed();
-
-			ret->AddChild( 'a', key_test::Basic::GetInstance() );
+			ret->AddChild( 'q', key_test::Basic::GetInstance() );
 			ret->AddChild(
-				's'
+				'w'
 				, []()->const char* { return r2::InputMenu::GetTitle(); }
 				, [&director]()->eTestEndAction
 				{
@@ -44,6 +41,16 @@ namespace r2
 					return eTestEndAction::ChangeScene;
 				}
 			);
+
+			ret->AddLineFeed();
+
+			ret->AddChild( 'a', inspector_test::Basic::GetInstance() );
+
+			ret->AddLineFeed();
+
+			ret->AddChild( 'z', base_test::TestEndAction_None::GetInstance() );
+			ret->AddChild( 'x', base_test::TestEndAction_Pause::GetInstance() );
+			ret->AddChild( 'c', base_test::TestEndAction_Exit::GetInstance() );
 
 
 			ret->AddSplit();

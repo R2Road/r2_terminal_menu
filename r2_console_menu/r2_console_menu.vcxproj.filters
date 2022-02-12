@@ -51,6 +51,9 @@
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
       <Filter>input</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\empty_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -122,6 +125,9 @@
     </ClInclude>
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
       <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\empty_test.h">
+      <Filter>test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
