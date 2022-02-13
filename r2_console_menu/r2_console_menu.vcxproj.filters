@@ -51,7 +51,7 @@
     <ClCompile Include="src\test\empty_test.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\menu\r2_RootMenu.cpp">
+    <ClCompile Include="src\menu\RootMenu.cpp">
       <Filter>menu</Filter>
     </ClCompile>
   </ItemGroup>
@@ -126,7 +126,7 @@
     <ClInclude Include="src\test\empty_test.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="src\menu\r2_RootMenu.h">
+    <ClInclude Include="src\menu\RootMenu.h">
       <Filter>menu</Filter>
     </ClInclude>
   </ItemGroup>
