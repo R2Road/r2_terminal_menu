@@ -38,7 +38,7 @@ namespace r2
 				, [&director]()->eTestEndAction
 				{
 					director.Setup( r2::InputMenu::Create( director ) );
-					return eTestEndAction::ChangeScene;
+					return eTestEndAction::None;
 				}
 			);
 

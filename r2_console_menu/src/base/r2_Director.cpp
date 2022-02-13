@@ -41,9 +41,6 @@ namespace r2
 				system( "cls" );
 				break;
 
-			//case eTestEndAction::ChangeScene:
-				//break;
-
 			case eTestEndAction::Exit:
 				return;
 			}

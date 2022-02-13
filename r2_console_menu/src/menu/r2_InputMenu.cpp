@@ -29,7 +29,7 @@ namespace r2
 				, [&director]()->eTestEndAction
 				{
 					director.Setup( r2::RootMenu::Create( director ) );
-					return eTestEndAction::ChangeScene;
+					return eTestEndAction::None;
 				}
 			);
 		}
