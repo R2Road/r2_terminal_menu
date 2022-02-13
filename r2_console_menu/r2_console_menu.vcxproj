@@ -24,7 +24,7 @@
     <ClCompile Include="src\input\r2input_Constant.cpp" />
     <ClCompile Include="src\input\r2input_KeyboardInputCollector.cpp" />
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp" />
-    <ClCompile Include="src\menu\r2_InputMenu.cpp" />
+    <ClCompile Include="src\menu\InputMenu.cpp" />
     <ClCompile Include="src\menu\RootMenu.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -54,7 +54,7 @@
     <ClInclude Include="src\input\r2input_Constant.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputCollector.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h" />
-    <ClInclude Include="src\menu\r2_InputMenu.h" />
+    <ClInclude Include="src\menu\InputMenu.h" />
     <ClInclude Include="src\menu\RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\r2\r2_FPSTimer.h" />

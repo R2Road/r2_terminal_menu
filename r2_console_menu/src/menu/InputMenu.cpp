@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "r2_InputMenu.h"
+#include "InputMenu.h"
 
 #include "base/r2_Director.h"
 #include "base/r2_eTestEndAction.h"

@@ -21,9 +21,6 @@
     <ClCompile Include="src\r2\r2_Timer_Float.cpp">
       <Filter>r2</Filter>
     </ClCompile>
-    <ClCompile Include="src\menu\r2_InputMenu.cpp">
-      <Filter>menu</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\key_test.cpp">
       <Filter>test</Filter>
     </ClCompile>
@@ -52,6 +49,9 @@
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\menu\RootMenu.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu\InputMenu.cpp">
       <Filter>menu</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,9 +86,6 @@
     </ClInclude>
     <ClInclude Include="src\r2\r2_Timer_Float.h">
       <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\menu\r2_InputMenu.h">
-      <Filter>menu</Filter>
     </ClInclude>
     <ClInclude Include="src\base\r2_Singleton.h">
       <Filter>base</Filter>
@@ -127,6 +124,9 @@
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\menu\RootMenu.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu\InputMenu.h">
       <Filter>menu</Filter>
     </ClInclude>
   </ItemGroup>
