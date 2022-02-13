@@ -32,10 +32,10 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 		ret->AddChild( 'q', key_test::Basic::GetInstance() );
 		ret->AddChild(
 			'w'
-			, []()->const char* { return r2::InputMenu::GetTitle(); }
+			, []()->const char* { return InputMenu::GetTitle(); }
 			, [&director]()->r2::eTestEndAction
 			{
-				director.Setup( r2::InputMenu::Create( director ) );
+				director.Setup( InputMenu::Create( director ) );
 				return r2::eTestEndAction::None;
 			}
 		);
