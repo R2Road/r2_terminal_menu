@@ -21,6 +21,8 @@ namespace r2
 		int input = 0;
 		while( true )
 		{
+			system( "cls" );
+
 			mMenu->ShowTitle();
 			mMenu->ShowDescription();
 			mMenu->ShowMenu();
@@ -30,15 +32,11 @@ namespace r2
 
 			switch( mMenu->Do( input ) )
 			{
-			case eTestEndAction::None:
-				system( "cls" );
-				break;
+			//case eTestEndAction::None: break;
 
 			case eTestEndAction::Pause:
 				std::cout << r2::linefeed;
-				system( "pause" );
-
-				system( "cls" );
+				system( "pause" );				
 				break;
 
 			case eTestEndAction::Exit:
