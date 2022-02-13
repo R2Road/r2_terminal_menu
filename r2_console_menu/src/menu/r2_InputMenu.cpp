@@ -3,6 +3,7 @@
 
 #include "base/r2_Director.h"
 #include "base/r2_eTestEndAction.h"
+
 #include "r2_RootMenu.h"
 
 #include "test/window_input_test.h"
@@ -28,7 +29,7 @@ namespace r2
 				, []()->const char* { return "Return To Root"; }
 				, [&director]()->eTestEndAction
 				{
-					director.Setup( r2::RootMenu::Create( director ) );
+					director.Setup( RootMenu::Create( director ) );
 					return eTestEndAction::None;
 				}
 			);
