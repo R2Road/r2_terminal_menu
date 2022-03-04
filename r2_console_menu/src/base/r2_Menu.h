@@ -5,7 +5,7 @@
 #include <string_view>
 #include <vector>
 
-namespace r2
+namespace r2cm
 {
 	enum class eTestEndAction; 
 
@@ -21,7 +21,7 @@ namespace r2
 			ItemInfo(
 				const char key_code
 				, const std::function<const char*( )> name_function
-				, const std::function<const r2::eTestEndAction()> do_function
+				, const std::function<const r2cm::eTestEndAction()> do_function
 			) :
 				KeyCode( key_code )
 				, NameFunction( name_function )
@@ -30,7 +30,7 @@ namespace r2
 
 			char KeyCode;
 			std::function<const char*()> NameFunction;
-			std::function<const r2::eTestEndAction()> DoFunction;
+			std::function<const r2cm::eTestEndAction()> DoFunction;
 		};
 
 		using ItemContainerT = std::vector<ItemInfo>;
@@ -46,7 +46,7 @@ namespace r2
 		eTestEndAction Do( const int key_code );
 
 		void AddItem( const char key_code, iItem& item_obj );
-		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2::eTestEndAction()> func_do );
+		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eTestEndAction()> func_do );
 		void AddLineFeed();
 		void AddSplit();
 

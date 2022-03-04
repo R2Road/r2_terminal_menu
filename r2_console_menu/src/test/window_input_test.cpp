@@ -14,16 +14,16 @@
 
 namespace window_input_test
 {
-	r2::iItem::TitleFuncT TestKeyboardInputCollector::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT TestKeyboardInputCollector::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Keyboard Input Collector";
 		};
 	}
-	r2::iItem::DoFuncT TestKeyboardInputCollector::GetDoFunction()
+	r2cm::iItem::DoFuncT TestKeyboardInputCollector::GetDoFunction()
 	{
-		return []()->r2::eTestEndAction
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 			std::cout << "[ESC] Exit" << r2::linefeed;
@@ -103,7 +103,7 @@ namespace window_input_test
 				}
 			}
 
-			return r2::eTestEndAction::Pause;
+			return r2cm::eTestEndAction::Pause;
 		};
 	}
 }

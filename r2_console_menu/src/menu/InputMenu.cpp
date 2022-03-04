@@ -8,9 +8,9 @@
 
 #include "test/window_input_test.h"
 
-r2::MenuUp InputMenu::Create( r2::Director& director )
+r2cm::MenuUp InputMenu::Create( r2cm::Director& director )
 {
-	r2::MenuUp ret( new ( std::nothrow ) r2::Menu(
+	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
 		director
 		, GetTitle()
 	) );
@@ -25,10 +25,10 @@ r2::MenuUp InputMenu::Create( r2::Director& director )
 		ret->AddItem(
 			27
 			, []()->const char* { return "Return To Root"; }
-			, [&director]()->r2::eTestEndAction
+			, [&director]()->r2cm::eTestEndAction
 			{
 				director.Setup( RootMenu::Create( director ) );
-				return r2::eTestEndAction::None;
+				return r2cm::eTestEndAction::None;
 			}
 		);
 	}

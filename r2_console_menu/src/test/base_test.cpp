@@ -7,16 +7,16 @@
 
 namespace base_test
 {
-	r2::iItem::TitleFuncT TestEndAction_None::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT TestEndAction_None::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_None";
 		};
 	}
-	r2::iItem::DoFuncT TestEndAction_None::GetDoFunction()
+	r2cm::iItem::DoFuncT TestEndAction_None::GetDoFunction()
 	{
-		return []()->r2::eTestEndAction
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 
@@ -30,22 +30,22 @@ namespace base_test
 
 			std::cout << r2::split;
 
-			return r2::eTestEndAction::None;
+			return r2cm::eTestEndAction::None;
 		};
 	}
 
 
 
-	r2::iItem::TitleFuncT TestEndAction_Pause::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT TestEndAction_Pause::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Pause";
 		};
 	}
-	r2::iItem::DoFuncT TestEndAction_Pause::GetDoFunction()
+	r2cm::iItem::DoFuncT TestEndAction_Pause::GetDoFunction()
 	{
-		return []()->r2::eTestEndAction
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 
@@ -59,22 +59,22 @@ namespace base_test
 
 			std::cout << r2::split;
 
-			return r2::eTestEndAction::Pause;
+			return r2cm::eTestEndAction::Pause;
 		};
 	}
 
 
 
-	r2::iItem::TitleFuncT TestEndAction_Exit::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT TestEndAction_Exit::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Exit";
 		};
 	}
-	r2::iItem::DoFuncT TestEndAction_Exit::GetDoFunction()
+	r2cm::iItem::DoFuncT TestEndAction_Exit::GetDoFunction()
 	{
-		return []()->r2::eTestEndAction
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
 
@@ -88,7 +88,7 @@ namespace base_test
 
 			std::cout << r2::split;
 
-			return r2::eTestEndAction::Exit;
+			return r2cm::eTestEndAction::Exit;
 		};
 	}
 }

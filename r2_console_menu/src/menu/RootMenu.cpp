@@ -11,9 +11,9 @@
 #include "test/inspector_test.h"
 #include "test/key_test.h"
 
-r2::MenuUp RootMenu::Create( r2::Director& director )
+r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {
-	r2::MenuUp ret( new ( std::nothrow ) r2::Menu(
+	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
 		director
 		, GetTitle(),
 				"> Inprogress : BlaBla"
@@ -33,10 +33,10 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 		ret->AddItem(
 			'w'
 			, []()->const char* { return InputMenu::GetTitle(); }
-			, [&director]()->r2::eTestEndAction
+			, [&director]()->r2cm::eTestEndAction
 			{
 				director.Setup( InputMenu::Create( director ) );
-				return r2::eTestEndAction::None;
+				return r2cm::eTestEndAction::None;
 			}
 		);
 
@@ -57,7 +57,7 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 		ret->AddItem(
 			27
 			, []()->const char* { return "Exit"; }
-			, []()->r2::eTestEndAction { return r2::eTestEndAction::Exit; }
+			, []()->r2cm::eTestEndAction { return r2cm::eTestEndAction::Exit; }
 		);
 	}
 
