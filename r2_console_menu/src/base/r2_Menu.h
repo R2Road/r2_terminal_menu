@@ -33,7 +33,7 @@ namespace r2
 			std::function<const r2::eTestEndAction()> DoFunction;
 		};
 
-		using TestContainerT = std::vector<ItemInfo>;
+		using ItemContainerT = std::vector<ItemInfo>;
 
 	public:
 		Menu( Director& director, const char* title_string, const char* description_string = "" );
@@ -55,6 +55,6 @@ namespace r2
 		std::string_view mTitleString;
 		std::string_view mDescriptionString;
 
-		TestContainerT mTests;
+		ItemContainerT mTests;
 	};
 }
