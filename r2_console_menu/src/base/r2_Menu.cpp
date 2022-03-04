@@ -108,15 +108,15 @@ namespace r2
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
-		static const std::function<const r2::eTestEndAction()> func_test = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
+		static const std::function<const r2::eTestEndAction()> func_do = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
 
-		mItemContainer.push_back( { KeyCode4LineFeed, func_title, func_test } );
+		mItemContainer.push_back( { KeyCode4LineFeed, func_title, func_do } );
 	}
 	void Menu::AddSplit()
 	{
 		static const std::function<const char*( )> func_title = []()->const char* { return ""; };
-		static const std::function<const r2::eTestEndAction()> func_test = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
+		static const std::function<const r2::eTestEndAction()> func_do = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
 
-		mItemContainer.push_back( { KeyCode4Split, func_title, func_test } );
+		mItemContainer.push_back( { KeyCode4Split, func_title, func_do } );
 	}
 }
