@@ -3,7 +3,7 @@
 
 #include <conio.h> // _getch
 
-#include "base/r2_eTestEndAction.h"
+#include "base/r2cm_eTestEndAction.h"
 
 namespace base_test
 {

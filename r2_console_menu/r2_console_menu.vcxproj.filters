@@ -3,12 +3,6 @@
   <ItemGroup>
     <ClCompile Include="src\pch.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\base\r2_Director.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
-    <ClCompile Include="src\base\r2_Menu.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2\r2_PointInt.cpp">
       <Filter>r2</Filter>
     </ClCompile>
@@ -54,15 +48,15 @@
     <ClCompile Include="src\menu\InputMenu.cpp">
       <Filter>menu</Filter>
     </ClCompile>
+    <ClCompile Include="src\base\r2cm_Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\r2cm_Menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\base\r2_Director.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="src\base\r2_Menu.h">
-      <Filter>base</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2\r2_Point.h">
       <Filter>r2</Filter>
     </ClInclude>
@@ -84,9 +78,6 @@
     <ClInclude Include="src\r2\r2_Timer_Float.h">
       <Filter>r2</Filter>
     </ClInclude>
-    <ClInclude Include="src\base\r2_Singleton.h">
-      <Filter>base</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\key_test.h">
       <Filter>test</Filter>
     </ClInclude>
@@ -96,17 +87,11 @@
     <ClInclude Include="src\r2\r2_FPSTimer.h">
       <Filter>r2</Filter>
     </ClInclude>
-    <ClInclude Include="src\base\r2_Inspector.h">
-      <Filter>base</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\base_test.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\inspector_test.h">
       <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\base\r2_eTestEndAction.h">
-      <Filter>base</Filter>
     </ClInclude>
     <ClInclude Include="src\input\r2input_Constant.h">
       <Filter>input</Filter>
@@ -126,7 +111,22 @@
     <ClInclude Include="src\menu\InputMenu.h">
       <Filter>menu</Filter>
     </ClInclude>
-    <ClInclude Include="src\base\r2_iItem.h">
+    <ClInclude Include="src\base\r2cm_Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2cm_eTestEndAction.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2cm_iItem.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2cm_Menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Inspector.h">
       <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>

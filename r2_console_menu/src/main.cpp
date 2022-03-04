@@ -5,7 +5,7 @@
 	#include <vld.h>
 #endif
 
-#include "base/r2_Director.h"
+#include "base/r2cm_Director.h"
 #include "menu/RootMenu.h"
 
 int main()
