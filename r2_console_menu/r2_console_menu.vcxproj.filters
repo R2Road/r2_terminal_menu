@@ -15,20 +15,8 @@
     <ClCompile Include="src\r2\r2_Timer_Float.cpp">
       <Filter>r2</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\key_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\window_input_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2\r2_FPSTimer.cpp">
       <Filter>r2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\base_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\inspector_test.cpp">
-      <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\input\r2input_Constant.cpp">
       <Filter>input</Filter>
@@ -38,9 +26,6 @@
     </ClCompile>
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
       <Filter>input</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\empty_test.cpp">
-      <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\menu\RootMenu.cpp">
       <Filter>menu</Filter>
@@ -53,6 +38,21 @@
     </ClCompile>
     <ClCompile Include="src\base\r2cm_Menu.cpp">
       <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\base_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\empty_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\inspector_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\key_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\window_input_test.cpp">
+      <Filter>test_r2cm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,20 +78,8 @@
     <ClInclude Include="src\r2\r2_Timer_Float.h">
       <Filter>r2</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\key_test.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\window_input_test.h">
-      <Filter>test</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2\r2_FPSTimer.h">
       <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\base_test.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\inspector_test.h">
-      <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\input\r2input_Constant.h">
       <Filter>input</Filter>
@@ -101,9 +89,6 @@
     </ClInclude>
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
       <Filter>input</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\empty_test.h">
-      <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\menu\RootMenu.h">
       <Filter>menu</Filter>
@@ -129,6 +114,21 @@
     <ClInclude Include="src\r2\r2_Inspector.h">
       <Filter>r2</Filter>
     </ClInclude>
+    <ClInclude Include="src\test_r2cm\base_test.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\empty_test.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\inspector_test.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\key_test.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\window_input_test.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="base">
@@ -140,11 +140,11 @@
     <Filter Include="menu">
       <UniqueIdentifier>{bdf2ef85-8e3c-425d-b117-38413fcaa3ef}</UniqueIdentifier>
     </Filter>
-    <Filter Include="test">
-      <UniqueIdentifier>{f29fbb7d-c72b-44ef-8300-0bd9360d5e62}</UniqueIdentifier>
-    </Filter>
     <Filter Include="input">
       <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_r2cm">
+      <UniqueIdentifier>{034bdfbb-95cf-4545-9d78-fea3afa17c7c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -6,10 +6,10 @@
 
 #include "menu/InputMenu.h"
 
-#include "test/base_test.h"
-#include "test/empty_test.h"
-#include "test/inspector_test.h"
-#include "test/key_test.h"
+#include "test_r2cm/base_test.h"
+#include "test_r2cm/empty_test.h"
+#include "test_r2cm/inspector_test.h"
+#include "test_r2cm/key_test.h"
 
 r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {

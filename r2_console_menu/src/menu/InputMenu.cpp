@@ -6,7 +6,7 @@
 
 #include "RootMenu.h"
 
-#include "test/window_input_test.h"
+#include "test_r2cm/window_input_test.h"
 
 r2cm::MenuUp InputMenu::Create( r2cm::Director& director )
 {

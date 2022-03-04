@@ -38,11 +38,11 @@
     <ClCompile Include="src\r2\r2_RectInt.cpp" />
     <ClCompile Include="src\r2\r2_Size.cpp" />
     <ClCompile Include="src\r2\r2_Timer_Float.cpp" />
-    <ClCompile Include="src\test\base_test.cpp" />
-    <ClCompile Include="src\test\empty_test.cpp" />
-    <ClCompile Include="src\test\inspector_test.cpp" />
-    <ClCompile Include="src\test\key_test.cpp" />
-    <ClCompile Include="src\test\window_input_test.cpp" />
+    <ClCompile Include="src\test_r2cm\base_test.cpp" />
+    <ClCompile Include="src\test_r2cm\empty_test.cpp" />
+    <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
+    <ClCompile Include="src\test_r2cm\key_test.cpp" />
+    <ClCompile Include="src\test_r2cm\window_input_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\base\r2cm_Director.h" />
@@ -65,11 +65,11 @@
     <ClInclude Include="src\r2\r2_Size.h" />
     <ClInclude Include="src\r2\r2_Timer.h" />
     <ClInclude Include="src\r2\r2_Timer_Float.h" />
-    <ClInclude Include="src\test\base_test.h" />
-    <ClInclude Include="src\test\empty_test.h" />
-    <ClInclude Include="src\test\inspector_test.h" />
-    <ClInclude Include="src\test\key_test.h" />
-    <ClInclude Include="src\test\window_input_test.h" />
+    <ClInclude Include="src\test_r2cm\base_test.h" />
+    <ClInclude Include="src\test_r2cm\empty_test.h" />
+    <ClInclude Include="src\test_r2cm\inspector_test.h" />
+    <ClInclude Include="src\test_r2cm\key_test.h" />
+    <ClInclude Include="src\test_r2cm\window_input_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
