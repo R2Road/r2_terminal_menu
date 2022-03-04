@@ -16,13 +16,13 @@ r2::MenuUp InputMenu::Create( r2::Director& director )
 	) );
 
 	{
-		ret->AddChild( '1', window_input_test::TestKeyboardInputCollector::GetInstance() );
+		ret->AddItem( '1', window_input_test::TestKeyboardInputCollector::GetInstance() );
 
 
 		ret->AddSplit();
 
 
-		ret->AddChild(
+		ret->AddItem(
 			27
 			, []()->const char* { return "Return To Root"; }
 			, [&director]()->r2::eTestEndAction

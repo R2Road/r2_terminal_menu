@@ -23,14 +23,14 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 	) );
 
 	{
-		ret->AddChild( '1', empty_test::Basic::GetInstance() );
-		ret->AddChild( '2', empty_test::Basic::GetInstance() );
-		ret->AddChild( '3', empty_test::Basic::GetInstance() );
+		ret->AddItem( '1', empty_test::Basic::GetInstance() );
+		ret->AddItem( '2', empty_test::Basic::GetInstance() );
+		ret->AddItem( '3', empty_test::Basic::GetInstance() );
 
 		ret->AddLineFeed();
 
-		ret->AddChild( 'q', key_test::Basic::GetInstance() );
-		ret->AddChild(
+		ret->AddItem( 'q', key_test::Basic::GetInstance() );
+		ret->AddItem(
 			'w'
 			, []()->const char* { return InputMenu::GetTitle(); }
 			, [&director]()->r2::eTestEndAction
@@ -42,19 +42,19 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 
 		ret->AddLineFeed();
 
-		ret->AddChild( 'a', inspector_test::Basic::GetInstance() );
+		ret->AddItem( 'a', inspector_test::Basic::GetInstance() );
 
 		ret->AddLineFeed();
 
-		ret->AddChild( 'z', base_test::TestEndAction_None::GetInstance() );
-		ret->AddChild( 'x', base_test::TestEndAction_Pause::GetInstance() );
-		ret->AddChild( 'c', base_test::TestEndAction_Exit::GetInstance() );
+		ret->AddItem( 'z', base_test::TestEndAction_None::GetInstance() );
+		ret->AddItem( 'x', base_test::TestEndAction_Pause::GetInstance() );
+		ret->AddItem( 'c', base_test::TestEndAction_Exit::GetInstance() );
 
 
 		ret->AddSplit();
 
 
-		ret->AddChild(
+		ret->AddItem(
 			27
 			, []()->const char* { return "Exit"; }
 			, []()->r2::eTestEndAction { return r2::eTestEndAction::Exit; }

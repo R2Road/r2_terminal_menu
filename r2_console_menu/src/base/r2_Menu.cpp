@@ -97,11 +97,11 @@ namespace r2
 		return eTestEndAction::Pause;
 	}
 
-	void Menu::AddChild( const char key_code, iItem& test_obj )
+	void Menu::AddItem( const char key_code, iItem& test_obj )
 	{
 		mItemContainer.emplace_back( key_code, test_obj.GetTitleFunction(), test_obj.GetDoFunction() );
 	}
-	void Menu::AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2::eTestEndAction()> func_test )
+	void Menu::AddItem( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2::eTestEndAction()> func_test )
 	{
 		mItemContainer.emplace_back( key_code, func_title, func_test );
 	}
