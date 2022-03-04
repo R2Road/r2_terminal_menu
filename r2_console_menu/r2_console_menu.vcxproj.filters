@@ -27,12 +27,6 @@
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
       <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="src\menu\RootMenu.cpp">
-      <Filter>menu</Filter>
-    </ClCompile>
-    <ClCompile Include="src\menu\InputMenu.cpp">
-      <Filter>menu</Filter>
-    </ClCompile>
     <ClCompile Include="src\base\r2cm_Director.cpp">
       <Filter>base</Filter>
     </ClCompile>
@@ -52,6 +46,12 @@
       <Filter>test_r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\test_r2cm\window_input_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\InputMenu.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_r2cm\RootMenu.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,12 +90,6 @@
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
       <Filter>input</Filter>
     </ClInclude>
-    <ClInclude Include="src\menu\RootMenu.h">
-      <Filter>menu</Filter>
-    </ClInclude>
-    <ClInclude Include="src\menu\InputMenu.h">
-      <Filter>menu</Filter>
-    </ClInclude>
     <ClInclude Include="src\base\r2cm_Director.h">
       <Filter>base</Filter>
     </ClInclude>
@@ -129,6 +123,12 @@
     <ClInclude Include="src\test_r2cm\window_input_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
+    <ClInclude Include="src\test_r2cm\InputMenu.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\RootMenu.h">
+      <Filter>test_r2cm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="base">
@@ -136,9 +136,6 @@
     </Filter>
     <Filter Include="r2">
       <UniqueIdentifier>{9759d01a-9cf9-4185-9299-841c8c4988b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="menu">
-      <UniqueIdentifier>{bdf2ef85-8e3c-425d-b117-38413fcaa3ef}</UniqueIdentifier>
     </Filter>
     <Filter Include="input">
       <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>

@@ -24,8 +24,6 @@
     <ClCompile Include="src\input\r2input_Constant.cpp" />
     <ClCompile Include="src\input\r2input_KeyboardInputCollector.cpp" />
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp" />
-    <ClCompile Include="src\menu\InputMenu.cpp" />
-    <ClCompile Include="src\menu\RootMenu.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -40,8 +38,10 @@
     <ClCompile Include="src\r2\r2_Timer_Float.cpp" />
     <ClCompile Include="src\test_r2cm\base_test.cpp" />
     <ClCompile Include="src\test_r2cm\empty_test.cpp" />
+    <ClCompile Include="src\test_r2cm\InputMenu.cpp" />
     <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
     <ClCompile Include="src\test_r2cm\key_test.cpp" />
+    <ClCompile Include="src\test_r2cm\RootMenu.cpp" />
     <ClCompile Include="src\test_r2cm\window_input_test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -52,8 +52,6 @@
     <ClInclude Include="src\input\r2input_Constant.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputCollector.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h" />
-    <ClInclude Include="src\menu\InputMenu.h" />
-    <ClInclude Include="src\menu\RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\r2\r2_FPSTimer.h" />
     <ClInclude Include="src\r2\r2_Inspector.h" />
@@ -67,8 +65,10 @@
     <ClInclude Include="src\r2\r2_Timer_Float.h" />
     <ClInclude Include="src\test_r2cm\base_test.h" />
     <ClInclude Include="src\test_r2cm\empty_test.h" />
+    <ClInclude Include="src\test_r2cm\InputMenu.h" />
     <ClInclude Include="src\test_r2cm\inspector_test.h" />
     <ClInclude Include="src\test_r2cm\key_test.h" />
+    <ClInclude Include="src\test_r2cm\RootMenu.h" />
     <ClInclude Include="src\test_r2cm\window_input_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -4,7 +4,7 @@
 #include "base/r2cm_Director.h"
 #include "base/r2cm_eTestEndAction.h"
 
-#include "menu/InputMenu.h"
+#include "test_r2cm/InputMenu.h"
 
 #include "test_r2cm/base_test.h"
 #include "test_r2cm/empty_test.h"

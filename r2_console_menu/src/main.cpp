@@ -6,7 +6,7 @@
 #endif
 
 #include "base/r2cm_Director.h"
-#include "menu/RootMenu.h"
+#include "test_r2cm/RootMenu.h"
 
 int main()
 {
