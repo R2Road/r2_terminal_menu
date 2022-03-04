@@ -9,7 +9,7 @@ namespace r2
 {
 	enum class eTestEndAction; 
 
-	class iTest;
+	class iItem;
 	class Director;
 
 	using MenuUp = std::unique_ptr<class Menu>;
@@ -45,7 +45,7 @@ namespace r2
 
 		eTestEndAction Do( const int key_code );
 
-		void AddChild( const char key_code, iTest& test_obj );
+		void AddChild( const char key_code, iItem& test_obj );
 		void AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2::eTestEndAction()> func_test );
 		void AddLineFeed();
 		void AddSplit();
