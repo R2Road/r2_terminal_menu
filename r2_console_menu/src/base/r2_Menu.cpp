@@ -18,7 +18,7 @@ namespace r2
 		mDirector( director )
 		, mTitleString( title_string )
 		, mDescriptionString( description_string )
-		, mTests()
+		, mItemContainer()
 	{}
 
 	void Menu::ShowTitle() const
@@ -42,7 +42,7 @@ namespace r2
 	{
 		std::cout << "+ Menu" << r2::linefeed2;
 
-		for( const auto t : mTests )
+		for( const auto t : mItemContainer )
 		{
 			//
 			// Key
@@ -86,7 +86,7 @@ namespace r2
 
 	eTestEndAction Menu::Do( const int key_code )
 	{
-		for( const auto t : mTests )
+		for( const auto t : mItemContainer )
 		{
 			if( key_code == t.KeyCode )
 			{
@@ -99,24 +99,24 @@ namespace r2
 
 	void Menu::AddChild( const char key_code, iItem& test_obj )
 	{
-		mTests.emplace_back( key_code, test_obj.GetTitleFunction(), test_obj.GetDoFunction() );
+		mItemContainer.emplace_back( key_code, test_obj.GetTitleFunction(), test_obj.GetDoFunction() );
 	}
 	void Menu::AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2::eTestEndAction()> func_test )
 	{
-		mTests.emplace_back( key_code, func_title, func_test );
+		mItemContainer.emplace_back( key_code, func_title, func_test );
 	}
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
 		static const std::function<const r2::eTestEndAction()> func_test = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
 
-		mTests.push_back( { KeyCode4LineFeed, func_title, func_test } );
+		mItemContainer.push_back( { KeyCode4LineFeed, func_title, func_test } );
 	}
 	void Menu::AddSplit()
 	{
 		static const std::function<const char*( )> func_title = []()->const char* { return ""; };
 		static const std::function<const r2::eTestEndAction()> func_test = []()->const r2::eTestEndAction { return r2::eTestEndAction::Pause; };
 
-		mTests.push_back( { KeyCode4Split, func_title, func_test } );
+		mItemContainer.push_back( { KeyCode4Split, func_title, func_test } );
 	}
 }

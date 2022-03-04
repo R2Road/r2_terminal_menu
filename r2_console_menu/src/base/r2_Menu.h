@@ -55,6 +55,6 @@ namespace r2
 		std::string_view mTitleString;
 		std::string_view mDescriptionString;
 
-		ItemContainerT mTests;
+		ItemContainerT mItemContainer;
 	};
 }
