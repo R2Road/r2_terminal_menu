@@ -4,7 +4,7 @@
 #include <cctype> // std::toupper
 
 #include "r2_eTestEndAction.h"
-#include "r2_iTest.h"
+#include "r2_iItem.h"
 
 namespace
 {
