@@ -16,9 +16,9 @@ namespace r2
 	class Menu
 	{
 	private:
-		struct TestInfo
+		struct ItemInfo
 		{
-			TestInfo(
+			ItemInfo(
 				const char key_code
 				, const std::function<const char*( )> name_function
 				, const std::function<const r2::eTestEndAction()> do_function
@@ -33,7 +33,7 @@ namespace r2
 			std::function<const r2::eTestEndAction()> DoFunction;
 		};
 
-		using TestContainerT = std::vector<TestInfo>;
+		using TestContainerT = std::vector<ItemInfo>;
 
 	public:
 		Menu( Director& director, const char* title_string, const char* description_string = "" );
