@@ -11,7 +11,7 @@ namespace r2cm
 
 		void Setup( MenuUp menu );
 
-		void Update();
+		void Run();
 
 	private:
 		MenuUp mMenu;

@@ -39,7 +39,7 @@ int main()
 	//
 	// Process
 	//
-	director.Update();
+	director.Run();
 
 	return 0;
 }

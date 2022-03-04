@@ -16,7 +16,7 @@ namespace r2cm
 		mMenu = std::move( menu );
 	}
 
-	void Director::Update()
+	void Director::Run()
 	{
 		int input = 0;
 		while( true )
