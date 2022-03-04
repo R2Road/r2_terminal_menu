@@ -86,11 +86,11 @@ namespace r2
 
 	eTestEndAction Menu::Do( const int key_code )
 	{
-		for( const auto t : mItemContainer )
+		for( const auto& i : mItemContainer )
 		{
-			if( key_code == t.KeyCode )
+			if( key_code == i.KeyCode )
 			{
-				return t.DoFunction();
+				return i.DoFunction();
 			}
 		}
 
