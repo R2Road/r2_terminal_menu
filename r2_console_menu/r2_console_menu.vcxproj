@@ -47,10 +47,8 @@
   <ItemGroup>
     <ClInclude Include="src\base\r2cm_Director.h" />
     <ClInclude Include="src\base\r2cm_eTestEndAction.h" />
-    <ClInclude Include="src\base\r2_Inspector.h" />
     <ClInclude Include="src\base\r2cm_iItem.h" />
     <ClInclude Include="src\base\r2cm_Menu.h" />
-    <ClInclude Include="src\base\r2_Singleton.h" />
     <ClInclude Include="src\input\r2input_Constant.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputCollector.h" />
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h" />
@@ -58,10 +56,12 @@
     <ClInclude Include="src\menu\RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\r2\r2_FPSTimer.h" />
+    <ClInclude Include="src\r2\r2_Inspector.h" />
     <ClInclude Include="src\r2\r2_Point.h" />
     <ClInclude Include="src\r2\r2_PointInt.h" />
     <ClInclude Include="src\r2\r2_Rect.h" />
     <ClInclude Include="src\r2\r2_RectInt.h" />
+    <ClInclude Include="src\r2\r2_Singleton.h" />
     <ClInclude Include="src\r2\r2_Size.h" />
     <ClInclude Include="src\r2\r2_Timer.h" />
     <ClInclude Include="src\r2\r2_Timer_Float.h" />
