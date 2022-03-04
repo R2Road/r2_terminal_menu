@@ -8,7 +8,7 @@ namespace window_input_test
 	class TestKeyboardInputCollector : public r2::iItem, public r2::SingleTon<TestKeyboardInputCollector>
 	{
 	public:
-		TitleFunc GetTitleFunction() const override;
-		DoFunc GetDoFunction() override;
+		TitleFuncT GetTitleFunction() const override;
+		DoFuncT GetDoFunction() override;
 	};
 }

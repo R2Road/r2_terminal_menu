@@ -7,14 +7,14 @@
 
 namespace key_test
 {
-	r2::iItem::TitleFunc Basic::GetTitleFunction() const
+	r2::iItem::TitleFuncT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Key : Basic";
 		};
 	}
-	r2::iItem::DoFunc Basic::GetDoFunction()
+	r2::iItem::DoFuncT Basic::GetDoFunction()
 	{
 		return []()->r2::eTestEndAction
 		{

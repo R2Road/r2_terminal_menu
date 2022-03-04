@@ -7,14 +7,14 @@
 
 namespace empty_test
 {
-	r2::iItem::TitleFunc Basic::GetTitleFunction() const
+	r2::iItem::TitleFuncT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Empty Test";
 		};
 	}
-	r2::iItem::DoFunc Basic::GetDoFunction()
+	r2::iItem::DoFuncT Basic::GetDoFunction()
 	{
 		return []()->r2::eTestEndAction
 		{
