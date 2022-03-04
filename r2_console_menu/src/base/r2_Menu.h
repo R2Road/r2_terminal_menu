@@ -21,16 +21,16 @@ namespace r2
 			TestInfo(
 				const char key_code
 				, const std::function<const char*( )> name_function
-				, const std::function<const r2::eTestEndAction()> test_function
+				, const std::function<const r2::eTestEndAction()> do_function
 			) :
 				KeyCode( key_code )
 				, NameFunction( name_function )
-				, TestFunction( test_function )
+				, DoFunction( do_function )
 			{}
 
 			char KeyCode;
 			std::function<const char*()> NameFunction;
-			std::function<const r2::eTestEndAction()> TestFunction;
+			std::function<const r2::eTestEndAction()> DoFunction;
 		};
 
 		using TestContainerT = std::vector<TestInfo>;

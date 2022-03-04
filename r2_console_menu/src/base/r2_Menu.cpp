@@ -90,7 +90,7 @@ namespace r2
 		{
 			if( key_code == t.KeyCode )
 			{
-				return t.TestFunction();
+				return t.DoFunction();
 			}
 		}
 
