@@ -64,6 +64,14 @@ namespace inspector_test
 
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
+
+				std::cout << r2::linefeed;
+
+				int i = 0;
+				std::cout << "int i = 0;" << r2::linefeed;
+				EXPECT_EQ( i, 0 );
+				DO_CODE( i = 1 );
+				EXPECT_EQ( i, 1 );
 			}
 #pragma warning( pop )
 
