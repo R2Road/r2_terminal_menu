@@ -67,11 +67,12 @@ namespace inspector_test
 
 				std::cout << r2::linefeed;
 
-				int i = 0;
-				std::cout << "int i = 0;" << r2::linefeed;
+				DECLARATION_MAIN( int i = 0 );
 				EXPECT_EQ( i, 0 );
-				DO_CODE( i = 1 );
-				EXPECT_EQ( i, 1 );
+				PROCESS_MAIN( i = 1 );
+				PROCESS_SUB( i = 2 );
+				EXPECT_NE( i, 1 );
+				EXPECT_EQ( i, 2 );
 			}
 #pragma warning( pop )
 
