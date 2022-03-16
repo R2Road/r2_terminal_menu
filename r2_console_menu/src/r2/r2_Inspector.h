@@ -104,12 +104,32 @@ do {																											\
 	}																											\
 } while( false )
 
-#define	DO_CODE( condition )																\
+//
+// Important Process Code
+//
+#define	PROCESS_MAIN( condition )															\
 do {																						\
-	( condition );																			\
-	printf( "\x1B[96m" "[DO]" "\033[0m" " %s\n", #condition );								\
+	{ condition; }																			\
+	printf( "\x1B[96m" "[PROCESS]" "\033[0m" " %s\n", #condition );							\
+} while( false )
+//
+// Sub Process Code
+//
+#define	PROCESS_SUB( condition )															\
+do {																						\
+	{ condition; }																			\
+	printf( "\x1B[90m" "[PROCESS]" " %s" "\033[0m" "\n", #condition );						\
 } while( false )
 
-#define	DECLARATION_CODE( condition )														\
+//
+// Important Declaration Code
+//
+#define	DECLARATION_MAIN( condition )														\
 condition;																					\
 printf( "\x1B[93m" "[DECLARATION]" "\033[0m" " %s\n", #condition );
+//
+// Sub Declaration Code
+//
+#define	DECLARATION_SUB( condition )														\
+condition;																					\
+printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
