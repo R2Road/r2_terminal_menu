@@ -43,6 +43,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddLineFeed();
 
 		ret->AddItem( 'a', inspector_test::Basic::GetInstance() );
+		ret->AddItem( 's', inspector_test::ShowFile::GetInstance() );
 
 		ret->AddLineFeed();
 

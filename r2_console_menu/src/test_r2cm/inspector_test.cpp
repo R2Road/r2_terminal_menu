@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "inspector_test.h"
 
-#include <conio.h> // _getch
+#include <filesystem>
 
 #include "base/r2cm_eTestEndAction.h"
 #include "r2/r2_Inspector.h"
@@ -75,6 +75,43 @@ namespace inspector_test
 				EXPECT_EQ( i, 2 );
 			}
 #pragma warning( pop )
+
+			std::cout << r2::split;
+
+			return r2cm::eTestEndAction::Pause;
+		};
+	}
+
+
+
+	r2cm::iItem::TitleFuncT ShowFile::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : ShowFile";
+		};
+	}
+	r2cm::iItem::DoFuncT ShowFile::GetDoFunction()
+	{
+		return []()->r2cm::eTestEndAction
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "[ESC] End" << r2::linefeed;
+
+			std::cout << r2::split;
+
+			DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+			PROCESS_MAIN( p.append( "resources" ) );
+			PROCESS_MAIN( p.append( "show_code_test_01.lua" ) );
+			std::cout << "> " << p << r2::linefeed2;
+
+			EXPECT_TRUE( std::filesystem::exists( p ) );
+
+			std::cout << r2::split;
+
+			{
+				SHOW_FILE( p.c_str() );
+			}
 
 			std::cout << r2::split;
 

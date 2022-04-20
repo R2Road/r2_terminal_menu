@@ -32,6 +32,7 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\r2\r2_FPSTimer.cpp" />
+    <ClCompile Include="src\r2\r2_Inspector.cpp" />
     <ClCompile Include="src\r2\r2_PointInt.cpp" />
     <ClCompile Include="src\r2\r2_RectInt.cpp" />
     <ClCompile Include="src\r2\r2_Size.cpp" />
