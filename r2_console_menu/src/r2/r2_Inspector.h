@@ -137,4 +137,4 @@ printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
 //
 //
 //
-void SHOW_FILE( const wchar_t* const path );
+void SHOW_FILE( const char* const path );

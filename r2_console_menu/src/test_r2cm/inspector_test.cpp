@@ -110,7 +110,7 @@ namespace inspector_test
 			std::cout << r2::split;
 
 			{
-				SHOW_FILE( p.c_str() );
+				SHOW_FILE( p.string().c_str() );
 			}
 
 			std::cout << r2::split;
