@@ -14,12 +14,13 @@ void SHOW_FILE( const char* const path )
 	while( ifs )
 	{
 		ifs.getline( buffer, 100 );
-		printf( "%s", buffer );
 
 		if( ifs )
 		{
-			printf( "\n" );
+			printf( "\t" "%s" "\n", buffer );
 		}
 	}
 	ifs.close();
+
+	printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 }
