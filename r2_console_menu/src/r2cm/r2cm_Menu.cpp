@@ -8,9 +8,9 @@
 
 namespace
 {
-	const char KeyCode4LineFeed = 64; // @
-	const char KeyCode4Split = 42; // *
-	const char KeyCode4Message = '('; // *
+	const char KeyCode4LineFeed = '@';
+	const char KeyCode4Split = '*';
+	const char KeyCode4Message = '(';
 }
 
 namespace r2cm
