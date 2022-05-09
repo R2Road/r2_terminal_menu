@@ -55,12 +55,12 @@
     <ClInclude Include="src\r2cm\r2cm_iItem.h" />
     <ClInclude Include="src\r2cm\r2cm_Inspector.h" />
     <ClInclude Include="src\r2cm\r2cm_Menu.h" />
+    <ClInclude Include="src\r2cm\r2cm_Singleton.h" />
     <ClInclude Include="src\r2\r2_FPSTimer.h" />
     <ClInclude Include="src\r2\r2_Point.h" />
     <ClInclude Include="src\r2\r2_PointInt.h" />
     <ClInclude Include="src\r2\r2_Rect.h" />
     <ClInclude Include="src\r2\r2_RectInt.h" />
-    <ClInclude Include="src\r2\r2_Singleton.h" />
     <ClInclude Include="src\r2\r2_Size.h" />
     <ClInclude Include="src\r2\r2_Timer.h" />
     <ClInclude Include="src\r2\r2_Timer_Float.h" />
