@@ -135,6 +135,15 @@ condition;																					\
 printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
 
 //
+// Output Value
+//
+#define	OUTPUT_MAIN( condition )															\
+do {																						\
+	printf( "[OUTPUT]" " %s" "\n", #condition );											\
+	std::cout << "\t> " << condition << "\n";												\
+} while( false )
+
+//
 //
 //
 void SHOW_FILE( const char* const path );

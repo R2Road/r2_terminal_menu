@@ -73,6 +73,10 @@ namespace inspector_test
 				PROCESS_SUB( i = 2 );
 				EXPECT_NE( i, 1 );
 				EXPECT_EQ( i, 2 );
+
+				std::cout << r2cm::linefeed;
+
+				OUTPUT_MAIN( 1234 * 5678 );
 			}
 #pragma warning( pop )
 
