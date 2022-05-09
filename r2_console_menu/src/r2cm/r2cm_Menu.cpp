@@ -46,7 +46,7 @@ namespace r2cm
 		for( const auto t : mItemContainer )
 		{
 			//
-			// Key
+			// Function Key
 			//
 			if( KeyCode4Split == t.KeyCode ) // *
 			{
@@ -64,6 +64,9 @@ namespace r2cm
 				continue;
 			}
 
+			//
+			// Key
+			//
 			std::cout << "[";
 
 			if( 27 == t.KeyCode ) // ESC
