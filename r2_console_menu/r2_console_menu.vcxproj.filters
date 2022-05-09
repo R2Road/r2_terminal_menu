@@ -27,12 +27,6 @@
     <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
       <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="src\base\r2cm_Director.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
-    <ClCompile Include="src\base\r2cm_Menu.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
     <ClCompile Include="src\test_r2cm\base_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
@@ -56,6 +50,12 @@
     </ClCompile>
     <ClCompile Include="src\r2\r2_Inspector.cpp">
       <Filter>r2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_Menu.cpp">
+      <Filter>base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,18 +93,6 @@
     <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
       <Filter>input</Filter>
     </ClInclude>
-    <ClInclude Include="src\base\r2cm_Director.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="src\base\r2cm_eTestEndAction.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="src\base\r2cm_iItem.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="src\base\r2cm_Menu.h">
-      <Filter>base</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2\r2_Singleton.h">
       <Filter>r2</Filter>
     </ClInclude>
@@ -131,6 +119,18 @@
     </ClInclude>
     <ClInclude Include="src\test_r2cm\RootMenu.h">
       <Filter>test_r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_eTestEndAction.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_iItem.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_Menu.h">
+      <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
