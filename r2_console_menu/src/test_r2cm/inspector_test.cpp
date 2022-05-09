@@ -17,7 +17,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFuncT Basic::GetDoFunction()
 	{
-		return []()->r2cm::eItemEndAction
+		return []()->r2cm::eItemLeaveAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 			std::cout << "[ESC] End" << r2cm::linefeed;
@@ -78,7 +78,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemEndAction::Pause;
+			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
 
@@ -93,7 +93,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFuncT ShowFile::GetDoFunction()
 	{
-		return []()->r2cm::eItemEndAction
+		return []()->r2cm::eItemLeaveAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 			std::cout << "[ESC] End" << r2cm::linefeed;
@@ -115,7 +115,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemEndAction::Pause;
+			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
 }

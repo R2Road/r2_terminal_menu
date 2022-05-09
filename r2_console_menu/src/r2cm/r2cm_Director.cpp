@@ -32,14 +32,14 @@ namespace r2cm
 
 			switch( mMenu->Do( input ) )
 			{
-			//case eItemEndAction::None: break;
+			//case eItemLeaveAction::None: break;
 
-			case eItemEndAction::Pause:
+			case eItemLeaveAction::Pause:
 				std::cout << r2cm::linefeed;
 				system( "pause" );				
 				break;
 
-			case eItemEndAction::Exit:
+			case eItemLeaveAction::Exit:
 				return;
 			}
 		}

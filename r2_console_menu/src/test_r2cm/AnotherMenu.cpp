@@ -28,10 +28,10 @@ r2cm::MenuUp AnotherMenu::Create( r2cm::Director& director )
 		ret->AddItem(
 			27
 			, []()->const char* { return "Return To Root"; }
-			, [&director]()->r2cm::eItemEndAction
+			, [&director]()->r2cm::eItemLeaveAction
 			{
 				director.Setup( RootMenu::Create( director ) );
-				return r2cm::eItemEndAction::None;
+				return r2cm::eItemLeaveAction::None;
 			}
 		);
 	}

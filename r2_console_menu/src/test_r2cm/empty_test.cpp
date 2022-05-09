@@ -16,13 +16,13 @@ namespace empty_test
 	}
 	r2cm::iItem::DoFuncT Basic::GetDoFunction()
 	{
-		return []()->r2cm::eItemEndAction
+		return []()->r2cm::eItemLeaveAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
 			std::cout << r2cm::tab2 << "Do Something" << r2cm::linefeed;
 
-			return r2cm::eItemEndAction::Pause;
+			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
 }

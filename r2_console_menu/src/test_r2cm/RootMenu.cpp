@@ -28,10 +28,10 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
-			, []()->r2cm::eItemEndAction
+			, []()->r2cm::eItemLeaveAction
 			{
 				std::cout << "##### Show Item With Lambda #####" << r2cm::linefeed2;
-				return r2cm::eItemEndAction::Pause;
+				return r2cm::eItemLeaveAction::Pause;
 			}
 		);
 
@@ -45,10 +45,10 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddItem(
 			'5'
 			, []()->const char* { return AnotherMenu::GetTitle(); }
-			, [&director]()->r2cm::eItemEndAction
+			, [&director]()->r2cm::eItemLeaveAction
 			{
 				director.Setup( AnotherMenu::Create( director ) );
-				return r2cm::eItemEndAction::None;
+				return r2cm::eItemLeaveAction::None;
 			}
 		);
 
@@ -88,7 +88,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddItem(
 			27
 			, []()->const char* { return "Exit"; }
-			, []()->r2cm::eItemEndAction { return r2cm::eItemEndAction::Exit; }
+			, []()->r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Exit; }
 		);
 	}
 

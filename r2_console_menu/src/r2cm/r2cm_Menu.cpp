@@ -93,7 +93,7 @@ namespace r2cm
 		std::cout << r2cm::split << "Select Menu";
 	}
 
-	eItemEndAction Menu::Do( const int key_code )
+	eItemLeaveAction Menu::Do( const int key_code )
 	{
 		for( const auto& i : mItemContainer )
 		{
@@ -103,14 +103,14 @@ namespace r2cm
 			}
 		}
 
-		return eItemEndAction::Pause;
+		return eItemLeaveAction::Pause;
 	}
 
 	void Menu::AddItem( const char key_code, iItem& item_obj )
 	{
 		mItemContainer.emplace_back( key_code, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
-	void Menu::AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemEndAction()> func_do )
+	void Menu::AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemLeaveAction()> func_do )
 	{
 		mItemContainer.emplace_back( key_code, func_title, func_do );
 	}
@@ -118,21 +118,21 @@ namespace r2cm
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eItemEndAction()> func_do = []()->const r2cm::eItemEndAction { return r2cm::eItemEndAction::Pause; };
+		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		mItemContainer.push_back( { KeyCode4LineFeed, func_title, func_do } );
 	}
 	void Menu::AddSplit()
 	{
 		static const std::function<const char*( )> func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eItemEndAction()> func_do = []()->const r2cm::eItemEndAction { return r2cm::eItemEndAction::Pause; };
+		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		mItemContainer.push_back( { KeyCode4Split, func_title, func_do } );
 	}
 	void Menu::AddMessage( const char* const message )
 	{
 		static const std::function<const char*()> func_title = [message]()->const char* { return message; };
-		static const std::function<const r2cm::eItemEndAction()> func_do = []()->const r2cm::eItemEndAction { return r2cm::eItemEndAction::Pause; };
+		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		mItemContainer.push_back( { KeyCode4Message, func_title, func_do } );
 	}
