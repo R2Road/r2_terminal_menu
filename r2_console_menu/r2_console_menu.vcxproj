@@ -29,11 +29,6 @@
     <ClCompile Include="src\r2cm\r2cm_Director.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Inspector.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
-    <ClCompile Include="src\r2\r2_FPSTimer.cpp" />
-    <ClCompile Include="src\r2\r2_PointInt.cpp" />
-    <ClCompile Include="src\r2\r2_RectInt.cpp" />
-    <ClCompile Include="src\r2\r2_Size.cpp" />
-    <ClCompile Include="src\r2\r2_Timer_Float.cpp" />
     <ClCompile Include="src\test_r2cm\base_test.cpp" />
     <ClCompile Include="src\test_r2cm\empty_test.cpp" />
     <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
@@ -48,14 +43,6 @@
     <ClInclude Include="src\r2cm\r2cm_Inspector.h" />
     <ClInclude Include="src\r2cm\r2cm_Menu.h" />
     <ClInclude Include="src\r2cm\r2cm_Singleton.h" />
-    <ClInclude Include="src\r2\r2_FPSTimer.h" />
-    <ClInclude Include="src\r2\r2_Point.h" />
-    <ClInclude Include="src\r2\r2_PointInt.h" />
-    <ClInclude Include="src\r2\r2_Rect.h" />
-    <ClInclude Include="src\r2\r2_RectInt.h" />
-    <ClInclude Include="src\r2\r2_Size.h" />
-    <ClInclude Include="src\r2\r2_Timer.h" />
-    <ClInclude Include="src\r2\r2_Timer_Float.h" />
     <ClInclude Include="src\test_r2cm\base_test.h" />
     <ClInclude Include="src\test_r2cm\empty_test.h" />
     <ClInclude Include="src\test_r2cm\inspector_test.h" />

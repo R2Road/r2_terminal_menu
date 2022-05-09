@@ -3,21 +3,6 @@
   <ItemGroup>
     <ClCompile Include="src\pch.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\r2\r2_PointInt.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2\r2_RectInt.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2\r2_Size.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2\r2_Timer_Float.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2\r2_FPSTimer.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
     <ClCompile Include="src\test_r2cm\base_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
@@ -45,30 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\r2\r2_Point.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_PointInt.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_Rect.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_RectInt.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_Size.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_Timer.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_Timer_Float.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_FPSTimer.h">
-      <Filter>r2</Filter>
-    </ClInclude>
     <ClInclude Include="src\test_r2cm\base_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
@@ -104,9 +65,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="r2">
-      <UniqueIdentifier>{9759d01a-9cf9-4185-9299-841c8c4988b1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="test_r2cm">
       <UniqueIdentifier>{034bdfbb-95cf-4545-9d78-fea3afa17c7c}</UniqueIdentifier>
     </Filter>
