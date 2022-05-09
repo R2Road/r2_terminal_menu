@@ -23,7 +23,15 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	{
 		ret->AddItem( '1', empty_test::Basic::GetInstance() );
 		ret->AddItem( '2', empty_test::Basic::GetInstance() );
-		ret->AddItem( '3', empty_test::Basic::GetInstance() );
+		ret->AddItem(
+			'3'
+			, []()->const char* { return "Show Title With Lambda"; }
+			, []()->r2cm::eTestEndAction
+			{
+				std::cout << "##### Show Item With Lambda #####" << r2cm::linefeed2;
+				return r2cm::eTestEndAction::Pause;
+			}
+		);
 
 		ret->AddLineFeed();
 
