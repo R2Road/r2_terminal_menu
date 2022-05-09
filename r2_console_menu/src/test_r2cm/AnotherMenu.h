@@ -5,7 +5,6 @@
 namespace r2cm
 {
 	using MenuUp = std::unique_ptr<class Menu>;
-
 	class Director;
 }
 
