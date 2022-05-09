@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <utility>
 
-#include "r2cm_eTestEndAction.h"
+#include "r2cm_constant.h"
 
 namespace r2cm
 {

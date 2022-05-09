@@ -2,7 +2,7 @@
 #include "RootMenu.h"
 
 #include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_eTestEndAction.h"
+#include "r2cm/r2cm_constant.h"
 
 #include "test_r2cm/base_test.h"
 #include "test_r2cm/empty_test.h"

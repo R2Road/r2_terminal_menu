@@ -3,7 +3,7 @@
 
 #include <conio.h> // _getch
 
-#include "r2cm/r2cm_eTestEndAction.h"
+#include "r2cm/r2cm_constant.h"
 
 namespace key_test
 {

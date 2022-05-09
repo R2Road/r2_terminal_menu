@@ -3,7 +3,7 @@
 
 #include <filesystem>
 
-#include "r2cm/r2cm_eTestEndAction.h"
+#include "r2cm/r2cm_constant.h"
 #include "r2cm/r2cm_Inspector.h"
 
 namespace inspector_test
