@@ -4,7 +4,7 @@
 
 namespace r2cm
 {
-	enum class eTestEndAction
+	enum class eItemEndAction
 	{
 		None,
 		Pause,

@@ -16,7 +16,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFuncT TestEndAction_None::GetDoFunction()
 	{
-		return []()->r2cm::eTestEndAction
+		return []()->r2cm::eItemEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
@@ -30,7 +30,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eTestEndAction::None;
+			return r2cm::eItemEndAction::None;
 		};
 	}
 
@@ -45,7 +45,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFuncT TestEndAction_Pause::GetDoFunction()
 	{
-		return []()->r2cm::eTestEndAction
+		return []()->r2cm::eItemEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
@@ -59,7 +59,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eTestEndAction::Pause;
+			return r2cm::eItemEndAction::Pause;
 		};
 	}
 
@@ -74,7 +74,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFuncT TestEndAction_Exit::GetDoFunction()
 	{
-		return []()->r2cm::eTestEndAction
+		return []()->r2cm::eItemEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
@@ -88,7 +88,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eTestEndAction::Exit;
+			return r2cm::eItemEndAction::Exit;
 		};
 	}
 }
