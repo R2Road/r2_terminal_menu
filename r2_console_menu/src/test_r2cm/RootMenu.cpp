@@ -4,8 +4,6 @@
 #include "r2cm/r2cm_Director.h"
 #include "r2cm/r2cm_eTestEndAction.h"
 
-#include "test_r2cm/InputMenu.h"
-
 #include "test_r2cm/base_test.h"
 #include "test_r2cm/empty_test.h"
 #include "test_r2cm/inspector_test.h"
@@ -30,15 +28,6 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddLineFeed();
 
 		ret->AddItem( 'q', key_test::Basic::GetInstance() );
-		ret->AddItem(
-			'w'
-			, []()->const char* { return InputMenu::GetTitle(); }
-			, [&director]()->r2cm::eTestEndAction
-			{
-				director.Setup( InputMenu::Create( director ) );
-				return r2cm::eTestEndAction::None;
-			}
-		);
 
 		ret->AddLineFeed();
 

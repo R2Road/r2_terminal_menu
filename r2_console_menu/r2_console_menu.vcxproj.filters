@@ -18,15 +18,6 @@
     <ClCompile Include="src\r2\r2_FPSTimer.cpp">
       <Filter>r2</Filter>
     </ClCompile>
-    <ClCompile Include="src\input\r2input_Constant.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
-    <ClCompile Include="src\input\r2input_KeyboardInputCollector.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
-    <ClCompile Include="src\input\r2input_KeyboardInputListener.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
     <ClCompile Include="src\test_r2cm\base_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
@@ -37,12 +28,6 @@
       <Filter>test_r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\test_r2cm\key_test.cpp">
-      <Filter>test_r2cm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test_r2cm\window_input_test.cpp">
-      <Filter>test_r2cm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test_r2cm\InputMenu.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\test_r2cm\RootMenu.cpp">
@@ -84,15 +69,6 @@
     <ClInclude Include="src\r2\r2_FPSTimer.h">
       <Filter>r2</Filter>
     </ClInclude>
-    <ClInclude Include="src\input\r2input_Constant.h">
-      <Filter>input</Filter>
-    </ClInclude>
-    <ClInclude Include="src\input\r2input_KeyboardInputCollector.h">
-      <Filter>input</Filter>
-    </ClInclude>
-    <ClInclude Include="src\input\r2input_KeyboardInputListener.h">
-      <Filter>input</Filter>
-    </ClInclude>
     <ClInclude Include="src\test_r2cm\base_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
@@ -103,12 +79,6 @@
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\test_r2cm\key_test.h">
-      <Filter>test_r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test_r2cm\window_input_test.h">
-      <Filter>test_r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test_r2cm\InputMenu.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\test_r2cm\RootMenu.h">
@@ -142,9 +112,6 @@
     </Filter>
     <Filter Include="r2cm">
       <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="input">
-      <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
