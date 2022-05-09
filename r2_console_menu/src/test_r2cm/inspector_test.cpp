@@ -76,7 +76,7 @@ namespace inspector_test
 
 				std::cout << r2cm::linefeed;
 
-				OUTPUT_MAIN( 1234 * 5678 );
+				OUTPUT_VALUE( 1234 * 5678 );
 			}
 #pragma warning( pop )
 

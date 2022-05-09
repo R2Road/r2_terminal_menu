@@ -137,7 +137,7 @@ printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
 //
 // Output Value
 //
-#define	OUTPUT_MAIN( condition )															\
+#define	OUTPUT_VALUE( condition )															\
 do {																						\
 	printf( "[OUTPUT]" " %s" "\n", #condition );											\
 	std::cout << "\t> " << condition << "\n";												\
