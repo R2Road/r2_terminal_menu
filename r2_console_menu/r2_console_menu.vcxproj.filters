@@ -48,13 +48,13 @@
     <ClCompile Include="src\test_r2cm\RootMenu.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2\r2_Inspector.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_Director.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp">
+      <Filter>r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_Inspector.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
   </ItemGroup>
@@ -96,9 +96,6 @@
     <ClInclude Include="src\r2\r2_Singleton.h">
       <Filter>r2</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2\r2_Inspector.h">
-      <Filter>r2</Filter>
-    </ClInclude>
     <ClInclude Include="src\test_r2cm\base_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
@@ -132,19 +129,22 @@
     <ClInclude Include="src\r2cm\r2cm_Menu.h">
       <Filter>r2cm</Filter>
     </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_Inspector.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="r2">
       <UniqueIdentifier>{9759d01a-9cf9-4185-9299-841c8c4988b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="input">
-      <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>
     </Filter>
     <Filter Include="test_r2cm">
       <UniqueIdentifier>{034bdfbb-95cf-4545-9d78-fea3afa17c7c}</UniqueIdentifier>
     </Filter>
     <Filter Include="r2cm">
       <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{5a55f406-d5e6-456d-93fe-e682821a921c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
