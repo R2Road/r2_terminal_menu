@@ -9,6 +9,8 @@
 #include "test_r2cm/inspector_test.h"
 #include "test_r2cm/key_test.h"
 
+#include "test_r2cm/AnotherMenu.h"
+
 r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {
 	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
@@ -30,6 +32,22 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 			{
 				std::cout << "##### Show Item With Lambda #####" << r2cm::linefeed2;
 				return r2cm::eTestEndAction::Pause;
+			}
+		);
+
+
+
+		ret->AddLineFeed();
+
+
+
+		ret->AddItem(
+			'5'
+			, []()->const char* { return AnotherMenu::GetTitle(); }
+			, [&director]()->r2cm::eTestEndAction
+			{
+				director.Setup( AnotherMenu::Create( director ) );
+				return r2cm::eTestEndAction::None;
 			}
 		);
 

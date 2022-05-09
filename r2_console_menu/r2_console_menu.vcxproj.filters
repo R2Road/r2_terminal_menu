@@ -27,6 +27,9 @@
     <ClCompile Include="src\r2cm\r2cm_Inspector.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\test_r2cm\AnotherMenu.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -62,6 +65,9 @@
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_constant.h">
       <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\AnotherMenu.h">
+      <Filter>test_r2cm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
