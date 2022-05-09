@@ -77,6 +77,7 @@ namespace inspector_test
 				std::cout << r2cm::linefeed;
 
 				OUTPUT_VALUE( 1234 * 5678 );
+				OUTPUT_CODE( printf( "%s", "asdf" ) );
 			}
 #pragma warning( pop )
 
