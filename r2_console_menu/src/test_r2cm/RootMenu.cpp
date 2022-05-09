@@ -41,6 +41,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
+		ret->AddMessage( "Another Menu is Example for Change Menu" );
 		ret->AddItem(
 			'5'
 			, []()->const char* { return AnotherMenu::GetTitle(); }

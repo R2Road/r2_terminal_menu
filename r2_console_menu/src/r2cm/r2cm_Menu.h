@@ -47,8 +47,10 @@ namespace r2cm
 
 		void AddItem( const char key_code, iItem& item_obj );
 		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eTestEndAction()> func_do );
+
 		void AddLineFeed();
 		void AddSplit();
+		void AddMessage( const char* const message );
 
 	protected:
 		Director& mDirector;

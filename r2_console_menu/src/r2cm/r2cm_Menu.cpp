@@ -10,6 +10,7 @@ namespace
 {
 	const char KeyCode4LineFeed = 64; // @
 	const char KeyCode4Split = 42; // *
+	const char KeyCode4Message = '('; // *
 }
 
 namespace r2cm
@@ -55,6 +56,11 @@ namespace r2cm
 			if( KeyCode4LineFeed == t.KeyCode ) // @
 			{
 				std::cout << r2cm::linefeed;
+				continue;
+			}
+			if( KeyCode4Message == t.KeyCode ) // (
+			{
+				std::cout << t.NameFunction() << r2cm::linefeed;
 				continue;
 			}
 
@@ -105,6 +111,7 @@ namespace r2cm
 	{
 		mItemContainer.emplace_back( key_code, func_title, func_do );
 	}
+
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
@@ -118,5 +125,12 @@ namespace r2cm
 		static const std::function<const r2cm::eTestEndAction()> func_do = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::Pause; };
 
 		mItemContainer.push_back( { KeyCode4Split, func_title, func_do } );
+	}
+	void Menu::AddMessage( const char* const message )
+	{
+		static const std::function<const char*()> func_title = [message]()->const char* { return message; };
+		static const std::function<const r2cm::eTestEndAction()> func_do = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::Pause; };
+
+		mItemContainer.push_back( { KeyCode4Message, func_title, func_do } );
 	}
 }
