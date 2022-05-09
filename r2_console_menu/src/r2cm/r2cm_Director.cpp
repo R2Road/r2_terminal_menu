@@ -35,7 +35,7 @@ namespace r2cm
 			//case eTestEndAction::None: break;
 
 			case eTestEndAction::Pause:
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 				system( "pause" );				
 				break;
 

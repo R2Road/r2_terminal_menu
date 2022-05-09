@@ -18,9 +18,9 @@ namespace empty_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
-			std::cout << r2::tab2 << "Do Something" << r2::linefeed;
+			std::cout << r2cm::tab2 << "Do Something" << r2cm::linefeed;
 
 			return r2cm::eTestEndAction::Pause;
 		};

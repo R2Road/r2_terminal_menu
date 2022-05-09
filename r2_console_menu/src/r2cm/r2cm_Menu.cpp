@@ -23,24 +23,24 @@ namespace r2cm
 
 	void Menu::ShowTitle() const
 	{
-		std::cout << "# " << mTitleString << " #" << r2::linefeed;
-		std::cout << r2::split;
+		std::cout << "# " << mTitleString << " #" << r2cm::linefeed;
+		std::cout << r2cm::split;
 	}
 	void Menu::ShowDescription() const
 	{
 		if( !mDescriptionString.empty() )
 		{
-			std::cout << "+ Message" << r2::linefeed2;
+			std::cout << "+ Message" << r2cm::linefeed2;
 			
-			std::cout << mDescriptionString << r2::linefeed;
+			std::cout << mDescriptionString << r2cm::linefeed;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 		}
 	}
 
 	void Menu::ShowMenu() const
 	{
-		std::cout << "+ Menu" << r2::linefeed2;
+		std::cout << "+ Menu" << r2cm::linefeed2;
 
 		for( const auto t : mItemContainer )
 		{
@@ -49,12 +49,12 @@ namespace r2cm
 			//
 			if( KeyCode4Split == t.KeyCode ) // *
 			{
-				std::cout << r2::split;
+				std::cout << r2cm::split;
 				continue;
 			}
 			if( KeyCode4LineFeed == t.KeyCode ) // @
 			{
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 				continue;
 			}
 
@@ -78,10 +78,10 @@ namespace r2cm
 			//
 			// Name
 			//
-			std::cout << t.NameFunction() << r2::linefeed;
+			std::cout << t.NameFunction() << r2cm::linefeed;
 		}
 
-		std::cout << r2::split << "Select Menu";
+		std::cout << r2cm::split << "Select Menu";
 	}
 
 	eTestEndAction Menu::Do( const int key_code )

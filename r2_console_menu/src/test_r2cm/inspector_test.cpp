@@ -19,10 +19,10 @@ namespace inspector_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
-			std::cout << "[ESC] End" << r2::linefeed;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
+			std::cout << "[ESC] End" << r2cm::linefeed;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 #pragma warning( push )
 #pragma warning( disable : 4127 )
@@ -30,42 +30,42 @@ namespace inspector_test
 				EXPECT_TRUE( 1 == 1 );
 				EXPECT_TRUE( 1 == 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_FALSE( 1 == 1 );
 				EXPECT_FALSE( 1 == 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_EQ( 1, 1 );
 				EXPECT_EQ( 1, 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_NE( 1, 1 );
 				EXPECT_NE( 1, 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_GT( 1, 1 );
 				EXPECT_GT( 1, 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_LT( 1, 1 );
 				EXPECT_LT( 0, 1 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_GE( 1, 1 );
 				EXPECT_GE( 0, 1 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
 
-				std::cout << r2::linefeed;
+				std::cout << r2cm::linefeed;
 
 				DECLARATION_MAIN( int i = 0 );
 				EXPECT_EQ( i, 0 );
@@ -76,7 +76,7 @@ namespace inspector_test
 			}
 #pragma warning( pop )
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::Pause;
 		};
@@ -95,25 +95,25 @@ namespace inspector_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
-			std::cout << "[ESC] End" << r2::linefeed;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
+			std::cout << "[ESC] End" << r2cm::linefeed;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 			PROCESS_MAIN( p.append( "resources" ) );
 			PROCESS_MAIN( p.append( "show_code_test_01.lua" ) );
-			std::cout << "> " << p << r2::linefeed2;
+			std::cout << "> " << p << r2cm::linefeed2;
 
 			EXPECT_TRUE( std::filesystem::exists( p ) );
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			{
 				SHOW_FILE( p.string().c_str() );
 			}
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::Pause;
 		};

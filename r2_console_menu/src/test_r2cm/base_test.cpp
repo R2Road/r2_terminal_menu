@@ -18,17 +18,17 @@ namespace base_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
-			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
+			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
 			do
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::None;
 		};
@@ -47,17 +47,17 @@ namespace base_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
-			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
+			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
 			do
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::Pause;
 		};
@@ -76,17 +76,17 @@ namespace base_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed2;
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
-			std::cout << r2::tab2 << "Press [ESC] Key" << r2::linefeed;
+			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
 			do
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::Exit;
 		};

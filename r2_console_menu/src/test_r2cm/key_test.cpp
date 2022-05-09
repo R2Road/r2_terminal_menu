@@ -18,11 +18,11 @@ namespace key_test
 	{
 		return []()->r2cm::eTestEndAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()() << " #" << r2::linefeed2;
-			std::cout << "[ESC] End" << r2::linefeed;
-			std::cout << "[Any Key] ..." << r2::linefeed;
+			std::cout << "# " << GetInstance().GetTitleFunction()() << " #" << r2cm::linefeed2;
+			std::cout << "[ESC] End" << r2cm::linefeed;
+			std::cout << "[Any Key] ..." << r2cm::linefeed;
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			bool process = true;
 			int input = 0;
@@ -30,12 +30,12 @@ namespace key_test
 			{
 				input = _getch();
 
-				std::cout << "Key : " << input << r2::linefeed;
+				std::cout << "Key : " << input << r2cm::linefeed;
 
 				process = ( 27 != input ); // ESC
 			} while( process );
 
-			std::cout << r2::split;
+			std::cout << r2cm::split;
 
 			return r2cm::eTestEndAction::Pause;
 		};
