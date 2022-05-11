@@ -33,6 +33,9 @@
     <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\test_r2cm\window_utility_test.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -74,6 +77,9 @@
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_WindowUtility.h">
       <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\window_utility_test.h">
+      <Filter>test_r2cm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

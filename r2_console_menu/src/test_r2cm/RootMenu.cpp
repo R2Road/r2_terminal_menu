@@ -8,6 +8,7 @@
 #include "test_r2cm/empty_test.h"
 #include "test_r2cm/inspector_test.h"
 #include "test_r2cm/key_test.h"
+#include "test_r2cm/window_utility_test.h"
 
 #include "test_r2cm/AnotherMenu.h"
 
@@ -78,6 +79,14 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddItem( 'z', base_test::TestEndAction_None::GetInstance() );
 		ret->AddItem( 'x', base_test::TestEndAction_Pause::GetInstance() );
 		ret->AddItem( 'c', base_test::TestEndAction_Exit::GetInstance() );
+
+
+
+		ret->AddLineFeed();
+
+
+
+		ret->AddItem( 'b', window_utility_test::MoveCursorWithClearBuffer::GetInstance() );
 
 
 

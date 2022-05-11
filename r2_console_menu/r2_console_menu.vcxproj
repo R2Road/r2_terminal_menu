@@ -36,6 +36,7 @@
     <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
     <ClCompile Include="src\test_r2cm\key_test.cpp" />
     <ClCompile Include="src\test_r2cm\RootMenu.cpp" />
+    <ClCompile Include="src\test_r2cm\window_utility_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -52,6 +53,7 @@
     <ClInclude Include="src\test_r2cm\inspector_test.h" />
     <ClInclude Include="src\test_r2cm\key_test.h" />
     <ClInclude Include="src\test_r2cm\RootMenu.h" />
+    <ClInclude Include="src\test_r2cm\window_utility_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
