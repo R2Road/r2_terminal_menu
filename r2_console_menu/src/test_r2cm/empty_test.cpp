@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "empty_test.h"
 
 #include <conio.h> // _getch

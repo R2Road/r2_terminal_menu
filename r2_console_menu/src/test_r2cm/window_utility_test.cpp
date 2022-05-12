@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "window_utility_test.h"
 
 #include <conio.h> // _kbhit(), _getch()
