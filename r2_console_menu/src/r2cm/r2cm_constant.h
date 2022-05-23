@@ -119,4 +119,11 @@ namespace r2cm
 		_Ostr << r2cm::tab << r2cm::tab << r2cm::tab;
 		return ( _Ostr );
 	}
+
+	template<class _Elem, class _Traits>
+	inline std::basic_ostream<_Elem, _Traits>& tab4( std::basic_ostream<_Elem, _Traits>& _Ostr )
+	{
+		_Ostr << r2cm::tab << r2cm::tab << r2cm::tab << r2cm::tab;
+		return ( _Ostr );
+	}
 }
