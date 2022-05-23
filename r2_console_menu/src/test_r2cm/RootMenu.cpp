@@ -4,6 +4,7 @@
 #include "r2cm/r2cm_Director.h"
 
 #include "test_r2cm/base_test.h"
+#include "test_r2cm/color_test.h"
 #include "test_r2cm/empty_test.h"
 #include "test_r2cm/inspector_test.h"
 #include "test_r2cm/key_test.h"
@@ -59,6 +60,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 		ret->AddItem( 'q', key_test::Basic::GetInstance() );
+		ret->AddItem( 'w', color_test::Basic::GetInstance() );
 
 
 
