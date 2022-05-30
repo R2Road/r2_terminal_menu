@@ -59,7 +59,7 @@ namespace r2cm
 		const CursorPoint fixed_new_cursor_point{ ( 0 > new_cursor_point.x ? 0 : new_cursor_point.x ), ( 0 > new_cursor_point.y ? 0 : new_cursor_point.y ) };
 		SetConsoleCursorPosition( GetStdHandle( STD_OUTPUT_HANDLE ), COORD{ fixed_new_cursor_point.x, fixed_new_cursor_point.y } );
 
-		
+
 		if( last_cursor_point.y >= fixed_new_cursor_point.y )
 		{
 			HANDLE hStdout = GetStdHandle( STD_OUTPUT_HANDLE );
@@ -72,6 +72,16 @@ namespace r2cm
 				FillConsoleOutputCharacterA( hStdout, ' ', cs_buffer_info.dwSize.X, COORD{ 0, fixed_new_cursor_point.y + i }, &out_result );
 			}
 		}
+	}
+
+	void WindowUtility::FillCharacter( const CursorPoint point, const char c )
+	{
+		DWORD out_result;
+		FillConsoleOutputCharacterA( GetStdHandle( STD_OUTPUT_HANDLE ), c, 1, { point.x, point.y }, &out_result );
+	}
+	void WindowUtility::FillCharacter( const int x, const int y, const char c )
+	{
+		FillCharacter( { short( x ), short( y ) }, c );
 	}
 
 	void WindowUtility::RequestSleep( const uint32_t m )
