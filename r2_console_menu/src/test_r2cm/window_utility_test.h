@@ -11,4 +11,11 @@ namespace window_utility_test
 		TitleFuncT GetTitleFunction() const override;
 		DoFuncT GetDoFunction() override;
 	};
+
+	class FillColor : public r2cm::iItem, public r2cm::SingleTon<FillColor>
+	{
+	public:
+		TitleFuncT GetTitleFunction() const override;
+		DoFuncT GetDoFunction() override;
+	};
 }

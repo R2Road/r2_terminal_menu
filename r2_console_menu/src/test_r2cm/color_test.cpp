@@ -3,6 +3,7 @@
 #include <conio.h> // _getch
 
 #include "r2cm/r2cm_constant.h"
+#include "r2cm/r2cm_WindowUtility.h"
 
 namespace color_test
 {

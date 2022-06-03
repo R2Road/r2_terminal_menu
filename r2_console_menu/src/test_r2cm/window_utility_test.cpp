@@ -52,4 +52,41 @@ namespace window_utility_test
 			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2cm::iItem::TitleFuncT FillColor::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Color Test : FillColor";
+		};
+	}
+	r2cm::iItem::DoFuncT FillColor::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
+
+			std::cout << r2cm::split;
+
+			{
+				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint(), r2cm::WindowUtility::eColor::BG_Aqua );
+				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint(), 'T' );
+
+				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 1, 0 }, r2cm::WindowUtility::eColor::BG_Green );
+				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 1, 0 }, 'E' );
+
+				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, ( r2cm::WindowUtility::eColor::FG_Blue | r2cm::WindowUtility::eColor::BG_LightYellow ) );
+				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
+
+				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, ( r2cm::WindowUtility::eColor::FG_Green | r2cm::WindowUtility::eColor::BG_LightLed ) );
+				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
+			}
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
 }

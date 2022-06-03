@@ -88,6 +88,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 		ret->AddItem( 'b', window_utility_test::MoveCursorWithClearBuffer::GetInstance() );
+		ret->AddItem( 'n', window_utility_test::FillColor::GetInstance() );
 
 
 
