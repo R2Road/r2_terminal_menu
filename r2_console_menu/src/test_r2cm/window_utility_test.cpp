@@ -59,7 +59,7 @@ namespace window_utility_test
 	{
 		return []()->const char*
 		{
-			return "Color Test : FillColor";
+			return "FillColor";
 		};
 	}
 	r2cm::iItem::DoFuncT FillColor::GetDoFunction()
