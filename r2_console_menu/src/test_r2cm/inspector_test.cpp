@@ -104,16 +104,29 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-			PROCESS_MAIN( p.append( "resources" ) );
-			PROCESS_MAIN( p.append( "show_code_test_01.lua" ) );
-			std::cout << "> " << p << r2cm::linefeed2;
+			{
+				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROCESS_MAIN( p.append( "resources" ).append( "show_code_test_01.lua" ) );
+				std::cout << "> " << p << r2cm::linefeed2;
 
-			EXPECT_TRUE( std::filesystem::exists( p ) );
+				EXPECT_TRUE( std::filesystem::exists( p ) );
+
+				std::cout << r2cm::linefeed;
+
+				SHOW_FILE( p.string().c_str() );
+			}
 
 			std::cout << r2cm::split;
 
 			{
+				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROCESS_MAIN( p.append( "resources" ).append( "show_code_test_01.cpp" ) );
+				std::cout << "> " << p << r2cm::linefeed2;
+
+				EXPECT_TRUE( std::filesystem::exists( p ) );
+
+				std::cout << r2cm::linefeed;
+
 				SHOW_FILE( p.string().c_str() );
 			}
 
