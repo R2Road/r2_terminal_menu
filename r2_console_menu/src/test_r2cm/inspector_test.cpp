@@ -88,6 +88,64 @@ namespace inspector_test
 
 
 
+	r2cm::iItem::TitleFuncT Binary::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Binary";
+		};
+	}
+	r2cm::iItem::DoFuncT Binary::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
+			std::cout << "[ESC] End" << r2cm::linefeed;
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_BINARY( 123i8 );
+				OUTPUT_BINARY( int8_t( -123i8 ) );
+
+				OUTPUT_BINARY( 123ui8 );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_BINARY( 123i16 );
+				OUTPUT_BINARY( int16_t( -123i16 ) );
+
+				OUTPUT_BINARY( 123ui16 );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_BINARY( 123i32 );
+				OUTPUT_BINARY( -123i32 );
+
+				OUTPUT_BINARY( 123ui32 );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_BINARY( 123i64 );
+				OUTPUT_BINARY( -123i64 );
+
+				OUTPUT_BINARY( 123ui64 );
+			}
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::iItem::TitleFuncT ShowFile::GetTitleFunction() const
 	{
 		return []()->const char*

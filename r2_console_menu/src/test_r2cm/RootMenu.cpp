@@ -69,7 +69,8 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 		ret->AddItem( 'a', inspector_test::Basic::GetInstance() );
-		ret->AddItem( 's', inspector_test::ShowFile::GetInstance() );
+		ret->AddItem( 's', inspector_test::Binary::GetInstance() );
+		ret->AddItem( 'd', inspector_test::ShowFile::GetInstance() );
 
 
 
