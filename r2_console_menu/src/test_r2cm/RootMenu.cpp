@@ -51,7 +51,6 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddMessage( "Another Menu is Example for Change Menu" );
 		ret->AddItem(
 			'5'
 			, []()->const char* { return AnotherMenu::GetTitle(); }
@@ -61,6 +60,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 				return r2cm::eItemLeaveAction::None;
 			}
 		);
+		ret->AddMessage( "\t> Another Menu 는 하위 메뉴의 예제 입니다." );
 
 
 
