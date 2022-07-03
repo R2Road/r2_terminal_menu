@@ -85,6 +85,9 @@
     <ClInclude Include="src\test_r2cm\color_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_VersionInfo.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test_r2cm">

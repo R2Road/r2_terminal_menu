@@ -2,6 +2,7 @@
 
 #include "r2cm/r2cm_constant.h"
 #include "r2cm/r2cm_Director.h"
+#include "r2cm/r2cm_VersionInfo.h"
 
 #include "test_r2cm/base_test.h"
 #include "test_r2cm/color_test.h"
@@ -24,6 +25,14 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	) );
 
 	{
+		ret->AddMessage( r2cm::VersionInfo.String4Version );
+
+
+
+		ret->AddLineFeed();
+
+
+
 		ret->AddItem( '1', empty_test::Basic::GetInstance() );
 		ret->AddItem( '2', empty_test::Basic::GetInstance() );
 		ret->AddItem(

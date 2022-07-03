@@ -130,8 +130,8 @@ namespace r2cm
 	}
 	void Menu::AddMessage( const char* const message )
 	{
-		static const std::function<const char*()> func_title = [message]()->const char* { return message; };
-		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		const std::function<const char*()> func_title = [message]()->const char* { return message; };
+		const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		mItemContainer.push_back( { KeyCode4Message, func_title, func_do } );
 	}
