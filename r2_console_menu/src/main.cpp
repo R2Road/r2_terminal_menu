@@ -11,7 +11,7 @@ int main()
 	//
 	// Environment : Title
 	//
-	r2cm::WindowUtility::ChangeTitle( L"r2_console_menu" );
+	r2cm::WindowUtility::ChangeTitle( "r2_console_menu" );
 
 	//
 	// Environment : Size
