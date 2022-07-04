@@ -15,12 +15,15 @@ namespace r2cm
 	using MenuUp = std::unique_ptr<class Menu>;
 	class Menu
 	{
+	public:
+		using ItemNameFunctionT = std::function<const char*( )>;
+
 	private:
 		struct ItemInfo
 		{
 			ItemInfo(
 				const char key_code
-				, const std::function<const char*( )> name_function
+				, const ItemNameFunctionT name_function
 				, const std::function<const r2cm::eItemLeaveAction()> do_function
 			) :
 				KeyCode( key_code )
@@ -29,7 +32,7 @@ namespace r2cm
 			{}
 
 			char KeyCode;
-			std::function<const char*()> NameFunction;
+			ItemNameFunctionT NameFunction;
 			std::function<const r2cm::eItemLeaveAction()> DoFunction;
 		};
 
@@ -45,7 +48,7 @@ namespace r2cm
 
 		eItemLeaveAction Do( const int key_code );
 
-		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemLeaveAction()> func_do );
+		void AddItem( const char key_code, const ItemNameFunctionT func_title, const std::function<const r2cm::eItemLeaveAction()> func_do );
 		void AddItem( const char key_code, iItem& item_obj );
 		
 		template<typename menu_T>
