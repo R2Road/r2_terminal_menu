@@ -58,7 +58,7 @@ namespace r2cm
 			}
 			if( KeyCode4Message == t.KeyCode ) // (
 			{
-				std::cout << t.NameFunction() << r2cm::linefeed;
+				std::cout << t.TitleFunction() << r2cm::linefeed;
 				continue;
 			}
 
@@ -85,7 +85,7 @@ namespace r2cm
 			//
 			// Name
 			//
-			std::cout << t.NameFunction() << r2cm::linefeed;
+			std::cout << t.TitleFunction() << r2cm::linefeed;
 		}
 
 		std::cout << r2cm::split << "Select Menu";

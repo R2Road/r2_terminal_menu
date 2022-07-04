@@ -18,16 +18,16 @@ namespace r2cm
 		{
 			ItemInfo(
 				const char key_code
-				, const iItem::TitleFunctionT name_function
+				, const iItem::TitleFunctionT title_function
 				, const iItem::DoFunctionT do_function
 			) :
 				KeyCode( key_code )
-				, NameFunction( name_function )
+				, TitleFunction( title_function )
 				, DoFunction( do_function )
 			{}
 
 			char KeyCode;
-			iItem::TitleFunctionT NameFunction;
+			iItem::TitleFunctionT TitleFunction;
 			iItem::DoFunctionT DoFunction;
 		};
 
