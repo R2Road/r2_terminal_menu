@@ -4,7 +4,12 @@
 
 namespace r2cm
 {
-	enum class eItemLeaveAction;
+	enum class eItemLeaveAction
+	{
+		None,
+		Pause,
+		Exit,
+	};
 
 	class iItem
 	{
