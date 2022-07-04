@@ -47,6 +47,20 @@ namespace r2cm
 
 		void AddItem( const char key_code, iItem& item_obj );
 		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemLeaveAction()> func_do );
+		
+		template<typename menu_T>
+		void AddMenu( const char key_code )
+		{
+			AddItem(
+				key_code
+				, []()->const char* { return menu_T::GetTitle(); }
+				, [&director = mDirector]()->r2cm::eItemLeaveAction
+				{
+					director.Setup( menu_T::Create( director ) );
+					return r2cm::eItemLeaveAction::None;
+				}
+			);
+		}
 
 		void AddLineFeed();
 		void AddSplit();

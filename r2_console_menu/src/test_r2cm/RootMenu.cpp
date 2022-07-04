@@ -60,6 +60,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 				return r2cm::eItemLeaveAction::None;
 			}
 		);
+		ret->AddMenu<AnotherMenu>( '6' );
 		ret->AddMessage( "\t> Another Menu 는 하위 메뉴의 예제 입니다." );
 
 
