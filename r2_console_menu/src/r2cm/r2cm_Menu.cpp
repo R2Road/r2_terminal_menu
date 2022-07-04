@@ -111,7 +111,7 @@ namespace r2cm
 	}
 	void Menu::AddItem( const char key_code, iItem& item_obj )
 	{
-		mItemContainer.emplace_back( key_code, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
+		AddItem( key_code, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
 
 	void Menu::AddLineFeed()
