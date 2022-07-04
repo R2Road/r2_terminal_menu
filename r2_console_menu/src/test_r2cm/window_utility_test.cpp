@@ -49,7 +49,7 @@ namespace window_utility_test
 			std::cout << "[Any Key] End";
 			_getch();
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eItemLeaveAction::None;
 		};
 	}
 
