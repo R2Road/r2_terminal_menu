@@ -3,7 +3,6 @@
 #include <cctype> // std::toupper
 
 #include "r2cm_constant.h"
-#include "r2cm_iItem.h"
 
 namespace
 {

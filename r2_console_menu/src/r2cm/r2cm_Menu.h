@@ -1,15 +1,13 @@
 #pragma once
 
-#include <functional>
 #include <memory>
 #include <string_view>
 #include <vector>
 
+#include "r2cm_iItem.h"
+
 namespace r2cm
 {
-	enum class eItemLeaveAction; 
-
-	class iItem;
 	class Director;
 
 	using MenuUp = std::unique_ptr<class Menu>;
