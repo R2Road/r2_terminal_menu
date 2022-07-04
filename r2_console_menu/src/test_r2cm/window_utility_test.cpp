@@ -8,14 +8,14 @@
 
 namespace window_utility_test
 {
-	r2cm::iItem::TitleFuncT MoveCursorWithClearBuffer::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "WIndow Utility : Move Cursor With Clear Buffer";
 		};
 	}
-	r2cm::iItem::DoFuncT MoveCursorWithClearBuffer::GetDoFunction()
+	r2cm::iItem::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -55,14 +55,14 @@ namespace window_utility_test
 
 
 
-	r2cm::iItem::TitleFuncT FillColor::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT FillColor::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "WIndow Utility : FillColor";
 		};
 	}
-	r2cm::iItem::DoFuncT FillColor::GetDoFunction()
+	r2cm::iItem::DoFunctionT FillColor::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

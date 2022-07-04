@@ -8,14 +8,14 @@ namespace window_utility_test
 	class MoveCursorWithClearBuffer : public r2cm::iItem, public r2cm::SingleTon<MoveCursorWithClearBuffer>
 	{
 	public:
-		TitleFuncT GetTitleFunction() const override;
-		DoFuncT GetDoFunction() override;
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
 	};
 
 	class FillColor : public r2cm::iItem, public r2cm::SingleTon<FillColor>
 	{
 	public:
-		TitleFuncT GetTitleFunction() const override;
-		DoFuncT GetDoFunction() override;
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
 	};
 }

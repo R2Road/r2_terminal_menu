@@ -14,12 +14,12 @@ namespace r2cm
 	class iItem
 	{
 	public:
-		using TitleFuncT = std::function<const char*()>;
-		using DoFuncT = std::function<eItemLeaveAction()>;
+		using TitleFunctionT = std::function<const char*()>;
+		using DoFunctionT = std::function<eItemLeaveAction()>;
 
 		virtual ~iItem() {}
 
-		virtual TitleFuncT GetTitleFunction() const = 0;
-		virtual DoFuncT GetDoFunction() = 0;
+		virtual TitleFunctionT GetTitleFunction() const = 0;
+		virtual DoFunctionT GetDoFunction() = 0;
 	};
 }

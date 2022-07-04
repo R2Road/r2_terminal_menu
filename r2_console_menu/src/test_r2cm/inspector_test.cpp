@@ -7,14 +7,14 @@
 
 namespace inspector_test
 {
-	r2cm::iItem::TitleFuncT Basic::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Basic";
 		};
 	}
-	r2cm::iItem::DoFuncT Basic::GetDoFunction()
+	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -88,14 +88,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFuncT Binary::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Binary";
 		};
 	}
-	r2cm::iItem::DoFuncT Binary::GetDoFunction()
+	r2cm::iItem::DoFunctionT Binary::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -146,14 +146,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFuncT ShowFile::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT ShowFile::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : ShowFile";
 		};
 	}
-	r2cm::iItem::DoFuncT ShowFile::GetDoFunction()
+	r2cm::iItem::DoFunctionT ShowFile::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

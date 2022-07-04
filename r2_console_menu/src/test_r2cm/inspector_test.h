@@ -8,21 +8,21 @@ namespace inspector_test
 	class Basic : public r2cm::iItem, public r2cm::SingleTon<Basic>
 	{
 	public:
-		TitleFuncT GetTitleFunction() const override;
-		DoFuncT GetDoFunction() override;
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
 	};
 
 	class Binary : public r2cm::iItem, public r2cm::SingleTon<Binary>
 	{
 	public:
-		TitleFuncT GetTitleFunction() const override;
-		DoFuncT GetDoFunction() override;
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
 	};
 
 	class ShowFile : public r2cm::iItem, public r2cm::SingleTon<ShowFile>
 	{
 	public:
-		TitleFuncT GetTitleFunction() const override;
-		DoFuncT GetDoFunction() override;
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
 	};
 }
