@@ -16,7 +16,8 @@ namespace r2cm
 	class Menu
 	{
 	public:
-		using ItemNameFunctionT = std::function<const char*( )>;
+		using ItemNameFunctionT = std::function<const char*()>;
+		using ItemDoFunctionT = std::function<const r2cm::eItemLeaveAction()>;
 
 	private:
 		struct ItemInfo
@@ -24,7 +25,7 @@ namespace r2cm
 			ItemInfo(
 				const char key_code
 				, const ItemNameFunctionT name_function
-				, const std::function<const r2cm::eItemLeaveAction()> do_function
+				, const ItemDoFunctionT do_function
 			) :
 				KeyCode( key_code )
 				, NameFunction( name_function )
@@ -33,7 +34,7 @@ namespace r2cm
 
 			char KeyCode;
 			ItemNameFunctionT NameFunction;
-			std::function<const r2cm::eItemLeaveAction()> DoFunction;
+			ItemDoFunctionT DoFunction;
 		};
 
 		using ItemContainerT = std::vector<ItemInfo>;
@@ -48,7 +49,7 @@ namespace r2cm
 
 		eItemLeaveAction Do( const int key_code );
 
-		void AddItem( const char key_code, const ItemNameFunctionT func_title, const std::function<const r2cm::eItemLeaveAction()> func_do );
+		void AddItem( const char key_code, const ItemNameFunctionT func_title, ItemDoFunctionT func_do );
 		void AddItem( const char key_code, iItem& item_obj );
 		
 		template<typename menu_T>

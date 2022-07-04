@@ -105,7 +105,7 @@ namespace r2cm
 		return eItemLeaveAction::Pause;
 	}
 
-	void Menu::AddItem( const char key_code, const ItemNameFunctionT func_title, const std::function<const r2cm::eItemLeaveAction()> func_do )
+	void Menu::AddItem( const char key_code, const ItemNameFunctionT func_title, const ItemDoFunctionT func_do )
 	{
 		mItemContainer.emplace_back( key_code, func_title, func_do );
 	}
@@ -117,21 +117,21 @@ namespace r2cm
 	void Menu::AddLineFeed()
 	{
 		static const ItemNameFunctionT func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const ItemDoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		AddItem( KeyCode4LineFeed, func_title, func_do );
 	}
 	void Menu::AddSplit()
 	{
 		static const ItemNameFunctionT func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const ItemDoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		AddItem( KeyCode4Split, func_title, func_do );
 	}
 	void Menu::AddMessage( const char* const message )
 	{
 		const ItemNameFunctionT func_title = [message]()->const char* { return message; };
-		const std::function<const r2cm::eItemLeaveAction()> func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		const ItemDoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		AddItem( KeyCode4Message, func_title, func_do );
 	}
