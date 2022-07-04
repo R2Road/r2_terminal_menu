@@ -83,7 +83,7 @@ namespace r2cm
 			std::cout << "] ";
 			
 			//
-			// Name
+			// Title
 			//
 			std::cout << t.TitleFunction() << r2cm::linefeed;
 		}
