@@ -12,7 +12,7 @@ namespace window_utility_test
 	{
 		return []()->const char*
 		{
-			return "Move Cursor With Clear Buffer";
+			return "WIndow Utility : Move Cursor With Clear Buffer";
 		};
 	}
 	r2cm::iItem::DoFuncT MoveCursorWithClearBuffer::GetDoFunction()
@@ -59,7 +59,7 @@ namespace window_utility_test
 	{
 		return []()->const char*
 		{
-			return "FillColor";
+			return "WIndow Utility : FillColor";
 		};
 	}
 	r2cm::iItem::DoFuncT FillColor::GetDoFunction()
