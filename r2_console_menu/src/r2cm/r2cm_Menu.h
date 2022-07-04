@@ -45,8 +45,8 @@ namespace r2cm
 
 		eItemLeaveAction Do( const int key_code );
 
-		void AddItem( const char key_code, iItem& item_obj );
 		void AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemLeaveAction()> func_do );
+		void AddItem( const char key_code, iItem& item_obj );
 		
 		template<typename menu_T>
 		void AddMenu( const char key_code )

@@ -105,13 +105,13 @@ namespace r2cm
 		return eItemLeaveAction::Pause;
 	}
 
-	void Menu::AddItem( const char key_code, iItem& item_obj )
-	{
-		mItemContainer.emplace_back( key_code, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
-	}
 	void Menu::AddItem( const char key_code, const std::function<const char*()> func_title, const std::function<const r2cm::eItemLeaveAction()> func_do )
 	{
 		mItemContainer.emplace_back( key_code, func_title, func_do );
+	}
+	void Menu::AddItem( const char key_code, iItem& item_obj )
+	{
+		mItemContainer.emplace_back( key_code, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
 
 	void Menu::AddLineFeed()
