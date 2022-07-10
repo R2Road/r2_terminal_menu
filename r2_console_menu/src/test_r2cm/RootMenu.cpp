@@ -1,7 +1,7 @@
 #include "RootMenu.h"
 
-#include "r2cm/r2cm_constant.h"
 #include "r2cm/r2cm_Director.h"
+#include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_VersionInfo.h"
 
 #include "test_r2cm/base_test.h"

@@ -2,8 +2,8 @@
 
 #include <conio.h> // _kbhit(), _getch()
 
-#include "r2cm/r2cm_constant.h"
 #include "r2cm/r2cm_Inspector.h"
+#include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_WindowUtility.h"
 
 namespace window_utility_test

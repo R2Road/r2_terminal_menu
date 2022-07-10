@@ -70,9 +70,6 @@
     <ClInclude Include="src\r2cm\r2cm_Singleton.h">
       <Filter>r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_constant.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
     <ClInclude Include="src\test_r2cm\AnotherMenu.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
@@ -86,6 +83,9 @@
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_VersionInfo.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_ostream.h">
       <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>
