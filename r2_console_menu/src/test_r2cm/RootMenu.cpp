@@ -21,7 +21,6 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 				"> Inprogress : BlaBla"
 		"\n"	"> To do : BlaBla"
 		"\n"	"> To do : BlaBla"
-		"\n"	"> To do : BlaBla"
 	) );
 
 	{
