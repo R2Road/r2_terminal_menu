@@ -88,6 +88,34 @@ namespace inspector_test
 
 
 
+	r2cm::iItem::TitleFunctionT Value::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Value";
+		};
+	}
+	r2cm::iItem::DoFunctionT Value::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
+
+			std::cout << r2cm::split;
+
+			{
+				DECLARATION_MAIN( const int test_int_1 = 1234567; );
+				OUTPUT_VALUE( test_int_1 );
+			}
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::iItem::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*

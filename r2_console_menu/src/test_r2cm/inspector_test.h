@@ -12,6 +12,13 @@ namespace inspector_test
 		DoFunctionT GetDoFunction() override;
 	};
 
+	class Value : public r2cm::iItem, public r2cm::SingleTon<Value>
+	{
+	public:
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
+	};
+
 	class Binary : public r2cm::iItem, public r2cm::SingleTon<Binary>
 	{
 	public:
