@@ -64,10 +64,14 @@ namespace inspector_test
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
 
-				std::cout << r2cm::linefeed;
+			}
 
+			std::cout << r2cm::split;
+
+			{
 				DECLARATION_MAIN( int i = 0 );
-				EXPECT_EQ( i, 0 );
+				DECLARATION_SUB( int j = i );
+				EXPECT_EQ( i, j );
 				PROCESS_MAIN( i = 1 );
 				PROCESS_SUB( i = 2 );
 				EXPECT_NE( i, 1 );
