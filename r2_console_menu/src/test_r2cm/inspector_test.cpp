@@ -168,6 +168,13 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
+			{
+				DECLARATION_MAIN( const int buffer[2] = { 0 } )
+				SHOW_BINARY( buffer, 2 );
+			}
+
+			std::cout << r2cm::split;
+
 			return r2cm::eItemLeaveAction::Pause;
 		};
 	}

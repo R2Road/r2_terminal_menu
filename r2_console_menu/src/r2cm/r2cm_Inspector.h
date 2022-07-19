@@ -196,6 +196,19 @@ void SHOW_BINARY( const T value )
 	}
 }
 
+template<typename T>
+void SHOW_BINARY( const T* p, const uint64_t size )
+{
+	uint64_t fixed_limit = sizeof( T ) * size;
+	const uint8_t* fixed_p = reinterpret_cast<const uint8_t*>( p );
+
+	for( uint64_t i = 0; fixed_limit > i; ++i )
+	{
+		SHOW_BINARY( fixed_p[i] );
+		printf( " " );
+	}
+}
+
 //
 // Output Code
 //
