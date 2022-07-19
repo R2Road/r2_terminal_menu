@@ -169,7 +169,7 @@ namespace inspector_test
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( const int buffer[2] = { 0 } );
+				DECLARATION_MAIN( const short buffer[2] = { 0 } );
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
