@@ -196,6 +196,17 @@ void SHOW_BINARY( const T value )
 	}
 }
 
+//
+// + exalple : int a[4];
+// pointer : int*
+// size : 4
+//
+#define	OUTPUT_BINARIES( pointer, size )													\
+do {																						\
+	printf( "[BINARIES]" " %s" ", %s" "\n", #pointer, #size );								\
+	SHOW_BINARY( ( pointer ), ( size ) );													\
+	std::cout << "\n";																		\
+} while( false )
 template<typename T>
 void SHOW_BINARY( const T* p, const uint64_t size )
 {
@@ -205,6 +216,11 @@ void SHOW_BINARY( const T* p, const uint64_t size )
 	uint64_t lf_cnt = 0;
 	for( uint64_t i = 0; fixed_limit > i; ++i )
 	{
+		if( 0 == lf_cnt )
+		{
+			printf( "\t> " );
+		}
+
 		SHOW_BINARY( fixed_p[i] );
 
 		++lf_cnt;
@@ -218,8 +234,6 @@ void SHOW_BINARY( const T* p, const uint64_t size )
 			printf( " " );
 		}
 	}
-
-	printf( "\n" );
 }
 
 //
