@@ -13,6 +13,14 @@
 
 #include "test_r2cm/AnotherMenu.h"
 
+const char* RootMenu::GetTitle()
+{
+	static const std::string ret =
+		std::string( "Root Menu" )
+		+ " : <" + r2cm::VersionInfo.String4Version + ">";
+	return ret.c_str();
+}
+
 r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {
 	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
@@ -24,10 +32,11 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddMessage( r2cm::VersionInfo.String4Version );
+		ret->AddMessage( "\t<Menu 객체에 test 를 위한 iItem 객체나 하위 메뉴를 위한 Menu 객체를 추가 하자.>" );
 
 
 
+		ret->AddLineFeed();
 		ret->AddLineFeed();
 
 
