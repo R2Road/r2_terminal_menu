@@ -3,7 +3,9 @@
 #endif
 
 #include "r2cm/r2cm_Director.h"
+#include "r2cm/r2cm_VersionInfo.h"
 #include "r2cm/r2cm_WindowUtility.h"
+
 #include "test_r2cm/RootMenu.h"
 
 int main()
@@ -11,7 +13,7 @@ int main()
 	//
 	// Environment : Title
 	//
-	r2cm::WindowUtility::ChangeTitle( "r2_console_menu" );
+	r2cm::WindowUtility::ChangeTitle( r2cm::VersionInfo.String4Version );
 
 	//
 	// Environment : Size
