@@ -25,10 +25,8 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {
 	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
 		director
-		, GetTitle(),
-				"> Inprogress : BlaBla"
-		"\n"	"> To do : BlaBla"
-		"\n"	"> To do : BlaBla"
+		, GetTitle()
+		, r2cm::VersionInfo.String4Road2Version_1_0_0
 	) );
 
 	{
