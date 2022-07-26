@@ -38,6 +38,9 @@
     <ClCompile Include="src\test_r2cm\color_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_StopWatch.cpp">
+      <Filter>r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\test_r2cm\base_test.h">
@@ -86,6 +89,9 @@
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_ostream.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_StopWatch.h">
       <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>
