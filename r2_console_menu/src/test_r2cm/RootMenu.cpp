@@ -68,8 +68,9 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 				return r2cm::eItemLeaveAction::None;
 			}
 		);
-		ret->AddMenu<AnotherMenu>( '6' );
 		ret->AddMessage( "\t> Another Menu 는 하위 메뉴의 예제 입니다." );
+		ret->AddMenu<AnotherMenu>( '6' );
+		ret->AddMessage( "\t> AddMenu 함수를 사용하면 메뉴 이름에 색상이 적용 됩니다." );
 
 
 
