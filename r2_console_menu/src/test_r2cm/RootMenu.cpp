@@ -35,7 +35,6 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 		ret->AddLineFeed();
-		ret->AddLineFeed();
 
 
 
