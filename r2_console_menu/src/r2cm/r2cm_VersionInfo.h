@@ -16,7 +16,7 @@ namespace r2cm
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '0';
 
-		const char String4Version[15] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
+		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
 
 		const char* const String4Road2Version_1_0_0 =
 					"### Road 2 Version 1.0.0 ###"
