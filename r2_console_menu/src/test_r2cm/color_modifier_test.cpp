@@ -1,9 +1,6 @@
 #include "color_modifier_test.h"
 
-#include <conio.h> // _getch
-
 #include "r2cm/r2cm_ostream.h"
-#include "r2cm/r2cm_WindowUtility.h"
 
 namespace color_modifier_test
 {
