@@ -78,7 +78,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 		ret->AddItem( 'q', key_test::Basic::GetInstance() );
-		ret->AddItem( 'w', color_test::Basic::GetInstance() );
+		ret->AddItem( 'w', color_modifier_test::Basic::GetInstance() );
 
 
 

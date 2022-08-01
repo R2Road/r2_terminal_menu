@@ -5,13 +5,13 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_WindowUtility.h"
 
-namespace color_test
+namespace color_modifier_test
 {
 	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Color Test";
+			return "Color : Basic";
 		};
 	}
 	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
