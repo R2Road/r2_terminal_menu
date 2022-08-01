@@ -5,7 +5,7 @@
 #include "r2cm/r2cm_VersionInfo.h"
 
 #include "test_r2cm/base_test.h"
-#include "test_r2cm/color_test.h"
+#include "test_r2cm/color_modifier_test.h"
 #include "test_r2cm/empty_test.h"
 #include "test_r2cm/inspector_test.h"
 #include "test_r2cm/key_test.h"

@@ -1,4 +1,4 @@
-#include "color_test.h"
+#include "color_modifier_test.h"
 
 #include <conio.h> // _getch
 
@@ -11,7 +11,7 @@ namespace color_modifier_test
 	{
 		return []()->const char*
 		{
-			return "Color : Basic";
+			return "Color Modifier : Basic";
 		};
 	}
 	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
