@@ -20,11 +20,11 @@
 
 ## ( '_')y-~
 <p float:left;">
-<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_01.png" width=100% height=100%></img>
+<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_01.png"></img>
 </p>
 <p float:left;">
-<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_02.png" width=100% height=100%></img>
+<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_02.png"></img>
 </p>
 <p float:left;">
-<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_03.png" width=100% height=100%></img>
+<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_03.png"></img>
 </p>
