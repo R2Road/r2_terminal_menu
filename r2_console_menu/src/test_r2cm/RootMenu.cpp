@@ -46,7 +46,12 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 			, []()->const char* { return "Show Title With Lambda"; }
 			, []()->r2cm::eItemLeaveAction
 			{
+				std::cout << r2cm::split;
+
 				std::cout << "##### Show Title With Lambda #####" << r2cm::linefeed2;
+
+				std::cout << r2cm::split;
+
 				return r2cm::eItemLeaveAction::Pause;
 			}
 		);

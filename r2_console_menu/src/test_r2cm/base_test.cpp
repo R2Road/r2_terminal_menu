@@ -17,8 +17,6 @@ namespace base_test
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
-
 			std::cout << r2cm::split;
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
@@ -46,8 +44,6 @@ namespace base_test
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
-
 			std::cout << r2cm::split;
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
@@ -75,8 +71,6 @@ namespace base_test
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
-			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2cm::linefeed2;
-
 			std::cout << r2cm::split;
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;

@@ -97,6 +97,7 @@ namespace r2cm
 		{
 			if( key_code == i.KeyCode )
 			{
+				std::cout << "# " << i.TitleFunction() << " #" << r2cm::linefeed;
 				return i.DoFunction();
 			}
 		}
