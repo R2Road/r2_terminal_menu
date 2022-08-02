@@ -14,7 +14,7 @@ namespace r2cm
 
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
-		const char VersionNumber_3 = '0';
+		const char VersionNumber_3 = '1';
 
 		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
 
@@ -25,10 +25,6 @@ namespace r2cm
 			"\n"	"[o] " "Inspector"
 			"\n"	"[o] " "Window Utility"
 			"\n"	"[o] " "Color Modifier"
-			"\n"
-			"\n"	"--------------------------------------"
-			"\n"
-			"\n"	"[ ] " "...mm????"
 		;
 
 	} VersionInfo;
