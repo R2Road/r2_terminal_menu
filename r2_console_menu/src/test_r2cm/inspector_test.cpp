@@ -188,14 +188,20 @@ namespace inspector_test
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( const short buffer[2] = { 0 } );
+				DECLARATION_MAIN( short buffer[2] = { 0 } );
+				PROCESS_MAIN( buffer[0] = 1 );
+				PROCESS_MAIN( buffer[1] = 2 );
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( const int buffer[4] = { 0 } );
+				DECLARATION_MAIN( int buffer[4] = { 0 } );
+				PROCESS_MAIN( buffer[0] = 1 );
+				PROCESS_MAIN( buffer[1] = 2 );
+				PROCESS_MAIN( buffer[2] = 4 );
+				PROCESS_MAIN( buffer[3] = 8 );
 				OUTPUT_BINARIES( buffer, 4 );
 			}
 
