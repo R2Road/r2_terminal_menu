@@ -168,6 +168,25 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2cm::iItem::TitleFunctionT Binaries::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Binaries";
+		};
+	}
+	r2cm::iItem::DoFunctionT Binaries::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << r2cm::split;
+
 			{
 				DECLARATION_MAIN( const short buffer[2] = { 0 } );
 				OUTPUT_BINARIES( buffer, 2 );
