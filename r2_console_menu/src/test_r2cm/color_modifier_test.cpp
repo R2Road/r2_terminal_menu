@@ -1,5 +1,6 @@
 #include "color_modifier_test.h"
 
+#include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
 namespace color_modifier_test
@@ -18,11 +19,11 @@ namespace color_modifier_test
 			std::cout << r2cm::split;
 
 			{
-				std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed;
+				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
 
 				std::cout << r2cm::linefeed;
 
-				std::cout << r2cm::tab2 << r2cm::clm( r2cm::eColor::BG_Red ) << r2cm::clm( r2cm::eColor::FG_Blue ) << "Do Something" << r2cm::clm() << r2cm::linefeed;
+				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::clm( r2cm::eColor::BG_Red ) << r2cm::clm( r2cm::eColor::FG_Blue ) << "Do Something" << r2cm::clm() << r2cm::linefeed );
 			}
 
 			std::cout << r2cm::split;
