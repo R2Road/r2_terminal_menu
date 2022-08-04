@@ -151,7 +151,7 @@ printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
 //
 #define	OUTPUT_VALUE( condition )															\
 do {																						\
-	printf( "[VALUE]" " %s" "\n", #condition );											\
+	printf( "[VALUE]" " %s" "\n", #condition );												\
 	std::cout << "\t> " << condition << "\n";												\
 } while( false )
 //
@@ -160,9 +160,9 @@ do {																						\
 #define	OUTPUT_BINARY( condition )															\
 do {																						\
 	printf( "[BINARY]" " %s" "\n", #condition );											\
-	std::cout << "\t> "						;												\
+	printf( "\t> " );																		\
 	SHOW_BINARY( ( condition ) );															\
-	std::cout << "\n";																		\
+	printf( "\n" );																			\
 } while( false )
 
 template<typename T>
@@ -205,7 +205,7 @@ void SHOW_BINARY( const T value )
 do {																						\
 	printf( "[BINARIES]" " %s" ", %s" "\n", #pointer, #size );								\
 	SHOW_BINARY( ( pointer ), ( size ) );													\
-	std::cout << "\n";																		\
+	printf( "\n" );																			\
 } while( false )
 template<typename T>
 void SHOW_BINARY( const T* p, const uint64_t size )
