@@ -197,7 +197,7 @@ void SHOW_BINARY( const T value )
 }
 
 //
-// + exalple : int a[4];
+// + example : int a[4];
 // pointer : int*
 // size : 4
 //
