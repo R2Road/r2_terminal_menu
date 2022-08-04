@@ -48,7 +48,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 			{
 				std::cout << r2cm::split;
 
-				std::cout << "##### Show Title With Lambda #####" << r2cm::linefeed2;
+				std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
 
 				std::cout << r2cm::split;
 
