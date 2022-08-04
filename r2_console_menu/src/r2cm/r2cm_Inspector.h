@@ -213,6 +213,7 @@ void SHOW_BINARY( const T* p, const uint64_t size )
 	const uint64_t fixed_limit = sizeof( T ) * size;
 	const uint8_t* fixed_p = reinterpret_cast<const uint8_t*>( p );
 
+	const uint64_t tab_limit = sizeof( T );
 	uint64_t count_4_linefeed = 0;
 	for( uint64_t i = 0; fixed_limit > i; ++i )
 	{
@@ -228,6 +229,10 @@ void SHOW_BINARY( const T* p, const uint64_t size )
 		{
 			count_4_linefeed = 0;
 			printf( "\n" );
+		}
+		else if( 0 < count_4_linefeed && 0 == count_4_linefeed % tab_limit )
+		{
+			printf( "\t" );
 		}
 		else
 		{
