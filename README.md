@@ -15,7 +15,7 @@
   - Visual Studio Community 2017 15.9.27
 
 - external library
-  - vld
+  - [vld]( https://kinddragon.github.io/vld/ )
 
 
 ## ( '_')y-~
