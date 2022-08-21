@@ -1,7 +1,7 @@
 # r2_console_menu
 
 ## 개괄 | Overview
-- 잡스러운 테스트 할 때 프로젝트 새로 만들기 귀찮아서 만들게 되었다. | Tiny Base for Play With C++
+- 테스트를 도와줄 C++ terminal 메뉴 | C++ terminal menu for test
 
 
 ## 작업환경 | Environment
