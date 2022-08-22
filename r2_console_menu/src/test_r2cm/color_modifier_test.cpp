@@ -19,6 +19,16 @@ namespace color_modifier_test
 			std::cout << r2cm::split;
 
 			{
+				std::cout << r2cm::tab << "+ None" << r2cm::linefeed2;
+
+				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::None ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				std::cout << r2cm::tab << "+ Setup" << r2cm::linefeed2;
+
 				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
 
 				std::cout << r2cm::linefeed;
