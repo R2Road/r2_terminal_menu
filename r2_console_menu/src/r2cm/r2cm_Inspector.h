@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdint.h>
 
-#define R2_ENABLE_DEBUG_BREAK 1
+#define R2_ENABLE_DEBUG_BREAK 0
 
 #if defined( R2_ENABLE_DEBUG_BREAK ) && R2_ENABLE_DEBUG_BREAK == 1
 	#define R2_DEBUG_BREAK ( __debugbreak() )
