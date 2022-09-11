@@ -214,6 +214,13 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
+			{
+				DECLARATION_MAIN( char buffer[10] = { 0 } );
+				OUTPUT_BINARIES( buffer, 10 );
+			}
+
+			std::cout << r2cm::split;
+
 			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
