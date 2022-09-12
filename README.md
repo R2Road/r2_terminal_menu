@@ -1,3 +1,8 @@
+<p align="left">
+  <img src="https://img.shields.io/badge/version-1.0.2-green" alt="version">
+  <a href="https://discord.gg/VSpW9FUSxX"><img src="https://img.shields.io/badge/Discord-R2Road-orange" alt="discord"></a>
+</p>
+
 # r2_console_menu
 
 ## 개괄 | Overview
