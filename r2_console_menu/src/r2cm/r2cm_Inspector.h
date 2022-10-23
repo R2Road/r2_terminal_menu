@@ -48,6 +48,8 @@ do {																											\
 	{																											\
 		R2_DEBUG_BREAK;																							\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_EQ( %s == %s )\n", #condition_1, #condition_2 );		\
+		OUTPUT_VALUE( ( condition_1 ) );																		\
+		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
 } while( false )
 
@@ -61,6 +63,8 @@ do {																											\
 	{																											\
 		R2_DEBUG_BREAK;																							\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_NE( %s != %s )\n", #condition_1, #condition_2 );		\
+		OUTPUT_VALUE( ( condition_1 ) );																		\
+		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
 } while( false )
 
