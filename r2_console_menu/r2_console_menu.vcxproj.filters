@@ -14,9 +14,6 @@
     <ClCompile Include="src\test_r2cm\key_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\test_r2cm\RootMenu.cpp">
-      <Filter>test_r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_Director.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
@@ -41,6 +38,7 @@
     <ClCompile Include="src\test_r2cm\color_modifier_test.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\RootMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\test_r2cm\base_test.h">
@@ -53,9 +51,6 @@
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\test_r2cm\key_test.h">
-      <Filter>test_r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test_r2cm\RootMenu.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_Director.h">
@@ -94,6 +89,7 @@
     <ClInclude Include="src\test_r2cm\color_modifier_test.h">
       <Filter>test_r2cm</Filter>
     </ClInclude>
+    <ClInclude Include="src\RootMenu.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test_r2cm">

@@ -25,13 +25,13 @@
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
     <ClCompile Include="src\r2cm\r2cm_StopWatch.cpp" />
     <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp" />
+    <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test_r2cm\AnotherMenu.cpp" />
     <ClCompile Include="src\test_r2cm\base_test.cpp" />
     <ClCompile Include="src\test_r2cm\color_modifier_test.cpp" />
     <ClCompile Include="src\test_r2cm\empty_test.cpp" />
     <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
     <ClCompile Include="src\test_r2cm\key_test.cpp" />
-    <ClCompile Include="src\test_r2cm\RootMenu.cpp" />
     <ClCompile Include="src\test_r2cm\window_utility_test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -44,13 +44,13 @@
     <ClInclude Include="src\r2cm\r2cm_StopWatch.h" />
     <ClInclude Include="src\r2cm\r2cm_VersionInfo.h" />
     <ClInclude Include="src\r2cm\r2cm_WindowUtility.h" />
+    <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test_r2cm\AnotherMenu.h" />
     <ClInclude Include="src\test_r2cm\base_test.h" />
     <ClInclude Include="src\test_r2cm\color_modifier_test.h" />
     <ClInclude Include="src\test_r2cm\empty_test.h" />
     <ClInclude Include="src\test_r2cm\inspector_test.h" />
     <ClInclude Include="src\test_r2cm\key_test.h" />
-    <ClInclude Include="src\test_r2cm\RootMenu.h" />
     <ClInclude Include="src\test_r2cm\window_utility_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

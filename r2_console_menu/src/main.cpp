@@ -6,7 +6,7 @@
 #include "r2cm/r2cm_VersionInfo.h"
 #include "r2cm/r2cm_WindowUtility.h"
 
-#include "test_r2cm/RootMenu.h"
+#include "RootMenu.h"
 
 int main()
 {
