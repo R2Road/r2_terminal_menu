@@ -177,34 +177,20 @@ void SHOW_BINARY( const T value )
 {
 	const int32_t limit = sizeof( value ) * 8;
 
-	if( 8 < limit )
+	int32_t count_4_linefeed = 0;
+
+	for( int32_t position = limit - 1; 0 <= position; --position )
 	{
-		int32_t count_4_linefeed = 0;
+		const T temp_1 = ( value >> position );
+		const bool temp_2 = temp_1 & 1;
 
-		for( int32_t position = limit - 1; 0 <= position; --position )
+		std::cout << temp_2;
+
+		++count_4_linefeed;
+		if( 8 == count_4_linefeed && 0 != position )
 		{
-			const T temp_1 = ( value >> position );
-			const T temp_2 = temp_1 & 1;
-
-			std::cout << temp_2;
-
-			++count_4_linefeed;
-			if( 8 == count_4_linefeed && 0 != position )
-			{
-				count_4_linefeed = 0;
-				printf( " " );
-			}
-		}
-	}
-	else
-	{
-		const int32_t fixed_value = static_cast<int32_t>( value );
-		for( int32_t position = limit - 1; 0 <= position; --position )
-		{
-			const int32_t temp_1 = ( fixed_value >> position );
-			const int32_t temp_2 = temp_1 & 1;
-
-			std::cout << temp_2;
+			count_4_linefeed = 0;
+			printf( " " );
 		}
 	}
 }
