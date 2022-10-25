@@ -175,7 +175,7 @@ void SHOW_BINARY( const T value );
 template<typename T>
 void SHOW_BINARY( const T value )
 {
-	int32_t limit = sizeof( value ) * 8;
+	const int32_t limit = sizeof( value ) * 8;
 
 	if( 8 < limit )
 	{
