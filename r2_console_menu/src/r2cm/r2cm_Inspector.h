@@ -175,11 +175,11 @@ void SHOW_BINARY( const T value );
 template<typename T>
 void SHOW_BINARY( const T value )
 {
-	const int32_t limit = sizeof( value ) * 8;
+	const int32_t length = sizeof( value ) * 8;
 
 	int32_t count_4_linefeed = 0;
 
-	for( int32_t position = limit - 1; 0 <= position; --position )
+	for( int32_t position = length - 1; 0 <= position; --position )
 	{
 		const T temp_value = ( value >> position );
 		const bool temp_bit_flag = ( temp_value & 1 );
