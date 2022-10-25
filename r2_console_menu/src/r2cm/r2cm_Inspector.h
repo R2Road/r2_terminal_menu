@@ -176,10 +176,11 @@ template<typename T>
 void SHOW_BINARY( const T value )
 {
 	const int32_t limit = sizeof( value ) * 8;
-	uint32_t count_4_linefeed = 0;
 
 	if( 8 < limit )
 	{
+		int32_t count_4_linefeed = 0;
+
 		for( int32_t position = limit - 1; 0 <= position; --position )
 		{
 			const T temp_1 = ( value >> position );
@@ -204,13 +205,6 @@ void SHOW_BINARY( const T value )
 			const int32_t temp_2 = temp_1 & 1;
 
 			std::cout << temp_2;
-
-			++count_4_linefeed;
-			if( 8 == count_4_linefeed && 0 != position )
-			{
-				count_4_linefeed = 0;
-				printf( " " );
-			}
 		}
 	}
 }
