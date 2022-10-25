@@ -181,10 +181,10 @@ void SHOW_BINARY( const T value )
 
 	for( int32_t position = limit - 1; 0 <= position; --position )
 	{
-		const T temp_1 = ( value >> position );
-		const bool temp_2 = temp_1 & 1;
+		const T temp_value = ( value >> position );
+		const bool temp_bit_flag = ( temp_value & 1 );
 
-		printf( "%d", temp_2 );
+		printf( "%d", temp_bit_flag );
 
 		++count_4_linefeed;
 		if( 8 == count_4_linefeed && 0 != position )
