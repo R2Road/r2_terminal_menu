@@ -188,7 +188,7 @@ void SHOW_BINARY( const T value )
 			std::cout << temp_2;
 
 			++count_4_linefeed;
-			if( 8 == count_4_linefeed )
+			if( 8 == count_4_linefeed && 0 != position )
 			{
 				count_4_linefeed = 0;
 				printf( " " );
@@ -206,7 +206,7 @@ void SHOW_BINARY( const T value )
 			std::cout << temp_2;
 
 			++count_4_linefeed;
-			if( 8 == count_4_linefeed )
+			if( 8 == count_4_linefeed && 0 != position )
 			{
 				count_4_linefeed = 0;
 				printf( " " );
