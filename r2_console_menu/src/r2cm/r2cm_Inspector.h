@@ -176,6 +176,7 @@ template<typename T>
 void SHOW_BINARY( const T value )
 {
 	const int32_t limit = sizeof( value ) * 8;
+	uint32_t count_4_linefeed = 0;
 
 	if( 8 < limit )
 	{
@@ -185,6 +186,13 @@ void SHOW_BINARY( const T value )
 			const T temp_2 = temp_1 & 1;
 
 			std::cout << temp_2;
+
+			++count_4_linefeed;
+			if( 8 == count_4_linefeed )
+			{
+				count_4_linefeed = 0;
+				printf( " " );
+			}
 		}
 	}
 	else
@@ -196,6 +204,13 @@ void SHOW_BINARY( const T value )
 			const int32_t temp_2 = temp_1 & 1;
 
 			std::cout << temp_2;
+
+			++count_4_linefeed;
+			if( 8 == count_4_linefeed )
+			{
+				count_4_linefeed = 0;
+				printf( " " );
+			}
 		}
 	}
 }
