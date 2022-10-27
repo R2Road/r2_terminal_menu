@@ -35,6 +35,7 @@
     <ClCompile Include="src\test_r2cm\window_utility_test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h" />
     <ClInclude Include="src\r2cm\r2cm_Director.h" />
     <ClInclude Include="src\r2cm\r2cm_ostream.h" />
     <ClInclude Include="src\r2cm\r2cm_iItem.h" />

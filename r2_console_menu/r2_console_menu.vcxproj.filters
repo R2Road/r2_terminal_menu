@@ -90,6 +90,9 @@
       <Filter>test_r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\RootMenu.h" />
+    <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test_r2cm">
