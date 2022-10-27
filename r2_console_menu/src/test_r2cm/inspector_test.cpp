@@ -164,6 +164,13 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
+			{
+				DECLARATION_MAIN( struct Dummy { int32_t i32 = 1; int64_t i64 = 7; } dummy );
+				OUTPUT_BINARY( dummy );
+			}
+
+			std::cout << r2cm::split;
+
 			return r2cm::eItemLeaveAction::Pause;
 		};
 	}
@@ -212,6 +219,15 @@ namespace inspector_test
 
 			{
 				DECLARATION_MAIN( char buffer[10] = { 0 } );
+				OUTPUT_BINARIES( buffer, 10 );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				DECLARATION_MAIN( struct Dummy { int32_t i32 = 0; int64_t i64 = 0; } );
+				OUTPUT_VALUE( sizeof( Dummy ) );
+				DECLARATION_MAIN( Dummy buffer[10] );
 				OUTPUT_BINARIES( buffer, 10 );
 			}
 
