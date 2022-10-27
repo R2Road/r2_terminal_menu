@@ -12,13 +12,10 @@ void SHOW_BINARY( const T value );
 template<typename T>
 void SHOW_BINARY( const T value )
 {
-	const uint32_t size = sizeof( value );
+	const int32_t size = sizeof( value );
 	const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
 
-	//
-	// sizeof is at least return 1
-	//
-	for( uint32_t position = size - 1; 0 <= position; --position )
+	for( int32_t position = size - 1; 0 <= position; --position )
 	{
 		SHOW_BINARY( *( up + position ) );
 		printf( " " );
