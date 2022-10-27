@@ -39,6 +39,9 @@
       <Filter>test_r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\RootMenu.cpp" />
+    <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp">
+      <Filter>r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\test_r2cm\base_test.h">

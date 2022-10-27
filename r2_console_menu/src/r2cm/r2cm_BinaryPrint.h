@@ -4,6 +4,7 @@
 #define BINARY_PRINT
 
 #include <stdint.h>
+#include <stdio.h>
 
 template<typename T>
 void SHOW_BINARY( const T value );
@@ -30,6 +31,11 @@ void SHOW_BINARY( const T value )
 		}
 	}
 }
+
+
+template<>
+void SHOW_BINARY<uint8_t>( const uint8_t value );
+
 
 template<typename T>
 void SHOW_BINARY( const T* p, const uint64_t size )

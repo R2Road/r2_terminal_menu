@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Director.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Inspector.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
