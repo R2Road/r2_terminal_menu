@@ -50,15 +50,15 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 	{
 		const uint8_t* cp = reinterpret_cast<const uint8_t*>( array + array_index );
 
-		for( int64_t u8_index = 0; size > u8_index; ++u8_index )
+		for( int64_t u8_index = 0, fixed_size = size - 1; fixed_size >= u8_index; ++u8_index )
 		{
-			if( ( 8 <= u8_print_count ) && ( size - 1 > u8_index ) )
+			if( ( 8 <= u8_print_count ) && ( fixed_size > u8_index ) )
 			{
 				u8_print_count = 0;
 				printf( "\n\t~ " );
 			}
 
-			SHOW_BINARY( *( cp + u8_index ) ); 
+			SHOW_BINARY( *( cp + ( fixed_size - u8_index ) ) );
 			printf( " " );
 
 			++u8_print_count;
