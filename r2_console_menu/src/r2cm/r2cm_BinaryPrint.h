@@ -39,9 +39,10 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 {
 	const int64_t size = sizeof( T );
 
-	const int32_t line_per_value = ( 8 / size );
-	int32_t value_print_count = 0;
+	const int32_t linefeed_limit = 8;
+	const int32_t line_per_value = ( linefeed_limit / size );
 
+	int32_t value_print_count = 0;
 	int32_t u8_print_count = 0;
 
 	printf( "\n\t>" );
@@ -52,7 +53,7 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 
 		for( int64_t u8_index = 0, fixed_size = size - 1; fixed_size >= u8_index; ++u8_index )
 		{
-			if( ( 8 <= u8_print_count ) && ( fixed_size > u8_index ) )
+			if( ( linefeed_limit <= u8_print_count ) && ( fixed_size > u8_index ) )
 			{
 				u8_print_count = 0;
 				printf( "\n\t~" );
