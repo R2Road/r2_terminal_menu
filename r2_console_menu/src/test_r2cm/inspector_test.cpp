@@ -222,7 +222,7 @@ namespace inspector_test
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( struct Dummy { int32_t i32 = 0; int64_t i64 = 0; } );
+				DECLARATION_MAIN( struct Dummy { int32_t i32 = 3; int64_t i64 = -1; } );
 				OUTPUT_VALUE( sizeof( Dummy ) );
 				DECLARATION_MAIN( Dummy buffer[2] );
 				OUTPUT_BINARIES( buffer, 2 );
