@@ -21,7 +21,7 @@ void SHOW_BINARY( const T value )
 	{
 		if( 0 == ( position % linefeed_limit ) )
 		{
-			printf( "\n\t>" );
+			printf( 0 == position ? "\n\t>" : "\n\t~" );
 		}
 
 		printf( " " );
