@@ -35,7 +35,7 @@ void SHOW_BINARY<uint8_t>( const uint8_t value );
 
 
 template<typename T>
-void SHOW_BINARY( const T* array, const uint64_t array_size )
+void SHOW_BINARY( const T* array, const int64_t array_size )
 {
 	const int64_t size = sizeof( T );
 
@@ -58,7 +58,7 @@ void SHOW_BINARY( const T* array, const uint64_t array_size )
 				printf( "\n\t~ " );
 			}
 
-			SHOW_BINARY( *( cp + u8_index ) );
+			SHOW_BINARY( *( cp + u8_index ) ); 
 			printf( " " );
 
 			++u8_print_count;
