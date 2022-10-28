@@ -21,11 +21,11 @@ void SHOW_BINARY( const T value )
 	{
 		if( 0 == ( position % linefeed_limit ) )
 		{
-			printf( "\n\t> " );
+			printf( "\n\t>" );
 		}
 
-		SHOW_BINARY( *( up + ( size - position ) ) );
 		printf( " " );
+		SHOW_BINARY( *( up + ( size - position ) ) );
 	}
 }
 
@@ -44,7 +44,7 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 
 	int32_t u8_print_count = 0;
 
-	printf( "\n\t> " );
+	printf( "\n\t>" );
 
 	for( int64_t array_index = 0; array_size > array_index; ++array_index )
 	{
@@ -55,11 +55,11 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 			if( ( 8 <= u8_print_count ) && ( fixed_size > u8_index ) )
 			{
 				u8_print_count = 0;
-				printf( "\n\t~ " );
+				printf( "\n\t~" );
 			}
 
-			SHOW_BINARY( *( cp + ( fixed_size - u8_index ) ) );
 			printf( " " );
+			SHOW_BINARY( *( cp + ( fixed_size - u8_index ) ) );
 
 			++u8_print_count;
 		}
@@ -69,7 +69,7 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 		{
 			value_print_count = 0;
 			u8_print_count = 0;
-			printf( "\n\t> " );
+			printf( "\n\t>" );
 		}
 		else
 		{
