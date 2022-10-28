@@ -35,15 +35,16 @@ void SHOW_BINARY<uint8_t>( const uint8_t value );
 
 
 template<typename T>
-void SHOW_BINARY( const T* p, const uint64_t size )
+void SHOW_BINARY( const T* array, const uint64_t array_size )
 {
-	const uint64_t fixed_limit = sizeof( T ) * size;
-	const uint8_t* fixed_p = reinterpret_cast<const uint8_t*>( p );
+	const int64_t size = sizeof( T );
+	const int64_t fixed_limit = size * array_size;
+	const uint8_t* fixed_p = reinterpret_cast<const uint8_t*>( array );
 
 	const uint64_t tab_limit = sizeof( T );
 	uint64_t count_4_linefeed = 0;
-	for( uint64_t i = 0; fixed_limit > i; ++i )
-	{
+	for( int64_t i = 0; fixed_limit > i; ++i )
+	{ 
 		if( 0 == count_4_linefeed )
 		{
 			printf( "\t> " );
