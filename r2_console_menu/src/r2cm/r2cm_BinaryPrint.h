@@ -19,7 +19,7 @@ void SHOW_BINARY( const T value )
 
 	for( int32_t position = 0; size >= position; ++position )
 	{
-		if( ( 0 == position % linefeed_limit ) && ( 0 != position ) )
+		if( 0 == ( position % linefeed_limit ) )
 		{
 			printf( "\n\t> " );
 		}
