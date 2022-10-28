@@ -165,8 +165,9 @@ namespace inspector_test
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( struct Dummy { int32_t i32 = 1; int64_t i64 = 7; } dummy );
-				OUTPUT_BINARY( dummy );
+				DECLARATION_MAIN( struct Dummy { int32_t i1 = 1; int64_t i2 = 7; int32_t i3 = 1; int64_t i4 = 7; } d );
+				OUTPUT_VALUE( sizeof( d ) );
+				OUTPUT_BINARY( d );
 			}
 
 			std::cout << r2cm::split;

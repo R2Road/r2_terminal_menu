@@ -12,12 +12,19 @@ void SHOW_BINARY( const T value );
 template<typename T>
 void SHOW_BINARY( const T value )
 {
-	const int32_t size = sizeof( value );
+	const int32_t size = sizeof( value ) - 1;
 	const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
 
-	for( int32_t position = size - 1; 0 <= position; --position )
+	const int32_t linefeed_limit = 10;
+
+	for( int32_t position = 0; size >= position; ++position )
 	{
-		SHOW_BINARY( *( up + position ) );
+		if( ( 0 == position % linefeed_limit ) && ( 0 != position ) )
+		{
+			printf( "\n\t> " );
+		}
+
+		SHOW_BINARY( *( up + ( size - position ) ) );
 		printf( " " );
 	}
 }
