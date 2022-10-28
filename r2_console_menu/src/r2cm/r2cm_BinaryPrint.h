@@ -15,7 +15,7 @@ void SHOW_BINARY( const T value )
 	const int32_t size = sizeof( value ) - 1;
 	const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
 
-	const int32_t linefeed_limit = 10;
+	const int32_t linefeed_limit = 8;
 
 	for( int32_t position = 0; size >= position; ++position )
 	{
