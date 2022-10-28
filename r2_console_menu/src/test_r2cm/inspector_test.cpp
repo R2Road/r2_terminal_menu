@@ -193,8 +193,7 @@ namespace inspector_test
 
 			{
 				DECLARATION_MAIN( short buffer[2] = { 0 } );
-				PROCESS_MAIN( buffer[0] = 1 );
-				PROCESS_MAIN( buffer[1] = 2 );
+				PROCESS_MAIN( buffer[0] = 1; buffer[1] = 2; );
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
@@ -209,10 +208,7 @@ namespace inspector_test
 
 			{
 				DECLARATION_MAIN( int buffer[4] = { 0 } );
-				PROCESS_MAIN( buffer[0] = 1 );
-				PROCESS_MAIN( buffer[1] = 2 );
-				PROCESS_MAIN( buffer[2] = 4 );
-				PROCESS_MAIN( buffer[3] = 8 );
+				PROCESS_MAIN( buffer[0] = 1; buffer[1] = 2; buffer[2] = 4; buffer[3] = 8; );
 				OUTPUT_BINARIES( buffer, 4 );
 			}
 
