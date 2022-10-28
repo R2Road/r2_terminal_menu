@@ -228,8 +228,8 @@ namespace inspector_test
 			{
 				DECLARATION_MAIN( struct Dummy { int32_t i32 = 0; int64_t i64 = 0; } );
 				OUTPUT_VALUE( sizeof( Dummy ) );
-				DECLARATION_MAIN( Dummy buffer[10] );
-				OUTPUT_BINARIES( buffer, 10 );
+				DECLARATION_MAIN( Dummy buffer[2] );
+				OUTPUT_BINARIES( buffer, 2 );
 			}
 
 			std::cout << r2cm::split;

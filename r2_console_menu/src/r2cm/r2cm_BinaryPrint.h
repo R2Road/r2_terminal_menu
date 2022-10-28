@@ -38,33 +38,42 @@ template<typename T>
 void SHOW_BINARY( const T* array, const uint64_t array_size )
 {
 	const int64_t size = sizeof( T );
-	const int64_t fixed_limit = size * array_size;
-	const uint8_t* fixed_p = reinterpret_cast<const uint8_t*>( array );
 
-	const uint64_t tab_limit = sizeof( T );
-	uint64_t count_4_linefeed = 0;
-	for( int64_t i = 0; fixed_limit > i; ++i )
-	{ 
-		if( 0 == count_4_linefeed )
+	const int32_t line_per_value = ( 8 / size );
+	int32_t value_print_count = 0;
+
+	int32_t u8_print_count = 0;
+
+	printf( "\n\t> " );
+
+	for( int64_t array_index = 0; array_size > array_index; ++array_index )
+	{
+		const uint8_t* cp = reinterpret_cast<const uint8_t*>( array + array_index );
+
+		for( int64_t u8_index = 0; size > u8_index; ++u8_index )
 		{
-			printf( "\t> " );
+			if( ( 8 <= u8_print_count ) && ( size - 1 > u8_index ) )
+			{
+				u8_print_count = 0;
+				printf( "\n\t~ " );
+			}
+
+			SHOW_BINARY( *( cp + u8_index ) );
+			printf( " " );
+
+			++u8_print_count;
 		}
 
-		SHOW_BINARY( fixed_p[i] );
-
-		++count_4_linefeed;
-		if( 8 == count_4_linefeed && fixed_limit > ( i + 1 ) )
+		++value_print_count;
+		if( ( line_per_value <= value_print_count ) && ( array_size - 1 > array_index ) )
 		{
-			count_4_linefeed = 0;
-			printf( "\n" );
-		}
-		else if( 0 < count_4_linefeed && 0 == count_4_linefeed % tab_limit )
-		{
-			printf( "   " );
+			value_print_count = 0;
+			u8_print_count = 0;
+			printf( "\n\t> " );
 		}
 		else
 		{
-			printf( " " );
+			printf( "  " );
 		}
 	}
 }
