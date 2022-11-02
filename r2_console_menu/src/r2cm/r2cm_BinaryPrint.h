@@ -7,10 +7,10 @@
 #include <stdio.h>
 
 template<typename T>
-void SHOW_BINARY( const T value );
+void BinaryPrint( const T value );
 
 template<typename T>
-void SHOW_BINARY( const T value )
+void BinaryPrint( const T value )
 {
 	const int32_t fixed_size = sizeof( value ) - 1;
 	const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
@@ -25,17 +25,17 @@ void SHOW_BINARY( const T value )
 		}
 
 		printf( " " );
-		SHOW_BINARY( *( up + ( fixed_size - position ) ) );
+		BinaryPrint( *( up + ( fixed_size - position ) ) );
 	}
 }
 
 
 template<>
-void SHOW_BINARY<uint8_t>( const uint8_t value );
+void BinaryPrint<uint8_t>( const uint8_t value );
 
 
 template<typename T>
-void SHOW_BINARY( const T* array, const int64_t array_size )
+void BinaryPrint( const T* array, const int64_t array_size )
 {
 	const int64_t size = sizeof( T );
 
@@ -60,7 +60,7 @@ void SHOW_BINARY( const T* array, const int64_t array_size )
 			}
 
 			printf( " " );
-			SHOW_BINARY( *( cp + ( fixed_size - u8_index ) ) );
+			BinaryPrint( *( cp + ( fixed_size - u8_index ) ) );
 
 			++u8_print_count;
 		}

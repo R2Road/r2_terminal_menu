@@ -166,8 +166,8 @@ do {																						\
 //
 #define	OUTPUT_BINARY( condition )															\
 do {																						\
-	printf( "[BINARY]" " %s", #condition );											\
-	SHOW_BINARY( ( condition ) );															\
+	printf( "[BINARY]" " %s", #condition );												\
+	BinaryPrint( ( condition ) );															\
 	printf( "\n" );																			\
 } while( false )
 
@@ -179,7 +179,7 @@ do {																						\
 #define	OUTPUT_BINARIES( pointer, size )													\
 do {																						\
 	printf( "[BINARIES]" " %s" ", %s", #pointer, #size );								\
-	SHOW_BINARY( ( pointer ), ( size ) );													\
+	BinaryPrint( ( pointer ), ( size ) );													\
 	printf( "\n" );																			\
 } while( false )
 

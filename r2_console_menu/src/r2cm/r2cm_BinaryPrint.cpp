@@ -1,7 +1,7 @@
 #include "r2cm_BinaryPrint.h"
 
 template<>
-void SHOW_BINARY<uint8_t>( const uint8_t value )
+void BinaryPrint<uint8_t>( const uint8_t value )
 {
 	uint8_t temp_value = 0;
 	bool temp_bit_flag = false;
