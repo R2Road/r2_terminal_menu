@@ -5,13 +5,13 @@
 
 #include "r2cm_BinaryPrint.h"
 
-#define R2_ENABLE_DEBUG_BREAK 0
+#define R2CM_ENABLE_DEBUG_BREAK 0
 
-#if defined( R2_ENABLE_DEBUG_BREAK ) && R2_ENABLE_DEBUG_BREAK == 1
-	#define R2_DEBUG_BREAK ( __debugbreak() )
+#if defined( R2CM_ENABLE_DEBUG_BREAK ) && R2CM_ENABLE_DEBUG_BREAK == 1
+	#define R2CM_DEBUG_BREAK ( __debugbreak() )
 #else
-	#define R2_DEBUG_BREAK
-#endif // R2_ENABLE_DEBUG_BREAK
+	#define R2CM_DEBUG_BREAK
+#endif // R2CM_ENABLE_DEBUG_BREAK
 
 
 #define	EXPECT_TRUE( condition )																\
@@ -22,7 +22,7 @@ do {																							\
 	}																							\
 	else																						\
 	{																							\
-		R2_DEBUG_BREAK;																			\
+		R2CM_DEBUG_BREAK;																		\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_TRUE( %s )\n", #condition );			\
 	}																							\
 } while( false )
@@ -35,7 +35,7 @@ do {																							\
 	}																							\
 	else																						\
 	{																							\
-		R2_DEBUG_BREAK;																			\
+		R2CM_DEBUG_BREAK;																		\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_FALSE( %s )\n", #condition );			\
 	}																							\
 } while( false )
@@ -48,7 +48,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_EQ( %s == %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
@@ -63,7 +63,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_NE( %s != %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
@@ -78,7 +78,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_GT( %s > %s )\n", #condition_1, #condition_2 );		\
 	}																											\
 } while( false )
@@ -91,7 +91,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_LT( %s < %s )\n", #condition_1, #condition_2 );		\
 	}																											\
 } while( false )
@@ -104,7 +104,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_GE( %s >= %s )\n", #condition_1, #condition_2 );		\
 	}																											\
 } while( false )
@@ -117,7 +117,7 @@ do {																											\
 	}																											\
 	else																										\
 	{																											\
-		R2_DEBUG_BREAK;																							\
+		R2CM_DEBUG_BREAK;																						\
 		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_LE( %s <= %s )\n", #condition_1, #condition_2 );		\
 	}																											\
 } while( false )
