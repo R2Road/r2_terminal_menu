@@ -15,11 +15,29 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( 'a', inspector_test::Basic::GetInstance() );
-		ret->AddItem( 's', inspector_test::Value::GetInstance() );
-		ret->AddItem( 'd', inspector_test::Binary::GetInstance() );
-		ret->AddItem( 'f', inspector_test::Binaries::GetInstance() );
-		ret->AddItem( 'g', inspector_test::ShowFile::GetInstance() );
+		ret->AddItem( '1', inspector_test::Basic::GetInstance() );
+		ret->AddItem( '2', inspector_test::Value::GetInstance() );
+
+
+
+		ret->AddLineFeed();
+
+
+
+		ret->AddItem( 'q', inspector_test::Binary::GetInstance() );
+		ret->AddItem( 'w', inspector_test::Binaries::GetInstance() );
+
+
+
+		ret->AddLineFeed();
+
+
+
+		ret->AddItem( 'a', inspector_test::ShowFile::GetInstance() );
+
+
+
+		ret->AddLineFeed();
 
 
 
