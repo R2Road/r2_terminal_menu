@@ -115,6 +115,31 @@ namespace inspector_test
 
 
 
+	r2cm::iItem::TitleFunctionT Note::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Note";
+		};
+	}
+	r2cm::iItem::DoFunctionT Note::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_NOTE( "output note~!~!~!" );
+			}
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::iItem::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*

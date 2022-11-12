@@ -192,6 +192,14 @@ do {																						\
 } while( false )
 
 //
+// Output Node
+//
+#define	OUTPUT_NOTE( str )															\
+do {																						\
+	printf( "\t> " " %s" "\n", str );												\
+} while( false )
+
+//
 //
 //
 void SHOW_FILE( const char* const path );
