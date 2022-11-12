@@ -192,11 +192,16 @@ do {																						\
 } while( false )
 
 //
-// Output Node
+// Output ETC
 //
 #define	OUTPUT_NOTE( str )															\
 do {																						\
-	printf( "\t> " " %s" "\n", str );												\
+	printf( "\t" "+ Note : " "%s" "\n", str );												\
+} while( false )
+
+#define	OUTPUT_COMMENT( str )															\
+do {																						\
+	printf( "\t" "> " "%s" "\n", str );												\
 } while( false )
 
 //

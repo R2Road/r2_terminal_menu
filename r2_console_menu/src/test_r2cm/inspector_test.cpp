@@ -130,6 +130,7 @@ namespace inspector_test
 
 			{
 				OUTPUT_NOTE( "output note~!~!~!" );
+				OUTPUT_COMMENT( "output comment~!~!~!" );
 			}
 
 			std::cout << r2cm::split;
