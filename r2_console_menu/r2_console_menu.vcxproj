@@ -31,6 +31,7 @@
     <ClCompile Include="src\test_r2cm\base_test.cpp" />
     <ClCompile Include="src\test_r2cm\color_modifier_test.cpp" />
     <ClCompile Include="src\test_r2cm\empty_test.cpp" />
+    <ClCompile Include="src\test_r2cm\InspectorMenu.cpp" />
     <ClCompile Include="src\test_r2cm\inspector_test.cpp" />
     <ClCompile Include="src\test_r2cm\key_test.cpp" />
     <ClCompile Include="src\test_r2cm\window_utility_test.cpp" />
@@ -51,6 +52,7 @@
     <ClInclude Include="src\test_r2cm\base_test.h" />
     <ClInclude Include="src\test_r2cm\color_modifier_test.h" />
     <ClInclude Include="src\test_r2cm\empty_test.h" />
+    <ClInclude Include="src\test_r2cm\InspectorMenu.h" />
     <ClInclude Include="src\test_r2cm\inspector_test.h" />
     <ClInclude Include="src\test_r2cm\key_test.h" />
     <ClInclude Include="src\test_r2cm\window_utility_test.h" />

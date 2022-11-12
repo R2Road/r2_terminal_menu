@@ -42,6 +42,9 @@
     <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\test_r2cm\InspectorMenu.cpp">
+      <Filter>test_r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\test_r2cm\base_test.h">
@@ -95,6 +98,9 @@
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h">
       <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_r2cm\InspectorMenu.h">
+      <Filter>test_r2cm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

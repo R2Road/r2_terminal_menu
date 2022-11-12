@@ -7,11 +7,11 @@
 #include "test_r2cm/base_test.h"
 #include "test_r2cm/color_modifier_test.h"
 #include "test_r2cm/empty_test.h"
-#include "test_r2cm/inspector_test.h"
 #include "test_r2cm/key_test.h"
 #include "test_r2cm/window_utility_test.h"
 
 #include "test_r2cm/AnotherMenu.h"
+#include "test_r2cm/InspectorMenu.h"
 
 const char* RootMenu::GetTitle()
 {
@@ -90,11 +90,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'a', inspector_test::Basic::GetInstance() );
-		ret->AddItem( 's', inspector_test::Value::GetInstance() );
-		ret->AddItem( 'd', inspector_test::Binary::GetInstance() );
-		ret->AddItem( 'f', inspector_test::Binaries::GetInstance() );
-		ret->AddItem( 'g', inspector_test::ShowFile::GetInstance() );
+		ret->AddMenu<InspectorMenu>( 'a' );
 
 
 
