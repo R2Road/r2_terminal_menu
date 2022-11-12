@@ -38,10 +38,6 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddLineFeed();
-
-
-
 		ret->AddSplit();
 
 
