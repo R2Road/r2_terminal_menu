@@ -254,10 +254,6 @@ namespace inspector_test
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
-			std::cout << r2cm::split; 
-			
-			std::cout << "[ESC] End" << r2cm::linefeed;
-
 			std::cout << r2cm::split;
 
 			{
