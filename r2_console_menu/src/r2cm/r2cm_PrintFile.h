@@ -1,3 +1,6 @@
 #pragma once
 
-void PrintFile( const char* const path );
+namespace r2cm
+{
+	void PrintFile( const char* const path );
+}

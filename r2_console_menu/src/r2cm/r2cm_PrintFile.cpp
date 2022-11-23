@@ -2,23 +2,26 @@
 
 #include <stdio.h>
 
-void PrintFile( const char* const path )
+namespace r2cm
 {
-	printf( "\x1B[90m" "[FILE]" " %s" "\033[0m" "\n", path );
-
-	FILE* fp = nullptr;
-	if( 0 == fopen_s( &fp, path, "rb" ) )
+	void PrintFile( const char* const path )
 	{
-		static char buffer[100];
-		while( !feof( fp ) )
+		printf( "\x1B[90m" "[FILE]" " %s" "\033[0m" "\n", path );
+
+		FILE* fp = nullptr;
+		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
-			fgets( buffer, sizeof( buffer ), fp );
-			printf( "\t" "%s", buffer );
+			static char buffer[100];
+			while( !feof( fp ) )
+			{
+				fgets( buffer, sizeof( buffer ), fp );
+				printf( "\t" "%s", buffer );
+			}
+			printf( "\n" );
 		}
-		printf( "\n" );
+
+		fclose( fp );
+
+		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 	}
-
-	fclose( fp );
-
-	printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 }

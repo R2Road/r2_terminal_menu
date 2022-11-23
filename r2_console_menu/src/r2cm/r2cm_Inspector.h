@@ -208,7 +208,7 @@ do {																						\
 //
 // File
 //
-#define OUTPUT_FILE( file_path )																\
+#define OUTPUT_FILE( file_path )															\
 do {																						\
-	PrintFile( file_path );																	\
+	r2cm::PrintFile( file_path );															\
 } while( false )
