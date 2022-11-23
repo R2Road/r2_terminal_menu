@@ -1,3 +1,3 @@
 #pragma once
 
-void SHOW_FILE( const char* const path );
+void PrintFile( const char* const path );

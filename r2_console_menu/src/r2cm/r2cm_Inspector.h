@@ -204,3 +204,11 @@ do {																						\
 do {																						\
 	printf( "\t" "> " "%s" "\n", str );														\
 } while( false )
+
+//
+// File
+//
+#define SHOW_FILE( file_path )																\
+do {																						\
+	PrintFile( file_path );																	\
+} while( false )

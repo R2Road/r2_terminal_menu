@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void SHOW_FILE( const char* const path )
+void PrintFile( const char* const path )
 {
 	printf( "\x1B[90m" "[FILE]" " %s" "\033[0m" "\n", path );
 
