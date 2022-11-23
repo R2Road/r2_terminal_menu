@@ -23,6 +23,7 @@
     <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Director.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Inspector.cpp" />
+    <ClCompile Include="src\r2cm\r2cm_PrintFile.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
     <ClCompile Include="src\r2cm\r2cm_StopWatch.cpp" />
     <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp" />
@@ -39,6 +40,7 @@
   <ItemGroup>
     <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h" />
     <ClInclude Include="src\r2cm\r2cm_Director.h" />
+    <ClInclude Include="src\r2cm\r2cm_PrintFile.h" />
     <ClInclude Include="src\r2cm\r2cm_ostream.h" />
     <ClInclude Include="src\r2cm\r2cm_iItem.h" />
     <ClInclude Include="src\r2cm\r2cm_Inspector.h" />

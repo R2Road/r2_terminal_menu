@@ -4,6 +4,7 @@
 #include <stdint.h>
 
 #include "r2cm_BinaryPrint.h"
+#include "r2cm_PrintFile.h"
 
 #define R2CM_ENABLE_DEBUG_BREAK 0
 
@@ -194,17 +195,12 @@ do {																						\
 //
 // Output ETC
 //
-#define	OUTPUT_NOTE( str )															\
+#define	OUTPUT_NOTE( str )																	\
 do {																						\
 	printf( "\t" "+ Note : " "%s" "\n", str );												\
 } while( false )
 
-#define	OUTPUT_COMMENT( str )															\
+#define	OUTPUT_COMMENT( str )																\
 do {																						\
-	printf( "\t" "> " "%s" "\n", str );												\
+	printf( "\t" "> " "%s" "\n", str );														\
 } while( false )
-
-//
-//
-//
-void SHOW_FILE( const char* const path );
