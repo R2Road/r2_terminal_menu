@@ -6,73 +6,76 @@
 #include <stdint.h>
 #include <stdio.h>
 
-void Uint8BinaryPrint( const uint8_t value );
-
-template<typename T>
-void BinaryPrint( const T value );
-
-template<typename T>
-void BinaryPrint( const T value )
+namespace r2cm
 {
-	const int32_t fixed_size = sizeof( value ) - 1;
-	const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
+	void Uint8BinaryPrint( const uint8_t value );
 
-	const int32_t linefeed_limit = 8;
+	template<typename T>
+	void BinaryPrint( const T value );
 
-	for( int32_t position = 0; fixed_size >= position; ++position )
+	template<typename T>
+	void BinaryPrint( const T value )
 	{
-		if( 0 == ( position % linefeed_limit ) )
+		const int32_t fixed_size = sizeof( value ) - 1;
+		const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
+
+		const int32_t linefeed_limit = 8;
+
+		for( int32_t position = 0; fixed_size >= position; ++position )
 		{
-			printf( 0 == position ? "\n\t>" : "\n\t~" );
-		}
-
-		printf( " " );
-		Uint8BinaryPrint( *( up + ( fixed_size - position ) ) );
-	}
-}
-
-
-template<typename T>
-void BinaryPrint( const T* array, const int64_t array_size )
-{
-	const int64_t size = sizeof( T );
-
-	const int32_t linefeed_limit = 8;
-	const int32_t line_per_value = ( linefeed_limit / size );
-
-	int32_t value_print_count = 0;
-	int32_t u8_print_count = 0;
-
-	printf( "\n\t>" );
-
-	for( int64_t array_index = 0; array_size > array_index; ++array_index )
-	{
-		const uint8_t* cp = reinterpret_cast<const uint8_t*>( array + array_index );
-
-		for( int64_t u8_index = 0, fixed_size = size - 1; fixed_size >= u8_index; ++u8_index )
-		{
-			if( ( linefeed_limit <= u8_print_count ) && ( fixed_size > u8_index ) )
+			if( 0 == ( position % linefeed_limit ) )
 			{
-				u8_print_count = 0;
-				printf( "\n\t~" );
+				printf( 0 == position ? "\n\t>" : "\n\t~" );
 			}
 
 			printf( " " );
-			Uint8BinaryPrint( *( cp + ( fixed_size - u8_index ) ) );
-
-			++u8_print_count;
+			Uint8BinaryPrint( *( up + ( fixed_size - position ) ) );
 		}
+	}
 
-		++value_print_count;
-		if( ( line_per_value <= value_print_count ) && ( array_size - 1 > array_index ) )
+
+	template<typename T>
+	void BinaryPrint( const T* array, const int64_t array_size )
+	{
+		const int64_t size = sizeof( T );
+
+		const int32_t linefeed_limit = 8;
+		const int32_t line_per_value = ( linefeed_limit / size );
+
+		int32_t value_print_count = 0;
+		int32_t u8_print_count = 0;
+
+		printf( "\n\t>" );
+
+		for( int64_t array_index = 0; array_size > array_index; ++array_index )
 		{
-			value_print_count = 0;
-			u8_print_count = 0;
-			printf( "\n\t>" );
-		}
-		else
-		{
-			printf( "  " );
+			const uint8_t* cp = reinterpret_cast<const uint8_t*>( array + array_index );
+
+			for( int64_t u8_index = 0, fixed_size = size - 1; fixed_size >= u8_index; ++u8_index )
+			{
+				if( ( linefeed_limit <= u8_print_count ) && ( fixed_size > u8_index ) )
+				{
+					u8_print_count = 0;
+					printf( "\n\t~" );
+				}
+
+				printf( " " );
+				Uint8BinaryPrint( *( cp + ( fixed_size - u8_index ) ) );
+
+				++u8_print_count;
+			}
+
+			++value_print_count;
+			if( ( line_per_value <= value_print_count ) && ( array_size - 1 > array_index ) )
+			{
+				value_print_count = 0;
+				u8_print_count = 0;
+				printf( "\n\t>" );
+			}
+			else
+			{
+				printf( "  " );
+			}
 		}
 	}
 }

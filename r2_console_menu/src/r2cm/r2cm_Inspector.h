@@ -168,7 +168,7 @@ do {																						\
 #define	OUTPUT_BINARY( condition )															\
 do {																						\
 	printf( "[BINARY]" " %s", #condition );													\
-	BinaryPrint( ( condition ) );															\
+	r2cm::BinaryPrint( ( condition ) );															\
 	printf( "\n" );																			\
 } while( false )
 
@@ -180,7 +180,7 @@ do {																						\
 #define	OUTPUT_BINARIES( pointer, size )													\
 do {																						\
 	printf( "[BINARIES]" " %s" ", %s", #pointer, #size );									\
-	BinaryPrint( ( pointer ), ( size ) );													\
+	r2cm::BinaryPrint( ( pointer ), ( size ) );													\
 	printf( "\n" );																			\
 } while( false )
 
