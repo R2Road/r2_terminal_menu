@@ -20,9 +20,6 @@
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_Inspector.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\test_r2cm\AnotherMenu.cpp">
       <Filter>test_r2cm</Filter>
     </ClCompile>
