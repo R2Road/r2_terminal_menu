@@ -5,7 +5,7 @@
 
 #include "RootMenu.h"
 
-#include "test_r2cm/empty_test.h"
+#include "item/empty_test.h"
 
 r2cm::MenuUp AnotherMenu::Create( r2cm::Director& director )
 {

@@ -5,7 +5,7 @@
 
 #include "RootMenu.h"
 
-#include "test_r2cm/inspector_test.h"
+#include "item/inspector_test.h"
 
 r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 {

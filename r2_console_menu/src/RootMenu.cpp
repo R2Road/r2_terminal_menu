@@ -4,14 +4,14 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_VersionInfo.h"
 
-#include "test_r2cm/base_test.h"
-#include "test_r2cm/color_modifier_test.h"
-#include "test_r2cm/empty_test.h"
-#include "test_r2cm/key_test.h"
-#include "test_r2cm/window_utility_test.h"
+#include "test/item/base_test.h"
+#include "test/item/color_modifier_test.h"
+#include "test/item/empty_test.h"
+#include "test/item/key_test.h"
+#include "test/item/window_utility_test.h"
 
-#include "test_r2cm/AnotherMenu.h"
-#include "test_r2cm/InspectorMenu.h"
+#include "test/AnotherMenu.h"
+#include "test/InspectorMenu.h"
 
 const char* RootMenu::GetTitle()
 {
