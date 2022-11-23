@@ -1,8 +1,8 @@
-#include "r2cm_BinaryPrint.h"
+#include "r2cm_PrintBinary.h"
 
 namespace r2cm
 {
-	void Uint8BinaryPrint( const uint8_t value )
+	void PrintUint8Binary( const uint8_t value )
 	{
 		uint8_t temp_value = 0;
 		bool temp_bit_flag = false;

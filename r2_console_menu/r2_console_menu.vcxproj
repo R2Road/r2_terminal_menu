@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp" />
+    <ClCompile Include="src\r2cm\r2cm_PrintBinary.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Director.cpp" />
     <ClCompile Include="src\r2cm\r2cm_PrintFile.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
@@ -37,7 +37,7 @@
     <ClCompile Include="src\test\item\window_utility_test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h" />
+    <ClInclude Include="src\r2cm\r2cm_PrintBinary.h" />
     <ClInclude Include="src\r2cm\r2cm_Director.h" />
     <ClInclude Include="src\r2cm\r2cm_PrintFile.h" />
     <ClInclude Include="src\r2cm\r2cm_ostream.h" />

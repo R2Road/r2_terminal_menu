@@ -15,9 +15,6 @@
       <Filter>r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\RootMenu.cpp" />
-    <ClCompile Include="src\r2cm\r2cm_BinaryPrint.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_PrintFile.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
@@ -44,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="src\test\item\window_utility_test.cpp">
       <Filter>test\item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_PrintBinary.cpp">
+      <Filter>r2cm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +75,6 @@
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\RootMenu.h" />
-    <ClInclude Include="src\r2cm\r2cm_BinaryPrint.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_PrintFile.h">
       <Filter>r2cm</Filter>
     </ClInclude>
@@ -104,6 +101,9 @@
     </ClInclude>
     <ClInclude Include="src\test\item\window_utility_test.h">
       <Filter>test\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_PrintBinary.h">
+      <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

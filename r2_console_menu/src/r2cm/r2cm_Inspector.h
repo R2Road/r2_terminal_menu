@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdint.h>
 
-#include "r2cm_BinaryPrint.h"
+#include "r2cm_PrintBinary.h"
 #include "r2cm_PrintFile.h"
 
 #define R2CM_ENABLE_DEBUG_BREAK 0
@@ -168,7 +168,7 @@ do {																						\
 #define	OUTPUT_BINARY( condition )															\
 do {																						\
 	printf( "[BINARY]" " %s", #condition );													\
-	r2cm::BinaryPrint( ( condition ) );															\
+	r2cm::PrintBinary( ( condition ) );														\
 	printf( "\n" );																			\
 } while( false )
 
@@ -180,7 +180,7 @@ do {																						\
 #define	OUTPUT_BINARIES( pointer, size )													\
 do {																						\
 	printf( "[BINARIES]" " %s" ", %s", #pointer, #size );									\
-	r2cm::BinaryPrint( ( pointer ), ( size ) );													\
+	r2cm::PrintBinary( ( pointer ), ( size ) );												\
 	printf( "\n" );																			\
 } while( false )
 

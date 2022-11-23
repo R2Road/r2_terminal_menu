@@ -8,13 +8,13 @@
 
 namespace r2cm
 {
-	void Uint8BinaryPrint( const uint8_t value );
+	void PrintUint8Binary( const uint8_t value );
 
 	template<typename T>
-	void BinaryPrint( const T value );
+	void PrintBinary( const T value );
 
 	template<typename T>
-	void BinaryPrint( const T value )
+	void PrintBinary( const T value )
 	{
 		const int32_t fixed_size = sizeof( value ) - 1;
 		const uint8_t* up = reinterpret_cast<const uint8_t*>( &value );
@@ -29,13 +29,13 @@ namespace r2cm
 			}
 
 			printf( " " );
-			Uint8BinaryPrint( *( up + ( fixed_size - position ) ) );
+			PrintUint8Binary( *( up + ( fixed_size - position ) ) );
 		}
 	}
 
 
 	template<typename T>
-	void BinaryPrint( const T* array, const int64_t array_size )
+	void PrintBinary( const T* array, const int64_t array_size )
 	{
 		const int64_t size = sizeof( T );
 
@@ -60,7 +60,7 @@ namespace r2cm
 				}
 
 				printf( " " );
-				Uint8BinaryPrint( *( cp + ( fixed_size - u8_index ) ) );
+				PrintUint8Binary( *( cp + ( fixed_size - u8_index ) ) );
 
 				++u8_print_count;
 			}
