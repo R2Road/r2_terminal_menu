@@ -34,7 +34,7 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'a', inspector_test::ShowFile::GetInstance() );
+		ret->AddItem( 'a', inspector_test::File::GetInstance() );
 
 
 

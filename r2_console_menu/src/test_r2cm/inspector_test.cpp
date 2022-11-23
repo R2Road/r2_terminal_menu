@@ -269,14 +269,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFunctionT ShowFile::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT File::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : ShowFile";
+			return "Inspector : File";
 		};
 	}
-	r2cm::iItem::DoFunctionT ShowFile::GetDoFunction()
+	r2cm::iItem::DoFunctionT File::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -291,7 +291,7 @@ namespace inspector_test
 
 				std::cout << r2cm::linefeed;
 
-				SHOW_FILE( p.string().c_str() );
+				OUTPUT_FILE( p.string().c_str() );
 			}
 
 			std::cout << r2cm::split;
@@ -305,7 +305,7 @@ namespace inspector_test
 
 				std::cout << r2cm::linefeed;
 
-				SHOW_FILE( p.string().c_str() );
+				OUTPUT_FILE( p.string().c_str() );
 			}
 
 			std::cout << r2cm::split;
