@@ -4,6 +4,14 @@
 
 namespace r2cm
 {
+	const char* GetLine( FILE* fp )
+	{
+		static char buffer[100];
+		fgets( buffer, sizeof( buffer ), fp );
+
+		return buffer;
+	}
+
 	void PrintFile( const char* const path )
 	{
 		printf( "\x1B[90m" "[FILE]" " %s" "\033[0m" "\n", path );
@@ -11,12 +19,11 @@ namespace r2cm
 		FILE* fp = nullptr;
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
-			static char buffer[100];
+			
 			unsigned int cur = 1;
 			while( !feof( fp ) )
 			{
-				fgets( buffer, sizeof( buffer ), fp );
-				printf( "%4d | " " " "%s", cur, buffer );
+				printf( "%4d | " " " "%s", cur, GetLine( fp ) );
 
 				++cur;
 			}
@@ -35,15 +42,15 @@ namespace r2cm
 		FILE* fp = nullptr;
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
-			static char buffer[100];
 			unsigned int cur = 1;
+			const char* str = nullptr;
 			while( !feof( fp ) )
 			{
-				fgets( buffer, sizeof( buffer ), fp );
+				str = GetLine( fp );
 
 				if( min <= cur )
 				{
-					printf( "%4d | " " " "%s", cur, buffer );
+					printf( "%4d | " " " "%s", cur, str );
 				}
 
 				++cur;
