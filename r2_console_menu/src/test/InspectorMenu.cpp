@@ -3,11 +3,11 @@
 #include "r2cm/r2cm_Director.h"
 #include "r2cm/r2cm_ostream.h"
 
-#include "RootMenu.h"
-
-#include "item/inspector_test.h"
 #include "item/inspector_binary_test.h"
 #include "item/inspector_file_test.h"
+#include "item/inspector_test.h"
+
+#include "RootMenu.h"
 
 r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 {
