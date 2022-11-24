@@ -48,6 +48,9 @@
     <ClCompile Include="src\test\item\inspector_binary_test.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\item\inspector_file_test.cpp">
+      <Filter>test\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\r2cm\r2cm_Director.h">
@@ -109,6 +112,9 @@
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\item\inspector_binary_test.h">
+      <Filter>test\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\item\inspector_file_test.h">
       <Filter>test\item</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,6 +7,7 @@
 
 #include "item/inspector_test.h"
 #include "item/inspector_binary_test.h"
+#include "item/inspector_file_test.h"
 
 r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 {
@@ -35,7 +36,7 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'a', inspector_test::File::GetInstance() );
+		ret->AddItem( 'a', inspector_file_test::File::GetInstance() );
 
 
 

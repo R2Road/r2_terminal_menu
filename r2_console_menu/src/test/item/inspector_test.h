@@ -25,11 +25,4 @@ namespace inspector_test
 		TitleFunctionT GetTitleFunction() const override;
 		DoFunctionT GetDoFunction() override;
 	};
-
-	class File : public r2cm::iItem, public r2cm::SingleTon<File>
-	{
-	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() override;
-	};
 }
