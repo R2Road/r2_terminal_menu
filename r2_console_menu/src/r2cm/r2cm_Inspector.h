@@ -15,6 +15,10 @@
 #endif // R2CM_ENABLE_DEBUG_BREAK
 
 
+
+//
+//
+//
 #define	EXPECT_TRUE( condition )																\
 do {																							\
 	if( ( condition ) )																			\
@@ -123,6 +127,9 @@ do {																											\
 	}																											\
 } while( false )
 
+
+
+
 //
 // Important Process Code
 //
@@ -140,6 +147,9 @@ do {																						\
 	{ condition; }																			\
 } while( false )
 
+
+
+
 //
 // Important Declaration Code
 //
@@ -153,6 +163,9 @@ printf( "\x1B[93m" "[DECLARATION]" "\033[0m" " %s\n", #condition );
 condition;																					\
 printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );
 
+
+
+
 //
 // Output Value
 //
@@ -161,6 +174,9 @@ do {																						\
 	printf( "[VALUE]" " %s" "\n", #condition );												\
 	std::cout << "\t> " << condition << "\n";												\
 } while( false )
+
+
+
 
 //
 // Output Binary
@@ -184,6 +200,9 @@ do {																						\
 	printf( "\n" );																			\
 } while( false )
 
+
+
+
 //
 // Output Code
 //
@@ -191,6 +210,9 @@ do {																						\
 do {																						\
 	printf( "[CODE]" " %s" "\n", #condition );												\
 } while( false )
+
+
+
 
 //
 // Output ETC
@@ -204,6 +226,9 @@ do {																						\
 do {																						\
 	printf( "\t" "> " "%s" "\n", str );														\
 } while( false )
+
+
+
 
 //
 // File
