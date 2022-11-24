@@ -212,3 +212,8 @@ do {																						\
 do {																						\
 	r2cm::PrintFile( file_path );															\
 } while( false )
+
+#define OUTPUT_FILE_RANGE( file_path, min, max )											\
+do {																						\
+	r2cm::PrintFile( file_path, min, max );													\
+} while( false )

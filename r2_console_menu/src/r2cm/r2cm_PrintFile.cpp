@@ -24,4 +24,31 @@ namespace r2cm
 
 		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 	}
+
+	void PrintFile( const char* const path, const unsigned int min, const unsigned int max )
+	{
+		printf( "\x1B[90m" "[FILE]" " %s" " : %d ~ %d" "\033[0m" "\n", path, min, max );
+
+		FILE* fp = nullptr;
+		if( 0 == fopen_s( &fp, path, "rb" ) )
+		{
+			static char buffer[100];
+			for( int cur = 0; !feof( fp ) && cur <= max; ++cur )
+			{
+				fgets( buffer, sizeof( buffer ), fp );
+
+				if( min > cur )
+				{
+					continue;
+				}
+
+				printf( "\t" "%s", buffer );
+			}
+			printf( "\n" );
+		}
+
+		fclose( fp );
+
+		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
+	}
 }

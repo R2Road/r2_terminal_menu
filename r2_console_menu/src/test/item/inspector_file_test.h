@@ -11,4 +11,11 @@ namespace inspector_file_test
 		TitleFunctionT GetTitleFunction() const override;
 		DoFunctionT GetDoFunction() override;
 	};
+
+	class FileRange : public r2cm::iItem, public r2cm::SingleTon<FileRange>
+	{
+	public:
+		TitleFunctionT GetTitleFunction() const override;
+		DoFunctionT GetDoFunction() override;
+	};
 }
