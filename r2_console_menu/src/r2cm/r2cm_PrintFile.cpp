@@ -36,18 +36,27 @@ namespace r2cm
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
 			static char buffer[100];
-			for( int cur = 1; !feof( fp ) && cur <= max; ++cur )
+			int cur = 1;
+			while( !feof( fp ) )
 			{
 				fgets( buffer, sizeof( buffer ), fp );
 
-				if( min > cur )
+				if( min <= cur )
 				{
-					continue;
+					printf( "%4d | " " " "%s", cur, buffer );
 				}
 
-				printf( "%4d | " " " "%s", cur, buffer );
+				++cur;
+				if( cur > max )
+				{
+					break;
+				}
 			}
-			printf( "\n" );
+
+			if( feof( fp ) )
+			{
+				printf( "\n" );
+			}
 		}
 
 		fclose( fp );
