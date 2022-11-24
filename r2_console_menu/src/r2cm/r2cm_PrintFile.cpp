@@ -12,10 +12,13 @@ namespace r2cm
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
 			static char buffer[100];
+			int cur = 1;
 			while( !feof( fp ) )
 			{
 				fgets( buffer, sizeof( buffer ), fp );
-				printf( "\t" "%s", buffer );
+				printf( "%4d | " " " "%s", cur, buffer );
+
+				++cur;
 			}
 			printf( "\n" );
 		}
