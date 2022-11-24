@@ -26,20 +26,6 @@ namespace inspector_test
 		DoFunctionT GetDoFunction() override;
 	};
 
-	class Binary : public r2cm::iItem, public r2cm::SingleTon<Binary>
-	{
-	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() override;
-	};
-
-	class Binaries : public r2cm::iItem, public r2cm::SingleTon<Binaries>
-	{
-	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() override;
-	};
-
 	class File : public r2cm::iItem, public r2cm::SingleTon<File>
 	{
 	public:

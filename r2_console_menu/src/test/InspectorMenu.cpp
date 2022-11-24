@@ -6,6 +6,7 @@
 #include "RootMenu.h"
 
 #include "item/inspector_test.h"
+#include "item/inspector_binary_test.h"
 
 r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 {
@@ -25,8 +26,8 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'q', inspector_test::Binary::GetInstance() );
-		ret->AddItem( 'w', inspector_test::Binaries::GetInstance() );
+		ret->AddItem( 'q', inspector_binary_test::Binary::GetInstance() );
+		ret->AddItem( 'w', inspector_binary_test::Binaries::GetInstance() );
 
 
 
