@@ -12,7 +12,7 @@ namespace r2cm
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
 			static char buffer[100];
-			int cur = 1;
+			unsigned int cur = 1;
 			while( !feof( fp ) )
 			{
 				fgets( buffer, sizeof( buffer ), fp );
@@ -36,7 +36,7 @@ namespace r2cm
 		if( 0 == fopen_s( &fp, path, "rb" ) )
 		{
 			static char buffer[100];
-			int cur = 1;
+			unsigned int cur = 1;
 			while( !feof( fp ) )
 			{
 				fgets( buffer, sizeof( buffer ), fp );
