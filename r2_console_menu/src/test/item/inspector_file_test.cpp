@@ -22,7 +22,7 @@ namespace inspector_file_test
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "show_code_test_01.lua" ) );
+				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
 				std::cout << "> " << p << r2cm::linefeed2;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
@@ -36,7 +36,7 @@ namespace inspector_file_test
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "show_code_test_01.cpp" ) );
+				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 				std::cout << "> " << p << r2cm::linefeed2;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
