@@ -5,14 +5,14 @@
 
 namespace inspector_test
 {
-	class Basic : public r2cm::iItem, public r2cm::SingleTon<Basic>
+	class Value : public r2cm::iItem, public r2cm::SingleTon<Value>
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;
 		DoFunctionT GetDoFunction() override;
 	};
 
-	class Value : public r2cm::iItem, public r2cm::SingleTon<Value>
+	class Basic : public r2cm::iItem, public r2cm::SingleTon<Basic>
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;

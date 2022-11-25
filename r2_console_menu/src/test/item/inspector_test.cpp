@@ -5,6 +5,38 @@
 
 namespace inspector_test
 {
+	r2cm::iItem::TitleFunctionT Value::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Value";
+		};
+	}
+	r2cm::iItem::DoFunctionT Value::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << r2cm::split;
+
+			{
+				DECLARATION_MAIN( const int test_int_1 = 1234567; );
+				OUTPUT_VALUE( test_int_1 );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_VALUE( 1234 * 5678 );
+			}
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -77,38 +109,6 @@ namespace inspector_test
 				OUTPUT_CODE( printf( "%s", "asdf" ) );
 			}
 #pragma warning( pop )
-
-			std::cout << r2cm::split;
-
-			return r2cm::eItemLeaveAction::Pause;
-		};
-	}
-
-
-
-	r2cm::iItem::TitleFunctionT Value::GetTitleFunction() const
-	{
-		return []()->const char*
-		{
-			return "Inspector : Value";
-		};
-	}
-	r2cm::iItem::DoFunctionT Value::GetDoFunction()
-	{
-		return []()->r2cm::eItemLeaveAction
-		{
-			std::cout << r2cm::split;
-
-			{
-				DECLARATION_MAIN( const int test_int_1 = 1234567; );
-				OUTPUT_VALUE( test_int_1 );
-			}
-
-			std::cout << r2cm::split;
-
-			{
-				OUTPUT_VALUE( 1234 * 5678 );
-			}
 
 			std::cout << r2cm::split;
 
