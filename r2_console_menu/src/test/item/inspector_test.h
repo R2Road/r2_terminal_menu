@@ -5,7 +5,7 @@
 
 namespace inspector_test
 {
-	class Value : public r2cm::iItem, public r2cm::SingleTon<Value>
+	class Basic : public r2cm::iItem, public r2cm::SingleTon<Basic>
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;

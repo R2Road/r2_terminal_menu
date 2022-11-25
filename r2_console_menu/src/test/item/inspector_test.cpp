@@ -5,14 +5,14 @@
 
 namespace inspector_test
 {
-	r2cm::iItem::TitleFunctionT Value::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Value";
+			return "Inspector : Basic";
 		};
 	}
-	r2cm::iItem::DoFunctionT Value::GetDoFunction()
+	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

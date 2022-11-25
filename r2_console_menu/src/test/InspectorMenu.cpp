@@ -17,7 +17,7 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( '1', inspector_test::Value::GetInstance() );
+		ret->AddItem( '1', inspector_test::Basic::GetInstance() );
 		ret->AddItem( '2', inspector_test::Expect::GetInstance() );
 		ret->AddItem( '3', inspector_test::Code::GetInstance() );
 		ret->AddItem( '4', inspector_test::Note::GetInstance() );
