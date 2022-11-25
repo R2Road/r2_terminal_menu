@@ -12,7 +12,7 @@ namespace inspector_test
 		DoFunctionT GetDoFunction() override;
 	};
 
-	class Basic : public r2cm::iItem, public r2cm::SingleTon<Basic>
+	class Expect : public r2cm::iItem, public r2cm::SingleTon<Expect>
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;

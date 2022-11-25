@@ -37,14 +37,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT Expect::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Basic";
+			return "Inspector : Expect";
 		};
 	}
-	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
+	r2cm::iItem::DoFunctionT Expect::GetDoFunction()
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
