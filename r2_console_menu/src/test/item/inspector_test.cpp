@@ -19,14 +19,35 @@ namespace inspector_test
 			std::cout << r2cm::split;
 
 			{
-				DECLARATION_MAIN( const int test_int_1 = 1234567; );
-				OUTPUT_VALUE( test_int_1 );
+				DECLARATION_MAIN( int i = 0; );
+
+				std::cout << r2cm::linefeed;
+
+				PROCESS_MAIN( i = 1234567; );
+
+				std::cout << r2cm::linefeed;
+
+				OUTPUT_VALUE( i );
 			}
 
 			std::cout << r2cm::split;
 
 			{
-				OUTPUT_VALUE( 1234 * 5678 );
+				DECLARATION_SUB( int j = 0; );
+
+				std::cout << r2cm::linefeed;
+
+				PROCESS_SUB( j = 7654321; );
+
+				std::cout << r2cm::linefeed;
+
+				OUTPUT_VALUE( j );
+			}
+
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_VALUE( 11111 * 7 );
 			}
 
 			std::cout << r2cm::split;
@@ -97,10 +118,10 @@ namespace inspector_test
 
 			{
 				DECLARATION_MAIN( int i = 0 );
-				DECLARATION_SUB( int j = i );
+				DECLARATION_MAIN( int j = i );
 				EXPECT_EQ( i, j );
 				PROCESS_MAIN( i = 1 );
-				PROCESS_SUB( i = 2 );
+				PROCESS_MAIN( i = 2 );
 				EXPECT_NE( i, 1 );
 				EXPECT_EQ( i, 2 );
 			}
