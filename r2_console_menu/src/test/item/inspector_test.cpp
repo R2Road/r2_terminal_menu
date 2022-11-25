@@ -103,12 +103,33 @@ namespace inspector_test
 				PROCESS_SUB( i = 2 );
 				EXPECT_NE( i, 1 );
 				EXPECT_EQ( i, 2 );
-
-				std::cout << r2cm::linefeed;
-
-				OUTPUT_CODE( printf( "%s", "asdf" ) );
 			}
 #pragma warning( pop )
+
+			std::cout << r2cm::split;
+
+			return r2cm::eItemLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2cm::iItem::TitleFunctionT Code::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Code";
+		};
+	}
+	r2cm::iItem::DoFunctionT Code::GetDoFunction()
+	{
+		return []()->r2cm::eItemLeaveAction
+		{
+			std::cout << r2cm::split;
+
+			{
+				OUTPUT_CODE( printf( "%s", "asdf" ) );
+			}
 
 			std::cout << r2cm::split;
 
