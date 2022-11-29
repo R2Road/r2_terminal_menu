@@ -105,15 +105,15 @@ namespace r2cm
 		return eItemLeaveAction::Pause;
 	}
 
-	void Menu::AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT func_title, const iItem::DoFunctionT func_do )
+	void Menu::AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, color_code, func_title, func_do );
 	}
-	void Menu::AddItem( const char key_code, const iItem::TitleFunctionT func_title, const iItem::DoFunctionT func_do )
+	void Menu::AddItem( const char key_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, r2cm::eColor::FG_White, func_title, func_do );
 	}
-	void Menu::AddItem( const char key_code, iItem& item_obj )
+	void Menu::AddItem( const char key_code, const iItem& item_obj )
 	{
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
