@@ -135,7 +135,7 @@ namespace r2cm
 	void Menu::AddMessage( const char* const message )
 	{
 		const iItem::TitleFunctionT func_title = [message]()->const char* { return message; };
-		const iItem::DoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const iItem::DoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
 
 		AddItem( KeyCode4Message, r2cm::eColor::FG_White, func_title, func_do );
 	}
