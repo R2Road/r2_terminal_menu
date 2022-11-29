@@ -46,7 +46,6 @@
     <ClInclude Include="src\r2cm\r2cm_iItem.h" />
     <ClInclude Include="src\r2cm\r2cm_Inspector.h" />
     <ClInclude Include="src\r2cm\r2cm_Menu.h" />
-    <ClInclude Include="src\r2cm\r2cm_Singleton.h" />
     <ClInclude Include="src\r2cm\r2cm_StopWatch.h" />
     <ClInclude Include="src\r2cm\r2cm_VersionInfo.h" />
     <ClInclude Include="src\r2cm\r2cm_WindowUtility.h" />
