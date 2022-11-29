@@ -42,7 +42,7 @@ namespace r2cm
 
 		void ShowTitle() const;
 		void ShowDescription() const;
-		void ShowMenu() const;
+		void ShowItems() const;
 
 		eItemLeaveAction Do( const int key_code );
 

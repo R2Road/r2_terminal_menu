@@ -37,7 +37,7 @@ namespace r2cm
 		}
 	}
 
-	void Menu::ShowMenu() const
+	void Menu::ShowItems() const
 	{
 		std::cout << "+ Menu" << r2cm::linefeed2;
 
