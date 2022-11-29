@@ -12,7 +12,7 @@ namespace inspector_test
 			return "Inspector : Basic";
 		};
 	}
-	r2cm::iItem::DoFunctionT Basic::GetDoFunction()
+	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -65,7 +65,7 @@ namespace inspector_test
 			return "Inspector : Expect";
 		};
 	}
-	r2cm::iItem::DoFunctionT Expect::GetDoFunction()
+	r2cm::iItem::DoFunctionT Expect::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -142,7 +142,7 @@ namespace inspector_test
 			return "Inspector : Code";
 		};
 	}
-	r2cm::iItem::DoFunctionT Code::GetDoFunction()
+	r2cm::iItem::DoFunctionT Code::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -167,7 +167,7 @@ namespace inspector_test
 			return "Inspector : Note";
 		};
 	}
-	r2cm::iItem::DoFunctionT Note::GetDoFunction()
+	r2cm::iItem::DoFunctionT Note::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

@@ -12,7 +12,7 @@ namespace inspector_binary_test
 			return "Inspector : Binary";
 		};
 	}
-	r2cm::iItem::DoFunctionT Binary::GetDoFunction()
+	r2cm::iItem::DoFunctionT Binary::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -75,7 +75,7 @@ namespace inspector_binary_test
 			return "Inspector : Binaries";
 		};
 	}
-	r2cm::iItem::DoFunctionT Binaries::GetDoFunction()
+	r2cm::iItem::DoFunctionT Binaries::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

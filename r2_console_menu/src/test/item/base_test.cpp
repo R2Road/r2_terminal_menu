@@ -13,7 +13,7 @@ namespace base_test
 			return "Base : TestEndAction_None";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_None::GetDoFunction()
+	r2cm::iItem::DoFunctionT TestEndAction_None::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -40,7 +40,7 @@ namespace base_test
 			return "Base : TestEndAction_Pause";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_Pause::GetDoFunction()
+	r2cm::iItem::DoFunctionT TestEndAction_Pause::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -67,7 +67,7 @@ namespace base_test
 			return "Base : TestEndAction_Exit";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_Exit::GetDoFunction()
+	r2cm::iItem::DoFunctionT TestEndAction_Exit::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

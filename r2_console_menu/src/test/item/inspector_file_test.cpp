@@ -14,7 +14,7 @@ namespace inspector_file_test
 			return "Inspector : File";
 		};
 	}
-	r2cm::iItem::DoFunctionT File::GetDoFunction()
+	r2cm::iItem::DoFunctionT File::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -61,7 +61,7 @@ namespace inspector_file_test
 			return "Inspector : File Range";
 		};
 	}
-	r2cm::iItem::DoFunctionT FileRange::GetDoFunction()
+	r2cm::iItem::DoFunctionT FileRange::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

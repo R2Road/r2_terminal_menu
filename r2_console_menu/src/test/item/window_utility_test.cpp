@@ -15,7 +15,7 @@ namespace window_utility_test
 			return "WIndow Utility : Move Cursor With Clear Buffer";
 		};
 	}
-	r2cm::iItem::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction()
+	r2cm::iItem::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
@@ -60,7 +60,7 @@ namespace window_utility_test
 			return "WIndow Utility : FillColor";
 		};
 	}
-	r2cm::iItem::DoFunctionT FillColor::GetDoFunction()
+	r2cm::iItem::DoFunctionT FillColor::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
