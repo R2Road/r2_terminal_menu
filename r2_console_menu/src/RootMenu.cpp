@@ -38,8 +38,8 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( '1', empty_test::Basic::GetInstance() );
-		ret->AddItem( '2', empty_test::Basic::GetInstance() );
+		ret->AddItem( '1', empty_test::Basic() );
+		ret->AddItem( '2', empty_test::Basic() );
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
@@ -81,8 +81,8 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'q', key_test::Basic::GetInstance() );
-		ret->AddItem( 'w', color_modifier_test::Basic::GetInstance() );
+		ret->AddItem( 'q', key_test::Basic() );
+		ret->AddItem( 'w', color_modifier_test::Basic() );
 
 
 
@@ -98,9 +98,9 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'z', base_test::TestEndAction_None::GetInstance() );
-		ret->AddItem( 'x', base_test::TestEndAction_Pause::GetInstance() );
-		ret->AddItem( 'c', base_test::TestEndAction_Exit::GetInstance() );
+		ret->AddItem( 'z', base_test::TestEndAction_None() );
+		ret->AddItem( 'x', base_test::TestEndAction_Pause() );
+		ret->AddItem( 'c', base_test::TestEndAction_Exit() );
 
 
 
@@ -108,8 +108,8 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'b', window_utility_test::MoveCursorWithClearBuffer::GetInstance() );
-		ret->AddItem( 'n', window_utility_test::FillColor::GetInstance() );
+		ret->AddItem( 'b', window_utility_test::MoveCursorWithClearBuffer() );
+		ret->AddItem( 'n', window_utility_test::FillColor() );
 
 
 

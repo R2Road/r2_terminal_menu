@@ -1,25 +1,24 @@
 #pragma once
 
-#include "r2cm/r2cm_Singleton.h"
 #include "r2cm/r2cm_iItem.h"
 
 namespace base_test
 {
-	class TestEndAction_None : public r2cm::iItem, public r2cm::SingleTon<TestEndAction_None>
+	class TestEndAction_None : public r2cm::iItem
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;
 		DoFunctionT GetDoFunction() const override;
 	};
 
-	class TestEndAction_Pause : public r2cm::iItem, public r2cm::SingleTon<TestEndAction_Pause>
+	class TestEndAction_Pause : public r2cm::iItem
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;
 		DoFunctionT GetDoFunction() const override;
 	};
 
-	class TestEndAction_Exit : public r2cm::iItem, public r2cm::SingleTon<TestEndAction_Exit>
+	class TestEndAction_Exit : public r2cm::iItem
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;

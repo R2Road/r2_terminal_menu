@@ -17,10 +17,10 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( '1', inspector_test::Basic::GetInstance() );
-		ret->AddItem( '2', inspector_test::Expect::GetInstance() );
-		ret->AddItem( '3', inspector_test::Code::GetInstance() );
-		ret->AddItem( '4', inspector_test::Note::GetInstance() );
+		ret->AddItem( '1', inspector_test::Basic() );
+		ret->AddItem( '2', inspector_test::Expect() );
+		ret->AddItem( '3', inspector_test::Code() );
+		ret->AddItem( '4', inspector_test::Note() );
 
 
 
@@ -28,8 +28,8 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'q', inspector_binary_test::Binary::GetInstance() );
-		ret->AddItem( 'w', inspector_binary_test::Binaries::GetInstance() );
+		ret->AddItem( 'q', inspector_binary_test::Binary() );
+		ret->AddItem( 'w', inspector_binary_test::Binaries() );
 
 
 
@@ -37,8 +37,8 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem( 'a', inspector_file_test::File::GetInstance() );
-		ret->AddItem( 's', inspector_file_test::FileRange::GetInstance() );
+		ret->AddItem( 'a', inspector_file_test::File() );
+		ret->AddItem( 's', inspector_file_test::FileRange() );
 
 
 

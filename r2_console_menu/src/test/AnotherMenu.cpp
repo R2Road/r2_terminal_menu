@@ -15,8 +15,8 @@ r2cm::MenuUp AnotherMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( '1', empty_test::Basic::GetInstance() );
-		ret->AddItem( '2', empty_test::Basic::GetInstance() );
+		ret->AddItem( '1', empty_test::Basic() );
+		ret->AddItem( '2', empty_test::Basic() );
 
 
 
