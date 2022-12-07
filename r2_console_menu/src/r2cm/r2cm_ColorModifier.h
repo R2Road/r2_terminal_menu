@@ -52,7 +52,7 @@ namespace r2cm
 	{
 	public:
 		ColorModifier() : mColor( eColor::None ) {}
-		ColorModifier( const eColor color_fg ) : mColor( color_fg ) {}
+		ColorModifier( const eColor color ) : mColor( color ) {}
 
 		friend std::ostream& operator<<( std::ostream& os, const ColorModifier& mf )
 		{
