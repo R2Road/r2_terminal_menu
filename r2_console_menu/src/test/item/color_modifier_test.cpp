@@ -33,7 +33,7 @@ namespace color_modifier_test
 
 				std::cout << r2cm::linefeed;
 
-				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::clm( r2cm::eColor::BG_Red ) << r2cm::clm( r2cm::eColor::FG_Blue ) << "Do Something" << r2cm::clm() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << r2cm::tab2 << clm( r2cm::eColor::BG_Red ) << clm( r2cm::eColor::FG_Blue ) << "Do Something" << clm() << r2cm::linefeed );
 			}
 
 			std::cout << r2cm::split;

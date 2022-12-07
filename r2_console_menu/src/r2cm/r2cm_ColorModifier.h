@@ -70,5 +70,6 @@ namespace r2cm
 	private:
 		eColor mColor;
 	};
-	using clm = ColorModifier;
 }
+
+using clm = r2cm::ColorModifier;

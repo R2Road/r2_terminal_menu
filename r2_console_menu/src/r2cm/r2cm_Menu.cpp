@@ -31,7 +31,7 @@ namespace r2cm
 		{
 			std::cout << "+ Message" << r2cm::linefeed2;
 			
-			std::cout << r2cm::clm( r2cm::eColor::FG_LightGreen ) << mDescriptionString << r2cm::clm() << r2cm::linefeed;
+			std::cout << clm( r2cm::eColor::FG_LightGreen ) << mDescriptionString << clm() << r2cm::linefeed;
 
 			std::cout << r2cm::split;
 		}
@@ -85,7 +85,7 @@ namespace r2cm
 			//
 			// Title
 			//
-			std::cout << r2cm::clm( static_cast<r2cm::eColor>( t.ColorCode ) ) << t.TitleFunction() << r2cm::clm() << r2cm::linefeed;
+			std::cout << clm( static_cast<r2cm::eColor>( t.ColorCode ) ) << t.TitleFunction() << clm() << r2cm::linefeed;
 		}
 
 		std::cout << r2cm::split << "Select Menu";
