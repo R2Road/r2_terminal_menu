@@ -54,7 +54,7 @@ namespace r2cm
 		ColorModifier() : mColor( eColor::None ) {}
 		ColorModifier( const eColor color ) : mColor( color ) {}
 
-		friend std::ostream& operator<<( std::ostream& os, const ColorModifier& mf )
+		friend std::ostream& operator<<( std::ostream& os, const ColorModifier& color_modifier )
 		{
 			//
 			// 2022.07.10 by R
@@ -64,7 +64,7 @@ namespace r2cm
 
 			static const char* header = "\033[";
 			static const char* tail = "m";
-			return os << header << mf.mColor << tail;
+			return os << header << color_modifier.mColor << tail;
 		}
 
 	private:
