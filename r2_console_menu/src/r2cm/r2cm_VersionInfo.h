@@ -20,6 +20,13 @@ namespace r2cm
 
 
 
+		const char* const String4Road2Version_1_0_4 =
+			"### Road 2 Version 1.0.4 ###"
+			"\n"
+			"\n"	"[o] " "update method : apply const - r2cm::iItem::GetDoFunction"
+			"\n"	"[o] " "remove class : r2cm::SingleTon"
+		; 
+		
 		const char* const String4Road2Version_1_0_3 =
 			"### Road 2 Version 1.0.3 ###"
 			"\n"
