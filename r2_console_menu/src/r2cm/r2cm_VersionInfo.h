@@ -20,6 +20,15 @@ namespace r2cm
 
 
 
+		const char* const String4Road2Version_1_0_2 =
+			"### Road 2 Version 1.0.2 ###"
+			"\n"
+			"\n"	"[o] " "add method : r2cm::WindowUtility::ScrollBarVisible"
+			"\n"	"[o] " "add method : r2cm::WindowUtility::MaximizeButtonEnable"
+			"\n"	"[o] " "add method : r2cm::WindowUtility::ResizingByDraggingEnable"
+			"\n"	"[o] " "add method : r2cm::WindowUtility::QuickEditEnable"
+		; 
+		
 		const char* const String4Road2Version_1_0_1 =
 			"### Road 2 Version 1.0.1 ###"
 			"\n"
