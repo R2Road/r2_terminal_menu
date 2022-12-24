@@ -20,6 +20,12 @@ namespace r2cm
 
 
 
+		const char* const String4Road2Version_1_0_5 =
+			"### Road 2 Version 1.0.5 ###"
+			"\n"
+			"\n"	"[ ] " "Split Menu And Menu View"
+		; 
+		
 		const char* const String4Road2Version_1_0_4 =
 			"### Road 2 Version 1.0.4 ###"
 			"\n"
