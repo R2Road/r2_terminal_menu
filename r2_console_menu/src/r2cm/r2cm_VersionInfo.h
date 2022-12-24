@@ -18,6 +18,16 @@ namespace r2cm
 
 		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
 
+
+
+		const char* const String4Road2Version_1_0_1 =
+			"### Road 2 Version 1.0.1 ###"
+			"\n"
+			"\n"	"[o] " "add class : r2cm::StopWatch"
+			"\n"	"[o] " "update method : r2cm::Menu::AddItem - Item 제목에 컬러 적용"
+			"\n"	"[o] " "update method : r2cm::Menu::Do - 메뉴 제목의 # 을 사용자가 입력하지 않아도 되도록 조정"
+		;
+
 		const char* const String4Road2Version_1_0_0 =
 					"### Road 2 Version 1.0.0 ###"
 			"\n"
