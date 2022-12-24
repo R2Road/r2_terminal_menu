@@ -20,6 +20,18 @@ namespace r2cm
 
 
 
+		const char* const String4Road2Version_1_0_3 =
+			"### Road 2 Version 1.0.3 ###"
+			"\n"
+			"\n"	"[o] " "update inspector : EXPECT_EQ, EXPECT_NE - 실패시 값 출력"
+			"\n"	"[o] " "update inspector : OUTPUT_BINARY - 가시성 개선"
+			"\n"	"[o] " "update inspector : inspector 의 debug break ON/OFF 설정"
+			"\n"	"[o] " "update inspector : Add - OUTPUT_NOTE"
+			"\n"	"[o] " "update inspector : Add - OUTPUT_COMMENT"
+			"\n"	"[o] " "update inspector : OUTPUT_FILE 에서 line index 출력"
+			"\n"	"[o] " "update inspector : Add - OUTPUT_FILE_RANGE"
+		; 
+		
 		const char* const String4Road2Version_1_0_2 =
 			"### Road 2 Version 1.0.2 ###"
 			"\n"
