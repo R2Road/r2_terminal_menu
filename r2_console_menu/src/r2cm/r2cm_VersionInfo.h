@@ -23,6 +23,7 @@ namespace r2cm
 		const char* const String4Road2Version_1_0_5 =
 			"### Road 2 Version 1.0.5 ###"
 			"\n"
+			"\n"	"[o] " "update inspector : EXPECT_GT, EXPECT_LT, EXPECT_GE, EXPECT_LE - 실패시 값 출력"
 			"\n"	"[ ] " "Split Menu And Menu View"
 		; 
 		
