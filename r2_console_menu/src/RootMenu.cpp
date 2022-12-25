@@ -15,26 +15,30 @@
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"
 
-const char* RootMenu::GetTitle()
+r2cm::iMenuWriter::TitleFunctionT RootMenu::GetTitleFunction() const
 {
-	static const std::string ret =
-		std::string( "Root Menu" )
-		
-		+ " : "	"<" + "C++17" + ">"
-		+ ", "	"<" + "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
-		+ ", "	"<" + r2cm::VersionInfo.String4Version + ">"
-	;
-	return ret.c_str();
+	return []()->const char*
+	{
+		static const std::string ret =
+			std::string( "Root Menu" )
+
+			+ " : "	"<" + "C++17" + ">"
+			+ ", "	"<" + "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
+			+ ", "	"<" + r2cm::VersionInfo.String4Version + ">"
+			;
+		return ret.c_str();
+	};
 }
-
-r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
+r2cm::iMenuWriter::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 {
-	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
-		director
-		, GetTitle()
-		, r2cm::VersionInfo.String4Road2Version_1_0_5
-	) );
-
+	return []()->const char*
+	{
+		return r2cm::VersionInfo.String4Road2Version_1_0_5;
+	};
+}
+r2cm::iMenuWriter::WriteFunctionT RootMenu::GetWriteFunction() const
+{
+	return []( r2cm::Menu* ret )
 	{
 		ret->AddMessage( "\t<Menu 객체에 test 를 위한 iItem 객체나 하위 메뉴를 위한 Menu 객체를 추가 하자.>" );
 
@@ -50,15 +54,15 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
 			, []()->r2cm::eItemLeaveAction
-			{
-				std::cout << r2cm::split;
+		{
+			std::cout << r2cm::split;
 
-				std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
+			std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
 
-				std::cout << r2cm::split;
+			std::cout << r2cm::split;
 
-				return r2cm::eItemLeaveAction::Pause;
-			}
+			return r2cm::eItemLeaveAction::Pause;
+		}
 		);
 
 
@@ -67,19 +71,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem(
-			'5'
-			, r2cm::None
-			, []()->const char* { return AnotherMenu::GetTitle(); }
-			, [&director]()->r2cm::eItemLeaveAction
-			{
-				director.Setup( AnotherMenu::Create( director ) );
-				return r2cm::eItemLeaveAction::None;
-			}
-		);
-		ret->AddMessage( "\t> Another Menu 는 하위 메뉴의 예제 입니다." );
-		ret->AddMenu<AnotherMenu>( '6' );
-		ret->AddMessage( "\t> AddMenu 함수를 사용하면 메뉴 이름에 색상이 적용 됩니다." );
+		ret->AddMenu( '6', AnotherMenu() );
 
 
 
@@ -96,7 +88,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddMenu<InspectorMenu>( 'a' );
+		ret->AddMenu( 'a', InspectorMenu() );
 
 
 
@@ -127,9 +119,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 			27
 			, r2cm::eColor::BG_Purple
 			, []()->const char* { return "Exit"; }
-			, []()->r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Exit; }
+		, []()->r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Exit; }
 		);
-	}
-
-	return ret;
+	};
 }

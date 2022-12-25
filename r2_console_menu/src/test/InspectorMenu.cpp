@@ -9,13 +9,23 @@
 
 #include "RootMenu.h"
 
-r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
+r2cm::iMenuWriter::TitleFunctionT InspectorMenu::GetTitleFunction() const
 {
-	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
-		director
-		, GetTitle()
-	) );
-
+	return []()->const char*
+	{
+		return "Inspector Menu";
+	};
+}
+r2cm::iMenuWriter::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
+{
+	return []()->const char*
+	{
+		return "";
+	};
+}
+r2cm::iMenuWriter::WriteFunctionT InspectorMenu::GetWriteFunction() const
+{
+	return []( r2cm::Menu* ret )
 	{
 		ret->AddItem( '1', inspector_test::Basic() );
 		ret->AddItem( '2', inspector_test::Expect() );
@@ -46,8 +56,6 @@ r2cm::MenuUp InspectorMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddMenu<RootMenu>( 27 );
-	}
-
-	return ret;
+		ret->AddMenu( 27, RootMenu() );
+	};
 }

@@ -2,6 +2,7 @@
 
 #include <cctype> // std::toupper
 
+#include "r2cm_iMenuWriter.h"
 #include "r2cm_ostream.h"
 
 namespace
@@ -13,12 +14,21 @@ namespace
 
 namespace r2cm
 {
-	Menu::Menu( Director& director, const char* title_string, const char* description_string ) :
+	Menu::Menu( Director& director ) :
 		mDirector( director )
-		, mTitleString( title_string )
-		, mDescriptionString( description_string )
+		, mTitleString( "" )
+		, mDescriptionString( "" )
 		, mItemContainer()
 	{}
+
+	void Menu::Reset( const iMenuWriter& menu_obj )
+	{
+		mTitleString = menu_obj.GetTitleFunction()();
+		mDescriptionString = menu_obj.GetDescriptionFunction()();
+
+		mItemContainer.clear();
+		menu_obj.GetWriteFunction()( this );
+	}
 
 	void Menu::ShowTitle() const
 	{
@@ -98,7 +108,19 @@ namespace r2cm
 			if( key_code == i.KeyCode )
 			{
 				std::cout << "# " << i.TitleFunction() << " #" << r2cm::linefeed;
-				return i.DoFunction();
+
+				//
+				// # 2022.12.25 by R
+				//
+				// i.DoFunction 의 내부에서 Menu 변경을 위해 mItemContainer.clear() 를 호출하는경우
+				// 작동중인 lambda 가 날아가면서 함수 내부의 capture 변수들이 날아가고 잘못된 메모리 참조로 터진다.
+				//
+				// 위와 같은 문제의 해결을 위해 lambda 를 복사하여 사용한다.
+				//
+				// 다른 해결책이 있을까?
+				//
+				auto do_func = i.DoFunction;
+				return do_func();
 			}
 		}
 
@@ -116,6 +138,27 @@ namespace r2cm
 	void Menu::AddItem( const char key_code, const iItem& item_obj )
 	{
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
+	}
+
+	void Menu::AddMenu( const char key_code, const iMenuWriter& menu_obj )
+	{
+		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction(),
+			[
+			this
+			, &m = *this
+			, t = menu_obj.GetTitleFunction()
+			, d = menu_obj.GetDescriptionFunction()
+			, w = menu_obj.GetWriteFunction()
+			]()->r2cm::eItemLeaveAction
+		{
+			mTitleString = t();
+			mDescriptionString = d();
+
+			mItemContainer.clear();
+			w( &m );
+
+			return r2cm::eItemLeaveAction::None;
+		} );
 	}
 
 	void Menu::AddLineFeed()

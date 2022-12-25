@@ -7,16 +7,26 @@
 
 #include "item/empty_test.h"
 
-r2cm::MenuUp AnotherMenu::Create( r2cm::Director& director )
+r2cm::iMenuWriter::TitleFunctionT AnotherMenu::GetTitleFunction() const
 {
-	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
-		director
-		, GetTitle()
-	) );
-
+	return []()->const char*
 	{
-		ret->AddItem( '1', empty_test::Basic() );
-		ret->AddItem( '2', empty_test::Basic() );
+		return "Another Menu";
+	};
+}
+r2cm::iMenuWriter::DescriptionFunctionT AnotherMenu::GetDescriptionFunction() const
+{
+	return []()->const char*
+	{
+		return "";
+	};
+}
+r2cm::iMenuWriter::WriteFunctionT AnotherMenu::GetWriteFunction() const
+{
+	return []( r2cm::Menu* ret )
+	{
+		ret->AddItem( '5', empty_test::Basic() );
+		ret->AddItem( '6', empty_test::Basic() );
 
 
 
@@ -24,8 +34,6 @@ r2cm::MenuUp AnotherMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddMenu<RootMenu>( 27 );
-	}
-
-	return ret;
+		ret->AddMenu( 27, RootMenu() );
+	};
 }

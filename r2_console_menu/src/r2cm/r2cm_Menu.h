@@ -9,8 +9,8 @@
 namespace r2cm
 {
 	class Director;
+	class iMenuWriter;
 
-	using MenuUp = std::unique_ptr<class Menu>;
 	class Menu
 	{
 	private:
@@ -37,8 +37,9 @@ namespace r2cm
 		using ItemContainerT = std::vector<ItemInfo>;
 
 	public:
-		Menu( Director& director, const char* title_string, const char* description_string = "" );
-		virtual ~Menu() {}
+		Menu( Director& director );
+
+		void Reset( const iMenuWriter& menu_obj );
 
 		void ShowTitle() const;
 		void ShowDescription() const;
@@ -49,21 +50,9 @@ namespace r2cm
 		void AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
-		
-		template<typename menu_T>
-		void AddMenu( const char key_code )
-		{
-			AddItem(
-				key_code
-				, 36
-				, []()->const char* { return menu_T::GetTitle(); }
-				, [&director = mDirector]()->r2cm::eItemLeaveAction
-				{
-					director.Setup( menu_T::Create( director ) );
-					return r2cm::eItemLeaveAction::None;
-				}
-			);
-		}
+
+		void WriteMenu( const iMenuWriter& menu_obj );
+		void AddMenu( const char key_code, const iMenuWriter& menu_obj );
 
 		void AddLineFeed();
 		void AddSplit();

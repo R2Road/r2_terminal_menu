@@ -4,16 +4,17 @@
 #include <utility>
 
 #include "r2cm_iItem.h"
+#include "r2cm_iMenuWriter.h"
 #include "r2cm_ostream.h"
 
 namespace r2cm
 {
-	Director::Director() : mMenu()
+	Director::Director() : mMenu( *this )
 	{}
 
-	void Director::Setup( MenuUp menu )
+	void Director::Setup( const iMenuWriter& menu_writer )
 	{
-		mMenu = std::move( menu );
+		mMenu.Reset( menu_writer );
 	}
 
 	void Director::Run()
@@ -23,14 +24,14 @@ namespace r2cm
 		{
 			system( "cls" );
 
-			mMenu->ShowTitle();
-			mMenu->ShowDescription();
-			mMenu->ShowItems();
+			mMenu.ShowTitle();
+			mMenu.ShowDescription();
+			mMenu.ShowItems();
 			input = _getch();
 
 			system( "cls" );
 
-			switch( mMenu->Do( input ) )
+			switch( mMenu.Do( input ) )
 			{
 			//case eItemLeaveAction::None: break;
 
