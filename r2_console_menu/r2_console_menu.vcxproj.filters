@@ -120,7 +120,7 @@
     <ClInclude Include="src\r2cm\r2cm_iMenuWriter.h">
       <Filter>r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_DoLeaveAction.h">
+    <ClInclude Include="src\r2cm\r2cm_MenuConstant.h">
       <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>
