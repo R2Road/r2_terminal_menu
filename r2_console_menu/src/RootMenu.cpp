@@ -53,7 +53,7 @@ r2cm::iMenuWriter::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
-			, []()->r2cm::eItemLeaveAction
+			, []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -61,7 +61,7 @@ r2cm::iMenuWriter::WriteFunctionT RootMenu::GetWriteFunction() const
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		}
 		);
 
@@ -119,7 +119,7 @@ r2cm::iMenuWriter::WriteFunctionT RootMenu::GetWriteFunction() const
 			27
 			, r2cm::eColor::BG_Purple
 			, []()->const char* { return "Exit"; }
-		, []()->r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Exit; }
+		, []()->r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Exit; }
 		);
 	};
 }

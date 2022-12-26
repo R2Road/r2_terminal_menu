@@ -4,7 +4,7 @@
 
 namespace r2cm
 {
-	enum class eItemLeaveAction
+	enum class eDoLeaveAction
 	{
 		None,
 		Pause,
@@ -15,7 +15,7 @@ namespace r2cm
 	{
 	public:
 		using TitleFunctionT = std::function<const char*()>;
-		using DoFunctionT = std::function<eItemLeaveAction()>;
+		using DoFunctionT = std::function<eDoLeaveAction()>;
 
 		virtual ~iItem() {}
 

@@ -14,7 +14,7 @@ namespace inspector_binary_test
 	}
 	r2cm::iItem::DoFunctionT Binary::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -62,7 +62,7 @@ namespace inspector_binary_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -77,7 +77,7 @@ namespace inspector_binary_test
 	}
 	r2cm::iItem::DoFunctionT Binaries::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -127,7 +127,7 @@ namespace inspector_binary_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 }

@@ -17,7 +17,7 @@ namespace window_utility_test
 	}
 	r2cm::iItem::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -47,7 +47,7 @@ namespace window_utility_test
 			std::cout << "[Any Key] End";
 			_getch();
 
-			return r2cm::eItemLeaveAction::None;
+			return r2cm::eDoLeaveAction::None;
 		};
 	}
 
@@ -62,7 +62,7 @@ namespace window_utility_test
 	}
 	r2cm::iItem::DoFunctionT FillColor::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -84,7 +84,7 @@ namespace window_utility_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 }

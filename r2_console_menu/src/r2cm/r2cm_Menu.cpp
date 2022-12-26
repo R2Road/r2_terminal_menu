@@ -101,7 +101,7 @@ namespace r2cm
 		std::cout << r2cm::split << "Select Menu";
 	}
 
-	eItemLeaveAction Menu::Do( const int key_code )
+	eDoLeaveAction Menu::Do( const int key_code )
 	{
 		for( const auto& i : mItemContainer )
 		{
@@ -124,7 +124,7 @@ namespace r2cm
 			}
 		}
 
-		return eItemLeaveAction::Pause;
+		return eDoLeaveAction::Pause;
 	}
 
 	void Menu::AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do )
@@ -149,7 +149,7 @@ namespace r2cm
 			, t = menu_obj.GetTitleFunction()
 			, d = menu_obj.GetDescriptionFunction()
 			, w = menu_obj.GetWriteFunction()
-			]()->r2cm::eItemLeaveAction
+			]()->r2cm::eDoLeaveAction
 		{
 			mTitleString = t();
 			mDescriptionString = d();
@@ -157,28 +157,28 @@ namespace r2cm
 			mItemContainer.clear();
 			w( &m );
 
-			return r2cm::eItemLeaveAction::None;
+			return r2cm::eDoLeaveAction::None;
 		} );
 	}
 
 	void Menu::AddLineFeed()
 	{
 		static const iItem::TitleFunctionT func_title = []()->const char* { return ""; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4LineFeed, r2cm::eColor::FG_White, func_title, func_do );
 	}
 	void Menu::AddSplit()
 	{
 		static const iItem::TitleFunctionT func_title = []()->const char* { return ""; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4Split, r2cm::eColor::FG_White, func_title, func_do );
 	}
 	void Menu::AddMessage( const char* const message )
 	{
 		const iItem::TitleFunctionT func_title = [message]()->const char* { return message; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Pause; };
+		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4Message, r2cm::eColor::FG_White, func_title, func_do );
 	}

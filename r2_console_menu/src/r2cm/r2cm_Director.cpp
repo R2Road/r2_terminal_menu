@@ -33,13 +33,13 @@ namespace r2cm
 
 			switch( mMenu.Do( input ) )
 			{
-			//case eItemLeaveAction::None: break;
+			//case eDoLeaveAction::None: break;
 
-			case eItemLeaveAction::Pause:
+			case eDoLeaveAction::Pause:
 				system( "pause" );				
 				break;
 
-			case eItemLeaveAction::Exit:
+			case eDoLeaveAction::Exit:
 				return;
 			}
 		}

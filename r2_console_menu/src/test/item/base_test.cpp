@@ -15,7 +15,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFunctionT TestEndAction_None::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -27,7 +27,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::None;
+			return r2cm::eDoLeaveAction::None;
 		};
 	}
 
@@ -42,7 +42,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFunctionT TestEndAction_Pause::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -54,7 +54,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -69,7 +69,7 @@ namespace base_test
 	}
 	r2cm::iItem::DoFunctionT TestEndAction_Exit::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -81,7 +81,7 @@ namespace base_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Exit;
+			return r2cm::eDoLeaveAction::Exit;
 		};
 	}
 }

@@ -14,7 +14,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -52,7 +52,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -67,7 +67,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFunctionT Expect::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -129,7 +129,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -144,7 +144,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFunctionT Code::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -154,7 +154,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -169,7 +169,7 @@ namespace inspector_test
 	}
 	r2cm::iItem::DoFunctionT Note::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -180,7 +180,7 @@ namespace inspector_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 }

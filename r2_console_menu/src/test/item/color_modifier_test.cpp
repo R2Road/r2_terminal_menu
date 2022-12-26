@@ -14,7 +14,7 @@ namespace color_modifier_test
 	}
 	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -38,7 +38,7 @@ namespace color_modifier_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 }

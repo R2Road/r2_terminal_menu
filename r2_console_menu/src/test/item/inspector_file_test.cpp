@@ -16,7 +16,7 @@ namespace inspector_file_test
 	}
 	r2cm::iItem::DoFunctionT File::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -48,7 +48,7 @@ namespace inspector_file_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 
@@ -63,7 +63,7 @@ namespace inspector_file_test
 	}
 	r2cm::iItem::DoFunctionT FileRange::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2cm::eDoLeaveAction
 		{
 			std::cout << r2cm::split;
 
@@ -95,7 +95,7 @@ namespace inspector_file_test
 
 			std::cout << r2cm::split;
 
-			return r2cm::eItemLeaveAction::Pause;
+			return r2cm::eDoLeaveAction::Pause;
 		};
 	}
 }
