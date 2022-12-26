@@ -20,8 +20,8 @@ namespace r2cm
 			ItemInfo(
 				const char key_code
 				, const int color_code
-				, const r2cm::TitleFunctionT title_function
-				, const r2cm::DoFunctionT do_function
+				, const r2cm::TitleFunctionT& title_function
+				, const r2cm::DoFunctionT& do_function
 			) :
 				KeyCode( key_code )
 				, ColorCode( color_code )
