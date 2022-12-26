@@ -40,29 +40,21 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2cm::Menu* ret )
 	{
-		ret->AddMessage( "\t<Menu 객체에 test 를 위한 iItem 객체나 하위 메뉴를 위한 Menu 객체를 추가 하자.>" );
-
-
-
-		ret->AddLineFeed();
-
-
-
 		ret->AddItem( '1', empty_test::Basic() );
 		ret->AddItem( '2', empty_test::Basic() );
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
 			, []()->r2cm::eDoLeaveAction
-		{
-			std::cout << r2cm::split;
+			{
+				std::cout << r2cm::split;
 
-			std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
+				std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
 
-			std::cout << r2cm::split;
+				std::cout << r2cm::split;
 
-			return r2cm::eDoLeaveAction::Pause;
-		}
+				return r2cm::eDoLeaveAction::Pause;
+			}
 		);
 
 
