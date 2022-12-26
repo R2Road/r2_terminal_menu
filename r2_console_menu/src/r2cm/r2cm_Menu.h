@@ -17,7 +17,6 @@ namespace r2cm
 	private:
 		struct ItemInfo
 		{
-
 			ItemInfo(
 				const char key_code
 				, const int color_code
@@ -41,13 +40,19 @@ namespace r2cm
 	public:
 		Menu( Director& director );
 
-		void Reset( const iMenuWriter& menu_obj );
-
+		//
+		//
+		//
 		void ShowTitle() const;
 		void ShowDescription() const;
 		void ShowItems() const;
 
 		eDoLeaveAction Do( const int key_code );
+
+		//
+		//
+		//
+		void Reset( const iMenuWriter& menu_obj );
 
 		void AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
 		void AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );

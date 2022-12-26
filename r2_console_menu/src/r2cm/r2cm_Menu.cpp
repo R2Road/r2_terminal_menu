@@ -23,15 +23,6 @@ namespace r2cm
 		, mItemContainer()
 	{}
 
-	void Menu::Reset( const iMenuWriter& menu_obj )
-	{
-		mTitleString = menu_obj.GetTitleFunction()();
-		mDescriptionString = menu_obj.GetDescriptionFunction()();
-
-		mItemContainer.clear();
-		menu_obj.GetWriteFunction()( this );
-	}
-
 	void Menu::ShowTitle() const
 	{
 		std::cout << "# " << mTitleString << " #" << r2cm::linefeed;
@@ -127,6 +118,15 @@ namespace r2cm
 		}
 
 		return eDoLeaveAction::Pause;
+	}
+
+	void Menu::Reset( const iMenuWriter& menu_obj )
+	{
+		mTitleString = menu_obj.GetTitleFunction()( );
+		mDescriptionString = menu_obj.GetDescriptionFunction()( );
+
+		mItemContainer.clear();
+		menu_obj.GetWriteFunction()( this );
 	}
 
 	void Menu::AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
