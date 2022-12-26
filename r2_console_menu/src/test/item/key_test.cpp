@@ -6,14 +6,14 @@
 
 namespace key_test
 {
-	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
+	r2cm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Key : Basic";
 		};
 	}
-	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
+	r2cm::DoFunctionT Basic::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{

@@ -9,21 +9,21 @@
 
 #include "RootMenu.h"
 
-r2cm::iMenuWriter::TitleFunctionT InspectorMenu::GetTitleFunction() const
+r2cm::TitleFunctionT InspectorMenu::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Inspector Menu";
 	};
 }
-r2cm::iMenuWriter::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
+r2cm::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2cm::iMenuWriter::WriteFunctionT InspectorMenu::GetWriteFunction() const
+r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 {
 	return []( r2cm::Menu* ret )
 	{

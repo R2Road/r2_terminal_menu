@@ -1,18 +1,12 @@
 #pragma once
 
-#include <functional>
+#include "r2cm_DoLeaveAction.h"
 
 namespace r2cm
 {
-	class Menu;
-
 	class iMenuWriter
 	{
 	public:
-		using TitleFunctionT = std::function<const char*()>;
-		using DescriptionFunctionT = std::function<const char*()>;
-		using WriteFunctionT = std::function<void(Menu*)>;
-
 		virtual ~iMenuWriter() {}
 
 		virtual TitleFunctionT GetTitleFunction() const = 0;

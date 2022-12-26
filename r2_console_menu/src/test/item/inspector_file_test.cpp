@@ -7,14 +7,14 @@
 
 namespace inspector_file_test
 {
-	r2cm::iItem::TitleFunctionT File::GetTitleFunction() const
+	r2cm::TitleFunctionT File::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : File";
 		};
 	}
-	r2cm::iItem::DoFunctionT File::GetDoFunction() const
+	r2cm::DoFunctionT File::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -54,14 +54,14 @@ namespace inspector_file_test
 
 
 
-	r2cm::iItem::TitleFunctionT FileRange::GetTitleFunction() const
+	r2cm::TitleFunctionT FileRange::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : File Range";
 		};
 	}
-	r2cm::iItem::DoFunctionT FileRange::GetDoFunction() const
+	r2cm::DoFunctionT FileRange::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{

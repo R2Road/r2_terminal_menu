@@ -5,14 +5,14 @@
 
 namespace inspector_binary_test
 {
-	r2cm::iItem::TitleFunctionT Binary::GetTitleFunction() const
+	r2cm::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Binary";
 		};
 	}
-	r2cm::iItem::DoFunctionT Binary::GetDoFunction() const
+	r2cm::DoFunctionT Binary::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -68,14 +68,14 @@ namespace inspector_binary_test
 
 
 
-	r2cm::iItem::TitleFunctionT Binaries::GetTitleFunction() const
+	r2cm::TitleFunctionT Binaries::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Binaries";
 		};
 	}
-	r2cm::iItem::DoFunctionT Binaries::GetDoFunction() const
+	r2cm::DoFunctionT Binaries::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{

@@ -7,21 +7,21 @@ namespace base_test
 	class TestEndAction_None : public r2cm::iItem
 	{
 	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() const override;
+		r2cm::TitleFunctionT GetTitleFunction() const override;
+		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 
 	class TestEndAction_Pause : public r2cm::iItem
 	{
 	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() const override;
+		r2cm::TitleFunctionT GetTitleFunction() const override;
+		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 
 	class TestEndAction_Exit : public r2cm::iItem
 	{
 	public:
-		TitleFunctionT GetTitleFunction() const override;
-		DoFunctionT GetDoFunction() const override;
+		r2cm::TitleFunctionT GetTitleFunction() const override;
+		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 }

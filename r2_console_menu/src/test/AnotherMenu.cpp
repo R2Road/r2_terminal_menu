@@ -7,21 +7,21 @@
 
 #include "item/empty_test.h"
 
-r2cm::iMenuWriter::TitleFunctionT AnotherMenu::GetTitleFunction() const
+r2cm::TitleFunctionT AnotherMenu::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Another Menu";
 	};
 }
-r2cm::iMenuWriter::DescriptionFunctionT AnotherMenu::GetDescriptionFunction() const
+r2cm::DescriptionFunctionT AnotherMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2cm::iMenuWriter::WriteFunctionT AnotherMenu::GetWriteFunction() const
+r2cm::WriteFunctionT AnotherMenu::GetWriteFunction() const
 {
 	return []( r2cm::Menu* ret )
 	{

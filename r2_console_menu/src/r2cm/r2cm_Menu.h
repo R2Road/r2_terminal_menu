@@ -4,11 +4,12 @@
 #include <string_view>
 #include <vector>
 
-#include "r2cm_iItem.h"
+#include "r2cm_DoLeaveAction.h"
 
 namespace r2cm
 {
 	class Director;
+	class iItem;
 	class iMenuWriter;
 
 	class Menu
@@ -16,11 +17,12 @@ namespace r2cm
 	private:
 		struct ItemInfo
 		{
+
 			ItemInfo(
 				const char key_code
 				, const int color_code
-				, const iItem::TitleFunctionT title_function
-				, const iItem::DoFunctionT do_function
+				, const r2cm::TitleFunctionT title_function
+				, const r2cm::DoFunctionT do_function
 			) :
 				KeyCode( key_code )
 				, ColorCode( color_code )
@@ -30,8 +32,8 @@ namespace r2cm
 
 			char KeyCode;
 			int ColorCode;
-			iItem::TitleFunctionT TitleFunction;
-			iItem::DoFunctionT DoFunction;
+			r2cm::TitleFunctionT TitleFunction;
+			r2cm::DoFunctionT DoFunction;
 		};
 
 		using ItemContainerT = std::vector<ItemInfo>;
@@ -47,8 +49,8 @@ namespace r2cm
 
 		eDoLeaveAction Do( const int key_code );
 
-		void AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do );
-		void AddItem( const char key_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do );
+		void AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
+		void AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
 
 		void AddMenu( const char key_code, const iMenuWriter& menu_obj );

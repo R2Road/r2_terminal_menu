@@ -6,14 +6,14 @@
 
 namespace base_test
 {
-	r2cm::iItem::TitleFunctionT TestEndAction_None::GetTitleFunction() const
+	r2cm::TitleFunctionT TestEndAction_None::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_None";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_None::GetDoFunction() const
+	r2cm::DoFunctionT TestEndAction_None::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -33,14 +33,14 @@ namespace base_test
 
 
 
-	r2cm::iItem::TitleFunctionT TestEndAction_Pause::GetTitleFunction() const
+	r2cm::TitleFunctionT TestEndAction_Pause::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Pause";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_Pause::GetDoFunction() const
+	r2cm::DoFunctionT TestEndAction_Pause::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -60,14 +60,14 @@ namespace base_test
 
 
 
-	r2cm::iItem::TitleFunctionT TestEndAction_Exit::GetTitleFunction() const
+	r2cm::TitleFunctionT TestEndAction_Exit::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Exit";
 		};
 	}
-	r2cm::iItem::DoFunctionT TestEndAction_Exit::GetDoFunction() const
+	r2cm::DoFunctionT TestEndAction_Exit::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{

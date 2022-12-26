@@ -5,14 +5,14 @@
 
 namespace inspector_test
 {
-	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
+	r2cm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Basic";
 		};
 	}
-	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
+	r2cm::DoFunctionT Basic::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -58,14 +58,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFunctionT Expect::GetTitleFunction() const
+	r2cm::TitleFunctionT Expect::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Expect";
 		};
 	}
-	r2cm::iItem::DoFunctionT Expect::GetDoFunction() const
+	r2cm::DoFunctionT Expect::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -135,14 +135,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFunctionT Code::GetTitleFunction() const
+	r2cm::TitleFunctionT Code::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Code";
 		};
 	}
-	r2cm::iItem::DoFunctionT Code::GetDoFunction() const
+	r2cm::DoFunctionT Code::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
@@ -160,14 +160,14 @@ namespace inspector_test
 
 
 
-	r2cm::iItem::TitleFunctionT Note::GetTitleFunction() const
+	r2cm::TitleFunctionT Note::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Note";
 		};
 	}
-	r2cm::iItem::DoFunctionT Note::GetDoFunction() const
+	r2cm::DoFunctionT Note::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{

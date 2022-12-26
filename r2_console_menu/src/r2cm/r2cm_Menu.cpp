@@ -2,8 +2,10 @@
 
 #include <cctype> // std::toupper
 
+#include "r2cm_iItem.h"
 #include "r2cm_iMenuWriter.h"
 #include "r2cm_ostream.h"
+
 
 namespace
 {
@@ -127,11 +129,11 @@ namespace r2cm
 		return eDoLeaveAction::Pause;
 	}
 
-	void Menu::AddItem( const char key_code, const int color_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do )
+	void Menu::AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, color_code, func_title, func_do );
 	}
-	void Menu::AddItem( const char key_code, const iItem::TitleFunctionT& func_title, const iItem::DoFunctionT& func_do )
+	void Menu::AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, r2cm::eColor::FG_White, func_title, func_do );
 	}
@@ -163,22 +165,22 @@ namespace r2cm
 
 	void Menu::AddLineFeed()
 	{
-		static const iItem::TitleFunctionT func_title = []()->const char* { return ""; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
+		static const r2cm::TitleFunctionT func_title = []()->const char* { return ""; };
+		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4LineFeed, r2cm::eColor::FG_White, func_title, func_do );
 	}
 	void Menu::AddSplit()
 	{
-		static const iItem::TitleFunctionT func_title = []()->const char* { return ""; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
+		static const r2cm::TitleFunctionT func_title = []()->const char* { return ""; };
+		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4Split, r2cm::eColor::FG_White, func_title, func_do );
 	}
 	void Menu::AddMessage( const char* const message )
 	{
-		const iItem::TitleFunctionT func_title = [message]()->const char* { return message; };
-		static const iItem::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
+		const r2cm::TitleFunctionT func_title = [message]()->const char* { return message; };
+		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4Message, r2cm::eColor::FG_White, func_title, func_do );
 	}

@@ -15,7 +15,7 @@
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"
 
-r2cm::iMenuWriter::TitleFunctionT RootMenu::GetTitleFunction() const
+r2cm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
 	return []()->const char*
 	{
@@ -29,14 +29,14 @@ r2cm::iMenuWriter::TitleFunctionT RootMenu::GetTitleFunction() const
 		return ret.c_str();
 	};
 }
-r2cm::iMenuWriter::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
+r2cm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return r2cm::VersionInfo.String4Road2Version_1_0_5;
 	};
 }
-r2cm::iMenuWriter::WriteFunctionT RootMenu::GetWriteFunction() const
+r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2cm::Menu* ret )
 	{

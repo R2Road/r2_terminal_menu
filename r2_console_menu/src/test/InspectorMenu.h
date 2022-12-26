@@ -5,7 +5,7 @@
 class InspectorMenu : public r2cm::iMenuWriter
 {
 public:
-	TitleFunctionT GetTitleFunction() const override;
-	DescriptionFunctionT GetDescriptionFunction() const override;
-	WriteFunctionT GetWriteFunction() const override;
+	r2cm::TitleFunctionT GetTitleFunction() const override;
+	r2cm::DescriptionFunctionT GetDescriptionFunction() const override;
+	r2cm::WriteFunctionT GetWriteFunction() const override;
 };
