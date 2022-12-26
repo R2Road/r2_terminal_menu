@@ -2,15 +2,10 @@
 
 #include <functional>
 
+#include "r2cm_DoLeaveAction.h"
+
 namespace r2cm
 {
-	enum class eDoLeaveAction
-	{
-		None,
-		Pause,
-		Exit,
-	};
-
 	class iItem
 	{
 	public:
