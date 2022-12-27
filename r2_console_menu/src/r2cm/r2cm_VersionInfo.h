@@ -31,7 +31,7 @@ namespace r2cm
 			"\n"	"### Road 2 Version 1.0.5 ###"
 			"\n"
 			"\n"	"[o] " "update inspector : EXPECT_GT, EXPECT_LT, EXPECT_GE, EXPECT_LE - 실패시 값 출력"
-			"\n"	"[ ] " "Split Menu And Menu View"
+			"\n"	"[o] " "Split Menu And Menu Writer"
 		; 
 		
 		const char* const String4Road2Version_1_0_4 =
