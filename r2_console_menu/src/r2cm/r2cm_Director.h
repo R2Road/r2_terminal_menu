@@ -16,6 +16,6 @@ namespace r2cm
 		void Run();
 
 	private:
-		MenuProcessor mMenu;
+		MenuProcessor mMenuProcessor;
 	};
 }

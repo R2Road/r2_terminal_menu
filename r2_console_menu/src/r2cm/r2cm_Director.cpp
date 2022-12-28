@@ -6,12 +6,12 @@
 
 namespace r2cm
 {
-	Director::Director() : mMenu( *this )
+	Director::Director() : mMenuProcessor( *this )
 	{}
 
 	void Director::Setup( const iMenuWriter& menu_writer )
 	{
-		mMenu.Reset( menu_writer.GetTitleFunction(), menu_writer.GetDescriptionFunction(), menu_writer.GetWriteFunction() );
+		mMenuProcessor.Reset( menu_writer.GetTitleFunction(), menu_writer.GetDescriptionFunction(), menu_writer.GetWriteFunction() );
 	}
 
 	void Director::Run()
@@ -21,14 +21,14 @@ namespace r2cm
 		{
 			system( "cls" );
 
-			mMenu.ShowTitle();
-			mMenu.ShowDescription();
-			mMenu.ShowItems();
+			mMenuProcessor.ShowTitle();
+			mMenuProcessor.ShowDescription();
+			mMenuProcessor.ShowItems();
 			input = _getch();
 
 			system( "cls" );
 
-			switch( mMenu.Do( input ) )
+			switch( mMenuProcessor.Do( input ) )
 			{
 			//case eDoLeaveAction::None: break;
 
