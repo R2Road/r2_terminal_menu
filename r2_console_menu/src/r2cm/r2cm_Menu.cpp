@@ -120,13 +120,13 @@ namespace r2cm
 		return eDoLeaveAction::Pause;
 	}
 
-	void Menu::Reset( const iMenuWriter& menu_obj )
+	void Menu::Reset( const TitleFunctionT& title_function, const DescriptionFunctionT& description_function, const WriteFunctionT& write_function )
 	{
-		mTitleString = menu_obj.GetTitleFunction()( );
-		mDescriptionString = menu_obj.GetDescriptionFunction()( );
+		mTitleString = title_function();
+		mDescriptionString = description_function();
 
 		mItemContainer.clear();
-		menu_obj.GetWriteFunction()( this );
+		write_function( this );
 	}
 
 	void Menu::AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )

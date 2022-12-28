@@ -11,7 +11,7 @@ namespace r2cm
 
 	void Director::Setup( const iMenuWriter& menu_writer )
 	{
-		mMenu.Reset( menu_writer );
+		mMenu.Reset( menu_writer.GetTitleFunction(), menu_writer.GetDescriptionFunction(), menu_writer.GetWriteFunction() );
 	}
 
 	void Director::Run()
