@@ -23,7 +23,7 @@
     <ClCompile Include="src\r2cm\r2cm_PrintBinary.cpp" />
     <ClCompile Include="src\r2cm\r2cm_Director.cpp" />
     <ClCompile Include="src\r2cm\r2cm_PrintFile.cpp" />
-    <ClCompile Include="src\r2cm\r2cm_Menu.cpp" />
+    <ClCompile Include="src\r2cm\r2cm_MenuProcessor.cpp" />
     <ClCompile Include="src\r2cm\r2cm_StopWatch.cpp" />
     <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
@@ -48,7 +48,7 @@
     <ClInclude Include="src\r2cm\r2cm_ostream.h" />
     <ClInclude Include="src\r2cm\r2cm_iItem.h" />
     <ClInclude Include="src\r2cm\r2cm_Inspector.h" />
-    <ClInclude Include="src\r2cm\r2cm_Menu.h" />
+    <ClInclude Include="src\r2cm\r2cm_MenuProcessor.h" />
     <ClInclude Include="src\r2cm\r2cm_StopWatch.h" />
     <ClInclude Include="src\r2cm\r2cm_VersionInfo.h" />
     <ClInclude Include="src\r2cm\r2cm_WindowUtility.h" />

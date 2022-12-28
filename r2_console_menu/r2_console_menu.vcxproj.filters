@@ -5,9 +5,6 @@
     <ClCompile Include="src\r2cm\r2cm_Director.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_Menu.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
@@ -51,15 +48,15 @@
     <ClCompile Include="src\test\item\inspector_file_test.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\r2cm\r2cm_MenuProcessor.cpp">
+      <Filter>r2cm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\r2cm\r2cm_Director.h">
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_iItem.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_Menu.h">
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_Inspector.h">
@@ -121,6 +118,9 @@
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_MenuConstant.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_MenuProcessor.h">
       <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>
