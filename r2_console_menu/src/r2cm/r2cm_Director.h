@@ -11,7 +11,7 @@ namespace r2cm
 	public:
 		Director();
 
-		void Setup( const iMenu& menu_writer );
+		void Setup( const iMenu& menu );
 
 		void Run();
 

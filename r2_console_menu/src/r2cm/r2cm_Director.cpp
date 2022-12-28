@@ -9,9 +9,9 @@ namespace r2cm
 	Director::Director() : mMenuProcessor( *this )
 	{}
 
-	void Director::Setup( const iMenu& menu_writer )
+	void Director::Setup( const iMenu& menu )
 	{
-		mMenuProcessor.Reset( menu_writer.GetTitleFunction(), menu_writer.GetDescriptionFunction(), menu_writer.GetWriteFunction() );
+		mMenuProcessor.Reset( menu.GetTitleFunction(), menu.GetDescriptionFunction(), menu.GetWriteFunction() );
 	}
 
 	void Director::Run()
