@@ -114,13 +114,13 @@
     <ClInclude Include="src\r2cm\r2cm_ColorModifier.h">
       <Filter>r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_iMenuWriter.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_MenuConstant.h">
       <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_MenuProcessor.h">
+      <Filter>r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2cm\r2cm_iMenu.h">
       <Filter>r2cm</Filter>
     </ClInclude>
   </ItemGroup>

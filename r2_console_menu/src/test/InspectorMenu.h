@@ -1,6 +1,6 @@
 #pragma once
 
-#include "r2cm/r2cm_iMenuWriter.h"
+#include "r2cm/r2cm_iMenu.h"
 
 class InspectorMenu : public r2cm::iMenu
 {

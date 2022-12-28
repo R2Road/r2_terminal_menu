@@ -2,7 +2,7 @@
 
 #include <conio.h>
 
-#include "r2cm_iMenuWriter.h"
+#include "r2cm_iMenu.h"
 
 namespace r2cm
 {

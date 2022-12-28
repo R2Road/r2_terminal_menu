@@ -41,7 +41,7 @@
   <ItemGroup>
     <ClInclude Include="src\r2cm\r2cm_ColorModifier.h" />
     <ClInclude Include="src\r2cm\r2cm_MenuConstant.h" />
-    <ClInclude Include="src\r2cm\r2cm_iMenuWriter.h" />
+    <ClInclude Include="src\r2cm\r2cm_iMenu.h" />
     <ClInclude Include="src\r2cm\r2cm_PrintBinary.h" />
     <ClInclude Include="src\r2cm\r2cm_Director.h" />
     <ClInclude Include="src\r2cm\r2cm_PrintFile.h" />

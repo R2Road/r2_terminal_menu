@@ -3,7 +3,7 @@
 #include <cctype> // std::toupper
 
 #include "r2cm_iItem.h"
-#include "r2cm_iMenuWriter.h"
+#include "r2cm_iMenu.h"
 #include "r2cm_ostream.h"
 
 
