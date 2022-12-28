@@ -144,18 +144,19 @@ namespace r2cm
 
 	void Menu::AddMenu( const char key_code, const iMenuWriter& menu_obj )
 	{
-		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction(),
-			[
-			this
-			, t = menu_obj.GetTitleFunction()
-			, d = menu_obj.GetDescriptionFunction()
-			, w = menu_obj.GetWriteFunction()
+		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction()
+			, [
+				this
+				, title_function = menu_obj.GetTitleFunction()
+				, description_function = menu_obj.GetDescriptionFunction()
+				, write_function = menu_obj.GetWriteFunction()
 			]()->r2cm::eDoLeaveAction
-		{
-			Reset( t, d, w );
+			{
+				Reset( title_function, description_function, write_function );
 
-			return r2cm::eDoLeaveAction::None;
-		} );
+				return r2cm::eDoLeaveAction::None;
+			}
+		);
 	}
 
 	void Menu::AddLineFeed()
