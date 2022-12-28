@@ -147,17 +147,12 @@ namespace r2cm
 		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction(),
 			[
 			this
-			, &m = *this
 			, t = menu_obj.GetTitleFunction()
 			, d = menu_obj.GetDescriptionFunction()
 			, w = menu_obj.GetWriteFunction()
 			]()->r2cm::eDoLeaveAction
 		{
-			mTitleString = t();
-			mDescriptionString = d();
-
-			mItemContainer.clear();
-			w( &m );
+			Reset( t, d, w );
 
 			return r2cm::eDoLeaveAction::None;
 		} );
