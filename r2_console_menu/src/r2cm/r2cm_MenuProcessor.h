@@ -9,7 +9,7 @@ namespace r2cm
 {
 	class Director;
 	class iItem;
-	class iMenuWriter;
+	class iMenu;
 
 	class MenuProcessor
 	{
@@ -60,7 +60,7 @@ namespace r2cm
 		void AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
 
-		void AddMenu( const char key_code, const iMenuWriter& menu_obj );
+		void AddMenu( const char key_code, const iMenu& menu_obj );
 
 		void AddLineFeed();
 		void AddSplit();

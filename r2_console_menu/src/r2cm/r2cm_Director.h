@@ -4,14 +4,14 @@
 
 namespace r2cm
 {
-	class iMenuWriter;
+	class iMenu;
 
 	class Director
 	{
 	public:
 		Director();
 
-		void Setup( const iMenuWriter& menu_writer );
+		void Setup( const iMenu& menu_writer );
 
 		void Run();
 

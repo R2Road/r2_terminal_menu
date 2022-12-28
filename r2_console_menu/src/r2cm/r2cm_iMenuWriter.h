@@ -4,10 +4,10 @@
 
 namespace r2cm
 {
-	class iMenuWriter
+	class iMenu
 	{
 	public:
-		virtual ~iMenuWriter() {}
+		virtual ~iMenu() {}
 
 		virtual TitleFunctionT GetTitleFunction() const = 0;
 		virtual DescriptionFunctionT GetDescriptionFunction() const = 0;

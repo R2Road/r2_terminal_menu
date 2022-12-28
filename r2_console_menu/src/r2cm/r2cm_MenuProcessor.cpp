@@ -142,7 +142,7 @@ namespace r2cm
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
 
-	void MenuProcessor::AddMenu( const char key_code, const iMenuWriter& menu_obj )
+	void MenuProcessor::AddMenu( const char key_code, const iMenu& menu_obj )
 	{
 		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction()
 			, [

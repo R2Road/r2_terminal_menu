@@ -2,7 +2,7 @@
 
 #include "r2cm/r2cm_iMenuWriter.h"
 
-class RootMenu : public r2cm::iMenuWriter
+class RootMenu : public r2cm::iMenu
 {
 public:
 	r2cm::TitleFunctionT GetTitleFunction() const override;
