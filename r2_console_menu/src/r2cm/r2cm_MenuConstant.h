@@ -4,7 +4,7 @@
 
 namespace r2cm
 {
-	class Menu;
+	class MenuProcessor;
 
 	enum class eDoLeaveAction
 	{
@@ -18,5 +18,5 @@ namespace r2cm
 	using DoFunctionT = std::function<eDoLeaveAction()>;
 
 	using DescriptionFunctionT = std::function<const char*( )>;
-	using WriteFunctionT = std::function<void( Menu* )>;
+	using WriteFunctionT = std::function<void( MenuProcessor* )>;
 }

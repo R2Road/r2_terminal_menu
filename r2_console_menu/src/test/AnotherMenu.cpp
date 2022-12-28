@@ -23,7 +23,7 @@ r2cm::DescriptionFunctionT AnotherMenu::GetDescriptionFunction() const
 }
 r2cm::WriteFunctionT AnotherMenu::GetWriteFunction() const
 {
-	return []( r2cm::Menu* ret )
+	return []( r2cm::MenuProcessor* ret )
 	{
 		ret->AddItem( '5', empty_test::Basic() );
 		ret->AddItem( '6', empty_test::Basic() );

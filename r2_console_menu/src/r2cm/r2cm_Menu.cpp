@@ -16,19 +16,19 @@ namespace
 
 namespace r2cm
 {
-	Menu::Menu( Director& director ) :
+	MenuProcessor::MenuProcessor( Director& director ) :
 		mDirector( director )
 		, mTitleString( "" )
 		, mDescriptionString( "" )
 		, mItemContainer()
 	{}
 
-	void Menu::ShowTitle() const
+	void MenuProcessor::ShowTitle() const
 	{
 		std::cout << "# " << mTitleString << " #" << r2cm::linefeed;
 		std::cout << r2cm::split;
 	}
-	void Menu::ShowDescription() const
+	void MenuProcessor::ShowDescription() const
 	{
 		if( !mDescriptionString.empty() )
 		{
@@ -40,7 +40,7 @@ namespace r2cm
 		}
 	}
 
-	void Menu::ShowItems() const
+	void MenuProcessor::ShowItems() const
 	{
 		std::cout << "+ Menu" << r2cm::linefeed2;
 
@@ -94,7 +94,7 @@ namespace r2cm
 		std::cout << r2cm::split << "Select Menu";
 	}
 
-	eDoLeaveAction Menu::Do( const int key_code )
+	eDoLeaveAction MenuProcessor::Do( const int key_code )
 	{
 		for( const auto& i : mItemContainer )
 		{
@@ -105,7 +105,7 @@ namespace r2cm
 				//
 				// # 2022.12.25 by R
 				//
-				// i.DoFunction 의 내부에서 Menu 변경을 위해 mItemContainer.clear() 를 호출하는경우
+				// i.DoFunction 의 내부에서 MenuProcessor 변경을 위해 mItemContainer.clear() 를 호출하는경우
 				// 작동중인 lambda 가 날아가면서 함수 내부의 capture 변수들이 날아가고 잘못된 메모리 참조로 터진다.
 				//
 				// 위와 같은 문제의 해결을 위해 lambda 를 복사하여 사용한다.
@@ -120,7 +120,7 @@ namespace r2cm
 		return eDoLeaveAction::Pause;
 	}
 
-	void Menu::Reset( const TitleFunctionT& title_function, const DescriptionFunctionT& description_function, const WriteFunctionT& write_function )
+	void MenuProcessor::Reset( const TitleFunctionT& title_function, const DescriptionFunctionT& description_function, const WriteFunctionT& write_function )
 	{
 		mTitleString = title_function();
 		mDescriptionString = description_function();
@@ -129,20 +129,20 @@ namespace r2cm
 		write_function( this );
 	}
 
-	void Menu::AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
+	void MenuProcessor::AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, color_code, func_title, func_do );
 	}
-	void Menu::AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
+	void MenuProcessor::AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do )
 	{
 		mItemContainer.emplace_back( key_code, r2cm::eColor::FG_White, func_title, func_do );
 	}
-	void Menu::AddItem( const char key_code, const iItem& item_obj )
+	void MenuProcessor::AddItem( const char key_code, const iItem& item_obj )
 	{
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
 
-	void Menu::AddMenu( const char key_code, const iMenuWriter& menu_obj )
+	void MenuProcessor::AddMenu( const char key_code, const iMenuWriter& menu_obj )
 	{
 		AddItem( key_code, r2cm::eColor::FG_Aqua, menu_obj.GetTitleFunction()
 			, [
@@ -159,21 +159,21 @@ namespace r2cm
 		);
 	}
 
-	void Menu::AddLineFeed()
+	void MenuProcessor::AddLineFeed()
 	{
 		static const r2cm::TitleFunctionT func_title = []()->const char* { return ""; };
 		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4LineFeed, r2cm::eColor::FG_White, func_title, func_do );
 	}
-	void Menu::AddSplit()
+	void MenuProcessor::AddSplit()
 	{
 		static const r2cm::TitleFunctionT func_title = []()->const char* { return ""; };
 		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };
 
 		AddItem( KeyCode4Split, r2cm::eColor::FG_White, func_title, func_do );
 	}
-	void Menu::AddMessage( const char* const message )
+	void MenuProcessor::AddMessage( const char* const message )
 	{
 		const r2cm::TitleFunctionT func_title = [message]()->const char* { return message; };
 		static const r2cm::DoFunctionT func_do = []()->const r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Pause; };

@@ -11,7 +11,7 @@ namespace r2cm
 	class iItem;
 	class iMenuWriter;
 
-	class Menu
+	class MenuProcessor
 	{
 	private:
 		struct ItemInfo
@@ -37,7 +37,7 @@ namespace r2cm
 		using ItemContainerT = std::vector<ItemInfo>;
 
 	public:
-		Menu( Director& director );
+		MenuProcessor( Director& director );
 
 		//
 		//

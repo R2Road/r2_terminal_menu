@@ -25,7 +25,7 @@ r2cm::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
 }
 r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 {
-	return []( r2cm::Menu* ret )
+	return []( r2cm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', inspector_test::Basic() );
 		ret->AddItem( '2', inspector_test::Expect() );
