@@ -53,6 +53,9 @@ namespace r2cm
 		//
 		void Reset( const TitleFunctionT& title_function, const DescriptionFunctionT& description_function, const WriteFunctionT& write_function );
 
+		//
+		//
+		//
 		void AddItem( const char key_code, const int color_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
 		void AddItem( const char key_code, const r2cm::TitleFunctionT& func_title, const r2cm::DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
