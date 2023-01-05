@@ -107,11 +107,6 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem(
-			27
-			, r2cm::eColor::BG_Purple
-			, []()->const char* { return "Exit"; }
-		, []()->r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Exit; }
-		);
+		ret->AddExitItem( 27 );
 	};
 }
