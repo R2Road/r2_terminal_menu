@@ -141,7 +141,7 @@ namespace r2cm
 	{
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
-	void MenuProcessor::AddExitItem( const char key_code, const int color_code )
+	void MenuProcessor::AddExit( const char key_code, const int color_code )
 	{
 		AddItem(
 			key_code
@@ -150,9 +150,9 @@ namespace r2cm
 			, []()->r2cm::eDoLeaveAction { return r2cm::eDoLeaveAction::Exit; }
 		);
 	}
-	void MenuProcessor::AddExitItem( const char key_code )
+	void MenuProcessor::AddExit( const char key_code )
 	{
-		AddExitItem( key_code, r2cm::eColor::BG_Purple );
+		AddExit( key_code, r2cm::eColor::BG_Purple );
 	}
 
 	void MenuProcessor::AddMenu( const char key_code, const iMenu& menu_obj )

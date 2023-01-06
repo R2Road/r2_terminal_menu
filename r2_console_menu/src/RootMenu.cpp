@@ -107,6 +107,6 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddExitItem( 27 );
+		ret->AddExit( 27 );
 	};
 }
