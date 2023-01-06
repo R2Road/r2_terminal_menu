@@ -141,6 +141,7 @@ namespace r2cm
 	{
 		AddItem( key_code, r2cm::eColor::FG_White, item_obj.GetTitleFunction(), item_obj.GetDoFunction() );
 	}
+
 	void MenuProcessor::AddExit( const char key_code, const int color_code )
 	{
 		AddItem(
