@@ -62,8 +62,8 @@ namespace r2cm
 	}
 }
 
-#define r2cm_lf ( std::cout << r2cm::linefeed )
-#define r2cm_lf2 ( std::cout << r2cm::linefeed2 )
-#define r2cm_lf3 ( std::cout << r2cm::linefeed3 )
+#define LF__ ( std::cout << r2cm::linefeed )
+#define LF2__ ( std::cout << r2cm::linefeed2 )
+#define LF3__ ( std::cout << r2cm::linefeed3 )
 
-#define r2cm_split ( std::cout << r2cm::split )
+#define LS__ ( std::cout << r2cm::split )
