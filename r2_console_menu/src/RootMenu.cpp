@@ -41,7 +41,7 @@ r2cm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 			+ "\n"
 			  "\n"
 			  "\n"
-			+ r2cm::VersionInfo.String4Road2Version_1_0_5
+			+ r2cm::VersionInfo.String4Road2Version_1_0_6
 		;
 		return ret.c_str();
 	};

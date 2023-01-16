@@ -32,6 +32,15 @@ namespace r2cm
 
 
 
+		const char* const String4Road2Version_1_0_6 =
+			"### Road 2 Version 1.0.6 ###"
+			"\n"
+			"\n"	"[ ] " "..."
+			"\n"	"[o] " "update inspector : Add - OUTPUT_SIZE"
+			"\n"	"[o] " "update ostream : Add - LF(), LF1(), LF2(), LS()"
+			"\n"	"[o] " "update menuprocessor : Add - AddExit"
+		;
+
 		const char* const String4Road2Version_1_0_5 =
 					"### Road 2 Version 1.0.5 ###"
 			"\n"
