@@ -16,31 +16,31 @@ namespace color_modifier_test
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			LS__;
+			LS();
 
 			{
 				OUTPUT_NOTE( "None" );
 
-				LF__;
+				LF();
 
 				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::None ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
 			}
 
-			LS__;
+			LS();
 
 			{
 				OUTPUT_NOTE( "Setup" );
 
-				LF__;
+				LF();
 
 				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
 
-				LF__;
+				LF();
 
 				PROCESS_MAIN( std::cout << r2cm::tab2 << clm( r2cm::eColor::BG_Red ) << clm( r2cm::eColor::FG_Blue ) << "Do Something" << clm() << r2cm::linefeed );
 			}
 
-			LS__;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

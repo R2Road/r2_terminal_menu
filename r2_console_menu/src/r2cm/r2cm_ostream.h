@@ -62,8 +62,20 @@ namespace r2cm
 	}
 }
 
-#define LF__ ( std::cout << r2cm::linefeed )
-#define LF2__ ( std::cout << r2cm::linefeed2 )
-#define LF3__ ( std::cout << r2cm::linefeed3 )
+inline void LF()
+{
+	std::cout << r2cm::linefeed;
+}
+inline void LF2()
+{
+	std::cout << r2cm::linefeed2;
+}
+inline void LF3()
+{
+	std::cout << r2cm::linefeed3;
+}
 
-#define LS__ ( std::cout << r2cm::split )
+inline void LS()
+{
+	std::cout << r2cm::split;
+}

@@ -146,32 +146,32 @@ namespace inspector_test
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			LS__;
+			LS();
 
 			{
 				OUTPUT_NOTE( "기존의 size 출력 방식" );
 
-				LF__;
+				LF();
 
 				OUTPUT_VALUE( sizeof( int ) );
 			}
 
-			LS__;
+			LS();
 
 			{
 				OUTPUT_NOTE( "OUTPUT_SIZE 사용" );
 
-				LF__;
+				LF();
 
 				OUTPUT_SIZE( int );
 
-				LF__;
+				LF();
 
 				DECLARATION_MAIN( struct S { int i; } );
 				OUTPUT_SIZE( S );
 			}
 
-			LS__;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
