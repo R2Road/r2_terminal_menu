@@ -33,7 +33,16 @@ r2cm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
-		return r2cm::VersionInfo.String4Road2Version_1_0_5;
+		static const std::string ret =
+			std::string()
+
+			+ r2cm::VersionInfo.String4VersionRule
+			+ "\n"
+			  "\n"
+			  "\n"
+			+ r2cm::VersionInfo.String4Road2Version_1_0_5
+		;
+		return ret.c_str();
 	};
 }
 r2cm::WriteFunctionT RootMenu::GetWriteFunction() const

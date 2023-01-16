@@ -16,19 +16,24 @@ namespace r2cm
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '5';
 
-		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
 
 
-
-		const char* const String4Road2Version_1_0_5 =
+		const char* const String4VersionRule =
 					"### Version Rule ###"
 			"\n"
 			"\n"	"> " "1.0.0"  " : "  "완성?"
 			"\n"	"> " "0.1.0"  " : "  "하위 버전 숫자가 10에 도달"
 			"\n"	"> " "0.0.1"  " : "  "사용자에게 코드 변경을 요구한다."
-			"\n"
-			"\n"
-			"\n"	"### Road 2 Version 1.0.5 ###"
+		;
+
+
+
+		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
+
+
+
+		const char* const String4Road2Version_1_0_5 =
+					"### Road 2 Version 1.0.5 ###"
 			"\n"
 			"\n"	"[o] " "update inspector : EXPECT_GT, EXPECT_LT, EXPECT_GE, EXPECT_LE - 실패시 값 출력"
 			"\n"	"[o] " "Split Menu And MenuProcessor"
