@@ -37,14 +37,14 @@ namespace r2cm
 			"\n"
 			"\n"	"[o] " "update inspector : EXPECT_GT, EXPECT_LT, EXPECT_GE, EXPECT_LE - 실패시 값 출력"
 			"\n"	"[o] " "Split Menu And MenuProcessor"
-		; 
+		;
 		
 		const char* const String4Road2Version_1_0_4 =
 					"### Road 2 Version 1.0.4 ###"
 			"\n"
 			"\n"	"[o] " "update method : apply const - r2cm::iItem::GetDoFunction"
 			"\n"	"[o] " "remove class : r2cm::SingleTon"
-		; 
+		;
 		
 		const char* const String4Road2Version_1_0_3 =
 					"### Road 2 Version 1.0.3 ###"
@@ -56,7 +56,7 @@ namespace r2cm
 			"\n"	"[o] " "update inspector : Add - OUTPUT_COMMENT"
 			"\n"	"[o] " "update inspector : OUTPUT_FILE 에서 line index 출력"
 			"\n"	"[o] " "update inspector : Add - OUTPUT_FILE_RANGE"
-		; 
+		;
 		
 		const char* const String4Road2Version_1_0_2 =
 					"### Road 2 Version 1.0.2 ###"
@@ -65,7 +65,7 @@ namespace r2cm
 			"\n"	"[o] " "add method : r2cm::WindowUtility::MaximizeButtonEnable"
 			"\n"	"[o] " "add method : r2cm::WindowUtility::ResizingByDraggingEnable"
 			"\n"	"[o] " "add method : r2cm::WindowUtility::QuickEditEnable"
-		; 
+		;
 		
 		const char* const String4Road2Version_1_0_1 =
 					"### Road 2 Version 1.0.1 ###"
