@@ -20,11 +20,12 @@ r2cm::TitleFunctionT RootMenu::GetTitleFunction() const
 	return []()->const char*
 	{
 		static const std::string ret =
-			std::string( "Root Menu" )
+			std::string()
 
-			+ " : "	"<" + "C++17" + ">"
-			+ ", "	"<" + "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
-			+ ", "	"<" + r2cm::VersionInfo.String4Version + ">"
+			+ "Root Menu"
+			  " : "	"<"   "C++17" + ">"
+			  ", "	"<"   "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
+			  ", "	"<" + r2cm::VersionInfo.String4Version + ">"
 			;
 		return ret.c_str();
 	};
