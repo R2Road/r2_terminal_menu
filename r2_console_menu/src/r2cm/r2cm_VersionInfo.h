@@ -21,7 +21,7 @@ namespace r2cm
 
 
 		const char* const String4Road2Version_1_0_5 =
-			"### Version Rule ###"
+					"### Version Rule ###"
 			"\n"
 			"\n"	"> " "1.0.0"  " : "  "완성?"
 			"\n"	"> " "0.1.0"  " : "  "하위 버전 숫자가 10에 도달"
@@ -35,14 +35,14 @@ namespace r2cm
 		; 
 		
 		const char* const String4Road2Version_1_0_4 =
-			"### Road 2 Version 1.0.4 ###"
+					"### Road 2 Version 1.0.4 ###"
 			"\n"
 			"\n"	"[o] " "update method : apply const - r2cm::iItem::GetDoFunction"
 			"\n"	"[o] " "remove class : r2cm::SingleTon"
 		; 
 		
 		const char* const String4Road2Version_1_0_3 =
-			"### Road 2 Version 1.0.3 ###"
+					"### Road 2 Version 1.0.3 ###"
 			"\n"
 			"\n"	"[o] " "update inspector : EXPECT_EQ, EXPECT_NE - 실패시 값 출력"
 			"\n"	"[o] " "update inspector : OUTPUT_BINARY - 가시성 개선"
@@ -54,7 +54,7 @@ namespace r2cm
 		; 
 		
 		const char* const String4Road2Version_1_0_2 =
-			"### Road 2 Version 1.0.2 ###"
+					"### Road 2 Version 1.0.2 ###"
 			"\n"
 			"\n"	"[o] " "add method : r2cm::WindowUtility::ScrollBarVisible"
 			"\n"	"[o] " "add method : r2cm::WindowUtility::MaximizeButtonEnable"
@@ -63,7 +63,7 @@ namespace r2cm
 		; 
 		
 		const char* const String4Road2Version_1_0_1 =
-			"### Road 2 Version 1.0.1 ###"
+					"### Road 2 Version 1.0.1 ###"
 			"\n"
 			"\n"	"[o] " "add class : r2cm::StopWatch"
 			"\n"	"[o] " "update method : r2cm::Menu::AddItem - Item 제목에 컬러 적용"
