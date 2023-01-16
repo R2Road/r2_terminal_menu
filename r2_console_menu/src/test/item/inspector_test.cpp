@@ -135,6 +135,50 @@ namespace inspector_test
 
 
 
+	r2cm::TitleFunctionT Size::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Size";
+		};
+	}
+	r2cm::DoFunctionT Size::GetDoFunction() const
+	{
+		return []()->r2cm::eDoLeaveAction
+		{
+			LS__;
+
+			{
+				OUTPUT_NOTE( "기존의 size 출력 방식" );
+
+				LF__;
+
+				OUTPUT_VALUE( sizeof( int ) );
+			}
+
+			LS__;
+
+			{
+				OUTPUT_NOTE( "OUTPUT_SIZE 사용" );
+
+				LF__;
+
+				OUTPUT_SIZE( int );
+
+				LF__;
+
+				DECLARATION_MAIN( struct S { int i; } );
+				OUTPUT_SIZE( S );
+			}
+
+			LS__;
+
+			return r2cm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::TitleFunctionT Code::GetTitleFunction() const
 	{
 		return []()->const char*

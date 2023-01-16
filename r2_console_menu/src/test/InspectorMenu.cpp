@@ -29,8 +29,9 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 	{
 		ret->AddItem( '1', inspector_test::Basic() );
 		ret->AddItem( '2', inspector_test::Expect() );
-		ret->AddItem( '3', inspector_test::Code() );
-		ret->AddItem( '4', inspector_test::Note() );
+		ret->AddItem( '3', inspector_test::Size() );
+		ret->AddItem( '4', inspector_test::Code() );
+		ret->AddItem( '5', inspector_test::Note() );
 
 
 

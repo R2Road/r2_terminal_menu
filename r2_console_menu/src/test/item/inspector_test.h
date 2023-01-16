@@ -18,6 +18,13 @@ namespace inspector_test
 		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class Size : public r2cm::iItem
+	{
+	public:
+		r2cm::TitleFunctionT GetTitleFunction() const override;
+		r2cm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Code : public r2cm::iItem
 	{
 	public:

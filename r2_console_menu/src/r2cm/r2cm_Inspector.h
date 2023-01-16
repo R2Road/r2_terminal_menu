@@ -223,6 +223,28 @@ do {																						\
 
 
 //
+// Output Size
+//
+#if _WIN64 == 1
+
+#define	OUTPUT_SIZE( condition )															\
+do {																						\
+	printf( "[SIZE]" " %s" "\n" "\t> %llu" "\n", #condition, sizeof( condition ) );			\
+} while( false )
+
+#else
+
+#define	OUTPUT_SIZE( condition )															\
+do {																						\
+	printf( "[SIZE]" " %s" "\n" "\t> %u" "\n", #condition, sizeof( condition ) );			\
+} while( false )
+
+#endif
+
+
+
+
+//
 // Output ETC
 //
 #define	OUTPUT_NOTE( str )																	\
