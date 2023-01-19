@@ -1,10 +1,10 @@
-#include "key_test.h"
+#include "test_key.h"
 
 #include <conio.h> // _getch
 
 #include "r2cm/r2cm_ostream.h"
 
-namespace key_test
+namespace test_key
 {
 	r2cm::TitleFunctionT Basic::GetTitleFunction() const
 	{

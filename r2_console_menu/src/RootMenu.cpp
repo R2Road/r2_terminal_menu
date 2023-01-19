@@ -9,7 +9,7 @@
 #include "test/item/base_test.h"
 #include "test/item/color_modifier_test.h"
 #include "test/item/test_empty.h"
-#include "test/item/key_test.h"
+#include "test/item/test_key.h"
 #include "test/item/window_utility_test.h"
 
 #include "test/AnotherMenu.h"
@@ -81,7 +81,7 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'q', key_test::Basic() );
+		ret->AddItem( 'q', test_key::Basic() );
 		ret->AddItem( 'w', color_modifier_test::Basic() );
 
 

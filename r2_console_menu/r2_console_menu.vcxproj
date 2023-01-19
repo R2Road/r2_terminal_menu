@@ -36,7 +36,7 @@
     <ClCompile Include="src\test\item\test_inspector_demo.cpp" />
     <ClCompile Include="src\test\item\test_inspector_file.cpp" />
     <ClCompile Include="src\test\item\test_inspector_base.cpp" />
-    <ClCompile Include="src\test\item\key_test.cpp" />
+    <ClCompile Include="src\test\item\test_key.cpp" />
     <ClCompile Include="src\test\item\window_utility_test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +63,7 @@
     <ClInclude Include="src\test\item\test_inspector_demo.h" />
     <ClInclude Include="src\test\item\test_inspector_file.h" />
     <ClInclude Include="src\test\item\test_inspector_base.h" />
-    <ClInclude Include="src\test\item\key_test.h" />
+    <ClInclude Include="src\test\item\test_key.h" />
     <ClInclude Include="src\test\item\window_utility_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
