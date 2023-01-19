@@ -2,7 +2,7 @@
 
 #include "r2cm/r2cm_iItem.h"
 
-namespace inspector_binary_test
+namespace test_inspector_binary
 {
 	class Binary : public r2cm::iItem
 	{

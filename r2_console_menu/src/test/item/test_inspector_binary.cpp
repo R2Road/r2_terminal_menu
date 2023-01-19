@@ -1,9 +1,9 @@
-#include "inspector_binary_test.h"
+#include "test_inspector_binary.h"
 
 #include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
-namespace inspector_binary_test
+namespace test_inspector_binary
 {
 	r2cm::TitleFunctionT Binary::GetTitleFunction() const
 	{

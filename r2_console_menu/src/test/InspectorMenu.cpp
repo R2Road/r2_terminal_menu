@@ -3,7 +3,7 @@
 #include "r2cm/r2cm_Director.h"
 #include "r2cm/r2cm_ostream.h"
 
-#include "item/inspector_binary_test.h"
+#include "item/test_inspector_binary.h"
 #include "item/inspector_file_test.h"
 #include "item/test_inspector_demo.h"
 #include "item/inspector_test.h"
@@ -40,8 +40,8 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'q', inspector_binary_test::Binary() );
-		ret->AddItem( 'w', inspector_binary_test::Binaries() );
+		ret->AddItem( 'q', test_inspector_binary::Binary() );
+		ret->AddItem( 'w', test_inspector_binary::Binaries() );
 
 
 
