@@ -5,7 +5,7 @@
 
 #include "RootMenu.h"
 
-#include "item/empty_test.h"
+#include "item/test_empty.h"
 
 r2cm::TitleFunctionT AnotherMenu::GetTitleFunction() const
 {
@@ -25,8 +25,8 @@ r2cm::WriteFunctionT AnotherMenu::GetWriteFunction() const
 {
 	return []( r2cm::MenuProcessor* ret )
 	{
-		ret->AddItem( '5', empty_test::Basic() );
-		ret->AddItem( '6', empty_test::Basic() );
+		ret->AddItem( '5', test_empty::Basic() );
+		ret->AddItem( '6', test_empty::Basic() );
 
 
 

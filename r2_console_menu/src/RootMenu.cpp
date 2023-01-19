@@ -8,7 +8,7 @@
 
 #include "test/item/base_test.h"
 #include "test/item/color_modifier_test.h"
-#include "test/item/empty_test.h"
+#include "test/item/test_empty.h"
 #include "test/item/key_test.h"
 #include "test/item/window_utility_test.h"
 
@@ -50,8 +50,8 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2cm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', empty_test::Basic() );
-		ret->AddItem( '2', empty_test::Basic() );
+		ret->AddItem( '1', test_empty::Basic() );
+		ret->AddItem( '2', test_empty::Basic() );
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }

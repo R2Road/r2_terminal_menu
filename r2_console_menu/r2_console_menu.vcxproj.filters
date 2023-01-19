@@ -27,9 +27,6 @@
     <ClCompile Include="src\test\item\color_modifier_test.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\item\empty_test.cpp">
-      <Filter>test\item</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\item\key_test.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
@@ -52,6 +49,9 @@
       <Filter>test\item</Filter>
     </ClCompile>
     <ClCompile Include="src\test\item\test_inspector_base.cpp">
+      <Filter>test\item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\item\test_empty.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
   </ItemGroup>
@@ -93,9 +93,6 @@
     <ClInclude Include="src\test\item\color_modifier_test.h">
       <Filter>test\item</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\item\empty_test.h">
-      <Filter>test\item</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\item\key_test.h">
       <Filter>test\item</Filter>
     </ClInclude>
@@ -127,6 +124,9 @@
       <Filter>test\item</Filter>
     </ClInclude>
     <ClInclude Include="src\test\item\test_inspector_base.h">
+      <Filter>test\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\item\test_empty.h">
       <Filter>test\item</Filter>
     </ClInclude>
   </ItemGroup>
