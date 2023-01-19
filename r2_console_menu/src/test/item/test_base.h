@@ -2,7 +2,7 @@
 
 #include "r2cm/r2cm_iItem.h"
 
-namespace base_test
+namespace test_base
 {
 	class TestEndAction_None : public r2cm::iItem
 	{

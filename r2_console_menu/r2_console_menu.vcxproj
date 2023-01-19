@@ -29,7 +29,7 @@
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
     <ClCompile Include="src\test\InspectorMenu.cpp" />
-    <ClCompile Include="src\test\item\base_test.cpp" />
+    <ClCompile Include="src\test\item\test_base.cpp" />
     <ClCompile Include="src\test\item\test_color_modifier.cpp" />
     <ClCompile Include="src\test\item\test_empty.cpp" />
     <ClCompile Include="src\test\item\test_inspector_binary.cpp" />
@@ -56,7 +56,7 @@
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
     <ClInclude Include="src\test\InspectorMenu.h" />
-    <ClInclude Include="src\test\item\base_test.h" />
+    <ClInclude Include="src\test\item\test_base.h" />
     <ClInclude Include="src\test\item\test_color_modifier.h" />
     <ClInclude Include="src\test\item\test_empty.h" />
     <ClInclude Include="src\test\item\test_inspector_binary.h" />

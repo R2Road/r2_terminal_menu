@@ -6,7 +6,7 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_VersionInfo.h"
 
-#include "test/item/base_test.h"
+#include "test/item/test_base.h"
 #include "test/item/test_color_modifier.h"
 #include "test/item/test_empty.h"
 #include "test/item/test_key.h"
@@ -98,9 +98,9 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'z', base_test::TestEndAction_None() );
-		ret->AddItem( 'x', base_test::TestEndAction_Pause() );
-		ret->AddItem( 'c', base_test::TestEndAction_Exit() );
+		ret->AddItem( 'z', test_base::TestEndAction_None() );
+		ret->AddItem( 'x', test_base::TestEndAction_Pause() );
+		ret->AddItem( 'c', test_base::TestEndAction_Exit() );
 
 
 

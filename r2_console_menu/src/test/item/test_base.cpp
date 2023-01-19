@@ -1,10 +1,10 @@
-#include "base_test.h"
+#include "test_base.h"
 
 #include <conio.h> // _getch
 
 #include "r2cm/r2cm_ostream.h"
 
-namespace base_test
+namespace test_base
 {
 	r2cm::TitleFunctionT TestEndAction_None::GetTitleFunction() const
 	{
