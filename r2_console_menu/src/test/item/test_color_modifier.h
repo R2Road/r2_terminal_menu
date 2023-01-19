@@ -2,7 +2,7 @@
 
 #include "r2cm/r2cm_iItem.h"
 
-namespace color_modifier_test
+namespace test_color_modifier
 {
 	class Basic : public r2cm::iItem
 	{

@@ -1,9 +1,9 @@
-#include "color_modifier_test.h"
+#include "test_color_modifier.h"
 
 #include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
-namespace color_modifier_test
+namespace test_color_modifier
 {
 	r2cm::TitleFunctionT Basic::GetTitleFunction() const
 	{

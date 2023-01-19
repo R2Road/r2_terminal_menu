@@ -7,7 +7,7 @@
 #include "r2cm/r2cm_VersionInfo.h"
 
 #include "test/item/base_test.h"
-#include "test/item/color_modifier_test.h"
+#include "test/item/test_color_modifier.h"
 #include "test/item/test_empty.h"
 #include "test/item/test_key.h"
 #include "test/item/test_window_utility.h"
@@ -82,7 +82,7 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddItem( 'q', test_key::Basic() );
-		ret->AddItem( 'w', color_modifier_test::Basic() );
+		ret->AddItem( 'w', test_color_modifier::Basic() );
 
 
 
