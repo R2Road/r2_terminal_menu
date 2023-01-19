@@ -16,7 +16,7 @@ namespace test_inspector_demo
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( int i = 0 );
@@ -28,7 +28,7 @@ namespace test_inspector_demo
 				EXPECT_EQ( i, 2 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
