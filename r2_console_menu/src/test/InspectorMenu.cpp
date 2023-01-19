@@ -57,6 +57,14 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 
 
+		ret->AddItem( 32, inspector_test::Demo() );
+
+
+
+		ret->AddSplit();
+
+
+
 		ret->AddMenu( 27, RootMenu() );
 	};
 }
