@@ -33,6 +33,7 @@
     <ClCompile Include="src\test\item\color_modifier_test.cpp" />
     <ClCompile Include="src\test\item\empty_test.cpp" />
     <ClCompile Include="src\test\item\inspector_binary_test.cpp" />
+    <ClCompile Include="src\test\item\test_inspector_demo.cpp" />
     <ClCompile Include="src\test\item\inspector_file_test.cpp" />
     <ClCompile Include="src\test\item\inspector_test.cpp" />
     <ClCompile Include="src\test\item\key_test.cpp" />
@@ -59,6 +60,7 @@
     <ClInclude Include="src\test\item\color_modifier_test.h" />
     <ClInclude Include="src\test\item\empty_test.h" />
     <ClInclude Include="src\test\item\inspector_binary_test.h" />
+    <ClInclude Include="src\test\item\test_inspector_demo.h" />
     <ClInclude Include="src\test\item\inspector_file_test.h" />
     <ClInclude Include="src\test\item\inspector_test.h" />
     <ClInclude Include="src\test\item\key_test.h" />

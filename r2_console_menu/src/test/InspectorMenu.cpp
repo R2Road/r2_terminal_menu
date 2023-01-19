@@ -5,6 +5,7 @@
 
 #include "item/inspector_binary_test.h"
 #include "item/inspector_file_test.h"
+#include "item/test_inspector_demo.h"
 #include "item/inspector_test.h"
 
 #include "RootMenu.h"
@@ -53,11 +54,11 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 
 
-		ret->AddSplit();
+		ret->AddLineFeed();
 
 
 
-		ret->AddItem( 32, inspector_test::Demo() );
+		ret->AddItem( 32, test_inspector_demo::Demo() );
 
 
 
