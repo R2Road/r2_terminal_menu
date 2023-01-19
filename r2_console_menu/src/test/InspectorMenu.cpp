@@ -4,7 +4,7 @@
 #include "r2cm/r2cm_ostream.h"
 
 #include "item/test_inspector_binary.h"
-#include "item/inspector_file_test.h"
+#include "item/test_inspector_file.h"
 #include "item/test_inspector_demo.h"
 #include "item/inspector_test.h"
 
@@ -49,8 +49,8 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'a', inspector_file_test::File() );
-		ret->AddItem( 's', inspector_file_test::FileRange() );
+		ret->AddItem( 'a', test_inspector_file::File() );
+		ret->AddItem( 's', test_inspector_file::FileRange() );
 
 
 

@@ -1,11 +1,11 @@
-#include "inspector_file_test.h"
+#include "test_inspector_file.h"
 
 #include <filesystem>
 
 #include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
-namespace inspector_file_test
+namespace test_inspector_file
 {
 	r2cm::TitleFunctionT File::GetTitleFunction() const
 	{

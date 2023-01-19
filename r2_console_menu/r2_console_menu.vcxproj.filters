@@ -42,9 +42,6 @@
     <ClCompile Include="src\r2cm\r2cm_PrintBinary.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\item\inspector_file_test.cpp">
-      <Filter>test\item</Filter>
-    </ClCompile>
     <ClCompile Include="src\r2cm\r2cm_MenuProcessor.cpp">
       <Filter>r2cm</Filter>
     </ClCompile>
@@ -52,6 +49,9 @@
       <Filter>test\item</Filter>
     </ClCompile>
     <ClCompile Include="src\test\item\test_inspector_binary.cpp">
+      <Filter>test\item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\item\test_inspector_file.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
   </ItemGroup>
@@ -108,9 +108,6 @@
     <ClInclude Include="src\r2cm\r2cm_PrintBinary.h">
       <Filter>r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\item\inspector_file_test.h">
-      <Filter>test\item</Filter>
-    </ClInclude>
     <ClInclude Include="src\r2cm\r2cm_ColorModifier.h">
       <Filter>r2cm</Filter>
     </ClInclude>
@@ -127,6 +124,9 @@
       <Filter>test\item</Filter>
     </ClInclude>
     <ClInclude Include="src\test\item\test_inspector_binary.h">
+      <Filter>test\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\item\test_inspector_file.h">
       <Filter>test\item</Filter>
     </ClInclude>
   </ItemGroup>
