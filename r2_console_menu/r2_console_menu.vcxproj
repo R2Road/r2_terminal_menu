@@ -37,7 +37,7 @@
     <ClCompile Include="src\test\item\test_inspector_file.cpp" />
     <ClCompile Include="src\test\item\test_inspector_base.cpp" />
     <ClCompile Include="src\test\item\test_key.cpp" />
-    <ClCompile Include="src\test\item\window_utility_test.cpp" />
+    <ClCompile Include="src\test\item\test_window_utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\r2cm\r2cm_ColorModifier.h" />
@@ -64,7 +64,7 @@
     <ClInclude Include="src\test\item\test_inspector_file.h" />
     <ClInclude Include="src\test\item\test_inspector_base.h" />
     <ClInclude Include="src\test\item\test_key.h" />
-    <ClInclude Include="src\test\item\window_utility_test.h" />
+    <ClInclude Include="src\test\item\test_window_utility.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -1,4 +1,4 @@
-#include "window_utility_test.h"
+#include "test_window_utility.h"
 
 #include <conio.h> // _kbhit(), _getch()
 
@@ -6,7 +6,7 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_WindowUtility.h"
 
-namespace window_utility_test
+namespace test_window_utility
 {
 	r2cm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{

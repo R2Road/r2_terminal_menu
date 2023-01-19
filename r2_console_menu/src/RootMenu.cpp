@@ -10,7 +10,7 @@
 #include "test/item/color_modifier_test.h"
 #include "test/item/test_empty.h"
 #include "test/item/test_key.h"
-#include "test/item/window_utility_test.h"
+#include "test/item/test_window_utility.h"
 
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"
@@ -108,8 +108,8 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'b', window_utility_test::MoveCursorWithClearBuffer() );
-		ret->AddItem( 'n', window_utility_test::FillColor() );
+		ret->AddItem( 'b', test_window_utility::MoveCursorWithClearBuffer() );
+		ret->AddItem( 'n', test_window_utility::FillColor() );
 
 
 
