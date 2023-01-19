@@ -3,10 +3,10 @@
 #include "r2cm/r2cm_Director.h"
 #include "r2cm/r2cm_ostream.h"
 
-#include "item/test_inspector_binary.h"
-#include "item/test_inspector_file.h"
-#include "item/test_inspector_demo.h"
 #include "item/test_inspector_base.h"
+#include "item/test_inspector_binary.h"
+#include "item/test_inspector_demo.h"
+#include "item/test_inspector_file.h"
 
 #include "RootMenu.h"
 
