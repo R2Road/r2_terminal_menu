@@ -203,15 +203,21 @@ namespace test_inspector_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_NOTE( "output note~!~!~!" );
+
+				LF();
+
 				OUTPUT_SUBJECT( "output subject~!~!~!" );
+
+				LF();
+
 				OUTPUT_COMMENT( "output comment~!~!~!" );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
