@@ -1,9 +1,9 @@
-#include "inspector_test.h"
+#include "test_inspector_base.h"
 
 #include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
-namespace inspector_test
+namespace test_inspector_base
 {
 	r2cm::TitleFunctionT Basic::GetTitleFunction() const
 	{

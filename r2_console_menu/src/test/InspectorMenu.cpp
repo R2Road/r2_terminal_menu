@@ -6,7 +6,7 @@
 #include "item/test_inspector_binary.h"
 #include "item/test_inspector_file.h"
 #include "item/test_inspector_demo.h"
-#include "item/inspector_test.h"
+#include "item/test_inspector_base.h"
 
 #include "RootMenu.h"
 
@@ -28,11 +28,11 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 {
 	return []( r2cm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', inspector_test::Basic() );
-		ret->AddItem( '2', inspector_test::Expect() );
-		ret->AddItem( '3', inspector_test::Size() );
-		ret->AddItem( '4', inspector_test::Code() );
-		ret->AddItem( '5', inspector_test::Note() );
+		ret->AddItem( '1', test_inspector_base::Basic() );
+		ret->AddItem( '2', test_inspector_base::Expect() );
+		ret->AddItem( '3', test_inspector_base::Size() );
+		ret->AddItem( '4', test_inspector_base::Code() );
+		ret->AddItem( '5', test_inspector_base::Note() );
 
 
 

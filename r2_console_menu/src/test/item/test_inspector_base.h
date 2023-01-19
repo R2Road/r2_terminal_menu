@@ -2,7 +2,7 @@
 
 #include "r2cm/r2cm_iItem.h"
 
-namespace inspector_test
+namespace test_inspector_base
 {
 	class Basic : public r2cm::iItem
 	{
