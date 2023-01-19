@@ -192,14 +192,14 @@ namespace test_inspector_base
 
 
 
-	r2cm::TitleFunctionT Note::GetTitleFunction() const
+	r2cm::TitleFunctionT Note_Subject_Comment::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Note";
+			return "Inspector : Note, Subject, Comment";
 		};
 	}
-	r2cm::DoFunctionT Note::GetDoFunction() const
+	r2cm::DoFunctionT Note_Subject_Comment::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
