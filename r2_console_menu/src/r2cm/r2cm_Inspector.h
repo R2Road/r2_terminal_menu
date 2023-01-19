@@ -252,6 +252,11 @@ do {																						\
 	printf( "\t" "+ Note : " "%s" "\n", str );												\
 } while( false )
 
+#define	OUTPUT_SUBJECT( str )																\
+do {																						\
+	printf( "\t" "+ " "%s" "\n", str );														\
+} while( false )
+
 #define	OUTPUT_COMMENT( str )																\
 do {																						\
 	printf( "\t" "> " "%s" "\n", str );														\

@@ -207,6 +207,7 @@ namespace test_inspector_base
 
 			{
 				OUTPUT_NOTE( "output note~!~!~!" );
+				OUTPUT_SUBJECT( "output subject~!~!~!" );
 				OUTPUT_COMMENT( "output comment~!~!~!" );
 			}
 
