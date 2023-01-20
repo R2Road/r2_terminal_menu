@@ -37,7 +37,7 @@ namespace r2cm
 			"\n"
 			"\n"	"[o] " "update inspector : Add - OUTPUT_SUBJECT"
 			"\n"	"[o] " "update inspector : Add - OUTPUT_SIZE"
-			"\n"	"[o] " "update ostream : Add - LF(), LF1(), LF2(), LS()"
+			"\n"	"[o] " "update ostream : Add - LF(), LF2(), LF3(), LS()"
 			"\n"	"[o] " "update menuprocessor : Add - AddExit"
 		;
 
