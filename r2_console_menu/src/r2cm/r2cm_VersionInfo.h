@@ -15,20 +15,22 @@ namespace r2cm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '5';
+		const char VersionNumber_4 = '0';
 
 
 
 		const char* const String4VersionRule =
 					"### Version Rule ###"
 			"\n"
-			"\n"	"> " "1.0.0"  " : "  "완성?"
-			"\n"	"> " "0.1.0"  " : "  "하위 버전 숫자가 10에 도달"
-			"\n"	"> " "0.0.1"  " : "  "사용자에게 코드 변경을 요구한다."
+			"\n"	"> " "1.0.0.0"  " : "  "완성?"
+			"\n"	"> " "0.1.0.0"  " : "  "하위 버전 숫자가 10에 도달"
+			"\n"	"> " "0.0.1.0"  " : "  "Road 완료"
+			"\n"	"> " "0.0.0.1"  " : "  "사용자가 변경 사항을 몰라도 되는 변화"
 		;
 
 
 
-		const char String4Version[14] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '\0' };
+		const char String4Version[16] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
 
 
