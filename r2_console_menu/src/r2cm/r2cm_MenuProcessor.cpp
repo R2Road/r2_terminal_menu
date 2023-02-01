@@ -32,8 +32,6 @@ namespace r2cm
 	{
 		if( !mDescriptionString.empty() )
 		{
-			std::cout << "+ Message" << r2cm::linefeed2;
-			
 			std::cout << clm( r2cm::eColor::FG_LightGreen ) << mDescriptionString << clm() << r2cm::linefeed;
 
 			std::cout << r2cm::split;
