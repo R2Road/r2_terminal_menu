@@ -216,7 +216,7 @@ do {																						\
 //
 #define	OUTPUT_CODE( condition )															\
 do {																						\
-	printf( "[CODE]" " %s" "\n", #condition );												\
+	printf( "[CODE]"  "\x1B[90m"  " %s"  "\033[0m"  "\n", #condition );						\
 } while( false )
 
 
