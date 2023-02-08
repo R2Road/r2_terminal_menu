@@ -41,6 +41,7 @@ namespace r2cm
 			"\n"	"[o] " "update inspector : Add - OUTPUT_SIZE"
 			"\n"	"[o] " "update ostream : Add - LF(), LF2(), LF3(), LS()"
 			"\n"	"[o] " "update menuprocessor : Add - AddExit"
+			"\n"	"[o] " "update inspector : Apply Color - OUTPUT_NOTE, OUTPUT_SUBJECT, OUTPUT_COMMENT, OUTPUT_CODE"
 		;
 
 		const char* const String4Road2Version_1_0_5 =
