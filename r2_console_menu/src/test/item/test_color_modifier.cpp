@@ -23,21 +23,27 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::None ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << r2cm::ColorModifier( r2cm::eColor::None ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
 			}
 
 			LS();
 
 			{
-				OUTPUT_NOTE( "Setup" );
+				OUTPUT_NOTE( "Setup 1" );
 
 				LF();
 
-				PROCESS_MAIN( std::cout << r2cm::tab2 << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+			}
+
+			LS();
+
+			{
+				OUTPUT_NOTE( "Setup 2" );
 
 				LF();
 
-				PROCESS_MAIN( std::cout << r2cm::tab2 << clm( r2cm::eColor::BG_Red ) << clm( r2cm::eColor::FG_Blue ) << "Do Something" << clm() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << clm( r2cm::eColor::BG_Red ) << clm( r2cm::eColor::FG_Blue ) << "Do Something" << clm() << r2cm::linefeed );
 			}
 
 			LS();
