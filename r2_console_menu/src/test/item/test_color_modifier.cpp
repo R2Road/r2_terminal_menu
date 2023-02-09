@@ -9,7 +9,7 @@ namespace test_color_modifier
 	{
 		return []()->const char*
 		{
-			return "Color Modifier : Basic";
+			return "Color Modifier";
 		};
 	}
 	r2cm::DoFunctionT Basic::GetDoFunction() const
