@@ -23,7 +23,8 @@ namespace test_inspector_file
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
-				std::cout << "> " << p << r2cm::linefeed2;
+				
+				std::cout << r2cm::linefeed;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
@@ -37,7 +38,8 @@ namespace test_inspector_file
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
-				std::cout << "> " << p << r2cm::linefeed2;
+				
+				std::cout << r2cm::linefeed;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
@@ -70,7 +72,8 @@ namespace test_inspector_file
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
-				std::cout << "> " << p << r2cm::linefeed2;
+
+				std::cout << r2cm::linefeed;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
@@ -84,7 +87,8 @@ namespace test_inspector_file
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
-				std::cout << "> " << p << r2cm::linefeed2;
+				
+				std::cout << r2cm::linefeed;
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
