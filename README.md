@@ -33,3 +33,9 @@
 <p float:left;">
 <img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_03.png"></img>
 </p>
+<p float:left;">
+<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_04.png"></img>
+</p>
+<p float:left;">
+<img src="https://github.com/R2Road/r2_console_menu/blob/main/wiki/r2_console_menu_05.png"></img>
+</p>
