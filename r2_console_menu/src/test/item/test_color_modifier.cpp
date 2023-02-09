@@ -19,7 +19,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_NOTE( "None" );
+				OUTPUT_SUBJECT( "None" );
 
 				LF();
 
@@ -29,7 +29,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_NOTE( "Setup 1" );
+				OUTPUT_SUBJECT( "Setup 1" );
 
 				LF();
 
@@ -39,7 +39,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_NOTE( "Setup 2" );
+				OUTPUT_SUBJECT( "Setup 2" );
 
 				LF();
 
