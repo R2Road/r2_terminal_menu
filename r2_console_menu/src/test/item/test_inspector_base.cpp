@@ -137,7 +137,7 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_NOTE( "기존의 size 출력 방식" );
+				OUTPUT_SUBJECT( "기존의 size 출력 방식" );
 
 				LF();
 
@@ -147,7 +147,7 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_NOTE( "OUTPUT_SIZE 사용" );
+				OUTPUT_SUBJECT( "OUTPUT_SIZE 사용" );
 
 				LF();
 
