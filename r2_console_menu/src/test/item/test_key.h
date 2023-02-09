@@ -4,7 +4,7 @@
 
 namespace test_key
 {
-	class Basic : public r2cm::iItem
+	class View : public r2cm::iItem
 	{
 	public:
 		r2cm::TitleFunctionT GetTitleFunction() const override;

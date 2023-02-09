@@ -81,7 +81,7 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'q', test_key::Basic() );
+		ret->AddItem( 'q', test_key::View() );
 		ret->AddItem( 'w', test_color_modifier::Basic() );
 
 
