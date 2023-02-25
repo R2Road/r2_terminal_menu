@@ -64,7 +64,7 @@ namespace r2cm
 			BG_LightBlue = 9 << 4,
 			BG_LightGreen = 10 << 4,
 			BG_LightAqua = 11 << 4,
-			BG_LightLed = 12 << 4,
+			BG_LightRed = 12 << 4,
 			BG_LightPurple = 13 << 4,
 			BG_LightYellow = 14 << 4,
 			BG_BrightWhite = 15 << 4,

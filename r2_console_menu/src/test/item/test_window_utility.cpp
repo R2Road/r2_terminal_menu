@@ -76,7 +76,7 @@ namespace test_window_utility
 				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, ( r2cm::WindowUtility::eColor::FG_Blue | r2cm::WindowUtility::eColor::BG_LightYellow ) );
 				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
 
-				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, ( r2cm::WindowUtility::eColor::FG_Green | r2cm::WindowUtility::eColor::BG_LightLed ) );
+				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, ( r2cm::WindowUtility::eColor::FG_Green | r2cm::WindowUtility::eColor::BG_LightRed ) );
 				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
 
 				std::cout << r2cm::linefeed;
