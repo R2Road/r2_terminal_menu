@@ -47,7 +47,7 @@ namespace r2cm
 			FG_LightBlue,
 			FG_LightGreen,
 			FG_LightAqua,
-			FG_LightLed,
+			FG_LightRed,
 			FG_LightPurple,
 			FG_LightYellow,
 			FG_BrightWhite,
