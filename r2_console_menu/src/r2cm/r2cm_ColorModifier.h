@@ -18,7 +18,7 @@ namespace r2cm
 		FG_White,
 
 		FG_Gray = 90,
-		FG_LightLed,
+		FG_LightRed,
 		FG_LightGreen,
 		FG_LightYellow,
 		FG_LightBlue,
@@ -36,7 +36,7 @@ namespace r2cm
 		BG_White,
 
 		BG_Gray = 100,
-		BG_LightLed,
+		BG_LightRed,
 		BG_LightGreen,
 		BG_LightYellow,
 		BG_LightBlue,
