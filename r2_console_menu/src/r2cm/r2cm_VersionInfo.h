@@ -36,6 +36,7 @@ namespace r2cm
 		const char* const String4Road2Version_1_0_7 =
 			"### Road 2 Version 1.0.7 ###"
 			"\n"
+			"\n"	"[o] " "add method : r2cm::WindowUtility::FillString"
 			"\n"	"[ ] " "..."
 		;
 
