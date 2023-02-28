@@ -109,7 +109,8 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddItem( 'b', test_window_utility::MoveCursorWithClearBuffer() );
-		ret->AddItem( 'n', test_window_utility::FillColor() );
+		ret->AddItem( 'n', test_window_utility::FillString() );
+		ret->AddItem( 'm', test_window_utility::FillColor() );
 
 
 

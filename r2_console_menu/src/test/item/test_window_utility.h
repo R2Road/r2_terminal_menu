@@ -11,6 +11,13 @@ namespace test_window_utility
 		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class FillString : public r2cm::iItem
+	{
+	public:
+		r2cm::TitleFunctionT GetTitleFunction() const override;
+		r2cm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class FillColor : public r2cm::iItem
 	{
 	public:

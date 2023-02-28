@@ -121,6 +121,16 @@ namespace r2cm
 		FillCharacter( { short( x ), short( y ) }, c );
 	}
 
+	void WindowUtility::FillString( const CursorPoint point, const char* str, const int size )
+	{
+		DWORD out_result;
+		WriteConsoleOutputCharacterA( GetStdHandle( STD_OUTPUT_HANDLE ), str, size, { point.x, point.y }, &out_result );
+	}
+	void WindowUtility::FillString( const int x, const int y, const char* str, const int size )
+	{
+		FillString( { short( x ), short( y ) }, str, size );
+	}
+
 	void WindowUtility::FillColor( const CursorPoint point, const short c )
 	{
 		DWORD out_result;

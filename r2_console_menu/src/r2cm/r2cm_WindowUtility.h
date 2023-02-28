@@ -33,6 +33,9 @@ namespace r2cm
 		static void FillCharacter( const CursorPoint point, const char c );
 		static void FillCharacter( const int x, const int y, const char c );
 
+		static void FillString( const CursorPoint point, const char* str, const int size );
+		static void FillString( const int x, const int y, const char* str, const int size );
+
 		enum eColor : unsigned char
 		{
 			FG_Black = 0,

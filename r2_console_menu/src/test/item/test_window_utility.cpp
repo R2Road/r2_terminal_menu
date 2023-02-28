@@ -53,6 +53,46 @@ namespace test_window_utility
 
 
 
+	r2cm::TitleFunctionT FillString::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "WIndow Utility : FillString";
+		};
+	}
+	r2cm::DoFunctionT FillString::GetDoFunction() const
+	{
+		return []()->r2cm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				PROCESS_MAIN( r2cm::WindowUtility::FillString( r2cm::WindowUtility::GetCursorPoint(), "asdfgh", 6 ) );
+
+				LF();
+			}
+
+			LS();
+
+			{
+				DECLARATION_MAIN( auto cursor_point = r2cm::WindowUtility::GetCursorPoint() );
+				PROCESS_MAIN( cursor_point.x += 4 );
+				PROCESS_MAIN( cursor_point.y += 6 );
+				PROCESS_MAIN( r2cm::WindowUtility::FillString( cursor_point, "asdfgh", 4 ) );
+
+				r2cm::WindowUtility::MoveCursorPoint( cursor_point );
+
+				LF();
+			}
+
+			LS();
+
+			return r2cm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2cm::TitleFunctionT FillColor::GetTitleFunction() const
 	{
 		return []()->const char*
