@@ -57,11 +57,11 @@ r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
 			, []()->const char* { return "Show Title With Lambda"; }
 			, []()->r2cm::eDoLeaveAction
 			{
-				std::cout << r2cm::split;
+				LS();
 
 				std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
 
-				std::cout << r2cm::split;
+				LS();
 
 				return r2cm::eDoLeaveAction::Pause;
 			}

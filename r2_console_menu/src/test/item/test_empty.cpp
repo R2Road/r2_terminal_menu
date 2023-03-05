@@ -17,11 +17,11 @@ namespace test_empty
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			std::cout << r2cm::tab2 << "Do Something" << r2cm::linefeed;
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

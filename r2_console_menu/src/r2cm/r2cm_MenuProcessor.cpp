@@ -26,7 +26,8 @@ namespace r2cm
 	void MenuProcessor::ShowTitle() const
 	{
 		std::cout << "# " << mTitleString << " #" << r2cm::linefeed;
-		std::cout << r2cm::split;
+
+		LS();
 	}
 	void MenuProcessor::ShowDescription() const
 	{
@@ -34,7 +35,7 @@ namespace r2cm
 		{
 			std::cout << clm( r2cm::eColor::FG_LightGreen ) << mDescriptionString << clm() << r2cm::linefeed;
 
-			std::cout << r2cm::split;
+			LS();
 		}
 	}
 
@@ -49,12 +50,12 @@ namespace r2cm
 			//
 			if( KEYCODE_4_SPLIT == t.KeyCode ) // *
 			{
-				std::cout << r2cm::split;
+				LS();
 				continue;
 			}
 			if( KEYCODE_4_LINEFEED == t.KeyCode ) // @
 			{
-				std::cout << r2cm::linefeed;
+				LF();
 				continue;
 			}
 			if( KEYCODE_4_MESSAGE == t.KeyCode ) // (

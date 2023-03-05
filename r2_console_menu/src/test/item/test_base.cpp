@@ -17,7 +17,7 @@ namespace test_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
@@ -25,7 +25,7 @@ namespace test_base
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::None;
 		};
@@ -44,7 +44,7 @@ namespace test_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
@@ -52,7 +52,7 @@ namespace test_base
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
@@ -71,7 +71,7 @@ namespace test_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
 
@@ -79,7 +79,7 @@ namespace test_base
 			{
 			} while( 27 != _getch() );
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Exit;
 		};

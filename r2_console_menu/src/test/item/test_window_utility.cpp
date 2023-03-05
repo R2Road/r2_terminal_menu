@@ -19,25 +19,25 @@ namespace test_window_utility
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
 				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			DECLARATION_MAIN( const auto last_cursor_point = r2cm::WindowUtility::GetCursorPoint() );
 
-			std::cout << r2cm::split;
+			LS();
 
 			for( int i = 0; 20 > i; ++i )
 			{
 				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			std::cout << "[Any Key] Move Cursor with Clear Buffer";
 			_getch();
@@ -104,7 +104,7 @@ namespace test_window_utility
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint(), r2cm::WindowUtility::eColor::BG_Aqua );
@@ -122,7 +122,7 @@ namespace test_window_utility
 				std::cout << r2cm::linefeed;
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

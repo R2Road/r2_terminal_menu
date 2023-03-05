@@ -16,7 +16,7 @@ namespace test_inspector_binary
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_BINARY( 123i8 );
@@ -25,7 +25,7 @@ namespace test_inspector_binary
 				OUTPUT_BINARY( 123ui8 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_BINARY( 123i16 );
@@ -34,7 +34,7 @@ namespace test_inspector_binary
 				OUTPUT_BINARY( 123ui16 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_BINARY( 123i32 );
@@ -43,7 +43,7 @@ namespace test_inspector_binary
 				OUTPUT_BINARY( 123ui32 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_BINARY( 123i64 );
@@ -52,7 +52,7 @@ namespace test_inspector_binary
 				OUTPUT_BINARY( 123ui64 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( struct S { int32_t i1 = 1; int64_t i2 = 7; int32_t i3 = 2; int64_t i4 = 9; } d );
@@ -60,7 +60,7 @@ namespace test_inspector_binary
 				OUTPUT_BINARY( d );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
@@ -79,7 +79,7 @@ namespace test_inspector_binary
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( short buffer[2] = { 0 } );
@@ -87,14 +87,14 @@ namespace test_inspector_binary
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( short buffer[5] = { 0 } );
 				OUTPUT_BINARIES( buffer, 5 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( int buffer[4] = { 0 } );
@@ -102,14 +102,14 @@ namespace test_inspector_binary
 				OUTPUT_BINARIES( buffer, 4 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( char buffer[10] = { 0 } );
 				OUTPUT_BINARIES( buffer, 10 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( struct S { int32_t i32 = 0; int64_t i64 = 0; } buffer[2] );
@@ -118,14 +118,14 @@ namespace test_inspector_binary
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( struct S { int32_t i1 = 1; int32_t i2 = 2; int32_t i3 = 3; } buffer[2] );
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

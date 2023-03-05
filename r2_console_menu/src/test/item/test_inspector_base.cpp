@@ -16,7 +16,7 @@ namespace test_inspector_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( int i = 0; );
@@ -30,7 +30,7 @@ namespace test_inspector_base
 				OUTPUT_VALUE( i );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_SUB( int j = 0; );
@@ -44,13 +44,13 @@ namespace test_inspector_base
 				OUTPUT_VALUE( j );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_VALUE( 11111 * 7 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
@@ -69,7 +69,7 @@ namespace test_inspector_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 #pragma warning( push )
 #pragma warning( disable : 4127 )
@@ -115,7 +115,7 @@ namespace test_inspector_base
 			}
 #pragma warning( pop )
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
@@ -178,13 +178,13 @@ namespace test_inspector_base
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				OUTPUT_CODE( printf( "%s", "asdf" ) );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

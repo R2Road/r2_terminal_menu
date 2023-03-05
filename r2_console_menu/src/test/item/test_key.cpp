@@ -17,12 +17,12 @@ namespace test_key
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split; 
+			LS(); 
 			
 			std::cout << "[ESC] End" << r2cm::linefeed;
 			std::cout << "[Any Key] ..." << r2cm::linefeed;
 
-			std::cout << r2cm::split;
+			LS();
 
 			bool process = true;
 			int input = 0;
@@ -35,7 +35,7 @@ namespace test_key
 				process = ( 27 != input ); // ESC
 			} while( process );
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};

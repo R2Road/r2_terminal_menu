@@ -18,7 +18,7 @@ namespace test_inspector_file
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
@@ -33,7 +33,7 @@ namespace test_inspector_file
 				OUTPUT_FILE( p.string().c_str() );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
@@ -48,7 +48,7 @@ namespace test_inspector_file
 				OUTPUT_FILE( p.string().c_str() );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
@@ -67,7 +67,7 @@ namespace test_inspector_file
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
@@ -82,7 +82,7 @@ namespace test_inspector_file
 				OUTPUT_FILE_RANGE( p.string().c_str(), 1, 3 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
@@ -97,7 +97,7 @@ namespace test_inspector_file
 				OUTPUT_FILE_RANGE( p.string().c_str(), 5, 10 );
 			}
 
-			std::cout << r2cm::split;
+			LS();
 
 			return r2cm::eDoLeaveAction::Pause;
 		};
