@@ -28,8 +28,7 @@ namespace r2cm
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& split( std::basic_ostream<_Elem, _Traits>& os )
 	{
-		os << r2cm::linefeed << "====================================================================" << r2cm::linefeed << r2cm::linefeed;
-		return ( os );
+		return os << r2cm::linefeed << "====================================================================" << r2cm::linefeed << r2cm::linefeed;
 	}
 
 	template<class _Elem, class _Traits>
