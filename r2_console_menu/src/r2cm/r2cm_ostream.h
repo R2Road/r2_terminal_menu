@@ -34,29 +34,25 @@ namespace r2cm
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& tab( std::basic_ostream<_Elem, _Traits>& os )
 	{
-		os.put( os.widen( '\t' ) );
-		return ( os );
+		return os.put( os.widen( '\t' ) );
 	}
 
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& tab2( std::basic_ostream<_Elem, _Traits>& os )
 	{
-		os << r2cm::tab << r2cm::tab;
-		return ( os );
+		return os << r2cm::tab << r2cm::tab;
 	}
 
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& tab3( std::basic_ostream<_Elem, _Traits>& os )
 	{
-		os << r2cm::tab << r2cm::tab << r2cm::tab;
-		return ( os );
+		return os << r2cm::tab << r2cm::tab << r2cm::tab;
 	}
 
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& tab4( std::basic_ostream<_Elem, _Traits>& os )
 	{
-		os << r2cm::tab << r2cm::tab << r2cm::tab << r2cm::tab;
-		return ( os );
+		return os << r2cm::tab << r2cm::tab << r2cm::tab << r2cm::tab;
 	}
 }
 
