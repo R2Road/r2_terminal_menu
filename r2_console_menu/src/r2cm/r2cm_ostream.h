@@ -8,8 +8,7 @@ namespace r2cm
 	inline std::basic_ostream<_Elem, _Traits>& linefeed( std::basic_ostream<_Elem, _Traits>& os )
 	{
 		// insert newline
-		os.put( os.widen( '\n' ) );
-		return ( os );
+		return os.put( os.widen( '\n' ) );
 	}
 
 	template<class _Elem, class _Traits>
