@@ -192,20 +192,24 @@ namespace test_inspector_base
 
 
 
-	r2cm::TitleFunctionT Note_Subject_Comment::GetTitleFunction() const
+	r2cm::TitleFunctionT String_Note_Subject_Comment::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Note, Subject, Comment";
+			return "Inspector : String, Note, Subject, Comment";
 		};
 	}
-	r2cm::DoFunctionT Note_Subject_Comment::GetDoFunction() const
+	r2cm::DoFunctionT String_Note_Subject_Comment::GetDoFunction() const
 	{
 		return []()->r2cm::eDoLeaveAction
 		{
 			LS();
 
 			{
+				OUTPUT_STRING( "output string~!~!~!" );
+
+				LF();
+
 				OUTPUT_NOTE( "output note~!~!~!" );
 
 				LF();

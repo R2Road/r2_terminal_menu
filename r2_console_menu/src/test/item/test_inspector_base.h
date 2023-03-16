@@ -32,7 +32,7 @@ namespace test_inspector_base
 		r2cm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Note_Subject_Comment : public r2cm::iItem
+	class String_Note_Subject_Comment : public r2cm::iItem
 	{
 	public:
 		r2cm::TitleFunctionT GetTitleFunction() const override;

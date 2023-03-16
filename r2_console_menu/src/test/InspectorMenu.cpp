@@ -32,7 +32,7 @@ r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 		ret->AddItem( '2', test_inspector_base::Expect() );
 		ret->AddItem( '3', test_inspector_base::Size() );
 		ret->AddItem( '4', test_inspector_base::Code() );
-		ret->AddItem( '5', test_inspector_base::Note_Subject_Comment() );
+		ret->AddItem( '5', test_inspector_base::String_Note_Subject_Comment() );
 
 
 

@@ -247,6 +247,11 @@ do {																						\
 //
 // Output ETC
 //
+#define	OUTPUT_STRING( str )																\
+do {																						\
+	printf( "%s"  "\n", str );																\
+} while( false )
+
 #define	OUTPUT_NOTE( str )																	\
 do {																						\
 	printf( "\t"  "\x1B[91m"  "+ NOTE : "  "%s"  "\033[0m"  "\n", str );					\
