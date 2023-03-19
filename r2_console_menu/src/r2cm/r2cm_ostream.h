@@ -31,6 +31,16 @@ namespace r2cm
 		return os << r2cm::linefeed << "====================================================================" << r2cm::linefeed << r2cm::linefeed;
 	}
 
+
+
+	template<class _Elem, class _Traits>
+	inline std::basic_ostream<_Elem, _Traits>& softsplit( std::basic_ostream<_Elem, _Traits>& os )
+	{
+		return os << r2cm::linefeed << "    " "----------" "----------" "----------" "----------" "----------" "----------" << r2cm::linefeed << r2cm::linefeed;
+	}
+
+
+
 	template<class _Elem, class _Traits>
 	inline std::basic_ostream<_Elem, _Traits>& tab( std::basic_ostream<_Elem, _Traits>& os )
 	{
@@ -67,6 +77,11 @@ inline void LF2()
 inline void LF3()
 {
 	std::cout << r2cm::linefeed3;
+}
+
+inline void SS()
+{
+	std::cout << r2cm::softsplit;
 }
 
 inline void LS()

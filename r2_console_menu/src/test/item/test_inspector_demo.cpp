@@ -22,11 +22,11 @@ namespace test_inspector_demo
 				DECLARATION_MAIN( int i = 0 );
 				DECLARATION_MAIN( int j = i );
 
-				LF();
+				SS();
 
 				EXPECT_EQ( i, j );
 
-				LF();
+				SS();
 
 				PROCESS_MAIN( i = 1 );
 				PROCESS_MAIN( i = 2 );
