@@ -102,5 +102,9 @@ namespace r2cm
 			"\n"	"[o] " "Color Modifier"
 		;
 
+
+
+		const char* const String4Road2NextVersion = String4Road2Version_1_0_7;
+
 	} VersionInfo;
 }
