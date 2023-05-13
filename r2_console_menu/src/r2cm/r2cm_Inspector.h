@@ -229,14 +229,14 @@ do {																						\
 
 #define	OUTPUT_SIZE( condition )															\
 do {																						\
-	printf( "[SIZE]" " %s" "\n" "\t> %llu" "\n", #condition, sizeof( condition ) );			\
+	printf( "[SIZE]" " %s" "\n" "\t> %llu" " byte" "\n", #condition, sizeof( condition ) );			\
 } while( false )
 
 #else
 
 #define	OUTPUT_SIZE( condition )															\
 do {																						\
-	printf( "[SIZE]" " %s" "\n" "\t> %u" "\n", #condition, sizeof( condition ) );			\
+	printf( "[SIZE]" " %s" "\n" "\t> %u" " byte" "\n", #condition, sizeof( condition ) );			\
 } while( false )
 
 #endif
