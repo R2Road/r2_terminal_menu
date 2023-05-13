@@ -26,7 +26,7 @@ namespace r2cm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '6';
-		const char VersionNumber_4 = '2';
+		const char VersionNumber_4 = '3';
 
 		const char String4Version[16] = { 'r', '2', 'c', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
