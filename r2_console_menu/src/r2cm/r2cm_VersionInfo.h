@@ -37,6 +37,7 @@ namespace r2cm
 			"\n"
 			"\n"	"[o] " "add method : r2cm::WindowUtility::FillString"
 			"\n"	"[o] " "update inspector : Add - OUTPUT_STRING"
+			"\n"	"[o] " "update inspector : OUTPUT_SIZE - 크기 뒤에 byte 문자열 출력"
 			"\n"	"[ ] " "..."
 		;
 
