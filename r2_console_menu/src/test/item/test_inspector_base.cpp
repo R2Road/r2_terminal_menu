@@ -21,11 +21,11 @@ namespace test_inspector_base
 			{
 				DECLARATION_MAIN( int i = 0; );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				PROCESS_MAIN( i = 1234567; );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_VALUE( i );
 			}
@@ -35,11 +35,11 @@ namespace test_inspector_base
 			{
 				DECLARATION_SUB( int j = 0; );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				PROCESS_SUB( j = 7654321; );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_VALUE( j );
 			}
@@ -77,37 +77,37 @@ namespace test_inspector_base
 				EXPECT_TRUE( 1 == 1 );
 				EXPECT_TRUE( 1 == 0 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_FALSE( 1 == 1 );
 				EXPECT_FALSE( 1 == 0 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_EQ( 1, 1 );
 				EXPECT_EQ( 1, 0 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_NE( 1, 1 );
 				EXPECT_NE( 1, 0 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_GT( 1, 1 );
 				EXPECT_GT( 1, 0 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_LT( 1, 1 );
 				EXPECT_LT( 0, 1 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_GE( 1, 1 );
 				EXPECT_GE( 0, 1 );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );

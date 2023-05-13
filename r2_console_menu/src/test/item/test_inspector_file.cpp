@@ -24,11 +24,11 @@ namespace test_inspector_file
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
 				
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_FILE( p.string().c_str() );
 			}
@@ -39,11 +39,11 @@ namespace test_inspector_file
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 				
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_FILE( p.string().c_str() );
 			}
@@ -73,11 +73,11 @@ namespace test_inspector_file
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_FILE_RANGE( p.string().c_str(), 1, 3 );
 			}
@@ -88,11 +88,11 @@ namespace test_inspector_file
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 				
-				std::cout << r2cm::linefeed;
+				LF();
 
 				EXPECT_TRUE( std::filesystem::exists( p ) );
 
-				std::cout << r2cm::linefeed;
+				LF();
 
 				OUTPUT_FILE_RANGE( p.string().c_str(), 5, 10 );
 			}
