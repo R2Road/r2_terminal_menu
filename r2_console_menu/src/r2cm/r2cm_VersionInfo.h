@@ -9,7 +9,7 @@ namespace r2cm
 	// 무리하지 않고 즐겁게 작업을 이어나갈 수 있도록 모든 방안을 강구할 것.
 	//
 
-	static struct
+	constexpr struct
 	{
 
 		const char* const String4VersionRule =
