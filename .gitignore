@@ -1,4 +1,4 @@
-r2_console_menu/.vs/*
-r2_console_menu/Debug/*
-r2_console_menu/x64/*
-r2_console_menu/Release/*
+program/.vs/*
+program/Debug/*
+program/x64/*
+program/Release/*
