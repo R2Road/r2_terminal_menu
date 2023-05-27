@@ -5,16 +5,16 @@
 
 namespace test_inspector_base
 {
-	r2cm::TitleFunctionT Basic::GetTitleFunction() const
+	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Basic";
 		};
 	}
-	r2cm::DoFunctionT Basic::GetDoFunction() const
+	r2tm::DoFunctionT Basic::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -52,22 +52,22 @@ namespace test_inspector_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT Expect::GetTitleFunction() const
+	r2tm::TitleFunctionT Expect::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Expect";
 		};
 	}
-	r2cm::DoFunctionT Expect::GetDoFunction() const
+	r2tm::DoFunctionT Expect::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -117,22 +117,22 @@ namespace test_inspector_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT Size::GetTitleFunction() const
+	r2tm::TitleFunctionT Size::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Size";
 		};
 	}
-	r2cm::DoFunctionT Size::GetDoFunction() const
+	r2tm::DoFunctionT Size::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -161,22 +161,22 @@ namespace test_inspector_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT Code::GetTitleFunction() const
+	r2tm::TitleFunctionT Code::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Code";
 		};
 	}
-	r2cm::DoFunctionT Code::GetDoFunction() const
+	r2tm::DoFunctionT Code::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -186,22 +186,22 @@ namespace test_inspector_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT String_Note_Subject_Comment::GetTitleFunction() const
+	r2tm::TitleFunctionT String_Note_Subject_Comment::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : String, Note, Subject, Comment";
 		};
 	}
-	r2cm::DoFunctionT String_Note_Subject_Comment::GetDoFunction() const
+	r2tm::DoFunctionT String_Note_Subject_Comment::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -223,7 +223,7 @@ namespace test_inspector_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

@@ -4,10 +4,10 @@
 
 namespace test_empty
 {
-	class Basic : public r2cm::iItem
+	class Basic : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 }

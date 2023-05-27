@@ -13,22 +13,22 @@ int main()
 	//
 	// Environment : Title
 	//
-	r2cm::WindowUtility::ChangeTitle( r2cm::VersionInfo.String4Version );
+	r2tm::WindowUtility::ChangeTitle( r2tm::VersionInfo.String4Version );
 
 	//
 	// Environment : Size
 	//
-	r2cm::WindowUtility::Resize( 860, 960 );
+	r2tm::WindowUtility::Resize( 860, 960 );
 
 	//
 	// Environment : Position
 	//
-	r2cm::WindowUtility::Move( 0, 0 );
+	r2tm::WindowUtility::Move( 0, 0 );
 
 	//
 	// Setup
 	//
-	r2cm::Director director;
+	r2tm::Director director;
 	director.Setup( RootMenu() );
 
 	//

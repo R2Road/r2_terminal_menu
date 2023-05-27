@@ -4,7 +4,7 @@
 
 #include "r2cm_iMenu.h"
 
-namespace r2cm
+namespace r2tm
 {
 	Director::Director() : mMenuProcessor( *this )
 	{}

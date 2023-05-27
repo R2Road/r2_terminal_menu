@@ -15,7 +15,7 @@
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"
 
-r2cm::TitleFunctionT RootMenu::GetTitleFunction() const
+r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
 	return []()->const char*
 	{
@@ -25,45 +25,45 @@ r2cm::TitleFunctionT RootMenu::GetTitleFunction() const
 			+ "Root Menu"
 			  " : "	"<"   "C++17" + ">"
 			  ", "	"<"   "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
-			  ", "	"<" + r2cm::VersionInfo.String4Version + ">"
+			  ", "	"<" + r2tm::VersionInfo.String4Version + ">"
 			;
 		return ret.c_str();
 	};
 }
-r2cm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		static const std::string ret =
 			std::string()
 
-			+ r2cm::VersionInfo.String4VersionRule
+			+ r2tm::VersionInfo.String4VersionRule
 			+ "\n"
 			  "\n"
 			  "\n"
-			+ r2cm::VersionInfo.String4Road2NextVersion
+			+ r2tm::VersionInfo.String4Road2NextVersion
 		;
 		return ret.c_str();
 	};
 }
-r2cm::WriteFunctionT RootMenu::GetWriteFunction() const
+r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
-	return []( r2cm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', test_empty::Basic() );
 		ret->AddItem( '2', test_empty::Basic() );
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
-			, []()->r2cm::eDoLeaveAction
+			, []()->r2tm::eDoLeaveAction
 			{
 				LS();
 
-				std::cout << r2cm::linefeed2 << "##### Show Title With Lambda #####" << r2cm::linefeed3;
+				std::cout << r2tm::linefeed2 << "##### Show Title With Lambda #####" << r2tm::linefeed3;
 
 				LS();
 
-				return r2cm::eDoLeaveAction::Pause;
+				return r2tm::eDoLeaveAction::Pause;
 			}
 		);
 

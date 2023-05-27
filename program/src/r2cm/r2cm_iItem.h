@@ -2,7 +2,7 @@
 
 #include "r2cm_MenuConstant.h"
 
-namespace r2cm
+namespace r2tm
 {
 	class iItem
 	{

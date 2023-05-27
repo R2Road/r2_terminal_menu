@@ -7,16 +7,16 @@
 
 namespace test_inspector_file
 {
-	r2cm::TitleFunctionT File::GetTitleFunction() const
+	r2tm::TitleFunctionT File::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : File";
 		};
 	}
-	r2cm::DoFunctionT File::GetDoFunction() const
+	r2tm::DoFunctionT File::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -50,22 +50,22 @@ namespace test_inspector_file
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT FileRange::GetTitleFunction() const
+	r2tm::TitleFunctionT FileRange::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : File Range";
 		};
 	}
-	r2cm::DoFunctionT FileRange::GetDoFunction() const
+	r2tm::DoFunctionT FileRange::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -99,7 +99,7 @@ namespace test_inspector_file
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

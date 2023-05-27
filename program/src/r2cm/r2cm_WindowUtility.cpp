@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-namespace r2cm
+namespace r2tm
 {
 	void WindowUtility::ChangeTitle( const char* title_string )
 	{

@@ -4,17 +4,17 @@
 
 namespace test_inspector_binary
 {
-	class Binary : public r2cm::iItem
+	class Binary : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Binaries : public r2cm::iItem
+	class Binaries : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 }

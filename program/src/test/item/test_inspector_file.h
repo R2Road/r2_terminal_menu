@@ -4,17 +4,17 @@
 
 namespace test_inspector_file
 {
-	class File : public r2cm::iItem
+	class File : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class FileRange : public r2cm::iItem
+	class FileRange : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 }

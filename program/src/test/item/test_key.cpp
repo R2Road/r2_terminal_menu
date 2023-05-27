@@ -6,21 +6,21 @@
 
 namespace test_key
 {
-	r2cm::TitleFunctionT View::GetTitleFunction() const
+	r2tm::TitleFunctionT View::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Key View";
 		};
 	}
-	r2cm::DoFunctionT View::GetDoFunction() const
+	r2tm::DoFunctionT View::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS(); 
 			
-			std::cout << "[ESC] End" << r2cm::linefeed;
-			std::cout << "[Any Key] ..." << r2cm::linefeed;
+			std::cout << "[ESC] End" << r2tm::linefeed;
+			std::cout << "[Any Key] ..." << r2tm::linefeed;
 
 			LS();
 
@@ -30,14 +30,14 @@ namespace test_key
 			{
 				input = _getch();
 
-				std::cout << "Key : " << input << r2cm::linefeed;
+				std::cout << "Key : " << input << r2tm::linefeed;
 
 				process = ( 27 != input ); // ESC
 			} while( process );
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

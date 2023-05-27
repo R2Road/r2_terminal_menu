@@ -2,7 +2,7 @@
 
 #include <stdint.h>
 
-namespace r2cm
+namespace r2tm
 {
 	class WindowUtility
 	{

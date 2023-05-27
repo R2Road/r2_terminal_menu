@@ -4,24 +4,24 @@
 
 namespace test_window_utility
 {
-	class MoveCursorWithClearBuffer : public r2cm::iItem
+	class MoveCursorWithClearBuffer : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class FillString : public r2cm::iItem
+	class FillString : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class FillColor : public r2cm::iItem
+	class FillColor : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 }

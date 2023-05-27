@@ -192,7 +192,7 @@ do {																						\
 #define	OUTPUT_BINARY( condition )															\
 do {																						\
 	printf( "[BINARY]" " %s", #condition );													\
-	r2cm::PrintBinary( ( condition ) );														\
+	r2tm::PrintBinary( ( condition ) );														\
 	printf( "\n" );																			\
 } while( false )
 
@@ -204,7 +204,7 @@ do {																						\
 #define	OUTPUT_BINARIES( pointer, size )													\
 do {																						\
 	printf( "[BINARIES]" " %s" ", %s", #pointer, #size );									\
-	r2cm::PrintBinary( ( pointer ), ( size ) );												\
+	r2tm::PrintBinary( ( pointer ), ( size ) );												\
 	printf( "\n" );																			\
 } while( false )
 
@@ -275,10 +275,10 @@ do {																						\
 //
 #define OUTPUT_FILE( file_path )															\
 do {																						\
-	r2cm::PrintFile( file_path );															\
+	r2tm::PrintFile( file_path );															\
 } while( false )
 
 #define OUTPUT_FILE_RANGE( file_path, min, max )											\
 do {																						\
-	r2cm::PrintFile( file_path, min, max );													\
+	r2tm::PrintFile( file_path, min, max );													\
 } while( false )

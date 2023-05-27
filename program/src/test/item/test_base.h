@@ -4,24 +4,24 @@
 
 namespace test_base
 {
-	class TestEndAction_None : public r2cm::iItem
+	class TestEndAction_None : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class TestEndAction_Pause : public r2cm::iItem
+	class TestEndAction_Pause : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class TestEndAction_Exit : public r2cm::iItem
+	class TestEndAction_Exit : public r2tm::iItem
 	{
 	public:
-		r2cm::TitleFunctionT GetTitleFunction() const override;
-		r2cm::DoFunctionT GetDoFunction() const override;
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 }

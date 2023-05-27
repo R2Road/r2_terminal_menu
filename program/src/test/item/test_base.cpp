@@ -6,20 +6,20 @@
 
 namespace test_base
 {
-	r2cm::TitleFunctionT TestEndAction_None::GetTitleFunction() const
+	r2tm::TitleFunctionT TestEndAction_None::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_None";
 		};
 	}
-	r2cm::DoFunctionT TestEndAction_None::GetDoFunction() const
+	r2tm::DoFunctionT TestEndAction_None::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
-			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
+			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
 
 			do
 			{
@@ -27,26 +27,26 @@ namespace test_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::None;
+			return r2tm::eDoLeaveAction::None;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT TestEndAction_Pause::GetTitleFunction() const
+	r2tm::TitleFunctionT TestEndAction_Pause::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Pause";
 		};
 	}
-	r2cm::DoFunctionT TestEndAction_Pause::GetDoFunction() const
+	r2tm::DoFunctionT TestEndAction_Pause::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
-			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
+			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
 
 			do
 			{
@@ -54,26 +54,26 @@ namespace test_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT TestEndAction_Exit::GetTitleFunction() const
+	r2tm::TitleFunctionT TestEndAction_Exit::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Base : TestEndAction_Exit";
 		};
 	}
-	r2cm::DoFunctionT TestEndAction_Exit::GetDoFunction() const
+	r2tm::DoFunctionT TestEndAction_Exit::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
-			std::cout << r2cm::tab2 << "Press [ESC] Key" << r2cm::linefeed;
+			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
 
 			do
 			{
@@ -81,7 +81,7 @@ namespace test_base
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Exit;
+			return r2tm::eDoLeaveAction::Exit;
 		};
 	}
 }

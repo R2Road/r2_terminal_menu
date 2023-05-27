@@ -5,16 +5,16 @@
 
 namespace test_inspector_binary
 {
-	r2cm::TitleFunctionT Binary::GetTitleFunction() const
+	r2tm::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Binary";
 		};
 	}
-	r2cm::DoFunctionT Binary::GetDoFunction() const
+	r2tm::DoFunctionT Binary::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -62,22 +62,22 @@ namespace test_inspector_binary
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT Binaries::GetTitleFunction() const
+	r2tm::TitleFunctionT Binaries::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Binaries";
 		};
 	}
-	r2cm::DoFunctionT Binaries::GetDoFunction() const
+	r2tm::DoFunctionT Binaries::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -127,7 +127,7 @@ namespace test_inspector_binary
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

@@ -5,16 +5,16 @@
 
 namespace test_inspector_demo
 {
-	r2cm::TitleFunctionT Demo::GetTitleFunction() const
+	r2tm::TitleFunctionT Demo::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Inspector : Demo";
 		};
 	}
-	r2cm::DoFunctionT Demo::GetDoFunction() const
+	r2tm::DoFunctionT Demo::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -86,7 +86,7 @@ namespace test_inspector_demo
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

@@ -5,16 +5,16 @@
 
 namespace test_color_modifier
 {
-	r2cm::TitleFunctionT Basic::GetTitleFunction() const
+	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Color Modifier";
 		};
 	}
-	r2cm::DoFunctionT Basic::GetDoFunction() const
+	r2tm::DoFunctionT Basic::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -23,7 +23,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << r2cm::ColorModifier( r2cm::eColor::None ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::None ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
 			}
 
 			LS();
@@ -33,7 +33,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << r2cm::ColorModifier( r2cm::eColor::FG_Red ) << "Do Something" << r2cm::ColorModifier() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::FG_Red ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
 			}
 
 			LS();
@@ -43,12 +43,12 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << clm( r2cm::eColor::BG_Red ) << clm( r2cm::eColor::FG_Blue ) << "Do Something" << clm() << r2cm::linefeed );
+				PROCESS_MAIN( std::cout << "  " << clm( r2tm::eColor::BG_Red ) << clm( r2tm::eColor::FG_Blue ) << "Do Something" << clm() << r2tm::linefeed );
 			}
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

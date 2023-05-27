@@ -2,10 +2,10 @@
 
 #include "r2cm/r2cm_iMenu.h"
 
-class RootMenu : public r2cm::iMenu
+class RootMenu : public r2tm::iMenu
 {
 public:
-	r2cm::TitleFunctionT GetTitleFunction() const override;
-	r2cm::DescriptionFunctionT GetDescriptionFunction() const override;
-	r2cm::WriteFunctionT GetWriteFunction() const override;
+	r2tm::TitleFunctionT GetTitleFunction() const override;
+	r2tm::DescriptionFunctionT GetDescriptionFunction() const override;
+	r2tm::WriteFunctionT GetWriteFunction() const override;
 };

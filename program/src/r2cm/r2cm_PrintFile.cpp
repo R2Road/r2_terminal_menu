@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-namespace r2cm
+namespace r2tm
 {
 	const char* GetLine( FILE* fp )
 	{

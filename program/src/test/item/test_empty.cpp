@@ -6,24 +6,24 @@
 
 namespace test_empty
 {
-	r2cm::TitleFunctionT Basic::GetTitleFunction() const
+	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Empty Test";
 		};
 	}
-	r2cm::DoFunctionT Basic::GetDoFunction() const
+	r2tm::DoFunctionT Basic::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
-			std::cout << r2cm::tab2 << "Do Something" << r2cm::linefeed;
+			std::cout << r2tm::tab2 << "Do Something" << r2tm::linefeed;
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }

@@ -10,23 +10,23 @@
 
 #include "RootMenu.h"
 
-r2cm::TitleFunctionT InspectorMenu::GetTitleFunction() const
+r2tm::TitleFunctionT InspectorMenu::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Inspector Menu";
 	};
 }
-r2cm::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2cm::WriteFunctionT InspectorMenu::GetWriteFunction() const
+r2tm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 {
-	return []( r2cm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', test_inspector_base::Basic() );
 		ret->AddItem( '2', test_inspector_base::Expect() );

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace r2cm
+namespace r2tm
 {
 	enum eColor
 	{
@@ -73,4 +73,4 @@ namespace r2cm
 	};
 }
 
-using clm = r2cm::ColorModifier;
+using clm = r2tm::ColorModifier;

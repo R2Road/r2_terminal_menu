@@ -8,33 +8,33 @@
 
 namespace test_window_utility
 {
-	r2cm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
+	r2tm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "WIndow Utility : Move Cursor With Clear Buffer";
 		};
 	}
-	r2cm::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction() const
+	r2tm::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
 			{
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
+				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
+				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
 			}
 
 			LS();
 
-			DECLARATION_MAIN( const auto last_cursor_point = r2cm::WindowUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto last_cursor_point = r2tm::WindowUtility::GetCursorPoint() );
 
 			LS();
 
 			for( int i = 0; 20 > i; ++i )
 			{
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2cm::linefeed;
+				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
 			}
 
 			LS();
@@ -42,32 +42,32 @@ namespace test_window_utility
 			std::cout << "[Any Key] Move Cursor with Clear Buffer";
 			_getch();
 
-			PROCESS_MAIN( r2cm::WindowUtility::MoveCursorPointWithClearBuffer( last_cursor_point ) );
+			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( last_cursor_point ) );
 
 			std::cout << "[Any Key] End";
 			_getch();
 
-			return r2cm::eDoLeaveAction::None;
+			return r2tm::eDoLeaveAction::None;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT FillString::GetTitleFunction() const
+	r2tm::TitleFunctionT FillString::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "WIndow Utility : FillString";
 		};
 	}
-	r2cm::DoFunctionT FillString::GetDoFunction() const
+	r2tm::DoFunctionT FillString::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
 			{
-				PROCESS_MAIN( r2cm::WindowUtility::FillString( r2cm::WindowUtility::GetCursorPoint(), "asdfgh", 6 ) );
+				PROCESS_MAIN( r2tm::WindowUtility::FillString( r2tm::WindowUtility::GetCursorPoint(), "asdfgh", 6 ) );
 
 				LF();
 			}
@@ -75,56 +75,56 @@ namespace test_window_utility
 			LS();
 
 			{
-				DECLARATION_MAIN( auto cursor_point = r2cm::WindowUtility::GetCursorPoint() );
+				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
 				PROCESS_MAIN( cursor_point.x += 4 );
 				PROCESS_MAIN( cursor_point.y += 6 );
-				PROCESS_MAIN( r2cm::WindowUtility::FillString( cursor_point, "asdfgh", 4 ) );
+				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4 ) );
 
-				r2cm::WindowUtility::MoveCursorPoint( cursor_point );
+				r2tm::WindowUtility::MoveCursorPoint( cursor_point );
 
 				LF();
 			}
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 
 
 
-	r2cm::TitleFunctionT FillColor::GetTitleFunction() const
+	r2tm::TitleFunctionT FillColor::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "WIndow Utility : FillColor";
 		};
 	}
-	r2cm::DoFunctionT FillColor::GetDoFunction() const
+	r2tm::DoFunctionT FillColor::GetDoFunction() const
 	{
-		return []()->r2cm::eDoLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
 			LS();
 
 			{
-				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint(), r2cm::WindowUtility::eColor::BG_Aqua );
-				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint(), 'T' );
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint(), r2tm::WindowUtility::eColor::BG_Aqua );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint(), 'T' );
 
-				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 1, 0 }, r2cm::WindowUtility::eColor::BG_Green );
-				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 1, 0 }, 'E' );
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, r2tm::WindowUtility::eColor::BG_Green );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, 'E' );
 
-				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, ( r2cm::WindowUtility::eColor::FG_Blue | r2cm::WindowUtility::eColor::BG_LightYellow ) );
-				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, ( r2tm::WindowUtility::eColor::FG_Blue | r2tm::WindowUtility::eColor::BG_LightYellow ) );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
 
-				r2cm::WindowUtility::FillColor( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, ( r2cm::WindowUtility::eColor::FG_Green | r2cm::WindowUtility::eColor::BG_LightRed ) );
-				r2cm::WindowUtility::FillCharacter( r2cm::WindowUtility::GetCursorPoint() + r2cm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, ( r2tm::WindowUtility::eColor::FG_Green | r2tm::WindowUtility::eColor::BG_LightRed ) );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
 
 				LF();
 			}
 
 			LS();
 
-			return r2cm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }
