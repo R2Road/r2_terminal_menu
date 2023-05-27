@@ -2,9 +2,9 @@
 
 #include <conio.h> // _kbhit(), _getch()
 
-#include "r2cm/r2cm_Inspector.h"
-#include "r2cm/r2cm_ostream.h"
-#include "r2cm/r2cm_WindowUtility.h"
+#include "r2tm/r2tm_Inspector.h"
+#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_WindowUtility.h"
 
 namespace test_window_utility
 {

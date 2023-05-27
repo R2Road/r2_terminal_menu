@@ -2,8 +2,8 @@
 
 #include <filesystem>
 
-#include "r2cm/r2cm_Inspector.h"
-#include "r2cm/r2cm_ostream.h"
+#include "r2tm/r2tm_Inspector.h"
+#include "r2tm/r2tm_ostream.h"
 
 namespace test_inspector_file
 {

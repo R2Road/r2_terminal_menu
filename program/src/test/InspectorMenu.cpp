@@ -1,7 +1,7 @@
 #include "InspectorMenu.h"
 
-#include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_ostream.h"
+#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_ostream.h"
 
 #include "item/test_inspector_base.h"
 #include "item/test_inspector_binary.h"

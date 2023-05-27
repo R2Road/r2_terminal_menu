@@ -1,6 +1,6 @@
 #pragma once
 
-#include "r2cm_ColorModifier.h"
+#include "r2tm_ColorModifier.h"
 
 namespace r2tm
 {

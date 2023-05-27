@@ -2,9 +2,9 @@
 	#include <vld.h>
 #endif
 
-#include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_VersionInfo.h"
-#include "r2cm/r2cm_WindowUtility.h"
+#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_VersionInfo.h"
+#include "r2tm/r2tm_WindowUtility.h"
 
 #include "RootMenu.h"
 

@@ -3,8 +3,8 @@
 #include <iostream>
 #include <stdint.h>
 
-#include "r2cm_PrintBinary.h"
-#include "r2cm_PrintFile.h"
+#include "r2tm_PrintBinary.h"
+#include "r2tm_PrintFile.h"
 
 #define R2CM_ENABLE_DEBUG_BREAK 0
 

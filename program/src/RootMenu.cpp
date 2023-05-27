@@ -2,9 +2,9 @@
 
 #include <string>
 
-#include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_ostream.h"
-#include "r2cm/r2cm_VersionInfo.h"
+#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/item/test_base.h"
 #include "test/item/test_color_modifier.h"

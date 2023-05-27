@@ -2,30 +2,12 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\r2cm\r2cm_Director.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_WindowUtility.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_StopWatch.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\RootMenu.cpp" />
-    <ClCompile Include="src\r2cm\r2cm_PrintFile.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\AnotherMenu.cpp">
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\test\InspectorMenu.cpp">
       <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_PrintBinary.cpp">
-      <Filter>r2cm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\r2cm\r2cm_MenuProcessor.cpp">
-      <Filter>r2cm</Filter>
     </ClCompile>
     <ClCompile Include="src\test\item\test_inspector_demo.cpp">
       <Filter>test\item</Filter>
@@ -54,53 +36,32 @@
     <ClCompile Include="src\test\item\test_base.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_Director.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_PrintFile.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_StopWatch.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_WindowUtility.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\r2cm\r2cm_Director.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_iItem.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_Inspector.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_WindowUtility.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_VersionInfo.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_ostream.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_StopWatch.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
     <ClInclude Include="src\RootMenu.h" />
-    <ClInclude Include="src\r2cm\r2cm_PrintFile.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\AnotherMenu.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\InspectorMenu.h">
       <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_PrintBinary.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_ColorModifier.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_MenuConstant.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_MenuProcessor.h">
-      <Filter>r2cm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2cm\r2cm_iMenu.h">
-      <Filter>r2cm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\item\test_inspector_demo.h">
       <Filter>test\item</Filter>
@@ -129,16 +90,55 @@
     <ClInclude Include="src\test\item\test_base.h">
       <Filter>test\item</Filter>
     </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_ColorModifier.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_Director.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_iItem.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_iMenu.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_Inspector.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_MenuConstant.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_MenuProcessor.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_ostream.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_PrintBinary.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_PrintFile.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_StopWatch.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_VersionInfo.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_WindowUtility.h">
+      <Filter>r2tm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="r2cm">
-      <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="test">
       <UniqueIdentifier>{034bdfbb-95cf-4545-9d78-fea3afa17c7c}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\item">
       <UniqueIdentifier>{3022de0a-6de1-4eb3-9b1e-628c927174a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r2tm">
+      <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
