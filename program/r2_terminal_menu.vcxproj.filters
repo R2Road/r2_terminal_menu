@@ -54,6 +54,9 @@
     <ClCompile Include="src\r2tm\r2tm_WindowUtility.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\item\test_stop_watch.cpp">
+      <Filter>test\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -128,6 +131,9 @@
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_WindowUtility.h">
       <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\item\test_stop_watch.h">
+      <Filter>test\item</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

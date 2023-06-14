@@ -10,6 +10,7 @@
 #include "test/item/test_color_modifier.h"
 #include "test/item/test_empty.h"
 #include "test/item/test_key.h"
+#include "test/item/test_stop_watch.h"
 #include "test/item/test_window_utility.h"
 
 #include "test/AnotherMenu.h"
@@ -83,6 +84,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddItem( 'q', test_key::View() );
 		ret->AddItem( 'w', test_color_modifier::Basic() );
+		ret->AddItem( 'e', test_stop_watch::Basic() );
 
 
 
