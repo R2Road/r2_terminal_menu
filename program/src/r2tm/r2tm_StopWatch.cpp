@@ -67,6 +67,18 @@ namespace r2tm
 		PrintElapsedTime_NanoSeconds();
 	}
 
+	void StopWatch::PrintMinAndMaxTime_MilliSeconds()
+	{
+		std::cout << "Min : " << std::chrono::duration_cast<std::chrono::milliseconds>( std::chrono::nanoseconds::duration( mMinTime ) ).count() << "ms";
+		std::cout << r2tm::tab;
+		std::cout << "Max : " << std::chrono::duration_cast<std::chrono::milliseconds>( std::chrono::nanoseconds::duration( mMaxTime ) ).count() << "ms";
+	}
+	void StopWatch::PrintMinAndMaxTime_MicroSeconds()
+	{
+		std::cout << "Min : " << std::chrono::duration_cast<std::chrono::microseconds>( std::chrono::nanoseconds::duration( mMinTime ) ).count() << "¥ìs";
+		std::cout << r2tm::tab;
+		std::cout << "Max : " << std::chrono::duration_cast<std::chrono::microseconds>( std::chrono::nanoseconds::duration( mMaxTime ) ).count() << "¥ìs";
+	}
 	void StopWatch::PrintMinAndMaxTime_NanoSeconds()
 	{
 		std::cout << "Min : " << mMinTime << "ns";

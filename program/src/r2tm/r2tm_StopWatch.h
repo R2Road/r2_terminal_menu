@@ -23,6 +23,8 @@ namespace r2tm
 		void PrintElapsedTime_NanoSeconds();
 		void PrintElapsedTime_All();
 
+		void PrintMinAndMaxTime_MilliSeconds();
+		void PrintMinAndMaxTime_MicroSeconds();
 		void PrintMinAndMaxTime_NanoSeconds();
 
 	private:
