@@ -141,8 +141,8 @@ namespace r2tm
 		FillColor( { short( x ), short( y ) }, c );
 	}
 
-	void WindowUtility::RequestSleep( const uint32_t m )
+	void WindowUtility::RequestSleep( const uint32_t milli_seconds )
 	{
-		Sleep( m );
+		Sleep( milli_seconds );
 	}
 }

@@ -75,7 +75,7 @@ namespace r2tm
 		static void FillColor( const CursorPoint point, const short c );
 		static void FillColor( const int x, const int y, const short c );
 
-		static void RequestSleep( const uint32_t m );
+		static void RequestSleep( const uint32_t milli_seconds );
 
 	};
 }
