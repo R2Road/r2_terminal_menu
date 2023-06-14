@@ -41,6 +41,11 @@ namespace test_stop_watch
 
 				SS();
 
+				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				LF();
+
+				SS();
+
 				PROCESS_MAIN( s.PrintMinAndMaxTime_MilliSeconds() );
 				LF2();
 				PROCESS_MAIN( s.PrintMinAndMaxTime_MicroSeconds() );
