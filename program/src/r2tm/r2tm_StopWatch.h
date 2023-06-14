@@ -23,7 +23,7 @@ namespace r2tm
 		void PrintElapsedTime_NanoSeconds();
 		void PrintElapsedTime_All();
 
-		void PrintMinAndMaxTime();
+		void PrintMinAndMaxTime_NanoSeconds();
 
 	private:
 		std::chrono::steady_clock::time_point mStartTime;

@@ -41,7 +41,7 @@ namespace test_stop_watch
 
 				SS();
 
-				PROCESS_MAIN( s.PrintMinAndMaxTime() );
+				PROCESS_MAIN( s.PrintMinAndMaxTime_NanoSeconds() );
 				LF();
 			}
 

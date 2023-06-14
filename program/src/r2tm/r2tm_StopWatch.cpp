@@ -67,7 +67,7 @@ namespace r2tm
 		PrintElapsedTime_NanoSeconds();
 	}
 
-	void StopWatch::PrintMinAndMaxTime()
+	void StopWatch::PrintMinAndMaxTime_NanoSeconds()
 	{
 		std::cout << "Min : " << mMinTime << "ns";
 		std::cout << r2tm::tab;
