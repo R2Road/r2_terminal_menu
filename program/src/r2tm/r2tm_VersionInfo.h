@@ -26,7 +26,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '6';
-		const char VersionNumber_4 = '3';
+		const char VersionNumber_4 = '4';
 
 		const char String4Version[16] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
@@ -38,6 +38,9 @@ namespace r2tm
 			"\n"	"[o] " "add method : r2tm::WindowUtility::FillString"
 			"\n"	"[o] " "update inspector : Add - OUTPUT_STRING"
 			"\n"	"[o] " "update inspector : OUTPUT_SIZE - 크기 뒤에 byte 문자열 출력"
+			"\n"	"[o] " "rename method : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
+			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
+			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
 			"\n"	"[ ] " "..."
 		;
 
