@@ -41,7 +41,6 @@ namespace r2tm
 			"\n"	"[o] " "rename method : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
-			"\n"	"[ ] " "add    class  : r2tm::FileUtility"
 			"\n"	"[ ] " "..."
 		;
 

@@ -57,12 +57,6 @@
     <ClCompile Include="src\test\item\test_stop_watch.cpp">
       <Filter>test\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_FileUtility.cpp">
-      <Filter>r2tm</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\item\test_file_utility.cpp">
-      <Filter>test\item</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -139,12 +133,6 @@
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\item\test_stop_watch.h">
-      <Filter>test\item</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_FileUtility.h">
-      <Filter>r2tm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\item\test_file_utility.h">
       <Filter>test\item</Filter>
     </ClInclude>
   </ItemGroup>
