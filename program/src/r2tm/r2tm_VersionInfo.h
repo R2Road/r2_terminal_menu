@@ -41,7 +41,7 @@ namespace r2tm
 			"\n"	"[o] " "rename method : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
-			"\n"	"[o] " "add    method : r2tm::MenuProcessor - AddMessage"
+			"\n"	"[o] " "update menuprocessor : 키, 메세지 텍스트의 백그라운드 색상 설정"
 			"\n"	"[ ] " "..."
 		;
 
