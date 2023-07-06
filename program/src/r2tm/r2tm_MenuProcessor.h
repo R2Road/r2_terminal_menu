@@ -64,6 +64,7 @@ namespace r2tm
 		void AddItem( const char key_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
 
+		void AddExit( const char key_code, const int message_color_code, const int background_color_code );
 		void AddExit( const char key_code, const int message_color_code );
 		void AddExit( const char key_code );
 
