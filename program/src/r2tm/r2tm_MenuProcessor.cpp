@@ -61,7 +61,7 @@ namespace r2tm
 			if( KEYCODE_4_MESSAGE == t.KeyCode ) // (
 			{
 				std::cout
-					<< clm( static_cast<r2tm::eColor>( t.ColorCode ) )
+					<< clm( static_cast<r2tm::eColor>( t.MessageColorCode ) )
 					<< clm( static_cast<r2tm::eColor>( t.BackgroundColorCode ) )
 					<< t.TitleFunction()
 					<< clm()
@@ -93,7 +93,7 @@ namespace r2tm
 			// Title
 			//
 			std::cout
-				<< clm( static_cast<r2tm::eColor>( t.ColorCode ) )
+				<< clm( static_cast<r2tm::eColor>( t.MessageColorCode) )
 				<< clm( static_cast<r2tm::eColor>( t.BackgroundColorCode ) )
 				<< t.TitleFunction()
 				<< clm()

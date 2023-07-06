@@ -24,14 +24,14 @@ namespace r2tm
 				, const DoFunctionT& do_function
 			) :
 				KeyCode( key_code )
-				, ColorCode( message_color_code )
+				, MessageColorCode( message_color_code )
 				, BackgroundColorCode( background_color_code )
 				, TitleFunction( title_function )
 				, DoFunction( do_function )
 			{}
 
 			char KeyCode;
-			int ColorCode;
+			int MessageColorCode;
 			int BackgroundColorCode;
 			TitleFunctionT TitleFunction;
 			DoFunctionT DoFunction;
