@@ -201,12 +201,16 @@ namespace r2tm
 		AddItem( KEYCODE_4_SPLIT, r2tm::eColor::FG_White, func_title, func_do );
 	}
 
-	void MenuProcessor::AddMessage( const char* const message, const int message_color_code )
+	void MenuProcessor::AddMessage( const char* const message, const int message_color_code, const int background_color_code )
 	{
 		const TitleFunctionT func_title = [message]()->const char* { return message; };
 		static const DoFunctionT func_do = []()->const eDoLeaveAction { return eDoLeaveAction::Pause; };
 
-		AddItem( KEYCODE_4_MESSAGE, message_color_code, func_title, func_do );
+		AddItem( KEYCODE_4_MESSAGE, message_color_code, background_color_code, func_title, func_do );
+	}
+	void MenuProcessor::AddMessage( const char* const message, const int message_color_code )
+	{
+		AddMessage( message, message_color_code, r2tm::eColor::BG_Black );
 	}
 	void MenuProcessor::AddMessage( const char* const message )
 	{
