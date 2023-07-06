@@ -100,6 +100,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
+		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::BG_LightBlue );
 		ret->AddItem( 'z', test_base::TestEndAction_None() );
 		ret->AddItem( 'x', test_base::TestEndAction_Pause() );
 		ret->AddItem( 'c', test_base::TestEndAction_Exit() );

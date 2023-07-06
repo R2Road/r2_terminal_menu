@@ -67,6 +67,8 @@ namespace r2tm
 
 		void AddLineFeed();
 		void AddSplit();
+
+		void AddMessage( const char* const message, const int color_code );
 		void AddMessage( const char* const message );
 
 	protected:

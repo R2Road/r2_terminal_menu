@@ -60,7 +60,7 @@ namespace r2tm
 			}
 			if( KEYCODE_4_MESSAGE == t.KeyCode ) // (
 			{
-				std::cout << t.TitleFunction() << r2tm::linefeed;
+				std::cout << clm( static_cast<r2tm::eColor>( t.ColorCode ) ) << t.TitleFunction() << clm() << r2tm::linefeed;
 				continue;
 			}
 
@@ -186,11 +186,16 @@ namespace r2tm
 
 		AddItem( KEYCODE_4_SPLIT, r2tm::eColor::FG_White, func_title, func_do );
 	}
-	void MenuProcessor::AddMessage( const char* const message )
+
+	void MenuProcessor::AddMessage( const char* const message, const int color_code )
 	{
 		const TitleFunctionT func_title = [message]()->const char* { return message; };
 		static const DoFunctionT func_do = []()->const eDoLeaveAction { return eDoLeaveAction::Pause; };
 
-		AddItem( KEYCODE_4_MESSAGE, r2tm::eColor::FG_White, func_title, func_do );
+		AddItem( KEYCODE_4_MESSAGE, color_code, func_title, func_do );
+	}
+	void MenuProcessor::AddMessage( const char* const message )
+	{
+		AddMessage( message, r2tm::eColor::FG_White );
 	}
 }
