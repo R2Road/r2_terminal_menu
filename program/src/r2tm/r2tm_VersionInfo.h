@@ -26,7 +26,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '6';
-		const char VersionNumber_4 = '4';
+		const char VersionNumber_4 = '5';
 
 		const char String4Version[16] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
@@ -41,6 +41,7 @@ namespace r2tm
 			"\n"	"[o] " "rename method : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
 			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
+			"\n"	"[o] " "add    method : r2tm::MenuProcessor - AddMessage"
 			"\n"	"[ ] " "..."
 		;
 
