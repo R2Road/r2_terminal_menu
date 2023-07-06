@@ -18,18 +18,21 @@ namespace r2tm
 		{
 			ItemInfo(
 				const char key_code
-				, const int color_code
+				, const int message_color_code
+				, const int background_color_code
 				, const TitleFunctionT& title_function
 				, const DoFunctionT& do_function
 			) :
 				KeyCode( key_code )
-				, ColorCode( color_code )
+				, ColorCode( message_color_code )
+				, BackgroundColorCode( background_color_code )
 				, TitleFunction( title_function )
 				, DoFunction( do_function )
 			{}
 
 			char KeyCode;
 			int ColorCode;
+			int BackgroundColorCode;
 			TitleFunctionT TitleFunction;
 			DoFunctionT DoFunction;
 		};
@@ -56,11 +59,12 @@ namespace r2tm
 		//
 		//
 		//
-		void AddItem( const char key_code, const int color_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
+		void AddItem( const char key_code, const int message_color_code, const int background_color_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
+		void AddItem( const char key_code, const int message_color_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
 		void AddItem( const char key_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
 
-		void AddExit( const char key_code, const int color_code );
+		void AddExit( const char key_code, const int message_color_code );
 		void AddExit( const char key_code );
 
 		void AddMenu( const char key_code, const iMenu& menu_obj );
@@ -68,7 +72,7 @@ namespace r2tm
 		void AddLineFeed();
 		void AddSplit();
 
-		void AddMessage( const char* const message, const int color_code );
+		void AddMessage( const char* const message, const int message_color_code );
 		void AddMessage( const char* const message );
 
 	protected:
