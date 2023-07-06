@@ -51,8 +51,18 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
+		ret->AddMessage( "# Test를 r2tm::iItem을 사용해 만들기", r2tm::eColor::FG_LightRed );
 		ret->AddItem( '1', test_empty::Basic() );
+		ret->AddMessage( "# 동일한 Test를 여러 키에 할당 해보기", r2tm::eColor::FG_LightRed );
 		ret->AddItem( '2', test_empty::Basic() );
+
+
+
+		ret->AddLineFeed();
+
+
+
+		ret->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_LightRed );
 		ret->AddItem(
 			'3'
 			, []()->const char* { return "Show Title With Lambda"; }
@@ -74,7 +84,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddMessage( "# 동일한 Test를 여러 키에 할당", r2tm::eColor::FG_LightRed );
+		ret->AddMessage( "# Test를 r2tm::iMenu 객체로 묶어보기", r2tm::eColor::FG_LightRed );
 		ret->AddMenu( '6', AnotherMenu() );
 
 
