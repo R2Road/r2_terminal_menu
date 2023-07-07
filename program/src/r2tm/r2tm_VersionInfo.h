@@ -35,12 +35,12 @@ namespace r2tm
 		const char* const String4Road2Version_1_0_7 =
 					"### Road 2 Version 1.0.7 ###"
 			"\n"
-			"\n"	"[o] " "add method : r2tm::WindowUtility::FillString"
-			"\n"	"[o] " "update inspector : Add - OUTPUT_STRING"
-			"\n"	"[o] " "update inspector : OUTPUT_SIZE - 크기 뒤에 byte 문자열 출력"
-			"\n"	"[o] " "rename method : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
-			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
-			"\n"	"[o] " "add    method : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
+			"\n"	"[o] " "add method           : r2tm::WindowUtility::FillString"
+			"\n"	"[o] " "update inspector     : Add - OUTPUT_STRING"
+			"\n"	"[o] " "update inspector     : OUTPUT_SIZE - 크기 뒤에 byte 문자열 출력"
+			"\n"	"[o] " "rename method        : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
+			"\n"	"[o] " "add    method        : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
+			"\n"	"[o] " "add    method        : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
 			"\n"	"[o] " "update menuprocessor : 키, 메세지 텍스트의 백그라운드 색상 설정"
 			"\n"	"[ ] " "..."
 		;
