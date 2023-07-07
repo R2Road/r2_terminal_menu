@@ -10,7 +10,7 @@ namespace test_key
 	{
 		return []()->const char*
 		{
-			return "Key View";
+			return "Key Code View";
 		};
 	}
 	r2tm::DoFunctionT View::GetDoFunction() const
