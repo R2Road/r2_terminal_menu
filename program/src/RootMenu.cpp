@@ -65,7 +65,10 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_LightRed );
 		ret->AddItem(
 			'3'
-			, []()->const char* { return "Show Title With Lambda"; }
+			, []()->const char*
+			{
+				return "Show Title With Lambda";
+			}
 			, []()->r2tm::eDoLeaveAction
 			{
 				LS();
