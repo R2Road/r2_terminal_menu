@@ -87,6 +87,19 @@ namespace test_window_utility
 
 			LS();
 
+			{
+				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
+				PROCESS_MAIN( cursor_point.x += 4 );
+				PROCESS_MAIN( cursor_point.y += 6 );
+				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowUtility::eColor::BG_LightGreen ) );
+
+				r2tm::WindowUtility::MoveCursorPoint( cursor_point );
+
+				LF();
+			}
+
+			LS();
+
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}

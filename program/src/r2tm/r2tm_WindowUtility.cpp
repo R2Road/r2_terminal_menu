@@ -126,9 +126,21 @@ namespace r2tm
 		DWORD out_result;
 		WriteConsoleOutputCharacterA( GetStdHandle( STD_OUTPUT_HANDLE ), str, size, { point.x, point.y }, &out_result );
 	}
+	void WindowUtility::FillString( const CursorPoint point, const char* str, const int size, const short color )
+	{
+		FillString( point, str, size );
+		for( int cur = 0; size > cur; ++cur )
+		{
+			FillColor( { short( point.x + cur ), short( point.y ) }, color );
+		}
+	}
 	void WindowUtility::FillString( const int x, const int y, const char* str, const int size )
 	{
 		FillString( { short( x ), short( y ) }, str, size );
+	}
+	void WindowUtility::FillString( const int x, const int y, const char* str, const int size, const short color )
+	{
+		FillString( { short( x ), short( y ) }, str, size, color );
 	}
 
 	void WindowUtility::FillColor( const CursorPoint point, const short c )

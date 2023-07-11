@@ -34,7 +34,9 @@ namespace r2tm
 		static void FillCharacter( const int x, const int y, const char c );
 
 		static void FillString( const CursorPoint point, const char* str, const int size );
+		static void FillString( const CursorPoint point, const char* str, const int size, const short color );
 		static void FillString( const int x, const int y, const char* str, const int size );
+		static void FillString( const int x, const int y, const char* str, const int size, const short color );
 
 		enum eColor : unsigned char
 		{
