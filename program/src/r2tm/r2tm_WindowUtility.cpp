@@ -88,6 +88,11 @@ namespace r2tm
 		const CursorPoint fixed_new_cursor_point{ ( 0 > new_cursor_point.x ? 0 : new_cursor_point.x ), ( 0 > new_cursor_point.y ? 0 : new_cursor_point.y ) };
 		SetConsoleCursorPosition( GetStdHandle( STD_OUTPUT_HANDLE ), COORD{ fixed_new_cursor_point.x, fixed_new_cursor_point.y } );
 	}
+	void WindowUtility::MoveCursorPoint( const short x, const short y )
+	{
+		MoveCursorPoint( { x, y } );
+	}
+
 	void WindowUtility::MoveCursorPointWithClearBuffer( const CursorPoint new_cursor_point )
 	{
 		const auto last_cursor_point = GetCursorPoint();
