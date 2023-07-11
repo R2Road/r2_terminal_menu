@@ -53,6 +53,43 @@ namespace test_window_utility
 
 
 
+	r2tm::TitleFunctionT FillColor::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "WIndow Utility : FillColor";
+		};
+	}
+	r2tm::DoFunctionT FillColor::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint(), r2tm::WindowUtility::eColor::BG_Aqua );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint(), 'T' );
+
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, r2tm::WindowUtility::eColor::BG_Green );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, 'E' );
+
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, ( r2tm::WindowUtility::eColor::FG_Blue | r2tm::WindowUtility::eColor::BG_LightYellow ) );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
+
+				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, ( r2tm::WindowUtility::eColor::FG_Green | r2tm::WindowUtility::eColor::BG_LightRed ) );
+				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
+
+				LF();
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT FillString::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -92,43 +129,6 @@ namespace test_window_utility
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowUtility::eColor::BG_LightGreen ) );
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
-			}
-
-			LS();
-
-			return r2tm::eDoLeaveAction::Pause;
-		};
-	}
-
-
-
-	r2tm::TitleFunctionT FillColor::GetTitleFunction() const
-	{
-		return []()->const char*
-		{
-			return "WIndow Utility : FillColor";
-		};
-	}
-	r2tm::DoFunctionT FillColor::GetDoFunction() const
-	{
-		return []()->r2tm::eDoLeaveAction
-		{
-			LS();
-
-			{
-				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint(), r2tm::WindowUtility::eColor::BG_Aqua );
-				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint(), 'T' );
-
-				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, r2tm::WindowUtility::eColor::BG_Green );
-				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 1, 0 }, 'E' );
-
-				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, ( r2tm::WindowUtility::eColor::FG_Blue | r2tm::WindowUtility::eColor::BG_LightYellow ) );
-				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 2, 0 }, 'S' );
-
-				r2tm::WindowUtility::FillColor( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, ( r2tm::WindowUtility::eColor::FG_Green | r2tm::WindowUtility::eColor::BG_LightRed ) );
-				r2tm::WindowUtility::FillCharacter( r2tm::WindowUtility::GetCursorPoint() + r2tm::WindowUtility::CursorPoint{ 3, 0 }, 'T' );
-
-				LF();
 			}
 
 			LS();
