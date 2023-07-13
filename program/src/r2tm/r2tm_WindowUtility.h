@@ -32,7 +32,9 @@ namespace r2tm
 		static void MoveCursorPointWithClearBuffer( const CursorPoint new_cursor_point );
 
 		static void FillCharacter( const CursorPoint point, const char c );
+		static void FillCharacter( const CursorPoint point, const char c, const short color );
 		static void FillCharacter( const int x, const int y, const char c );
+		static void FillCharacter( const int x, const int y, const char c, const short color );
 
 		static void FillString( const CursorPoint point, const char* str, const int size );
 		static void FillString( const CursorPoint point, const char* str, const int size, const short color );

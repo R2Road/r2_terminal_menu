@@ -26,7 +26,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '6';
-		const char VersionNumber_4 = '6';
+		const char VersionNumber_4 = '7';
 
 		const char String4Version[16] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
@@ -44,6 +44,7 @@ namespace r2tm
 			"\n"	"[o] " "update menuprocessor : 키, 메세지 텍스트의 백그라운드 색상 설정"
 			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillString"
 			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - MoveCursorPoint"
+			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillCharacter"
 			"\n"	"[ ] " "..."
 		;
 

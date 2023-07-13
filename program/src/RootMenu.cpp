@@ -126,8 +126,9 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddItem( 'b', test_window_utility::MoveCursorWithClearBuffer() );
-		ret->AddItem( 'n', test_window_utility::FillColor() );
-		ret->AddItem( 'm', test_window_utility::FillString() );
+		ret->AddItem( 'n', test_window_utility::FillCharacter() );
+		ret->AddItem( 'm', test_window_utility::FillColor() );
+		ret->AddItem( ',', test_window_utility::FillString() );
 
 
 
