@@ -32,6 +32,12 @@ namespace r2tm
 
 
 
+		const char* const String4Road2Version_1_0_8 =
+					"### Road 2 Version 1.0.8 ###"
+			"\n"
+			"\n"	"[ ] " "..."
+		;
+
 		const char* const String4Road2Version_1_0_7 =
 					"### Road 2 Version 1.0.7 ###"
 			"\n"
@@ -47,7 +53,6 @@ namespace r2tm
 			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillCharacter"
 			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillColor"
 			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - MoveCursorPointWithClearBuffer"
-			"\n"	"[ ] " "..."
 		;
 
 		const char* const String4Road2Version_1_0_6 =
@@ -114,7 +119,7 @@ namespace r2tm
 
 
 
-		const char* const String4Road2NextVersion = String4Road2Version_1_0_7;
+		const char* const String4Road2NextVersion = String4Road2Version_1_0_8;
 
 	} VersionInfo;
 }
