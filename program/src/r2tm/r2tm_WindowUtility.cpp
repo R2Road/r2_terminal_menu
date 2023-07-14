@@ -116,6 +116,28 @@ namespace r2tm
 		}
 	}
 
+
+
+	void WindowUtility::FillColor( const CursorPoint point, const short c, const int size )
+	{
+		DWORD out_result;
+		FillConsoleOutputAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), c, size, { point.x, point.y }, &out_result );
+	}
+	void WindowUtility::FillColor( const CursorPoint point, const short c )
+	{
+		FillColor( point, c, 1 );
+	}
+	void WindowUtility::FillColor( const int x, const int y, const short c, const int size )
+	{
+		FillColor( { short( x ), short( y ) }, c, size );
+	}
+	void WindowUtility::FillColor( const int x, const int y, const short c )
+	{
+		FillColor( { short( x ), short( y ) }, c, 1 );
+	}
+
+
+
 	void WindowUtility::FillCharacter( const CursorPoint point, const char c )
 	{
 		DWORD out_result;
@@ -176,26 +198,6 @@ namespace r2tm
 	{
 		FillString( { short( x ), short( y ) }, c, size );
 		FillColor( { short( x ), short( y ) }, color, size );
-	}
-
-
-
-	void WindowUtility::FillColor( const CursorPoint point, const short c, const int size )
-	{
-		DWORD out_result;
-		FillConsoleOutputAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), c, size, { point.x, point.y }, &out_result );
-	}
-	void WindowUtility::FillColor( const CursorPoint point, const short c )
-	{
-		FillColor( point, c, 1 );
-	}
-	void WindowUtility::FillColor( const int x, const int y, const short c, const int size )
-	{
-		FillColor( { short( x ), short( y ) }, c, size );
-	}
-	void WindowUtility::FillColor( const int x, const int y, const short c )
-	{
-		FillColor( { short( x ), short( y ) }, c, 1 );
 	}
 
 
