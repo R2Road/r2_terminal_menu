@@ -119,6 +119,10 @@ namespace r2tm
 			}
 		}
 	}
+	void WindowUtility::MoveCursorPointWithClearBuffer( const short x, const short y )
+	{
+		MoveCursorPointWithClearBuffer( { x, y } );
+	}
 
 
 

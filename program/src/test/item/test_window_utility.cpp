@@ -21,6 +21,10 @@ namespace test_window_utility
 		{
 			LS();
 
+			DECLARATION_MAIN( const auto cursor_point_1 = r2tm::WindowUtility::GetCursorPoint() );
+
+			LS();
+
 			{
 				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
 				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
@@ -28,7 +32,7 @@ namespace test_window_utility
 
 			LS();
 
-			DECLARATION_MAIN( const auto last_cursor_point = r2tm::WindowUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto cursor_point_2 = r2tm::WindowUtility::GetCursorPoint() );
 
 			LS();
 
@@ -39,10 +43,15 @@ namespace test_window_utility
 
 			LS();
 
-			std::cout << "[Any Key] Move Cursor with Clear Buffer";
+			std::cout << "[Any Key] Move Cursor 2 with Clear Buffer";
 			_getch();
 
-			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( last_cursor_point ) );
+			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( cursor_point_2 ) );
+
+			std::cout << "[Any Key] Move Cursor 1 with Clear Buffer";
+			_getch();
+
+			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( cursor_point_1.x, cursor_point_1.y ) );
 
 			std::cout << "[Any Key] End";
 			_getch();
