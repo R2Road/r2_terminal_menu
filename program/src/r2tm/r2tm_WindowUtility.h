@@ -41,6 +41,11 @@ namespace r2tm
 		static void FillString( const int x, const int y, const char* str, const int size );
 		static void FillString( const int x, const int y, const char* str, const int size, const short color );
 
+		static void FillString( const CursorPoint point, const char c, const int size );
+		static void FillString( const CursorPoint point, const char c, const int size, const short color );
+		static void FillString( const int x, const int y, const char c, const int size );
+		static void FillString( const int x, const int y, const char c, const int size, const short color );
+
 		enum eColor : unsigned char
 		{
 			FG_Black = 0,

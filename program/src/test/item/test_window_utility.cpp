@@ -169,6 +169,36 @@ namespace test_window_utility
 
 			LS();
 
+			{
+				OUTPUT_SUBJECT( "한 문자를 여러개 찍기" );
+
+				LF();
+
+				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
+				PROCESS_MAIN( cursor_point.x += 4 );
+				PROCESS_MAIN( cursor_point.y += 6 );
+				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, 'z', 10 ) );
+
+				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "한 문자를 색상을 넣어 여러개 찍기" );
+
+				LF();
+
+				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
+				PROCESS_MAIN( cursor_point.x += 4 );
+				PROCESS_MAIN( cursor_point.y += 6 );
+				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, 'z', 10, r2tm::WindowUtility::eColor::BG_LightGreen ) );
+
+				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
+			}
+
+			LS();
+
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
