@@ -158,6 +158,10 @@ namespace test_window_utility
 		{
 			LS();
 
+			DECLARATION_MAIN( using P = r2tm::WindowUtility::CursorPoint; );
+
+			LS();
+
 			{
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( r2tm::WindowUtility::GetCursorPoint(), "asdfgh", 6 ) );
 
@@ -167,9 +171,7 @@ namespace test_window_utility
 			LS();
 
 			{
-				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
-				PROCESS_MAIN( cursor_point.x += 4 );
-				PROCESS_MAIN( cursor_point.y += 6 );
+				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4 ) );
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
@@ -178,9 +180,7 @@ namespace test_window_utility
 			LS();
 
 			{
-				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
-				PROCESS_MAIN( cursor_point.x += 4 );
-				PROCESS_MAIN( cursor_point.y += 6 );
+				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowUtility::eColor::BG_LightGreen ) );
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
@@ -193,9 +193,7 @@ namespace test_window_utility
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
-				PROCESS_MAIN( cursor_point.x += 4 );
-				PROCESS_MAIN( cursor_point.y += 6 );
+				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, 'z', 10 ) );
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
@@ -208,9 +206,7 @@ namespace test_window_utility
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = r2tm::WindowUtility::GetCursorPoint() );
-				PROCESS_MAIN( cursor_point.x += 4 );
-				PROCESS_MAIN( cursor_point.y += 6 );
+				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, 'z', 10, r2tm::WindowUtility::eColor::BG_LightGreen ) );
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
