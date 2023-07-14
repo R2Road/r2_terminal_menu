@@ -59,6 +59,8 @@ namespace r2tm
 		SetWindowLong( GetConsoleWindow(), GWL_STYLE, window_style );
 	}
 
+
+
 	void WindowUtility::QuickEditEnable( const bool enable )
 	{
 		DWORD console_mode = 0;
@@ -75,6 +77,8 @@ namespace r2tm
 		}
 		SetConsoleMode( GetStdHandle( STD_INPUT_HANDLE ), console_mode );
 	}
+
+
 
 	WindowUtility::CursorPoint WindowUtility::GetCursorPoint()
 	{
