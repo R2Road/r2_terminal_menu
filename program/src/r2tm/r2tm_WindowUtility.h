@@ -14,10 +14,14 @@ namespace r2tm
 		static void MaximizeButtonEnable( const bool enable );
 		static void ResizingByDraggingEnable( const bool enable );
 
+
+
 		//
 		// 마우스를 사용한 커서 이동, 영역 선택 On/Off
 		//
 		static void QuickEditEnable( const bool enable );
+
+
 
 		struct CursorPoint
 		{
@@ -30,6 +34,8 @@ namespace r2tm
 		static void MoveCursorPoint( const CursorPoint new_cursor_point );
 		static void MoveCursorPoint( const short x, const short y );
 		static void MoveCursorPointWithClearBuffer( const CursorPoint new_cursor_point );
+
+
 
 		static void FillCharacter( const CursorPoint point, const char c );
 		static void FillCharacter( const CursorPoint point, const char c, const short color );
