@@ -175,20 +175,30 @@ namespace r2tm
 	void WindowUtility::FillString( const int x, const int y, const char c, const int size, const short color )
 	{
 		FillString( { short( x ), short( y ) }, c, size );
-		//FillColor( point, color, size );
+		FillColor( { short( x ), short( y ) }, color, size );
 	}
 
 
 
-	void WindowUtility::FillColor( const CursorPoint point, const short c )
+	void WindowUtility::FillColor( const CursorPoint point, const short c, const int size )
 	{
 		DWORD out_result;
-		FillConsoleOutputAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), c, 1, { point.x, point.y }, &out_result );
+		FillConsoleOutputAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), c, size, { point.x, point.y }, &out_result );
+	}
+	void WindowUtility::FillColor( const CursorPoint point, const short c )
+	{
+		FillColor( point, c, 1 );
+	}
+	void WindowUtility::FillColor( const int x, const int y, const short c, const int size )
+	{
+		FillColor( { short( x ), short( y ) }, c, size );
 	}
 	void WindowUtility::FillColor( const int x, const int y, const short c )
 	{
-		FillColor( { short( x ), short( y ) }, c );
+		FillColor( { short( x ), short( y ) }, c, 1 );
 	}
+
+
 
 	void WindowUtility::RequestSleep( const uint32_t milli_seconds )
 	{

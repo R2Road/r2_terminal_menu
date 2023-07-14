@@ -95,7 +95,9 @@ namespace r2tm
 		static void FillString( const int x, const int y, const char c, const int size );
 		static void FillString( const int x, const int y, const char c, const int size, const short color );
 
+		static void FillColor( const CursorPoint point, const short c, const int size );
 		static void FillColor( const CursorPoint point, const short c );
+		static void FillColor( const int x, const int y, const short c, const int size );
 		static void FillColor( const int x, const int y, const short c );
 
 
