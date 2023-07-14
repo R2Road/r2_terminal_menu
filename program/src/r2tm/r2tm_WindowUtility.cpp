@@ -190,7 +190,7 @@ namespace r2tm
 	void WindowUtility::FillString( const CursorPoint point, const char c, const int size, const short color )
 	{
 		FillString( point, c, size );
-		//FillColor( point, color, size );
+		FillColor( point, color, size );
 	}
 	void WindowUtility::FillString( const int x, const int y, const char c, const int size )
 	{
