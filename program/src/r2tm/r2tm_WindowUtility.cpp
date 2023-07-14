@@ -158,6 +158,8 @@ namespace r2tm
 		FillColor( { short( x ), short( y ) }, color );
 	}
 
+
+
 	void WindowUtility::FillString( const CursorPoint point, const char* str, const int size )
 	{
 		DWORD out_result;
