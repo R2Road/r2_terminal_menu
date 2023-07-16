@@ -206,19 +206,25 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_STRING( "output string~!~!~!" );
+				OUTPUT_STRING( "   <= prefix | message =>   OUTPUT_STRING : output string~!~!~!" );
+			}
 
-				LF();
+			LS();
 
-				OUTPUT_NOTE( "output note~!~!~!" );
+			{
+				OUTPUT_NOTE( "   <= prefix | message =>   OUTPUT_NOTE : output note~!~!~!" );
+			}
 
-				LF();
+			LS();
 
-				OUTPUT_SUBJECT( "output subject~!~!~!" );
+			{
+				OUTPUT_SUBJECT( "   <= prefix | message =>   OUTPUT_SUBJECT : output subject~!~!~!" );
+			}
 
-				LF();
+			LS();
 
-				OUTPUT_COMMENT( "output comment~!~!~!" );
+			{
+				OUTPUT_COMMENT( "   <= prefix | message =>   OUTPUT_COMMENT : output comment~!~!~!" );
 			}
 
 			LS();
