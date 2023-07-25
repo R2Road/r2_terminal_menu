@@ -99,14 +99,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddItem( 'q', test_key::View() );
 		ret->AddItem( 'w', test_color_modifier::Basic() );
 		ret->AddItem( 'e', test_stop_watch::Basic() );
-
-
-
-		ret->AddLineFeed();
-
-
-
-		ret->AddMenu( 'a', InspectorMenu() );
+		ret->AddMenu( 'r', InspectorMenu() );
 
 
 
@@ -115,9 +108,9 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_White, r2tm::eColor::BG_LightBlue );
-		ret->AddItem( 'z', test_base::eDoLeaveAction_None() );
-		ret->AddItem( 'x', test_base::eDoLeaveAction_Pause() );
-		ret->AddItem( 'c', test_base::eDoLeaveAction_Exit() );
+		ret->AddItem( 'a', test_base::eDoLeaveAction_None() );
+		ret->AddItem( 's', test_base::eDoLeaveAction_Pause() );
+		ret->AddItem( 'd', test_base::eDoLeaveAction_Exit() );
 
 
 
@@ -125,10 +118,11 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'b', test_window_utility::MoveCursorWithClearBuffer() );
-		ret->AddItem( 'n', test_window_utility::FillColor() );
-		ret->AddItem( 'm', test_window_utility::FillCharacter() );
-		ret->AddItem( ',', test_window_utility::FillString() );
+		ret->AddItem( 'z', test_window_utility::CursorPointOperator() );
+		ret->AddItem( 'x', test_window_utility::MoveCursorWithClearBuffer() );
+		ret->AddItem( 'c', test_window_utility::FillColor() );
+		ret->AddItem( 'v', test_window_utility::FillCharacter() );
+		ret->AddItem( 'b', test_window_utility::FillString() );
 
 
 

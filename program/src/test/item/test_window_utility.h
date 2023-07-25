@@ -4,6 +4,15 @@
 
 namespace test_window_utility
 {
+	class CursorPointOperator : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
+
+
 	class MoveCursorWithClearBuffer : public r2tm::iItem
 	{
 	public:

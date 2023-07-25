@@ -8,6 +8,63 @@
 
 namespace test_window_utility
 {
+	r2tm::TitleFunctionT CursorPointOperator::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "WIndow Utility : Move Cursor With Clear Buffer";
+		};
+	}
+	r2tm::DoFunctionT CursorPointOperator::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "Operator +" );
+
+				LF();
+
+				r2tm::WindowUtility::CursorPoint p;
+
+				LF();
+
+				p = p + r2tm::WindowUtility::CursorPoint{ 2, 4 };
+
+				LF();
+
+				EXPECT_EQ( 2, p.x );
+				EXPECT_EQ( 4, p.y );
+			}
+			
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "Operator +=" );
+
+				LF();
+
+				r2tm::WindowUtility::CursorPoint p;
+
+				LF();
+
+				p += r2tm::WindowUtility::CursorPoint{ 2, 4 };
+
+				LF();
+
+				EXPECT_EQ( 2, p.x );
+				EXPECT_EQ( 4, p.y );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{
 		return []()->const char*

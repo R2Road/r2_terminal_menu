@@ -16,6 +16,12 @@ namespace r2tm
 			{
 				return CursorPoint{ x + other.x, y + other.y };
 			}
+
+			void operator+=( const CursorPoint& other )
+			{
+				x += other.x;
+				y += other.y;
+			}
 		};
 
 		enum eColor : unsigned char
