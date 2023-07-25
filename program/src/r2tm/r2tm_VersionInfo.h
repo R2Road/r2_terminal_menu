@@ -26,7 +26,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '7';
-		const char VersionNumber_4 = '1';
+		const char VersionNumber_4 = '2';
 
 		const char String4Version[16] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '\0' };
 
@@ -36,6 +36,7 @@ namespace r2tm
 					"### Road 2 Version 1.0.8 ###"
 			"\n"
 			"\n"	"[o] " "update    function   : r2tm::Inspector - OUTPUT_NOTE"
+			"\n"	"[o] " "update    struct     : r2tm::WindowUtility::CursorPoint - 생성자 추가, 연산자 +, += 추가"
 			"\n"	"[ ] " "..."
 		;
 
