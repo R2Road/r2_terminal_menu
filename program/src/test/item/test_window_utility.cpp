@@ -12,7 +12,7 @@ namespace test_window_utility
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : Move Cursor With Clear Buffer";
+			return "WIndow Utility : CursorPoint - Operator";
 		};
 	}
 	r2tm::DoFunctionT CursorPointOperator::GetDoFunction() const
