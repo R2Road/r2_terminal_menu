@@ -26,11 +26,11 @@ namespace test_window_utility
 
 				LF();
 
-				r2tm::WindowUtility::CursorPoint p;
+				DECLARATION_MAIN( r2tm::WindowUtility::CursorPoint p );
 
 				LF();
 
-				p = p + r2tm::WindowUtility::CursorPoint{ 2, 4 };
+				PROCESS_MAIN( p = p + r2tm::WindowUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 
@@ -45,11 +45,11 @@ namespace test_window_utility
 
 				LF();
 
-				r2tm::WindowUtility::CursorPoint p;
+				DECLARATION_MAIN( r2tm::WindowUtility::CursorPoint p );
 
 				LF();
 
-				p += r2tm::WindowUtility::CursorPoint{ 2, 4 };
+				PROCESS_MAIN( p += r2tm::WindowUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 
