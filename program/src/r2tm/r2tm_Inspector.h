@@ -282,3 +282,5 @@ do {																						\
 do {																						\
 	r2tm::PrintFile( file_path, min, max );													\
 } while( false )
+
+#define OUTPUT_FILE_READY( file_path )

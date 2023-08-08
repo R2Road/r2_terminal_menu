@@ -20,6 +20,10 @@ namespace test_inspector_file
 		{
 			LS();
 
+			OUTPUT_SUBJECT( "OUTPUT_FILE" );
+
+			LS();
+
 			{
 				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
 				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
@@ -67,6 +71,10 @@ namespace test_inspector_file
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
+			LS();
+
+			OUTPUT_SUBJECT( "OUTPUT_FILE_RANGE" );
+
 			LS();
 
 			{
