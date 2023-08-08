@@ -21,28 +21,31 @@ namespace test_inspector_source
 			LS();
 
 			OUTPUT_SUBJECT( "OUTPUT_SOURCE_READY, OUTPUT_SOURCE_BEGIN, OUTPUT_SOURCE_END" );
+			OUTPUT_SUBJECT( "OUTPUT_SOURCE_READY_N_BEGIN" );
 
 			LS();
 
-			DECLARATION_MAIN( OUTPUT_SOURCE_READY );
-
-			LS();
-
-			PROCESS_MAIN( OUTPUT_SOURCE_BEGIN );
-			class C1
 			{
-				int a1;
-				int a2;
-				int a3;
-				int a4;
-				int a5;
-				int a6;
-			};
-			PROCESS_MAIN( OUTPUT_SOURCE_END );
+				DECLARATION_MAIN( OUTPUT_SOURCE_READY );
+
+				LS();
+
+				PROCESS_MAIN( OUTPUT_SOURCE_BEGIN );
+				class C1
+				{
+					int a1;
+					int a2;
+					int a3;
+					int a4;
+					int a5;
+					int a6;
+				};
+				PROCESS_MAIN( OUTPUT_SOURCE_END );
+			}
 
 			LS();
 
-			PROCESS_MAIN( OUTPUT_SOURCE_BEGIN );
+			DECLARATION_MAIN( OUTPUT_SOURCE_READY_N_BEGIN );
 			class C2
 			{
 				int a1;
