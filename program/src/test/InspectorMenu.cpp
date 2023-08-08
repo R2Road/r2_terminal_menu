@@ -7,6 +7,7 @@
 #include "item/test_inspector_binary.h"
 #include "item/test_inspector_demo.h"
 #include "item/test_inspector_file.h"
+#include "item/test_inspector_source.h"
 
 #include "RootMenu.h"
 
@@ -51,6 +52,7 @@ r2tm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 		ret->AddItem( 'a', test_inspector_file::File() );
 		ret->AddItem( 's', test_inspector_file::FileRange() );
+		ret->AddItem( 'd', test_inspector_source::Basic() );
 
 
 

@@ -36,6 +36,7 @@
     <ClCompile Include="src\test\item\test_inspector_demo.cpp" />
     <ClCompile Include="src\test\item\test_inspector_file.cpp" />
     <ClCompile Include="src\test\item\test_inspector_base.cpp" />
+    <ClCompile Include="src\test\item\test_inspector_source.cpp" />
     <ClCompile Include="src\test\item\test_key.cpp" />
     <ClCompile Include="src\test\item\test_stop_watch.cpp" />
     <ClCompile Include="src\test\item\test_window_utility.cpp" />
@@ -64,6 +65,7 @@
     <ClInclude Include="src\test\item\test_inspector_demo.h" />
     <ClInclude Include="src\test\item\test_inspector_file.h" />
     <ClInclude Include="src\test\item\test_inspector_base.h" />
+    <ClInclude Include="src\test\item\test_inspector_source.h" />
     <ClInclude Include="src\test\item\test_key.h" />
     <ClInclude Include="src\test\item\test_stop_watch.h" />
     <ClInclude Include="src\test\item\test_window_utility.h" />
