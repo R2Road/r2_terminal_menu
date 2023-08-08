@@ -283,6 +283,6 @@ do {																						\
 	r2tm::PrintFile( file_path, min, max );													\
 } while( false )
 
-#define OUTPUT_SOURCE_READY		int source_line_begin, source_line_end = -1
-#define OUTPUT_SOURCE_BEGIN		do { source_line_begin = __LINE__ + 1; } while( false )
-#define OUTPUT_SOURCE_END		do { source_line_end = __LINE__ - 1; if( source_line_begin <= source_line_end ){ OUTPUT_FILE_RANGE( __FILE__, source_line_begin, source_line_end ); } } while( false )
+#define OUTPUT_SOURCE_READY		int src_begin, src_end = -1
+#define OUTPUT_SOURCE_BEGIN		do { src_begin = __LINE__ + 1; } while( false )
+#define OUTPUT_SOURCE_END		do { src_end = __LINE__ - 1; ( src_begin <= src_end ? r2tm::PrintFile( __FILE__, src_begin, src_end ) : void() ); } while( false )
