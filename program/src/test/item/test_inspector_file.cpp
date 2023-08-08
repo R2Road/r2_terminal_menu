@@ -60,14 +60,14 @@ namespace test_inspector_file
 
 
 
-	r2tm::TitleFunctionT FileRange::GetTitleFunction() const
+	r2tm::TitleFunctionT FileRange_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : File Range";
+			return "Inspector : File Range 1";
 		};
 	}
-	r2tm::DoFunctionT FileRange::GetDoFunction() const
+	r2tm::DoFunctionT FileRange_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
