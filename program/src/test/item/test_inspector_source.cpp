@@ -28,7 +28,7 @@ namespace test_inspector_source
 			{
 				DECLARATION_MAIN( OUTPUT_SOURCE_READY );
 
-				LS();
+				LF();
 
 				PROCESS_MAIN( OUTPUT_SOURCE_BEGIN );
 				class C1
