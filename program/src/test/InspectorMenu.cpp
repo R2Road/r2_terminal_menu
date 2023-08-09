@@ -43,6 +43,7 @@ r2tm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 
 		ret->AddItem( 'q', test_inspector_binary::Binary() );
 		ret->AddItem( 'w', test_inspector_binary::Binaries() );
+		ret->AddItem( 'e', test_inspector_binary::Binaries_2() );
 
 
 

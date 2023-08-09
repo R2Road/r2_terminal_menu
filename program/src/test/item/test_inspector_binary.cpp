@@ -111,6 +111,25 @@ namespace test_inspector_binary
 
 			LS();
 
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Binaries_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Binaries 2";
+		};
+	}
+	r2tm::DoFunctionT Binaries_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
 			{
 				DECLARATION_MAIN( struct S { int32_t i32 = 0; int64_t i64 = 0; } buffer[2] );
 				PROCESS_MAIN( buffer[0].i32 = 3; buffer[0].i64 = -1; );
