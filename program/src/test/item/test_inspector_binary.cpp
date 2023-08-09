@@ -68,14 +68,14 @@ namespace test_inspector_binary
 
 
 
-	r2tm::TitleFunctionT Binaries::GetTitleFunction() const
+	r2tm::TitleFunctionT Binaries_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Binaries";
+			return "Inspector : Binaries_1";
 		};
 	}
-	r2tm::DoFunctionT Binaries::GetDoFunction() const
+	r2tm::DoFunctionT Binaries_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

@@ -11,7 +11,7 @@ namespace test_inspector_binary
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Binaries : public r2tm::iItem
+	class Binaries_1 : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;
