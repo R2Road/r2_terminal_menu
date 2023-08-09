@@ -18,7 +18,7 @@ int main()
 	//
 	// Environment : Size
 	//
-	r2tm::WindowUtility::Resize( 860, 960 );
+	r2tm::WindowUtility::Resize( 1060, 960 );
 
 	//
 	// Environment : Position
