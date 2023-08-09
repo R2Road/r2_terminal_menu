@@ -83,7 +83,13 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( short buffer[2] = { 0 } );
+
+				LF();
+
 				PROCESS_MAIN( buffer[0] = 1; buffer[1] = 2; );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
@@ -91,6 +97,9 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( short buffer[5] = { 0 } );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 5 );
 			}
 
@@ -98,7 +107,13 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( int buffer[4] = { 0 } );
+
+				LF();
+
 				PROCESS_MAIN( buffer[0] = 1; buffer[1] = 2; buffer[2] = 4; buffer[3] = 8; );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 4 );
 			}
 
@@ -106,6 +121,9 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( char buffer[10] = { 0 } );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 10 );
 			}
 
@@ -132,8 +150,14 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( struct S { int32_t i32 = 0; int64_t i64 = 0; } buffer[2] );
+
+				LF();
+
 				PROCESS_MAIN( buffer[0].i32 = 3; buffer[0].i64 = -1; );
 				PROCESS_MAIN( buffer[1].i32 = 1; buffer[1].i64 = -3; );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
@@ -141,6 +165,9 @@ namespace test_inspector_binary
 
 			{
 				DECLARATION_MAIN( struct S { int32_t i1 = 1; int32_t i2 = 2; int32_t i3 = 3; } buffer[2] );
+
+				LF();
+
 				OUTPUT_BINARIES( buffer, 2 );
 			}
 
