@@ -55,6 +55,7 @@ r2tm::WriteFunctionT InspectorMenu::GetWriteFunction() const
 		ret->AddItem( 's', test_inspector_file::FileRange_1() );
 		ret->AddItem( 'd', test_inspector_file::FileRange_2() );
 		ret->AddItem( 'f', test_inspector_source::Basic() );
+		ret->AddItem( 'g', test_inspector_source::Warning() );
 
 
 
