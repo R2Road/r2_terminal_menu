@@ -126,6 +126,7 @@ namespace r2tm
 			}
 		}
 
+		std::cout << "# " << "Item Not Found" " #" << r2tm::linefeed2;
 		return eDoLeaveAction::Pause;
 	}
 
