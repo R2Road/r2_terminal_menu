@@ -79,8 +79,8 @@ namespace test_inspector_source
 			LS();
 
 			OUTPUT_NOTE( "OUTPUT_SOURCE 기능을 사용할 때" );
-			OUTPUT_NOTE( "소스에 멀티바이트 문자가 일정 길이 이상 나오면 이후에 줄이 밀린다." );
-			OUTPUT_NOTE( "주석이어도 같다." );
+			OUTPUT_NOTE( "소스에 문자가 우하단 정보 기준으로 98개 이상 나오면 이후에 줄이 밀린다." );
+			OUTPUT_NOTE( "어떤 형태든 마찬가지( 주석, 소스, 의미없는 문자열등 )" );
 
 			LS();
 
@@ -89,7 +89,7 @@ namespace test_inspector_source
 
 				LF();
 
-				OUTPUT_SUBJECT( "멀티바이트1멀티바이트2멀티바이트3멀티바이트4멀티바이트5멀티바이트6멀티바" );
+				OUTPUT_SUBJECT( "123456789012345678901234567890123456789012345678901234567890123456789012" );
 
 				LF();
 
@@ -108,7 +108,7 @@ namespace test_inspector_source
 
 				LF();
 
-				OUTPUT_SUBJECT( "멀티바이트1멀티바이트2멀티바이트3멀티바이트4멀티바이트5멀티바이트6멀티바이" );
+				OUTPUT_SUBJECT( "1234567890123456789012345678901234567890123456789012345678901234567890123" );
 
 				LF();
 
