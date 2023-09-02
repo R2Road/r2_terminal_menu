@@ -52,6 +52,16 @@ namespace test_inspector_base
 
 			LS();
 
+			{
+				DECLARATION_MAIN( std::cout << "output string > process" "\n" );
+
+				LF();
+
+				DECLARATION_SUB( std::cout << "output string > process" "\n" );
+			}
+
+			LS();
+
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
