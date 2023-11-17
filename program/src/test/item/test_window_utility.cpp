@@ -211,14 +211,14 @@ namespace test_window_utility
 
 
 
-	r2tm::TitleFunctionT FillString::GetTitleFunction() const
+	r2tm::TitleFunctionT FillString_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : FillString";
+			return "WIndow Utility : FillString 1";
 		};
 	}
-	r2tm::DoFunctionT FillString::GetDoFunction() const
+	r2tm::DoFunctionT FillString_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
@@ -263,6 +263,32 @@ namespace test_window_utility
 
 				r2tm::WindowUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
 			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+
+
+
+	r2tm::TitleFunctionT FillString_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "WIndow Utility : FillString 2";
+		};
+	}
+	r2tm::DoFunctionT FillString_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			DECLARATION_MAIN( using P = r2tm::WindowUtility::CursorPoint; );
 
 			LS();
 
