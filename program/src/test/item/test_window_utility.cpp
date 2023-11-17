@@ -229,6 +229,10 @@ namespace test_window_utility
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "문자열 출력" );
+
+				LF();
+
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( r2tm::WindowUtility::GetCursorPoint(), "asdfgh", 6 ) );
 
 				LF();
@@ -237,6 +241,10 @@ namespace test_window_utility
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "문자열, Offset" );
+
+				LF();
+
 				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4 ) );
 
@@ -246,6 +254,10 @@ namespace test_window_utility
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "문자열, Offset, 색상" );
+
+				LF();
+
 				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowUtility::GetCursorPoint() + P{ 4, 5 } ) );
 				PROCESS_MAIN( r2tm::WindowUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowUtility::eColor::BG_LightGreen ) );
 
