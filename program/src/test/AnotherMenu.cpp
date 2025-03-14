@@ -5,7 +5,7 @@
 
 #include "RootMenu.h"
 
-#include "item/test_empty.h"
+#include "test_empty.h"
 
 r2tm::TitleFunctionT AnotherMenu::GetTitleFunction() const
 {
