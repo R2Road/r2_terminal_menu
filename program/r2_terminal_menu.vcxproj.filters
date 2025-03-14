@@ -24,9 +24,6 @@
     <ClCompile Include="src\test\AnotherMenu.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\InspectorMenu.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\test_base.cpp">
       <Filter>test</Filter>
     </ClCompile>
@@ -34,21 +31,6 @@
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\test\test_empty.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_inspector_base.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_inspector_binary.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_inspector_demo.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_inspector_file.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_inspector_source.cpp">
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\test\test_key.cpp">
@@ -59,6 +41,24 @@
     </ClCompile>
     <ClCompile Include="src\test\test_window_utility.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\InspectorMenu.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_inspector_base.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_inspector_binary.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_inspector_demo.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_inspector_file.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_inspector_source.cpp">
+      <Filter>test\inspector</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,9 +105,6 @@
     <ClInclude Include="src\test\AnotherMenu.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\InspectorMenu.h">
-      <Filter>test</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\test_base.h">
       <Filter>test</Filter>
     </ClInclude>
@@ -115,21 +112,6 @@
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_empty.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_inspector_base.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_inspector_binary.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_inspector_demo.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_inspector_file.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_inspector_source.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_key.h">
@@ -141,6 +123,24 @@
     <ClInclude Include="src\test\test_window_utility.h">
       <Filter>test</Filter>
     </ClInclude>
+    <ClInclude Include="src\test\InspectorMenu.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\test_inspector_base.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\test_inspector_binary.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\test_inspector_demo.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\test_inspector_file.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\test_inspector_source.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
@@ -148,6 +148,9 @@
     </Filter>
     <Filter Include="r2tm">
       <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\inspector">
+      <UniqueIdentifier>{775abd40-0071-4ba5-a20d-54d27916885a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
