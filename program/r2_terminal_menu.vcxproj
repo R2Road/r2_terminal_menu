@@ -28,7 +28,7 @@
     <ClCompile Include="src\r2tm\r2tm_WindowUtility.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
-    <ClCompile Include="src\test\InspectorMenu.cpp" />
+    <ClCompile Include="src\test\Menu_Inspector.cpp" />
     <ClCompile Include="src\test\Menu_WindowUtility.cpp" />
     <ClCompile Include="src\test\test_base.cpp" />
     <ClCompile Include="src\test\test_color_modifier.cpp" />
@@ -60,7 +60,7 @@
     <ClInclude Include="src\r2tm\r2tm_WindowUtility.h" />
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
-    <ClInclude Include="src\test\InspectorMenu.h" />
+    <ClInclude Include="src\test\Menu_Inspector.h" />
     <ClInclude Include="src\test\Menu_WindowUtility.h" />
     <ClInclude Include="src\test\test_base.h" />
     <ClInclude Include="src\test\test_color_modifier.h" />

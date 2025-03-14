@@ -1,4 +1,4 @@
-#include "InspectorMenu.h"
+#include "Menu_Inspector.h"
 
 #include "r2tm/r2tm_Director.h"
 #include "r2tm/r2tm_ostream.h"
@@ -11,21 +11,21 @@
 
 #include "RootMenu.h"
 
-r2tm::TitleFunctionT InspectorMenu::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_Inspector::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Inspector Menu";
 	};
 }
-r2tm::DescriptionFunctionT InspectorMenu::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_Inspector::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2tm::WriteFunctionT InspectorMenu::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{

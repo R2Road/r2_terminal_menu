@@ -13,7 +13,7 @@
 #include "test/test_stop_watch.h"
 
 #include "test/AnotherMenu.h"
-#include "test/InspectorMenu.h"
+#include "test/Menu_Inspector.h"
 #include "test/Menu_WindowUtility.h"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
@@ -110,7 +110,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddItem( 'a', test_key::View() );
 		ret->AddItem( 's', test_color_modifier::Basic() );
 		ret->AddItem( 'd', test_stop_watch::Basic() );
-		ret->AddMenu( 'f', InspectorMenu() );
+		ret->AddMenu( 'f', Menu_Inspector() );
 
 
 
