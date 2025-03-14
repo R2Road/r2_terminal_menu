@@ -11,7 +11,6 @@
 #include "test/test_empty.h"
 #include "test/test_key.h"
 #include "test/test_stop_watch.h"
-#include "test/test_window_utility.h"
 
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"
