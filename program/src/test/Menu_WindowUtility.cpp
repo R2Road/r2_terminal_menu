@@ -13,7 +13,7 @@ r2tm::TitleFunctionT Menu_WindowUtility::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "Window Utility";
+		return "Menu : Window Utility";
 	};
 }
 r2tm::DescriptionFunctionT Menu_WindowUtility::GetDescriptionFunction() const
