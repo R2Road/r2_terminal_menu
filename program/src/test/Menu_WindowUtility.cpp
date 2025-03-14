@@ -5,6 +5,7 @@
 
 #include "test_window_utility.h"
 #include "test_window_utility_base.h"
+#include "test_window_utility_fill.h"
 
 #include "RootMenu.h"
 
@@ -34,10 +35,10 @@ r2tm::WriteFunctionT Menu_WindowUtility::GetWriteFunction() const
 
 		ret->AddLineFeed();
 
-		ret->AddItem( 'a', test_window_utility::FillColor() );
-		ret->AddItem( 's', test_window_utility::FillCharacter() );
-		ret->AddItem( 'd', test_window_utility::FillString_1() );
-		ret->AddItem( 'f', test_window_utility::FillString_2() );
+		ret->AddItem( 'a', test_window_utility_fill::FillColor() );
+		ret->AddItem( 's', test_window_utility_fill::FillCharacter() );
+		ret->AddItem( 'd', test_window_utility_fill::FillString_1() );
+		ret->AddItem( 'f', test_window_utility_fill::FillString_2() );
 
 
 
