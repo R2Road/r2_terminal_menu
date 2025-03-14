@@ -4,6 +4,7 @@
 #include "r2tm/r2tm_ostream.h"
 
 #include "test_window_utility.h"
+#include "test_window_utility_base.h"
 
 #include "RootMenu.h"
 
@@ -25,7 +26,7 @@ r2tm::WriteFunctionT Menu_WindowUtility::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', test_window_utility::CursorPointOperator() );
+		ret->AddItem( '1', test_window_utility_base::CursorPointOperator() );
 
 		ret->AddLineFeed();
 
