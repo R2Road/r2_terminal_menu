@@ -96,10 +96,10 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddItem( 'q', test_key::View() );
-		ret->AddItem( 'w', test_color_modifier::Basic() );
-		ret->AddItem( 'e', test_stop_watch::Basic() );
-		ret->AddMenu( 'r', Menu_WindowUtility() );
+		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_White, r2tm::eColor::BG_LightBlue );
+		ret->AddItem( 'q', test_base::eDoLeaveAction_None() );
+		ret->AddItem( 'w', test_base::eDoLeaveAction_Pause() );
+		ret->AddItem( 'e', test_base::eDoLeaveAction_Exit() );
 
 
 
@@ -107,10 +107,10 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_White, r2tm::eColor::BG_LightBlue );
-		ret->AddItem( 'a', test_base::eDoLeaveAction_None() );
-		ret->AddItem( 's', test_base::eDoLeaveAction_Pause() );
-		ret->AddItem( 'd', test_base::eDoLeaveAction_Exit() );
+		ret->AddItem( 'a', test_key::View() );
+		ret->AddItem( 's', test_color_modifier::Basic() );
+		ret->AddItem( 'd', test_stop_watch::Basic() );
+		ret->AddMenu( 'f', InspectorMenu() );
 
 
 
