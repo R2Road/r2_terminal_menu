@@ -6,12 +6,12 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "test/item/test_base.h"
-#include "test/item/test_color_modifier.h"
-#include "test/item/test_empty.h"
-#include "test/item/test_key.h"
-#include "test/item/test_stop_watch.h"
-#include "test/item/test_window_utility.h"
+#include "test/test_base.h"
+#include "test/test_color_modifier.h"
+#include "test/test_empty.h"
+#include "test/test_key.h"
+#include "test/test_stop_watch.h"
+#include "test/test_window_utility.h"
 
 #include "test/AnotherMenu.h"
 #include "test/InspectorMenu.h"

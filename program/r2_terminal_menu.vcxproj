@@ -29,17 +29,17 @@
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
     <ClCompile Include="src\test\InspectorMenu.cpp" />
-    <ClCompile Include="src\test\item\test_base.cpp" />
-    <ClCompile Include="src\test\item\test_color_modifier.cpp" />
-    <ClCompile Include="src\test\item\test_empty.cpp" />
-    <ClCompile Include="src\test\item\test_inspector_binary.cpp" />
-    <ClCompile Include="src\test\item\test_inspector_demo.cpp" />
-    <ClCompile Include="src\test\item\test_inspector_file.cpp" />
-    <ClCompile Include="src\test\item\test_inspector_base.cpp" />
-    <ClCompile Include="src\test\item\test_inspector_source.cpp" />
-    <ClCompile Include="src\test\item\test_key.cpp" />
-    <ClCompile Include="src\test\item\test_stop_watch.cpp" />
-    <ClCompile Include="src\test\item\test_window_utility.cpp" />
+    <ClCompile Include="src\test\test_base.cpp" />
+    <ClCompile Include="src\test\test_color_modifier.cpp" />
+    <ClCompile Include="src\test\test_empty.cpp" />
+    <ClCompile Include="src\test\test_inspector_base.cpp" />
+    <ClCompile Include="src\test\test_inspector_binary.cpp" />
+    <ClCompile Include="src\test\test_inspector_demo.cpp" />
+    <ClCompile Include="src\test\test_inspector_file.cpp" />
+    <ClCompile Include="src\test\test_inspector_source.cpp" />
+    <ClCompile Include="src\test\test_key.cpp" />
+    <ClCompile Include="src\test\test_stop_watch.cpp" />
+    <ClCompile Include="src\test\test_window_utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\r2tm\r2tm_ColorModifier.h" />
@@ -58,17 +58,17 @@
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
     <ClInclude Include="src\test\InspectorMenu.h" />
-    <ClInclude Include="src\test\item\test_base.h" />
-    <ClInclude Include="src\test\item\test_color_modifier.h" />
-    <ClInclude Include="src\test\item\test_empty.h" />
-    <ClInclude Include="src\test\item\test_inspector_binary.h" />
-    <ClInclude Include="src\test\item\test_inspector_demo.h" />
-    <ClInclude Include="src\test\item\test_inspector_file.h" />
-    <ClInclude Include="src\test\item\test_inspector_base.h" />
-    <ClInclude Include="src\test\item\test_inspector_source.h" />
-    <ClInclude Include="src\test\item\test_key.h" />
-    <ClInclude Include="src\test\item\test_stop_watch.h" />
-    <ClInclude Include="src\test\item\test_window_utility.h" />
+    <ClInclude Include="src\test\test_base.h" />
+    <ClInclude Include="src\test\test_color_modifier.h" />
+    <ClInclude Include="src\test\test_empty.h" />
+    <ClInclude Include="src\test\test_inspector_base.h" />
+    <ClInclude Include="src\test\test_inspector_binary.h" />
+    <ClInclude Include="src\test\test_inspector_demo.h" />
+    <ClInclude Include="src\test\test_inspector_file.h" />
+    <ClInclude Include="src\test\test_inspector_source.h" />
+    <ClInclude Include="src\test\test_key.h" />
+    <ClInclude Include="src\test\test_stop_watch.h" />
+    <ClInclude Include="src\test\test_window_utility.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

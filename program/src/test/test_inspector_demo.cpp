@@ -47,7 +47,7 @@ namespace test_inspector_demo
 					}
 				};
 
-				OUTPUT_FILE_RANGE( "src/test/item/test_inspector_demo.cpp", 40, 48 );
+				OUTPUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 40, 48 );
 
 				LF();
 
