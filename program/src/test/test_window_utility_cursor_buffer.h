@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_iItem.h"
 
-namespace test_window_utility
+namespace test_window_utility_cursor_buffer
 {
 	class MoveCursorWithClearBuffer : public r2tm::iItem
 	{
