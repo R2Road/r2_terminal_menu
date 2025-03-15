@@ -13,7 +13,7 @@ namespace r2tm
 	class CacheCleaner
 	{
 	public:
-		using BufferT = char;
+		using BufferT = unsigned long long;
 
 		CacheCleaner();
 		~CacheCleaner();

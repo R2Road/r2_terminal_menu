@@ -12,7 +12,7 @@ namespace r2tm
 		mBufferSize = ( mCacheByteSize / sizeof( BufferT ) );
 		mBuffer = new BufferT[mBufferSize];
 
-		std::memset( mBuffer, 1, mCacheByteSize );
+		std::memset( mBuffer, 0, mCacheByteSize );
 	}
 
 	CacheCleaner::~CacheCleaner()
