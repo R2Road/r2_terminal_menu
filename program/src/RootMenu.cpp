@@ -7,6 +7,7 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/test_base.h"
+#include "test/test_cache_cleaner.h"
 #include "test/test_color_modifier.h"
 #include "test/test_empty.h"
 #include "test/test_key.h"
@@ -119,6 +120,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddMenu( 'z', Menu_WindowUtility() );
+		ret->AddItem( 'x', test_cache_cleaner::Basic() );
 
 
 

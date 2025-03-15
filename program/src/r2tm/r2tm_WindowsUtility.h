@@ -128,5 +128,9 @@ namespace r2tm
 
 		static void RequestSleep( const uint32_t milli_seconds );
 
+
+
+		static int GetCPUCacheSize();
+
 	};
 }

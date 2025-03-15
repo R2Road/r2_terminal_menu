@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_CacheCleaner.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Director.cpp" />
     <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp" />
     <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp" />
@@ -31,6 +32,7 @@
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
     <ClCompile Include="src\test\Menu_WindowUtility.cpp" />
     <ClCompile Include="src\test\test_base.cpp" />
+    <ClCompile Include="src\test\test_cache_cleaner.cpp" />
     <ClCompile Include="src\test\test_color_modifier.cpp" />
     <ClCompile Include="src\test\test_empty.cpp" />
     <ClCompile Include="src\test\test_inspector_base.cpp" />
@@ -45,6 +47,7 @@
     <ClCompile Include="src\test\test_window_utility_fill.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\r2tm\r2tm_CacheCleaner.h" />
     <ClInclude Include="src\r2tm\r2tm_ColorModifier.h" />
     <ClInclude Include="src\r2tm\r2tm_Director.h" />
     <ClInclude Include="src\r2tm\r2tm_iItem.h" />
@@ -63,6 +66,7 @@
     <ClInclude Include="src\test\Menu_Inspector.h" />
     <ClInclude Include="src\test\Menu_WindowUtility.h" />
     <ClInclude Include="src\test\test_base.h" />
+    <ClInclude Include="src\test\test_cache_cleaner.h" />
     <ClInclude Include="src\test\test_color_modifier.h" />
     <ClInclude Include="src\test\test_empty.h" />
     <ClInclude Include="src\test\test_inspector_base.h" />

@@ -227,4 +227,52 @@ namespace r2tm
 	{
 		Sleep( milli_seconds );
 	}
+
+
+
+	typedef BOOL( WINAPI* LPFN_GetLogicalProcessorInformation )( PSYSTEM_LOGICAL_PROCESSOR_INFORMATION, PDWORD );
+	int WindowsUtility::GetCPUCacheSize()
+	{
+		int ret = 0;
+
+		LPFN_GetLogicalProcessorInformation glpi = ( LPFN_GetLogicalProcessorInformation )GetProcAddress( GetModuleHandle( TEXT( "kernel32" ) ), "GetLogicalProcessorInformation" );
+
+		if( nullptr == glpi )
+			return ret;
+
+		//
+		// 첫 인자로 0을 주면 정보를 얻어오기 위해 필요한 메모리 크기를 반환 한다.
+		//
+		DWORD buffer_bytes = 0;
+		glpi( 0, &buffer_bytes );
+
+		//
+		// 메모리 할당.
+		//
+		const DWORD size = buffer_bytes / sizeof( SYSTEM_LOGICAL_PROCESSOR_INFORMATION );
+		SYSTEM_LOGICAL_PROCESSOR_INFORMATION* buffer = new SYSTEM_LOGICAL_PROCESSOR_INFORMATION[size];
+
+		//
+		// 정보 획득.
+		//
+		glpi( buffer, &buffer_bytes );
+
+		//
+		// 출력
+		//
+		for( DWORD i = 0; size > i; ++i )
+		{
+			if( buffer[i].Relationship == _LOGICAL_PROCESSOR_RELATIONSHIP::RelationCache )
+			{
+				ret += buffer[i].Cache.Size;
+			}
+		}
+
+		//
+		//
+		//
+		delete[] buffer;
+
+		return ret;
+	}
 }
