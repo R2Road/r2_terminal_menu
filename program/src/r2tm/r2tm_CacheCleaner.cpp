@@ -6,7 +6,7 @@
 
 namespace r2tm
 {
-	CacheCleaner::CacheCleaner() : mCacheByteSize( r2tm::WindowsUtility::GetCPUCacheSize() ), mBufferSize( 0 ), mBuffer( nullptr )
+	CacheCleaner::CacheCleaner() : mCacheByteSize( 0 ), mBufferSize( 0 ), mBuffer( nullptr )
 	{
 		mCacheByteSize = r2tm::WindowsUtility::GetCPUCacheSize();
 		mBufferSize = ( mCacheByteSize / sizeof( BufferT ) );
