@@ -4,6 +4,7 @@
 #include "r2tm/r2tm_ostream.h"
 
 #include "r2tm/r2tm_CacheCleaner.h"
+#include "r2tm/r2tm_StopWatch.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
 namespace test_cache_cleaner
@@ -21,23 +22,69 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			DECLARATION_MAIN( r2tm::CacheCleaner c );
+			{
+				DECLARATION_MAIN( r2tm::CacheCleaner c );
 
-			LF();
+				LF();
 
-			EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
-			OUTPUT_VALUE( c.GetCacheByteSize() );
+				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
+				OUTPUT_VALUE( c.GetCacheByteSize() );
 
-			LF();
+				LF();
 
-			EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) );
-			OUTPUT_VALUE( c.GetBufferSize() );
-			OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
+				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) );
+				OUTPUT_VALUE( c.GetBufferSize() );
+				OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
 
-			LF();
+				LF();
 
-			PROCESS_MAIN( c.Do() );
-			OUTPUT_VALUE( c.GetSum() );
+				OUTPUT_VALUE( c.GetSum() );
+				PROCESS_MAIN( c.Do() );
+				OUTPUT_VALUE( c.GetSum() );
+			}
+
+			LS();
+
+			{
+				DECLARATION_MAIN( int Buffer[10000] = {} );
+				DECLARATION_MAIN( r2tm::CacheCleaner c );
+				DECLARATION_MAIN( r2tm::StopWatch s );
+
+				LF();
+
+				for( int i = 0; 10 > i; ++i )
+				{
+					s.Start();
+
+					for( int buffer_index = 0; 10000 > buffer_index; ++buffer_index )
+					{
+						Buffer[buffer_index] = 1;
+					}
+
+					s.Stop();
+					s.PrintElapsedTime_NanoSeconds();
+					LF();
+				}
+
+				LF();
+
+				for( int i = 0; 10 > i; ++i )
+				{
+					c.Do();
+
+					s.Start();
+
+					for( int buffer_index = 0; 10000 > buffer_index; ++buffer_index )
+					{
+						Buffer[buffer_index] = 1;
+					}
+
+					s.Stop();
+					s.PrintElapsedTime_NanoSeconds();
+
+					LF();
+				}
+			}
 
 			LS();
 
