@@ -29,10 +29,6 @@ namespace r2tm
 		{
 			return mBufferSize;
 		}
-		unsigned long long GetSum() const
-		{
-			return mSum;
-		}
 
 		//
 		//
@@ -43,6 +39,5 @@ namespace r2tm
 		int mCacheByteSize;
 		int mBufferSize;
 		BufferT* mBuffer;
-		unsigned long long mSum;
 	};
 }

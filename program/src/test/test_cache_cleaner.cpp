@@ -38,9 +38,8 @@ namespace test_cache_cleaner
 
 				LF();
 
-				OUTPUT_VALUE( c.GetSum() );
 				PROCESS_MAIN( c.Do() );
-				OUTPUT_VALUE( c.GetSum() );
+				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
 			LS();
