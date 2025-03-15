@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
-#include "r2tm/r2tm_WindowUtility.h"
+#include "r2tm/r2tm_WindowsUtility.h"
 
 namespace test_window_utility_base
 {
@@ -24,11 +24,11 @@ namespace test_window_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowUtility::CursorPoint p );
+				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
-				PROCESS_MAIN( p = p + r2tm::WindowUtility::CursorPoint( 2, 4 ) );
+				PROCESS_MAIN( p = p + r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 
@@ -43,11 +43,11 @@ namespace test_window_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowUtility::CursorPoint p );
+				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
-				PROCESS_MAIN( p += r2tm::WindowUtility::CursorPoint( 2, 4 ) );
+				PROCESS_MAIN( p += r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 

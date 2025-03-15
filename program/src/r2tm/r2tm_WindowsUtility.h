@@ -4,7 +4,7 @@
 
 namespace r2tm
 {
-	class WindowUtility
+	class WindowsUtility
 	{
 	public:
 		struct CursorPoint

@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
-#include "r2tm/r2tm_WindowUtility.h"
+#include "r2tm/r2tm_WindowsUtility.h"
 
 #include "r2tm/r2tm_StopWatch.h"
 
@@ -27,7 +27,7 @@ namespace test_stop_watch
 
 			{
 				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowUtility::RequestSleep( 1000 ) );
+				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
 				PROCESS_MAIN( s.Stop() );
 
 				SS();

@@ -36,7 +36,7 @@ namespace r2tm
 					"### Road 2 Version 1.0.8 ###"
 			"\n"
 			"\n"	"[o] " "update    function   : r2tm::Inspector - OUTPUT_NOTE"
-			"\n"	"[o] " "update    struct     : r2tm::WindowUtility::CursorPoint - 생성자 추가, 연산자 +, += 추가"
+			"\n"	"[o] " "update    struct     : r2tm::WindowsUtility::CursorPoint - 생성자 추가, 연산자 +, += 추가"
 			"\n"	"[o] " "update    inspector  : Add - OUTPUT_SOURCE_READY, OUTPUT_SOURCE_BEGIN, OUTPUT_SOURCE_END"
 			"\n"	"[o] " "update    inspector  : Add - OUTPUT_SOURCE_READY_N_BEGIN"
 			"\n"	"[o] " "update    inspector  : DECLARATION_MAIN, DECLARATION_SUB - 문자 출력을 먼저 하고 코드 실행"
@@ -47,18 +47,18 @@ namespace r2tm
 		const char* const String4Road2Version_1_0_7 =
 					"### Road 2 Version 1.0.7 ###"
 			"\n"
-			"\n"	"[o] " "add method           : r2tm::WindowUtility::FillString"
+			"\n"	"[o] " "add method           : r2tm::WindowsUtility::FillString"
 			"\n"	"[o] " "update inspector     : Add - OUTPUT_STRING"
 			"\n"	"[o] " "update inspector     : OUTPUT_SIZE - 크기 뒤에 byte 문자열 출력"
 			"\n"	"[o] " "rename method        : r2tm::StopWatch - PrintMinAndMaxTime_NanoSeconds"
 			"\n"	"[o] " "add    method        : r2tm::StopWatch - PrintMinAndMaxTime_MilliSeconds"
 			"\n"	"[o] " "add    method        : r2tm::StopWatch - PrintMinAndMaxTime_MicroSeconds"
 			"\n"	"[o] " "update menuprocessor : 키, 메세지 텍스트의 백그라운드 색상 설정"
-			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillString"
-			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - MoveCursorPoint"
-			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillCharacter"
-			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - FillColor"
-			"\n"	"[o] " "overload    method   : r2tm::WindowUtility - MoveCursorPointWithClearBuffer"
+			"\n"	"[o] " "overload    method   : r2tm::WindowsUtility - FillString"
+			"\n"	"[o] " "overload    method   : r2tm::WindowsUtility - MoveCursorPoint"
+			"\n"	"[o] " "overload    method   : r2tm::WindowsUtility - FillCharacter"
+			"\n"	"[o] " "overload    method   : r2tm::WindowsUtility - FillColor"
+			"\n"	"[o] " "overload    method   : r2tm::WindowsUtility - MoveCursorPointWithClearBuffer"
 		;
 
 		const char* const String4Road2Version_1_0_6 =
@@ -100,10 +100,10 @@ namespace r2tm
 		const char* const String4Road2Version_1_0_2 =
 					"### Road 2 Version 1.0.2 ###"
 			"\n"
-			"\n"	"[o] " "add method : r2tm::WindowUtility::ScrollBarVisible"
-			"\n"	"[o] " "add method : r2tm::WindowUtility::MaximizeButtonEnable"
-			"\n"	"[o] " "add method : r2tm::WindowUtility::ResizingByDraggingEnable"
-			"\n"	"[o] " "add method : r2tm::WindowUtility::QuickEditEnable"
+			"\n"	"[o] " "add method : r2tm::WindowsUtility::ScrollBarVisible"
+			"\n"	"[o] " "add method : r2tm::WindowsUtility::MaximizeButtonEnable"
+			"\n"	"[o] " "add method : r2tm::WindowsUtility::ResizingByDraggingEnable"
+			"\n"	"[o] " "add method : r2tm::WindowsUtility::QuickEditEnable"
 		;
 		
 		const char* const String4Road2Version_1_0_1 =

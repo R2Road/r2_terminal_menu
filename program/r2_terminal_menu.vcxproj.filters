@@ -18,7 +18,7 @@
     <ClCompile Include="src\r2tm\r2tm_StopWatch.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_WindowUtility.cpp">
+    <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
     <ClCompile Include="src\test\AnotherMenu.cpp">
@@ -108,7 +108,7 @@
     <ClInclude Include="src\r2tm\r2tm_VersionInfo.h">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_WindowUtility.h">
+    <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\AnotherMenu.h">
@@ -172,6 +172,9 @@
     </Filter>
     <Filter Include="test\window_utility">
       <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\cpu">
+      <UniqueIdentifier>{d3272cbc-83ff-4c68-88b3-e85db58af383}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

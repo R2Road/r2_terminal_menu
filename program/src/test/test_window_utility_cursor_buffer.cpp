@@ -4,7 +4,7 @@
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
-#include "r2tm/r2tm_WindowUtility.h"
+#include "r2tm/r2tm_WindowsUtility.h"
 
 namespace test_window_utility_cursor_buffer
 {
@@ -21,7 +21,7 @@ namespace test_window_utility_cursor_buffer
 		{
 			LS();
 
-			DECLARATION_MAIN( const auto cursor_point_1 = r2tm::WindowUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto cursor_point_1 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 
@@ -32,7 +32,7 @@ namespace test_window_utility_cursor_buffer
 
 			LS();
 
-			DECLARATION_MAIN( const auto cursor_point_2 = r2tm::WindowUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto cursor_point_2 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 
@@ -46,12 +46,12 @@ namespace test_window_utility_cursor_buffer
 			std::cout << "[Any Key] Move Cursor 2 with Clear Buffer";
 			_getch();
 
-			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( cursor_point_2 ) );
+			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_2 ) );
 
 			std::cout << "[Any Key] Move Cursor 1 with Clear Buffer";
 			_getch();
 
-			PROCESS_MAIN( r2tm::WindowUtility::MoveCursorPointWithClearBuffer( cursor_point_1.x, cursor_point_1.y ) );
+			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_1.x, cursor_point_1.y ) );
 
 			std::cout << "[Any Key] End";
 			_getch();

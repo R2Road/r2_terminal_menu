@@ -25,7 +25,7 @@
     <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp" />
     <ClCompile Include="src\r2tm\r2tm_PrintFile.cpp" />
     <ClCompile Include="src\r2tm\r2tm_StopWatch.cpp" />
-    <ClCompile Include="src\r2tm\r2tm_WindowUtility.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
@@ -57,7 +57,7 @@
     <ClInclude Include="src\r2tm\r2tm_PrintFile.h" />
     <ClInclude Include="src\r2tm\r2tm_StopWatch.h" />
     <ClInclude Include="src\r2tm\r2tm_VersionInfo.h" />
-    <ClInclude Include="src\r2tm\r2tm_WindowUtility.h" />
+    <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
