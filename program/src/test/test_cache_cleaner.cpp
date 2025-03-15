@@ -51,6 +51,7 @@ namespace test_cache_cleaner
 
 				LF();
 
+				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
 				for( int i = 0; 10 > i; ++i )
 				{
 					s.Start();
@@ -67,8 +68,12 @@ namespace test_cache_cleaner
 
 				LF();
 
+				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner O" );
 				for( int i = 0; 10 > i; ++i )
 				{
+					//
+					// Clear Cache
+					//
 					c.Do();
 
 					s.Start();
