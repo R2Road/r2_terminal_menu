@@ -15,7 +15,7 @@ namespace test_cache_cleaner
 	{
 		return []()->const char*
 		{
-			return "Cache Cleaner";
+			return "Cache Cleaner : Basic";
 		};
 	}
 	r2tm::DoFunctionT Basic::GetDoFunction() const
@@ -78,9 +78,27 @@ namespace test_cache_cleaner
 
 			LS();
 
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+	r2tm::TitleFunctionT Test::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Cache Cleaner : Test";
+		};
+	}
+	r2tm::DoFunctionT Test::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
 			{
 				DECLARATION_MAIN( const int BUFFER_SIZE = 4 * 250 * 32 );
-				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int [BUFFER_SIZE] ) );
+				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
 				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
 				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
 				DECLARATION_MAIN( r2tm::StopWatch s );

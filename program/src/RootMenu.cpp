@@ -121,6 +121,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddMenu( 'z', Menu_WindowUtility() );
 		ret->AddItem( 'x', test_cache_cleaner::Basic() );
+		ret->AddItem( 'c', test_cache_cleaner::Test() );
 
 
 
