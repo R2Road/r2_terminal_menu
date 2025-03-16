@@ -111,7 +111,8 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddItem( 'a', test_key::View() );
 		ret->AddItem( 's', test_color_modifier::Basic() );
 		ret->AddItem( 'd', test_stop_watch::Basic() );
-		ret->AddMenu( 'f', Menu_Inspector() );
+		ret->AddItem( 'f', test_stop_watch::Accumulate() );
+		ret->AddMenu( 'g', Menu_Inspector() );
 
 
 

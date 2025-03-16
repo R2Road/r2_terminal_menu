@@ -12,6 +12,9 @@ namespace r2tm
 
 		, mMaxTime( 0ll )
 		, mMinTime( std::numeric_limits<long long>::max() )
+
+		, mAccumulateTime( 0ll )
+		, mAccumulateCount( 0ll )
 	{}
 
 	void StopWatch::Start()
@@ -31,6 +34,9 @@ namespace r2tm
 		{
 			mMinTime = current_time;
 		}
+
+		mAccumulateTime += current_time;
+		++mAccumulateCount;
 	}
 
 	long long StopWatch::GetMilliTime() const
@@ -84,5 +90,18 @@ namespace r2tm
 		std::cout << "Min : " << mMinTime << "ns";
 		std::cout << "     ";
 		std::cout << "Max : " << mMaxTime << "ns";
+	}
+
+	void StopWatch::PrintAverageTime_MilliSeconds()
+	{
+		std::cout << "Avg : " << std::chrono::duration_cast<std::chrono::milliseconds>( std::chrono::nanoseconds::duration( GetAverageTime() ) ).count() << "ms";
+	}
+	void StopWatch::PrintAverageTime_MicroSeconds()
+	{
+		std::cout << "Avg : " << std::chrono::duration_cast<std::chrono::microseconds>( std::chrono::nanoseconds::duration( GetAverageTime() ) ).count() << "¥ìs";
+	}
+	void StopWatch::PrintAverageTime_NanoSeconds()
+	{
+		std::cout << "Avg : " << GetAverageTime() << "ns";
 	}
 }

@@ -17,6 +17,7 @@ namespace r2tm
 		long long GetNanoTime() const;
 		long long GetMaxTime() const { return mMaxTime; }
 		long long GetMinTime() const { return mMinTime; }
+		long long GetAverageTime() const { return ( mAccumulateTime / std::max( 1ll, mAccumulateCount ) ); }
 
 		void PrintElapsedTime_MilliSeconds();
 		void PrintElapsedTime_MicroSeconds();
@@ -27,11 +28,18 @@ namespace r2tm
 		void PrintMinAndMaxTime_MicroSeconds();
 		void PrintMinAndMaxTime_NanoSeconds();
 
+		void PrintAverageTime_MilliSeconds();
+		void PrintAverageTime_MicroSeconds();
+		void PrintAverageTime_NanoSeconds();
+
 	private:
 		std::chrono::steady_clock::time_point mStartTime;
 		std::chrono::steady_clock::time_point mEndTime;
 
 		long long mMaxTime;
 		long long mMinTime;
+
+		long long mAccumulateTime;
+		long long mAccumulateCount;
 	};
 }
