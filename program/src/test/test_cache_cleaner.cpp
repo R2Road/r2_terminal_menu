@@ -97,7 +97,7 @@ namespace test_cache_cleaner
 			LS();
 
 			{
-				DECLARATION_MAIN( const int BUFFER_SIZE = 4 * 250 * 32 );
+				DECLARATION_MAIN( const int BUFFER_SIZE = sizeof( int ) * ( 1000 / sizeof( int ) ) * 16 );
 				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
 				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
 				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
@@ -114,7 +114,7 @@ namespace test_cache_cleaner
 
 					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
 					{
-						Buffer[buffer_index] = 1;
+						Buffer[buffer_index] = buffer_index;
 					}
 
 					s.Stop();
@@ -136,7 +136,7 @@ namespace test_cache_cleaner
 
 					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
 					{
-						Buffer[buffer_index] = 1;
+						Buffer[buffer_index] = buffer_index;
 					}
 
 					s.Stop();
