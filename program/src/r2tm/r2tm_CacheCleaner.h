@@ -15,12 +15,16 @@ namespace r2tm
 	public:
 		using BufferT = unsigned long long;
 
-		CacheCleaner();
+		CacheCleaner( const int buffer_scale = 1 );
 		~CacheCleaner();
 
 		//
 		//
 		//
+		int GetBufferScale() const
+		{
+			return mBufferScale;
+		}
 		int GetCacheByteSize() const
 		{
 			return mCacheByteSize;
@@ -36,6 +40,7 @@ namespace r2tm
 		void Clean();
 
 	private:
+		const int mBufferScale;
 		int mCacheByteSize;
 		int mBufferSize;
 		BufferT* mBuffer;

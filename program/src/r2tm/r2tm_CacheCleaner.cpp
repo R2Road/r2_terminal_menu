@@ -6,10 +6,10 @@
 
 namespace r2tm
 {
-	CacheCleaner::CacheCleaner() : mCacheByteSize( 0 ), mBufferSize( 0 ), mBuffer( nullptr )
+	CacheCleaner::CacheCleaner( const int buffer_scale ) : mBufferScale( buffer_scale ), mCacheByteSize( 0 ), mBufferSize(0), mBuffer(nullptr)
 	{
 		mCacheByteSize = r2tm::WindowsUtility::GetCPUCacheSize();
-		mBufferSize = ( mCacheByteSize / sizeof( BufferT ) );
+		mBufferSize = ( mCacheByteSize / sizeof( BufferT ) ) * mBufferScale;
 		mBuffer = new BufferT[mBufferSize];
 
 		std::memset( mBuffer, 0, mCacheByteSize );

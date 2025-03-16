@@ -27,12 +27,44 @@ namespace test_cache_cleaner
 
 				LF();
 
+				EXPECT_EQ( 1, c.GetBufferScale() );
+				OUTPUT_VALUE( c.GetBufferScale() );
+
+				LF();
+
 				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
 				OUTPUT_VALUE( c.GetCacheByteSize() );
 
 				LF();
 
-				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) );
+				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) / c.GetBufferScale() );
+				OUTPUT_VALUE( c.GetBufferSize() );
+				OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
+
+				LF();
+
+				PROCESS_MAIN( c.Clean() );
+				OUTPUT_COMMENT( "���� ������ ȣ�� �غ���." );
+			}
+
+			LS();
+
+			{
+				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
+
+				LF();
+
+				EXPECT_EQ( 2, c.GetBufferScale() );
+				OUTPUT_VALUE( c.GetBufferScale() );
+
+				LF();
+
+				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
+				OUTPUT_VALUE( c.GetCacheByteSize() );
+
+				LF();
+
+				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) / c.GetBufferScale() );
 				OUTPUT_VALUE( c.GetBufferSize() );
 				OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
 
