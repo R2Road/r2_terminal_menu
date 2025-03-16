@@ -1,5 +1,7 @@
 #include "test_cache_cleaner.h"
 
+#include <memory>
+
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
@@ -44,7 +46,7 @@ namespace test_cache_cleaner
 				LF();
 
 				PROCESS_MAIN( c.Clean() );
-				OUTPUT_COMMENT( "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ ï¿½Øºï¿½ï¿½ï¿½." );
+				OUTPUT_COMMENT( "¹®Á¦ ¾ø´ÂÁö È£Ãâ ÇØº»´Ù." );
 			}
 
 			LS();
@@ -77,8 +79,10 @@ namespace test_cache_cleaner
 			LS();
 
 			{
-				DECLARATION_MAIN( int Buffer[10000] = {} );
-				DECLARATION_MAIN( r2tm::CacheCleaner c );
+				DECLARATION_MAIN( const int BUFFER_SIZE = 4 * 250 * 32 );
+				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int [BUFFER_SIZE] ) );
+				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
+				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
 				DECLARATION_MAIN( r2tm::StopWatch s );
 
 				LF();
@@ -90,7 +94,7 @@ namespace test_cache_cleaner
 				{
 					s.Start();
 
-					for( int buffer_index = 0; 10000 > buffer_index; ++buffer_index )
+					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
 					{
 						Buffer[buffer_index] = 1;
 					}
@@ -112,7 +116,7 @@ namespace test_cache_cleaner
 
 					s.Start();
 
-					for( int buffer_index = 0; 10000 > buffer_index; ++buffer_index )
+					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
 					{
 						Buffer[buffer_index] = 1;
 					}
