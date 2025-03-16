@@ -20,7 +20,7 @@ namespace r2tm
 		delete[] mBuffer;
 	}
 
-	void CacheCleaner::Do()
+	void CacheCleaner::Clean()
 	{
 		for( int i = 0; mBufferSize > i; ++i )
 		{

@@ -33,7 +33,7 @@ namespace r2tm
 		//
 		//
 		//
-		void Do();
+		void Clean();
 
 	private:
 		int mCacheByteSize;

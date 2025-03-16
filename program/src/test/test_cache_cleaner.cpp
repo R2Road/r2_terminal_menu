@@ -38,7 +38,7 @@ namespace test_cache_cleaner
 
 				LF();
 
-				PROCESS_MAIN( c.Do() );
+				PROCESS_MAIN( c.Clean() );
 				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
@@ -50,6 +50,8 @@ namespace test_cache_cleaner
 				DECLARATION_MAIN( r2tm::StopWatch s );
 
 				LF();
+
+				c.Clean();
 
 				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
 				for( int i = 0; 10 > i; ++i )
@@ -74,7 +76,7 @@ namespace test_cache_cleaner
 					//
 					// Clear Cache
 					//
-					c.Do();
+					c.Clean();
 
 					s.Start();
 
