@@ -15,6 +15,7 @@
 
 #include "test/AnotherMenu.h"
 #include "test/Menu_Inspector.h"
+#include "test/Menu_StopWatch.h"
 #include "test/Menu_WindowUtility.h"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
@@ -110,9 +111,8 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddItem( 'a', test_key::View() );
 		ret->AddItem( 's', test_color_modifier::Basic() );
-		ret->AddItem( 'd', test_stop_watch::Basic() );
-		ret->AddItem( 'f', test_stop_watch::Accumulate() );
-		ret->AddMenu( 'g', Menu_Inspector() );
+		ret->AddMenu( 'd', Menu_StopWatch() );
+		ret->AddMenu( 'f', Menu_Inspector() );
 
 
 

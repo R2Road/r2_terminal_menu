@@ -30,6 +30,7 @@
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
+    <ClCompile Include="src\test\Menu_StopWatch.cpp" />
     <ClCompile Include="src\test\Menu_WindowUtility.cpp" />
     <ClCompile Include="src\test\test_base.cpp" />
     <ClCompile Include="src\test\test_cache_cleaner.cpp" />
@@ -64,6 +65,7 @@
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
+    <ClInclude Include="src\test\Menu_StopWatch.h" />
     <ClInclude Include="src\test\Menu_WindowUtility.h" />
     <ClInclude Include="src\test\test_base.h" />
     <ClInclude Include="src\test\test_cache_cleaner.h" />

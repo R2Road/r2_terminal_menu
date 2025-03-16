@@ -36,9 +36,6 @@
     <ClCompile Include="src\test\test_key.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_stop_watch.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\Menu_Inspector.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
@@ -74,6 +71,12 @@
     </ClCompile>
     <ClCompile Include="src\test\test_cache_cleaner.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_stop_watch.cpp">
+      <Filter>test\stop_watch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Menu_StopWatch.cpp">
+      <Filter>test\stop_watch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -132,9 +135,6 @@
     <ClInclude Include="src\test\test_key.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\test_stop_watch.h">
-      <Filter>test</Filter>
-    </ClInclude>
     <ClInclude Include="src\test\Menu_Inspector.h">
       <Filter>test\inspector</Filter>
     </ClInclude>
@@ -171,6 +171,12 @@
     <ClInclude Include="src\test\test_cache_cleaner.h">
       <Filter>test</Filter>
     </ClInclude>
+    <ClInclude Include="src\test\test_stop_watch.h">
+      <Filter>test\stop_watch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\Menu_StopWatch.h">
+      <Filter>test\stop_watch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
@@ -184,6 +190,9 @@
     </Filter>
     <Filter Include="test\window_utility">
       <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\stop_watch">
+      <UniqueIdentifier>{4858afea-8455-4f36-97f5-210e8a114dfa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
