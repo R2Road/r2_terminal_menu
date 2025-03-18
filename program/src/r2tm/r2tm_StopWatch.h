@@ -9,6 +9,7 @@ namespace r2tm
 	public:
 		StopWatch();
 
+		void Reset();
 		void Start();
 		void Stop();
 

@@ -121,4 +121,71 @@ namespace test_stop_watch
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+	r2tm::TitleFunctionT Reset::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Reset";
+		};
+	}
+	r2tm::DoFunctionT Reset::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			DECLARATION_MAIN( r2tm::StopWatch s );
+
+			LS();
+
+			OUTPUT_VALUE( s.GetAverageTime() );
+
+			LS();
+
+			{
+				PROCESS_MAIN( s.Start() );
+				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
+				PROCESS_MAIN( s.Stop() );
+				OUTPUT_VALUE( s.GetAverageTime() );
+
+				SS();
+
+				OUTPUT_VALUE( s.GetAverageTime() );
+
+				LF();
+
+				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
+				LF2();
+				PROCESS_MAIN( s.PrintAverageTime_MicroSeconds() );
+				LF2();
+				PROCESS_MAIN( s.PrintAverageTime_NanoSeconds() );
+				LF();
+			}
+
+			LS();
+
+			PROCESS_MAIN( s.Reset() );
+
+			LS();
+
+			{
+				PROCESS_MAIN( s.PrintElapsedTime_All() );
+
+				LF();
+
+				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
+				LF2();
+				PROCESS_MAIN( s.PrintAverageTime_MicroSeconds() );
+				LF2();
+				PROCESS_MAIN( s.PrintAverageTime_NanoSeconds() );
+				LF();
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }

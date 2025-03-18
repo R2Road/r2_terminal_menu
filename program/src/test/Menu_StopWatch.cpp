@@ -26,6 +26,7 @@ r2tm::WriteFunctionT Menu_StopWatch::GetWriteFunction() const
 	{
 		ret->AddItem( '1', test_stop_watch::Basic() );
 		ret->AddItem( '2', test_stop_watch::Accumulate() );
+		ret->AddItem( '3', test_stop_watch::Reset() );
 
 
 

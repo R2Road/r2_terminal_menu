@@ -17,6 +17,16 @@ namespace r2tm
 		, mAccumulateCount( 0ll )
 	{}
 
+	void StopWatch::Reset()
+	{
+		mEndTime = mStartTime = std::chrono::steady_clock::time_point( std::chrono::nanoseconds::duration( 0 ) );
+
+		mMaxTime = 0ll;
+		mMinTime = std::numeric_limits<long long>::max();
+
+		mAccumulateTime = 0ll;
+		mAccumulateCount = 0ll;
+	}
 	void StopWatch::Start()
 	{
 		mEndTime = mStartTime = std::chrono::high_resolution_clock::now();
