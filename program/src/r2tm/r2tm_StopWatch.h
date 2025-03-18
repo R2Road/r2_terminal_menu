@@ -32,6 +32,7 @@ namespace r2tm
 		void PrintAverageTime_MilliSeconds();
 		void PrintAverageTime_MicroSeconds();
 		void PrintAverageTime_NanoSeconds();
+		void PrintAverageTime_All();
 
 	private:
 		std::chrono::steady_clock::time_point mStartTime;

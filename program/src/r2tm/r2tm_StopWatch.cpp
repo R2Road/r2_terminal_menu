@@ -114,4 +114,12 @@ namespace r2tm
 	{
 		std::cout << "Avg : " << GetAverageTime() << "ns";
 	}
+	void StopWatch::PrintAverageTime_All()
+	{
+		PrintAverageTime_MilliSeconds();
+		std::cout << "     ";
+		PrintAverageTime_MicroSeconds();
+		std::cout << "     ";
+		PrintAverageTime_NanoSeconds();
+	}
 }

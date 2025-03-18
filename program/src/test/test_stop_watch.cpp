@@ -140,46 +140,37 @@ namespace test_stop_watch
 
 			LS();
 
-			OUTPUT_VALUE( s.GetAverageTime() );
-
-			LS();
-
 			{
 				PROCESS_MAIN( s.Start() );
 				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
 				PROCESS_MAIN( s.Stop() );
-				OUTPUT_VALUE( s.GetAverageTime() );
-
-				SS();
-
-				OUTPUT_VALUE( s.GetAverageTime() );
-
-				LF();
-
-				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
-				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_MicroSeconds() );
-				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_NanoSeconds() );
-				LF();
 			}
 
-			LS();
-
-			PROCESS_MAIN( s.Reset() );
-
-			LS();
+			SS();
 
 			{
 				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				LF();
 
 				LF();
 
-				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
-				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_MicroSeconds() );
-				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_NanoSeconds() );
+				PROCESS_MAIN( s.PrintAverageTime_All() );
+				LF();
+			}
+
+			SS();
+
+			PROCESS_MAIN( s.Reset() );
+
+			SS();
+
+			{
+				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				LF();
+
+				LF();
+
+				PROCESS_MAIN( s.PrintAverageTime_All() );
 				LF();
 			}
 
