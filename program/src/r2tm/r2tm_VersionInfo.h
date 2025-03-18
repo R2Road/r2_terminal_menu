@@ -27,7 +27,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
 		const char VersionNumber_3 = '1';
-		const char VersionNumber_4 = '1';
+		const char VersionNumber_4 = '2';
 		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
@@ -45,6 +45,7 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : EXPECT_FALSE, EXPECT_NE - 눈에 잘 보이는 색상으로 변경"
 			"\n"	"[o] " "add class            : r2tm::CacheCleaner"
 			"\n"	"[o] " "add method           : r2tm::SwtopWatch > Reset"
+			"\n"	"[o] " "add method           : r2tm::SwtopWatch > PrintAverageTime_MilliSeconds, MicroSeconds, NanoSeconds, All"
 			"\n"	"[ ] " "..."
 		;
 
