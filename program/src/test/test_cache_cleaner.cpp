@@ -83,6 +83,7 @@ namespace test_cache_cleaner
 	}
 
 
+
 	r2tm::TitleFunctionT Test::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -144,6 +145,78 @@ namespace test_cache_cleaner
 
 					LF();
 				}
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Test_Accumulate::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Cache Cleaner : Test Accumulate";
+		};
+	}
+	r2tm::DoFunctionT Test_Accumulate::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				DECLARATION_MAIN( const int BUFFER_SIZE = sizeof( int ) * ( 1000 / sizeof( int ) ) * 16 );
+				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
+				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
+				DECLARATION_MAIN( r2tm::CacheCleaner c );
+				DECLARATION_MAIN( r2tm::StopWatch s );
+
+				LF();
+
+				c.Clean();
+
+				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
+				for( int i = 0; 100 > i; ++i )
+				{
+					s.Start();
+
+					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
+					{
+						Buffer[buffer_index] = buffer_index;
+					}
+
+					s.Stop();
+				}
+
+				s.PrintAverageTime_NanoSeconds();
+				LF();
+
+				s.Reset();
+
+				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner O" );
+				for( int i = 0; 100 > i; ++i )
+				{
+					//
+					// Clear Cache
+					//
+					c.Clean();
+
+					s.Start();
+
+					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
+					{
+						Buffer[buffer_index] = buffer_index;
+					}
+
+					s.Stop();
+				}
+
+				s.PrintAverageTime_NanoSeconds();
+				LF();
 			}
 
 			LS();
