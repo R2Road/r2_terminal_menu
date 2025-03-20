@@ -29,6 +29,7 @@
     <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
     <ClCompile Include="src\test\AnotherMenu.cpp" />
+    <ClCompile Include="src\test\Menu_CacheCleaner.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
     <ClCompile Include="src\test\Menu_StopWatch.cpp" />
     <ClCompile Include="src\test\Menu_WindowUtility.cpp" />
@@ -64,6 +65,7 @@
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\test\AnotherMenu.h" />
+    <ClInclude Include="src\test\Menu_CacheCleaner.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
     <ClInclude Include="src\test\Menu_StopWatch.h" />
     <ClInclude Include="src\test\Menu_WindowUtility.h" />

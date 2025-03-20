@@ -7,13 +7,13 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/test_base.h"
-#include "test/test_cache_cleaner.h"
 #include "test/test_color_modifier.h"
 #include "test/test_empty.h"
 #include "test/test_key.h"
 #include "test/test_stop_watch.h"
 
 #include "test/AnotherMenu.h"
+#include "test/Menu_CacheCleaner.h"
 #include "test/Menu_Inspector.h"
 #include "test/Menu_StopWatch.h"
 #include "test/Menu_WindowUtility.h"
@@ -121,9 +121,8 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddMenu( 'z', Menu_WindowUtility() );
-		ret->AddItem( 'x', test_cache_cleaner::Basic() );
-		ret->AddItem( 'c', test_cache_cleaner::Test() );
-		ret->AddItem( 'v', test_cache_cleaner::Test_Accumulate() );
+		ret->AddMenu( 'x', Menu_CacheCleaner() );
+		
 
 
 
