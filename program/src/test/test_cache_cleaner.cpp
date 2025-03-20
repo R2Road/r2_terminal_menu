@@ -98,18 +98,25 @@ namespace test_cache_cleaner
 			LS();
 
 			{
-				DECLARATION_MAIN( const int BUFFER_SIZE = sizeof( int ) * ( 1000 / sizeof( int ) ) * 16 );
+				//
+				// BUFFER_SIZE 가 지나치게 커지면 변별력이 사라진다.
+				// > 16000 byte로 테스트 했을 때 그랬다.
+				// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
+				// > 사실상 캐쉬가 방해만 되는 환경이다.
+				//
+				DECLARATION_MAIN( const int BUFFER_SIZE = 2000 );
 				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
 				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
 				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
 				DECLARATION_MAIN( r2tm::StopWatch s );
+				DECLARATION_MAIN( const int attempt = 10 );
 
 				LF();
 
 				c.Clean();
 
 				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
-				for( int i = 0; 10 > i; ++i )
+				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
 
@@ -126,7 +133,7 @@ namespace test_cache_cleaner
 				LF();
 
 				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner O" );
-				for( int i = 0; 10 > i; ++i )
+				for( int i = 0; attempt > i; ++i )
 				{
 					//
 					// Clear Cache
@@ -169,18 +176,25 @@ namespace test_cache_cleaner
 			LS();
 
 			{
-				DECLARATION_MAIN( const int BUFFER_SIZE = sizeof( int ) * ( 1000 / sizeof( int ) ) * 16 );
+				//
+				// BUFFER_SIZE 가 지나치게 커지면 변별력이 사라진다.
+				// > 16000 byte로 테스트 했을 때 그랬다.
+				// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
+				// > 사실상 캐쉬가 방해만 되는 환경이다.
+				//
+				DECLARATION_MAIN( const int BUFFER_SIZE = 2000 );
 				DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
 				DECLARATION_MAIN( int* Buffer = BufferSp.get() );
-				DECLARATION_MAIN( r2tm::CacheCleaner c );
+				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
 				DECLARATION_MAIN( r2tm::StopWatch s );
+				DECLARATION_MAIN( const int attempt = 100 );
 
 				LF();
 
 				c.Clean();
 
 				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
-				for( int i = 0; 100 > i; ++i )
+				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
 
@@ -198,7 +212,7 @@ namespace test_cache_cleaner
 				s.Reset();
 
 				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner O" );
-				for( int i = 0; 100 > i; ++i )
+				for( int i = 0; attempt > i; ++i )
 				{
 					//
 					// Clear Cache
