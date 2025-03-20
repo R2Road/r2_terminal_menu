@@ -27,7 +27,7 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
 		const char VersionNumber_3 = '1';
-		const char VersionNumber_4 = '2';
+		const char VersionNumber_4 = '3';
 		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
@@ -46,6 +46,7 @@ namespace r2tm
 			"\n"	"[o] " "add class            : r2tm::CacheCleaner"
 			"\n"	"[o] " "add method           : r2tm::SwtopWatch > Reset"
 			"\n"	"[o] " "add method           : r2tm::SwtopWatch > PrintAverageTime_MilliSeconds, MicroSeconds, NanoSeconds, All"
+			"\n"	"[o] " "update class         : r2tm::CacheCleaner : Add > 복사 생성자 추가, 대입 연산자 제거"
 			"\n"	"[ ] " "..."
 		;
 
