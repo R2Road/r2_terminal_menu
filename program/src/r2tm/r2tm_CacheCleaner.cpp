@@ -30,7 +30,7 @@ namespace r2tm
 	{
 		for( int i = 0; mBufferSize > i; ++i )
 		{
-			mBuffer[i] = 1;
+			mBuffer[i] = i;
 		}
 	}
 }
