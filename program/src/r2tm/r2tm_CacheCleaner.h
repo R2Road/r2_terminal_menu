@@ -16,6 +16,7 @@ namespace r2tm
 		using BufferT = unsigned long long;
 
 		CacheCleaner( const int buffer_scale = 1 );
+		CacheCleaner( const CacheCleaner& c );
 		~CacheCleaner();
 
 		//
