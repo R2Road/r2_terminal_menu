@@ -22,6 +22,11 @@ namespace r2tm
 		//
 		//
 		//
+		CacheCleaner& operator=( const CacheCleaner& ) = delete;
+
+		//
+		//
+		//
 		int GetBufferScale() const
 		{
 			return mBufferScale;
