@@ -84,6 +84,52 @@ namespace test_cache_cleaner
 
 
 
+	r2tm::TitleFunctionT Size::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Cache Cleaner : Size";
+		};
+	}
+	r2tm::DoFunctionT Size::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			DECLARATION_MAIN( r2tm::CacheCleaner c );
+
+			LF();
+
+			OUTPUT_SIZE( c );
+
+			LF();
+
+			OUTPUT_BINARY( c );
+
+			SS();
+
+			OUTPUT_SIZE( c.GetBufferScale() );
+			OUTPUT_BINARY( c.GetBufferScale() );
+
+			LF();
+
+			OUTPUT_SIZE( c.GetCacheByteSize() );
+			OUTPUT_BINARY( c.GetCacheByteSize() );
+
+			LF();
+
+			OUTPUT_SIZE( c.GetBufferSize() );
+			OUTPUT_BINARY( c.GetBufferSize() );
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT Test::GetTitleFunction() const
 	{
 		return []()->const char*

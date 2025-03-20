@@ -25,8 +25,9 @@ r2tm::WriteFunctionT Menu_CacheCleaner::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', test_cache_cleaner::Basic() );
-		ret->AddItem( '2', test_cache_cleaner::Test() );
-		ret->AddItem( '3', test_cache_cleaner::Test_Accumulate() );
+		ret->AddItem( '2', test_cache_cleaner::Size() );
+		ret->AddItem( '3', test_cache_cleaner::Test() );
+		ret->AddItem( '4', test_cache_cleaner::Test_Accumulate() );
 
 
 

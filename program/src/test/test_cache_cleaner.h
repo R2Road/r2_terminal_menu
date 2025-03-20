@@ -11,6 +11,13 @@ namespace test_cache_cleaner
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class Size : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Test : public r2tm::iItem
 	{
 	public:
