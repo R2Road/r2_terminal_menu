@@ -252,7 +252,8 @@ namespace test_cache_cleaner
 					s.Stop();
 				}
 
-				s.PrintAverageTime_NanoSeconds();
+				s.PrintAverageTime_NanoSeconds();  LF();
+
 				LF();
 
 				s.Reset();
@@ -275,8 +276,7 @@ namespace test_cache_cleaner
 					s.Stop();
 				}
 
-				s.PrintAverageTime_NanoSeconds();
-				LF();
+				s.PrintAverageTime_NanoSeconds(); LF();
 			}
 
 			LS();
