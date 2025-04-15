@@ -259,7 +259,7 @@ do {																						\
 
 #define	OUTPUT_SUBJECT( str )																\
 do {																						\
-	printf( "\t"  "\x1B[92m"  "+ "  "%s"  "\033[0m"  "\n", str );							\
+	printf( "\t"  "\x1B[92m"  "# "  "%s"  "\033[0m"  "\n", str );							\
 } while( false )
 
 #define	OUTPUT_COMMENT( str )																\
