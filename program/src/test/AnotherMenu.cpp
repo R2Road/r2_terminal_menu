@@ -24,8 +24,8 @@ r2tm::WriteFunctionT AnotherMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddItem( '5', test_empty::Basic() );
-		ret->AddItem( '6', test_empty::Basic() );
+		ret->AddItem( '1', test_empty::Basic() );
+		ret->AddItem( '2', test_empty::Basic() );
 
 
 
