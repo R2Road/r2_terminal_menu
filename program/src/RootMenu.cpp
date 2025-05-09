@@ -7,13 +7,13 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/test_base.h"
-#include "test/test_color_modifier.h"
 #include "test/test_empty.h"
 #include "test/test_key.h"
 #include "test/test_stop_watch.h"
 
 #include "test/Menu_Test.h"
 #include "test/Menu_CacheCleaner.h"
+#include "test/Menu_ColorModifier.h"
 #include "test/Menu_Inspector.h"
 #include "test/Menu_StopWatch.h"
 #include "test/Menu_WindowUtility.h"
@@ -110,7 +110,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		ret->AddItem( 'a', test_key::View() );
-		ret->AddItem( 's', test_color_modifier::Basic() );
+		ret->AddMenu( 's', Menu_ColorModifier() );
 		ret->AddMenu( 'd', Menu_StopWatch() );
 		ret->AddMenu( 'f', Menu_Inspector() );
 

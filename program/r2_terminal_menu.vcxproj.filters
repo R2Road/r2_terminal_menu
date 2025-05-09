@@ -27,9 +27,6 @@
     <ClCompile Include="src\test\test_base.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_color_modifier.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\test_empty.cpp">
       <Filter>test</Filter>
     </ClCompile>
@@ -81,6 +78,12 @@
     <ClCompile Include="src\test\test_cache_cleaner.cpp">
       <Filter>test\cache_cleaner</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\test_color_modifier.cpp">
+      <Filter>test\color_modifier</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Menu_ColorModifier.cpp">
+      <Filter>test\color_modifier</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -127,9 +130,6 @@
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_base.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_color_modifier.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_empty.h">
@@ -186,6 +186,12 @@
     <ClInclude Include="src\r2tm\r2tm_Color.h">
       <Filter>r2tm</Filter>
     </ClInclude>
+    <ClInclude Include="src\test\test_color_modifier.h">
+      <Filter>test\color_modifier</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\Menu_ColorModifier.h">
+      <Filter>test\color_modifier</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
@@ -205,6 +211,9 @@
     </Filter>
     <Filter Include="test\cache_cleaner">
       <UniqueIdentifier>{99b1286f-a029-4fb3-a75e-7bb253168da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\color_modifier">
+      <UniqueIdentifier>{9ed31efe-4a0b-4380-ac33-4be6e3fe7fe9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

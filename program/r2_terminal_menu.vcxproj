@@ -28,6 +28,7 @@
     <ClCompile Include="src\r2tm\r2tm_StopWatch.cpp" />
     <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
+    <ClCompile Include="src\test\Menu_ColorModifier.cpp" />
     <ClCompile Include="src\test\Menu_Test.cpp" />
     <ClCompile Include="src\test\Menu_CacheCleaner.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
@@ -65,6 +66,7 @@
     <ClInclude Include="src\r2tm\r2tm_VersionInfo.h" />
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\RootMenu.h" />
+    <ClInclude Include="src\test\Menu_ColorModifier.h" />
     <ClInclude Include="src\test\Menu_Test.h" />
     <ClInclude Include="src\test\Menu_CacheCleaner.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
