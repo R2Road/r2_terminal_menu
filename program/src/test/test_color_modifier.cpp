@@ -26,36 +26,36 @@ namespace test_color_modifier
 			LS();
 
 			{
-				DECLARATION_MAIN( r2tm::ColorModifier clm );
+				DECLARATION_MAIN( r2tm::ColorModifier cm );
 
 				LF();
 
-				EXPECT_EQ( r2tm::eColor::None, clm.GetColor() );
-				OUTPUT_VALUE( clm.GetColor() );
+				EXPECT_EQ( r2tm::eColor::None, cm.GetColor() );
+				OUTPUT_VALUE( cm.GetColor() );
 
 				LF();
 
-				OUTPUT_SIZE( clm );
+				OUTPUT_SIZE( cm );
 
 				LF();
 
-				OUTPUT_BINARY( clm );
+				OUTPUT_BINARY( cm );
 			}
 
 			LS();
 
 			{
 				DECLARATION_MAIN( r2tm::eColor c( r2tm::eColor::FG_LightAqua ) );
-				DECLARATION_MAIN( r2tm::ColorModifier clm( c ) );
+				DECLARATION_MAIN( r2tm::ColorModifier cm( c ) );
 
 				LF();
 
-				EXPECT_EQ( c, clm.GetColor() );
-				OUTPUT_VALUE( clm.GetColor() );
+				EXPECT_EQ( c, cm.GetColor() );
+				OUTPUT_VALUE( cm.GetColor() );
 
 				LF();
 
-				OUTPUT_BINARY( clm );
+				OUTPUT_BINARY( cm );
 			}
 
 			LS();
