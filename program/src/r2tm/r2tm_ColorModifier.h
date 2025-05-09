@@ -13,8 +13,10 @@ namespace r2tm
 	class ColorModifier
 	{
 	public:
-		ColorModifier() : mColor( eColor::None ) {}
-		ColorModifier( const eColor color ) : mColor( color ) {}
+		ColorModifier() : mColor( eColor::None )
+		{}
+		ColorModifier( const eColor color ) : mColor( color )
+		{}
 
 		eColor GetColor() const
 		{
