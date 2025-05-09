@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\r2tm\r2tm_CacheCleaner.h" />
+    <ClInclude Include="src\r2tm\r2tm_Color.h" />
     <ClInclude Include="src\r2tm\r2tm_ColorModifier.h" />
     <ClInclude Include="src\r2tm\r2tm_Director.h" />
     <ClInclude Include="src\r2tm\r2tm_iItem.h" />
