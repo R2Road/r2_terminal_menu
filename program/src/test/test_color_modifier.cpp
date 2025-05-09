@@ -6,6 +6,33 @@
 
 namespace test_color_modifier
 {
+	r2tm::TitleFunctionT Declaration::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Declaration";
+		};
+	}
+	r2tm::DoFunctionT Declaration::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				DECLARATION_MAIN( r2tm::ColorModifier clm );
+
+				OUTPUT_SIZE( clm );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
