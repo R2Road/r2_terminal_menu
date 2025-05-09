@@ -29,7 +29,7 @@ namespace r2tm
 		{
 			//
 			// 2022.07.10 by R
-			// - std::hex 등이 쓰이면 " << mf.mColor " 가 정상작동하지 않는다.
+			// - std::hex 등이 쓰이면 " << color_modifier.GetColor()" 가 정상작동하지 않는다.
 			// - 문자 변환해서 기록하면 해결되지만 성능이 신경쓰이므로 방치하기로 하자.
 			//
 
