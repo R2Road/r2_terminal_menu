@@ -4,8 +4,14 @@
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
+
 namespace test_color_modifier
 {
+	std::ostream& operator<<( std::ostream& os, const r2tm::eColor& color )
+	{
+		return os << static_cast<int>( color );
+	}
+
 	r2tm::TitleFunctionT Declaration::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -21,6 +27,13 @@ namespace test_color_modifier
 
 			{
 				DECLARATION_MAIN( r2tm::ColorModifier clm );
+
+				LF();
+
+				EXPECT_EQ( r2tm::eColor::None, clm.GetColor() );
+				OUTPUT_VALUE( clm.GetColor() );
+
+				LF();
 
 				OUTPUT_SIZE( clm );
 			}

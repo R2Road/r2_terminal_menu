@@ -16,6 +16,11 @@ namespace r2tm
 		ColorModifier() : mColor( eColor::None ) {}
 		ColorModifier( const eColor color ) : mColor( color ) {}
 
+		eColor GetColor() const
+		{
+			return mColor;
+		}
+
 		friend std::ostream& operator<<( std::ostream& os, const ColorModifier& color_modifier )
 		{
 			//
@@ -26,7 +31,7 @@ namespace r2tm
 
 			static const char* header = "\033[";
 			static const char* tail = "m";
-			return os << header << static_cast<int>( color_modifier.mColor ) << tail;
+			return os << header << static_cast<int>( color_modifier.GetColor() ) << tail;
 		}
 
 	private:
