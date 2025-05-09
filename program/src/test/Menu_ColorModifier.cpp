@@ -25,7 +25,7 @@ r2tm::WriteFunctionT Menu_ColorModifier::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', test_color_modifier::Declaration() );
-		ret->AddItem( '2', test_color_modifier::Basic() );
+		ret->AddItem( '2', test_color_modifier::Test() );
 
 
 

@@ -11,7 +11,7 @@ namespace test_color_modifier
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Basic : public r2tm::iItem
+	class Test : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

@@ -72,14 +72,14 @@ namespace test_color_modifier
 
 
 
-	r2tm::TitleFunctionT Basic::GetTitleFunction() const
+	r2tm::TitleFunctionT Test::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Color Modifier";
+			return "Test";
 		};
 	}
-	r2tm::DoFunctionT Basic::GetDoFunction() const
+	r2tm::DoFunctionT Test::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
