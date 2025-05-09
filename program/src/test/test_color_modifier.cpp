@@ -30,7 +30,7 @@ namespace test_color_modifier
 
 				LF();
 
-				EXPECT_EQ( r2tm::eColor::None, cm.GetColor() );
+				EXPECT_EQ( r2tm::ColorModifier::DEFAULT_COLOR, cm.GetColor() );
 				OUTPUT_VALUE( cm.GetColor() );
 
 				LF();

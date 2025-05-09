@@ -13,7 +13,9 @@ namespace r2tm
 	class ColorModifier
 	{
 	public:
-		ColorModifier() : mColor( eColor::None )
+		static const eColor DEFAULT_COLOR = eColor::None;
+
+		ColorModifier() : mColor( DEFAULT_COLOR )
 		{}
 		ColorModifier( const eColor color ) : mColor( color )
 		{}
