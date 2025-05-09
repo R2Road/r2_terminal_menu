@@ -30,12 +30,18 @@ namespace test_color_modifier
 
 				LF();
 
-				EXPECT_EQ( r2tm::ColorModifier::DEFAULT_COLOR, cm.GetColor() );
-				OUTPUT_VALUE( cm.GetColor() );
+				OUTPUT_SIZE( cm );
+			}
+
+			LS();
+
+			{
+				DECLARATION_MAIN( r2tm::ColorModifier cm );
 
 				LF();
 
-				OUTPUT_SIZE( cm );
+				EXPECT_EQ( r2tm::ColorModifier::DEFAULT_COLOR, cm.GetColor() );
+				OUTPUT_VALUE( cm.GetColor() );
 
 				LF();
 
