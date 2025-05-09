@@ -21,7 +21,7 @@
     <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\AnotherMenu.cpp">
+    <ClCompile Include="src\test\Menu_Test.cpp">
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\test\test_base.cpp">
@@ -123,7 +123,7 @@
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\AnotherMenu.h">
+    <ClInclude Include="src\test\Menu_Test.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_base.h">
