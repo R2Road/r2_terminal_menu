@@ -4,7 +4,7 @@
 
 namespace r2tm
 {
-	enum eColor
+	enum class eColor : char
 	{
 		None = 0,
 

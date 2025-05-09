@@ -26,7 +26,7 @@ namespace r2tm
 
 			static const char* header = "\033[";
 			static const char* tail = "m";
-			return os << header << color_modifier.mColor << tail;
+			return os << header << static_cast<int>( color_modifier.mColor ) << tail;
 		}
 
 	private:
