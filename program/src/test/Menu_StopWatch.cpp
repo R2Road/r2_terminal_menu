@@ -24,9 +24,10 @@ r2tm::WriteFunctionT Menu_StopWatch::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', test_stop_watch::Basic() );
-		ret->AddItem( '2', test_stop_watch::Accumulate() );
-		ret->AddItem( '3', test_stop_watch::Reset() );
+		ret->AddItem( '1', test_stop_watch::Declaration() );
+		ret->AddItem( '2', test_stop_watch::Basic() );
+		ret->AddItem( '3', test_stop_watch::Accumulate() );
+		ret->AddItem( '4', test_stop_watch::Reset() );
 
 
 

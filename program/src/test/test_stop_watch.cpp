@@ -8,6 +8,52 @@
 
 namespace test_stop_watch
 {
+	r2tm::TitleFunctionT Declaration::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Declaration";
+		};
+	}
+	r2tm::DoFunctionT Declaration::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				DECLARATION_MAIN( r2tm::StopWatch s );
+
+				LF();
+
+				OUTPUT_SIZE( s );
+
+				LF();
+
+				OUTPUT_BINARY( s );
+
+				LF();
+
+				EXPECT_EQ( 0ll, s.GetMilliTime() );
+				EXPECT_EQ( 0ll, s.GetMicroTime() );
+				EXPECT_EQ( 0ll, s.GetNanoTime() );
+				EXPECT_EQ( 0ll, s.GetMaxTime() );
+				EXPECT_EQ( LLONG_MAX, s.GetMinTime() );
+
+				LF();
+
+				EXPECT_EQ( 0ll, s.GetAccumulateTime() );
+				EXPECT_EQ( 0ll, s.GetAccumulateCount() );
+				EXPECT_EQ( 0ll, s.GetAverageTime() );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
