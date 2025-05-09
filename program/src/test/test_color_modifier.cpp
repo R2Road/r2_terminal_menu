@@ -36,6 +36,26 @@ namespace test_color_modifier
 				LF();
 
 				OUTPUT_SIZE( clm );
+
+				LF();
+
+				OUTPUT_BINARY( clm );
+			}
+
+			LS();
+
+			{
+				DECLARATION_MAIN( r2tm::eColor c( r2tm::eColor::FG_LightAqua ) );
+				DECLARATION_MAIN( r2tm::ColorModifier clm( c ) );
+
+				LF();
+
+				EXPECT_EQ( c, clm.GetColor() );
+				OUTPUT_VALUE( clm.GetColor() );
+
+				LF();
+
+				OUTPUT_BINARY( clm );
 			}
 
 			LS();
