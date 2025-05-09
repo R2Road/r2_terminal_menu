@@ -1,7 +1,6 @@
 #include "Menu_WindowUtility.h"
 
-#include "r2tm/r2tm_Director.h"
-#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_MenuProcessor.h"
 
 #include "test_window_utility_base.h"
 #include "test_window_utility_cursor_buffer.h"
