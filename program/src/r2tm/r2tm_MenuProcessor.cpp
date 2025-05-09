@@ -2,6 +2,7 @@
 
 #include <cctype> // std::toupper
 
+#include "r2tm_ColorModifier.h"
 #include "r2tm_iItem.h"
 #include "r2tm_iMenu.h"
 #include "r2tm_ostream.h"

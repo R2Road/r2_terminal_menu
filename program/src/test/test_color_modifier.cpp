@@ -1,5 +1,6 @@
 #include "test_color_modifier.h"
 
+#include "r2tm/r2tm_ColorModifier.h"
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
