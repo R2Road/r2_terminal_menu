@@ -1,10 +1,10 @@
-#include "test_base.h"
+#include "test_leave_action.h"
 
 #include <conio.h> // _getch
 
 #include "r2tm/r2tm_ostream.h"
 
-namespace test_base
+namespace test_leave_action
 {
 	r2tm::TitleFunctionT eDoLeaveAction_None::GetTitleFunction() const
 	{

@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_iItem.h"
 
-namespace test_base
+namespace test_leave_action
 {
 	class eDoLeaveAction_None : public r2tm::iItem
 	{

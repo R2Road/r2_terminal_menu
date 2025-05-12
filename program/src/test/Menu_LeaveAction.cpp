@@ -4,7 +4,7 @@
 
 #include "RootMenu.h"
 
-#include "test_base.h"
+#include "test_leave_action.h"
 
 r2tm::TitleFunctionT Menu_LeaveAction::GetTitleFunction() const
 {
@@ -32,9 +32,9 @@ r2tm::WriteFunctionT Menu_LeaveAction::GetWriteFunction() const
 
 
 
-		mp->AddItem( '1', test_base::eDoLeaveAction_None() );
-		mp->AddItem( '2', test_base::eDoLeaveAction_Pause() );
-		mp->AddItem( '3', test_base::eDoLeaveAction_Exit() );
+		mp->AddItem( '1', test_leave_action::eDoLeaveAction_None() );
+		mp->AddItem( '2', test_leave_action::eDoLeaveAction_Pause() );
+		mp->AddItem( '3', test_leave_action::eDoLeaveAction_Exit() );
 
 
 

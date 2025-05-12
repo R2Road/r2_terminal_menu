@@ -6,7 +6,6 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "test/test_base.h"
 #include "test/test_empty.h"
 #include "test/test_key.h"
 #include "test/test_stop_watch.h"
