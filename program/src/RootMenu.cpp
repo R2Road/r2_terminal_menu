@@ -99,6 +99,9 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		mp->AddMenu( 'q', Menu_LeaveAction() );
+		mp->AddMenu( 'w', Menu_ColorModifier() );
+		mp->AddMenu( 'e', Menu_StopWatch() );
+		mp->AddMenu( 'r', Menu_Inspector() );
 
 
 
@@ -106,10 +109,8 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'a', test_key::View() );
-		mp->AddMenu( 's', Menu_ColorModifier() );
-		mp->AddMenu( 'd', Menu_StopWatch() );
-		mp->AddMenu( 'f', Menu_Inspector() );
+		mp->AddMenu( 'a', Menu_WindowUtility() );
+		mp->AddMenu( 's', Menu_CacheCleaner() );
 
 
 
@@ -117,8 +118,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 'z', Menu_WindowUtility() );
-		mp->AddMenu( 'x', Menu_CacheCleaner() );
+		mp->AddItem( 'z', test_key::View() );
 		
 
 
