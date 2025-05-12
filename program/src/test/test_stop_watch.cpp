@@ -12,7 +12,7 @@ namespace test_stop_watch
 	{
 		return []()->const char*
 		{
-			return "Declaration";
+			return "Stop Watch : Declaration";
 		};
 	}
 	r2tm::DoFunctionT Declaration::GetDoFunction() const
@@ -58,7 +58,7 @@ namespace test_stop_watch
 	{
 		return []()->const char*
 		{
-			return "Stop Watch";
+			return "Stop Watch : Basic";
 		};
 	}
 	r2tm::DoFunctionT Basic::GetDoFunction() const
@@ -173,7 +173,7 @@ namespace test_stop_watch
 	{
 		return []()->const char*
 		{
-			return "Reset";
+			return "Stop Watch : Reset";
 		};
 	}
 	r2tm::DoFunctionT Reset::GetDoFunction() const
