@@ -22,17 +22,17 @@ r2tm::DescriptionFunctionT Menu_ColorModifier::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_ColorModifier::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_color_modifier::Declaration() );
-		ret->AddItem( '2', test_color_modifier::Test() );
+		mp->AddItem( '1', test_color_modifier::Declaration() );
+		mp->AddItem( '2', test_color_modifier::Test() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

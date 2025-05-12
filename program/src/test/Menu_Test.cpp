@@ -22,17 +22,17 @@ r2tm::DescriptionFunctionT Menu_Test::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_Test::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_empty::Basic() );
-		ret->AddItem( '2', test_empty::Basic() );
+		mp->AddItem( '1', test_empty::Basic() );
+		mp->AddItem( '2', test_empty::Basic() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

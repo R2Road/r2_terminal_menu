@@ -22,19 +22,19 @@ r2tm::DescriptionFunctionT Menu_CacheCleaner::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_CacheCleaner::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_cache_cleaner::Basic() );
-		ret->AddItem( '2', test_cache_cleaner::Size() );
-		ret->AddItem( '3', test_cache_cleaner::Test() );
-		ret->AddItem( '4', test_cache_cleaner::Test_Accumulate() );
+		mp->AddItem( '1', test_cache_cleaner::Basic() );
+		mp->AddItem( '2', test_cache_cleaner::Size() );
+		mp->AddItem( '3', test_cache_cleaner::Test() );
+		mp->AddItem( '4', test_cache_cleaner::Test_Accumulate() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

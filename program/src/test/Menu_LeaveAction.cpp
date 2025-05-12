@@ -22,26 +22,26 @@ r2tm::DescriptionFunctionT Menu_LeaveAction::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_LeaveAction::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddMessage( "# Test 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_Green );
+		mp->AddMessage( "# Test 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_Green );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddItem( '1', test_base::eDoLeaveAction_None() );
-		ret->AddItem( '2', test_base::eDoLeaveAction_Pause() );
-		ret->AddItem( '3', test_base::eDoLeaveAction_Exit() );
+		mp->AddItem( '1', test_base::eDoLeaveAction_None() );
+		mp->AddItem( '2', test_base::eDoLeaveAction_Pause() );
+		mp->AddItem( '3', test_base::eDoLeaveAction_Exit() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

@@ -22,19 +22,19 @@ r2tm::DescriptionFunctionT Menu_StopWatch::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_StopWatch::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_stop_watch::Declaration() );
-		ret->AddItem( '2', test_stop_watch::Basic() );
-		ret->AddItem( '3', test_stop_watch::Accumulate() );
-		ret->AddItem( '4', test_stop_watch::Reset() );
+		mp->AddItem( '1', test_stop_watch::Declaration() );
+		mp->AddItem( '2', test_stop_watch::Basic() );
+		mp->AddItem( '3', test_stop_watch::Accumulate() );
+		mp->AddItem( '4', test_stop_watch::Reset() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

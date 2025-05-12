@@ -52,21 +52,21 @@ r2tm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddMessage( "# Test를 r2tm::iItem을 사용해 만들기", r2tm::eColor::FG_LightRed );
-		ret->AddItem( '1', test_empty::Basic() );
-		ret->AddMessage( "# 동일한 Test를 여러 키에 할당 해보기", r2tm::eColor::FG_LightRed );
-		ret->AddItem( '2', test_empty::Basic() );
+		mp->AddMessage( "# Test를 r2tm::iItem을 사용해 만들기", r2tm::eColor::FG_LightRed );
+		mp->AddItem( '1', test_empty::Basic() );
+		mp->AddMessage( "# 동일한 Test를 여러 키에 할당 해보기", r2tm::eColor::FG_LightRed );
+		mp->AddItem( '2', test_empty::Basic() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_LightRed );
-		ret->AddItem(
+		mp->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_LightRed );
+		mp->AddItem(
 			'3'
 			, []()->const char*
 			{
@@ -86,48 +86,48 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddMessage( "# Test를 r2tm::iMenu 객체로 묶어보기", r2tm::eColor::FG_LightRed );
-		ret->AddMenu( '6', Menu_Test() );
+		mp->AddMessage( "# Test를 r2tm::iMenu 객체로 묶어보기", r2tm::eColor::FG_LightRed );
+		mp->AddMenu( '6', Menu_Test() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddMenu( 'q', Menu_LeaveAction() );
+		mp->AddMenu( 'q', Menu_LeaveAction() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddItem( 'a', test_key::View() );
-		ret->AddMenu( 's', Menu_ColorModifier() );
-		ret->AddMenu( 'd', Menu_StopWatch() );
-		ret->AddMenu( 'f', Menu_Inspector() );
+		mp->AddItem( 'a', test_key::View() );
+		mp->AddMenu( 's', Menu_ColorModifier() );
+		mp->AddMenu( 'd', Menu_StopWatch() );
+		mp->AddMenu( 'f', Menu_Inspector() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddMenu( 'z', Menu_WindowUtility() );
-		ret->AddMenu( 'x', Menu_CacheCleaner() );
+		mp->AddMenu( 'z', Menu_WindowUtility() );
+		mp->AddMenu( 'x', Menu_CacheCleaner() );
 		
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddExit( 27 );
+		mp->AddExit( 27 );
 	};
 }

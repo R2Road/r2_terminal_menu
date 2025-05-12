@@ -24,27 +24,27 @@ r2tm::DescriptionFunctionT Menu_WindowUtility::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_WindowUtility::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_window_utility_base::CursorPointOperator() );
+		mp->AddItem( '1', test_window_utility_base::CursorPointOperator() );
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
-		ret->AddItem( 'q', test_window_utility_cursor_buffer::MoveCursorWithClearBuffer() );
+		mp->AddItem( 'q', test_window_utility_cursor_buffer::MoveCursorWithClearBuffer() );
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
-		ret->AddItem( 'a', test_window_utility_fill::FillColor() );
-		ret->AddItem( 's', test_window_utility_fill::FillCharacter() );
-		ret->AddItem( 'd', test_window_utility_fill::FillString_1() );
-		ret->AddItem( 'f', test_window_utility_fill::FillString_2() );
-
-
-
-		ret->AddSplit();
+		mp->AddItem( 'a', test_window_utility_fill::FillColor() );
+		mp->AddItem( 's', test_window_utility_fill::FillCharacter() );
+		mp->AddItem( 'd', test_window_utility_fill::FillString_1() );
+		mp->AddItem( 'f', test_window_utility_fill::FillString_2() );
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddSplit();
+
+
+
+		mp->AddMenu( 27, RootMenu() );
 	};
 }

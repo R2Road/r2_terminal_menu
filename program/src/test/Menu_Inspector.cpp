@@ -26,50 +26,50 @@ r2tm::DescriptionFunctionT Menu_Inspector::GetDescriptionFunction() const
 }
 r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 {
-	return []( r2tm::MenuProcessor* ret )
+	return []( r2tm::MenuProcessor* mp )
 	{
-		ret->AddItem( '1', test_inspector_base::Basic() );
-		ret->AddItem( '2', test_inspector_base::Expect() );
-		ret->AddItem( '3', test_inspector_base::Size() );
-		ret->AddItem( '4', test_inspector_base::Code() );
-		ret->AddItem( '5', test_inspector_base::String_Note_Subject_Comment() );
+		mp->AddItem( '1', test_inspector_base::Basic() );
+		mp->AddItem( '2', test_inspector_base::Expect() );
+		mp->AddItem( '3', test_inspector_base::Size() );
+		mp->AddItem( '4', test_inspector_base::Code() );
+		mp->AddItem( '5', test_inspector_base::String_Note_Subject_Comment() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddItem( 'q', test_inspector_binary::Binary() );
-		ret->AddItem( 'w', test_inspector_binary::Binaries_1() );
-		ret->AddItem( 'e', test_inspector_binary::Binaries_2() );
+		mp->AddItem( 'q', test_inspector_binary::Binary() );
+		mp->AddItem( 'w', test_inspector_binary::Binaries_1() );
+		mp->AddItem( 'e', test_inspector_binary::Binaries_2() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddItem( 'a', test_inspector_file::File() );
-		ret->AddItem( 's', test_inspector_file::FileRange_1() );
-		ret->AddItem( 'd', test_inspector_file::FileRange_2() );
-		ret->AddItem( 'f', test_inspector_source::Basic() );
-		ret->AddItem( 'g', test_inspector_source::Warning() );
+		mp->AddItem( 'a', test_inspector_file::File() );
+		mp->AddItem( 's', test_inspector_file::FileRange_1() );
+		mp->AddItem( 'd', test_inspector_file::FileRange_2() );
+		mp->AddItem( 'f', test_inspector_source::Basic() );
+		mp->AddItem( 'g', test_inspector_source::Warning() );
 
 
 
-		ret->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		ret->AddItem( 32, test_inspector_demo::Demo() );
+		mp->AddItem( 32, test_inspector_demo::Demo() );
 
 
 
-		ret->AddSplit();
+		mp->AddSplit();
 
 
 
-		ret->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, RootMenu() );
 	};
 }
