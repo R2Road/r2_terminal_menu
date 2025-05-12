@@ -24,7 +24,14 @@ r2tm::WriteFunctionT Menu_LeaveAction::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_White, r2tm::eColor::BG_LightBlue );
+		ret->AddMessage( "# Test 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_Green );
+
+
+
+		ret->AddLineFeed();
+
+
+
 		ret->AddItem( '1', test_base::eDoLeaveAction_None() );
 		ret->AddItem( '2', test_base::eDoLeaveAction_Pause() );
 		ret->AddItem( '3', test_base::eDoLeaveAction_Exit() );
