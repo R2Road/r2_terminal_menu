@@ -15,6 +15,7 @@
 #include "test/Menu_CacheCleaner.h"
 #include "test/Menu_ColorModifier.h"
 #include "test/Menu_Inspector.h"
+#include "test/Menu_LeaveAction.h"
 #include "test/Menu_StopWatch.h"
 #include "test/Menu_WindowUtility.h"
 
@@ -98,10 +99,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 
-		ret->AddMessage( "# Test의 끝에 반환하는 r2tm::eDoLeaveAction 의 효과", r2tm::eColor::FG_White, r2tm::eColor::BG_LightBlue );
-		ret->AddItem( 'q', test_base::eDoLeaveAction_None() );
-		ret->AddItem( 'w', test_base::eDoLeaveAction_Pause() );
-		ret->AddItem( 'e', test_base::eDoLeaveAction_Exit() );
+		ret->AddMenu( 'q', Menu_LeaveAction() );
 
 
 

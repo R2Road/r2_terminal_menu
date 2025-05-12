@@ -84,6 +84,9 @@
     <ClCompile Include="src\test\Menu_ColorModifier.cpp">
       <Filter>test\color_modifier</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\Menu_LeaveAction.cpp">
+      <Filter>test\leave_action</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -192,6 +195,9 @@
     <ClInclude Include="src\test\Menu_ColorModifier.h">
       <Filter>test\color_modifier</Filter>
     </ClInclude>
+    <ClInclude Include="src\test\Menu_LeaveAction.h">
+      <Filter>test\leave_action</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
@@ -214,6 +220,9 @@
     </Filter>
     <Filter Include="test\color_modifier">
       <UniqueIdentifier>{9ed31efe-4a0b-4380-ac33-4be6e3fe7fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\leave_action">
+      <UniqueIdentifier>{b88dc298-d6fd-4a09-94b8-d60173630fad}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
