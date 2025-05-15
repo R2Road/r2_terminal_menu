@@ -11,7 +11,7 @@
 #include "test/test_stop_watch.h"
 
 #include "test/menu_test.h"
-#include "test/Menu_CacheCleaner.h"
+#include "test/menu_cache_cleaner.h"
 #include "test/menu_color_modifier.h"
 #include "test/menu_inspector.h"
 #include "test/menu_leave_action.h"

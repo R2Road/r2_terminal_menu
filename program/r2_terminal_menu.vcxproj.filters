@@ -69,7 +69,7 @@
     <ClCompile Include="src\test\menu_stop_watch.cpp">
       <Filter>test\stop_watch</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\Menu_CacheCleaner.cpp">
+    <ClCompile Include="src\test\menu_cache_cleaner.cpp">
       <Filter>test\cache_cleaner</Filter>
     </ClCompile>
     <ClCompile Include="src\test\test_cache_cleaner.cpp">
@@ -178,7 +178,7 @@
     <ClInclude Include="src\test\menu_stop_watch.h">
       <Filter>test\stop_watch</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\Menu_CacheCleaner.h">
+    <ClInclude Include="src\test\menu_cache_cleaner.h">
       <Filter>test\cache_cleaner</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_cache_cleaner.h">
