@@ -13,7 +13,7 @@
 #include "test/menu_test.h"
 #include "test/Menu_CacheCleaner.h"
 #include "test/Menu_ColorModifier.h"
-#include "test/Menu_Inspector.h"
+#include "test/menu_inspector.h"
 #include "test/menu_leave_action.h"
 #include "test/menu_stop_watch.h"
 #include "test/menu_windows_utility.h"

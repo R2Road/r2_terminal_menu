@@ -1,4 +1,4 @@
-#include "Menu_Inspector.h"
+#include "menu_inspector.h"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
