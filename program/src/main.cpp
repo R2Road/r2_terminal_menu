@@ -29,7 +29,7 @@ int main()
 	// Setup
 	//
 	r2tm::Director director;
-	director.Setup( MenuRoot() );
+	director.Setup( Menu_Root() );
 
 	//
 	// Process

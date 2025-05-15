@@ -70,6 +70,6 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, MenuRoot() );
+		mp->AddMenu( 27, Menu_Root() );
 	};
 }

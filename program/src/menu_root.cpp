@@ -20,7 +20,7 @@
 
 #include "version_viewer.h"
 
-r2tm::TitleFunctionT MenuRoot::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
 {
 	return []()->const char*
 	{
@@ -35,7 +35,7 @@ r2tm::TitleFunctionT MenuRoot::GetTitleFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::DescriptionFunctionT MenuRoot::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_Root::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
@@ -51,7 +51,7 @@ r2tm::DescriptionFunctionT MenuRoot::GetDescriptionFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::WriteFunctionT MenuRoot::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
