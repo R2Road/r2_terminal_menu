@@ -137,5 +137,20 @@ namespace r2tm
 
 		const char* const String4Road2NextVersion = String4Road2Version_1_8_0_0_0;
 
+
+
+		enum { VERSION_HISTORY_COUNT = 9 };
+		const char* VersionHistory[VERSION_HISTORY_COUNT] = {
+			  String4Road2Version_1_0_0_0_0
+			, String4Road2Version_1_1_0_0_0
+			, String4Road2Version_1_2_0_0_0
+			, String4Road2Version_1_3_0_0_0
+			, String4Road2Version_1_4_0_0_0
+			, String4Road2Version_1_5_0_0_0
+			, String4Road2Version_1_6_0_0_0
+			, String4Road2Version_1_7_0_0_0
+			, String4Road2Version_1_8_0_0_0
+		};
+
 	} VersionInfo;
 }

@@ -18,6 +18,8 @@
 #include "test/Menu_StopWatch.h"
 #include "test/Menu_WindowUtility.h"
 
+#include "version_viewer.h"
+
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
 	return []()->const char*
@@ -119,6 +121,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 
 		mp->AddItem( 'z', test_key::View() );
+		mp->AddItem( 'x', version_viewer::Viewer() );
 		
 
 
