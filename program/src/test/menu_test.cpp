@@ -6,21 +6,21 @@
 
 #include "test_empty.h"
 
-r2tm::TitleFunctionT MenuTest::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_Test::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Menu : Test";
 	};
 }
-r2tm::DescriptionFunctionT MenuTest::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_Test::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2tm::WriteFunctionT MenuTest::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_Test::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

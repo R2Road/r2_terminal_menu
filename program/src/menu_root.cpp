@@ -92,7 +92,7 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 		mp->AddMessage( "# Test¸¦ r2tm::iMenu °´Ã¼·Î ¹­¾îº¸±â", r2tm::eColor::FG_LightRed );
-		mp->AddMenu( '6', MenuTest() );
+		mp->AddMenu( '6', Menu_Test() );
 
 
 
