@@ -66,7 +66,7 @@
     <ClCompile Include="src\test\test_stop_watch.cpp">
       <Filter>test\stop_watch</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\Menu_StopWatch.cpp">
+    <ClCompile Include="src\test\menu_stop_watch.cpp">
       <Filter>test\stop_watch</Filter>
     </ClCompile>
     <ClCompile Include="src\test\Menu_CacheCleaner.cpp">
@@ -175,7 +175,7 @@
     <ClInclude Include="src\test\test_stop_watch.h">
       <Filter>test\stop_watch</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\Menu_StopWatch.h">
+    <ClInclude Include="src\test\menu_stop_watch.h">
       <Filter>test\stop_watch</Filter>
     </ClInclude>
     <ClInclude Include="src\test\Menu_CacheCleaner.h">

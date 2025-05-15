@@ -1,4 +1,4 @@
-#include "Menu_StopWatch.h"
+#include "menu_stop_watch.h"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 

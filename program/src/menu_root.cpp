@@ -15,7 +15,7 @@
 #include "test/Menu_ColorModifier.h"
 #include "test/Menu_Inspector.h"
 #include "test/Menu_LeaveAction.h"
-#include "test/Menu_StopWatch.h"
+#include "test/menu_stop_watch.h"
 #include "test/menu_windows_utility.h"
 
 #include "version_viewer.h"
