@@ -34,7 +34,7 @@
     <ClCompile Include="src\test\Menu_CacheCleaner.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
     <ClCompile Include="src\test\Menu_StopWatch.cpp" />
-    <ClCompile Include="src\test\Menu_WindowUtility.cpp" />
+    <ClCompile Include="src\test\menu_windows_utility.cpp" />
     <ClCompile Include="src\test\test_leave_action.cpp" />
     <ClCompile Include="src\test\test_cache_cleaner.cpp" />
     <ClCompile Include="src\test\test_color_modifier.cpp" />
@@ -46,9 +46,9 @@
     <ClCompile Include="src\test\test_inspector_source.cpp" />
     <ClCompile Include="src\test\test_key.cpp" />
     <ClCompile Include="src\test\test_stop_watch.cpp" />
-    <ClCompile Include="src\test\test_window_utility_cursor_buffer.cpp" />
-    <ClCompile Include="src\test\test_window_utility_base.cpp" />
-    <ClCompile Include="src\test\test_window_utility_fill.cpp" />
+    <ClCompile Include="src\test\test_windows_utility_cursor_buffer.cpp" />
+    <ClCompile Include="src\test\test_windows_utility_base.cpp" />
+    <ClCompile Include="src\test\test_windows_utility_fill.cpp" />
     <ClCompile Include="src\version_viewer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +74,7 @@
     <ClInclude Include="src\test\Menu_CacheCleaner.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
     <ClInclude Include="src\test\Menu_StopWatch.h" />
-    <ClInclude Include="src\test\Menu_WindowUtility.h" />
+    <ClInclude Include="src\test\menu_windows_utility.h" />
     <ClInclude Include="src\test\test_leave_action.h" />
     <ClInclude Include="src\test\test_cache_cleaner.h" />
     <ClInclude Include="src\test\test_color_modifier.h" />
@@ -86,9 +86,9 @@
     <ClInclude Include="src\test\test_inspector_source.h" />
     <ClInclude Include="src\test\test_key.h" />
     <ClInclude Include="src\test\test_stop_watch.h" />
-    <ClInclude Include="src\test\test_window_utility_cursor_buffer.h" />
-    <ClInclude Include="src\test\test_window_utility_base.h" />
-    <ClInclude Include="src\test\test_window_utility_fill.h" />
+    <ClInclude Include="src\test\test_windows_utility_cursor_buffer.h" />
+    <ClInclude Include="src\test\test_windows_utility_base.h" />
+    <ClInclude Include="src\test\test_windows_utility_fill.h" />
     <ClInclude Include="src\version_viewer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -1,28 +1,28 @@
-#include "Menu_WindowUtility.h"
+#include "menu_windows_utility.h"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "test_window_utility_base.h"
-#include "test_window_utility_cursor_buffer.h"
-#include "test_window_utility_fill.h"
+#include "test_windows_utility_base.h"
+#include "test_windows_utility_cursor_buffer.h"
+#include "test_windows_utility_fill.h"
 
 #include "menu_root.h"
 
-r2tm::TitleFunctionT Menu_WindowUtility::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_WindowsUtility::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "Menu : Window Utility";
+		return "Menu : Windows Utility";
 	};
 }
-r2tm::DescriptionFunctionT Menu_WindowUtility::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_WindowsUtility::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2tm::WriteFunctionT Menu_WindowUtility::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_WindowsUtility::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

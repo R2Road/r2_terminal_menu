@@ -1,4 +1,4 @@
-#include "test_window_utility_cursor_buffer.h"
+#include "test_windows_utility_cursor_buffer.h"
 
 #include <conio.h> // _kbhit(), _getch()
 
@@ -12,7 +12,7 @@ namespace test_window_utility_cursor_buffer
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : Move Cursor With Clear Buffer";
+			return "WIndows Utility : Move Cursor With Clear Buffer";
 		};
 	}
 	r2tm::DoFunctionT MoveCursorWithClearBuffer::GetDoFunction() const

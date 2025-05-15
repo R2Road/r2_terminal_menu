@@ -48,17 +48,17 @@
     <ClCompile Include="src\test\test_inspector_source.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\Menu_WindowUtility.cpp">
-      <Filter>test\window_utility</Filter>
+    <ClCompile Include="src\test\menu_windows_utility.cpp">
+      <Filter>test\windows_utility</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_window_utility_cursor_buffer.cpp">
-      <Filter>test\window_utility</Filter>
+    <ClCompile Include="src\test\test_windows_utility_cursor_buffer.cpp">
+      <Filter>test\windows_utility</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_window_utility_base.cpp">
-      <Filter>test\window_utility</Filter>
+    <ClCompile Include="src\test\test_windows_utility_base.cpp">
+      <Filter>test\windows_utility</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_window_utility_fill.cpp">
-      <Filter>test\window_utility</Filter>
+    <ClCompile Include="src\test\test_windows_utility_fill.cpp">
+      <Filter>test\windows_utility</Filter>
     </ClCompile>
     <ClCompile Include="src\r2tm\r2tm_CacheCleaner.cpp">
       <Filter>r2tm</Filter>
@@ -157,17 +157,17 @@
     <ClInclude Include="src\test\test_inspector_source.h">
       <Filter>test\inspector</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\Menu_WindowUtility.h">
-      <Filter>test\window_utility</Filter>
+    <ClInclude Include="src\test\menu_windows_utility.h">
+      <Filter>test\windows_utility</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\test_window_utility_cursor_buffer.h">
-      <Filter>test\window_utility</Filter>
+    <ClInclude Include="src\test\test_windows_utility_cursor_buffer.h">
+      <Filter>test\windows_utility</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\test_window_utility_base.h">
-      <Filter>test\window_utility</Filter>
+    <ClInclude Include="src\test\test_windows_utility_base.h">
+      <Filter>test\windows_utility</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\test_window_utility_fill.h">
-      <Filter>test\window_utility</Filter>
+    <ClInclude Include="src\test\test_windows_utility_fill.h">
+      <Filter>test\windows_utility</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_CacheCleaner.h">
       <Filter>r2tm</Filter>
@@ -211,9 +211,6 @@
     <Filter Include="test\inspector">
       <UniqueIdentifier>{775abd40-0071-4ba5-a20d-54d27916885a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="test\window_utility">
-      <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="test\stop_watch">
       <UniqueIdentifier>{4858afea-8455-4f36-97f5-210e8a114dfa}</UniqueIdentifier>
     </Filter>
@@ -225,6 +222,9 @@
     </Filter>
     <Filter Include="test\leave_action">
       <UniqueIdentifier>{b88dc298-d6fd-4a09-94b8-d60173630fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\windows_utility">
+      <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

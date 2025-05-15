@@ -1,4 +1,4 @@
-#include "test_window_utility_base.h"
+#include "test_windows_utility_base.h"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
@@ -10,7 +10,7 @@ namespace test_window_utility_base
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : CursorPoint - Operator";
+			return "WIndows Utility : CursorPoint - Operator";
 		};
 	}
 	r2tm::DoFunctionT CursorPointOperator::GetDoFunction() const

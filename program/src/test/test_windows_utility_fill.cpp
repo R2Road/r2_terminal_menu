@@ -1,4 +1,4 @@
-#include "test_window_utility_fill.h"
+#include "test_windows_utility_fill.h"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
@@ -10,7 +10,7 @@ namespace test_window_utility_fill
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : FillColor";
+			return "WIndows Utility : FillColor";
 		};
 	}
 	r2tm::DoFunctionT FillColor::GetDoFunction() const
@@ -65,7 +65,7 @@ namespace test_window_utility_fill
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : FillCharacter";
+			return "WIndows Utility : FillCharacter";
 		};
 	}
 	r2tm::DoFunctionT FillCharacter::GetDoFunction() const
@@ -102,7 +102,7 @@ namespace test_window_utility_fill
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : FillString 1";
+			return "WIndows Utility : FillString 1";
 		};
 	}
 	r2tm::DoFunctionT FillString_1::GetDoFunction() const
@@ -166,7 +166,7 @@ namespace test_window_utility_fill
 	{
 		return []()->const char*
 		{
-			return "WIndow Utility : FillString 2";
+			return "WIndows Utility : FillString 2";
 		};
 	}
 	r2tm::DoFunctionT FillString_2::GetDoFunction() const
