@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\RootMenu.cpp" />
+    <ClCompile Include="src\menu_root.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Director.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
@@ -90,7 +90,7 @@
     <ClCompile Include="src\version_viewer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\RootMenu.h" />
+    <ClInclude Include="src\menu_root.h" />
     <ClInclude Include="src\r2tm\r2tm_ColorModifier.h">
       <Filter>r2tm</Filter>
     </ClInclude>

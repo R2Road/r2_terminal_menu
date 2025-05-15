@@ -1,4 +1,4 @@
-#include "RootMenu.h"
+#include "menu_root.h"
 
 #include <string>
 
@@ -20,7 +20,7 @@
 
 #include "version_viewer.h"
 
-r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
+r2tm::TitleFunctionT MenuRoot::GetTitleFunction() const
 {
 	return []()->const char*
 	{
@@ -35,7 +35,7 @@ r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT MenuRoot::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
@@ -51,7 +51,7 @@ r2tm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
+r2tm::WriteFunctionT MenuRoot::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

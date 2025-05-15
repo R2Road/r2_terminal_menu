@@ -8,7 +8,7 @@
 #include "test_inspector_file.h"
 #include "test_inspector_source.h"
 
-#include "RootMenu.h"
+#include "menu_root.h"
 
 r2tm::TitleFunctionT Menu_Inspector::GetTitleFunction() const
 {
@@ -70,6 +70,6 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, MenuRoot() );
 	};
 }

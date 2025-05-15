@@ -6,7 +6,7 @@
 #include "test_window_utility_cursor_buffer.h"
 #include "test_window_utility_fill.h"
 
-#include "RootMenu.h"
+#include "menu_root.h"
 
 r2tm::TitleFunctionT Menu_WindowUtility::GetTitleFunction() const
 {
@@ -45,6 +45,6 @@ r2tm::WriteFunctionT Menu_WindowUtility::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, MenuRoot() );
 	};
 }

@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "RootMenu.h"
+#include "menu_root.h"
 
 #include "test_leave_action.h"
 
@@ -42,6 +42,6 @@ r2tm::WriteFunctionT Menu_LeaveAction::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, MenuRoot() );
 	};
 }

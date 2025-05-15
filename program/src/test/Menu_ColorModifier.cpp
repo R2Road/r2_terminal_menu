@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "RootMenu.h"
+#include "menu_root.h"
 
 #include "test_color_modifier.h"
 
@@ -33,6 +33,6 @@ r2tm::WriteFunctionT Menu_ColorModifier::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, RootMenu() );
+		mp->AddMenu( 27, MenuRoot() );
 	};
 }

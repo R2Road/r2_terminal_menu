@@ -6,7 +6,7 @@
 #include "r2tm/r2tm_VersionInfo.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-#include "RootMenu.h"
+#include "menu_root.h"
 
 int main()
 {
@@ -29,7 +29,7 @@ int main()
 	// Setup
 	//
 	r2tm::Director director;
-	director.Setup( RootMenu() );
+	director.Setup( MenuRoot() );
 
 	//
 	// Process
