@@ -1,4 +1,4 @@
-#include "Menu_Test.h"
+#include "menu_test.h"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
@@ -6,21 +6,21 @@
 
 #include "test_empty.h"
 
-r2tm::TitleFunctionT Menu_Test::GetTitleFunction() const
+r2tm::TitleFunctionT MenuTest::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "Menu Test";
+		return "Menu : Test";
 	};
 }
-r2tm::DescriptionFunctionT Menu_Test::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT MenuTest::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2tm::WriteFunctionT Menu_Test::GetWriteFunction() const
+r2tm::WriteFunctionT MenuTest::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

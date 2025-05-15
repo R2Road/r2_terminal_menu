@@ -10,7 +10,7 @@
 #include "test/test_key.h"
 #include "test/test_stop_watch.h"
 
-#include "test/Menu_Test.h"
+#include "test/menu_test.h"
 #include "test/Menu_CacheCleaner.h"
 #include "test/Menu_ColorModifier.h"
 #include "test/Menu_Inspector.h"
@@ -92,7 +92,7 @@ r2tm::WriteFunctionT MenuRoot::GetWriteFunction() const
 
 
 		mp->AddMessage( "# Test¸¦ r2tm::iMenu °´Ã¼·Î ¹­¾îº¸±â", r2tm::eColor::FG_LightRed );
-		mp->AddMenu( '6', Menu_Test() );
+		mp->AddMenu( '6', MenuTest() );
 
 
 
