@@ -81,7 +81,7 @@
     <ClCompile Include="src\test\Menu_ColorModifier.cpp">
       <Filter>test\color_modifier</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\Menu_LeaveAction.cpp">
+    <ClCompile Include="src\test\menu_leave_action.cpp">
       <Filter>test\leave_action</Filter>
     </ClCompile>
     <ClCompile Include="src\test\test_leave_action.cpp">
@@ -193,7 +193,7 @@
     <ClInclude Include="src\test\Menu_ColorModifier.h">
       <Filter>test\color_modifier</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\Menu_LeaveAction.h">
+    <ClInclude Include="src\test\menu_leave_action.h">
       <Filter>test\leave_action</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_leave_action.h">

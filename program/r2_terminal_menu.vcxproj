@@ -29,7 +29,7 @@
     <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp" />
     <ClCompile Include="src\menu_root.cpp" />
     <ClCompile Include="src\test\Menu_ColorModifier.cpp" />
-    <ClCompile Include="src\test\Menu_LeaveAction.cpp" />
+    <ClCompile Include="src\test\menu_leave_action.cpp" />
     <ClCompile Include="src\test\menu_test.cpp" />
     <ClCompile Include="src\test\Menu_CacheCleaner.cpp" />
     <ClCompile Include="src\test\Menu_Inspector.cpp" />
@@ -69,7 +69,7 @@
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\menu_root.h" />
     <ClInclude Include="src\test\Menu_ColorModifier.h" />
-    <ClInclude Include="src\test\Menu_LeaveAction.h" />
+    <ClInclude Include="src\test\menu_leave_action.h" />
     <ClInclude Include="src\test\menu_test.h" />
     <ClInclude Include="src\test\Menu_CacheCleaner.h" />
     <ClInclude Include="src\test\Menu_Inspector.h" />
