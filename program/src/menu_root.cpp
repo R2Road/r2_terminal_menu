@@ -12,7 +12,7 @@
 
 #include "test/menu_test.h"
 #include "test/Menu_CacheCleaner.h"
-#include "test/Menu_ColorModifier.h"
+#include "test/menu_color_modifier.h"
 #include "test/menu_inspector.h"
 #include "test/menu_leave_action.h"
 #include "test/menu_stop_watch.h"
