@@ -7,14 +7,14 @@
 
 namespace test_inspector_file
 {
-	r2tm::TitleFunctionT File::GetTitleFunction() const
+	r2tm::TitleFunctionT File_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : File";
+			return "Inspector : File 1";
 		};
 	}
-	r2tm::DoFunctionT File::GetDoFunction() const
+	r2tm::DoFunctionT File_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
@@ -34,7 +34,7 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_FILE( p.string().c_str() );
+				PROCESS_MAIN( OUTPUT_FILE( p.string().c_str() ) );
 			}
 
 			LS();
@@ -49,7 +49,36 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_FILE( p.string().c_str() );
+				PROCESS_MAIN( OUTPUT_FILE( p.string().c_str() ) );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT File_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : File 2";
+		};
+	}
+	r2tm::DoFunctionT File_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "OUTPUT_FILE : with __FILE__" );
+
+			LS();
+
+			{
+				PROCESS_MAIN( OUTPUT_FILE( __FILE__ ) );
 			}
 
 			LS();
@@ -148,6 +177,35 @@ namespace test_inspector_file
 			{
 				OUTPUT_NOTE( "min > max 여도 문제 없다." );
 				OUTPUT_NOTE( "File 내용은 아무것도 출력되지 않는다." );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT FileRange_3::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : File Range 3";
+		};
+	}
+	r2tm::DoFunctionT FileRange_3::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "OUTPUT_FILE_RANGE : with __FILE__" );
+
+			LS();
+
+			{
+				PROCESS_MAIN( OUTPUT_FILE_RANGE( __FILE__, 5, 10 ) );
 			}
 
 			LS();
