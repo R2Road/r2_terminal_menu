@@ -235,7 +235,13 @@ namespace r2tm
 	{
 		int ret = 0;
 
-		LPFN_GetLogicalProcessorInformation glpi = ( LPFN_GetLogicalProcessorInformation )GetProcAddress( GetModuleHandle( TEXT( "kernel32" ) ), "GetLogicalProcessorInformation" );
+		const auto handle = GetModuleHandle( TEXT( "kernel32" ) );
+		if( NULL == handle )
+		{
+			return ret;
+		}
+
+		LPFN_GetLogicalProcessorInformation glpi = ( LPFN_GetLogicalProcessorInformation )GetProcAddress( handle, "GetLogicalProcessorInformation" );
 
 		if( nullptr == glpi )
 			return ret;
