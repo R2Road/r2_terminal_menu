@@ -242,9 +242,10 @@ namespace r2tm
 		}
 
 		LPFN_GetLogicalProcessorInformation glpi = ( LPFN_GetLogicalProcessorInformation )GetProcAddress( handle, "GetLogicalProcessorInformation" );
-
-		if( nullptr == glpi )
+		if( NULL == glpi )
+		{
 			return ret;
+		}
 
 		//
 		// 첫 인자로 0을 주면 정보를 얻어오기 위해 필요한 메모리 크기를 반환 한다.
