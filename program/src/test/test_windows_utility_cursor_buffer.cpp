@@ -44,17 +44,17 @@ namespace test_window_utility_cursor_buffer
 			LS();
 
 			std::cout << "[Any Key] Move Cursor 2 with Clear Buffer";
-			_getch();
+			WAIT_ANY_KEY;
 
 			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_2 ) );
 
 			std::cout << "[Any Key] Move Cursor 1 with Clear Buffer";
-			_getch();
+			WAIT_ANY_KEY;
 
 			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_1.x, cursor_point_1.y ) );
 
 			std::cout << "[Any Key] End";
-			_getch();
+			WAIT_ANY_KEY;
 
 			return r2tm::eDoLeaveAction::None;
 		};

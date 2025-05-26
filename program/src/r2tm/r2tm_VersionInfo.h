@@ -26,9 +26,9 @@ namespace r2tm
 
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
-		const char VersionNumber_3 = '1';
-		const char VersionNumber_4 = '4';
-		const char VersionNumber_5 = '2';
+		const char VersionNumber_3 = '2';
+		const char VersionNumber_4 = '0';
+		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
 
@@ -51,6 +51,7 @@ namespace r2tm
 			"\n"	"[o] " "update class         : enum r2tm::eColor > enum class Àû¿ë"
 			"\n"	"[o] " "add method           : r2tm::ColorModifier > GetColor"
 			"\n"	"[o] " "add method           : r2tm::StopWatch > GetAccumulateTime, GetAccumulateCount"
+			"\n"	"[o] " "update inspector     : Add - WAIT_ANY_KEY"
 			"\n"	"[ ] " "..."
 		;
 
