@@ -27,8 +27,8 @@ namespace r2tm
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
 		const char VersionNumber_3 = '2';
-		const char VersionNumber_4 = '0';
-		const char VersionNumber_5 = '1';
+		const char VersionNumber_4 = '1';
+		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
 
@@ -52,6 +52,7 @@ namespace r2tm
 			"\n"	"[o] " "add method           : r2tm::ColorModifier > GetColor"
 			"\n"	"[o] " "add method           : r2tm::StopWatch > GetAccumulateTime, GetAccumulateCount"
 			"\n"	"[o] " "update inspector     : Add - WAIT_ANY_KEY"
+			"\n"	"[o] " "update inspector     : r2tm::PrintBinary : 매개 변수 타입 변경 : 값 > 참조"
 			"\n"	"[ ] " "..."
 		;
 
@@ -131,6 +132,7 @@ namespace r2tm
 			"\n"	"[o] " "Director, Menu, Item"
 			"\n"	"[o] " "Inspector"
 			"\n"	"[o] " "Window Utility"
+			"\n"	"[o] " "Color Modifier"
 			"\n"	"[o] " "Color Modifier"
 		;
 
