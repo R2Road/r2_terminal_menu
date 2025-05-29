@@ -2,6 +2,7 @@
 
 #include <conio.h> // _getch
 
+#include "r2tm/r2tm_ColorModifier.h"
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"
@@ -22,8 +23,8 @@ namespace test_key
 			LS(); 
 			
 			{
-				OUTPUT_SUBJECT( "[ESC] End" );
-				OUTPUT_SUBJECT( "[Any Key] ..." );
+				OUTPUT_SUBJECT( "[   ESC   ] End" );
+				OUTPUT_SUBJECT( "[ Any Key ] ..." );
 			}
 
 			LS();
@@ -48,7 +49,7 @@ namespace test_key
 
 					input = _getch();
 
-					std::cout << "Key : " << input << r2tm::linefeed;
+					std::cout << "Key : " << clm( r2tm::eColor::FG_LightYellow ) << input << clm() << r2tm::linefeed;
 
 				} while( 27 != input ); // ESC
 			}
