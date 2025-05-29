@@ -4,6 +4,7 @@
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_WindowsUtility.h"
 
 namespace test_key
 {
@@ -27,16 +28,30 @@ namespace test_key
 
 			LS();
 
-			bool process = true;
-			int input = 0;
-			do
 			{
-				input = _getch();
+				const auto start_point = r2tm::WindowsUtility::GetCursorPoint();
+				r2tm::WindowsUtility::CursorPoint current_point;
 
-				std::cout << "Key : " << input << r2tm::linefeed;
+				const short line_limit = start_point.y + 30;
 
-				process = ( 27 != input ); // ESC
-			} while( process );
+				int input = 0;
+				do
+				{
+
+					current_point = r2tm::WindowsUtility::GetCursorPoint();
+					if( line_limit < current_point.y )
+					{
+						r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( start_point );
+					}
+
+					std::cout << "> ";
+
+					input = _getch();
+
+					std::cout << "Key : " << input << r2tm::linefeed;
+
+				} while( 27 != input ); // ESC
+			}
 
 			LS();
 
