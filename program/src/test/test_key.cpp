@@ -2,6 +2,7 @@
 
 #include <conio.h> // _getch
 
+#include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
 namespace test_key
@@ -19,8 +20,10 @@ namespace test_key
 		{
 			LS(); 
 			
-			std::cout << "[ESC] End" << r2tm::linefeed;
-			std::cout << "[Any Key] ..." << r2tm::linefeed;
+			{
+				OUTPUT_SUBJECT( "[ESC] End" );
+				OUTPUT_SUBJECT( "[Any Key] ..." );
+			}
 
 			LS();
 
