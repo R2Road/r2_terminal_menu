@@ -11,7 +11,14 @@ namespace test_inspector_base
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Expect : public r2tm::iItem
+	class Expect_1 : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
+	class Expect_2 : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

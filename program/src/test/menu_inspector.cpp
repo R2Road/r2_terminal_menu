@@ -29,10 +29,11 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* mp )
 	{
 		mp->AddItem( '1', test_inspector_base::Basic() );
-		mp->AddItem( '2', test_inspector_base::Expect() );
-		mp->AddItem( '3', test_inspector_base::Size() );
-		mp->AddItem( '4', test_inspector_base::Code() );
-		mp->AddItem( '5', test_inspector_base::String_Note_Subject_Comment() );
+		mp->AddItem( '2', test_inspector_base::Expect_1() );
+		mp->AddItem( '3', test_inspector_base::Expect_2() );
+		mp->AddItem( '4', test_inspector_base::Size() );
+		mp->AddItem( '5', test_inspector_base::Code() );
+		mp->AddItem( '6', test_inspector_base::String_Note_Subject_Comment() );
 
 
 

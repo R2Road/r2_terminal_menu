@@ -68,14 +68,14 @@ namespace test_inspector_base
 
 
 
-	r2tm::TitleFunctionT Expect::GetTitleFunction() const
+	r2tm::TitleFunctionT Expect_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Expect";
+			return "Inspector : Expect 1";
 		};
 	}
-	r2tm::DoFunctionT Expect::GetDoFunction() const
+	r2tm::DoFunctionT Expect_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
@@ -121,6 +121,43 @@ namespace test_inspector_base
 
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
+
+			}
+#pragma warning( pop )
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Expect_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Expect 2";
+		};
+	}
+	r2tm::DoFunctionT Expect_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+#pragma warning( push )
+#pragma warning( disable : 4127 )
+			{
+				EXPECT_EP_EQ( 0.00001f, 0.00001f );
+				EXPECT_EP_EQ( 0.00001f, 0.000011f );
+				EXPECT_EP_EQ( 0.00001f, 0.00002f );
+
+				SS();
+
+				EXPECT_EP_NE( 0.00001f, 0.00002f );
+				EXPECT_EP_NE( 0.00001f, 0.000021f );
+				EXPECT_EP_NE( 0.00001f, 0.00001f );
 
 			}
 #pragma warning( pop )
