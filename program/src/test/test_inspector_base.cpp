@@ -156,7 +156,7 @@ namespace test_inspector_base
 				SS();
 
 				EXPECT_EP_NE( 0.00001f, 0.00002f );
-				EXPECT_EP_NE( 0.00001f, 0.000021f );
+				EXPECT_EP_NE( 0.00001f, 0.000011f );
 				EXPECT_EP_NE( 0.00001f, 0.00001f );
 
 			}
