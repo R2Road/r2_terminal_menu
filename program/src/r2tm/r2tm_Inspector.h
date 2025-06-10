@@ -145,6 +145,10 @@ inline bool epsilon_equal( const float v1, const float v2 )
 {
 	return ( 0.00001f > std::abs( v1 - v2 ) );
 }
+inline bool epsilon_equal( const double v1, const double v2 )
+{
+	return ( 0.0000000001 > std::abs( v1 - v2 ) );
+}
 
 #define	EXPECT_EP_EQ( condition_1, condition_2 )																	\
 do {																											\

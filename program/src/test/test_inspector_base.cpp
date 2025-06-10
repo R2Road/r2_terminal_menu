@@ -160,6 +160,21 @@ namespace test_inspector_base
 				EXPECT_EP_NE( 0.00001f, 0.00001f );
 
 			}
+
+			LS();
+
+			{
+				EXPECT_EP_EQ( 0.0000000001, 0.0000000001 );
+				EXPECT_EP_EQ( 0.0000000001, 0.00000000011 );
+				EXPECT_EP_EQ( 0.0000000001, 0.0000000002 );
+
+				SS();
+
+				EXPECT_EP_NE( 0.0000000001, 0.0000000002 );
+				EXPECT_EP_NE( 0.0000000001, 0.00000000011 );
+				EXPECT_EP_NE( 0.0000000001, 0.0000000001 );
+
+			}
 #pragma warning( pop )
 
 			LS();
