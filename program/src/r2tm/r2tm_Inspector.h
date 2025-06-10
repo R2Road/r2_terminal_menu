@@ -150,9 +150,9 @@ inline bool epsilon_equal( const double v1, const double v2 )
 	return ( 0.0000000001 > std::abs( v1 - v2 ) );
 }
 
-#define	EXPECT_EP_EQ( condition_1, condition_2 )																	\
+#define	EXPECT_EP_EQ( condition_1, condition_2 )																\
 do {																											\
-	if( epsilon_equal( condition_1, condition_2 ) )																	\
+	if( epsilon_equal( condition_1, condition_2 ) )																\
 	{																											\
 		printf( "\x1B[92m" "[PASS]" "\033[0m" " EXPECT_EQ( %s == %s )\n", #condition_1, #condition_2 );			\
 	}																											\
@@ -165,9 +165,9 @@ do {																											\
 	}																											\
 } while( false )
 
-#define	EXPECT_EP_NE( condition_1, condition_2 )																	\
+#define	EXPECT_EP_NE( condition_1, condition_2 )																\
 do {																											\
-	if( !epsilon_equal( condition_1, condition_2 ) )																	\
+	if( !epsilon_equal( condition_1, condition_2 ) )															\
 	{																											\
 		printf( "\x1B[94m" "[PASS]" "\033[0m" " EXPECT_NE( %s != %s )\n", #condition_1, #condition_2 );			\
 	}																											\
