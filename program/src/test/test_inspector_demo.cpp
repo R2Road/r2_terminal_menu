@@ -5,14 +5,14 @@
 
 namespace test_inspector_demo
 {
-	r2tm::TitleFunctionT Demo::GetTitleFunction() const
+	r2tm::TitleFunctionT Demo_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Demo";
+			return "Inspector : Demo 1";
 		};
 	}
-	r2tm::DoFunctionT Demo::GetDoFunction() const
+	r2tm::DoFunctionT Demo_1::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

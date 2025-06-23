@@ -65,7 +65,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'z', test_inspector_demo::Demo());
+		mp->AddItem( 'z', test_inspector_demo::Demo_1());
 		mp->AddItem( 'x', test_inspector_demo::Demo_2());
 
 

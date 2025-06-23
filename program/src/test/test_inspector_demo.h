@@ -4,7 +4,7 @@
 
 namespace test_inspector_demo
 {
-	class Demo : public r2tm::iItem
+	class Demo_1 : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;
