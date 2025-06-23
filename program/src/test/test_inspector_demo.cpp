@@ -103,7 +103,7 @@ namespace test_inspector_demo
 				OUTPUT_NOTE( "인자가 2개인 템플릿의 선언에는 Inspector 의 사용이 안된다. C4002" );
 			}
 
-			LS();
+			SS();
 
 			{
 				OUTPUT_SUBJECT( "대안 1 : using" );
@@ -117,7 +117,7 @@ namespace test_inspector_demo
 				a.first = 0;
 			}
 
-			LS();
+			SS();
 
 			{
 				OUTPUT_SUBJECT( "대안 2 : OUTPUT_SOURCE" );
