@@ -69,6 +69,25 @@ namespace test_inspector_demo
 
 			LS();
 
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Demo_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Demo 2";
+		};
+	}
+	r2tm::DoFunctionT Demo_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
 			{
 				OUTPUT_SUBJECT( "안되는 것" );
 
@@ -82,6 +101,35 @@ namespace test_inspector_demo
 				LF();
 
 				OUTPUT_NOTE( "인자가 2개인 템플릿의 선언에는 Inspector 의 사용이 안된다. C4002" );
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "대안 1 : using" );
+
+				LF();
+
+				using P = std::pair<int, int>;
+				DECLARATION_MAIN( P a );
+
+				// warning 제거용 더미 코드
+				a.first = 0;
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "대안 2 : OUTPUT_SOURCE" );
+
+				LF();
+
+				OUTPUT_SOURCE_READY_N_BEGIN;
+				std::pair<int, int> a;
+				OUTPUT_SOURCE_END;
+
+				// warning 제거용 더미 코드
+				a.first = 0;
 			}
 
 			LS();
