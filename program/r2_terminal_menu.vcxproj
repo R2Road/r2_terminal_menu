@@ -22,6 +22,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\r2tm\r2tm_CacheCleaner.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Director.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_Input.cpp" />
     <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp" />
     <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp" />
     <ClCompile Include="src\r2tm\r2tm_PrintFile.cpp" />
@@ -59,6 +60,7 @@
     <ClInclude Include="src\r2tm\r2tm_Director.h" />
     <ClInclude Include="src\r2tm\r2tm_iItem.h" />
     <ClInclude Include="src\r2tm\r2tm_iMenu.h" />
+    <ClInclude Include="src\r2tm\r2tm_Input.h" />
     <ClInclude Include="src\r2tm\r2tm_Inspector.h" />
     <ClInclude Include="src\r2tm\r2tm_MenuConstant.h" />
     <ClInclude Include="src\r2tm\r2tm_MenuProcessor.h" />

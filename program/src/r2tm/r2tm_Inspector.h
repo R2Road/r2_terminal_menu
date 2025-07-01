@@ -3,6 +3,7 @@
 #include <iostream>
 #include <stdint.h>
 
+#include "r2tm_Input.h"
 #include "r2tm_PrintBinary.h"
 #include "r2tm_PrintFile.h"
 
@@ -340,9 +341,6 @@ do {																						\
 //
 // INPUT
 //
-#define WAIT_ANY_KEY	    																\
-do {																						\
-	while( _getch() ) break;																\
-} while( false )
+#define WAIT_ANY_KEY	  ( r2tm::WaitAnyKey() )
 
 #define KB_HIT            ( _kbhit() )

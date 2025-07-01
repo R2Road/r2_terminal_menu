@@ -91,6 +91,9 @@
     <ClCompile Include="src\test\test_inspector_input.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
+    <ClCompile Include="src\r2tm\r2tm_Input.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\menu_root.h" />
@@ -205,6 +208,9 @@
     <ClInclude Include="src\version_viewer.h" />
     <ClInclude Include="src\test\test_inspector_input.h">
       <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\r2tm\r2tm_Input.h">
+      <Filter>r2tm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
