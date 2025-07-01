@@ -35,6 +35,7 @@
     <ClCompile Include="src\test\menu_inspector.cpp" />
     <ClCompile Include="src\test\menu_stop_watch.cpp" />
     <ClCompile Include="src\test\menu_windows_utility.cpp" />
+    <ClCompile Include="src\test\test_inspector_input.cpp" />
     <ClCompile Include="src\test\test_leave_action.cpp" />
     <ClCompile Include="src\test\test_cache_cleaner.cpp" />
     <ClCompile Include="src\test\test_color_modifier.cpp" />
@@ -75,6 +76,7 @@
     <ClInclude Include="src\test\menu_inspector.h" />
     <ClInclude Include="src\test\menu_stop_watch.h" />
     <ClInclude Include="src\test\menu_windows_utility.h" />
+    <ClInclude Include="src\test\test_inspector_input.h" />
     <ClInclude Include="src\test\test_leave_action.h" />
     <ClInclude Include="src\test\test_cache_cleaner.h" />
     <ClInclude Include="src\test\test_color_modifier.h" />

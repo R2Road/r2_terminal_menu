@@ -6,6 +6,7 @@
 #include "test_inspector_binary.h"
 #include "test_inspector_demo.h"
 #include "test_inspector_file.h"
+#include "test_inspector_input.h"
 #include "test_inspector_source.h"
 
 #include "menu_root.h"
@@ -44,6 +45,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'q', test_inspector_binary::Binary() );
 		mp->AddItem( 'w', test_inspector_binary::Binaries_1() );
 		mp->AddItem( 'e', test_inspector_binary::Binaries_2() );
+		mp->AddItem( 'r', test_inspector_input::Wait_Any_Key() );
 
 
 

@@ -88,6 +88,9 @@
       <Filter>test\leave_action</Filter>
     </ClCompile>
     <ClCompile Include="src\version_viewer.cpp" />
+    <ClCompile Include="src\test\test_inspector_input.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\menu_root.h" />
@@ -200,6 +203,9 @@
       <Filter>test\leave_action</Filter>
     </ClInclude>
     <ClInclude Include="src\version_viewer.h" />
+    <ClInclude Include="src\test\test_inspector_input.h">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
