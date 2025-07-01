@@ -343,4 +343,4 @@ do {																						\
 //
 #define WAIT_ANY_KEY	  ( r2tm::WaitAnyKey() )
 
-#define KB_HIT            ( _kbhit() )
+#define KB_HIT            ( r2tm::KeyboardHit() )

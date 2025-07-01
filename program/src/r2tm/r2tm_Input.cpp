@@ -11,4 +11,9 @@ namespace r2tm
 		_getch();
 #pragma warning( pop )
 	}
+
+	int KeyboardHit()
+	{
+		return _kbhit();
+	}
 }
