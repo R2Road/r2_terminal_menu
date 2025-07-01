@@ -26,7 +26,7 @@ namespace r2tm
 
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
-		const char VersionNumber_3 = '4';
+		const char VersionNumber_3 = '5';
 		const char VersionNumber_4 = '0';
 		const char VersionNumber_5 = '0';
 
@@ -55,6 +55,7 @@ namespace r2tm
 			"\n"	"[o] " "update inspector     : r2tm::PrintBinary : 매개 변수 타입 변경 : 값 > 참조"
 			"\n"	"[o] " "update    inspector  : Add - EXPECT_EP_EQ, EXPECT_EP_NE"
 			"\n"	"[o] " "update    inspector  : Fix - r2tm::PrintFile - GetLine 함수 내부 버퍼 크기 400으로 증가 - 라인 누락 버그 해결"
+			"\n"	"[o] " "update inspector     : Add - KB_HIT"
 			"\n"	"[ ] " "..."
 		;
 

@@ -344,3 +344,5 @@ do {																						\
 do {																						\
 	while( _getch() ) break;																\
 } while( false )
+
+#define KB_HIT            ( _kbhit() )
