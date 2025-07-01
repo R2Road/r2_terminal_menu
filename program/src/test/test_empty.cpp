@@ -1,7 +1,5 @@
 #include "test_empty.h"
 
-#include <conio.h> // _getch
-
 #include "r2tm/r2tm_ostream.h"
 
 namespace test_empty

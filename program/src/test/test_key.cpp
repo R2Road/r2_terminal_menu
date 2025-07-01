@@ -1,7 +1,5 @@
 #include "test_key.h"
 
-#include <conio.h> // _getch
-
 #include "r2tm/r2tm_ColorModifier.h"
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
@@ -47,7 +45,7 @@ namespace test_key
 
 					std::cout << "> ";
 
-					input = _getch();
+					input = GET_KEY;
 
 					std::cout << "Key : " << clm( r2tm::eColor::FG_LightYellow ) << input << clm() << r2tm::linefeed;
 

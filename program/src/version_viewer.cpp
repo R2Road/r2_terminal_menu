@@ -1,7 +1,5 @@
 #include "version_viewer.h"
 
-#include <conio.h>
-
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"
@@ -43,7 +41,7 @@ namespace version_viewer
 
 					LS();
 
-					key = _getch();
+					key = GET_KEY;
 
 					switch( key )
 					{

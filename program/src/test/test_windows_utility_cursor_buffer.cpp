@@ -1,7 +1,5 @@
 #include "test_windows_utility_cursor_buffer.h"
 
-#include <conio.h> // _kbhit(), _getch()
-
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"

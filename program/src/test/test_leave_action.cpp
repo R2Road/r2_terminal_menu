@@ -1,8 +1,7 @@
 #include "test_leave_action.h"
 
-#include <conio.h> // _getch
-
 #include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_Inspector.h"
 
 namespace test_leave_action
 {
@@ -23,7 +22,7 @@ namespace test_leave_action
 
 			do
 			{
-			} while( 27 != _getch() );
+			} while( 27 != GET_KEY );
 
 			LS();
 
@@ -50,7 +49,7 @@ namespace test_leave_action
 
 			do
 			{
-			} while( 27 != _getch() );
+			} while( 27 != GET_KEY );
 
 			LS();
 
@@ -77,7 +76,7 @@ namespace test_leave_action
 
 			do
 			{
-			} while( 27 != _getch() );
+			} while( 27 != GET_KEY );
 
 			LS();
 
