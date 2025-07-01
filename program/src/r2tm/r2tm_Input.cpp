@@ -12,6 +12,11 @@ namespace r2tm
 #pragma warning( pop )
 	}
 
+	int GetKey()
+	{
+		return _getch();
+	}
+
 	int KeyboardHit()
 	{
 		return _kbhit();

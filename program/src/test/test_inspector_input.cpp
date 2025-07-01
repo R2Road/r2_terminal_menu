@@ -35,6 +35,40 @@ namespace test_inspector_input
 
 
 
+	r2tm::TitleFunctionT GetKey::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Input : GET_KEY";
+		};
+	}
+	r2tm::DoFunctionT GetKey::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "1 누르면 종료" );
+
+				do
+				{
+					if( '1' == GET_KEY )
+					{
+						break;
+					}
+
+				} while( true );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT Keyboard_Hit::GetTitleFunction() const
 	{
 		return []()->const char*

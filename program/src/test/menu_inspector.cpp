@@ -46,7 +46,8 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'w', test_inspector_binary::Binaries_1() );
 		mp->AddItem( 'e', test_inspector_binary::Binaries_2() );
 		mp->AddItem( 'r', test_inspector_input::Wait_Any_Key() );
-		mp->AddItem( 't', test_inspector_input::Keyboard_Hit() );
+		mp->AddItem( 't', test_inspector_input::GetKey() );
+		mp->AddItem( 'y', test_inspector_input::Keyboard_Hit() );
 
 
 

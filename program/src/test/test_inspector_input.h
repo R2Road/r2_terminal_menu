@@ -11,6 +11,13 @@ namespace test_inspector_input
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class GetKey : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Keyboard_Hit : public r2tm::iItem
 	{
 	public:
