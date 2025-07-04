@@ -6,7 +6,7 @@
 # r2_terminal_menu
 
 ## 개괄 | Overview
-- C++ terminal 메뉴 | C++ terminal menu
+- C++ 터미널 메뉴 | C++ terminal menu
 
 
 ## 작업환경 | Environment
