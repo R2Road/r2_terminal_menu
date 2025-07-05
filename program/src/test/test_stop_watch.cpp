@@ -120,9 +120,13 @@ namespace test_stop_watch
 		{
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
+			OUTPUT_SUBJECT( "´©Àû °ú Æò±Õ" );
 
 			LS();
+
+			DECLARATION_MAIN( r2tm::StopWatch s );
+
+			LF();
 
 			OUTPUT_VALUE( s.GetAverageTime() );
 
@@ -149,10 +153,6 @@ namespace test_stop_watch
 				OUTPUT_VALUE( s.GetAverageTime() );
 
 				SS();
-
-				OUTPUT_VALUE( s.GetAverageTime() );
-
-				LF();
 
 				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
 				LF2();
