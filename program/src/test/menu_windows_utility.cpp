@@ -26,7 +26,8 @@ r2tm::WriteFunctionT Menu_WindowsUtility::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
-		mp->AddItem( '1', test_window_utility_base::CursorPointOperator() );
+		mp->AddItem( '1', test_window_utility_base::CursorPointDeclaration() );
+		mp->AddItem( '2', test_window_utility_base::CursorPointOperator() );
 
 		mp->AddLineFeed();
 
