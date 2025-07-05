@@ -120,7 +120,7 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'z', test_key::View() );
+		mp->AddItem( 'z', key_viewer::View() );
 		mp->AddItem( 'x', version_viewer::Viewer() );
 		
 
