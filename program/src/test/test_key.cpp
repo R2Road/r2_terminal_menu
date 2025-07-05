@@ -18,8 +18,8 @@ namespace test_key
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
-			LS(); 
-			
+			LS();
+
 			{
 				OUTPUT_SUBJECT( "[   ESC   ] End" );
 				OUTPUT_SUBJECT( "[ Any Key ] ..." );
@@ -29,9 +29,11 @@ namespace test_key
 
 			{
 				const auto start_point = r2tm::WindowsUtility::GetCursorPoint();
-				r2tm::WindowsUtility::CursorPoint current_point;
-
 				const short line_limit = start_point.y + 30;
+
+				r2tm::WindowsUtility::MoveCursorPoint( start_point.x, line_limit );
+				LS();
+				r2tm::WindowsUtility::MoveCursorPoint( start_point );
 
 				int input = 0;
 				do
@@ -39,8 +41,7 @@ namespace test_key
 
 					input = GET_KEY;
 
-					current_point = r2tm::WindowsUtility::GetCursorPoint();
-					if( line_limit <= current_point.y )
+					if( line_limit <= r2tm::WindowsUtility::GetCursorPoint().y )
 					{
 						r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( start_point );
 					}
