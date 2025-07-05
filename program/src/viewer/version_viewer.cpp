@@ -12,7 +12,7 @@ namespace version_viewer
 	{
 		return []()->const char*
 		{
-			return "Version Viewer";
+			return "Version View";
 		};
 	}
 	r2tm::DoFunctionT Viewer::GetDoFunction() const
