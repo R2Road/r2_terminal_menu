@@ -4,7 +4,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-namespace test_window_utility_base
+namespace test_windows_utility_base
 {
 	r2tm::TitleFunctionT CursorPointDeclaration::GetTitleFunction() const
 	{

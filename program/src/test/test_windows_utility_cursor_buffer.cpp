@@ -4,7 +4,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-namespace test_window_utility_cursor_buffer
+namespace test_windows_utility_cursor_buffer
 {
 	r2tm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{

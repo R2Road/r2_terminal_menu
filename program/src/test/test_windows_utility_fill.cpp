@@ -4,7 +4,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-namespace test_window_utility_fill
+namespace test_windows_utility_fill
 {
 	r2tm::TitleFunctionT FillColor::GetTitleFunction() const
 	{

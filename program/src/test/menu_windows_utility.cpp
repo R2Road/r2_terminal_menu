@@ -26,19 +26,19 @@ r2tm::WriteFunctionT Menu_WindowsUtility::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
-		mp->AddItem( '1', test_window_utility_base::CursorPointDeclaration() );
-		mp->AddItem( '2', test_window_utility_base::CursorPointOperator() );
+		mp->AddItem( '1', test_windows_utility_base::CursorPointDeclaration() );
+		mp->AddItem( '2', test_windows_utility_base::CursorPointOperator() );
 
 		mp->AddLineFeed();
 
-		mp->AddItem( 'q', test_window_utility_cursor_buffer::MoveCursorWithClearBuffer() );
+		mp->AddItem( 'q', test_windows_utility_cursor_buffer::MoveCursorWithClearBuffer() );
 
 		mp->AddLineFeed();
 
-		mp->AddItem( 'a', test_window_utility_fill::FillColor() );
-		mp->AddItem( 's', test_window_utility_fill::FillCharacter() );
-		mp->AddItem( 'd', test_window_utility_fill::FillString_1() );
-		mp->AddItem( 'f', test_window_utility_fill::FillString_2() );
+		mp->AddItem( 'a', test_windows_utility_fill::FillColor() );
+		mp->AddItem( 's', test_windows_utility_fill::FillCharacter() );
+		mp->AddItem( 'd', test_windows_utility_fill::FillString_1() );
+		mp->AddItem( 'f', test_windows_utility_fill::FillString_2() );
 
 
 

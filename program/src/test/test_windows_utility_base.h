@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_iItem.h"
 
-namespace test_window_utility_base
+namespace test_windows_utility_base
 {
 	class CursorPointDeclaration : public r2tm::iItem
 	{
