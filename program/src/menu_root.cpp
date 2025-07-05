@@ -7,7 +7,6 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/test_empty.h"
-#include "test/test_key.h"
 #include "test/test_stop_watch.h"
 
 #include "test/menu_test.h"
@@ -18,7 +17,8 @@
 #include "test/menu_stop_watch.h"
 #include "test/menu_windows_utility.h"
 
-#include "version_viewer.h"
+#include "viewer/key_viewer.h"
+#include "viewer/version_viewer.h"
 
 r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
 {

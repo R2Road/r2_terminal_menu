@@ -27,9 +27,6 @@
     <ClCompile Include="src\test\test_empty.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test_key.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\menu_inspector.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
@@ -87,12 +84,17 @@
     <ClCompile Include="src\test\test_leave_action.cpp">
       <Filter>test\leave_action</Filter>
     </ClCompile>
-    <ClCompile Include="src\version_viewer.cpp" />
     <ClCompile Include="src\test\test_inspector_input.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
     <ClCompile Include="src\r2tm\r2tm_Input.cpp">
       <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\viewer\key_viewer.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\viewer\version_viewer.cpp">
+      <Filter>viewer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -140,9 +142,6 @@
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_empty.h">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_key.h">
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\menu_inspector.h">
@@ -205,12 +204,17 @@
     <ClInclude Include="src\test\test_leave_action.h">
       <Filter>test\leave_action</Filter>
     </ClInclude>
-    <ClInclude Include="src\version_viewer.h" />
     <ClInclude Include="src\test\test_inspector_input.h">
       <Filter>test\inspector</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_Input.h">
       <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\viewer\key_viewer.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\viewer\version_viewer.h">
+      <Filter>viewer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -237,6 +241,9 @@
     </Filter>
     <Filter Include="test\windows_utility">
       <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer">
+      <UniqueIdentifier>{74b14b71-c327-4f94-9cc7-274455d7511c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
