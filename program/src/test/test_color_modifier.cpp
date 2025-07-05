@@ -94,6 +94,16 @@ namespace test_color_modifier
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "Empty" );
+
+				LF();
+
+				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier() << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
+			}
+
+			LS();
+
+			{
 				OUTPUT_SUBJECT( "None" );
 
 				LF();
