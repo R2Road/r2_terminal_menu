@@ -18,7 +18,11 @@ namespace test_leave_action
 		{
 			LS();
 
-			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
+			OUTPUT_SUBJECT( "Action이 반환되면 바로 메뉴 화면으로 복귀" );
+
+			LS();
+
+			OUTPUT_COMMENT( "Press [ESC] Key" );
 
 			do
 			{
@@ -45,7 +49,12 @@ namespace test_leave_action
 		{
 			LS();
 
-			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
+			OUTPUT_SUBJECT( "Action이 반환되면 현재 화면에서 대기" );
+			OUTPUT_SUBJECT( "키를 입력하면 메뉴 화면으로 복귀" );
+
+			LS();
+
+			OUTPUT_COMMENT( "Press [ESC] Key" );
 
 			do
 			{
@@ -72,7 +81,11 @@ namespace test_leave_action
 		{
 			LS();
 
-			std::cout << r2tm::tab2 << "Press [ESC] Key" << r2tm::linefeed;
+			OUTPUT_SUBJECT( "Action이 반환되면 프로그램 종료" );
+
+			LS();
+
+			OUTPUT_COMMENT( "Press [ESC] Key" );
 
 			do
 			{
