@@ -26,16 +26,20 @@ namespace test_color_modifier
 			LS();
 
 			{
-				DECLARATION_MAIN( r2tm::ColorModifier cm );
+				OUTPUT_SUBJECT( "크기" );
 
 				LF();
 
-				OUTPUT_SIZE( cm );
+				OUTPUT_SIZE( r2tm::ColorModifier{} );
 			}
 
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "기본 생성자" );
+
+				LF();
+
 				DECLARATION_MAIN( r2tm::ColorModifier cm );
 
 				LF();
@@ -51,6 +55,10 @@ namespace test_color_modifier
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "인자가 있는 생성자" );
+
+				LF();
+
 				DECLARATION_MAIN( r2tm::eColor c( r2tm::eColor::FG_LightAqua ) );
 				DECLARATION_MAIN( r2tm::ColorModifier cm( c ) );
 
