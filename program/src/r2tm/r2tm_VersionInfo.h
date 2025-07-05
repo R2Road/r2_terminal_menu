@@ -26,7 +26,7 @@ namespace r2tm
 
 		const char VersionNumber_1 = '1';
 		const char VersionNumber_2 = '7';
-		const char VersionNumber_3 = '6';
+		const char VersionNumber_3 = '7';
 		const char VersionNumber_4 = '0';
 		const char VersionNumber_5 = '0';
 
@@ -58,6 +58,7 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : Add - KB_HIT"
 			"\n"	"[o] " "update    inspector  : Input 관련 파일 분리 : r2tm_Input"
 			"\n"	"[o] " "update    inspector  : Add - GET_KEY"
+			"\n"	"[o] " "add       method     : r2tm::WindowsUtility::GetCursorX, GetCursorY"
 			"\n"	"[ ] " "..."
 		;
 

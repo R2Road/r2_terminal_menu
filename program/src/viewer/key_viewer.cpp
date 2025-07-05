@@ -41,7 +41,7 @@ namespace key_viewer
 
 					input = GET_KEY;
 
-					if( line_limit <= r2tm::WindowsUtility::GetCursorPoint().y )
+					if( line_limit <= r2tm::WindowsUtility::GetCursorY() )
 					{
 						r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( start_point );
 					}
