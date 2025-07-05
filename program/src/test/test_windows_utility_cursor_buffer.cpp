@@ -19,39 +19,39 @@ namespace test_window_utility_cursor_buffer
 		{
 			LS();
 
-			DECLARATION_MAIN( const auto cursor_point_1 = r2tm::WindowsUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto p1 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 
 			{
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
+				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
+				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
 			}
 
 			LS();
 
-			DECLARATION_MAIN( const auto cursor_point_2 = r2tm::WindowsUtility::GetCursorPoint() );
+			DECLARATION_MAIN( const auto p2 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 
 			for( int i = 0; 20 > i; ++i )
 			{
-				std::cout << "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" << r2tm::linefeed;
+				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
 			}
 
 			LS();
 
-			std::cout << "[Any Key] Move Cursor 2 with Clear Buffer";
+			OUTPUT_SUBJECT( "[Any Key] p2 까지 라인 지우기" );
 			WAIT_ANY_KEY;
 
-			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_2 ) );
+			r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( p2 );
 
-			std::cout << "[Any Key] Move Cursor 1 with Clear Buffer";
+			OUTPUT_SUBJECT( "[Any Key] p1 까지 라인 지우기" );
 			WAIT_ANY_KEY;
 
-			PROCESS_MAIN( r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( cursor_point_1.x, cursor_point_1.y ) );
+			r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( p1.x, p1.y );
 
-			std::cout << "[Any Key] End";
+			OUTPUT_SUBJECT( "[Any Key] End" );
 			WAIT_ANY_KEY;
 
 			return r2tm::eDoLeaveAction::None;
