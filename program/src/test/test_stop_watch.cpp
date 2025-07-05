@@ -21,6 +21,10 @@ namespace test_stop_watch
 		{
 			LS();
 
+			OUTPUT_SUBJECT( "기본 생성자" );
+
+			LS();
+
 			{
 				DECLARATION_MAIN( r2tm::StopWatch s );
 
@@ -180,6 +184,10 @@ namespace test_stop_watch
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
+			LS();
+
+			OUTPUT_SUBJECT( "초기화" );
+
 			LS();
 
 			DECLARATION_MAIN( r2tm::StopWatch s );
