@@ -49,16 +49,11 @@ namespace test_inspector_input
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "1 누르면 종료" );
+				OUTPUT_SUBJECT( "아무 키나 누르시오." );
 
-				do
-				{
-					if( '1' == GET_KEY )
-					{
-						break;
-					}
+				LF();
 
-				} while( true );
+				OUTPUT_VALUE( GET_KEY );
 			}
 
 			LS();
