@@ -106,12 +106,13 @@ namespace test_inspector_demo
 			SS();
 
 			{
-				OUTPUT_SUBJECT( "대안 1 : using" );
+				OUTPUT_SUBJECT( "대안 : OUTPUT_SOURCE" );
 
 				LF();
 
-				using P = std::pair<int, int>;
-				DECLARATION_MAIN( P a );
+				OUTPUT_SOURCE_READY_N_BEGIN;
+				std::pair<int, int> a;
+				OUTPUT_SOURCE_END;
 
 				// warning 제거용 더미 코드
 				a.first = 0;
@@ -120,13 +121,17 @@ namespace test_inspector_demo
 			SS();
 
 			{
-				OUTPUT_SUBJECT( "대안 2 : OUTPUT_SOURCE" );
+				OUTPUT_SUBJECT( "대안 : OUTPUT_SOURCE + using" );
 
 				LF();
 
 				OUTPUT_SOURCE_READY_N_BEGIN;
-				std::pair<int, int> a;
+				using P = std::pair<int, int>;
 				OUTPUT_SOURCE_END;
+
+				LF();
+
+				DECLARATION_MAIN( P a );
 
 				// warning 제거용 더미 코드
 				a.first = 0;
