@@ -135,10 +135,11 @@ namespace r2tm
 		const char* const String4Road2Version_1_0_0_0_0 =
 					"### Road 2 Version 1.0.0.0.0 ###"
 			"\n"
-			"\n"	"[o] " "Director, Menu, Item"
+			"\n"	"[o] " "Director"
+			"\n"	"[o] " "Menu"
+			"\n"	"[o] " "Item"
 			"\n"	"[o] " "Inspector"
 			"\n"	"[o] " "Window Utility"
-			"\n"	"[o] " "Color Modifier"
 			"\n"	"[o] " "Color Modifier"
 		;
 
