@@ -123,6 +123,28 @@ namespace test_windows_utility_base
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "Operator +" );
+
+				LF();
+
+				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
+
+				LF();
+
+				OUTPUT_SOURCE_READY_N_BEGIN;
+				//p = p + { 2, 4 };
+				OUTPUT_SOURCE_END;
+
+				LF();
+
+				OUTPUT_NOTE( "타입 유추 실패로 위 코드는 정상 작동하지 못한다." );
+				OUTPUT_NOTE( "initialize-list 와의 경합이 원인으로 보인다." );
+				OUTPUT_NOTE( "{ 2, 4 } 를 함수 인자로 사용한 경우는 타입 유추에 성공한다." );
+			}
+
+			LS();
+
+			{
 				OUTPUT_SUBJECT( "Operator +=" );
 
 				LF();
