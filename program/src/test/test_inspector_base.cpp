@@ -254,6 +254,51 @@ namespace test_inspector_base
 
 
 
+	r2tm::TitleFunctionT Address::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Address";
+		};
+	}
+	r2tm::DoFunctionT Address::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				DECLARATION_MAIN( const int i = 100 );
+
+				SS();
+
+				{
+					OUTPUT_SUBJECT( "기존의 출력 방식" );
+
+					LF();
+
+					OUTPUT_VALUE( &i );
+				}
+
+				SS();
+
+				{
+					OUTPUT_SUBJECT( "OUTPUT_ADDRESS 사용" );
+
+					LF();
+
+					OUTPUT_ADDRESS( i );
+				}
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT String_Note_Subject_Comment::GetTitleFunction() const
 	{
 		return []()->const char*

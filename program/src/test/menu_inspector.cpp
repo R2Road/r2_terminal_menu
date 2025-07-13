@@ -34,7 +34,8 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( '3', test_inspector_base::Expect_2() );
 		mp->AddItem( '4', test_inspector_base::Size() );
 		mp->AddItem( '5', test_inspector_base::Code() );
-		mp->AddItem( '6', test_inspector_base::String_Note_Subject_Comment() );
+		mp->AddItem( '6', test_inspector_base::Address() );
+		mp->AddItem( '7', test_inspector_base::String_Note_Subject_Comment() );
 
 
 
