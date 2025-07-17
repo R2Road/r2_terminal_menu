@@ -26,11 +26,11 @@ namespace test_inspector_source
 			LS();
 
 			{
-				DECLARATION_MAIN( OUTPUT_SOURCE_READY );
+				DECL_MAIN( OUTPUT_SOURCE_READY );
 
 				LF();
 
-				PROCESS_MAIN( OUTPUT_SOURCE_BEGIN );
+				PROC_MAIN( OUTPUT_SOURCE_BEGIN );
 				class C1
 				{
 					int a1;
@@ -40,12 +40,12 @@ namespace test_inspector_source
 					int a5;
 					int a6;
 				};
-				PROCESS_MAIN( OUTPUT_SOURCE_END );
+				PROC_MAIN( OUTPUT_SOURCE_END );
 			}
 
 			LS();
 
-			DECLARATION_MAIN( OUTPUT_SOURCE_READY_N_BEGIN );
+			DECL_MAIN( OUTPUT_SOURCE_READY_N_BEGIN );
 			class C2
 			{
 				int a1;
@@ -55,7 +55,7 @@ namespace test_inspector_source
 				int a5;
 				int a6;
 			};
-			PROCESS_MAIN( OUTPUT_SOURCE_END );
+			PROC_MAIN( OUTPUT_SOURCE_END );
 
 			LS();
 

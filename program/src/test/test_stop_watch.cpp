@@ -26,7 +26,7 @@ namespace test_stop_watch
 			LS();
 
 			{
-				DECLARATION_MAIN( r2tm::StopWatch s );
+				DECL_MAIN( r2tm::StopWatch s );
 
 				LF();
 
@@ -71,36 +71,36 @@ namespace test_stop_watch
 		{
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( r2tm::StopWatch s );
 
 			LS();
 
 			{
-				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
-				PROCESS_MAIN( s.Stop() );
+				PROC_MAIN( s.Start() );
+				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
+				PROC_MAIN( s.Stop() );
 
 				SS();
 
-				PROCESS_MAIN( s.PrintElapsedTime_MilliSeconds() );
+				PROC_MAIN( s.PrintElapsedTime_MilliSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintElapsedTime_MicroSeconds() );
+				PROC_MAIN( s.PrintElapsedTime_MicroSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintElapsedTime_NanoSeconds() );
+				PROC_MAIN( s.PrintElapsedTime_NanoSeconds() );
 				LF();
 
 				SS();
 
-				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				PROC_MAIN( s.PrintElapsedTime_All() );
 				LF();
 
 				SS();
 
-				PROCESS_MAIN( s.PrintMinAndMaxTime_MilliSeconds() );
+				PROC_MAIN( s.PrintMinAndMaxTime_MilliSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintMinAndMaxTime_MicroSeconds() );
+				PROC_MAIN( s.PrintMinAndMaxTime_MicroSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintMinAndMaxTime_NanoSeconds() );
+				PROC_MAIN( s.PrintMinAndMaxTime_NanoSeconds() );
 				LF();
 			}
 
@@ -128,7 +128,7 @@ namespace test_stop_watch
 
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( r2tm::StopWatch s );
 
 			LF();
 
@@ -137,32 +137,32 @@ namespace test_stop_watch
 			LS();
 
 			{
-				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
-				PROCESS_MAIN( s.Stop() );
+				PROC_MAIN( s.Start() );
+				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
+				PROC_MAIN( s.Stop() );
 				OUTPUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
-				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 500 ) );
-				PROCESS_MAIN( s.Stop() );
+				PROC_MAIN( s.Start() );
+				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 500 ) );
+				PROC_MAIN( s.Stop() );
 				OUTPUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
-				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 700 ) );
-				PROCESS_MAIN( s.Stop() );
+				PROC_MAIN( s.Start() );
+				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 700 ) );
+				PROC_MAIN( s.Stop() );
 				OUTPUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
-				PROCESS_MAIN( s.PrintAverageTime_MilliSeconds() );
+				PROC_MAIN( s.PrintAverageTime_MilliSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_MicroSeconds() );
+				PROC_MAIN( s.PrintAverageTime_MicroSeconds() );
 				LF2();
-				PROCESS_MAIN( s.PrintAverageTime_NanoSeconds() );
+				PROC_MAIN( s.PrintAverageTime_NanoSeconds() );
 				LF();
 			}
 
@@ -190,41 +190,41 @@ namespace test_stop_watch
 
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( r2tm::StopWatch s );
 
 			LS();
 
 			{
-				PROCESS_MAIN( s.Start() );
-				PROCESS_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
-				PROCESS_MAIN( s.Stop() );
+				PROC_MAIN( s.Start() );
+				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
+				PROC_MAIN( s.Stop() );
 			}
 
 			SS();
 
 			{
-				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				PROC_MAIN( s.PrintElapsedTime_All() );
 				LF();
 
 				LF();
 
-				PROCESS_MAIN( s.PrintAverageTime_All() );
+				PROC_MAIN( s.PrintAverageTime_All() );
 				LF();
 			}
 
 			SS();
 
-			PROCESS_MAIN( s.Reset() );
+			PROC_MAIN( s.Reset() );
 
 			SS();
 
 			{
-				PROCESS_MAIN( s.PrintElapsedTime_All() );
+				PROC_MAIN( s.PrintElapsedTime_All() );
 				LF();
 
 				LF();
 
-				PROCESS_MAIN( s.PrintAverageTime_All() );
+				PROC_MAIN( s.PrintAverageTime_All() );
 				LF();
 			}
 

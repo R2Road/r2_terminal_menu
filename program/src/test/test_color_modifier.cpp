@@ -40,7 +40,7 @@ namespace test_color_modifier
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::ColorModifier cm );
+				DECL_MAIN( r2tm::ColorModifier cm );
 
 				LF();
 
@@ -59,8 +59,8 @@ namespace test_color_modifier
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::eColor c( r2tm::eColor::FG_LightAqua ) );
-				DECLARATION_MAIN( r2tm::ColorModifier cm( c ) );
+				DECL_MAIN( r2tm::eColor c( r2tm::eColor::FG_LightAqua ) );
+				DECL_MAIN( r2tm::ColorModifier cm( c ) );
 
 				LF();
 
@@ -98,7 +98,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier() << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
+				PROC_MAIN( std::cout << "  " << r2tm::ColorModifier() << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
 			}
 
 			LS();
@@ -108,7 +108,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::None ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
+				PROC_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::None ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
 			}
 
 			LS();
@@ -118,7 +118,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::FG_Red ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
+				PROC_MAIN( std::cout << "  " << r2tm::ColorModifier( r2tm::eColor::FG_Red ) << "Do Something" << r2tm::ColorModifier() << r2tm::linefeed );
 			}
 
 			LS();
@@ -128,7 +128,7 @@ namespace test_color_modifier
 
 				LF();
 
-				PROCESS_MAIN( std::cout << "  " << clm( r2tm::eColor::BG_Red ) << clm( r2tm::eColor::FG_Blue ) << "Do Something" << clm() << r2tm::linefeed );
+				PROC_MAIN( std::cout << "  " << clm( r2tm::eColor::BG_Red ) << clm( r2tm::eColor::FG_Blue ) << "Do Something" << clm() << r2tm::linefeed );
 			}
 
 			LS();

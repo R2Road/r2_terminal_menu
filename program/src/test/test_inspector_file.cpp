@@ -25,8 +25,8 @@ namespace test_inspector_file
 			LS();
 
 			{
-				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
+				DECL_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROC_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
 				
 				LF();
 
@@ -34,14 +34,14 @@ namespace test_inspector_file
 
 				LF();
 
-				PROCESS_MAIN( OUTPUT_FILE( p.string().c_str() ) );
+				PROC_MAIN( OUTPUT_FILE( p.string().c_str() ) );
 			}
 
 			LS();
 
 			{
-				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
+				DECL_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROC_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 				
 				LF();
 
@@ -49,7 +49,7 @@ namespace test_inspector_file
 
 				LF();
 
-				PROCESS_MAIN( OUTPUT_FILE( p.string().c_str() ) );
+				PROC_MAIN( OUTPUT_FILE( p.string().c_str() ) );
 			}
 
 			LS();
@@ -78,7 +78,7 @@ namespace test_inspector_file
 			LS();
 
 			{
-				PROCESS_MAIN( OUTPUT_FILE( __FILE__ ) );
+				PROC_MAIN( OUTPUT_FILE( __FILE__ ) );
 			}
 
 			LS();
@@ -107,8 +107,8 @@ namespace test_inspector_file
 			LS();
 
 			{
-				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
+				DECL_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROC_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.lua" ) );
 
 				LF();
 
@@ -122,8 +122,8 @@ namespace test_inspector_file
 			LS();
 
 			{
-				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
+				DECL_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROC_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 				
 				LF();
 
@@ -160,8 +160,8 @@ namespace test_inspector_file
 			LS();
 
 			{
-				DECLARATION_MAIN( std::filesystem::path p = std::filesystem::current_path() );
-				PROCESS_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
+				DECL_MAIN( std::filesystem::path p = std::filesystem::current_path() );
+				PROC_MAIN( p.append( "resources" ).append( "inspector_file_test_helper_file_01.cpp" ) );
 
 				LF();
 
@@ -169,7 +169,7 @@ namespace test_inspector_file
 
 				SS();
 
-				PROCESS_MAIN( OUTPUT_FILE_RANGE( p.string().c_str(), 10, 5 ) );
+				PROC_MAIN( OUTPUT_FILE_RANGE( p.string().c_str(), 10, 5 ) );
 			}
 
 			LS();
@@ -205,7 +205,7 @@ namespace test_inspector_file
 			LS();
 
 			{
-				PROCESS_MAIN( OUTPUT_FILE_RANGE( __FILE__, 5, 10 ) );
+				PROC_MAIN( OUTPUT_FILE_RANGE( __FILE__, 5, 10 ) );
 			}
 
 			LS();

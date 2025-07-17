@@ -19,7 +19,7 @@ namespace test_windows_utility_cursor_buffer
 		{
 			LS();
 
-			DECLARATION_MAIN( const auto p1 = r2tm::WindowsUtility::GetCursorPoint() );
+			DECL_MAIN( const auto p1 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 
@@ -30,7 +30,7 @@ namespace test_windows_utility_cursor_buffer
 
 			LS();
 
-			DECLARATION_MAIN( const auto p2 = r2tm::WindowsUtility::GetCursorPoint() );
+			DECL_MAIN( const auto p2 = r2tm::WindowsUtility::GetCursorPoint() );
 
 			LS();
 

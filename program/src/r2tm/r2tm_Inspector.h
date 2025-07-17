@@ -187,7 +187,7 @@ do {																											\
 //
 // Important Process Code
 //
-#define	PROCESS_MAIN( condition )															\
+#define	PROC_MAIN( condition )															\
 do {																						\
 	printf( "\x1B[96m" "[PROC]" "\033[0m" " %s\n", #condition );							\
 	{ condition; }																			\
@@ -195,7 +195,7 @@ do {																						\
 //
 // Sub Process Code
 //
-#define	PROCESS_SUB( condition )															\
+#define	PROC_SUB( condition )															\
 do {																						\
 	printf( "\x1B[90m" "[PROC]" " %s" "\033[0m" "\n", #condition );						\
 	{ condition; }																			\
@@ -207,13 +207,13 @@ do {																						\
 //
 // Important Declaration Code
 //
-#define	DECLARATION_MAIN( condition )														\
+#define	DECL_MAIN( condition )														\
 printf( "\x1B[93m" "[DECL]" "\033[0m" " %s\n", #condition );							\
 condition;
 //
 // Sub Declaration Code
 //
-#define	DECLARATION_SUB( condition )														\
+#define	DECL_SUB( condition )														\
 printf( "\x1B[90m" "[DECL]" " %s" "\033[0m" "\n", #condition );						\
 condition;
 

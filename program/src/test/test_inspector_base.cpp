@@ -19,11 +19,11 @@ namespace test_inspector_base
 			LS();
 
 			{
-				DECLARATION_MAIN( int i = 0; );
+				DECL_MAIN( int i = 0; );
 
 				LF();
 
-				PROCESS_MAIN( i = 1234567; );
+				PROC_MAIN( i = 1234567; );
 
 				LF();
 
@@ -33,11 +33,11 @@ namespace test_inspector_base
 			LS();
 
 			{
-				DECLARATION_SUB( int j = 0; );
+				DECL_SUB( int j = 0; );
 
 				LF();
 
-				PROCESS_SUB( j = 7654321; );
+				PROC_SUB( j = 7654321; );
 
 				LF();
 
@@ -53,11 +53,11 @@ namespace test_inspector_base
 			LS();
 
 			{
-				DECLARATION_MAIN( std::cout << "output string > process" "\n" );
+				DECL_MAIN( std::cout << "output string > process" "\n" );
 
 				LF();
 
-				DECLARATION_SUB( std::cout << "output string > process" "\n" );
+				DECL_SUB( std::cout << "output string > process" "\n" );
 			}
 
 			LS();
@@ -217,7 +217,7 @@ namespace test_inspector_base
 
 				LF();
 
-				DECLARATION_MAIN( struct S { int i; } );
+				DECL_MAIN( struct S { int i; } );
 				OUTPUT_SIZE( S );
 			}
 
@@ -268,7 +268,7 @@ namespace test_inspector_base
 			LS();
 
 			{
-				DECLARATION_MAIN( const int i = 100 );
+				DECL_MAIN( const int i = 100 );
 
 				SS();
 

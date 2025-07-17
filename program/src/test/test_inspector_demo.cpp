@@ -19,8 +19,8 @@ namespace test_inspector_demo
 			LS();
 
 			{
-				DECLARATION_MAIN( int i = 0 );
-				DECLARATION_MAIN( int j = i );
+				DECL_MAIN( int i = 0 );
+				DECL_MAIN( int j = i );
 
 				SS();
 
@@ -28,8 +28,8 @@ namespace test_inspector_demo
 
 				SS();
 
-				PROCESS_MAIN( i = 1 );
-				PROCESS_MAIN( i = 2 );
+				PROC_MAIN( i = 1 );
+				PROC_MAIN( i = 2 );
 				EXPECT_NE( i, 1 );
 				EXPECT_EQ( i, 2 );
 			}
@@ -51,11 +51,11 @@ namespace test_inspector_demo
 
 				LF();
 
-				DECLARATION_MAIN( S s );
+				DECL_MAIN( S s );
 
 				LF();
 
-				PROCESS_MAIN( s.Do() );
+				PROC_MAIN( s.Do() );
 				EXPECT_EQ( 255 * 2 * 2, s.i );
 
 				LF();
@@ -131,7 +131,7 @@ namespace test_inspector_demo
 
 				LF();
 
-				DECLARATION_MAIN( P a );
+				DECL_MAIN( P a );
 
 				// warning 제거용 더미 코드
 				a.first = 0;

@@ -24,7 +24,7 @@ namespace test_windows_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
@@ -47,7 +47,7 @@ namespace test_windows_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p( 2, 4 ) );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p( 2, 4 ) );
 
 				LF();
 
@@ -69,7 +69,7 @@ namespace test_windows_utility_base
 
 #pragma warning( push )
 #pragma warning( disable : 4244 )
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p( 3.f, 5.f ) );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p( 3.f, 5.f ) );
 #pragma warning( pop )
 
 				LF();
@@ -108,11 +108,11 @@ namespace test_windows_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
-				PROCESS_MAIN( p = p + r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
+				PROC_MAIN( p = p + r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 
@@ -127,7 +127,7 @@ namespace test_windows_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
@@ -149,11 +149,11 @@ namespace test_windows_utility_base
 
 				LF();
 
-				DECLARATION_MAIN( r2tm::WindowsUtility::CursorPoint p );
+				DECL_MAIN( r2tm::WindowsUtility::CursorPoint p );
 
 				LF();
 
-				PROCESS_MAIN( p += r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
+				PROC_MAIN( p += r2tm::WindowsUtility::CursorPoint( 2, 4 ) );
 
 				LF();
 

@@ -25,7 +25,7 @@ namespace test_cache_cleaner
 			LS();
 
 			{
-				DECLARATION_MAIN( r2tm::CacheCleaner c );
+				DECL_MAIN( r2tm::CacheCleaner c );
 
 				LF();
 
@@ -45,14 +45,14 @@ namespace test_cache_cleaner
 
 				LF();
 
-				PROCESS_MAIN( c.Clean() );
+				PROC_MAIN( c.Clean() );
 				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
 			LS();
 
 			{
-				DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
+				DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
 
 				LF();
 
@@ -72,7 +72,7 @@ namespace test_cache_cleaner
 
 				LF();
 
-				PROCESS_MAIN( c.Clean() );
+				PROC_MAIN( c.Clean() );
 				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
@@ -97,7 +97,7 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			DECLARATION_MAIN( r2tm::CacheCleaner c );
+			DECL_MAIN( r2tm::CacheCleaner c );
 
 			LF();
 
@@ -149,15 +149,15 @@ namespace test_cache_cleaner
 			// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
 			// > 사실상 캐쉬가 방해만 되는 환경이다.
 			//
-			DECLARATION_MAIN( const int BUFFER_SIZE = 2000 );
-			DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
-			DECLARATION_MAIN( int* Buffer = BufferSp.get() );
-			DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
+			DECL_MAIN( const int BUFFER_SIZE = 2000 );
+			DECL_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
+			DECL_MAIN( int* Buffer = BufferSp.get() );
+			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
 
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
-			DECLARATION_MAIN( const int attempt = 10 );
+			DECL_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( const int attempt = 10 );
 
 			LS();
 
@@ -224,15 +224,15 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			DECLARATION_MAIN( const int BUFFER_SIZE = 2000 );
-			DECLARATION_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
-			DECLARATION_MAIN( int* Buffer = BufferSp.get() );
-			DECLARATION_MAIN( r2tm::CacheCleaner c( 2 ) );
+			DECL_MAIN( const int BUFFER_SIZE = 2000 );
+			DECL_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
+			DECL_MAIN( int* Buffer = BufferSp.get() );
+			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
 
 			LS();
 
-			DECLARATION_MAIN( r2tm::StopWatch s );
-			DECLARATION_MAIN( const int attempt = 100 );
+			DECL_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( const int attempt = 100 );
 
 			LS();
 

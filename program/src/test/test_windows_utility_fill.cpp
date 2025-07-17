@@ -111,7 +111,7 @@ namespace test_windows_utility_fill
 		{
 			LS();
 
-			DECLARATION_MAIN( using P = r2tm::WindowsUtility::CursorPoint; );
+			DECL_MAIN( using P = r2tm::WindowsUtility::CursorPoint; );
 
 			LS();
 
@@ -120,7 +120,7 @@ namespace test_windows_utility_fill
 
 				LF();
 
-				PROCESS_MAIN( r2tm::WindowsUtility::FillString( r2tm::WindowsUtility::GetCursorPoint(), "asdfgh", 6 ) );
+				PROC_MAIN( r2tm::WindowsUtility::FillString( r2tm::WindowsUtility::GetCursorPoint(), "asdfgh", 6 ) );
 
 				LF();
 			}
@@ -132,8 +132,8 @@ namespace test_windows_utility_fill
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
-				PROCESS_MAIN( r2tm::WindowsUtility::FillString( cursor_point, "asdfgh", 4 ) );
+				DECL_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
+				PROC_MAIN( r2tm::WindowsUtility::FillString( cursor_point, "asdfgh", 4 ) );
 
 				r2tm::WindowsUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
 			}
@@ -145,8 +145,8 @@ namespace test_windows_utility_fill
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
-				PROCESS_MAIN( r2tm::WindowsUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowsUtility::eColor::BG_LightGreen ) );
+				DECL_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
+				PROC_MAIN( r2tm::WindowsUtility::FillString( cursor_point, "asdfgh", 4, r2tm::WindowsUtility::eColor::BG_LightGreen ) );
 
 				r2tm::WindowsUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
 			}
@@ -175,7 +175,7 @@ namespace test_windows_utility_fill
 		{
 			LS();
 
-			DECLARATION_MAIN( using P = r2tm::WindowsUtility::CursorPoint; );
+			DECL_MAIN( using P = r2tm::WindowsUtility::CursorPoint; );
 
 			LS();
 
@@ -184,8 +184,8 @@ namespace test_windows_utility_fill
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
-				PROCESS_MAIN( r2tm::WindowsUtility::FillString( cursor_point, 'z', 10 ) );
+				DECL_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
+				PROC_MAIN( r2tm::WindowsUtility::FillString( cursor_point, 'z', 10 ) );
 
 				r2tm::WindowsUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
 			}
@@ -197,8 +197,8 @@ namespace test_windows_utility_fill
 
 				LF();
 
-				DECLARATION_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
-				PROCESS_MAIN( r2tm::WindowsUtility::FillString( cursor_point, 'z', 10, r2tm::WindowsUtility::eColor::BG_LightGreen ) );
+				DECL_MAIN( auto cursor_point = ( r2tm::WindowsUtility::GetCursorPoint() + P{ 4, 5 } ) );
+				PROC_MAIN( r2tm::WindowsUtility::FillString( cursor_point, 'z', 10, r2tm::WindowsUtility::eColor::BG_LightGreen ) );
 
 				r2tm::WindowsUtility::MoveCursorPoint( cursor_point.x, cursor_point.y + 1 );
 			}
