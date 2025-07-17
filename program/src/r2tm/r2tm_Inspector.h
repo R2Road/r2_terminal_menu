@@ -29,7 +29,7 @@ do {																							\
 	else																						\
 	{																							\
 		R2TM_DEBUG_BREAK;																		\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_TRUE( %s )\n", #condition );			\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_TRUE( %s )\n", #condition );			\
 	}																							\
 } while( false )
 
@@ -42,7 +42,7 @@ do {																							\
 	else																						\
 	{																							\
 		R2TM_DEBUG_BREAK;																		\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_FALSE( %s )\n", #condition );			\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_FALSE( %s )\n", #condition );			\
 	}																							\
 } while( false )
 
@@ -55,7 +55,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_EQ( %s == %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_EQ( %s == %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -70,7 +70,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_NE( %s != %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_NE( %s != %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -85,7 +85,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_GT( %s > %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_GT( %s > %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -100,7 +100,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_LT( %s < %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_LT( %s < %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -115,7 +115,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_GE( %s >= %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_GE( %s >= %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -130,7 +130,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_LE( %s <= %s )\n", #condition_1, #condition_2 );		\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_LE( %s <= %s )\n", #condition_1, #condition_2 );		\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -160,7 +160,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_EP_EQ( %s == %s )\n", #condition_1, #condition_2 );	\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_EP_EQ( %s == %s )\n", #condition_1, #condition_2 );	\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -175,7 +175,7 @@ do {																											\
 	else																										\
 	{																											\
 		R2TM_DEBUG_BREAK;																						\
-		printf( "\x1B[91m" "[FAILED]" "\033[0m" " EXPECT_EP_NE( %s != %s )\n", #condition_1, #condition_2 );	\
+		printf( "\x1B[91m" "[FAIL]" "\033[0m" " EXPECT_EP_NE( %s != %s )\n", #condition_1, #condition_2 );	\
 		OUTPUT_VALUE( ( condition_1 ) );																		\
 		OUTPUT_VALUE( ( condition_2 ) );																		\
 	}																											\
@@ -189,7 +189,7 @@ do {																											\
 //
 #define	PROCESS_MAIN( condition )															\
 do {																						\
-	printf( "\x1B[96m" "[PROCESS]" "\033[0m" " %s\n", #condition );							\
+	printf( "\x1B[96m" "[PROC]" "\033[0m" " %s\n", #condition );							\
 	{ condition; }																			\
 } while( false )
 //
@@ -197,7 +197,7 @@ do {																						\
 //
 #define	PROCESS_SUB( condition )															\
 do {																						\
-	printf( "\x1B[90m" "[PROCESS]" " %s" "\033[0m" "\n", #condition );						\
+	printf( "\x1B[90m" "[PROC]" " %s" "\033[0m" "\n", #condition );						\
 	{ condition; }																			\
 } while( false )
 
@@ -208,13 +208,13 @@ do {																						\
 // Important Declaration Code
 //
 #define	DECLARATION_MAIN( condition )														\
-printf( "\x1B[93m" "[DECLARATION]" "\033[0m" " %s\n", #condition );							\
+printf( "\x1B[93m" "[DECL]" "\033[0m" " %s\n", #condition );							\
 condition;
 //
 // Sub Declaration Code
 //
 #define	DECLARATION_SUB( condition )														\
-printf( "\x1B[90m" "[DECLARATION]" " %s" "\033[0m" "\n", #condition );						\
+printf( "\x1B[90m" "[DECL]" " %s" "\033[0m" "\n", #condition );						\
 condition;
 
 
