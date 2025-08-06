@@ -29,7 +29,7 @@ namespace key_viewer
 
 			{
 				const auto start_point = r2tm::WindowsUtility::GetCursorPoint();
-				const short line_limit = start_point.y + 30;
+				const short line_limit = start_point.y + 25;
 
 				r2tm::WindowsUtility::MoveCursorPoint( start_point.x, line_limit );
 				LS();
