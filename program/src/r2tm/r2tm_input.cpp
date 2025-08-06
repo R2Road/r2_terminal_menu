@@ -1,4 +1,4 @@
-#include "r2tm_Input.h"
+#include "r2tm_input.hpp"
 
 #include <conio.h>
 

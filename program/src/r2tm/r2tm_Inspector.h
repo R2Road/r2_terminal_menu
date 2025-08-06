@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdint.h>
 
-#include "r2tm_Input.h"
+#include "r2tm_input.hpp"
 #include "r2tm_PrintBinary.h"
 #include "r2tm_PrintFile.h"
 

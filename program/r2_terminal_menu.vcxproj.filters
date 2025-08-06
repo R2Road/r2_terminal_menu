@@ -87,7 +87,7 @@
     <ClCompile Include="src\test\test_inspector_input.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_Input.cpp">
+    <ClCompile Include="src\r2tm\r2tm_input.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
     <ClCompile Include="src\viewer\key_viewer.cpp">
@@ -207,7 +207,7 @@
     <ClInclude Include="src\test\test_inspector_input.hpp">
       <Filter>test\inspector</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_Input.h">
+    <ClInclude Include="src\r2tm\r2tm_input.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\viewer\key_viewer.hpp">
