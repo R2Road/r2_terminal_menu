@@ -5,7 +5,7 @@
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
-#include "r2tm/r2tm_CacheCleaner.h"
+#include "r2tm/r2tm_cache_cleaner.hpp"
 #include "r2tm/r2tm_StopWatch.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 

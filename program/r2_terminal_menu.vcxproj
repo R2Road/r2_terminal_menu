@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\r2tm\r2tm_CacheCleaner.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_cache_cleaner.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Director.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Input.cpp" />
     <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp" />
@@ -54,7 +54,7 @@
     <ClCompile Include="src\viewer\version_viewer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\r2tm\r2tm_CacheCleaner.h" />
+    <ClInclude Include="src\r2tm\r2tm_cache_cleaner.hpp" />
     <ClInclude Include="src\r2tm\r2tm_Color.h" />
     <ClInclude Include="src\r2tm\r2tm_ColorModifier.h" />
     <ClInclude Include="src\r2tm\r2tm_Director.h" />
