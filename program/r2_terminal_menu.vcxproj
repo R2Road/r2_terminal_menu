@@ -62,7 +62,7 @@
     <ClInclude Include="src\r2tm\r2tm_interface_menu.hpp" />
     <ClInclude Include="src\r2tm\r2tm_input.hpp" />
     <ClInclude Include="src\r2tm\r2tm_inspector.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_MenuConstant.h" />
+    <ClInclude Include="src\r2tm\r2tm_menu_constant.hpp" />
     <ClInclude Include="src\r2tm\r2tm_MenuProcessor.h" />
     <ClInclude Include="src\r2tm\r2tm_ostream.h" />
     <ClInclude Include="src\r2tm\r2tm_PrintBinary.h" />
