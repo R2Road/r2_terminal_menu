@@ -6,7 +6,7 @@
     <ClCompile Include="src\r2tm\r2tm_director.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp">
+    <ClCompile Include="src\r2tm\r2tm_menu_processor.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
     <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp">
@@ -117,7 +117,7 @@
     <ClInclude Include="src\r2tm\r2tm_menu_constant.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_MenuProcessor.h">
+    <ClInclude Include="src\r2tm\r2tm_menu_processor.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_ostream.h">

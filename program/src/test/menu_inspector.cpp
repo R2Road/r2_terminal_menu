@@ -1,6 +1,6 @@
 #include "menu_inspector.hpp"
 
-#include "r2tm/r2tm_MenuProcessor.h"
+#include "r2tm/r2tm_menu_processor.hpp"
 
 #include "test_inspector_base.hpp"
 #include "test_inspector_binary.hpp"

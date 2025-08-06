@@ -1,6 +1,6 @@
 #include "menu_windows_utility.hpp"
 
-#include "r2tm/r2tm_MenuProcessor.h"
+#include "r2tm/r2tm_menu_processor.hpp"
 
 #include "test_windows_utility_base.hpp"
 #include "test_windows_utility_cursor_buffer.hpp"

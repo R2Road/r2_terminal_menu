@@ -1,6 +1,6 @@
 #include "menu_stop_watch.hpp"
 
-#include "r2tm/r2tm_MenuProcessor.h"
+#include "r2tm/r2tm_menu_processor.hpp"
 
 #include "test_stop_watch.hpp"
 
