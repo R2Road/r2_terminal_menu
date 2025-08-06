@@ -1,10 +1,10 @@
-#include "menu_color_modifier.h"
+#include "menu_color_modifier.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
-#include "test_color_modifier.h"
+#include "test_color_modifier.hpp"
 
 r2tm::TitleFunctionT Menu_ColorModifier::GetTitleFunction() const
 {

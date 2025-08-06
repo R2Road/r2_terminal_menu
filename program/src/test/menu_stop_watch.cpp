@@ -1,10 +1,10 @@
-#include "menu_stop_watch.h"
+#include "menu_stop_watch.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "test_stop_watch.h"
+#include "test_stop_watch.hpp"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 r2tm::TitleFunctionT Menu_StopWatch::GetTitleFunction() const
 {

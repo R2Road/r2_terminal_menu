@@ -1,4 +1,4 @@
-#include "key_viewer.h"
+#include "key_viewer.hpp"
 
 #include "r2tm/r2tm_ColorModifier.h"
 #include "r2tm/r2tm_Inspector.h"

@@ -1,12 +1,12 @@
-#include "menu_windows_utility.h"
+#include "menu_windows_utility.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "test_windows_utility_base.h"
-#include "test_windows_utility_cursor_buffer.h"
-#include "test_windows_utility_fill.h"
+#include "test_windows_utility_base.hpp"
+#include "test_windows_utility_cursor_buffer.hpp"
+#include "test_windows_utility_fill.hpp"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 r2tm::TitleFunctionT Menu_WindowsUtility::GetTitleFunction() const
 {

@@ -6,7 +6,7 @@
 #include "r2tm/r2tm_VersionInfo.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 int main()
 {

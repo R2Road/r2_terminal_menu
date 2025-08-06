@@ -1,4 +1,4 @@
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 #include <string>
 
@@ -6,19 +6,19 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "test/test_empty.h"
-#include "test/test_stop_watch.h"
+#include "test/test_empty.hpp"
+#include "test/test_stop_watch.hpp"
 
-#include "test/menu_test.h"
-#include "test/menu_cache_cleaner.h"
-#include "test/menu_color_modifier.h"
-#include "test/menu_inspector.h"
-#include "test/menu_leave_action.h"
-#include "test/menu_stop_watch.h"
-#include "test/menu_windows_utility.h"
+#include "test/menu_test.hpp"
+#include "test/menu_cache_cleaner.hpp"
+#include "test/menu_color_modifier.hpp"
+#include "test/menu_inspector.hpp"
+#include "test/menu_leave_action.hpp"
+#include "test/menu_stop_watch.hpp"
+#include "test/menu_windows_utility.hpp"
 
-#include "viewer/key_viewer.h"
-#include "viewer/version_viewer.h"
+#include "viewer/key_viewer.hpp"
+#include "viewer/version_viewer.hpp"
 
 r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
 {

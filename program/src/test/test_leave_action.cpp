@@ -1,4 +1,4 @@
-#include "test_leave_action.h"
+#include "test_leave_action.hpp"
 
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_Inspector.h"

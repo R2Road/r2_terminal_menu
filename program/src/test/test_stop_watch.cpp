@@ -1,4 +1,4 @@
-#include "test_stop_watch.h"
+#include "test_stop_watch.hpp"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"

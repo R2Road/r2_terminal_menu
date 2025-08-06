@@ -1,4 +1,4 @@
-#include "version_viewer.h"
+#include "version_viewer.hpp"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"

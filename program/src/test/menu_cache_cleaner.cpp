@@ -1,10 +1,10 @@
-#include "menu_cache_cleaner.h"
+#include "menu_cache_cleaner.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "test/test_cache_cleaner.h"
+#include "test/test_cache_cleaner.hpp"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 r2tm::TitleFunctionT Menu_CacheCleaner::GetTitleFunction() const
 {

@@ -1,4 +1,4 @@
-#include "test_inspector_base.h"
+#include "test_inspector_base.hpp"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"

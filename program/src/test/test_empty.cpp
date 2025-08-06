@@ -1,4 +1,4 @@
-#include "test_empty.h"
+#include "test_empty.hpp"
 
 #include "r2tm/r2tm_ostream.h"
 

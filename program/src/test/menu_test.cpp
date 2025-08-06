@@ -1,10 +1,10 @@
-#include "menu_test.h"
+#include "menu_test.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
-#include "test_empty.h"
+#include "test_empty.hpp"
 
 r2tm::TitleFunctionT Menu_Test::GetTitleFunction() const
 {

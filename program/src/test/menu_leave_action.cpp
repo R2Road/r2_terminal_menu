@@ -1,10 +1,10 @@
-#include "menu_leave_action.h"
+#include "menu_leave_action.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
-#include "test_leave_action.h"
+#include "test_leave_action.hpp"
 
 r2tm::TitleFunctionT Menu_LeaveAction::GetTitleFunction() const
 {

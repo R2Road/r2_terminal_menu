@@ -1,15 +1,15 @@
-#include "menu_inspector.h"
+#include "menu_inspector.hpp"
 
 #include "r2tm/r2tm_MenuProcessor.h"
 
-#include "test_inspector_base.h"
-#include "test_inspector_binary.h"
-#include "test_inspector_demo.h"
-#include "test_inspector_file.h"
-#include "test_inspector_input.h"
-#include "test_inspector_source.h"
+#include "test_inspector_base.hpp"
+#include "test_inspector_binary.hpp"
+#include "test_inspector_demo.hpp"
+#include "test_inspector_file.hpp"
+#include "test_inspector_input.hpp"
+#include "test_inspector_source.hpp"
 
-#include "menu_root.h"
+#include "menu_root.hpp"
 
 r2tm::TitleFunctionT Menu_Inspector::GetTitleFunction() const
 {

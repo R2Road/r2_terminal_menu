@@ -1,4 +1,4 @@
-#include "test_inspector_input.h"
+#include "test_inspector_input.hpp"
 
 #include <chrono>
 

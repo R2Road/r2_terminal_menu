@@ -1,4 +1,4 @@
-#include "test_windows_utility_cursor_buffer.h"
+#include "test_windows_utility_cursor_buffer.hpp"
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"

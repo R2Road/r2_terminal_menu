@@ -70,37 +70,37 @@
     <ClInclude Include="src\r2tm\r2tm_StopWatch.h" />
     <ClInclude Include="src\r2tm\r2tm_VersionInfo.h" />
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
-    <ClInclude Include="src\menu_root.h" />
-    <ClInclude Include="src\test\menu_color_modifier.h" />
-    <ClInclude Include="src\test\menu_leave_action.h" />
-    <ClInclude Include="src\test\menu_test.h" />
-    <ClInclude Include="src\test\menu_cache_cleaner.h" />
-    <ClInclude Include="src\test\menu_inspector.h" />
-    <ClInclude Include="src\test\menu_stop_watch.h" />
-    <ClInclude Include="src\test\menu_windows_utility.h" />
-    <ClInclude Include="src\test\test_inspector_input.h" />
-    <ClInclude Include="src\test\test_leave_action.h" />
-    <ClInclude Include="src\test\test_cache_cleaner.h" />
-    <ClInclude Include="src\test\test_color_modifier.h" />
-    <ClInclude Include="src\test\test_empty.h" />
-    <ClInclude Include="src\test\test_inspector_base.h" />
-    <ClInclude Include="src\test\test_inspector_binary.h" />
-    <ClInclude Include="src\test\test_inspector_demo.h" />
-    <ClInclude Include="src\test\test_inspector_file.h" />
-    <ClInclude Include="src\test\test_inspector_source.h" />
-    <ClInclude Include="src\test\test_stop_watch.h" />
-    <ClInclude Include="src\test\test_windows_utility_cursor_buffer.h" />
-    <ClInclude Include="src\test\test_windows_utility_base.h" />
-    <ClInclude Include="src\test\test_windows_utility_fill.h" />
-    <ClInclude Include="src\viewer\key_viewer.h" />
-    <ClInclude Include="src\viewer\version_viewer.h" />
+    <ClInclude Include="src\menu_root.hpp" />
+    <ClInclude Include="src\test\menu_color_modifier.hpp" />
+    <ClInclude Include="src\test\menu_leave_action.hpp" />
+    <ClInclude Include="src\test\menu_test.hpp" />
+    <ClInclude Include="src\test\menu_cache_cleaner.hpp" />
+    <ClInclude Include="src\test\menu_inspector.hpp" />
+    <ClInclude Include="src\test\menu_stop_watch.hpp" />
+    <ClInclude Include="src\test\menu_windows_utility.hpp" />
+    <ClInclude Include="src\test\test_inspector_input.hpp" />
+    <ClInclude Include="src\test\test_leave_action.hpp" />
+    <ClInclude Include="src\test\test_cache_cleaner.hpp" />
+    <ClInclude Include="src\test\test_color_modifier.hpp" />
+    <ClInclude Include="src\test\test_empty.hpp" />
+    <ClInclude Include="src\test\test_inspector_base.hpp" />
+    <ClInclude Include="src\test\test_inspector_binary.hpp" />
+    <ClInclude Include="src\test\test_inspector_demo.hpp" />
+    <ClInclude Include="src\test\test_inspector_file.hpp" />
+    <ClInclude Include="src\test\test_inspector_source.hpp" />
+    <ClInclude Include="src\test\test_stop_watch.hpp" />
+    <ClInclude Include="src\test\test_windows_utility_cursor_buffer.hpp" />
+    <ClInclude Include="src\test\test_windows_utility_base.hpp" />
+    <ClInclude Include="src\test\test_windows_utility_fill.hpp" />
+    <ClInclude Include="src\viewer\key_viewer.hpp" />
+    <ClInclude Include="src\viewer\version_viewer.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{2D908A8D-3690-4F7A-AFE1-E8CB5BD27BCB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>cppplayground</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
