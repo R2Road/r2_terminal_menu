@@ -7,7 +7,7 @@
 
 #include "r2tm/r2tm_cache_cleaner.hpp"
 #include "r2tm/r2tm_stop_watch.hpp"
-#include "r2tm/r2tm_WindowsUtility.h"
+#include "r2tm/r2tm_windows_utility.hpp"
 
 namespace test_cache_cleaner
 {

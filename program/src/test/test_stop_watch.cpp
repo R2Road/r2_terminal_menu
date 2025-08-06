@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
-#include "r2tm/r2tm_WindowsUtility.h"
+#include "r2tm/r2tm_windows_utility.hpp"
 
 #include "r2tm/r2tm_stop_watch.hpp"
 

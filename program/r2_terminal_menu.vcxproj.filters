@@ -18,7 +18,7 @@
     <ClCompile Include="src\r2tm\r2tm_stop_watch.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp">
+    <ClCompile Include="src\r2tm\r2tm_windows_utility.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
     <ClCompile Include="src\test\menu_test.cpp">
@@ -135,7 +135,7 @@
     <ClInclude Include="src\r2tm\r2tm_version_info.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h">
+    <ClInclude Include="src\r2tm\r2tm_windows_utility.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\menu_test.hpp">

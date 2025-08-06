@@ -27,7 +27,7 @@
     <ClCompile Include="src\r2tm\r2tm_print_binary.cpp" />
     <ClCompile Include="src\r2tm\r2tm_print_file.cpp" />
     <ClCompile Include="src\r2tm\r2tm_stop_watch.cpp" />
-    <ClCompile Include="src\r2tm\r2tm_WindowsUtility.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_windows_utility.cpp" />
     <ClCompile Include="src\menu_root.cpp" />
     <ClCompile Include="src\test\menu_color_modifier.cpp" />
     <ClCompile Include="src\test\menu_leave_action.cpp" />
@@ -69,7 +69,7 @@
     <ClInclude Include="src\r2tm\r2tm_print_file.hpp" />
     <ClInclude Include="src\r2tm\r2tm_stop_watch.hpp" />
     <ClInclude Include="src\r2tm\r2tm_version_info.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
+    <ClInclude Include="src\r2tm\r2tm_windows_utility.hpp" />
     <ClInclude Include="src\menu_root.hpp" />
     <ClInclude Include="src\test\menu_color_modifier.hpp" />
     <ClInclude Include="src\test\menu_leave_action.hpp" />

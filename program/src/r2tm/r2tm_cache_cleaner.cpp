@@ -2,7 +2,7 @@
 
 #include <cstring>
 
-#include "r2tm_WindowsUtility.h"
+#include "r2tm_windows_utility.hpp"
 
 namespace r2tm
 {
