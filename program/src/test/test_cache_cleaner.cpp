@@ -262,6 +262,10 @@ namespace test_cache_cleaner
 
 			LS();
 
+			OUTPUT_NOTE( "코드 작성 당시 일반적으로 150 ~ 200ns 정도의 성능 격차를 보인다." );
+
+			LS();
+
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
