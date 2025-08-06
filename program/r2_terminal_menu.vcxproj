@@ -59,7 +59,7 @@
     <ClInclude Include="src\r2tm\r2tm_color_modifier.hpp" />
     <ClInclude Include="src\r2tm\r2tm_director.hpp" />
     <ClInclude Include="src\r2tm\r2tm_interface_item.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_iMenu.h" />
+    <ClInclude Include="src\r2tm\r2tm_interface_menu.hpp" />
     <ClInclude Include="src\r2tm\r2tm_Input.h" />
     <ClInclude Include="src\r2tm\r2tm_Inspector.h" />
     <ClInclude Include="src\r2tm\r2tm_MenuConstant.h" />
