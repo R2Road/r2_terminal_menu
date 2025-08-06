@@ -68,7 +68,7 @@
     <ClInclude Include="src\r2tm\r2tm_print_binary.hpp" />
     <ClInclude Include="src\r2tm\r2tm_print_file.hpp" />
     <ClInclude Include="src\r2tm\r2tm_stop_watch.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_VersionInfo.h" />
+    <ClInclude Include="src\r2tm\r2tm_version_info.hpp" />
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\menu_root.hpp" />
     <ClInclude Include="src\test\menu_color_modifier.hpp" />

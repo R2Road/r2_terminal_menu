@@ -4,7 +4,7 @@
 
 #include "r2tm/r2tm_director.hpp"
 #include "r2tm/r2tm_ostream.hpp"
-#include "r2tm/r2tm_VersionInfo.h"
+#include "r2tm/r2tm_version_info.hpp"
 
 #include "test/test_empty.hpp"
 #include "test/test_stop_watch.hpp"

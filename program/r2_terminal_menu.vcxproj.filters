@@ -132,7 +132,7 @@
     <ClInclude Include="src\r2tm\r2tm_stop_watch.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_VersionInfo.h">
+    <ClInclude Include="src\r2tm\r2tm_version_info.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_WindowsUtility.h">

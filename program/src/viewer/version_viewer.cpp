@@ -4,7 +4,7 @@
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-#include "r2tm/r2tm_VersionInfo.h"
+#include "r2tm/r2tm_version_info.hpp"
 
 namespace version_viewer
 {

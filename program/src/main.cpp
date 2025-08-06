@@ -3,7 +3,7 @@
 #endif
 
 #include "r2tm/r2tm_director.hpp"
-#include "r2tm/r2tm_VersionInfo.h"
+#include "r2tm/r2tm_version_info.hpp"
 #include "r2tm/r2tm_WindowsUtility.h"
 
 #include "menu_root.hpp"
