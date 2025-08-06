@@ -4,7 +4,7 @@
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_WindowsUtility.h"
 
-#include "r2tm/r2tm_StopWatch.h"
+#include "r2tm/r2tm_stop_watch.hpp"
 
 namespace test_stop_watch
 {
