@@ -189,7 +189,7 @@
     <ClInclude Include="src\test\test_cache_cleaner.hpp">
       <Filter>test\cache_cleaner</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_Color.h">
+    <ClInclude Include="src\r2tm\r2tm_color.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\test\test_color_modifier.hpp">
