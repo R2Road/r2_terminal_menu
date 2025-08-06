@@ -1,4 +1,5 @@
 #include "test_cache_cleaner.hpp"
+#include "test_cache_cleaner___helper.hpp"
 
 #include <memory>
 
@@ -149,38 +150,25 @@ namespace test_cache_cleaner
 			// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
 			// > 사실상 캐쉬가 방해만 되는 환경이다.
 			//
-			DECL_MAIN( const int BUFFER_SIZE = 2000 );
-			DECL_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
-			DECL_MAIN( int* Buffer = BufferSp.get() );
-			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
-
-			LS();
-
-			DECL_MAIN( r2tm::StopWatch s );
-			DECL_MAIN( const int attempt = 10 );
+			OUTPUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
 
 			LF();
 
-			OUTPUT_SOURCE_READY_N_BEGIN;
-			const auto F = [&]()->void
-			{
-				for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
-				{
-					Buffer[buffer_index] = buffer_index;
-				}
-			};
-			OUTPUT_SOURCE_END;
+			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
+			DECL_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( const int attempt = 10 );
+			DECL_MAIN( test_cache_cleaner___helper::Test t );
 
 			LS();
 
 			{
 				c.Clean();
 
-				OUTPUT_SUBJECT( "F 호출 + CacheCleaner X" );
+				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
-					F();
+					t.Do();
 					s.Stop();
 					s.PrintElapsedTime_NanoSeconds();
 					LF();
@@ -188,7 +176,7 @@ namespace test_cache_cleaner
 
 				SS();
 
-				OUTPUT_SUBJECT( "F 호출 + CacheCleaner O" );
+				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					//
@@ -197,7 +185,7 @@ namespace test_cache_cleaner
 					c.Clean();
 
 					s.Start();
-					F();
+					t.Do();
 					s.Stop();
 					s.PrintElapsedTime_NanoSeconds();
 
@@ -226,39 +214,25 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			DECL_MAIN( const int BUFFER_SIZE = 2000 );
-			DECL_MAIN( std::shared_ptr<int[]> BufferSp( new int[BUFFER_SIZE] ) );
-			DECL_MAIN( int* Buffer = BufferSp.get() );
-			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
-
-			LS();
-
-			DECL_MAIN( r2tm::StopWatch s );
-			DECL_MAIN( const int attempt = 100 );
+			OUTPUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
 
 			LF();
 
-			OUTPUT_SOURCE_READY_N_BEGIN;
-			const auto F = [&]()->void
-			{
-				for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
-				{
-					Buffer[buffer_index] = buffer_index;
-				}
-			};
-			OUTPUT_SOURCE_END;
-
+			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
+			DECL_MAIN( r2tm::StopWatch s );
+			DECL_MAIN( const int attempt = 1000 );
+			DECL_MAIN( test_cache_cleaner___helper::Test t );
 
 			LS();
 
 			{
 				c.Clean();
 
-				OUTPUT_SUBJECT( "F 호출 + CacheCleaner X" );
+				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
-					F();
+					t.Do();
 					s.Stop();
 				}
 
@@ -269,7 +243,7 @@ namespace test_cache_cleaner
 
 				s.Reset();
 
-				OUTPUT_SUBJECT( "F 호출 + CacheCleaner O" );
+				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					//
@@ -278,7 +252,7 @@ namespace test_cache_cleaner
 					c.Clean();
 
 					s.Start();
-					F();
+					t.Do();
 					s.Stop();
 				}
 
