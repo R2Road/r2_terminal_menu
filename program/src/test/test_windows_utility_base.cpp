@@ -1,7 +1,7 @@
 #include "test_windows_utility_base.hpp"
 
 #include "r2tm/r2tm_inspector.hpp"
-#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_WindowsUtility.h"
 
 namespace test_windows_utility_base

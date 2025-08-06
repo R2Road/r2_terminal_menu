@@ -5,7 +5,7 @@
 #include "r2tm_color_modifier.hpp"
 #include "r2tm_interface_item.hpp"
 #include "r2tm_interface_menu.hpp"
-#include "r2tm_ostream.h"
+#include "r2tm_ostream.hpp"
 
 
 namespace

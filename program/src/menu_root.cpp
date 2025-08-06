@@ -3,7 +3,7 @@
 #include <string>
 
 #include "r2tm/r2tm_director.hpp"
-#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "test/test_empty.hpp"
