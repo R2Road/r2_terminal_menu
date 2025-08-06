@@ -56,7 +56,7 @@
   <ItemGroup>
     <ClInclude Include="src\r2tm\r2tm_cache_cleaner.hpp" />
     <ClInclude Include="src\r2tm\r2tm_color.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_ColorModifier.h" />
+    <ClInclude Include="src\r2tm\r2tm_color_modifier.hpp" />
     <ClInclude Include="src\r2tm\r2tm_Director.h" />
     <ClInclude Include="src\r2tm\r2tm_iItem.h" />
     <ClInclude Include="src\r2tm\r2tm_iMenu.h" />
