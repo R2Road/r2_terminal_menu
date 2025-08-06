@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #include "r2tm_input.hpp"
-#include "r2tm_PrintBinary.h"
+#include "r2tm_print_binary.hpp"
 #include "r2tm_PrintFile.h"
 
 #define R2TM_ENABLE_DEBUG_BREAK 0

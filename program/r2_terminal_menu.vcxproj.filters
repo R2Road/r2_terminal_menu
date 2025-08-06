@@ -9,7 +9,7 @@
     <ClCompile Include="src\r2tm\r2tm_menu_processor.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp">
+    <ClCompile Include="src\r2tm\r2tm_print_binary.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
     <ClCompile Include="src\r2tm\r2tm_PrintFile.cpp">
@@ -123,7 +123,7 @@
     <ClInclude Include="src\r2tm\r2tm_ostream.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_PrintBinary.h">
+    <ClInclude Include="src\r2tm\r2tm_print_binary.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_PrintFile.h">
