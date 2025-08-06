@@ -111,7 +111,7 @@
     <ClInclude Include="src\r2tm\r2tm_interface_menu.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\r2tm\r2tm_Inspector.h">
+    <ClInclude Include="src\r2tm\r2tm_inspector.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_MenuConstant.h">

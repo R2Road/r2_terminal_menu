@@ -1,6 +1,6 @@
 #include "test_inspector_base.hpp"
 
-#include "r2tm/r2tm_Inspector.h"
+#include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.h"
 
 namespace test_inspector_base
