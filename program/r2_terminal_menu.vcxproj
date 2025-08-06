@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\r2tm\r2tm_cache_cleaner.cpp" />
-    <ClCompile Include="src\r2tm\r2tm_Director.cpp" />
+    <ClCompile Include="src\r2tm\r2tm_director.cpp" />
     <ClCompile Include="src\r2tm\r2tm_Input.cpp" />
     <ClCompile Include="src\r2tm\r2tm_MenuProcessor.cpp" />
     <ClCompile Include="src\r2tm\r2tm_PrintBinary.cpp" />
@@ -57,7 +57,7 @@
     <ClInclude Include="src\r2tm\r2tm_cache_cleaner.hpp" />
     <ClInclude Include="src\r2tm\r2tm_color.hpp" />
     <ClInclude Include="src\r2tm\r2tm_color_modifier.hpp" />
-    <ClInclude Include="src\r2tm\r2tm_Director.h" />
+    <ClInclude Include="src\r2tm\r2tm_director.hpp" />
     <ClInclude Include="src\r2tm\r2tm_iItem.h" />
     <ClInclude Include="src\r2tm\r2tm_iMenu.h" />
     <ClInclude Include="src\r2tm\r2tm_Input.h" />

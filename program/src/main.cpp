@@ -2,7 +2,7 @@
 	#include <vld.h>
 #endif
 
-#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_director.hpp"
 #include "r2tm/r2tm_VersionInfo.h"
 #include "r2tm/r2tm_WindowsUtility.h"
 
