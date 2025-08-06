@@ -154,10 +154,6 @@ namespace r2tm
 
 
 
-		const char* const String4Road2NextVersion = String4Road2Version_2_1_0_0_0;
-
-
-
 		enum { VERSION_HISTORY_COUNT = 10 };
 		const char* VersionHistory[VERSION_HISTORY_COUNT] = {
 			  String4Road2Version_1_0_0_0_0
@@ -171,6 +167,10 @@ namespace r2tm
 			, String4Road2Version_1_8_0_0_0
 			, String4Road2Version_2_1_0_0_0
 		};
+
+
+
+		const char* const String4Road2NextVersion = VersionHistory[VERSION_HISTORY_COUNT - 1];
 
 	} VersionInfo;
 }
