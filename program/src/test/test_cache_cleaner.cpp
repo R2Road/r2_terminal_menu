@@ -234,21 +234,29 @@ namespace test_cache_cleaner
 			DECL_MAIN( r2tm::StopWatch s );
 			DECL_MAIN( const int attempt = 100 );
 
+			LF();
+
+			OUTPUT_SOURCE_READY_N_BEGIN;
+			const auto F = [&]()->void
+			{
+				for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
+				{
+					Buffer[buffer_index] = buffer_index;
+				}
+			};
+			OUTPUT_SOURCE_END;
+
+
 			LS();
 
 			{
 				c.Clean();
 
-				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner X" );
+				OUTPUT_SUBJECT( "F 호출 + CacheCleaner X" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
-
-					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
-					{
-						Buffer[buffer_index] = buffer_index;
-					}
-
+					F();
 					s.Stop();
 				}
 
@@ -259,7 +267,7 @@ namespace test_cache_cleaner
 
 				s.Reset();
 
-				OUTPUT_SUBJECT( "테스트 코드 작동 + CacheCleaner O" );
+				OUTPUT_SUBJECT( "F 호출 + CacheCleaner O" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					//
@@ -268,12 +276,7 @@ namespace test_cache_cleaner
 					c.Clean();
 
 					s.Start();
-
-					for( int buffer_index = 0; BUFFER_SIZE > buffer_index; ++buffer_index )
-					{
-						Buffer[buffer_index] = buffer_index;
-					}
-
+					F();
 					s.Stop();
 				}
 
