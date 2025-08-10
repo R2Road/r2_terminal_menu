@@ -99,6 +99,7 @@
     <ClCompile Include="src\test\test_cache_cleaner___helper.hpp">
       <Filter>test\cache_cleaner</Filter>
     </ClCompile>
+    <ClCompile Include="src\menu_portfolio.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\menu_root.hpp" />
@@ -219,6 +220,7 @@
     <ClInclude Include="src\viewer\version_viewer.hpp">
       <Filter>viewer</Filter>
     </ClInclude>
+    <ClInclude Include="src\menu_portfolio.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
