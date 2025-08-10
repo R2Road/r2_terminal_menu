@@ -1,5 +1,5 @@
-program/.vs/*
-program/Debug/*
-program/x64/*
-program/Release/*
-program/r2_terminal_menu/*
+project/.vs/*
+project/Debug/*
+project/x64/*
+project/Release/*
+project/r2_terminal_menu/*
