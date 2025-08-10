@@ -19,25 +19,36 @@ namespace test_inspector_demo
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "정의" );
+
+				LF();
+
 				DECL_MAIN( int i = 0 );
 				DECL_MAIN( int j = i );
 
 				SS();
 
+				OUTPUT_SUBJECT( "작동 + 검사" );
+
+				LF();
+
 				EXPECT_EQ( i, j );
 
-				SS();
+				LF();
 
-				PROC_MAIN( i = 1 );
-				PROC_MAIN( i = 2 );
-				EXPECT_NE( i, 1 );
-				EXPECT_EQ( i, 2 );
+				PROC_MAIN( j = 1 );
+				EXPECT_NE( i, j );
+			
 			}
 
 			LS();
 
 			{
-				struct S
+				OUTPUT_SUBJECT( "코드 출력" );
+
+				LF();
+
+				struct
 				{
 					int i = 255;
 
@@ -45,22 +56,25 @@ namespace test_inspector_demo
 					{
 						i <<= 2;
 					}
-				};
+				} s;
 
-				OUTPUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 40, 48 );
+				OUTPUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 51, 59 );
 
-				LF();
-
-				DECL_MAIN( S s );
-
-				LF();
+				SS();
 
 				PROC_MAIN( s.Do() );
-				EXPECT_EQ( 255 * 2 * 2, s.i );
+
+				LF();
+
+				OUTPUT_SUBJECT( "값 출력" );
 
 				LF();
 
 				OUTPUT_VALUE( s.i );
+
+				SS();
+
+				OUTPUT_SUBJECT( "바이너리 출력" );
 
 				LF();
 
