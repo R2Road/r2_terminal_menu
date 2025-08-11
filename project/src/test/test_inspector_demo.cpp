@@ -54,7 +54,7 @@ namespace test_inspector_demo
 
 					void Do()
 					{
-						i <<= 2;
+						i <<= 8;
 					}
 				} s;
 
