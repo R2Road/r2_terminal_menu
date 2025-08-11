@@ -21,12 +21,6 @@
     <ClCompile Include="src\r2tm\r2tm_windows_utility.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\menu_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\test_empty.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\menu_inspector.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
@@ -100,6 +94,15 @@
       <Filter>test\cache_cleaner</Filter>
     </ClCompile>
     <ClCompile Include="src\menu_portfolio.cpp" />
+    <ClCompile Include="src\tutorial\menu_tutorial.cpp">
+      <Filter>tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tutorial\test_empty.cpp">
+      <Filter>tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tutorial\menu_make_menu.cpp">
+      <Filter>tutorial</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\menu_root.hpp" />
@@ -141,12 +144,6 @@
     </ClInclude>
     <ClInclude Include="src\r2tm\r2tm_windows_utility.hpp">
       <Filter>r2tm</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\menu_test.hpp">
-      <Filter>test</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\test_empty.hpp">
-      <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\test\menu_inspector.hpp">
       <Filter>test\inspector</Filter>
@@ -221,6 +218,15 @@
       <Filter>viewer</Filter>
     </ClInclude>
     <ClInclude Include="src\menu_portfolio.hpp" />
+    <ClInclude Include="src\tutorial\menu_tutorial.hpp">
+      <Filter>tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tutorial\test_empty.hpp">
+      <Filter>tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tutorial\menu_make_menu.hpp">
+      <Filter>tutorial</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
@@ -249,6 +255,9 @@
     </Filter>
     <Filter Include="viewer">
       <UniqueIdentifier>{74b14b71-c327-4f94-9cc7-274455d7511c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tutorial">
+      <UniqueIdentifier>{750e47ab-ad1d-473e-8a15-a92e922119af}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -53,11 +53,11 @@ namespace test_inspector_base
 			LS();
 
 			{
-				DECL_MAIN( std::cout << "output string > process" "\n" );
+				PROC_MAIN( std::cout << "output string > process" "\n" );
 
 				LF();
 
-				DECL_SUB( std::cout << "output string > process" "\n" );
+				PROC_SUB( std::cout << "output string > process" "\n" );
 			}
 
 			LS();

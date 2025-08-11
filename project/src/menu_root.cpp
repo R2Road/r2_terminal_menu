@@ -6,10 +6,8 @@
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_version_info.hpp"
 
-#include "test/test_empty.hpp"
 #include "test/test_stop_watch.hpp"
 
-#include "test/menu_test.hpp"
 #include "test/menu_cache_cleaner.hpp"
 #include "test/menu_color_modifier.hpp"
 #include "test/menu_inspector.hpp"
@@ -17,8 +15,12 @@
 #include "test/menu_stop_watch.hpp"
 #include "test/menu_windows_utility.hpp"
 
+#include "tutorial/menu_tutorial.hpp"
+
 #include "viewer/key_viewer.hpp"
 #include "viewer/version_viewer.hpp"
+
+#include "menu_portfolio.hpp"
 
 r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
 {
@@ -55,44 +57,7 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
-		mp->AddMessage( "# Test를 r2tm::iItem을 사용해 만들기", r2tm::eColor::FG_LightRed );
-		mp->AddItem( '1', test_empty::Basic() );
-		mp->AddMessage( "# 동일한 Test를 여러 키에 할당 해보기", r2tm::eColor::FG_LightRed );
-		mp->AddItem( '2', test_empty::Basic() );
-
-
-
-		mp->AddLineFeed();
-
-
-
-		mp->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_LightRed );
-		mp->AddItem(
-			'3'
-			, []()->const char*
-			{
-				return "Show Title With Lambda";
-			}
-			, []()->r2tm::eDoLeaveAction
-			{
-				LS();
-
-				std::cout << r2tm::linefeed2 << "##### Show Title With Lambda #####" << r2tm::linefeed3;
-
-				LS();
-
-				return r2tm::eDoLeaveAction::Pause;
-			}
-		);
-
-
-
-		mp->AddLineFeed();
-
-
-
-		mp->AddMessage( "# Test를 r2tm::iMenu 객체로 묶어보기", r2tm::eColor::FG_LightRed );
-		mp->AddMenu( '6', Menu_Test() );
+		mp->AddMenu( '1', Menu_Tutorial() );
 
 
 
@@ -122,7 +87,6 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 		mp->AddItem( 'z', key_viewer::View() );
 		mp->AddItem( 'x', version_viewer::Viewer() );
-		
 
 
 
@@ -130,6 +94,6 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 
-		mp->AddExit( 27 );
+		mp->AddMenu( 27, Menu_Portfolio() );
 	};
 }
