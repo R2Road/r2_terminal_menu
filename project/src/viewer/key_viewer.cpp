@@ -53,7 +53,7 @@ namespace key_viewer
 
 			LS();
 
-			return r2tm::eDoLeaveAction::Pause;
+			return r2tm::eDoLeaveAction::None;
 		};
 	}
 }
