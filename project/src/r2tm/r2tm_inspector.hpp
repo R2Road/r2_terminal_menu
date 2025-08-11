@@ -358,3 +358,5 @@ do {																						\
 #define GET_KEY	          ( r2tm::GetKey() )
 
 #define KB_HIT            ( r2tm::KeyboardHit() )
+
+#define CLEAR_INPUT       ( r2tm::ClearInput() )

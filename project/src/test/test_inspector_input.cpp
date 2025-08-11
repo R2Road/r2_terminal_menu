@@ -119,4 +119,70 @@ namespace test_inspector_input
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2tm::TitleFunctionT ClearInput::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Input : CLEAR_INPUT";
+		};
+	}
+	r2tm::DoFunctionT ClearInput::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "_kbhit 로 테스트를 끝내는 경우" );
+			OUTPUT_SUBJECT( "_getch 를 사용해 input buffer 를 비워주지 않으면" );
+			OUTPUT_SUBJECT( "menu에 돌아갔을 때 키가 작동 해버린다." );
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "아무 키나 누르시오." );
+
+				SS();
+
+				const auto pivot = r2tm::WindowsUtility::GetCursorPoint();
+
+				const int fps = 30;
+				const int spf = 1000 / fps;
+				auto last_time = std::chrono::high_resolution_clock::now();
+				auto current_time = last_time;
+
+				int frame_count = 0;
+				do
+				{
+					current_time = std::chrono::high_resolution_clock::now();
+
+					if( spf < std::chrono::duration_cast< std::chrono::milliseconds >( current_time - last_time ).count() )
+					{
+						last_time = current_time;
+						++frame_count;
+
+						if( 0 == ( frame_count % 5 ) )
+						{
+							OUTPUT_STRING( "." );
+						}
+
+						if( fps == frame_count )
+						{
+							frame_count = 0;
+							r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( pivot );
+						}
+					}
+
+				} while( !KB_HIT );
+			}
+
+			CLEAR_INPUT;
+
+			LS();
+
+			return r2tm::eDoLeaveAction::None;
+		};
+	}
 }

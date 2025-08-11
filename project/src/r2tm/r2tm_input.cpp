@@ -21,4 +21,15 @@ namespace r2tm
 	{
 		return _kbhit();
 	}
+
+	void ClearInput()
+	{
+#pragma warning( push )
+#pragma warning( disable : 6031 )
+		while( _kbhit() )
+		{
+			_getch();
+		}
+#pragma warning( pop )
+	}
 }

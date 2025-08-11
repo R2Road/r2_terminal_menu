@@ -26,7 +26,7 @@ namespace r2tm
 
 		const char VersionNumber_1 = '2';
 		const char VersionNumber_2 = '0';
-		const char VersionNumber_3 = '0';
+		const char VersionNumber_3 = '1';
 		const char VersionNumber_4 = '0';
 		const char VersionNumber_5 = '0';
 
@@ -37,6 +37,7 @@ namespace r2tm
 		const char* const String4Road2Version_2_1_0_0_0 =
 			"### Road 2 Version 2.1.0.0.0 ###"
 			"\n"
+			"\n"	"[o] " "update    inspector  : Add - CLEAR_INPUT"
 			"\n"	"[ ] " "update    struct     : ..."
 		;
 
