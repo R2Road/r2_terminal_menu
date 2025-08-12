@@ -168,7 +168,13 @@ namespace test_inspector_base
 
 			LS();
 
-			OUTPUT_VALUE( r2tm_epsilon_float );
+			{
+				OUTPUT_SUBJECT( "정밀도" );
+
+				LF();
+
+				OUTPUT_VALUE( r2tm_epsilon_float );
+			}
 
 			LS();
 
@@ -213,7 +219,13 @@ namespace test_inspector_base
 
 			LS();
 
-			OUTPUT_VALUE( r2tm_epsilon_double );
+			{
+				OUTPUT_SUBJECT( "정밀도" );
+
+				LF();
+
+				OUTPUT_VALUE( r2tm_epsilon_double );
+			}
 
 			LS();
 
