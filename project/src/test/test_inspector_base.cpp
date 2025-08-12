@@ -283,9 +283,9 @@ namespace test_inspector_base
 
 				OUTPUT_SIZE( int );
 
-				LF();
+				SS();
 
-				DECL_MAIN( struct S { int i; } );
+				DECL_MAIN( struct S { int i[10]; } );
 				OUTPUT_SIZE( S );
 			}
 
