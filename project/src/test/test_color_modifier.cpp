@@ -124,7 +124,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Setup 1" );
+				OUTPUT_SUBJECT( "글자색 지정" );
 
 				LF();
 
@@ -134,7 +134,17 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Setup 2" );
+				OUTPUT_SUBJECT( "r2tm::ColorModifier 대신에 줄임 표현인 clm 사용 가능" );
+
+				LF();
+
+				PROC_MAIN( std::cout << "  " << clm( r2tm::eColor::FG_Red ) << "Do Something" << clm() << r2tm::linefeed );
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "글자색 + 배경색 지정" );
 
 				LF();
 
