@@ -335,11 +335,11 @@ namespace test_inspector_base
 		{
 			LS();
 
+			DECL_MAIN( const int i = 100 );
+
+			LS();
+
 			{
-				DECL_MAIN( const int i = 100 );
-
-				SS();
-
 				{
 					OUTPUT_SUBJECT( "기존의 출력 방식" );
 
