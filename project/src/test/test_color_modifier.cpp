@@ -36,6 +36,16 @@ namespace test_color_modifier
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "바이너리" );
+
+				LF();
+
+				OUTPUT_BINARY( r2tm::ColorModifier{} );
+			}
+
+			LS();
+
+			{
 				OUTPUT_SUBJECT( "기본 생성자" );
 
 				LF();
