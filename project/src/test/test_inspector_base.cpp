@@ -131,6 +131,10 @@ namespace test_inspector_base
 		{
 			LS();
 
+			OUTPUT_SUBJECT( "epsilon 을 이용한 float 비교" );
+
+			LS();
+
 #pragma warning( push )
 #pragma warning( disable : 4127 )
 			{
@@ -145,9 +149,35 @@ namespace test_inspector_base
 				EXPECT_EP_NE( 0.00001f, 0.00001f );
 
 			}
+#pragma warning( pop )
 
 			LS();
 
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Expect_Epsilon_Double::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Expect Epsilon : Double";
+		};
+	}
+	r2tm::DoFunctionT Expect_Epsilon_Double::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "epsilon 을 이용한 double 비교" );
+
+			LS();
+
+#pragma warning( push )
+#pragma warning( disable : 4127 )
 			{
 				EXPECT_EP_EQ( 0.0000000001, 0.0000000001 );
 				EXPECT_EP_EQ( 0.0000000001, 0.00000000011 );

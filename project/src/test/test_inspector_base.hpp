@@ -25,6 +25,13 @@ namespace test_inspector_base
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class Expect_Epsilon_Double : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Size : public r2tm::iItem
 	{
 	public:
