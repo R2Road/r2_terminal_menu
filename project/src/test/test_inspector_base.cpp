@@ -66,43 +66,76 @@ namespace test_inspector_base
 		{
 			LS();
 
+			OUTPUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
+
+			LS();
+
 #pragma warning( push )
 #pragma warning( disable : 4127 )
 			{
 				EXPECT_TRUE( 1 == 1 );
 				EXPECT_TRUE( 1 == 0 );
 
-				LF();
+				SS();
 
 				EXPECT_FALSE( 1 == 1 );
 				EXPECT_FALSE( 1 == 0 );
 
-				LF();
+				SS();
 
 				EXPECT_EQ( 1, 1 );
 				EXPECT_EQ( 1, 0 );
 
-				LF();
+				SS();
 
 				EXPECT_NE( 1, 1 );
 				EXPECT_NE( 1, 0 );
 
-				LF();
+			}
+#pragma warning( pop )
 
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT Expect_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Expect 2";
+		};
+	}
+	r2tm::DoFunctionT Expect_2::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
+
+			LS();
+
+#pragma warning( push )
+#pragma warning( disable : 4127 )
+			{
 				EXPECT_GT( 1, 1 );
 				EXPECT_GT( 1, 0 );
 
-				LF();
+				SS();
 
 				EXPECT_LT( 1, 1 );
 				EXPECT_LT( 0, 1 );
 
-				LF();
+				SS();
 
 				EXPECT_GE( 1, 1 );
 				EXPECT_GE( 0, 1 );
 
-				LF();
+				SS();
 
 				EXPECT_LE( 1, 1 );
 				EXPECT_LE( 1, 0 );
