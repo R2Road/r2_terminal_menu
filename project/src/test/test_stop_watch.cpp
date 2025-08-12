@@ -111,17 +111,53 @@ namespace test_stop_watch
 					PROC_MAIN( s.PrintElapsedTime_All() );
 					LF();
 				}
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+	r2tm::TitleFunctionT Min_Max::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Stop Watch : Min / Max";
+		};
+	}
+	r2tm::DoFunctionT Min_Max::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			DECL_MAIN( r2tm::StopWatch s );
+
+			LS();
+
+			{
+				{
+					OUTPUT_SUBJECT( "Start + Stop" );
+
+					LF();
+
+					PROC_MAIN( s.Start() );
+					PROC_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
+					PROC_MAIN( s.Stop() );
+
+					SS();
+
+					PROC_MAIN( s.Start() );
+					PROC_SUB( r2tm::WindowsUtility::RequestSleep( 200 ) );
+					PROC_MAIN( s.Stop() );
+				}
 
 				SS();
 
 				{
 					OUTPUT_SUBJECT( "최소 / 최대 경과 시간" );
-
-					LF();
-
-					PROC_MAIN( s.Start() );
-					PROC_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
-					PROC_MAIN( s.Stop() );
 
 					LF();
 

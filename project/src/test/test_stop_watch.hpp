@@ -18,6 +18,13 @@ namespace test_stop_watch
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class Min_Max : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Accumulate : public r2tm::iItem
 	{
 	public:

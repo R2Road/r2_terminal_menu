@@ -26,8 +26,9 @@ r2tm::WriteFunctionT Menu_StopWatch::GetWriteFunction() const
 	{
 		mp->AddItem( '1', test_stop_watch::Declaration() );
 		mp->AddItem( '2', test_stop_watch::Basic() );
-		mp->AddItem( '3', test_stop_watch::Accumulate() );
-		mp->AddItem( '4', test_stop_watch::Reset() );
+		mp->AddItem( '3', test_stop_watch::Min_Max() );
+		mp->AddItem( '4', test_stop_watch::Accumulate() );
+		mp->AddItem( '5', test_stop_watch::Reset() );
 
 
 
