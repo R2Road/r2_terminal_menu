@@ -135,6 +135,10 @@ namespace test_inspector_base
 
 			LS();
 
+			OUTPUT_VALUE( r2tm_epsilon_float );
+
+			LS();
+
 #pragma warning( push )
 #pragma warning( disable : 4127 )
 			{
@@ -173,6 +177,10 @@ namespace test_inspector_base
 			LS();
 
 			OUTPUT_SUBJECT( "epsilon 을 이용한 double 비교" );
+
+			LS();
+
+			OUTPUT_VALUE( r2tm_epsilon_double );
 
 			LS();
 

@@ -142,13 +142,16 @@ do {																											\
 //
 // Epsilon EQ
 //
+constexpr float r2tm_epsilon_float = 0.00001f;
 inline bool epsilon_equal( const float v1, const float v2 )
 {
-	return ( 0.00001f > std::abs( v1 - v2 ) );
+	return ( r2tm_epsilon_float > std::abs( v1 - v2 ) );
 }
+
+constexpr double r2tm_epsilon_double = 0.0000000001;
 inline bool epsilon_equal( const double v1, const double v2 )
 {
-	return ( 0.0000000001 > std::abs( v1 - v2 ) );
+	return ( r2tm_epsilon_double > std::abs( v1 - v2 ) );
 }
 
 #define	EXPECT_EP_EQ( condition_1, condition_2 )																\
