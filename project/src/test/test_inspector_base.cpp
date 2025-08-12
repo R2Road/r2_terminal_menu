@@ -381,25 +381,41 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_STRING( "   <= prefix | message =>   OUTPUT_STRING : output string~!~!~!" );
+				std::cout << "    " "+ OUTPUT_STRING" << r2tm::linefeed;
+
+				LF();
+
+				OUTPUT_STRING( "output string~!~!~!" );
 			}
 
 			LS();
 
 			{
-				OUTPUT_NOTE( "   <= prefix | message =>   OUTPUT_NOTE : output note~!~!~!" );
+				std::cout << "    " "+ OUTPUT_NOTE" << r2tm::linefeed;
+
+				LF();
+
+				OUTPUT_NOTE( "output note~!~!~!" );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "   <= prefix | message =>   OUTPUT_SUBJECT : output subject~!~!~!" );
+				std::cout << "    " "+ OUTPUT_SUBJECT" << r2tm::linefeed;
+
+				LF();
+
+				OUTPUT_SUBJECT( "output subject~!~!~!" );
 			}
 
 			LS();
 
 			{
-				OUTPUT_COMMENT( "   <= prefix | message =>   OUTPUT_COMMENT : output comment~!~!~!" );
+				std::cout << "    " "+ OUTPUT_COMMENT" << r2tm::linefeed;
+
+				LF();
+
+				OUTPUT_COMMENT( "output comment~!~!~!" );
 			}
 
 			LS();
