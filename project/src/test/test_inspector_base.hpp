@@ -18,7 +18,7 @@ namespace test_inspector_base
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class Expect_2 : public r2tm::iItem
+	class Expect_Epsilon_Float : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

@@ -118,14 +118,14 @@ namespace test_inspector_base
 
 
 
-	r2tm::TitleFunctionT Expect_2::GetTitleFunction() const
+	r2tm::TitleFunctionT Expect_Epsilon_Float::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Expect 2";
+			return "Inspector : Expect Epsilon : Float";
 		};
 	}
-	r2tm::DoFunctionT Expect_2::GetDoFunction() const
+	r2tm::DoFunctionT Expect_Epsilon_Float::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

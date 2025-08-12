@@ -31,7 +31,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 	{
 		mp->AddItem( '1', test_inspector_base::Basic() );
 		mp->AddItem( '2', test_inspector_base::Expect_1() );
-		mp->AddItem( '3', test_inspector_base::Expect_2() );
+		mp->AddItem( '3', test_inspector_base::Expect_Epsilon_Float() );
 		mp->AddItem( '4', test_inspector_base::Expect_Epsilon_Double() );
 		mp->AddItem( '5', test_inspector_base::Size() );
 		mp->AddItem( '6', test_inspector_base::Code() );
