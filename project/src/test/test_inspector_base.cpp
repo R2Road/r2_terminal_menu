@@ -19,45 +19,30 @@ namespace test_inspector_base
 			LS();
 
 			{
+				OUTPUT_SUBJECT( "정의" );
+
+				LF();
+
 				DECL_MAIN( int i = 0; );
+				DECL_SUB( int j = 0; );
+
+				SS();
+
+				OUTPUT_SUBJECT( "작동" );
 
 				LF();
 
 				PROC_MAIN( i = 1234567; );
+				PROC_SUB( j = 7654321; );
+
+				SS();
+
+				OUTPUT_SUBJECT( "출력" );
 
 				LF();
 
 				OUTPUT_VALUE( i );
-			}
-
-			LS();
-
-			{
-				DECL_SUB( int j = 0; );
-
-				LF();
-
-				PROC_SUB( j = 7654321; );
-
-				LF();
-
 				OUTPUT_VALUE( j );
-			}
-
-			LS();
-
-			{
-				OUTPUT_VALUE( 11111 * 7 );
-			}
-
-			LS();
-
-			{
-				PROC_MAIN( std::cout << "output string > process" "\n" );
-
-				LF();
-
-				PROC_SUB( std::cout << "output string > process" "\n" );
 			}
 
 			LS();
