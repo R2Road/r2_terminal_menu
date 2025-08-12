@@ -76,32 +76,62 @@ namespace test_stop_watch
 			LS();
 
 			{
-				PROC_MAIN( s.Start() );
-				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
-				PROC_MAIN( s.Stop() );
+				{
+					OUTPUT_SUBJECT( "Start + Stop" );
+
+					LF();
+
+					PROC_MAIN( s.Start() );
+					PROC_SUB( r2tm::WindowsUtility::RequestSleep( 1000 ) );
+					PROC_MAIN( s.Stop() );
+				}
 
 				SS();
 
-				PROC_MAIN( s.PrintElapsedTime_MilliSeconds() );
-				LF2();
-				PROC_MAIN( s.PrintElapsedTime_MicroSeconds() );
-				LF2();
-				PROC_MAIN( s.PrintElapsedTime_NanoSeconds() );
-				LF();
+				{
+					OUTPUT_SUBJECT( "경과 시간 단위 별로 출력" );
+
+					LF();
+
+					PROC_MAIN( s.PrintElapsedTime_MilliSeconds() );
+					LF2();
+					PROC_MAIN( s.PrintElapsedTime_MicroSeconds() );
+					LF2();
+					PROC_MAIN( s.PrintElapsedTime_NanoSeconds() );
+					LF();
+				}
 
 				SS();
 
-				PROC_MAIN( s.PrintElapsedTime_All() );
-				LF();
+				{
+					OUTPUT_SUBJECT( "경과 시간 전부 출력" );
+
+					LF();
+
+					PROC_MAIN( s.PrintElapsedTime_All() );
+					LF();
+				}
 
 				SS();
 
-				PROC_MAIN( s.PrintMinAndMaxTime_MilliSeconds() );
-				LF2();
-				PROC_MAIN( s.PrintMinAndMaxTime_MicroSeconds() );
-				LF2();
-				PROC_MAIN( s.PrintMinAndMaxTime_NanoSeconds() );
-				LF();
+				{
+					OUTPUT_SUBJECT( "최소 / 최대 경과 시간" );
+
+					LF();
+
+					PROC_MAIN( s.Start() );
+					PROC_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
+					PROC_MAIN( s.Stop() );
+
+					LF();
+
+					PROC_MAIN( s.PrintMinAndMaxTime_MilliSeconds() );
+					LF2();
+					PROC_MAIN( s.PrintMinAndMaxTime_MicroSeconds() );
+					LF2();
+					PROC_MAIN( s.PrintMinAndMaxTime_NanoSeconds() );
+					LF();
+				}
 			}
 
 			LS();
