@@ -220,7 +220,7 @@ namespace test_cache_cleaner
 
 			DECL_MAIN( r2tm::CacheCleaner c( 2 ) );
 			DECL_MAIN( r2tm::StopWatch s );
-			DECL_MAIN( const int attempt = 1000 );
+			DECL_MAIN( const int attempt = 500 );
 			DECL_MAIN( test_cache_cleaner___helper::Test t );
 
 			LS();
