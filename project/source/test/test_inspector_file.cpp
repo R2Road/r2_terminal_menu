@@ -239,6 +239,10 @@ namespace test_inspector_file
 				LF();
 
 				PROC_MAIN( DIR_OPEN( std::filesystem::current_path().string().c_str() ) );
+
+				LF();
+
+				OUTPUT_VALUE( std::filesystem::current_path().string().c_str() );
 			}
 
 			LS();
@@ -249,6 +253,10 @@ namespace test_inspector_file
 				LF();
 
 				PROC_MAIN( DIR_OPEN( __FILE__ ) );
+
+				LF();
+
+				OUTPUT_VALUE( __FILE__ );
 			}
 
 			LS();

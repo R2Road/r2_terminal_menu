@@ -12,13 +12,13 @@ namespace r2tm
 
 	bool DirectoryOpen( const char* const utf8_path )
 	{
-		if( !ExistPath( utf8_path ) )
+		std::filesystem::path p( utf8_path );
+		p._Remove_filename_and_separator();
+
+		if( !std::filesystem::exists( p ) )
 		{
 			return false;
 		}
-
-		std::filesystem::path p( utf8_path );
-		p._Remove_filename_and_separator();
 
 		std::string s( "explorer " );
 		s += p.string().c_str();
