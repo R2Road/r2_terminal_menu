@@ -297,6 +297,53 @@ namespace test_inspector_base
 
 
 
+	r2tm::TitleFunctionT Align::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Align";
+		};
+	}
+	r2tm::DoFunctionT Align::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "기존의 Align 출력 방식" );
+
+				LF();
+
+				OUTPUT_VALUE( alignof( int ) );
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "OUTPUT_ALIGN 사용" );
+
+				LF();
+
+				OUTPUT_ALIGN( int );
+
+				SS();
+
+				DECL_MAIN( struct S {
+					int i[10];
+					long long j;
+				} );
+				OUTPUT_ALIGN( S );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT Code::GetTitleFunction() const
 	{
 		return []()->const char*

@@ -46,6 +46,13 @@ namespace test_inspector_base
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
+	class Align : public r2tm::iItem
+	{
+	public:
+		r2tm::TitleFunctionT GetTitleFunction() const override;
+		r2tm::DoFunctionT GetDoFunction() const override;
+	};
+
 	class Code : public r2tm::iItem
 	{
 	public:

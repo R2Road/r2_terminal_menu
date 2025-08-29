@@ -306,6 +306,17 @@ do {																						\
 
 
 //
+// Output Align
+//
+#define	OUTPUT_ALIGN( condition )															 \
+do {																						 \
+	printf( "[ALIGN]" " %s" "\n" "\t> %llu" " byte" "\n", #condition, alignof( condition ) ); \
+} while( false )
+
+
+
+
+//
 // Output ETC
 //
 #define	OUTPUT_STRING( str )																\
