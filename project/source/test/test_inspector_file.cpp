@@ -213,4 +213,47 @@ namespace test_inspector_file
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2tm::TitleFunctionT DirectoryOpen::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : DirectoryOpen";
+		};
+	}
+	r2tm::DoFunctionT DirectoryOpen::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUTPUT_SUBJECT( "DIR_OPEN" );
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "Directory 경로" );
+
+				LF();
+
+				PROC_MAIN( DIR_OPEN( std::filesystem::current_path().string().c_str() ) );
+			}
+
+			LS();
+
+			{
+				OUTPUT_SUBJECT( "File 경로" );
+
+				LF();
+
+				PROC_MAIN( DIR_OPEN( __FILE__ ) );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }

@@ -66,6 +66,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'f', test_inspector_file::FileRange_2() );
 		mp->AddItem( 'g', test_inspector_file::FileRange_3() );
 		mp->AddItem( 'h', test_inspector_source::Basic() );
+		mp->AddItem( 'j', test_inspector_file::DirectoryOpen() );
 
 
 

@@ -103,6 +103,9 @@
     <ClCompile Include="source\tutorial\menu_make_menu.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
+    <ClCompile Include="source\r2tm\r2tm_file.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_root.hpp" />
@@ -226,6 +229,9 @@
     </ClInclude>
     <ClInclude Include="source\tutorial\menu_make_menu.hpp">
       <Filter>tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="source\r2tm\r2tm_file.hpp">
+      <Filter>r2tm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

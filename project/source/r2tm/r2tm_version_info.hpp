@@ -39,6 +39,7 @@ namespace r2tm
 			"\n"
 			"\n"	"[o] " "update    inspector  : Add - CLEAR_INPUT"
 			"\n"	"[o] " "update    inspector  : Add - OUTPUT_ALIGN"
+			"\n"	"[o] " "update    inspector  : Add - DIR_OPEN"
 			"\n"	"[ ] " "update    struct     : ..."
 		;
 

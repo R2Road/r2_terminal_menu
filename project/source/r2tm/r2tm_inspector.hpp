@@ -3,6 +3,7 @@
 #include <iostream>
 #include <stdint.h>
 
+#include "r2tm_file.hpp"
 #include "r2tm_input.hpp"
 #include "r2tm_print_binary.hpp"
 #include "r2tm_print_file.hpp"
@@ -360,6 +361,11 @@ do {																						\
 #define OUTPUT_SOURCE_END		do { src_end = __LINE__ - 1; r2tm::PrintFile( __FILE__, src_begin, src_end ); } while( false )
 
 #define OUTPUT_SOURCE_READY_N_BEGIN		OUTPUT_SOURCE_READY; OUTPUT_SOURCE_BEGIN
+
+#define DIR_OPEN( file_path )															\
+do {																						\
+	r2tm::DirectoryOpen( file_path );															\
+} while( false )
 
 
 
