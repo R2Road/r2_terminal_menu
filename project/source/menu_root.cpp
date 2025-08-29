@@ -65,10 +65,10 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 'q', Menu_LeaveAction() );
-		mp->AddMenu( 'w', Menu_ColorModifier() );
-		mp->AddMenu( 'e', Menu_StopWatch() );
-		mp->AddMenu( 'r', Menu_Inspector() );
+		mp->AddMenu( 'q', Menu_Inspector() );
+		mp->AddMenu( 'w', Menu_LeaveAction() );
+		mp->AddMenu( 'e', Menu_ColorModifier() );
+		mp->AddMenu( 'r', Menu_StopWatch() );
 
 
 
