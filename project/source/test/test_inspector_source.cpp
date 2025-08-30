@@ -20,17 +20,17 @@ namespace test_inspector_source
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_SOURCE_READY, OUTPUT_SOURCE_BEGIN, OUTPUT_SOURCE_END" );
-			OUTPUT_SUBJECT( "OUTPUT_SOURCE_READY_N_BEGIN" );
+			OUT_SUBJECT( "OUT_SOURCE_READY, OUT_SOURCE_BEGIN, OUT_SOURCE_END" );
+			OUT_SUBJECT( "OUT_SOURCE_READY_N_BEGIN" );
 
 			LS();
 
 			{
-				DECL_MAIN( OUTPUT_SOURCE_READY );
+				DECL_MAIN( OUT_SOURCE_READY );
 
 				LF();
 
-				PROC_MAIN( OUTPUT_SOURCE_BEGIN );
+				PROC_MAIN( OUT_SOURCE_BEGIN );
 				class C1
 				{
 					int a1;
@@ -40,12 +40,12 @@ namespace test_inspector_source
 					int a5;
 					int a6;
 				};
-				PROC_MAIN( OUTPUT_SOURCE_END );
+				PROC_MAIN( OUT_SOURCE_END );
 			}
 
 			LS();
 
-			DECL_MAIN( OUTPUT_SOURCE_READY_N_BEGIN );
+			DECL_MAIN( OUT_SOURCE_READY_N_BEGIN );
 			class C2
 			{
 				int a1;
@@ -55,7 +55,7 @@ namespace test_inspector_source
 				int a5;
 				int a6;
 			};
-			PROC_MAIN( OUTPUT_SOURCE_END );
+			PROC_MAIN( OUT_SOURCE_END );
 
 			LS();
 

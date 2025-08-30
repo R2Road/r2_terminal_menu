@@ -21,7 +21,7 @@ namespace test_stop_watch
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "기본 생성자" );
+			OUT_SUBJECT( "기본 생성자" );
 
 			LS();
 
@@ -30,11 +30,11 @@ namespace test_stop_watch
 
 				LF();
 
-				OUTPUT_SIZE( s );
+				OUT_SIZE( s );
 
 				LF();
 
-				OUTPUT_BINARY( s );
+				OUT_BINARY( s );
 
 				LF();
 
@@ -77,7 +77,7 @@ namespace test_stop_watch
 
 			{
 				{
-					OUTPUT_SUBJECT( "Start + Stop" );
+					OUT_SUBJECT( "Start + Stop" );
 
 					LF();
 
@@ -89,7 +89,7 @@ namespace test_stop_watch
 				SS();
 
 				{
-					OUTPUT_SUBJECT( "경과 시간 단위 별로 출력" );
+					OUT_SUBJECT( "경과 시간 단위 별로 출력" );
 
 					LF();
 
@@ -104,7 +104,7 @@ namespace test_stop_watch
 				SS();
 
 				{
-					OUTPUT_SUBJECT( "경과 시간 전부 출력" );
+					OUT_SUBJECT( "경과 시간 전부 출력" );
 
 					LF();
 
@@ -139,7 +139,7 @@ namespace test_stop_watch
 
 			{
 				{
-					OUTPUT_SUBJECT( "Start + Stop" );
+					OUT_SUBJECT( "Start + Stop" );
 
 					LF();
 
@@ -157,7 +157,7 @@ namespace test_stop_watch
 				SS();
 
 				{
-					OUTPUT_SUBJECT( "최소 / 최대 경과 시간" );
+					OUT_SUBJECT( "최소 / 최대 경과 시간" );
 
 					LF();
 
@@ -190,7 +190,7 @@ namespace test_stop_watch
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "누적 과 평균" );
+			OUT_SUBJECT( "누적 과 평균" );
 
 			LS();
 
@@ -198,7 +198,7 @@ namespace test_stop_watch
 
 			LF();
 
-			OUTPUT_VALUE( s.GetAverageTime() );
+			OUT_VALUE( s.GetAverageTime() );
 
 			LS();
 
@@ -206,21 +206,21 @@ namespace test_stop_watch
 				PROC_MAIN( s.Start() );
 				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 100 ) );
 				PROC_MAIN( s.Stop() );
-				OUTPUT_VALUE( s.GetAverageTime() );
+				OUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
 				PROC_MAIN( s.Start() );
 				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 500 ) );
 				PROC_MAIN( s.Stop() );
-				OUTPUT_VALUE( s.GetAverageTime() );
+				OUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
 				PROC_MAIN( s.Start() );
 				PROC_SUB( r2tm::WindowsUtility::RequestSleep( 700 ) );
 				PROC_MAIN( s.Stop() );
-				OUTPUT_VALUE( s.GetAverageTime() );
+				OUT_VALUE( s.GetAverageTime() );
 
 				SS();
 
@@ -252,7 +252,7 @@ namespace test_stop_watch
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "초기화" );
+			OUT_SUBJECT( "초기화" );
 
 			LS();
 

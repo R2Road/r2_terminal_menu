@@ -24,8 +24,8 @@ namespace test_windows_utility_cursor_buffer
 			LS();
 
 			{
-				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
-				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
+				OUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
+				OUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
 			}
 
 			LS();
@@ -36,22 +36,22 @@ namespace test_windows_utility_cursor_buffer
 
 			for( int i = 0; 20 > i; ++i )
 			{
-				OUTPUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
+				OUT_STRING( "ddddddddddddddddduuuuuuuuuuummmmmmmmmmmyyyyyyyyyyyyyyyyyy" );
 			}
 
 			LS();
 
-			OUTPUT_SUBJECT( "[Any Key] p2 까지 라인 지우기" );
+			OUT_SUBJECT( "[Any Key] p2 까지 라인 지우기" );
 			WAIT_ANY_KEY;
 
 			r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( p2 );
 
-			OUTPUT_SUBJECT( "[Any Key] p1 까지 라인 지우기" );
+			OUT_SUBJECT( "[Any Key] p1 까지 라인 지우기" );
 			WAIT_ANY_KEY;
 
 			r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( p1.x, p1.y );
 
-			OUTPUT_SUBJECT( "[Any Key] End" );
+			OUT_SUBJECT( "[Any Key] End" );
 			WAIT_ANY_KEY;
 
 			return r2tm::eDoLeaveAction::None;

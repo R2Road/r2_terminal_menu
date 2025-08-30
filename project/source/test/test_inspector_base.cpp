@@ -19,7 +19,7 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "정의" );
+				OUT_SUBJECT( "정의" );
 
 				LF();
 
@@ -28,7 +28,7 @@ namespace test_inspector_base
 
 				SS();
 
-				OUTPUT_SUBJECT( "작동" );
+				OUT_SUBJECT( "작동" );
 
 				LF();
 
@@ -37,12 +37,12 @@ namespace test_inspector_base
 
 				SS();
 
-				OUTPUT_SUBJECT( "출력" );
+				OUT_SUBJECT( "출력" );
 
 				LF();
 
-				OUTPUT_VALUE( i );
-				OUTPUT_VALUE( j );
+				OUT_VALUE( i );
+				OUT_VALUE( j );
 			}
 
 			LS();
@@ -66,7 +66,7 @@ namespace test_inspector_base
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
+			OUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
 
 			LS();
 
@@ -115,7 +115,7 @@ namespace test_inspector_base
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
+			OUT_SUBJECT( "EXPECT Macro를 이용한 검사" );
 
 			LS();
 
@@ -164,16 +164,16 @@ namespace test_inspector_base
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "epsilon 을 이용한 float 비교" );
+			OUT_SUBJECT( "epsilon 을 이용한 float 비교" );
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "정밀도" );
+				OUT_SUBJECT( "정밀도" );
 
 				LF();
 
-				OUTPUT_VALUE( r2tm_epsilon_float );
+				OUT_VALUE( r2tm_epsilon_float );
 			}
 
 			LS();
@@ -215,16 +215,16 @@ namespace test_inspector_base
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "epsilon 을 이용한 double 비교" );
+			OUT_SUBJECT( "epsilon 을 이용한 double 비교" );
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "정밀도" );
+				OUT_SUBJECT( "정밀도" );
 
 				LF();
 
-				OUTPUT_VALUE( r2tm_epsilon_double );
+				OUT_VALUE( r2tm_epsilon_double );
 			}
 
 			LS();
@@ -267,26 +267,26 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "기존의 size 출력 방식" );
+				OUT_SUBJECT( "기존의 size 출력 방식" );
 
 				LF();
 
-				OUTPUT_VALUE( sizeof( int ) );
+				OUT_VALUE( sizeof( int ) );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "OUTPUT_SIZE 사용" );
+				OUT_SUBJECT( "OUT_SIZE 사용" );
 
 				LF();
 
-				OUTPUT_SIZE( int );
+				OUT_SIZE( int );
 
 				SS();
 
 				DECL_MAIN( struct S { int i[10]; } );
-				OUTPUT_SIZE( S );
+				OUT_SIZE( S );
 			}
 
 			LS();
@@ -311,21 +311,21 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "기존의 Align 출력 방식" );
+				OUT_SUBJECT( "기존의 Align 출력 방식" );
 
 				LF();
 
-				OUTPUT_VALUE( alignof( int ) );
+				OUT_VALUE( alignof( int ) );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "OUTPUT_ALIGN 사용" );
+				OUT_SUBJECT( "OUT_ALIGN 사용" );
 
 				LF();
 
-				OUTPUT_ALIGN( int );
+				OUT_ALIGN( int );
 
 				SS();
 
@@ -333,7 +333,7 @@ namespace test_inspector_base
 					int i[10];
 					long long j;
 				} );
-				OUTPUT_ALIGN( S );
+				OUT_ALIGN( S );
 			}
 
 			LS();
@@ -358,7 +358,7 @@ namespace test_inspector_base
 			LS();
 
 			{
-				OUTPUT_CODE( printf( "%s", "asdf" ) );
+				OUT_CODE( printf( "%s", "asdf" ) );
 			}
 
 			LS();
@@ -388,21 +388,21 @@ namespace test_inspector_base
 
 			{
 				{
-					OUTPUT_SUBJECT( "기존의 출력 방식" );
+					OUT_SUBJECT( "기존의 출력 방식" );
 
 					LF();
 
-					OUTPUT_VALUE( &i );
+					OUT_VALUE( &i );
 				}
 
 				SS();
 
 				{
-					OUTPUT_SUBJECT( "OUTPUT_ADDRESS 사용" );
+					OUT_SUBJECT( "OUT_ADDRESS 사용" );
 
 					LF();
 
-					OUTPUT_ADDRESS( i );
+					OUT_ADDRESS( i );
 				}
 			}
 
@@ -428,41 +428,41 @@ namespace test_inspector_base
 			LS();
 
 			{
-				std::cout << "    " "+ OUTPUT_STRING" << r2tm::linefeed;
+				std::cout << "    " "+ OUT_STRING" << r2tm::linefeed;
 
 				LF();
 
-				OUTPUT_STRING( "output string~!~!~!" );
+				OUT_STRING( "output string~!~!~!" );
 			}
 
 			LS();
 
 			{
-				std::cout << "    " "+ OUTPUT_NOTE" << r2tm::linefeed;
+				std::cout << "    " "+ OUT_NOTE" << r2tm::linefeed;
 
 				LF();
 
-				OUTPUT_NOTE( "output note~!~!~!" );
+				OUT_NOTE( "output note~!~!~!" );
 			}
 
 			LS();
 
 			{
-				std::cout << "    " "+ OUTPUT_SUBJECT" << r2tm::linefeed;
+				std::cout << "    " "+ OUT_SUBJECT" << r2tm::linefeed;
 
 				LF();
 
-				OUTPUT_SUBJECT( "output subject~!~!~!" );
+				OUT_SUBJECT( "output subject~!~!~!" );
 			}
 
 			LS();
 
 			{
-				std::cout << "    " "+ OUTPUT_COMMENT" << r2tm::linefeed;
+				std::cout << "    " "+ OUT_COMMENT" << r2tm::linefeed;
 
 				LF();
 
-				OUTPUT_COMMENT( "output comment~!~!~!" );
+				OUT_COMMENT( "output comment~!~!~!" );
 			}
 
 			LS();

@@ -31,23 +31,23 @@ namespace test_cache_cleaner
 				LF();
 
 				EXPECT_EQ( 1, c.GetBufferScale() );
-				OUTPUT_VALUE( c.GetBufferScale() );
+				OUT_VALUE( c.GetBufferScale() );
 
 				LF();
 
 				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
-				OUTPUT_VALUE( c.GetCacheByteSize() );
+				OUT_VALUE( c.GetCacheByteSize() );
 
 				LF();
 
 				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) / c.GetBufferScale() );
-				OUTPUT_VALUE( c.GetBufferSize() );
-				OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
+				OUT_VALUE( c.GetBufferSize() );
+				OUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
 
 				LF();
 
 				PROC_MAIN( c.Clean() );
-				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
+				OUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
 			LS();
@@ -58,23 +58,23 @@ namespace test_cache_cleaner
 				LF();
 
 				EXPECT_EQ( 2, c.GetBufferScale() );
-				OUTPUT_VALUE( c.GetBufferScale() );
+				OUT_VALUE( c.GetBufferScale() );
 
 				LF();
 
 				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetCacheByteSize() );
-				OUTPUT_VALUE( c.GetCacheByteSize() );
+				OUT_VALUE( c.GetCacheByteSize() );
 
 				LF();
 
 				EXPECT_EQ( r2tm::WindowsUtility::GetCPUCacheSize(), c.GetBufferSize() * sizeof( r2tm::CacheCleaner::BufferT ) / c.GetBufferScale() );
-				OUTPUT_VALUE( c.GetBufferSize() );
-				OUTPUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
+				OUT_VALUE( c.GetBufferSize() );
+				OUT_VALUE( sizeof( r2tm::CacheCleaner::BufferT ) );
 
 				LF();
 
 				PROC_MAIN( c.Clean() );
-				OUTPUT_COMMENT( "문제 없는지 호출 해본다." );
+				OUT_COMMENT( "문제 없는지 호출 해본다." );
 			}
 
 			LS();
@@ -102,26 +102,26 @@ namespace test_cache_cleaner
 
 			LF();
 
-			OUTPUT_SIZE( c );
+			OUT_SIZE( c );
 
 			LF();
 
-			OUTPUT_BINARY( c );
+			OUT_BINARY( c );
 
 			SS();
 
-			OUTPUT_SIZE( c.GetBufferScale() );
-			OUTPUT_BINARY( c.GetBufferScale() );
+			OUT_SIZE( c.GetBufferScale() );
+			OUT_BINARY( c.GetBufferScale() );
 
 			LF();
 
-			OUTPUT_SIZE( c.GetCacheByteSize() );
-			OUTPUT_BINARY( c.GetCacheByteSize() );
+			OUT_SIZE( c.GetCacheByteSize() );
+			OUT_BINARY( c.GetCacheByteSize() );
 
 			LF();
 
-			OUTPUT_SIZE( c.GetBufferSize() );
-			OUTPUT_BINARY( c.GetBufferSize() );
+			OUT_SIZE( c.GetBufferSize() );
+			OUT_BINARY( c.GetBufferSize() );
 
 			LS();
 
@@ -150,7 +150,7 @@ namespace test_cache_cleaner
 			// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
 			// > 사실상 캐쉬가 방해만 되는 환경이다.
 			//
-			OUTPUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
+			OUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
 
 			LF();
 
@@ -164,7 +164,7 @@ namespace test_cache_cleaner
 			{
 				c.Clean();
 
-				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
+				OUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
@@ -176,7 +176,7 @@ namespace test_cache_cleaner
 
 				SS();
 
-				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
+				OUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					//
@@ -214,7 +214,7 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			OUTPUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
+			OUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
 
 			LF();
 
@@ -228,7 +228,7 @@ namespace test_cache_cleaner
 			{
 				c.Clean();
 
-				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
+				OUT_SUBJECT( "테스트 함수 호출 + CacheCleaner X" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					s.Start();
@@ -243,7 +243,7 @@ namespace test_cache_cleaner
 
 				s.Reset();
 
-				OUTPUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
+				OUT_SUBJECT( "테스트 함수 호출 + CacheCleaner O" );
 				for( int i = 0; attempt > i; ++i )
 				{
 					//
@@ -262,7 +262,7 @@ namespace test_cache_cleaner
 
 			LS();
 
-			OUTPUT_NOTE( "코드 작성 당시 일반적으로 150 ~ 200ns 정도의 성능 격차를 보인다." );
+			OUT_NOTE( "코드 작성 당시 일반적으로 150 ~ 200ns 정도의 성능 격차를 보인다." );
 
 			LS();
 

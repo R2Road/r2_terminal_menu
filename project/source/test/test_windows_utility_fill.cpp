@@ -20,7 +20,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "한 칸에 색 채우기" );
+				OUT_SUBJECT( "한 칸에 색 채우기" );
 
 				LF();
 
@@ -38,7 +38,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "지정된 길이 만큼 색 채우기" );
+				OUT_SUBJECT( "지정된 길이 만큼 색 채우기" );
 
 				LF();
 
@@ -75,7 +75,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "한 칸에 글자/색 채우기" );
+				OUT_SUBJECT( "한 칸에 글자/색 채우기" );
 
 				LF();
 
@@ -116,7 +116,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "문자열 출력" );
+				OUT_SUBJECT( "문자열 출력" );
 
 				LF();
 
@@ -128,7 +128,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "문자열, Offset" );
+				OUT_SUBJECT( "문자열, Offset" );
 
 				LF();
 
@@ -141,7 +141,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "문자열, Offset, 색상" );
+				OUT_SUBJECT( "문자열, Offset, 색상" );
 
 				LF();
 
@@ -180,7 +180,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "한 문자를 여러개 찍기" );
+				OUT_SUBJECT( "한 문자를 여러개 찍기" );
 
 				LF();
 
@@ -193,7 +193,7 @@ namespace test_windows_utility_fill
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "한 문자를 색상을 넣어 여러개 찍기" );
+				OUT_SUBJECT( "한 문자를 색상을 넣어 여러개 찍기" );
 
 				LF();
 

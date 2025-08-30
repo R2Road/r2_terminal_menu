@@ -21,9 +21,9 @@ namespace version_viewer
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "[Q] Version Up" );
-			OUTPUT_SUBJECT( "[E] Version Down" );
-			OUTPUT_SUBJECT( "[ESC] Exit" );
+			OUT_SUBJECT( "[Q] Version Up" );
+			OUT_SUBJECT( "[E] Version Down" );
+			OUT_SUBJECT( "[ESC] Exit" );
 
 			LS();
 
@@ -37,7 +37,7 @@ namespace version_viewer
 				{
 					r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( pivot_cursor );
 
-					OUTPUT_STRING( r2tm::VersionInfo.VersionHistory[i] );
+					OUT_STRING( r2tm::VersionInfo.VersionHistory[i] );
 
 					LS();
 

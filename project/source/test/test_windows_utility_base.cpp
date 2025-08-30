@@ -20,7 +20,7 @@ namespace test_windows_utility_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "기본 생성자" );
+				OUT_SUBJECT( "기본 생성자" );
 
 				LF();
 
@@ -28,11 +28,11 @@ namespace test_windows_utility_base
 
 				LF();
 
-				OUTPUT_SIZE( p );
+				OUT_SIZE( p );
 
 				LF();
 
-				OUTPUT_BINARY( p );
+				OUT_BINARY( p );
 
 				LF();
 
@@ -43,7 +43,7 @@ namespace test_windows_utility_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "인자 있는 생성자" );
+				OUT_SUBJECT( "인자 있는 생성자" );
 
 				LF();
 
@@ -51,7 +51,7 @@ namespace test_windows_utility_base
 
 				LF();
 
-				OUTPUT_BINARY( p );
+				OUT_BINARY( p );
 
 				LF();
 
@@ -62,8 +62,8 @@ namespace test_windows_utility_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "no explicit" );
-				OUTPUT_COMMENT( "warning : 4244" );
+				OUT_SUBJECT( "no explicit" );
+				OUT_COMMENT( "warning : 4244" );
 
 				LF();
 
@@ -74,7 +74,7 @@ namespace test_windows_utility_base
 
 				LF();
 
-				OUTPUT_BINARY( p );
+				OUT_BINARY( p );
 
 				LF();
 
@@ -104,7 +104,7 @@ namespace test_windows_utility_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Operator +" );
+				OUT_SUBJECT( "Operator +" );
 
 				LF();
 
@@ -123,7 +123,7 @@ namespace test_windows_utility_base
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Operator +" );
+				OUT_SUBJECT( "Operator +" );
 
 				LF();
 
@@ -131,21 +131,21 @@ namespace test_windows_utility_base
 
 				LF();
 
-				OUTPUT_SOURCE_READY_N_BEGIN;
+				OUT_SOURCE_READY_N_BEGIN;
 				//p = p + { 2, 4 };
-				OUTPUT_SOURCE_END;
+				OUT_SOURCE_END;
 
 				LF();
 
-				OUTPUT_NOTE( "타입 유추 실패로 위 코드는 정상 작동하지 못한다." );
-				OUTPUT_NOTE( "initialize-list 와의 경합이 원인으로 보인다." );
-				OUTPUT_NOTE( "{ 2, 4 } 를 함수 인자로 사용한 경우는 타입 유추에 성공한다." );
+				OUT_NOTE( "타입 유추 실패로 위 코드는 정상 작동하지 못한다." );
+				OUT_NOTE( "initialize-list 와의 경합이 원인으로 보인다." );
+				OUT_NOTE( "{ 2, 4 } 를 함수 인자로 사용한 경우는 타입 유추에 성공한다." );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Operator +=" );
+				OUT_SUBJECT( "Operator +=" );
 
 				LF();
 

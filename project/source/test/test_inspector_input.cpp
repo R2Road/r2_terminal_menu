@@ -22,7 +22,7 @@ namespace test_inspector_input
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "아무 키나 누르시오." );
+				OUT_SUBJECT( "아무 키나 누르시오." );
 
 				WAIT_ANY_KEY;
 			}
@@ -49,11 +49,11 @@ namespace test_inspector_input
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "아무 키나 누르시오." );
+				OUT_SUBJECT( "아무 키나 누르시오." );
 
 				LF();
 
-				OUTPUT_VALUE( GET_KEY );
+				OUT_VALUE( GET_KEY );
 			}
 
 			LS();
@@ -78,7 +78,7 @@ namespace test_inspector_input
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "아무 키나 누르시오." );
+				OUT_SUBJECT( "아무 키나 누르시오." );
 
 				SS();
 
@@ -101,7 +101,7 @@ namespace test_inspector_input
 
 						if( 0 == ( frame_count % 5 ) )
 						{
-							OUTPUT_STRING( "." );
+							OUT_STRING( "." );
 						}
 
 						if( fps == frame_count )
@@ -135,14 +135,14 @@ namespace test_inspector_input
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "_kbhit 로 테스트를 끝내는 경우" );
-			OUTPUT_SUBJECT( "_getch 를 사용해 input buffer 를 비워주지 않으면" );
-			OUTPUT_SUBJECT( "menu에 돌아갔을 때 키가 작동 해버린다." );
+			OUT_SUBJECT( "_kbhit 로 테스트를 끝내는 경우" );
+			OUT_SUBJECT( "_getch 를 사용해 input buffer 를 비워주지 않으면" );
+			OUT_SUBJECT( "menu에 돌아갔을 때 키가 작동 해버린다." );
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "아무 키나 누르시오." );
+				OUT_SUBJECT( "아무 키나 누르시오." );
 
 				SS();
 
@@ -165,7 +165,7 @@ namespace test_inspector_input
 
 						if( 0 == ( frame_count % 5 ) )
 						{
-							OUTPUT_STRING( "." );
+							OUT_STRING( "." );
 						}
 
 						if( fps == frame_count )

@@ -20,7 +20,7 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_FILE" );
+			OUT_SUBJECT( "OUT_FILE" );
 
 			LS();
 
@@ -34,7 +34,7 @@ namespace test_inspector_file
 
 				LF();
 
-				PROC_MAIN( OUTPUT_FILE( p.string().c_str() ) );
+				PROC_MAIN( OUT_FILE( p.string().c_str() ) );
 			}
 
 			LS();
@@ -49,7 +49,7 @@ namespace test_inspector_file
 
 				LF();
 
-				PROC_MAIN( OUTPUT_FILE( p.string().c_str() ) );
+				PROC_MAIN( OUT_FILE( p.string().c_str() ) );
 			}
 
 			LS();
@@ -73,12 +73,12 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_FILE : with __FILE__" );
+			OUT_SUBJECT( "OUT_FILE : with __FILE__" );
 
 			LS();
 
 			{
-				PROC_MAIN( OUTPUT_FILE( __FILE__ ) );
+				PROC_MAIN( OUT_FILE( __FILE__ ) );
 			}
 
 			LS();
@@ -102,7 +102,7 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_FILE_RANGE" );
+			OUT_SUBJECT( "OUT_FILE_RANGE" );
 
 			LS();
 
@@ -116,7 +116,7 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_FILE_RANGE( p.string().c_str(), 1, 3 );
+				OUT_FILE_RANGE( p.string().c_str(), 1, 3 );
 			}
 
 			LS();
@@ -131,7 +131,7 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_FILE_RANGE( p.string().c_str(), 5, 10 );
+				OUT_FILE_RANGE( p.string().c_str(), 5, 10 );
 			}
 
 			LS();
@@ -155,7 +155,7 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_FILE_RANGE : min > max" );
+			OUT_SUBJECT( "OUT_FILE_RANGE : min > max" );
 
 			LS();
 
@@ -169,14 +169,14 @@ namespace test_inspector_file
 
 				SS();
 
-				PROC_MAIN( OUTPUT_FILE_RANGE( p.string().c_str(), 10, 5 ) );
+				PROC_MAIN( OUT_FILE_RANGE( p.string().c_str(), 10, 5 ) );
 			}
 
 			LS();
 
 			{
-				OUTPUT_NOTE( "min > max 여도 문제 없다." );
-				OUTPUT_NOTE( "File 내용은 아무것도 출력되지 않는다." );
+				OUT_NOTE( "min > max 여도 문제 없다." );
+				OUT_NOTE( "File 내용은 아무것도 출력되지 않는다." );
 			}
 
 			LS();
@@ -200,12 +200,12 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "OUTPUT_FILE_RANGE : with __FILE__" );
+			OUT_SUBJECT( "OUT_FILE_RANGE : with __FILE__" );
 
 			LS();
 
 			{
-				PROC_MAIN( OUTPUT_FILE_RANGE( __FILE__, 5, 10 ) );
+				PROC_MAIN( OUT_FILE_RANGE( __FILE__, 5, 10 ) );
 			}
 
 			LS();
@@ -229,12 +229,12 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUTPUT_SUBJECT( "DIR_OPEN" );
+			OUT_SUBJECT( "DIR_OPEN" );
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Directory 경로" );
+				OUT_SUBJECT( "Directory 경로" );
 
 				LF();
 
@@ -242,13 +242,13 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_VALUE( std::filesystem::current_path().string().c_str() );
+				OUT_VALUE( std::filesystem::current_path().string().c_str() );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "File 경로" );
+				OUT_SUBJECT( "File 경로" );
 
 				LF();
 
@@ -256,7 +256,7 @@ namespace test_inspector_file
 
 				LF();
 
-				OUTPUT_VALUE( __FILE__ );
+				OUT_VALUE( __FILE__ );
 			}
 
 			LS();

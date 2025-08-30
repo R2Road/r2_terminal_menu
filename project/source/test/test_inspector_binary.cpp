@@ -19,45 +19,45 @@ namespace test_inspector_binary
 			LS();
 
 			{
-				OUTPUT_BINARY( 123i8 );
-				OUTPUT_BINARY( int8_t( -123i8 ) );
+				OUT_BINARY( 123i8 );
+				OUT_BINARY( int8_t( -123i8 ) );
 
-				OUTPUT_BINARY( 123ui8 );
+				OUT_BINARY( 123ui8 );
 			}
 
 			LS();
 
 			{
-				OUTPUT_BINARY( 123i16 );
-				OUTPUT_BINARY( int16_t( -123i16 ) );
+				OUT_BINARY( 123i16 );
+				OUT_BINARY( int16_t( -123i16 ) );
 
-				OUTPUT_BINARY( 123ui16 );
+				OUT_BINARY( 123ui16 );
 			}
 
 			LS();
 
 			{
-				OUTPUT_BINARY( 123i32 );
-				OUTPUT_BINARY( -123i32 );
+				OUT_BINARY( 123i32 );
+				OUT_BINARY( -123i32 );
 
-				OUTPUT_BINARY( 123ui32 );
+				OUT_BINARY( 123ui32 );
 			}
 
 			LS();
 
 			{
-				OUTPUT_BINARY( 123i64 );
-				OUTPUT_BINARY( -123i64 );
+				OUT_BINARY( 123i64 );
+				OUT_BINARY( -123i64 );
 
-				OUTPUT_BINARY( 123ui64 );
+				OUT_BINARY( 123ui64 );
 			}
 
 			LS();
 
 			{
 				DECL_MAIN( struct S { int32_t i1 = 1; int64_t i2 = 7; int32_t i3 = 2; int64_t i4 = 9; } d );
-				OUTPUT_VALUE( sizeof( d ) );
-				OUTPUT_BINARY( d );
+				OUT_VALUE( sizeof( d ) );
+				OUT_BINARY( d );
 			}
 
 			LS();
@@ -90,7 +90,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 2 );
+				OUT_BINARIES( buffer, 2 );
 			}
 
 			LS();
@@ -100,7 +100,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 5 );
+				OUT_BINARIES( buffer, 5 );
 			}
 
 			LS();
@@ -114,7 +114,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 4 );
+				OUT_BINARIES( buffer, 4 );
 			}
 
 			LS();
@@ -124,7 +124,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 10 );
+				OUT_BINARIES( buffer, 10 );
 			}
 
 			LS();
@@ -158,7 +158,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 2 );
+				OUT_BINARIES( buffer, 2 );
 			}
 
 			LS();
@@ -168,7 +168,7 @@ namespace test_inspector_binary
 
 				LF();
 
-				OUTPUT_BINARIES( buffer, 2 );
+				OUT_BINARIES( buffer, 2 );
 			}
 
 			LS();

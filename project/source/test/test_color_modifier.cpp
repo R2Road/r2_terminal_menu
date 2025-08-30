@@ -26,27 +26,27 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "크기" );
+				OUT_SUBJECT( "크기" );
 
 				LF();
 
-				OUTPUT_SIZE( r2tm::ColorModifier{} );
+				OUT_SIZE( r2tm::ColorModifier{} );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "바이너리" );
+				OUT_SUBJECT( "바이너리" );
 
 				LF();
 
-				OUTPUT_BINARY( r2tm::ColorModifier{} );
+				OUT_BINARY( r2tm::ColorModifier{} );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "기본 생성자" );
+				OUT_SUBJECT( "기본 생성자" );
 
 				LF();
 
@@ -55,17 +55,17 @@ namespace test_color_modifier
 				LF();
 
 				EXPECT_EQ( r2tm::ColorModifier::DEFAULT_COLOR, cm.GetColor() );
-				OUTPUT_VALUE( cm.GetColor() );
+				OUT_VALUE( cm.GetColor() );
 
 				LF();
 
-				OUTPUT_BINARY( cm );
+				OUT_BINARY( cm );
 			}
 
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "인자가 있는 생성자" );
+				OUT_SUBJECT( "인자가 있는 생성자" );
 
 				LF();
 
@@ -75,11 +75,11 @@ namespace test_color_modifier
 				LF();
 
 				EXPECT_EQ( c, cm.GetColor() );
-				OUTPUT_VALUE( cm.GetColor() );
+				OUT_VALUE( cm.GetColor() );
 
 				LF();
 
-				OUTPUT_BINARY( cm );
+				OUT_BINARY( cm );
 			}
 
 			LS();
@@ -104,7 +104,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "Empty" );
+				OUT_SUBJECT( "Empty" );
 
 				LF();
 
@@ -114,7 +114,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "None" );
+				OUT_SUBJECT( "None" );
 
 				LF();
 
@@ -124,7 +124,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "글자색 지정" );
+				OUT_SUBJECT( "글자색 지정" );
 
 				LF();
 
@@ -134,7 +134,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "r2tm::ColorModifier 대신에 줄임 표현인 clm 사용 가능" );
+				OUT_SUBJECT( "r2tm::ColorModifier 대신에 줄임 표현인 clm 사용 가능" );
 
 				LF();
 
@@ -144,7 +144,7 @@ namespace test_color_modifier
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "글자색 + 배경색 지정" );
+				OUT_SUBJECT( "글자색 + 배경색 지정" );
 
 				LF();
 

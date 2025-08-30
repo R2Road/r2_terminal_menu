@@ -19,7 +19,7 @@ namespace test_inspector_demo
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "정의" );
+				OUT_SUBJECT( "정의" );
 
 				LF();
 
@@ -28,7 +28,7 @@ namespace test_inspector_demo
 
 				SS();
 
-				OUTPUT_SUBJECT( "작동 + 검사" );
+				OUT_SUBJECT( "작동 + 검사" );
 
 				LF();
 
@@ -44,7 +44,7 @@ namespace test_inspector_demo
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "코드 출력" );
+				OUT_SUBJECT( "코드 출력" );
 
 				LF();
 
@@ -58,7 +58,7 @@ namespace test_inspector_demo
 					}
 				} s;
 
-				OUTPUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 51, 59 );
+				OUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 51, 59 );
 
 				SS();
 
@@ -66,19 +66,19 @@ namespace test_inspector_demo
 
 				LF();
 
-				OUTPUT_SUBJECT( "값 출력" );
+				OUT_SUBJECT( "값 출력" );
 
 				LF();
 
-				OUTPUT_VALUE( s.i );
+				OUT_VALUE( s.i );
 
 				SS();
 
-				OUTPUT_SUBJECT( "바이너리 출력" );
+				OUT_SUBJECT( "바이너리 출력" );
 
 				LF();
 
-				OUTPUT_BINARY( s );
+				OUT_BINARY( s );
 			}
 
 			LS();
@@ -103,30 +103,30 @@ namespace test_inspector_demo
 			LS();
 
 			{
-				OUTPUT_SUBJECT( "안되는 것" );
+				OUT_SUBJECT( "안되는 것" );
 
 				LF();
 
 #pragma warning( push )
 #pragma warning( disable : 4002 )
-				OUTPUT_CODE( std::pair<int, int> a );
+				OUT_CODE( std::pair<int, int> a );
 #pragma warning( pop )
 
 				LF();
 
-				OUTPUT_NOTE( "인자가 2개인 템플릿의 선언에는 Inspector 의 사용이 안된다. C4002" );
+				OUT_NOTE( "인자가 2개인 템플릿의 선언에는 Inspector 의 사용이 안된다. C4002" );
 			}
 
 			SS();
 
 			{
-				OUTPUT_SUBJECT( "대안 : OUTPUT_SOURCE" );
+				OUT_SUBJECT( "대안 : OUT_SOURCE" );
 
 				LF();
 
-				OUTPUT_SOURCE_READY_N_BEGIN;
+				OUT_SOURCE_READY_N_BEGIN;
 				std::pair<int, int> a;
-				OUTPUT_SOURCE_END;
+				OUT_SOURCE_END;
 
 				// warning 제거용 더미 코드
 				a.first = 0;
@@ -135,13 +135,13 @@ namespace test_inspector_demo
 			SS();
 
 			{
-				OUTPUT_SUBJECT( "대안 : OUTPUT_SOURCE + using" );
+				OUT_SUBJECT( "대안 : OUT_SOURCE + using" );
 
 				LF();
 
-				OUTPUT_SOURCE_READY_N_BEGIN;
+				OUT_SOURCE_READY_N_BEGIN;
 				using P = std::pair<int, int>;
-				OUTPUT_SOURCE_END;
+				OUT_SOURCE_END;
 
 				LF();
 
