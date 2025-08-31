@@ -1,5 +1,6 @@
 #include "test_empty.hpp"
 
+#include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
 
 namespace test_empty
@@ -17,7 +18,11 @@ namespace test_empty
 		{
 			LS();
 
-			std::cout << r2tm::tab2 << "Do Something" << r2tm::linefeed;
+			OUT_SUBJECT( "아래 파일 참조." );
+
+			LF();
+
+			OUT_STRING( __FILE__ );
 
 			LS();
 
