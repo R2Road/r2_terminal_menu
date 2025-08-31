@@ -53,7 +53,7 @@
     <ClCompile Include="source\test\test_windows_utility_fill.cpp" />
     <ClCompile Include="source\tutorial\menu_make_menu.cpp" />
     <ClCompile Include="source\tutorial\menu_tutorial.cpp" />
-    <ClCompile Include="source\tutorial\test_empty.cpp" />
+    <ClCompile Include="source\tutorial\test_tutorial.cpp" />
     <ClCompile Include="source\viewer\key_viewer.cpp" />
     <ClCompile Include="source\viewer\version_viewer.cpp" />
   </ItemGroup>
@@ -98,7 +98,7 @@
     <ClInclude Include="source\test\test_windows_utility_fill.hpp" />
     <ClInclude Include="source\tutorial\menu_make_menu.hpp" />
     <ClInclude Include="source\tutorial\menu_tutorial.hpp" />
-    <ClInclude Include="source\tutorial\test_empty.hpp" />
+    <ClInclude Include="source\tutorial\test_tutorial.hpp" />
     <ClInclude Include="source\viewer\key_viewer.hpp" />
     <ClInclude Include="source\viewer\version_viewer.hpp" />
   </ItemGroup>

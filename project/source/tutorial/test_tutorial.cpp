@@ -1,9 +1,9 @@
-#include "test_empty.hpp"
+#include "test_tutorial.hpp"
 
 #include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
 
-namespace test_empty
+namespace test_tutorial
 {
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
@@ -22,7 +22,7 @@ namespace test_empty
 
 			LF();
 
-			OUT_STRING( __FILE__ );
+			OUT_STRING( "   > " __FILE__ );
 
 			LS();
 

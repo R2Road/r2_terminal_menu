@@ -97,7 +97,7 @@
     <ClCompile Include="source\tutorial\menu_tutorial.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="source\tutorial\test_empty.cpp">
+    <ClCompile Include="source\tutorial\test_tutorial.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
     <ClCompile Include="source\tutorial\menu_make_menu.cpp">
@@ -224,7 +224,7 @@
     <ClInclude Include="source\tutorial\menu_tutorial.hpp">
       <Filter>tutorial</Filter>
     </ClInclude>
-    <ClInclude Include="source\tutorial\test_empty.hpp">
+    <ClInclude Include="source\tutorial\test_tutorial.hpp">
       <Filter>tutorial</Filter>
     </ClInclude>
     <ClInclude Include="source\tutorial\menu_make_menu.hpp">

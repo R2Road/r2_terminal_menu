@@ -4,7 +4,7 @@
 
 #include "menu_tutorial.hpp"
 
-#include "test_empty.hpp"
+#include "test_tutorial.hpp"
 
 r2tm::TitleFunctionT Menu_MakeMenu::GetTitleFunction() const
 {
@@ -24,8 +24,8 @@ r2tm::WriteFunctionT Menu_MakeMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
-		mp->AddItem( '1', test_empty::Basic() );
-		mp->AddItem( '2', test_empty::Basic() );
+		mp->AddItem( '1', test_tutorial::Basic() );
+		mp->AddItem( '2', test_tutorial::Basic() );
 
 
 

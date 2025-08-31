@@ -1,9 +1,10 @@
 #include "menu_tutorial.hpp"
 
+#include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_menu_processor.hpp"
 #include "r2tm/r2tm_ostream.hpp"
 
-#include "test_empty.hpp"
+#include "test_tutorial.hpp"
 
 #include "menu_root.hpp"
 #include "menu_make_menu.hpp"
@@ -27,7 +28,7 @@ r2tm::WriteFunctionT Menu_Tutorial::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* mp )
 	{
 		mp->AddMessage( "# Test를 r2tm::iItem을 사용해 만들기", r2tm::eColor::FG_Yellow );
-		mp->AddItem( '1', test_empty::Basic() );
+		mp->AddItem( '1', test_tutorial::Basic() );
 
 
 
@@ -36,7 +37,7 @@ r2tm::WriteFunctionT Menu_Tutorial::GetWriteFunction() const
 
 
 		mp->AddMessage( "# 동일한 Test를 여러 키에 할당 해보기", r2tm::eColor::FG_Yellow );
-		mp->AddItem( '2', test_empty::Basic() );
+		mp->AddItem( '2', test_tutorial::Basic() );
 
 
 
@@ -49,13 +50,13 @@ r2tm::WriteFunctionT Menu_Tutorial::GetWriteFunction() const
 			'3'
 			, []()->const char*
 			{
-				return "Show Title With Lambda";
+				return "Lambda 로 만든 제목 생성기";
 			}
 			, []()->r2tm::eDoLeaveAction
 			{
 				LS();
 
-				std::cout << r2tm::linefeed2 << "##### Show Title With Lambda #####" << r2tm::linefeed3;
+				OUT_STRING( "   > Lambda로 만든 Test 본체" );
 
 				LS();
 
