@@ -89,6 +89,35 @@ namespace test_inspector_file
 
 
 
+	r2tm::TitleFunctionT File_3::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : File 3";
+		};
+	}
+	r2tm::DoFunctionT File_3::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUT_SUBJECT( "OUT_FILE : 잘못된 파일 경로" );
+
+			LS();
+
+			{
+				PROC_MAIN( OUT_FILE( "" ) );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT FileRange_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -206,6 +235,35 @@ namespace test_inspector_file
 
 			{
 				PROC_MAIN( OUT_FILE_RANGE( __FILE__, 5, 10 ) );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
+	r2tm::TitleFunctionT FileRange_4::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : File Range 4";
+		};
+	}
+	r2tm::DoFunctionT FileRange_4::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUT_SUBJECT( "OUT_FILE_RANGE :  잘못된 파일 경로" );
+
+			LS();
+
+			{
+				PROC_MAIN( OUT_FILE_RANGE( "", 5, 10));
 			}
 
 			LS();

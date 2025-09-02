@@ -62,11 +62,13 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 		mp->AddItem( 'a', test_inspector_file::File_1() );
 		mp->AddItem( 's', test_inspector_file::File_2() );
-		mp->AddItem( 'd', test_inspector_file::FileRange_1() );
-		mp->AddItem( 'f', test_inspector_file::FileRange_2() );
-		mp->AddItem( 'g', test_inspector_file::FileRange_3() );
-		mp->AddItem( 'h', test_inspector_source::Basic() );
-		mp->AddItem( 'j', test_inspector_file::DirectoryOpen() );
+		mp->AddItem( 'd', test_inspector_file::File_3() );
+		mp->AddItem( 'f', test_inspector_file::FileRange_1() );
+		mp->AddItem( 'g', test_inspector_file::FileRange_2() );
+		mp->AddItem( 'h', test_inspector_file::FileRange_3() );
+		mp->AddItem( 'j', test_inspector_file::FileRange_4() );
+		mp->AddItem( 'k', test_inspector_source::Basic() );
+		mp->AddItem( 'l', test_inspector_file::DirectoryOpen() );
 
 
 
