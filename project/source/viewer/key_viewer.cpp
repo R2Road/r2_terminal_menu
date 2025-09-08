@@ -51,9 +51,7 @@ namespace key_viewer
 				} while( 27 != input ); // ESC
 			}
 
-			LS();
-
-			return r2tm::eDoLeaveAction::None;
+			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
 }
