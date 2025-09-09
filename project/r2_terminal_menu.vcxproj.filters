@@ -84,10 +84,10 @@
     <ClCompile Include="source\r2tm\r2tm_input.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="source\viewer\key_viewer.cpp">
+    <ClCompile Include="source\viewer\viewer_key.cpp">
       <Filter>viewer</Filter>
     </ClCompile>
-    <ClCompile Include="source\viewer\version_viewer.cpp">
+    <ClCompile Include="source\viewer\viewer_version.cpp">
       <Filter>viewer</Filter>
     </ClCompile>
     <ClCompile Include="source\test\test_cache_cleaner___helper.hpp">
@@ -214,10 +214,10 @@
     <ClInclude Include="source\r2tm\r2tm_input.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="source\viewer\key_viewer.hpp">
+    <ClInclude Include="source\viewer\viewer_key.hpp">
       <Filter>viewer</Filter>
     </ClInclude>
-    <ClInclude Include="source\viewer\version_viewer.hpp">
+    <ClInclude Include="source\viewer\viewer_version.hpp">
       <Filter>viewer</Filter>
     </ClInclude>
     <ClInclude Include="source\menu_portfolio.hpp" />

@@ -1,4 +1,4 @@
-#include "version_viewer.hpp"
+#include "viewer_version.hpp"
 
 #include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
@@ -6,13 +6,13 @@
 
 #include "r2tm/r2tm_version_info.hpp"
 
-namespace version_viewer
+namespace viewer_version
 {
 	r2tm::TitleFunctionT Viewer::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Version View";
+			return "Viewer : Version";
 		};
 	}
 	r2tm::DoFunctionT Viewer::GetDoFunction() const

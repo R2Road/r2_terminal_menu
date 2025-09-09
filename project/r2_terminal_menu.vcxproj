@@ -54,8 +54,8 @@
     <ClCompile Include="source\tutorial\menu_make_menu.cpp" />
     <ClCompile Include="source\tutorial\menu_tutorial.cpp" />
     <ClCompile Include="source\tutorial\test_tutorial.cpp" />
-    <ClCompile Include="source\viewer\key_viewer.cpp" />
-    <ClCompile Include="source\viewer\version_viewer.cpp" />
+    <ClCompile Include="source\viewer\viewer_key.cpp" />
+    <ClCompile Include="source\viewer\viewer_version.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_portfolio.hpp" />
@@ -99,8 +99,8 @@
     <ClInclude Include="source\tutorial\menu_make_menu.hpp" />
     <ClInclude Include="source\tutorial\menu_tutorial.hpp" />
     <ClInclude Include="source\tutorial\test_tutorial.hpp" />
-    <ClInclude Include="source\viewer\key_viewer.hpp" />
-    <ClInclude Include="source\viewer\version_viewer.hpp" />
+    <ClInclude Include="source\viewer\viewer_key.hpp" />
+    <ClInclude Include="source\viewer\viewer_version.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

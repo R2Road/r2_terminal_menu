@@ -2,9 +2,9 @@
 
 #include "r2tm/r2tm_interface_item.hpp"
 
-namespace key_viewer
+namespace viewer_version
 {
-	class View : public r2tm::iItem
+	class Viewer : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

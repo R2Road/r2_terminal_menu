@@ -1,17 +1,17 @@
-#include "key_viewer.hpp"
+#include "viewer_key.hpp"
 
 #include "r2tm/r2tm_color_modifier.hpp"
 #include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_windows_utility.hpp"
 
-namespace key_viewer
+namespace viewer_key
 {
 	r2tm::TitleFunctionT View::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Key View";
+			return "Viewer : Key";
 		};
 	}
 	r2tm::DoFunctionT View::GetDoFunction() const

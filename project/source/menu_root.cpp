@@ -17,8 +17,8 @@
 
 #include "tutorial/menu_tutorial.hpp"
 
-#include "viewer/key_viewer.hpp"
-#include "viewer/version_viewer.hpp"
+#include "viewer/viewer_key.hpp"
+#include "viewer/viewer_version.hpp"
 
 #include "menu_portfolio.hpp"
 
@@ -85,8 +85,8 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'z', key_viewer::View() );
-		mp->AddItem( 'x', version_viewer::Viewer() );
+		mp->AddItem( 'z', viewer_key::View() );
+		mp->AddItem( 'x', viewer_version::Viewer() );
 
 
 
