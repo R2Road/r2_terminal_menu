@@ -19,6 +19,7 @@
 
 #include "viewer/viewer_key.hpp"
 #include "viewer/viewer_version.hpp"
+#include "viewer/viewer_window_size.hpp"
 
 #include "menu_portfolio.hpp"
 
@@ -87,6 +88,7 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 		mp->AddItem( 'z', viewer_key::View() );
 		mp->AddItem( 'x', viewer_version::Viewer() );
+		mp->AddItem( 'c', viewer_window_size::Viewer() );
 
 
 
