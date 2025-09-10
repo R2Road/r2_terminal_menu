@@ -32,33 +32,52 @@ namespace r2tm_viewer
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
-			HANDLE hStdout = GetStdHandle( STD_OUTPUT_HANDLE );
+			//
+			// 출력 예시
+			// #   12345678901234567890123456789012345678901234567890
+			// 
+			// 1 | 1         1         2         3         ...
+			// 2 | 2         1         2         3         ...
+			// 3 | 3         1         2         3         ...
+			// 4 | 4         1         2         3         ...
+			// .
+			// .
+			// .
+			// 
+			// > 앞의 10칸은 라인 번호 출력을 위해 사용
+			// > 이후 10칸 단위 행 번호 출력
+			//
+
+			const HANDLE hStdout = GetStdHandle( STD_OUTPUT_HANDLE );
 			CONSOLE_SCREEN_BUFFER_INFO csbi;
 			GetConsoleScreenBufferInfo( hStdout, &csbi );
 
 			//
-			// 문자열 생성
-			//  > 예시 : 1         2         3         4         5         6         7         8         9
+			// 열 구분 문자열 생성
+			//  > 예시 : 1         2         3         4         5         6         7         8         9         0        1 ...
 			//
 			std::string s( csbi.srWindow.Right - 10, ' ' );
 			{
-				const decltype( s.size() ) mark_count = s.size() / 10u;
 				char n = '1';
-				for( decltype( s.size() ) i = 0; i < mark_count; ++i, ++n )
+				const decltype( s.size() ) mark_count = s.size() / 10u;
+				for( decltype( s.size() ) i = 0; i < mark_count; ++i )
 				{
+					++n;
 					n = ( n > '9' ) ? '0' : n;
+
 					s[( i * 10 )] = n;
 				}
 			}
 
 			//
 			// 출력
-			//  > 앞에 10칸은 라인 번	호 출력을 위해 사용
-			//  > 이후 10칸 단위로 행 번호 출력
 			//
 			for( decltype( csbi.srWindow.Bottom ) i = 0; i < csbi.srWindow.Bottom - 1; i++ )
 			{
-				std::cout << std::left << std::setw( 10 ) << i << s << "\n";
+				std::cout
+					<< std::left << std::setw( 10 ) << i    // 라인 번호 출력
+					<< s                                    // 열 번호 출력
+					<< "\n";
 			}
 
 			return r2tm::eDoLeaveAction::Pause;
