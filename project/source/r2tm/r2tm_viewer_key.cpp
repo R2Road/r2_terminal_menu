@@ -1,20 +1,20 @@
-#include "viewer_key.hpp"
+#include "r2tm_viewer_key.hpp"
 
-#include "r2tm/r2tm_color_modifier.hpp"
-#include "r2tm/r2tm_inspector.hpp"
-#include "r2tm/r2tm_ostream.hpp"
-#include "r2tm/r2tm_windows_utility.hpp"
+#include "r2tm_color_modifier.hpp"
+#include "r2tm_inspector.hpp"
+#include "r2tm_ostream.hpp"
+#include "r2tm_windows_utility.hpp"
 
-namespace viewer_key
+namespace r2tm_viewer
 {
-	r2tm::TitleFunctionT View::GetTitleFunction() const
+	r2tm::TitleFunctionT Key::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Viewer : Key";
 		};
 	}
-	r2tm::DoFunctionT View::GetDoFunction() const
+	r2tm::DoFunctionT Key::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

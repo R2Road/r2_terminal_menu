@@ -1,18 +1,13 @@
-#include "viewer_window_size.hpp"
+#include "r2tm_viewer_window_size.hpp"
 
 #include <iomanip>
+#include <iostream>
 #include <string>
 #include <Windows.h>
 
-#include "r2tm/r2tm_inspector.hpp"
-#include "r2tm/r2tm_ostream.hpp"
-#include "r2tm/r2tm_windows_utility.hpp"
-
-#include "r2tm/r2tm_version_info.hpp"
-
-namespace viewer_window_size
+namespace r2tm_viewer
 {
-	r2tm::TitleFunctionT Viewer::GetTitleFunction() const
+	r2tm::TitleFunctionT WindowSize::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
@@ -33,7 +28,7 @@ namespace viewer_window_size
 			return s.c_str();
 		};
 	}
-	r2tm::DoFunctionT Viewer::GetDoFunction() const
+	r2tm::DoFunctionT WindowSize::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
@@ -59,13 +54,11 @@ namespace viewer_window_size
 			//
 			// 출력
 			//  > 앞에 10칸은 라인 번	호 출력을 위해 사용
-			//  > 이후 10 단위로 행 번호 출력
+			//  > 이후 10칸 단위로 행 번호 출력
 			//
 			for( decltype( csbi.srWindow.Bottom ) i = 0; i < csbi.srWindow.Bottom - 1; i++ )
 			{
-				std::cout << std::left << std::setw( 10 ) << i << s;
-				
-				LF();
+				std::cout << std::left << std::setw( 10 ) << i << s << "\n";
 			}
 
 			return r2tm::eDoLeaveAction::Pause;

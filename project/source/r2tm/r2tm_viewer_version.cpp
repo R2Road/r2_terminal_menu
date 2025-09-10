@@ -1,21 +1,21 @@
-#include "viewer_version.hpp"
+#include "r2tm_viewer_version.hpp"
 
-#include "r2tm/r2tm_inspector.hpp"
-#include "r2tm/r2tm_ostream.hpp"
-#include "r2tm/r2tm_windows_utility.hpp"
+#include "r2tm_inspector.hpp"
+#include "r2tm_ostream.hpp"
+#include "r2tm_windows_utility.hpp"
 
-#include "r2tm/r2tm_version_info.hpp"
+#include "r2tm_version_info.hpp"
 
-namespace viewer_version
+namespace r2tm_viewer
 {
-	r2tm::TitleFunctionT Viewer::GetTitleFunction() const
+	r2tm::TitleFunctionT Version::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Viewer : Version";
 		};
 	}
-	r2tm::DoFunctionT Viewer::GetDoFunction() const
+	r2tm::DoFunctionT Version::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

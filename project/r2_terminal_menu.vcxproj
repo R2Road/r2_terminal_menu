@@ -31,6 +31,9 @@
     <ClCompile Include="source\r2tm\r2tm_stop_watch.cpp" />
     <ClCompile Include="source\r2tm\r2tm_windows_utility.cpp" />
     <ClCompile Include="source\menu_root.cpp" />
+    <ClCompile Include="source\r2tm\r2tm_viewer_key.cpp" />
+    <ClCompile Include="source\r2tm\r2tm_viewer_version.cpp" />
+    <ClCompile Include="source\r2tm\r2tm_viewer_window_size.cpp" />
     <ClCompile Include="source\test\menu_color_modifier.cpp" />
     <ClCompile Include="source\test\menu_leave_action.cpp" />
     <ClCompile Include="source\test\menu_cache_cleaner.cpp" />
@@ -54,9 +57,6 @@
     <ClCompile Include="source\tutorial\menu_make_menu.cpp" />
     <ClCompile Include="source\tutorial\menu_tutorial.cpp" />
     <ClCompile Include="source\tutorial\test_tutorial.cpp" />
-    <ClCompile Include="source\viewer\viewer_key.cpp" />
-    <ClCompile Include="source\viewer\viewer_version.cpp" />
-    <ClCompile Include="source\viewer\viewer_window_size.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_portfolio.hpp" />
@@ -78,6 +78,9 @@
     <ClInclude Include="source\r2tm\r2tm_version_info.hpp" />
     <ClInclude Include="source\r2tm\r2tm_windows_utility.hpp" />
     <ClInclude Include="source\menu_root.hpp" />
+    <ClInclude Include="source\r2tm\r2tm_viewer_key.hpp" />
+    <ClInclude Include="source\r2tm\r2tm_viewer_version.hpp" />
+    <ClInclude Include="source\r2tm\r2tm_viewer_window_size.hpp" />
     <ClInclude Include="source\test\menu_color_modifier.hpp" />
     <ClInclude Include="source\test\menu_leave_action.hpp" />
     <ClInclude Include="source\test\menu_cache_cleaner.hpp" />
@@ -100,9 +103,6 @@
     <ClInclude Include="source\tutorial\menu_make_menu.hpp" />
     <ClInclude Include="source\tutorial\menu_tutorial.hpp" />
     <ClInclude Include="source\tutorial\test_tutorial.hpp" />
-    <ClInclude Include="source\viewer\viewer_key.hpp" />
-    <ClInclude Include="source\viewer\viewer_version.hpp" />
-    <ClInclude Include="source\viewer\viewer_window_size.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

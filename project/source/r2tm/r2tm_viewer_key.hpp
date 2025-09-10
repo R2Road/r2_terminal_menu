@@ -1,10 +1,10 @@
 #pragma once
 
-#include "r2tm/r2tm_interface_item.hpp"
+#include "r2tm_interface_item.hpp"
 
-namespace viewer_key
+namespace r2tm_viewer
 {
-	class View : public r2tm::iItem
+	class Key : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

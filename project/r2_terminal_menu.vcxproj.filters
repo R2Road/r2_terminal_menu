@@ -84,12 +84,6 @@
     <ClCompile Include="source\r2tm\r2tm_input.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="source\viewer\viewer_key.cpp">
-      <Filter>viewer</Filter>
-    </ClCompile>
-    <ClCompile Include="source\viewer\viewer_version.cpp">
-      <Filter>viewer</Filter>
-    </ClCompile>
     <ClCompile Include="source\test\test_cache_cleaner___helper.hpp">
       <Filter>test\cache_cleaner</Filter>
     </ClCompile>
@@ -106,8 +100,14 @@
     <ClCompile Include="source\r2tm\r2tm_file.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="source\viewer\viewer_window_size.cpp">
-      <Filter>viewer</Filter>
+    <ClCompile Include="source\r2tm\r2tm_viewer_key.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\r2tm\r2tm_viewer_version.cpp">
+      <Filter>r2tm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\r2tm\r2tm_viewer_window_size.cpp">
+      <Filter>r2tm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -217,12 +217,6 @@
     <ClInclude Include="source\r2tm\r2tm_input.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="source\viewer\viewer_key.hpp">
-      <Filter>viewer</Filter>
-    </ClInclude>
-    <ClInclude Include="source\viewer\viewer_version.hpp">
-      <Filter>viewer</Filter>
-    </ClInclude>
     <ClInclude Include="source\menu_portfolio.hpp" />
     <ClInclude Include="source\tutorial\menu_tutorial.hpp">
       <Filter>tutorial</Filter>
@@ -236,8 +230,14 @@
     <ClInclude Include="source\r2tm\r2tm_file.hpp">
       <Filter>r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="source\viewer\viewer_window_size.hpp">
-      <Filter>viewer</Filter>
+    <ClInclude Include="source\r2tm\r2tm_viewer_key.hpp">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\r2tm\r2tm_viewer_version.hpp">
+      <Filter>r2tm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\r2tm\r2tm_viewer_window_size.hpp">
+      <Filter>r2tm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -264,9 +264,6 @@
     </Filter>
     <Filter Include="test\windows_utility">
       <UniqueIdentifier>{b965f90a-636f-4d0f-bd78-e3f25ae3f38e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="viewer">
-      <UniqueIdentifier>{74b14b71-c327-4f94-9cc7-274455d7511c}</UniqueIdentifier>
     </Filter>
     <Filter Include="tutorial">
       <UniqueIdentifier>{750e47ab-ad1d-473e-8a15-a92e922119af}</UniqueIdentifier>

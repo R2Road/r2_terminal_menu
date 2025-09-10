@@ -5,6 +5,9 @@
 #include "r2tm/r2tm_director.hpp"
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_version_info.hpp"
+#include "r2tm/r2tm_viewer_key.hpp"
+#include "r2tm/r2tm_viewer_version.hpp"
+#include "r2tm/r2tm_viewer_window_size.hpp"
 
 #include "test/test_stop_watch.hpp"
 
@@ -17,9 +20,6 @@
 
 #include "tutorial/menu_tutorial.hpp"
 
-#include "viewer/viewer_key.hpp"
-#include "viewer/viewer_version.hpp"
-#include "viewer/viewer_window_size.hpp"
 
 #include "menu_portfolio.hpp"
 
@@ -86,9 +86,9 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'z', viewer_key::View() );
-		mp->AddItem( 'x', viewer_version::Viewer() );
-		mp->AddItem( 'c', viewer_window_size::Viewer() );
+		mp->AddItem( 'z', r2tm_viewer::Key() );
+		mp->AddItem( 'x', r2tm_viewer::Version() );
+		mp->AddItem( 'c', r2tm_viewer::WindowSize() );
 
 
 
