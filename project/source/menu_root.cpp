@@ -85,9 +85,8 @@ r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
 		mp->AddLineFeed();
 
 
-
 		mp->AddItem( 'z', r2tm_viewer::Key() );
-		mp->AddItem( 'x', r2tm_viewer::Version() );
+		mp->AddItem( 'x', r2tm_viewer::Version( r2tm::VersionInfo.VersionHistory, r2tm::VersionInfo.VERSION_HISTORY_COUNT ) );
 		mp->AddItem( 'c', r2tm_viewer::WindowSize() );
 
 

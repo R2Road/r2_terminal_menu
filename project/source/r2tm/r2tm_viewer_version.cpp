@@ -4,10 +4,13 @@
 #include "r2tm_ostream.hpp"
 #include "r2tm_windows_utility.hpp"
 
-#include "r2tm_version_info.hpp"
-
 namespace r2tm_viewer
 {
+	Version::Version( const char* const* version_history_string_list, const int version_history_count) :
+		  mVersionHistoryStringList( version_history_string_list )
+		, mVersionHistoryCount( version_history_count )
+	{}
+
 	r2tm::TitleFunctionT Version::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -17,7 +20,7 @@ namespace r2tm_viewer
 	}
 	r2tm::DoFunctionT Version::GetDoFunction() const
 	{
-		return []()->r2tm::eDoLeaveAction
+		return [version_history_string_list = mVersionHistoryStringList, version_history_count = mVersionHistoryCount]()->r2tm::eDoLeaveAction
 		{
 			LS();
 
@@ -30,14 +33,14 @@ namespace r2tm_viewer
 			{
 				const auto pivot_cursor = r2tm::WindowsUtility::GetCursorPoint();
 
-				int i = r2tm::VersionInfo.VERSION_HISTORY_COUNT - 1;
+				int i = version_history_count - 1;
 				int key = 0;
 
 				do
 				{
 					r2tm::WindowsUtility::MoveCursorPointWithClearBuffer( pivot_cursor );
 
-					OUT_STRING( r2tm::VersionInfo.VersionHistory[i] );
+					OUT_STRING( version_history_string_list[i] );
 
 					LS();
 
@@ -47,7 +50,7 @@ namespace r2tm_viewer
 					{
 					case 'q':
 						++i;
-						i = ( r2tm::VersionInfo.VERSION_HISTORY_COUNT > i ? i : r2tm::VersionInfo.VERSION_HISTORY_COUNT - 1 );
+						i = ( version_history_count > i ? i : version_history_count - 1 );
 						break;
 					case 'e':
 						--i;
