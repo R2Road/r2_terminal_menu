@@ -26,8 +26,8 @@ namespace r2tm
 
 		const char VersionNumber_1 = '2';
 		const char VersionNumber_2 = '0';
-		const char VersionNumber_3 = '3';
-		const char VersionNumber_4 = '1';
+		const char VersionNumber_3 = '4';
+		const char VersionNumber_4 = '0';
 		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
@@ -41,6 +41,7 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : Add - OUT_ALIGN"
 			"\n"	"[o] " "update    inspector  : Add - DIR_OPEN"
 			"\n"	"[o] " "update    inspector  : Rename - OUTPUT_... > OUT_..."
+			"\n"	"[o] " "add       viewer     : r2tm_viewer - Viewer를 r2tm 네임 스페이스에 편입"
 			"\n"
 			"\n"    "------------------------------------------------------------"
 			"\n"
