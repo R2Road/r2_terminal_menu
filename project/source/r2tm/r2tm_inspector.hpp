@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <stdint.h>
 
 #include "r2tm_file.hpp"
 #include "r2tm_input.hpp"
