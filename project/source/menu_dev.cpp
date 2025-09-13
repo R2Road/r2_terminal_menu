@@ -1,4 +1,4 @@
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 #include <string>
 
@@ -23,14 +23,14 @@
 
 #include "menu_portfolio.hpp"
 
-r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_Dev::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		static const std::string ret =
 			std::string()
 
-			+ "Root Menu"
+			+ "Development Menu"
 			  " : "	"<"   "C++17" + ">"
 			  ", "	"<"   "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
 			  ", "	"<" + r2tm::VersionInfo.String4Version + ">"
@@ -38,7 +38,7 @@ r2tm::TitleFunctionT Menu_Root::GetTitleFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::DescriptionFunctionT Menu_Root::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_Dev::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
@@ -54,7 +54,7 @@ r2tm::DescriptionFunctionT Menu_Root::GetDescriptionFunction() const
 		return ret.c_str();
 	};
 }
-r2tm::WriteFunctionT Menu_Root::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_Dev::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

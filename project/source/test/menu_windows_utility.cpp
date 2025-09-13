@@ -6,7 +6,7 @@
 #include "test_windows_utility_cursor_buffer.hpp"
 #include "test_windows_utility_fill.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 r2tm::TitleFunctionT Menu_WindowsUtility::GetTitleFunction() const
 {
@@ -46,6 +46,6 @@ r2tm::WriteFunctionT Menu_WindowsUtility::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, Menu_Root() );
+		mp->AddMenu( 27, Menu_Dev() );
 	};
 }

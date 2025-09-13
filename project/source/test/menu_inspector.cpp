@@ -9,7 +9,7 @@
 #include "test_inspector_input.hpp"
 #include "test_inspector_source.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 r2tm::TitleFunctionT Menu_Inspector::GetTitleFunction() const
 {
@@ -85,6 +85,6 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, Menu_Root() );
+		mp->AddMenu( 27, Menu_Dev() );
 	};
 }

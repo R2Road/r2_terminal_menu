@@ -6,7 +6,7 @@
 
 #include "test_tutorial.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 #include "menu_make_menu.hpp"
 
 r2tm::TitleFunctionT Menu_Tutorial::GetTitleFunction() const
@@ -79,6 +79,6 @@ r2tm::WriteFunctionT Menu_Tutorial::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, Menu_Root() );
+		mp->AddMenu( 27, Menu_Dev() );
 	};
 }

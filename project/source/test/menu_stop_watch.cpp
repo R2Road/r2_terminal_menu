@@ -4,7 +4,7 @@
 
 #include "test_stop_watch.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 r2tm::TitleFunctionT Menu_StopWatch::GetTitleFunction() const
 {
@@ -36,6 +36,6 @@ r2tm::WriteFunctionT Menu_StopWatch::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, Menu_Root() );
+		mp->AddMenu( 27, Menu_Dev() );
 	};
 }

@@ -13,7 +13,7 @@
 #include "test/test_inspector_input.hpp"
 #include "test/test_inspector_source.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 r2tm::TitleFunctionT Menu_Portfolio::GetTitleFunction() const
 {
@@ -84,7 +84,7 @@ r2tm::WriteFunctionT Menu_Portfolio::GetWriteFunction() const
 
 
 		mp->AddMessage( "이 프로젝트의 개발 메뉴 Menu로 이동합니다.", r2tm::eColor::FG_Yellow );
-		mp->AddMenu( 32, Menu_Root() );
+		mp->AddMenu( 32, Menu_Dev() );
 		
 
 

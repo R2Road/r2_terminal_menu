@@ -30,7 +30,7 @@
     <ClCompile Include="source\r2tm\r2tm_print_file.cpp" />
     <ClCompile Include="source\r2tm\r2tm_stop_watch.cpp" />
     <ClCompile Include="source\r2tm\r2tm_windows_utility.cpp" />
-    <ClCompile Include="source\menu_root.cpp" />
+    <ClCompile Include="source\menu_dev.cpp" />
     <ClCompile Include="source\r2tm\r2tm_viewer_key.cpp" />
     <ClCompile Include="source\r2tm\r2tm_viewer_version.cpp" />
     <ClCompile Include="source\r2tm\r2tm_viewer_window_size.cpp" />
@@ -77,7 +77,7 @@
     <ClInclude Include="source\r2tm\r2tm_stop_watch.hpp" />
     <ClInclude Include="source\r2tm\r2tm_version_info.hpp" />
     <ClInclude Include="source\r2tm\r2tm_windows_utility.hpp" />
-    <ClInclude Include="source\menu_root.hpp" />
+    <ClInclude Include="source\menu_dev.hpp" />
     <ClInclude Include="source\r2tm\r2tm_viewer_key.hpp" />
     <ClInclude Include="source\r2tm\r2tm_viewer_version.hpp" />
     <ClInclude Include="source\r2tm\r2tm_viewer_window_size.hpp" />

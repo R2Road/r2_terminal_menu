@@ -4,7 +4,7 @@
 
 #include "test/test_cache_cleaner.hpp"
 
-#include "menu_root.hpp"
+#include "menu_dev.hpp"
 
 r2tm::TitleFunctionT Menu_CacheCleaner::GetTitleFunction() const
 {
@@ -35,6 +35,6 @@ r2tm::WriteFunctionT Menu_CacheCleaner::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 27, Menu_Root() );
+		mp->AddMenu( 27, Menu_Dev() );
 	};
 }
