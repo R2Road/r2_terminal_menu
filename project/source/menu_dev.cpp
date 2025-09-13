@@ -9,8 +9,6 @@
 #include "r2tm/r2tm_viewer_version.hpp"
 #include "r2tm/r2tm_viewer_window_size.hpp"
 
-#include "test/test_stop_watch.hpp"
-
 #include "test/menu_cache_cleaner.hpp"
 #include "test/menu_color_modifier.hpp"
 #include "test/menu_inspector.hpp"
@@ -19,7 +17,6 @@
 #include "test/menu_windows_utility.hpp"
 
 #include "tutorial/menu_tutorial.hpp"
-
 
 #include "menu_portfolio.hpp"
 
