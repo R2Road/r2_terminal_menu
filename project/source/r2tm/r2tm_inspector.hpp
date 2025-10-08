@@ -350,6 +350,11 @@ do {																						\
 	r2tm::PrintFile( file_path );															\
 } while( false )
 
+#define OUT_FILE_CUR_DIR( file_path )														\
+do {																						\
+	r2tm::PrintFile( __FILE__, file_path );													\
+} while( false )
+
 #define OUT_FILE_RANGE( file_path, min, max )											\
 do {																						\
 	r2tm::PrintFile( file_path, min, max );													\

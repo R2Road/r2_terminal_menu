@@ -1,5 +1,6 @@
 #include "r2tm_print_file.hpp"
 
+#include <filesystem>
 #include <stdio.h>
 
 namespace r2tm
@@ -30,6 +31,14 @@ namespace r2tm
 		fgets( buffer, sizeof( buffer ), fp );
 
 		return buffer;
+	}
+
+	void PrintFile( const char* file_path, const char* file_name_n_extension )
+	{
+		std::filesystem::path p( file_path );
+		p.replace_filename( file_name_n_extension );
+
+		PrintFile( p.string().c_str() );
 	}
 
 	void PrintFile( const char* const path )
