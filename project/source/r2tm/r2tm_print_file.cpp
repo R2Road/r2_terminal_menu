@@ -4,6 +4,26 @@
 
 namespace r2tm
 {
+	FILE* OpenFile( const char* const path )
+	{
+		FILE* fp = nullptr;
+
+		if( 0 != fopen_s( &fp, path, "rb" ) )
+		{
+			__debugbreak();
+		}
+
+		return fp;
+	}
+
+	void CloseFile( FILE* fp )
+	{
+		if( nullptr != fp )
+		{
+			fclose( fp );
+		}
+	}
+
 	const char* GetLine( FILE* fp )
 	{
 		static char buffer[400];
@@ -16,10 +36,9 @@ namespace r2tm
 	{
 		printf( "\x1B[90m" "[FILE]" " %s" "\033[0m" "\n", path );
 
-		FILE* fp = nullptr;
-		if( 0 == fopen_s( &fp, path, "rb" ) )
+		FILE* fp = OpenFile( path );
+		if( fp )
 		{
-			
 			unsigned int cur = 1;
 			while( !feof( fp ) )
 			{
@@ -30,14 +49,7 @@ namespace r2tm
 			printf( "\n" );
 		}
 
-		if( nullptr != fp )
-		{
-			fclose( fp );
-		}
-		else
-		{
-			__debugbreak();
-		}
+		CloseFile( fp );
 
 		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 	}
@@ -46,8 +58,8 @@ namespace r2tm
 	{
 		printf( "\x1B[90m" "[FILE]" " %s" " : %d ~ %d" "\033[0m" "\n", path, min, max );
 
-		FILE* fp = nullptr;
-		if( 0 == fopen_s( &fp, path, "rb" ) )
+		FILE* fp = OpenFile( path );
+		if( fp )
 		{
 			unsigned int cur = 1;
 			const char* str = nullptr;
@@ -73,14 +85,7 @@ namespace r2tm
 			}
 		}
 
-		if( nullptr != fp )
-		{
-			fclose( fp );
-		}
-		else
-		{
-			__debugbreak();
-		}
+		CloseFile( fp );
 
 		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 	}
