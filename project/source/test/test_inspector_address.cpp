@@ -19,6 +19,7 @@ namespace test_inspector_address
 			LS();
 
 			OUT_SOURCE_READY_N_BEGIN;
+			int i = 0;
 			struct
 			{
 				const short i = 100;
@@ -33,6 +34,7 @@ namespace test_inspector_address
 
 				LF();
 
+				OUT_VALUE( &i );
 				OUT_VALUE( &s );
 				OUT_VALUE( &s.i );
 				OUT_VALUE( &s.j );
@@ -45,6 +47,7 @@ namespace test_inspector_address
 
 				LF();
 
+				OUT_ADDRESS( i );
 				OUT_ADDRESS( s );
 				OUT_ADDRESS( s.i );
 				OUT_ADDRESS( s.j );
@@ -57,6 +60,7 @@ namespace test_inspector_address
 
 				LF();
 
+				OUT_ADDRESS_AND_OFFSET( i, s );
 				OUT_ADDRESS_AND_OFFSET( s, s.i );
 				OUT_ADDRESS_AND_OFFSET( s, s.j );
 			}
