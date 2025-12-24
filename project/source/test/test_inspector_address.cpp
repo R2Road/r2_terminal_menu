@@ -66,4 +66,51 @@ namespace test_inspector_address
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	void TestFunction_1()
+	{
+	}
+	void TestFunction_2()
+	{
+	}
+	r2tm::TitleFunctionT Function::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Function";
+		};
+	}
+	r2tm::DoFunctionT Function::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				OUT_SUBJECT( "기존의 출력 방식" );
+
+				LF();
+
+				OUT_VALUE( &TestFunction_1 );
+				OUT_VALUE( &TestFunction_2 );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_ADDRESS 사용" );
+
+				LF();
+
+				OUT_ADDRESS( TestFunction_1 );
+				OUT_ADDRESS( TestFunction_2 );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }

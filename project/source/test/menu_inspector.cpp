@@ -47,14 +47,15 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 		mp->AddItem( 'q', test_inspector_address::Address() );
-		mp->AddItem( 'w', test_inspector_binary::Binary() );
-		mp->AddItem( 'e', test_inspector_binary::Binaries_1() );
-		mp->AddItem( 'r', test_inspector_binary::Binaries_2() );
-		mp->AddItem( 't', test_inspector_binary::Binaries_With_Array() );
-		mp->AddItem( 'y', test_inspector_input::Wait_Any_Key() );
-		mp->AddItem( 'u', test_inspector_input::GetKey() );
-		mp->AddItem( 'i', test_inspector_input::Keyboard_Hit() );
-		mp->AddItem( 'o', test_inspector_input::ClearInput() );
+		mp->AddItem( 'w', test_inspector_address::Function() );
+		mp->AddItem( 'e', test_inspector_binary::Binary() );
+		mp->AddItem( 'r', test_inspector_binary::Binaries_1() );
+		mp->AddItem( 't', test_inspector_binary::Binaries_2() );
+		mp->AddItem( 'y', test_inspector_binary::Binaries_With_Array() );
+		mp->AddItem( 'u', test_inspector_input::Wait_Any_Key() );
+		mp->AddItem( 'i', test_inspector_input::GetKey() );
+		mp->AddItem( 'o', test_inspector_input::Keyboard_Hit() );
+		mp->AddItem( 'p', test_inspector_input::ClearInput() );
 
 
 
