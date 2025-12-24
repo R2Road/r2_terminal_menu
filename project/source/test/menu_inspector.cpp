@@ -2,6 +2,7 @@
 
 #include "r2tm/r2tm_menu_processor.hpp"
 
+#include "test_inspector_address.hpp"
 #include "test_inspector_base.hpp"
 #include "test_inspector_binary.hpp"
 #include "test_inspector_demo.hpp"
@@ -37,8 +38,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( '6', test_inspector_base::Size() );
 		mp->AddItem( '7', test_inspector_base::Align() );
 		mp->AddItem( '8', test_inspector_base::Code() );
-		mp->AddItem( '9', test_inspector_base::Address() );
-		mp->AddItem( '0', test_inspector_base::String_Note_Subject_Comment() );
+		mp->AddItem( '9', test_inspector_base::String_Note_Subject_Comment() );
 
 
 
@@ -46,14 +46,15 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'q', test_inspector_binary::Binary() );
-		mp->AddItem( 'w', test_inspector_binary::Binaries_1() );
-		mp->AddItem( 'e', test_inspector_binary::Binaries_2() );
-		mp->AddItem( 'r', test_inspector_binary::Binaries_With_Array() );
-		mp->AddItem( 't', test_inspector_input::Wait_Any_Key() );
-		mp->AddItem( 'y', test_inspector_input::GetKey() );
-		mp->AddItem( 'u', test_inspector_input::Keyboard_Hit() );
-		mp->AddItem( 'i', test_inspector_input::ClearInput() );
+		mp->AddItem( 'q', test_inspector_address::Address() );
+		mp->AddItem( 'w', test_inspector_binary::Binary() );
+		mp->AddItem( 'e', test_inspector_binary::Binaries_1() );
+		mp->AddItem( 'r', test_inspector_binary::Binaries_2() );
+		mp->AddItem( 't', test_inspector_binary::Binaries_With_Array() );
+		mp->AddItem( 'y', test_inspector_input::Wait_Any_Key() );
+		mp->AddItem( 'u', test_inspector_input::GetKey() );
+		mp->AddItem( 'i', test_inspector_input::Keyboard_Hit() );
+		mp->AddItem( 'o', test_inspector_input::ClearInput() );
 
 
 

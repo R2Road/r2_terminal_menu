@@ -49,6 +49,7 @@ namespace r2tm
 			"\n"
 			"\n"	"[o] " "update    inspector  : r2tm_print_file - 파일 열기 실패시 __debugbreak 작동"
 			"\n"	"[o] " "update    inspector  : OUT_BINARY - 배열을 넣어도 배열 전체를 출력"
+			"\n"	"[~] " "update    inspector  : OUT_ADDRESS - 멤버 함수 포인터 정상 출력"
 		;
 
 		const char* const String4Road2Version_1_8_0_0_0 =

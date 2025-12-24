@@ -6,6 +6,7 @@
 #include "r2tm/r2tm_ostream.hpp"
 #include "r2tm/r2tm_version_info.hpp"
 
+#include "test/test_inspector_address.hpp"
 #include "test/test_inspector_base.hpp"
 #include "test/test_inspector_binary.hpp"
 #include "test/test_inspector_demo.hpp"
@@ -55,7 +56,7 @@ r2tm::WriteFunctionT Menu_Portfolio::GetWriteFunction() const
 		mp->AddItem( 'q', test_inspector_base::Basic() );
 		mp->AddItem( 'w', test_inspector_base::Expect_1() );
 		mp->AddItem( 'e', test_inspector_base::Size() );
-		mp->AddItem( 'r', test_inspector_base::Address() );
+		mp->AddItem( 'r', test_inspector_address::Address() );
 
 
 
