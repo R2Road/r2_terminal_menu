@@ -4,7 +4,7 @@
 
 namespace test_inspector_address
 {
-	class Address : public r2tm::iItem
+	class Value : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

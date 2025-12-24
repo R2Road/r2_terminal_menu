@@ -56,7 +56,7 @@ r2tm::WriteFunctionT Menu_Portfolio::GetWriteFunction() const
 		mp->AddItem( 'q', test_inspector_base::Basic() );
 		mp->AddItem( 'w', test_inspector_base::Expect_1() );
 		mp->AddItem( 'e', test_inspector_base::Size() );
-		mp->AddItem( 'r', test_inspector_address::Address() );
+		mp->AddItem( 'r', test_inspector_address::Value() );
 
 
 

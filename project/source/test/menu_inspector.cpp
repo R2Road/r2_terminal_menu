@@ -46,7 +46,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'q', test_inspector_address::Address() );
+		mp->AddItem( 'q', test_inspector_address::Value() );
 		mp->AddItem( 'w', test_inspector_address::Function() );
 		mp->AddItem( 'e', test_inspector_address::Member_Function() );
 		mp->AddItem( 'r', test_inspector_binary::Binary() );

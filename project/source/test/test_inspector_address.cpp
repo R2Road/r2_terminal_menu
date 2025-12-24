@@ -5,14 +5,14 @@
 
 namespace test_inspector_address
 {
-	r2tm::TitleFunctionT Address::GetTitleFunction() const
+	r2tm::TitleFunctionT Value::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Inspector : Address";
+			return "Inspector : Value";
 		};
 	}
-	r2tm::DoFunctionT Address::GetDoFunction() const
+	r2tm::DoFunctionT Value::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
