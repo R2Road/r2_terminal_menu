@@ -58,7 +58,7 @@ namespace test_inspector_demo
 					}
 				} s;
 
-				OUT_FILE_RANGE( "src/test/test_inspector_demo.cpp", 51, 59 );
+				OUT_FILE_RANGE( "source/test/test_inspector_demo.cpp", 51, 59 );
 
 				SS();
 
