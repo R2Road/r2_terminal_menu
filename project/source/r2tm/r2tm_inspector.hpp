@@ -4,6 +4,7 @@
 
 #include "r2tm_file.hpp"
 #include "r2tm_input.hpp"
+#include "r2tm_print_address.hpp"
 #include "r2tm_print_binary.hpp"
 #include "r2tm_print_file.hpp"
 
@@ -241,7 +242,7 @@ do {																						\
 #define	OUT_ADDRESS( condition )															\
 do {																						\
 	printf( "[ADDRESS]" " %s" "\n", #condition );											\
-	std::cout << "\t> " << ( &condition ) << "\n";											\
+	r2tm::PrintAddress( ( condition ) );													\
 } while( false )
 
 #define	OUT_ADDRESS_AND_OFFSET( condition_1, condition_2 )									\
