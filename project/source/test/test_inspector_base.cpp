@@ -382,7 +382,13 @@ namespace test_inspector_base
 		{
 			LS();
 
-			DECL_MAIN( const int i = 100 );
+			OUT_SOURCE_READY_N_BEGIN;
+			struct
+			{
+				const short i = 100;
+				const short j = 200;
+			} s;
+			OUT_SOURCE_END;
 
 			LS();
 
@@ -392,7 +398,9 @@ namespace test_inspector_base
 
 					LF();
 
-					OUT_VALUE( &i );
+					OUT_VALUE( &s );
+					OUT_VALUE( &s.i );
+					OUT_VALUE( &s.j );
 				}
 
 				SS();
@@ -402,7 +410,22 @@ namespace test_inspector_base
 
 					LF();
 
-					OUT_ADDRESS( i );
+					OUT_ADDRESS( s );
+					OUT_ADDRESS( s.i );
+					OUT_ADDRESS( s.j );
+				}
+			}
+
+			LS();
+
+			{
+				{
+					OUT_SUBJECT( "OUT_ADDRESS_AND_OFFSET »ç¿ë" );
+
+					LF();
+
+					OUT_ADDRESS_AND_OFFSET( s, s.i );
+					OUT_ADDRESS_AND_OFFSET( s, s.j );
 				}
 			}
 

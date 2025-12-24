@@ -244,6 +244,14 @@ do {																						\
 	std::cout << "\t> " << ( &condition ) << "\n";											\
 } while( false )
 
+#define	OUT_ADDRESS_AND_OFFSET( condition_1, condition_2 )									\
+do {																						\
+	printf( "[ADDRESS]" " %s" ", %s" "\n", #condition_1, #condition_2 );						\
+	const long long address_l = reinterpret_cast<long long>( &(condition_1) ) < reinterpret_cast<long long>( &(condition_2) ) ? reinterpret_cast<long long>( &(condition_1) ) : reinterpret_cast<long long>( &(condition_2) );	\
+	const long long address_g = reinterpret_cast<long long>( &(condition_1) ) < reinterpret_cast<long long>( &(condition_2) ) ? reinterpret_cast<long long>( &(condition_2) ) : reinterpret_cast<long long>( &(condition_1) );	\
+	std::cout << "\t> " << ( &condition_1 ) << " ~ " << ( &condition_2 ) << " : " << ( address_g - address_l ) << "\n";											\
+} while( false )
+
 
 
 
