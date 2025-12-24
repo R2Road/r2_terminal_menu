@@ -393,40 +393,36 @@ namespace test_inspector_base
 			LS();
 
 			{
-				{
-					OUT_SUBJECT( "기존의 출력 방식" );
+				OUT_SUBJECT( "기존의 출력 방식" );
 
-					LF();
+				LF();
 
-					OUT_VALUE( &s );
-					OUT_VALUE( &s.i );
-					OUT_VALUE( &s.j );
-				}
-
-				SS();
-
-				{
-					OUT_SUBJECT( "OUT_ADDRESS 사용" );
-
-					LF();
-
-					OUT_ADDRESS( s );
-					OUT_ADDRESS( s.i );
-					OUT_ADDRESS( s.j );
-				}
+				OUT_VALUE( &s );
+				OUT_VALUE( &s.i );
+				OUT_VALUE( &s.j );
 			}
 
 			LS();
 
 			{
-				{
-					OUT_SUBJECT( "OUT_ADDRESS_AND_OFFSET 사용" );
+				OUT_SUBJECT( "OUT_ADDRESS 사용" );
 
-					LF();
+				LF();
 
-					OUT_ADDRESS_AND_OFFSET( s, s.i );
-					OUT_ADDRESS_AND_OFFSET( s, s.j );
-				}
+				OUT_ADDRESS( s );
+				OUT_ADDRESS( s.i );
+				OUT_ADDRESS( s.j );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_ADDRESS_AND_OFFSET 사용" );
+
+				LF();
+
+				OUT_ADDRESS_AND_OFFSET( s, s.i );
+				OUT_ADDRESS_AND_OFFSET( s, s.j );
 			}
 
 			LS();
