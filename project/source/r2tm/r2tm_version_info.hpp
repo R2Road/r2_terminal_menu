@@ -27,7 +27,7 @@ namespace r2tm
 		const char VersionNumber_1 = '2';
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '6';
-		const char VersionNumber_4 = '0';
+		const char VersionNumber_4 = '1';
 		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
@@ -48,6 +48,7 @@ namespace r2tm
 			"\n"    "------------------------------------------------------------"
 			"\n"
 			"\n"	"[o] " "update    inspector  : r2tm_print_file - 파일 열기 실패시 __debugbreak 작동"
+			"\n"	"[o] " "update    inspector  : OUT_BINARY - 배열을 넣어도 배열 전체를 출력"
 		;
 
 		const char* const String4Road2Version_1_8_0_0_0 =

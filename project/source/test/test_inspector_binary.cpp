@@ -176,4 +176,76 @@ namespace test_inspector_binary
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2tm::TitleFunctionT Binaries_With_Array::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Binaries With Array";
+		};
+	}
+	r2tm::DoFunctionT Binaries_With_Array::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUT_SUBJECT( "배열 타입에 template 특수화" );
+			OUT_SUBJECT( "OUT_BINARY에 배열을 넣으면 정상 작동" );
+
+			LS();
+
+			{
+				DECL_MAIN( short buffer[2] = { 0 } );
+
+				LF();
+
+				PROC_MAIN( buffer[0] = 1; buffer[1] = 2; );
+
+				LF();
+
+				OUT_BINARY( buffer );
+			}
+
+			LS();
+
+			{
+				DECL_MAIN( short buffer[5] = { 0 } );
+
+				LF();
+
+				OUT_BINARY( buffer );
+			}
+
+			LS();
+
+			{
+				DECL_MAIN( int buffer[4] = { 0 } );
+
+				LF();
+
+				PROC_MAIN( buffer[0] = 1; buffer[1] = 2; buffer[2] = 4; buffer[3] = 8; );
+
+				LF();
+
+				OUT_BINARY( buffer );
+			}
+
+			LS();
+
+			{
+				DECL_MAIN( char buffer[10] = { 0 } );
+
+				LF();
+
+				OUT_BINARY( buffer );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }

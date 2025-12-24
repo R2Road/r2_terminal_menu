@@ -49,10 +49,11 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'q', test_inspector_binary::Binary() );
 		mp->AddItem( 'w', test_inspector_binary::Binaries_1() );
 		mp->AddItem( 'e', test_inspector_binary::Binaries_2() );
-		mp->AddItem( 'r', test_inspector_input::Wait_Any_Key() );
-		mp->AddItem( 't', test_inspector_input::GetKey() );
-		mp->AddItem( 'y', test_inspector_input::Keyboard_Hit() );
-		mp->AddItem( 'u', test_inspector_input::ClearInput() );
+		mp->AddItem( 'r', test_inspector_binary::Binaries_With_Array() );
+		mp->AddItem( 't', test_inspector_input::Wait_Any_Key() );
+		mp->AddItem( 'y', test_inspector_input::GetKey() );
+		mp->AddItem( 'u', test_inspector_input::Keyboard_Hit() );
+		mp->AddItem( 'i', test_inspector_input::ClearInput() );
 
 
 

@@ -78,6 +78,15 @@ namespace r2tm
 			}
 		}
 	}
+
+	//
+	// 배열 타입에 특수화
+	//
+	template<typename T, int64_t N >
+	void PrintBinary( const T (&array)[N] )
+	{
+		PrintBinary( array, N );
+	}
 }
 
 #endif
