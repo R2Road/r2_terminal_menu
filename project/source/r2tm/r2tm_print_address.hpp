@@ -9,4 +9,17 @@ namespace r2tm
 	{
 		printf( "\t> %p \n", &value );
 	}
+
+	template<typename ReturnT, typename OwnerT, typename ... ArgsT >
+	void PrintAddress( ReturnT( OwnerT::* const value )( ArgsT ... ) )
+	{
+		printf( "\t> %p \n", (void*&)value );
+	}
+
+	// const
+	template<typename ReturnT, typename OwnerT, typename ... ArgsT >
+	void PrintAddress( ReturnT( OwnerT::* const value )( ArgsT ... ) const )
+	{
+		printf( "\t> %p \n", ( void*& )value );
+	}
 }

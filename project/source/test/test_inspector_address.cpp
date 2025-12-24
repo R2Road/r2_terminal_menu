@@ -113,4 +113,74 @@ namespace test_inspector_address
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2tm::TitleFunctionT Member_Function::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : Member Function";
+		};
+	}
+	r2tm::DoFunctionT Member_Function::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUT_SOURCE_READY_N_BEGIN;
+			struct S
+			{
+				int TestFunction_1()
+				{
+					return 0;
+				}
+				int TestFunction_2() const
+				{
+					return 0;
+				}
+			};
+			OUT_SOURCE_END;
+
+			LS();
+
+			{
+				OUT_SUBJECT( "기존의 출력 방식 : 실패" );
+
+				LF();
+
+				OUT_VALUE( &S::TestFunction_1 );
+				OUT_VALUE( &S::TestFunction_2 );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "멤버 함수 주소를 출력하는 방법" );
+
+				LF();
+
+				auto p_1 = &S::TestFunction_1;
+				std::printf( "S::TestFunction_1 : %p\n", ( void*& )p_1 );
+				auto p_2 = &S::TestFunction_2;
+				std::printf( "S::TestFunction_2 : %p\n", ( void*& )p_2 );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_ADDRESS 사용" );
+
+				LF();
+
+				OUT_ADDRESS( &S::TestFunction_1 );
+				OUT_ADDRESS( &S::TestFunction_2 );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }
