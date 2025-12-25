@@ -268,41 +268,22 @@ namespace test_inspector_file
 		{
 			LS();
 
-			OUT_SUBJECT( "OUT_FILE_RANGE : with __FILE__" );
-
-			LS();
-
 			{
+				OUT_SUBJECT( "OUT_FILE_RANGE : with __FILE__" );
+
+				LF();
+
 				PROC_MAIN( OUT_FILE_RANGE( __FILE__, 5, 10 ) );
 			}
 
 			LS();
 
-			return r2tm::eDoLeaveAction::Pause;
-		};
-	}
-
-
-
-	r2tm::TitleFunctionT FileRange_4::GetTitleFunction() const
-	{
-		return []()->const char*
-		{
-			return "Inspector : File Range 4";
-		};
-	}
-	r2tm::DoFunctionT FileRange_4::GetDoFunction() const
-	{
-		return []()->r2tm::eDoLeaveAction
-		{
-			LS();
-
-			OUT_SUBJECT( "OUT_FILE_RANGE :  잘못된 파일 경로" );
-
-			LS();
-
 			{
-				PROC_MAIN( OUT_FILE_RANGE( "", 5, 10));
+				OUT_SUBJECT( "OUT_FILE_RANGE :  잘못된 파일 경로" );
+
+				LF();
+
+				PROC_MAIN( OUT_FILE_RANGE( "", 5, 10 ) );
 			}
 
 			LS();

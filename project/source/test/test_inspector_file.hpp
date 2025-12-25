@@ -53,13 +53,6 @@ namespace test_inspector_file
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
 
-	class FileRange_4 : public r2tm::iItem
-	{
-	public:
-		r2tm::TitleFunctionT GetTitleFunction() const override;
-		r2tm::DoFunctionT GetDoFunction() const override;
-	};
-
 	class Out_File_Range_Current_Directory : public r2tm::iItem
 	{
 	public:
