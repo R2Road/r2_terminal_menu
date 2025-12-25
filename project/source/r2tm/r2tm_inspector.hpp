@@ -359,9 +359,9 @@ do {																						\
 	r2tm::PrintFile( file_path );															\
 } while( false )
 
-#define OUT_FILE_CUR_DIR( file_path )														\
+#define OUT_FILE_CUR_DIR( file_name_extension )												\
 do {																						\
-	r2tm::PrintFile( __FILE__, file_path );													\
+	r2tm::PrintFile( __FILE__, file_name_extension );										\
 } while( false )
 
 #define OUT_FILE_RANGE( file_path, min, max )											\
