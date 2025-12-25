@@ -312,7 +312,7 @@ namespace test_inspector_file
 
 				LF();
 
-				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "menu_inspector.hpp", 10, 20 ) );
+				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "menu_inspector.hpp", 3, 9 ) );
 			}
 
 			LS();
@@ -322,7 +322,7 @@ namespace test_inspector_file
 
 				LF();
 
-				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "", 0, 0 ) );
+				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "", 3, 9 ) );
 			}
 
 			LS();
