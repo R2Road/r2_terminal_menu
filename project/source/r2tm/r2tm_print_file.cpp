@@ -63,6 +63,14 @@ namespace r2tm
 		printf( "\x1B[90m" "[/FILE]" "\033[0m" "\n" );
 	}
 
+	void PrintFile( const char* file_path, const char* file_name_n_extension, const unsigned int min, const unsigned int max )
+	{
+		std::filesystem::path p( file_path );
+		p.replace_filename( file_name_n_extension );
+
+		PrintFile( p.string().c_str(), min, max );
+	}
+
 	void PrintFile( const char* const path, const unsigned int min, const unsigned int max )
 	{
 		printf( "\x1B[90m" "[FILE]" " %s" " : %d ~ %d" "\033[0m" "\n", path, min, max );

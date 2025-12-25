@@ -369,6 +369,11 @@ do {																						\
 	r2tm::PrintFile( file_path, min, max );													\
 } while( false )
 
+#define OUT_FILE_RANGE_CUR_DIR( file_name_extension, min, max )								\
+do {																						\
+	r2tm::PrintFile( __FILE__, file_name_extension, min, max );								\
+} while( false )
+
 #define OUT_SOURCE_READY		int src_begin, src_end = -1
 #define OUT_SOURCE_BEGIN		do { src_begin = __LINE__ + 1; } while( false )
 #define OUT_SOURCE_END		do { src_end = __LINE__ - 1; r2tm::PrintFile( __FILE__, src_begin, src_end ); } while( false )

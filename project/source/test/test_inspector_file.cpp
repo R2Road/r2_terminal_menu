@@ -313,6 +313,45 @@ namespace test_inspector_file
 
 
 
+	r2tm::TitleFunctionT Out_File_Range_Current_Directory::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Inspector : OUT_FILE_RANGE_CUR_DIR";
+		};
+	}
+	r2tm::DoFunctionT Out_File_Range_Current_Directory::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_FILE_RANGE_CUR_DIR : 정상 경로" );
+
+				LF();
+
+				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "menu_inspector.hpp", 10, 20 ) );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_FILE_RANGE_CUR_DIR : 비정상 경로" );
+
+				LF();
+
+				PROC_MAIN( OUT_FILE_RANGE_CUR_DIR( "", 0, 0 ) );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
+
 	r2tm::TitleFunctionT DirectoryOpen::GetTitleFunction() const
 	{
 		return []()->const char*

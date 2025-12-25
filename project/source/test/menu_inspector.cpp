@@ -72,8 +72,7 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'h', test_inspector_file::FileRange_2() );
 		mp->AddItem( 'j', test_inspector_file::FileRange_3() );
 		mp->AddItem( 'k', test_inspector_file::FileRange_4() );
-		mp->AddItem( 'l', test_inspector_source::Basic() );
-		mp->AddItem( ';', test_inspector_file::DirectoryOpen() );
+		mp->AddItem( 'l', test_inspector_file::Out_File_Range_Current_Directory() );
 
 
 
@@ -81,8 +80,10 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddItem( 'z', test_inspector_demo::Demo_1());
-		mp->AddItem( 'x', test_inspector_demo::Demo_2());
+		mp->AddItem( 'z', test_inspector_source::Basic() );
+		mp->AddItem( 'x', test_inspector_file::DirectoryOpen() );
+		mp->AddItem( 'v', test_inspector_demo::Demo_1());
+		mp->AddItem( 'b', test_inspector_demo::Demo_2());
 
 
 
