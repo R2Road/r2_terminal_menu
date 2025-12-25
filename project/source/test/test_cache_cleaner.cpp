@@ -150,7 +150,7 @@ namespace test_cache_cleaner
 			// > 테스트 환경의 L3 캐쉬 사이즈가 16000 byte
 			// > 사실상 캐쉬가 방해만 되는 환경이다.
 			//
-			OUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
+			OUT_FILE_CUR_DIR( "test_cache_cleaner___helper.hpp" );
 
 			LF();
 
@@ -214,7 +214,7 @@ namespace test_cache_cleaner
 		{
 			LS();
 
-			OUT_FILE( "src/test/test_cache_cleaner___helper.hpp" );
+			OUT_FILE_CUR_DIR( "test_cache_cleaner___helper.hpp" );
 
 			LF();
 
