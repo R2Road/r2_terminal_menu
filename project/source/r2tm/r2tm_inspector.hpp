@@ -241,8 +241,9 @@ do {																						\
 //
 #define	OUT_ADDRESS( condition )															\
 do {																						\
-	printf( "[ADDRESS]" " %s" "\n", #condition );											\
+	printf( "[ADDRESS]" " %s" "\n" "\t> ", #condition );									\
 	r2tm::PrintAddress( ( condition ) );													\
+	printf( "\n" );																			\
 } while( false )
 
 #define	OUT_ADDRESS_AND_OFFSET( condition_1, condition_2 )									\
