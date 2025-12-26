@@ -248,10 +248,13 @@ do {																						\
 
 #define	OUT_ADDRESS_AND_OFFSET( condition_1, condition_2 )									\
 do {																						\
-	printf( "[ADDRESS]" " %s" ", %s" "\n", #condition_1, #condition_2 );						\
 	const long long address_l = reinterpret_cast<long long>( &(condition_1) ) < reinterpret_cast<long long>( &(condition_2) ) ? reinterpret_cast<long long>( &(condition_1) ) : reinterpret_cast<long long>( &(condition_2) );	\
 	const long long address_g = reinterpret_cast<long long>( &(condition_1) ) < reinterpret_cast<long long>( &(condition_2) ) ? reinterpret_cast<long long>( &(condition_2) ) : reinterpret_cast<long long>( &(condition_1) );	\
-	std::cout << "\t> " << ( &condition_1 ) << " ~ " << ( &condition_2 ) << " : " << ( address_g - address_l ) << "\n";											\
+	printf( "[ADDRESS]" " %s" ", %s" "\n" "\t> ", #condition_1, #condition_2 );						\
+	r2tm::PrintAddress( ( condition_1 ) );													\
+	printf( " ~ " );																		\
+	r2tm::PrintAddress( ( condition_2 ) );													\
+	printf( " : " "%lld " "\n", ( address_g - address_l ) );								\
 } while( false )
 
 

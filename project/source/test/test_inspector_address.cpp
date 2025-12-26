@@ -114,6 +114,16 @@ namespace test_inspector_address
 
 			LS();
 
+			{
+				OUT_SUBJECT( "OUT_ADDRESS_AND_OFFSET 사용" );
+
+				LF();
+
+				OUT_ADDRESS_AND_OFFSET( TestFunction_1, TestFunction_2 );
+			}
+
+			LS();
+
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
@@ -180,6 +190,16 @@ namespace test_inspector_address
 
 				OUT_ADDRESS( &S::TestFunction_1 );
 				OUT_ADDRESS( &S::TestFunction_2 );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "OUT_ADDRESS_AND_OFFSET 사용" );
+
+				LF();
+
+				OUT_ADDRESS_AND_OFFSET( &S::TestFunction_1, &S::TestFunction_2 );
 			}
 
 			LS();
