@@ -72,7 +72,7 @@ namespace r2tm_viewer
 			//
 			// 출력
 			//
-			for( decltype( csbi.srWindow.Bottom ) i = 0; i < csbi.srWindow.Bottom - 1; i++ )
+			for( decltype( csbi.srWindow.Bottom ) i = 0; i < csbi.srWindow.Bottom - 1; ++i )
 			{
 				std::cout
 					<< std::left << std::setw( 10 ) << i    // 라인 번호 출력
