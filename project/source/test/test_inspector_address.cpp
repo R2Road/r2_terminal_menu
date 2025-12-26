@@ -9,7 +9,7 @@ namespace test_inspector_address
 	{
 		return []()->const char*
 		{
-			return "Inspector : Value";
+			return "Inspector : Address : Value";
 		};
 	}
 	r2tm::DoFunctionT Value::GetDoFunction() const
@@ -83,7 +83,7 @@ namespace test_inspector_address
 	{
 		return []()->const char*
 		{
-			return "Inspector : Function";
+			return "Inspector : Address : Function";
 		};
 	}
 	r2tm::DoFunctionT Function::GetDoFunction() const
@@ -124,7 +124,7 @@ namespace test_inspector_address
 	{
 		return []()->const char*
 		{
-			return "Inspector : Member Function";
+			return "Inspector : Address : Member Function";
 		};
 	}
 	r2tm::DoFunctionT Member_Function::GetDoFunction() const
