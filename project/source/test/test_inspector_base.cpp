@@ -253,6 +253,7 @@ namespace test_inspector_base
 
 
 
+	void TestFunc() {}
 	r2tm::TitleFunctionT Size::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -266,12 +267,25 @@ namespace test_inspector_base
 		{
 			LS();
 
+			OUT_SOURCE_READY_N_BEGIN;
+			struct S
+			{
+				int i[10];
+				void TestFunc() {}
+			};
+			OUT_SOURCE_END;
+
+			LS();
+
 			{
 				OUT_SUBJECT( "기존의 size 출력 방식" );
 
 				LF();
 
 				OUT_VALUE( sizeof( int ) );
+				OUT_VALUE( sizeof( S ) );
+				OUT_VALUE( sizeof( &TestFunc ) );
+				OUT_VALUE( sizeof( &S::TestFunc ) );
 			}
 
 			LS();
@@ -282,11 +296,9 @@ namespace test_inspector_base
 				LF();
 
 				OUT_SIZE( int );
-
-				SS();
-
-				DECL_MAIN( struct S { int i[10]; } );
 				OUT_SIZE( S );
+				OUT_SIZE( &TestFunc );
+				OUT_SIZE( &S::TestFunc );
 			}
 
 			LS();
