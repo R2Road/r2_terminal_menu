@@ -54,11 +54,11 @@ namespace r2tm_viewer
 
 			//
 			// 열 구분 문자열 생성
-			//  > 예시 : 1         2         3         4         5         6         7         8         9         0        1 ...
+			//  > 예시 : 0         1         2         3         4         5         6         7         8         9         0        1 ...
 			//
 			std::string s( csbi.srWindow.Right - 10, ' ' );
 			{
-				char n = '1';
+				char n = '0';
 				const decltype( s.size() ) mark_count = s.size() / 10u;
 				for( decltype( s.size() ) i = 0; i < mark_count; ++i )
 				{
