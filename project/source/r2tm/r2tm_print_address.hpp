@@ -45,13 +45,11 @@ namespace r2tm
 	template<typename ReturnT, typename OwnerT, typename ... ArgsT >
 	void* Convert2VoidPointer( ReturnT( OwnerT::* const value )( ArgsT ... ) )
 	{
-		auto p = ( void*& )value;
-		return p;
+		return ( void*& )value;
 	}
 	template<typename ReturnT, typename OwnerT, typename ... ArgsT >
 	void* Convert2VoidPointer( ReturnT( OwnerT::* const value )( ArgsT ... ) const )
 	{
-		auto p = ( void*& )value;
-		return p;
+		return ( void*& )value;
 	}
 }
