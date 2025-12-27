@@ -207,35 +207,83 @@ namespace test_inspector_address
 		{
 			LS();
 
-			OUT_FILE_CUR_DIR( "test_inspector_address___helper_member_function.hpp" );
-
-			LS();
-
 			{
-				OUT_SUBJECT( "멤버 함수 주소를 출력하는 방법" );
+				OUT_SUBJECT( "변수 주소" );
+
+				int i = 0;
+				struct SS
+				{
+					const short i = 100;
+					const short j = 200;
+				} ss;
 
 				LF();
 
-				auto p_1 = &S::TestFunction_1;
-				std::printf( "S::TestFunction_1 : %p\n", ( void*& )p_1 );
-				auto p_2 = &S::TestFunction_2;
-				std::printf( "S::TestFunction_2 : %p\n", ( void*& )p_2 );
+				{
+					OUT_VALUE(  &i );
+					OUT_VALUE(  &ss );
+					OUT_VALUE(  &ss.j );
+
+					LF();
+
+					OUT_ADDRESS( i );
+					OUT_ADDRESS( ss );
+					OUT_ADDRESS( ss.j );
+
+					LF();
+
+					OUT_VALUE( r2tm::Convert2VoidPointer( &i ) );
+					OUT_VALUE( r2tm::Convert2VoidPointer( &ss ) );
+					OUT_VALUE( r2tm::Convert2VoidPointer( &ss.j ) );
+				}
 			}
 
 			LS();
 
 			{
-				OUT_SUBJECT( "OUT_ADDRESS 사용" );
+				OUT_SUBJECT( "함수 주소" );
 
 				LF();
 
-				OUT_ADDRESS( &S::TestFunction_1 );
-				OUT_ADDRESS( &S::TestFunction_2 );
+				{
+					std::printf( "TestFunction_1 : %p\n", &TestFunction_1 );
+					std::printf( "TestFunction_2 : %p\n", &TestFunction_2 );
+
+					LF();
+
+					OUT_ADDRESS( TestFunction_1 );
+					OUT_ADDRESS( TestFunction_2 );
+
+					LF();
+
+					OUT_VALUE( r2tm::Convert2VoidPointer( &TestFunction_1 ) );
+					OUT_VALUE( r2tm::Convert2VoidPointer( &TestFunction_2 ) );
+				}
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "멤버 함수 주소" );
 
 				LF();
 
-				OUT_VALUE( r2tm::Convert2VoidPointer( &S::TestFunction_1 ) );
-				OUT_VALUE( r2tm::Convert2VoidPointer( &S::TestFunction_2 ) );
+				{
+					auto p_1 = &S::TestFunction_1;
+					std::printf( "S::TestFunction_1 : %p\n", ( void*& )p_1 );
+					auto p_2 = &S::TestFunction_2;
+					std::printf( "S::TestFunction_2 : %p\n", ( void*& )p_2 );
+
+					LF();
+					
+					OUT_ADDRESS( &S::TestFunction_1 );
+					OUT_ADDRESS( &S::TestFunction_2 );
+
+					LF();
+
+					OUT_VALUE( r2tm::Convert2VoidPointer( &S::TestFunction_1 ) );
+					OUT_VALUE( r2tm::Convert2VoidPointer( &S::TestFunction_2 ) );
+				}
 			}
 
 			LS();
