@@ -49,14 +49,11 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 		mp->AddItem( 'q', test_inspector_address::Value() );
 		mp->AddItem( 'w', test_inspector_address::Function() );
 		mp->AddItem( 'e', test_inspector_address::Member_Function() );
-		mp->AddItem( 'r', test_inspector_binary::Binary() );
-		mp->AddItem( 't', test_inspector_binary::Binaries_1() );
-		mp->AddItem( 'y', test_inspector_binary::Binaries_2() );
-		mp->AddItem( 'u', test_inspector_binary::Binaries_With_Array() );
-		mp->AddItem( 'i', test_inspector_input::Wait_Any_Key() );
-		mp->AddItem( 'o', test_inspector_input::GetKey() );
-		mp->AddItem( 'p', test_inspector_input::Keyboard_Hit() );
-		mp->AddItem( '[', test_inspector_input::ClearInput() );
+		mp->AddItem( 'r', test_inspector_address::Convert2VoidPointer());
+		mp->AddItem( 't', test_inspector_binary::Binary() );
+		mp->AddItem( 'y', test_inspector_binary::Binaries_1() );
+		mp->AddItem( 'u', test_inspector_binary::Binaries_2() );
+		mp->AddItem( 'i', test_inspector_binary::Binaries_With_Array() );
 
 
 
@@ -80,17 +77,13 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 		mp->AddItem( 'z', test_inspector_source::Basic() );
-		mp->AddItem( 'x', test_inspector_file::DirectoryOpen() );
-		mp->AddItem( 'v', test_inspector_demo::Demo_1());
-		mp->AddItem( 'b', test_inspector_demo::Demo_2());
-
-
-
-		mp->AddLineFeed();
-
-
-
-		mp->AddItem( 32, test_inspector_address::Convert2VoidPointer() );
+		mp->AddItem( 'x', test_inspector_input::Wait_Any_Key() );
+		mp->AddItem( 'c', test_inspector_input::GetKey() );
+		mp->AddItem( 'v', test_inspector_input::Keyboard_Hit() );
+		mp->AddItem( 'b', test_inspector_input::ClearInput() );
+		mp->AddItem( 'n', test_inspector_file::DirectoryOpen() );
+		mp->AddItem( 'm', test_inspector_demo::Demo_1());
+		mp->AddItem( ',', test_inspector_demo::Demo_2());
 
 
 
