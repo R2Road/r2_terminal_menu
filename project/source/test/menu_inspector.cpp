@@ -86,6 +86,14 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
+		mp->AddLineFeed();
+
+
+
+		mp->AddItem( 32, test_inspector_address::Convert2VoidPointer() );
+
+
+
 		mp->AddSplit();
 
 
