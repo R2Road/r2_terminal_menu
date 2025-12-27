@@ -11,6 +11,12 @@ namespace r2tm
 		printf( "%p", &value );
 	}
 
+	template<typename ReturnT, typename ... ArgsT >
+	void PrintAddress( ReturnT( * const value )( ArgsT ... ) )
+	{
+		printf( "%p", ( void* )value );
+	}
+
 	template<typename ReturnT, typename OwnerT, typename ... ArgsT >
 	void PrintAddress( ReturnT( OwnerT::* const value )( ArgsT ... ) )
 	{
