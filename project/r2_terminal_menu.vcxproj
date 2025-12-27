@@ -91,6 +91,8 @@
     <ClInclude Include="source\test\menu_stop_watch.hpp" />
     <ClInclude Include="source\test\menu_windows_utility.hpp" />
     <ClInclude Include="source\test\test_inspector_address.hpp" />
+    <ClInclude Include="source\test\test_inspector_address___helper_function.hpp" />
+    <ClInclude Include="source\test\test_inspector_address___helper_member_function.hpp" />
     <ClInclude Include="source\test\test_inspector_input.hpp" />
     <ClInclude Include="source\test\test_leave_action.hpp" />
     <ClInclude Include="source\test\test_cache_cleaner.hpp" />

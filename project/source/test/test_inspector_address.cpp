@@ -1,4 +1,6 @@
 #include "test_inspector_address.hpp"
+#include "test_inspector_address___helper_function.hpp"
+#include "test_inspector_address___helper_member_function.hpp"
 
 #include "r2tm/r2tm_inspector.hpp"
 #include "r2tm/r2tm_ostream.hpp"
@@ -73,12 +75,6 @@ namespace test_inspector_address
 
 
 
-	void TestFunction_1()
-	{
-	}
-	void TestFunction_2()
-	{
-	}
 	r2tm::TitleFunctionT Function::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -143,19 +139,7 @@ namespace test_inspector_address
 		{
 			LS();
 
-			OUT_SOURCE_READY_N_BEGIN;
-			struct S
-			{
-				int TestFunction_1()
-				{
-					return 0;
-				}
-				int TestFunction_2() const
-				{
-					return 0;
-				}
-			};
-			OUT_SOURCE_END;
+			OUT_FILE_CUR_DIR( "test_inspector_address___helper_member_function.hpp" );
 
 			LS();
 
@@ -223,19 +207,7 @@ namespace test_inspector_address
 		{
 			LS();
 
-			OUT_SOURCE_READY_N_BEGIN;
-			struct S
-			{
-				int TestFunction_1()
-				{
-					return 0;
-				}
-				int TestFunction_2() const
-				{
-					return 0;
-				}
-			};
-			OUT_SOURCE_END;
+			OUT_FILE_CUR_DIR( "test_inspector_address___helper_member_function.hpp" );
 
 			LS();
 
