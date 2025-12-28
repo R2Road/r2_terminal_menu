@@ -249,11 +249,9 @@ do {																						\
 do {																						\
 	const void* p_1 = r2tm::Convert2VoidPointer( &( condition_1 ) );						\
 	const void* p_2 = r2tm::Convert2VoidPointer( &( condition_2 ) );						\
-	const long long address_l = reinterpret_cast<long long>( &(p_1) ) < reinterpret_cast<long long>( &(p_2) ) ? reinterpret_cast<long long>( &(p_1) ) : reinterpret_cast<long long>( &(p_2) );	\
-	const long long address_g = reinterpret_cast<long long>( &(p_1) ) < reinterpret_cast<long long>( &(p_2) ) ? reinterpret_cast<long long>( &(p_2) ) : reinterpret_cast<long long>( &(p_1) );	\
-	printf( "[ADDRESS]" " %s" ", %s" "\n" "\t> ", #condition_1, #condition_2 );				\
-	printf( "%p ~ %p", p_1, p_2 );															\
-	printf( "%lld " "\n", ( address_g - address_l ) );										\
+	printf( "[ADDRESS]" " %s" ", %s" "\n", #condition_1, #condition_2 );					\
+	printf( "\t> " "%p ~ %p", p_1, p_2 );													\
+	printf( " : %lld " "\n", r2tm::CalculatePointerOffset( p_1, p_2 ) );					\
 } while( false )
 
 

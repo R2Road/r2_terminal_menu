@@ -27,4 +27,8 @@ namespace r2tm
 	{
 		return ( void*& )value;
 	}
+
+
+
+	long long CalculatePointerOffset( const void* p_1, const void* p_2 );
 }
