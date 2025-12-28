@@ -172,8 +172,8 @@ namespace test_inspector_address
 
 				LF();
 
-				OUT_ADDRESS( &S::TestFunction_1 );
-				OUT_ADDRESS( &S::TestFunction_2 );
+				OUT_ADDRESS( S::TestFunction_1 );
+				OUT_ADDRESS( S::TestFunction_2 );
 			}
 
 			LS();
@@ -183,7 +183,7 @@ namespace test_inspector_address
 
 				LF();
 
-				OUT_ADDRESS_AND_OFFSET( &S::TestFunction_1, &S::TestFunction_2 );
+				OUT_ADDRESS_AND_OFFSET( S::TestFunction_1, S::TestFunction_2 );
 			}
 
 			LS();
@@ -276,8 +276,8 @@ namespace test_inspector_address
 
 					LF();
 					
-					OUT_ADDRESS( &S::TestFunction_1 );
-					OUT_ADDRESS( &S::TestFunction_2 );
+					OUT_ADDRESS( S::TestFunction_1 );
+					OUT_ADDRESS( S::TestFunction_2 );
 
 					LF();
 

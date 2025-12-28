@@ -6,9 +6,9 @@
 namespace r2tm
 {
 	template<typename T>
-	void PrintAddress( const T& value )
+	typename std::enable_if<!std::is_function_v<T>, void>::type PrintAddress( const T* value )
 	{
-		printf( "%p", &value );
+		printf( "%p", ( void* )value );
 	}
 
 	template<typename ReturnT, typename ... ArgsT >
