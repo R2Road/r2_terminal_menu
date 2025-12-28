@@ -242,21 +242,18 @@ do {																						\
 #define	OUT_ADDRESS( condition )															\
 do {																						\
 	printf( "[ADDRESS]" " %s" "\n" "\t> ", #condition );									\
-	r2tm::PrintAddress( &( condition ) );													\
-	printf( "\n" );																			\
+	printf( "%p" "\n", r2tm::Convert2VoidPointer( &( condition ) ) );						\
 } while( false )
 
 #define	OUT_ADDRESS_AND_OFFSET( condition_1, condition_2 )									\
 do {																						\
-	const auto p_1 = &( condition_1 );														\
-	const auto p_2 = &( condition_2 );														\
+	const void* p_1 = r2tm::Convert2VoidPointer( &( condition_1 ) );						\
+	const void* p_2 = r2tm::Convert2VoidPointer( &( condition_2 ) );						\
 	const long long address_l = reinterpret_cast<long long>( &(p_1) ) < reinterpret_cast<long long>( &(p_2) ) ? reinterpret_cast<long long>( &(p_1) ) : reinterpret_cast<long long>( &(p_2) );	\
 	const long long address_g = reinterpret_cast<long long>( &(p_1) ) < reinterpret_cast<long long>( &(p_2) ) ? reinterpret_cast<long long>( &(p_2) ) : reinterpret_cast<long long>( &(p_1) );	\
-	printf( "[ADDRESS]" " %s" ", %s" "\n" "\t> ", #condition_1, #condition_2 );						\
-	r2tm::PrintAddress( &( condition_1 ) );													\
-	printf( " ~ " );																		\
-	r2tm::PrintAddress( &( condition_2 ) );													\
-	printf( " : " "%lld " "\n", ( address_g - address_l ) );								\
+	printf( "[ADDRESS]" " %s" ", %s" "\n" "\t> ", #condition_1, #condition_2 );				\
+	printf( "%p ~ %p", p_1, p_2 );															\
+	printf( "%lld " "\n", ( address_g - address_l ) );										\
 } while( false )
 
 
