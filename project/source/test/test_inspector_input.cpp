@@ -12,7 +12,7 @@ namespace test_inspector_input
 	{
 		return []()->const char*
 		{
-			return "Input : Wait Any Key";
+			return "Inspector : Input : Wait Any Key";
 		};
 	}
 	r2tm::DoFunctionT Wait_Any_Key::GetDoFunction() const
@@ -39,7 +39,7 @@ namespace test_inspector_input
 	{
 		return []()->const char*
 		{
-			return "Input : GET_KEY";
+			return "Inspector : Input : GET_KEY";
 		};
 	}
 	r2tm::DoFunctionT GetKey::GetDoFunction() const
@@ -68,7 +68,7 @@ namespace test_inspector_input
 	{
 		return []()->const char*
 		{
-			return "Input : KB_HIT";
+			return "Inspector : Input : KB_HIT";
 		};
 	}
 	r2tm::DoFunctionT Keyboard_Hit::GetDoFunction() const
@@ -126,7 +126,7 @@ namespace test_inspector_input
 	{
 		return []()->const char*
 		{
-			return "Input : CLEAR_INPUT";
+			return "Inspector : Input : CLEAR_INPUT";
 		};
 	}
 	r2tm::DoFunctionT ClearInput::GetDoFunction() const
