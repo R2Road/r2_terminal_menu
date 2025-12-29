@@ -88,6 +88,10 @@ namespace test_inspector_address
 		{
 			LS();
 
+			OUT_FILE_CUR_DIR( "test_inspector_address___helper_function.hpp" );
+
+			LS();
+
 			{
 				OUT_SUBJECT( "기존의 출력 방식" );
 
