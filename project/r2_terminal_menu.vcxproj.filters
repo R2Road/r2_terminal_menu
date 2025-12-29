@@ -115,6 +115,9 @@
     <ClCompile Include="source\r2tm\r2tm_print_address.cpp">
       <Filter>r2tm</Filter>
     </ClCompile>
+    <ClCompile Include="source\test\menu_inspector_file.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_dev.hpp" />
@@ -255,6 +258,9 @@
       <Filter>test\inspector</Filter>
     </ClInclude>
     <ClInclude Include="source\test\test_inspector_address___helper_member_function.hpp">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="source\test\menu_inspector_file.hpp">
       <Filter>test\inspector</Filter>
     </ClInclude>
   </ItemGroup>

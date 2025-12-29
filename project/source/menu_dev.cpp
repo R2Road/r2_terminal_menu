@@ -12,6 +12,7 @@
 #include "test/menu_cache_cleaner.hpp"
 #include "test/menu_color_modifier.hpp"
 #include "test/menu_inspector.hpp"
+#include "test/menu_inspector_file.hpp"
 #include "test/menu_leave_action.hpp"
 #include "test/menu_stop_watch.hpp"
 #include "test/menu_windows_utility.hpp"
@@ -64,9 +65,9 @@ r2tm::WriteFunctionT Menu_Dev::GetWriteFunction() const
 
 
 		mp->AddMenu( 'q', Menu_Inspector() );
-		mp->AddMenu( 'w', Menu_LeaveAction() );
-		mp->AddMenu( 'e', Menu_ColorModifier() );
-		mp->AddMenu( 'r', Menu_StopWatch() );
+		mp->AddMenu( 'w', Menu_Inspector_File() );
+		mp->AddMenu( 'e', Menu_LeaveAction() );
+		mp->AddMenu( 'r', Menu_ColorModifier() );
 
 
 
@@ -74,8 +75,9 @@ r2tm::WriteFunctionT Menu_Dev::GetWriteFunction() const
 
 
 
-		mp->AddMenu( 'a', Menu_WindowsUtility() );
-		mp->AddMenu( 's', Menu_CacheCleaner() );
+		mp->AddMenu( 'a', Menu_StopWatch() );
+		mp->AddMenu( 's', Menu_WindowsUtility() );
+		mp->AddMenu( 'd', Menu_CacheCleaner() );
 
 
 
