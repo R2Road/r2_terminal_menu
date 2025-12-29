@@ -12,6 +12,7 @@
 #include "test/menu_cache_cleaner.hpp"
 #include "test/menu_color_modifier.hpp"
 #include "test/menu_inspector.hpp"
+#include "test/menu_inspector_demo.hpp"
 #include "test/menu_inspector_file.hpp"
 #include "test/menu_leave_action.hpp"
 #include "test/menu_stop_watch.hpp"
@@ -57,6 +58,7 @@ r2tm::WriteFunctionT Menu_Dev::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* mp )
 	{
 		mp->AddMenu( '1', Menu_Tutorial() );
+		mp->AddMenu( '2', Menu_Inspector_Demo() );
 
 
 

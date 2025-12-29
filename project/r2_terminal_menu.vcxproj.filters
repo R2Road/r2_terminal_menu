@@ -118,6 +118,9 @@
     <ClCompile Include="source\test\menu_inspector_file.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
+    <ClCompile Include="source\test\menu_inspector_demo.cpp">
+      <Filter>test\inspector</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_dev.hpp" />
@@ -261,6 +264,9 @@
       <Filter>test\inspector</Filter>
     </ClInclude>
     <ClInclude Include="source\test\menu_inspector_file.hpp">
+      <Filter>test\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="source\test\menu_inspector_demo.hpp">
       <Filter>test\inspector</Filter>
     </ClInclude>
   </ItemGroup>

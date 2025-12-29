@@ -68,15 +68,6 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
-		mp->AddLineFeed();
-
-
-
-		mp->AddItem( 'z', test_inspector_demo::Demo_1());
-		mp->AddItem( 'x', test_inspector_demo::Demo_2());
-
-
-
 		mp->AddSplit();
 
 
