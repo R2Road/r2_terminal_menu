@@ -24,7 +24,20 @@ r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
+		mp->AddMessage( "Message/Status Demo");
+		mp->AddStatus( r2tm::eStatus::None );
+		mp->AddStatus( r2tm::eStatus::Play );
+		mp->AddStatus( r2tm::eStatus::Pause );
+		mp->AddStatus( r2tm::eStatus::Stop );
 		mp->AddStatus( r2tm::eStatus::Complete );
+		mp->AddStatus( r2tm::eStatus() );
+
+
+
+		mp->AddLineFeed();
+
+
+
 		mp->AddItem( '1', test_inspector_demo::Demo_1() );
 		mp->AddItem( '2', test_inspector_demo::Demo_2() );
 
