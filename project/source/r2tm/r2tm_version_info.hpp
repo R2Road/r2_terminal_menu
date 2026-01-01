@@ -45,6 +45,7 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : Add - OUT_FILE_CUR_DIR"
 			"\n"	"[o] " "update    inspector  : Add - OUT_ADDRESS_AND_OFFSET"
 			"\n"	"[o] " "update    inspector  : Add - OUT_FILE_RANGE_CUR_DIR"
+			"\n"	"[o] " "update    class      : Add Method - MenuProcessor::AddStatus - Item의 상태 표시 기능 추가"
 			"\n"
 			"\n"    "------------------------------------------------------------"
 			"\n"

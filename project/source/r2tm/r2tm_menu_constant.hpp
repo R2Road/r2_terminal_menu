@@ -18,4 +18,13 @@ namespace r2tm
 	using DoFunctionT = std::function<eDoLeaveAction()>;
 
 	using WriteFunctionT = std::function<void( MenuProcessor* )>;
+
+	enum class eStatus
+	{
+		None,
+		Play,
+		Pause,
+		Stop,
+		Complete,
+	};
 }

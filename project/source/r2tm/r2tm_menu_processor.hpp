@@ -86,6 +86,8 @@ namespace r2tm
 		void AddMessage( const char* const message, const r2tm::eColor message_color_code );
 		void AddMessage( const char* const message );
 
+		void AddStatus( const r2tm::eStatus status );
+
 
 
 	protected:

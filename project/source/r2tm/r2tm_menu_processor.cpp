@@ -224,4 +224,58 @@ namespace r2tm
 	{
 		AddMessage( message, r2tm::eColor::FG_White );
 	}
+
+	void MenuProcessor::AddStatus( const r2tm::eStatus status )
+	{
+		const char* message = nullptr;
+		switch( status )
+		{
+		case eStatus::None:
+			message = "몰?루";
+			break;
+		case eStatus::Play:
+			message = "진행중";
+			break;
+		case eStatus::Pause:
+			message = "일시정지";
+			break;
+		case eStatus::Stop:
+			message = "중단";
+			break;
+		case eStatus::Complete:
+			message = "완료";
+			break;
+		default:
+			message = "몰?루";
+			break;
+		}
+
+		r2tm::eColor message_color_code;
+		switch( status )
+		{
+		case eStatus::None:
+			message_color_code = r2tm::eColor::FG_Gray;
+			break;
+		case eStatus::Play:
+			message_color_code = r2tm::eColor::FG_LightYellow;
+			break;
+		case eStatus::Pause:
+			message_color_code = r2tm::eColor::FG_Purple;
+			break;
+		case eStatus::Stop:
+			message_color_code = r2tm::eColor::FG_LightRed;
+			break;
+		case eStatus::Complete:
+			message_color_code = r2tm::eColor::FG_Green;
+			break;
+		default:
+			message_color_code = r2tm::eColor::FG_Gray;
+			break;
+		}
+
+		const TitleFunctionT func_title = [message]()->const char* { return message; };
+		static const DoFunctionT func_do = []()->const eDoLeaveAction { return eDoLeaveAction::Pause; };
+
+		AddItem( KEYCODE_4_MESSAGE, message_color_code, r2tm::eColor::BG_Black, func_title, func_do );
+	}
 }

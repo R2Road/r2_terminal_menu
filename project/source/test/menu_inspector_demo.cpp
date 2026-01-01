@@ -24,6 +24,7 @@ r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
+		mp->AddStatus( r2tm::eStatus::Complete );
 		mp->AddItem( '1', test_inspector_demo::Demo_1() );
 		mp->AddItem( '2', test_inspector_demo::Demo_2() );
 
