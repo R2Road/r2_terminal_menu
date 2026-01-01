@@ -249,7 +249,7 @@ do {																						\
 do {																						\
 	const void* p_1 = r2tm::Convert2VoidPointer( &( condition_1 ) );						\
 	const void* p_2 = r2tm::Convert2VoidPointer( &( condition_2 ) );						\
-	printf( "[ADDRESS]" " %s" ", %s" "\n", #condition_1, #condition_2 );					\
+	printf( "[ADDRESS + OFFSET]" " %s" ", %s" "\n", #condition_1, #condition_2 );			\
 	printf( "\t> " "%p ~ %p", p_1, p_2 );													\
 	printf( " : %lld " "\n", r2tm::CalculatePointerOffset( p_1, p_2 ) );					\
 } while( false )
