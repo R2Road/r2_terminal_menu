@@ -24,7 +24,15 @@ r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{
-		mp->AddMessage( "Message/Status Demo");
+		mp->AddMessage( "Message Demo");
+
+
+
+		mp->AddLineFeed();
+
+
+
+		mp->AddMessage( "Status Demo", r2tm::eColor::FG_LightAqua );
 		mp->AddStatus( r2tm::eStatus::None );
 		mp->AddStatus( r2tm::eStatus::Play );
 		mp->AddStatus( r2tm::eStatus::Pause );
@@ -38,6 +46,7 @@ r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
 
 
 
+		mp->AddMessage( "Inspector Demo", r2tm::eColor::FG_Blue, r2tm::eColor::BG_Gray );
 		mp->AddItem( '1', test_inspector_demo::Demo_1() );
 		mp->AddItem( '2', test_inspector_demo::Demo_2() );
 

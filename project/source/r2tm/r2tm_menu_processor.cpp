@@ -231,22 +231,22 @@ namespace r2tm
 		switch( status )
 		{
 		case eStatus::None:
-			message = "몰?루";
+			message = "  [ 몰?루 ]";
 			break;
 		case eStatus::Play:
-			message = "진행중";
+			message = "  [ 진행중 ]";
 			break;
 		case eStatus::Pause:
-			message = "일시정지";
+			message = "  [ 일시정지 ]";
 			break;
 		case eStatus::Stop:
-			message = "중단";
+			message = "  [ 중단 ]";
 			break;
 		case eStatus::Complete:
-			message = "완료";
+			message = "  [ 완료 ]";
 			break;
 		default:
-			message = "몰?루";
+			message = "  [ 몰?루 ] ";
 			break;
 		}
 
