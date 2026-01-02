@@ -260,13 +260,13 @@ namespace r2tm
 			message_color_code = r2tm::eColor::FG_LightYellow;
 			break;
 		case eStatus::Pause:
-			message_color_code = r2tm::eColor::FG_Purple;
+			message_color_code = r2tm::eColor::FG_LightPurple;
 			break;
 		case eStatus::Stop:
 			message_color_code = r2tm::eColor::FG_LightRed;
 			break;
 		case eStatus::Complete:
-			message_color_code = r2tm::eColor::FG_Green;
+			message_color_code = r2tm::eColor::FG_LightGreen;
 			break;
 		default:
 			message_color_code = r2tm::eColor::FG_Gray;
