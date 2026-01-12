@@ -272,7 +272,7 @@ namespace test_inspector_base
 			{
 				int i[10];
 				void TestFunc() {}
-			};
+			} s;
 			OUT_SOURCE_END;
 
 			LS();
@@ -286,6 +286,7 @@ namespace test_inspector_base
 				OUT_VALUE( sizeof( S ) );
 				OUT_VALUE( sizeof( &TestFunc ) );
 				OUT_VALUE( sizeof( &S::TestFunc ) );
+				OUT_VALUE( sizeof( s.i ) );
 			}
 
 			LS();
@@ -299,6 +300,7 @@ namespace test_inspector_base
 				OUT_SIZE( S );
 				OUT_SIZE( &TestFunc );
 				OUT_SIZE( &S::TestFunc );
+				OUT_SIZE( s.i );
 			}
 
 			LS();
