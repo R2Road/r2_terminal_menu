@@ -74,31 +74,34 @@ namespace r2tm
 			// Status
 			//
 			{
-				std::cout << "(";
-
-				switch( t.Status )
+				if( eStatus::None != t.Status )
 				{
-				case eStatus::None:
-					std::cout << " ";
-					break;
-				case eStatus::Play:
-					std::cout << clm( r2tm::eColor::FG_LightYellow ) << "~" << clm();
-					break;
-				case eStatus::Pause:
-					std::cout << clm( r2tm::eColor::FG_LightPurple ) << "-" << clm();
-					break;
-				case eStatus::Stop:
-					std::cout << clm( r2tm::eColor::FG_LightRed ) << "=" << clm();
-					break;
-				case eStatus::Complete:
-					std::cout << clm( r2tm::eColor::FG_LightGreen ) << "o" << clm();
-					break;
-				default:
-					std::cout << " ";
-					break;
+					std::cout << "(";
+
+					switch( t.Status )
+					{
+					case eStatus::None:
+						std::cout << " ";
+						break;
+					case eStatus::Play:
+						std::cout << clm( r2tm::eColor::FG_LightYellow ) << "~" << clm();
+						break;
+					case eStatus::Pause:
+						std::cout << clm( r2tm::eColor::FG_LightPurple ) << "-" << clm();
+						break;
+					case eStatus::Stop:
+						std::cout << clm( r2tm::eColor::FG_LightRed ) << "=" << clm();
+						break;
+					case eStatus::Complete:
+						std::cout << clm( r2tm::eColor::FG_LightGreen ) << "o" << clm();
+						break;
+					default:
+						std::cout << " ";
+						break;
+					}
+
+					std::cout << ") ";
 				}
-				
-				std::cout << ") ";
 			}
 
 			//

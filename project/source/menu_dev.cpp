@@ -24,7 +24,7 @@
 
 r2tm::eStatus Menu_Dev::GetStatus() const
 {
-	return r2tm::eStatus::Complete;
+	return r2tm::eStatus::None;
 }
 r2tm::TitleFunctionT Menu_Dev::GetTitleFunction() const
 {

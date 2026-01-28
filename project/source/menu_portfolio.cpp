@@ -18,7 +18,7 @@
 
 r2tm::eStatus Menu_Portfolio::GetStatus() const
 {
-	return r2tm::eStatus::Complete;
+	return r2tm::eStatus::None;
 }
 r2tm::TitleFunctionT Menu_Portfolio::GetTitleFunction() const
 {
