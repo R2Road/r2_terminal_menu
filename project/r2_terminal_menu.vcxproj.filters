@@ -4,22 +4,22 @@
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\menu_dev.cpp" />
     <ClCompile Include="source\r2tm\r2tm_director.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_menu_processor.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_print_binary.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_print_file.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_stop_watch.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_windows_utility.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\test\menu_inspector.cpp">
       <Filter>test\inspector</Filter>
@@ -52,7 +52,7 @@
       <Filter>test\windows_utility</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_cache_cleaner.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\test\test_stop_watch.cpp">
       <Filter>test\stop_watch</Filter>
@@ -82,7 +82,7 @@
       <Filter>test\inspector</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_input.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\test\test_cache_cleaner___helper.hpp">
       <Filter>test\cache_cleaner</Filter>
@@ -98,70 +98,70 @@
       <Filter>tutorial</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_file.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_viewer_key.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_viewer_version.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_viewer_window_size.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\test\test_inspector_address.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
     <ClCompile Include="source\r2tm\r2tm_print_address.cpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClCompile>
     <ClCompile Include="source\test\menu_inspector_file.cpp">
       <Filter>test\inspector</Filter>
     </ClCompile>
-    <ClCompile Include="source\test\menu_inspector_demo.cpp">
-      <Filter>test\inspector</Filter>
+    <ClCompile Include="source\demo\menu_demo.cpp">
+      <Filter>demo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\menu_dev.hpp" />
     <ClInclude Include="source\r2tm\r2tm_color_modifier.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_director.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_interface_item.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_interface_menu.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_inspector.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_menu_constant.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_menu_processor.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_ostream.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_print_binary.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_print_file.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_stop_watch.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_version_info.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_windows_utility.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\test\menu_inspector.hpp">
       <Filter>test\inspector</Filter>
@@ -194,7 +194,7 @@
       <Filter>test\windows_utility</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_cache_cleaner.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\test\test_stop_watch.hpp">
       <Filter>test\stop_watch</Filter>
@@ -209,7 +209,7 @@
       <Filter>test\cache_cleaner</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_color.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\test\test_color_modifier.hpp">
       <Filter>test\color_modifier</Filter>
@@ -227,7 +227,7 @@
       <Filter>test\inspector</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_input.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\menu_portfolio.hpp" />
     <ClInclude Include="source\tutorial\menu_tutorial.hpp">
@@ -240,22 +240,22 @@
       <Filter>tutorial</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_file.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_viewer_key.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_viewer_version.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_viewer_window_size.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\test\test_inspector_address.hpp">
       <Filter>test\inspector</Filter>
     </ClInclude>
     <ClInclude Include="source\r2tm\r2tm_print_address.hpp">
-      <Filter>r2tm</Filter>
+      <Filter>_r2tm</Filter>
     </ClInclude>
     <ClInclude Include="source\test\test_inspector_address___helper_function.hpp">
       <Filter>test\inspector</Filter>
@@ -266,16 +266,13 @@
     <ClInclude Include="source\test\menu_inspector_file.hpp">
       <Filter>test\inspector</Filter>
     </ClInclude>
-    <ClInclude Include="source\test\menu_inspector_demo.hpp">
-      <Filter>test\inspector</Filter>
+    <ClInclude Include="source\demo\menu_demo.hpp">
+      <Filter>demo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="test">
       <UniqueIdentifier>{034bdfbb-95cf-4545-9d78-fea3afa17c7c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="r2tm">
-      <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\inspector">
       <UniqueIdentifier>{775abd40-0071-4ba5-a20d-54d27916885a}</UniqueIdentifier>
@@ -297,6 +294,12 @@
     </Filter>
     <Filter Include="tutorial">
       <UniqueIdentifier>{750e47ab-ad1d-473e-8a15-a92e922119af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo">
+      <UniqueIdentifier>{4c459b37-962d-40ab-8f23-5eea5442b2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_r2tm">
+      <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

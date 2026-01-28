@@ -1,8 +1,8 @@
-#include "menu_inspector_demo.hpp"
+#include "menu_demo.hpp"
 
 #include "r2tm/r2tm_menu_processor.hpp"
 
-#include "test_inspector_demo.hpp"
+#include "test/test_inspector_demo.hpp"
 
 #include "menu_dev.hpp"
 

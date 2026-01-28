@@ -9,10 +9,10 @@
 #include "r2tm/r2tm_viewer_version.hpp"
 #include "r2tm/r2tm_viewer_window_size.hpp"
 
+#include "demo/menu_demo.hpp"
 #include "test/menu_cache_cleaner.hpp"
 #include "test/menu_color_modifier.hpp"
 #include "test/menu_inspector.hpp"
-#include "test/menu_inspector_demo.hpp"
 #include "test/menu_inspector_file.hpp"
 #include "test/menu_leave_action.hpp"
 #include "test/menu_stop_watch.hpp"
