@@ -26,9 +26,9 @@ namespace r2tm
 
 		const char VersionNumber_1 = '2';
 		const char VersionNumber_2 = '0';
-		const char VersionNumber_3 = '8';
+		const char VersionNumber_3 = '9';
 		const char VersionNumber_4 = '0';
-		const char VersionNumber_5 = '1';
+		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
 
@@ -45,7 +45,8 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : Add - OUT_FILE_CUR_DIR"
 			"\n"	"[o] " "update    inspector  : Add - OUT_ADDRESS_AND_OFFSET"
 			"\n"	"[o] " "update    inspector  : Add - OUT_FILE_RANGE_CUR_DIR"
-			"\n"	"[o] " "update    class      : Add Method - MenuProcessor::AddStatus - Item의 상태 표시 기능 추가"
+			"\n"	"[o] " "update    class      : Add Method - MenuProcessor::AddStatus - 상태 문구 출력 기능 추가"
+			"\n"	"[o] " "update    class      : Update Method - MenuProcessor::AddItem, AddMenu - Item 상태 표시 기능 추가"
 			"\n"
 			"\n"    "------------------------------------------------------------"
 			"\n"

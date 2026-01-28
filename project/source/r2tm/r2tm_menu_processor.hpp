@@ -21,12 +21,14 @@ namespace r2tm
 				const char key_code
 				, const r2tm::eColor message_color_code
 				, const r2tm::eColor background_color_code
+				, const r2tm::eStatus status
 				, const TitleFunctionT& title_function
 				, const DoFunctionT& do_function
 			) :
 				KeyCode( key_code )
 				, MessageColorCode( message_color_code )
 				, BackgroundColorCode( background_color_code )
+				, Status( status )
 				, TitleFunction( title_function )
 				, DoFunction( do_function )
 			{}
@@ -34,6 +36,7 @@ namespace r2tm
 			char KeyCode;
 			r2tm::eColor MessageColorCode;
 			r2tm::eColor BackgroundColorCode;
+			r2tm::eStatus Status;
 			TitleFunctionT TitleFunction;
 			DoFunctionT DoFunction;
 		};
@@ -68,9 +71,9 @@ namespace r2tm
 		//
 		//
 		//
-		void AddItem( const char key_code, const r2tm::eColor message_color_code, const r2tm::eColor background_color_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
-		void AddItem( const char key_code, const r2tm::eColor message_color_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
-		void AddItem( const char key_code, const TitleFunctionT& func_title, const DoFunctionT& func_do );
+		void AddItem( const char key_code, const r2tm::eColor message_color_code, const r2tm::eColor background_color_code, const eStatus status, const TitleFunctionT& func_title, const DoFunctionT& func_do );
+		void AddItem( const char key_code, const r2tm::eColor message_color_code, const eStatus status, const TitleFunctionT& func_title, const DoFunctionT& func_do );
+		void AddItem( const char key_code, const eStatus status, const TitleFunctionT& func_title, const DoFunctionT& func_do );
 		void AddItem( const char key_code, const iItem& item_obj );
 
 		void AddExit( const char key_code, const r2tm::eColor message_color_code, const r2tm::eColor background_color_code );

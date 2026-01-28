@@ -56,6 +56,20 @@ r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
 
 
 
+		mp->AddLineFeed();
+
+
+
+		mp->AddMessage( "Item Status", r2tm::eColor::FG_Blue, r2tm::eColor::BG_Gray );
+		mp->AddItem( '1', r2tm::eStatus::None,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+		mp->AddItem( '2', r2tm::eStatus::Play,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+		mp->AddItem( '3', r2tm::eStatus::Pause,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+		mp->AddItem( '4', r2tm::eStatus::Stop,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+		mp->AddItem( '5', r2tm::eStatus::Complete,	[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+		mp->AddItem( '6', r2tm::eStatus(),			[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+
+		
+
 		mp->AddSplit();
 
 

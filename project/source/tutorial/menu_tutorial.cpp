@@ -52,6 +52,7 @@ r2tm::WriteFunctionT Menu_Tutorial::GetWriteFunction() const
 		mp->AddMessage( "# Test를 r2tm::iItem 안쓰고 만들기", r2tm::eColor::FG_Yellow );
 		mp->AddItem(
 			'3'
+			, r2tm::eStatus::Complete
 			, []()->const char*
 			{
 				return "Lambda 로 만든 제목 생성기";
