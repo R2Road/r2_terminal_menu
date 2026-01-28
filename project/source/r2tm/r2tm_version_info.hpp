@@ -28,7 +28,7 @@ namespace r2tm
 		const char VersionNumber_2 = '0';
 		const char VersionNumber_3 = '9';
 		const char VersionNumber_4 = '1';
-		const char VersionNumber_5 = '0';
+		const char VersionNumber_5 = '1';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
 

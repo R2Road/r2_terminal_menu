@@ -74,7 +74,11 @@ namespace r2tm
 			// Status
 			//
 			{
-				if( eStatus::None != t.Status )
+				if( eStatus::None == t.Status )
+				{
+					std::cout << "    ";
+				}
+				else
 				{
 					std::cout << "(";
 
