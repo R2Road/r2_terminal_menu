@@ -104,22 +104,24 @@ namespace r2tm
 			//
 			// Key
 			//
-			std::cout << "[";
+			{
+				std::cout << "[";
 
-			if( 27 == t.KeyCode ) // ESC
-			{
-				std::cout << "ESC";
-			}
-			else if( 32 == t.KeyCode ) // SPACE_BAR
-			{
-				std::cout << "SPACE";
-			}
-			else
-			{
-				std::cout << static_cast<char>( std::toupper( t.KeyCode ) );
-			}
+				switch( t.KeyCode )
+				{
+				case 27: // ESC
+					std::cout << "ESC";
+					break;
+				case 32: // SPACE_BAR
+					std::cout << "SPACE";
+					break;
+				default:
+					std::cout << static_cast< char >( std::toupper( t.KeyCode ) );
+					break;
+				}
 
-			std::cout << "] ";
+				std::cout << "] ";
+			}
 			
 			//
 			// Title
