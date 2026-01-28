@@ -6,25 +6,25 @@
 
 #include "menu_dev.hpp"
 
-r2tm::eStatus Menu_Inspector_Demo::GetStatus() const
+r2tm::eStatus Menu_Demo::GetStatus() const
 {
 	return r2tm::eStatus::Complete;
 }
-r2tm::TitleFunctionT Menu_Inspector_Demo::GetTitleFunction() const
+r2tm::TitleFunctionT Menu_Demo::GetTitleFunction() const
 {
 	return []()->const char*
 	{
 		return "Menu : Demo";
 	};
 }
-r2tm::DescriptionFunctionT Menu_Inspector_Demo::GetDescriptionFunction() const
+r2tm::DescriptionFunctionT Menu_Demo::GetDescriptionFunction() const
 {
 	return []()->const char*
 	{
 		return "";
 	};
 }
-r2tm::WriteFunctionT Menu_Inspector_Demo::GetWriteFunction() const
+r2tm::WriteFunctionT Menu_Demo::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* mp )
 	{

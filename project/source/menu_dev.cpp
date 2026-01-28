@@ -62,7 +62,7 @@ r2tm::WriteFunctionT Menu_Dev::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* mp )
 	{
 		mp->AddMenu( '1', Menu_Tutorial() );
-		mp->AddMenu( '2', Menu_Inspector_Demo() );
+		mp->AddMenu( '2', Menu_Demo() );
 
 
 

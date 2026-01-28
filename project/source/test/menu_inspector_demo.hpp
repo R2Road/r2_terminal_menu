@@ -2,7 +2,7 @@
 
 #include "r2tm/r2tm_interface_menu.hpp"
 
-class Menu_Inspector_Demo : public r2tm::iMenu
+class Menu_Demo : public r2tm::iMenu
 {
 public:
 	r2tm::eStatus GetStatus() const override;
