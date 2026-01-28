@@ -33,10 +33,11 @@ r2tm::WriteFunctionT Menu_Demo::GetWriteFunction() const
 
 
 		mp->AddLineFeed();
+		mp->AddLineFeed();
 
 
 
-		mp->AddMessage( "Status Demo", r2tm::eColor::FG_LightAqua );
+		mp->AddMessage( "Status Message Demo", r2tm::eColor::FG_LightAqua );
 		mp->AddStatus( r2tm::eStatus::None );
 		mp->AddStatus( r2tm::eStatus::Ready );
 		mp->AddStatus( r2tm::eStatus::Play );
@@ -48,20 +49,11 @@ r2tm::WriteFunctionT Menu_Demo::GetWriteFunction() const
 
 
 		mp->AddLineFeed();
-
-
-
-		mp->AddMessage( "Inspector Demo", r2tm::eColor::FG_Blue, r2tm::eColor::BG_Gray );
-		mp->AddItem( '1', test_inspector_demo::Demo_1() );
-		mp->AddItem( '2', test_inspector_demo::Demo_2() );
-
-
-
 		mp->AddLineFeed();
 
 
 
-		mp->AddMessage( "Item Status", r2tm::eColor::FG_Blue, r2tm::eColor::BG_Gray );
+		mp->AddMessage( "Item Status Demo", r2tm::eColor::FG_LightRed );
 		mp->AddItem( '1', r2tm::eStatus::None,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
 		mp->AddItem( '2', r2tm::eStatus::Ready,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
 		mp->AddItem( '3', r2tm::eStatus::Play,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
@@ -69,6 +61,17 @@ r2tm::WriteFunctionT Menu_Demo::GetWriteFunction() const
 		mp->AddItem( '5', r2tm::eStatus::Stop,		[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
 		mp->AddItem( '6', r2tm::eStatus::Complete,	[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
 		mp->AddItem( '7', r2tm::eStatus(),			[]() { return ""; }, []() { return r2tm::eDoLeaveAction::None; } );
+
+
+
+		mp->AddLineFeed();
+		mp->AddLineFeed();
+
+
+
+		mp->AddMessage( "Inspector Demo", r2tm::eColor::FG_Black, r2tm::eColor::BG_White );
+		mp->AddItem( 'q', test_inspector_demo::Demo_1() );
+		mp->AddItem( 'w', test_inspector_demo::Demo_2() );
 
 		
 
