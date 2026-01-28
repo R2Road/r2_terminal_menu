@@ -14,7 +14,7 @@ r2tm::TitleFunctionT Menu_Inspector_Demo::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "Demo";
+		return "Menu : Demo";
 	};
 }
 r2tm::DescriptionFunctionT Menu_Inspector_Demo::GetDescriptionFunction() const
