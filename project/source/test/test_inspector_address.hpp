@@ -7,6 +7,7 @@ namespace test_inspector_address
 	class Value : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -14,6 +15,7 @@ namespace test_inspector_address
 	class Function : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -21,6 +23,7 @@ namespace test_inspector_address
 	class Member_Function : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -28,6 +31,7 @@ namespace test_inspector_address
 	class Convert2VoidPointer : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};

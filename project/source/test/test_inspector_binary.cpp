@@ -5,6 +5,10 @@
 
 namespace test_inspector_binary
 {
+	r2tm::eStatus Binary::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Binary::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -68,6 +72,10 @@ namespace test_inspector_binary
 
 
 
+	r2tm::eStatus Binaries_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Binaries_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -135,6 +143,10 @@ namespace test_inspector_binary
 
 
 
+	r2tm::eStatus Binaries_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Binaries_2::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -179,6 +191,10 @@ namespace test_inspector_binary
 
 
 
+	r2tm::eStatus Binaries_With_Array::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Binaries_With_Array::GetTitleFunction() const
 	{
 		return []()->const char*

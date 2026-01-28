@@ -5,6 +5,10 @@
 
 namespace test_inspector_base
 {
+	r2tm::eStatus Basic::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -53,6 +57,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Expect_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Expect_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -102,6 +110,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Expect_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Expect_2::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -151,6 +163,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Expect_Epsilon_Float::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Expect_Epsilon_Float::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -202,6 +218,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Expect_Epsilon_Double::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Expect_Epsilon_Double::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -254,6 +274,10 @@ namespace test_inspector_base
 
 
 	void TestFunc() {}
+	r2tm::eStatus Size::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Size::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -311,6 +335,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Align::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Align::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -358,6 +386,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus Code::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Code::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -383,6 +415,10 @@ namespace test_inspector_base
 
 
 
+	r2tm::eStatus String_Note_Subject_Comment::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT String_Note_Subject_Comment::GetTitleFunction() const
 	{
 		return []()->const char*

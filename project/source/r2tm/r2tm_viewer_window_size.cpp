@@ -7,6 +7,10 @@
 
 namespace r2tm_viewer
 {
+	r2tm::eStatus WindowSize::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT WindowSize::GetTitleFunction() const
 	{
 		return []()->const char*

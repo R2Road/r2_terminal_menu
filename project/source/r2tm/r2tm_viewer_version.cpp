@@ -11,6 +11,10 @@ namespace r2tm_viewer
 		, mVersionHistoryCount( version_history_count )
 	{}
 
+	r2tm::eStatus Version::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Version::GetTitleFunction() const
 	{
 		return []()->const char*

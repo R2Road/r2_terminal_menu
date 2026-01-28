@@ -6,6 +6,10 @@
 
 #include "test_color_modifier.hpp"
 
+r2tm::eStatus Menu_ColorModifier::GetStatus() const
+{
+	return r2tm::eStatus::Complete;
+}
 r2tm::TitleFunctionT Menu_ColorModifier::GetTitleFunction() const
 {
 	return []()->const char*

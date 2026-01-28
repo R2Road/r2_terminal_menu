@@ -7,6 +7,7 @@ namespace test_leave_action
 	class eDoLeaveAction_None : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -14,6 +15,7 @@ namespace test_leave_action
 	class eDoLeaveAction_Pause : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -21,6 +23,7 @@ namespace test_leave_action
 	class eDoLeaveAction_Exit : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};

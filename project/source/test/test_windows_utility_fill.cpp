@@ -6,6 +6,10 @@
 
 namespace test_windows_utility_fill
 {
+	r2tm::eStatus FillColor::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FillColor::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -61,6 +65,10 @@ namespace test_windows_utility_fill
 
 
 
+	r2tm::eStatus FillCharacter::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FillCharacter::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -98,6 +106,10 @@ namespace test_windows_utility_fill
 
 
 
+	r2tm::eStatus FillString_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FillString_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -159,9 +171,10 @@ namespace test_windows_utility_fill
 
 
 
-
-
-
+	r2tm::eStatus FillString_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FillString_2::GetTitleFunction() const
 	{
 		return []()->const char*

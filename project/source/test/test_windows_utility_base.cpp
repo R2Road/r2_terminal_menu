@@ -6,6 +6,10 @@
 
 namespace test_windows_utility_base
 {
+	r2tm::eStatus CursorPointDeclaration::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT CursorPointDeclaration::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -90,6 +94,10 @@ namespace test_windows_utility_base
 
 
 
+	r2tm::eStatus CursorPointOperator::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT CursorPointOperator::GetTitleFunction() const
 	{
 		return []()->const char*

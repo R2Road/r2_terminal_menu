@@ -5,6 +5,7 @@
 class Menu_Tutorial : public r2tm::iMenu
 {
 public:
+	r2tm::eStatus GetStatus() const override;
 	r2tm::TitleFunctionT GetTitleFunction() const override;
 	r2tm::DescriptionFunctionT GetDescriptionFunction() const override;
 	r2tm::WriteFunctionT GetWriteFunction() const override;

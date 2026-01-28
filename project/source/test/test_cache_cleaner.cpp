@@ -12,6 +12,10 @@
 
 namespace test_cache_cleaner
 {
+	r2tm::eStatus Basic::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -85,6 +89,10 @@ namespace test_cache_cleaner
 
 
 
+	r2tm::eStatus Size::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Size::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -131,6 +139,10 @@ namespace test_cache_cleaner
 
 
 
+	r2tm::eStatus Test::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Test::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -201,6 +213,10 @@ namespace test_cache_cleaner
 
 
 
+	r2tm::eStatus Test_Accumulate::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Test_Accumulate::GetTitleFunction() const
 	{
 		return []()->const char*

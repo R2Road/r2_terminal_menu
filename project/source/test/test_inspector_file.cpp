@@ -7,6 +7,10 @@
 
 namespace test_inspector_file
 {
+	r2tm::eStatus File_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT File_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -60,6 +64,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus File_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT File_2::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -89,6 +97,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus File_3::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT File_3::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -118,6 +130,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus Out_File_Current_Directory::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Out_File_Current_Directory::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -157,6 +173,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus FileRange_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FileRange_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -210,6 +230,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus FileRange_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FileRange_2::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -255,6 +279,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus FileRange_3::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT FileRange_3::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -294,6 +322,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus Out_File_Range_Current_Directory::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Out_File_Range_Current_Directory::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -333,6 +365,10 @@ namespace test_inspector_file
 
 
 
+	r2tm::eStatus DirectoryOpen::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT DirectoryOpen::GetTitleFunction() const
 	{
 		return []()->const char*

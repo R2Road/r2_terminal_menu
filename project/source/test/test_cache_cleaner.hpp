@@ -7,6 +7,7 @@ namespace test_cache_cleaner
 	class Basic : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -14,6 +15,7 @@ namespace test_cache_cleaner
 	class Size : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -21,6 +23,7 @@ namespace test_cache_cleaner
 	class Test : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -28,6 +31,7 @@ namespace test_cache_cleaner
 	class Test_Accumulate : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};

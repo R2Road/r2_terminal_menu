@@ -12,6 +12,10 @@ namespace test_color_modifier
 		return os << static_cast<int>( color );
 	}
 
+	r2tm::eStatus Declaration::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Declaration::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -90,6 +94,10 @@ namespace test_color_modifier
 
 
 
+	r2tm::eStatus Test::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Test::GetTitleFunction() const
 	{
 		return []()->const char*

@@ -6,6 +6,10 @@
 
 #include "test_leave_action.hpp"
 
+r2tm::eStatus Menu_LeaveAction::GetStatus() const
+{
+	return r2tm::eStatus::Complete;
+}
 r2tm::TitleFunctionT Menu_LeaveAction::GetTitleFunction() const
 {
 	return []()->const char*

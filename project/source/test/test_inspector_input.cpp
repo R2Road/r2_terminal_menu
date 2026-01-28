@@ -8,6 +8,10 @@
 
 namespace test_inspector_input
 {
+	r2tm::eStatus Wait_Any_Key::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Wait_Any_Key::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -35,6 +39,10 @@ namespace test_inspector_input
 
 
 
+	r2tm::eStatus GetKey::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT GetKey::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -64,6 +72,10 @@ namespace test_inspector_input
 
 
 
+	r2tm::eStatus Keyboard_Hit::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Keyboard_Hit::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -122,6 +134,10 @@ namespace test_inspector_input
 
 
 
+	r2tm::eStatus ClearInput::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT ClearInput::GetTitleFunction() const
 	{
 		return []()->const char*

@@ -8,6 +8,10 @@
 
 namespace test_stop_watch
 {
+	r2tm::eStatus Declaration::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Declaration::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -58,6 +62,10 @@ namespace test_stop_watch
 	}
 
 
+	r2tm::eStatus Basic::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -120,6 +128,10 @@ namespace test_stop_watch
 	}
 
 
+	r2tm::eStatus Min_Max::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Min_Max::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -177,6 +189,10 @@ namespace test_stop_watch
 	}
 
 
+	r2tm::eStatus Accumulate::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Accumulate::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -239,6 +255,10 @@ namespace test_stop_watch
 	}
 
 
+	r2tm::eStatus Reset::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Reset::GetTitleFunction() const
 	{
 		return []()->const char*

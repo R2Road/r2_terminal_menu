@@ -9,6 +9,10 @@
 #include "menu_dev.hpp"
 #include "menu_make_menu.hpp"
 
+r2tm::eStatus Menu_Tutorial::GetStatus() const
+{
+	return r2tm::eStatus::Complete;
+}
 r2tm::TitleFunctionT Menu_Tutorial::GetTitleFunction() const
 {
 	return []()->const char*

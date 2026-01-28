@@ -6,6 +6,10 @@
 
 namespace test_windows_utility_cursor_buffer
 {
+	r2tm::eStatus MoveCursorWithClearBuffer::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT MoveCursorWithClearBuffer::GetTitleFunction() const
 	{
 		return []()->const char*

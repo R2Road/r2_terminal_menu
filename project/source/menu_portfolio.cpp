@@ -16,6 +16,10 @@
 
 #include "menu_dev.hpp"
 
+r2tm::eStatus Menu_Portfolio::GetStatus() const
+{
+	return r2tm::eStatus::Complete;
+}
 r2tm::TitleFunctionT Menu_Portfolio::GetTitleFunction() const
 {
 	return []()->const char*

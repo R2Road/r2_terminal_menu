@@ -5,6 +5,10 @@
 
 namespace test_inspector_demo
 {
+	r2tm::eStatus Demo_1::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Demo_1::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -58,7 +62,7 @@ namespace test_inspector_demo
 					}
 				} s;
 
-				OUT_FILE_RANGE( "source/test/test_inspector_demo.cpp", 51, 59 );
+				OUT_FILE_RANGE( "source/test/test_inspector_demo.cpp", 55, 63 );
 
 				SS();
 
@@ -89,6 +93,10 @@ namespace test_inspector_demo
 
 
 
+	r2tm::eStatus Demo_2::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Demo_2::GetTitleFunction() const
 	{
 		return []()->const char*

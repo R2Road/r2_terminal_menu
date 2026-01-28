@@ -5,6 +5,10 @@
 
 namespace test_leave_action
 {
+	r2tm::eStatus eDoLeaveAction_None::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT eDoLeaveAction_None::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -36,6 +40,10 @@ namespace test_leave_action
 
 
 
+	r2tm::eStatus eDoLeaveAction_Pause::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT eDoLeaveAction_Pause::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -68,6 +76,10 @@ namespace test_leave_action
 
 
 
+	r2tm::eStatus eDoLeaveAction_Exit::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT eDoLeaveAction_Exit::GetTitleFunction() const
 	{
 		return []()->const char*

@@ -7,6 +7,7 @@ namespace test_inspector_file
 	class File_1 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -14,6 +15,7 @@ namespace test_inspector_file
 	class File_2 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -21,6 +23,7 @@ namespace test_inspector_file
 	class File_3 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -28,6 +31,7 @@ namespace test_inspector_file
 	class Out_File_Current_Directory : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -35,6 +39,7 @@ namespace test_inspector_file
 	class FileRange_1 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -42,6 +47,7 @@ namespace test_inspector_file
 	class FileRange_2 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -49,6 +55,7 @@ namespace test_inspector_file
 	class FileRange_3 : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -56,6 +63,7 @@ namespace test_inspector_file
 	class Out_File_Range_Current_Directory : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};
@@ -63,6 +71,7 @@ namespace test_inspector_file
 	class DirectoryOpen : public r2tm::iItem
 	{
 	public:
+		r2tm::eStatus GetStatus() const override;
 		r2tm::TitleFunctionT GetTitleFunction() const override;
 		r2tm::DoFunctionT GetDoFunction() const override;
 	};

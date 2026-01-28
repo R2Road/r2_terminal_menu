@@ -5,6 +5,10 @@
 
 namespace test_tutorial
 {
+	r2tm::eStatus Basic::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Basic::GetTitleFunction() const
 	{
 		return []()->const char*

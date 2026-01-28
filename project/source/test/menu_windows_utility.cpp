@@ -8,6 +8,10 @@
 
 #include "menu_dev.hpp"
 
+r2tm::eStatus Menu_WindowsUtility::GetStatus() const
+{
+	return r2tm::eStatus::Complete;
+}
 r2tm::TitleFunctionT Menu_WindowsUtility::GetTitleFunction() const
 {
 	return []()->const char*

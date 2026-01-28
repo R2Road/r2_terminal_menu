@@ -9,6 +9,7 @@ namespace r2tm
 	public:
 		virtual ~iItem() {}
 
+		virtual eStatus GetStatus() const = 0;
 		virtual TitleFunctionT GetTitleFunction() const = 0;
 		virtual DoFunctionT GetDoFunction() const = 0;
 	};

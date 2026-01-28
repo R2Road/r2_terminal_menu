@@ -7,6 +7,10 @@
 
 namespace test_inspector_address
 {
+	r2tm::eStatus Value::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Value::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -75,6 +79,10 @@ namespace test_inspector_address
 
 
 
+	r2tm::eStatus Function::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Function::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -130,6 +138,10 @@ namespace test_inspector_address
 
 
 
+	r2tm::eStatus Member_Function::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Member_Function::GetTitleFunction() const
 	{
 		return []()->const char*
@@ -198,6 +210,10 @@ namespace test_inspector_address
 
 
 
+	r2tm::eStatus Convert2VoidPointer::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
 	r2tm::TitleFunctionT Convert2VoidPointer::GetTitleFunction() const
 	{
 		return []()->const char*
