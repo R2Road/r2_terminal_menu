@@ -80,7 +80,7 @@ namespace r2tm
 
 					switch( t.Status )
 					{
-					case eStatus::None:
+					case eStatus::Ready:
 						std::cout << " ";
 						break;
 					case eStatus::Play:
@@ -270,6 +270,9 @@ namespace r2tm
 		case eStatus::None:
 			message = "  [ 몰?루 ]";
 			break;
+		case eStatus::Ready:
+			message = "  [ 대기중 ]";
+			break;
 		case eStatus::Play:
 			message = "  [ 진행중 ]";
 			break;
@@ -292,6 +295,9 @@ namespace r2tm
 		{
 		case eStatus::None:
 			message_color_code = r2tm::eColor::FG_Gray;
+			break;
+		case eStatus::Ready:
+			message_color_code = r2tm::eColor::FG_White;
 			break;
 		case eStatus::Play:
 			message_color_code = r2tm::eColor::FG_LightYellow;

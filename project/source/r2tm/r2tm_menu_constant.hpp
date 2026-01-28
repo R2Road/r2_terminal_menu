@@ -22,6 +22,7 @@ namespace r2tm
 	enum class eStatus
 	{
 		None,
+		Ready,
 		Play,
 		Pause,
 		Stop,
