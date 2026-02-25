@@ -47,6 +47,7 @@ namespace r2tm
 			"\n"	"[o] " "update    inspector  : Add - OUT_FILE_RANGE_CUR_DIR"
 			"\n"	"[o] " "update    class      : Add Method - MenuProcessor::AddStatus - 상태 문구 출력 기능 추가"
 			"\n"	"[o] " "update    class      : Update Method - MenuProcessor::AddItem, AddMenu - Item 상태 표시 기능 추가"
+			"\n"	"[o] " "update    inspector  : Add - MODE_DECL_MAIN, MODE_DECL_SUB, MODE_PROC_MAIN, MODE_PROC_SUB"
 			"\n"
 			"\n"    "------------------------------------------------------------"
 			"\n"

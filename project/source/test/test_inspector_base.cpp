@@ -475,4 +475,88 @@ namespace test_inspector_base
 			return r2tm::eDoLeaveAction::Pause;
 		};
 	}
+
+
+
+	r2tm::eStatus Expect_With_Build_Mode::GetStatus() const
+	{
+		return r2tm::eStatus::Complete;
+	}
+	r2tm::TitleFunctionT Expect_With_Build_Mode::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Expect With Build Mode";
+		};
+	}
+	r2tm::DoFunctionT Expect_With_Build_Mode::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			LS();
+
+			OUT_SUBJECT( "Debug/Release 모드의 코드가 다르게 작동하는 경우 테스트 작성을 돕기 위한 기능" );
+
+			LS();
+
+			OUT_SOURCE_READY_N_BEGIN;
+			struct S
+			{
+#if defined( DEBUG ) || defined( _DEBUG )
+				S() : mI( 1 ) {}
+#else
+				S( int i ) : mI( i ) {}
+#endif
+
+#if defined( DEBUG ) || defined( _DEBUG )
+				void Set() { mI = 33; }
+#else
+				void Set( int i ) { mI = i; }
+#endif
+
+				int mI;
+			};
+			OUT_SOURCE_END;
+
+			LS();
+
+			{
+				OUT_SUBJECT( "MAIN" );
+
+				LF();
+
+				MODE_DECL_MAIN( S s, S s( 1 ) );
+
+				LF();
+
+				MODE_PROC_MAIN( s.Set(), s.Set( 33 ); );
+
+				LF();
+
+				EXPECT_EQ( 33, s.mI );
+			}
+
+			LS();
+
+			{
+				OUT_SUBJECT( "SUB" );
+
+				LF();
+
+				MODE_DECL_SUB( S s, S s( 1 ) );
+
+				LF();
+
+				MODE_PROC_SUB( s.Set(), s.Set( 33 ); );
+
+				LF();
+
+				EXPECT_EQ( 33, s.mI );
+			}
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
 }

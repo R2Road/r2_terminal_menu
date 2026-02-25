@@ -72,6 +72,14 @@ r2tm::WriteFunctionT Menu_Inspector::GetWriteFunction() const
 
 
 
+		mp->AddLineFeed();
+
+
+
+		mp->AddItem( 'z', test_inspector_base::Expect_With_Build_Mode() );
+
+
+
 		mp->AddSplit();
 
 

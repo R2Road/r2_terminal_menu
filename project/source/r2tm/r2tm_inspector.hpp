@@ -205,6 +205,39 @@ do {																						\
 	{ condition; }																			\
 } while( false )
 
+//
+// Important Process Code With Mode
+//
+#if defined( DEBUG ) || defined( _DEBUG )
+	#define	MODE_PROC_MAIN( condition_debug, condition_release )							\
+	do {																					\
+		printf( "\x1B[96m" "[MODE PROC]" "\033[0m" " %s\n", #condition_debug );				\
+		{ condition_debug; }																\
+	} while( false )
+#else
+	#define	MODE_PROC_MAIN( condition_debug, condition_release )							\
+	do {																					\
+		printf( "\x1B[96m" "[MODE PROC]" "\033[0m" " %s\n", #condition_release );			\
+		{ condition_release; }																\
+	} while( false )
+#endif
+//
+// Sub Process Code With Mode
+//
+#if defined( DEBUG ) || defined( _DEBUG )
+	#define	MODE_PROC_SUB( condition_debug, condition_release )								\
+	do {																					\
+		printf( "\x1B[90m" "[MODE PROC]" " %s" "\033[0m" "\n", #condition_debug );			\
+		{ condition_debug; }																\
+	} while( false )
+#else
+	#define	MODE_PROC_SUB( condition_debug, condition_release )								\
+	do {																					\
+		printf( "\x1B[90m" "[MODE PROC]" " %s" "\033[0m" "\n", #condition_release );		\
+		{ condition_release; }																\
+	} while( false )
+#endif
+
 
 
 
@@ -212,7 +245,7 @@ do {																						\
 // Important Declaration Code
 //
 #define	DECL_MAIN( condition )														\
-printf( "\x1B[93m" "[DECL]" "\033[0m" " %s\n", #condition );							\
+printf( "\x1B[93m" "[DECL]" "\033[0m" " %s\n", #condition );						\
 condition;
 //
 // Sub Declaration Code
@@ -220,6 +253,35 @@ condition;
 #define	DECL_SUB( condition )														\
 printf( "\x1B[90m" "[DECL]" " %s" "\033[0m" "\n", #condition );						\
 condition;
+
+//
+// Important Declaration Code With Mode
+//
+#if defined( DEBUG ) || defined( _DEBUG )
+	#define	MODE_DECL_MAIN( condition_debug, condition_release )								\
+	printf( "\x1B[93m" "[MODE DECL]" "\033[0m" " %s\n", #condition_debug );						\
+	condition_debug;
+#else
+	#define	MODE_DECL_MAIN( condition_debug, condition_release )								\
+	printf( "\x1B[93m" "[MODE DECL]" "\033[0m" " %s\n", #condition_release );					\
+	condition_release;
+#endif
+//
+// Sub Declaration Code With Mode
+//
+#if defined( DEBUG ) || defined( _DEBUG )
+	#define	MODE_DECL_SUB( condition_debug, condition_release )									\
+	printf( "\x1B[90m" "[MODE DECL]" " %s" "\033[0m" "\n", #condition_debug );					\
+	condition_debug;
+#else
+	#define	MODE_DECL_SUB( condition_debug, condition_release )									\
+	printf( "\x1B[90m" "[MODE DECL]" " %s" "\033[0m" "\n", #condition_release );				\
+	condition_release;
+#endif
+
+//
+// 위의 중복 코드는 제거가 가능하지만, 인텔리센스 작동시 중복 제거를 위한 매크로가 노출되어 가독성이 떨어지므로 이대로 둔다.
+//
 
 
 
