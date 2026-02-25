@@ -25,14 +25,20 @@ namespace r2tm
 
 
 		const char VersionNumber_1 = '2';
-		const char VersionNumber_2 = '0';
-		const char VersionNumber_3 = '9';
-		const char VersionNumber_4 = '1';
-		const char VersionNumber_5 = '1';
+		const char VersionNumber_2 = '1';
+		const char VersionNumber_3 = '0';
+		const char VersionNumber_4 = '0';
+		const char VersionNumber_5 = '0';
 
 		const char String4Version[18] = { 'r', '2', 't', 'm', ' ', ':', ' ', 'v', VersionNumber_1, '.', VersionNumber_2, '.', VersionNumber_3, '.', VersionNumber_4, '.', VersionNumber_5, '\0' };
 
 
+
+		const char* const String4Road2Version_2_2_0_0_0 =
+			"### Road 2 Version 2.2.0.0.0 ###"
+			"\n"
+			"\n"	"[ ] " "..."
+		;
 
 		const char* const String4Road2Version_2_1_0_0_0 =
 			"### Road 2 Version 2.1.0.0.0 ###"
@@ -170,7 +176,7 @@ namespace r2tm
 
 
 
-		enum { VERSION_HISTORY_COUNT = 10 };
+		enum { VERSION_HISTORY_COUNT = 11 };
 		const char* VersionHistory[VERSION_HISTORY_COUNT] = {
 			  String4Road2Version_1_0_0_0_0
 			, String4Road2Version_1_1_0_0_0
@@ -182,6 +188,7 @@ namespace r2tm
 			, String4Road2Version_1_7_0_0_0
 			, String4Road2Version_1_8_0_0_0
 			, String4Road2Version_2_1_0_0_0
+			, String4Road2Version_2_2_0_0_0
 		};
 
 
